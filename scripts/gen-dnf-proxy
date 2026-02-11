@@ -11,7 +11,9 @@ import dnf
 logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.WARNING)
 
 # https://github.com/rpm-software-management/libdnf/issues/1757
-WORKAROUND_LIBDNF_BUG = True
+# Workaround cannot work, as not all files are exposed as Provides, it
+# would require to fill the provides_map will all files of the distro.
+WORKAROUND_LIBDNF_BUG = False
 
 V = '10.0'
 SECTIONS = ['BaseOS', 'AppStream', 'CRB', 'devel']
