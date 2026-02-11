@@ -60,7 +60,7 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
 
                 # FIXME should really generate virtual alternatives instead
                 if not(providers):
-                    logging.warning("no providers for '%s'", rel)
+                    logging.warning("%s: %s: no providers for '%s'", pkg.name, p.name, rel)
                     continue
 
                 if len(providers) > 1:
