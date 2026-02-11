@@ -19,11 +19,21 @@ V = '10.0'
 SECTIONS = ['BaseOS', 'AppStream', 'CRB', 'devel']
 CONFS = ('src', 'bin')
 
-cachedirs = {}
 dbs = {}
 
-def str_reldep(rel: hawkey.Reldep) -> str:
-    return f"{rel.name} ({rel.relation} {rel.version})"
+def next_or_none(it):
+    try:
+        return next(it)
+    except StopIteration:
+        return None
+
+# FIXME won't work if p2 has several occurrences
+def prefer(lst, p1_name, p2_name):
+    p2 = next_or_none(p for p in lst if p.name == p2_name)
+    if p2:
+        p1 = next_or_none(p for p in lst if p.name == p1_name)
+        if p1:
+            lst.remove(p2)
 
 def write_recipe(pkg: dnf.package.Package) -> None:
     rpms: list[dnf.package.Package] = list(dbs['bin'].sack.query().filter(sourcerpm=f"{pkg}.rpm"))
@@ -41,10 +51,96 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
             print(f'\nURI_{p.name} = "{p.remote_location(schemes=["https", "http", "file"])};unpack=0"',
                   file=r)
             rel: hawkey.Reldep
-            print(f'''RDEPENDS:{p.name} = "{' '.join(str_reldep(rel) for rel in p.requires)}"''',
-                  file=r)
-            print(f'''RPROVIDES:{p.name} = "{' '.join(str_reldep(rel) for rel in p.provides)}"''',
-                  file=r)
+            requires: set[dnf.package.Package] = set()
+            for rel in p.requires:
+                if WORKAROUND_LIBDNF_BUG:
+                    providers = provides_map.get(rel.name, [])
+                else:
+                    providers = list(dbs['bin'].sack.query().filter(provides=rel).filter(latest=1))
+
+                # FIXME should really generate virtual alternatives instead
+                if not(providers):
+                    logging.warning("no providers for '%s'", rel)
+                    continue
+
+                if len(providers) > 1:
+                    prefer(providers, 'coreutils', 'coreutils-single')
+                    prefer(providers, 'util-linux', 'util-linux-core')
+                    prefer(providers, 'cronie-noanacron', 'cronie-anacron')
+                    prefer(providers, 'libcurl', 'libcurl-minimal')
+                    prefer(providers, 'google-noto-sans-balinese-fonts', 'google-noto-serif-balinese-fonts')
+                    prefer(providers, 'google-noto-sans-myanmar-vf-fonts', 'google-noto-serif-myanmar-vf-fonts')
+                    prefer(providers, 'libverto-libev', 'libverto-libevent')
+                    prefer(providers, 'kernel-debug-core', 'kernel-debug-uki-virt')
+                    prefer(providers, 'kernel-core', 'kernel-uki-virt')
+                    prefer(providers, 'gdb-headless', 'gdb-minimal')
+                    prefer(providers, 'systemtap-client', 'systemtap-devel')
+                    prefer(providers, 'SDL2', 'sdl2-compat')
+                    prefer(providers, 'glibc-langpack-en', 'glibc-all-langpacks')
+                    prefer(providers, 'ant-unbound', 'ant-openjdk21')
+                    prefer(providers, 'ocaml-runtime', 'ocaml')
+                    prefer(providers, 'nfs-utils', 'nfsv4-client-utils')
+                    prefer(providers, 'tomcat-lib', 'tomcat9-lib')
+                    prefer(providers, 'nodejs', 'nodejs22')
+                    prefer(providers, 'systemd', 'rsyslog')
+                    prefer(providers, 'pinentry-gnome3', 'pinentry-qt')
+                    prefer(providers, 'elinks', 'lynx')
+                    prefer(providers, 'ocaml-ordering', 'ocaml-ordering-devel')
+                    prefer(providers, 'ocaml-dyn', 'ocaml-dyn-devel')
+                    prefer(providers, 'ocaml-stdune', 'ocaml-stdune-devel')
+                    prefer(providers, 'ocaml-xdg', 'ocaml-xdg-devel')
+                    prefer(providers, 'ocaml-dune-glob', 'ocaml-dune-glob-devel')
+                    prefer(providers, 'ocaml-dune-rpc', 'ocaml-dune-rpc-devel')
+                    prefer(providers, 'ocaml-dune-private-libs', 'ocaml-dune-private-libs-devel')
+                    prefer(providers, 'ocaml-fileutils', 'ocaml-fileutils-devel')
+                    prefer(providers, 'curl', 'wget')
+                    prefer(providers, 'redhat-display-fonts', 'redhat-display-vf-fonts')
+                    prefer(providers, 'redhat-text-fonts', 'redhat-text-vf-fonts')
+
+                    # WTF!?
+                    prefer(providers, 'libtiff', 'golang-tests') # libtiffxx.so.6()(64bit)
+                    prefer(providers, 'kernel-modules-extra', 'kernel-debug-modules-extra')
+                    prefer(providers, 'sblim-sfcb', 'tog-pegasus') # cim-server
+
+                    # (weston or cage or kwin-wayland or mutter or gnome-kiosk)
+                    prefer(providers, 'gnome-kiosk', 'mutter')
+
+                    #prefer(providers, 'emacs', 'emacs-lucid', 'emacs-nw', 'emacs-gtk+x11')
+                    if rel.name == 'emacs(bin)':
+                        providers = [p for p in providers if p.name == 'emacs']
+
+                    if rel.name == 'opencryptoki(token)':
+                        providers = [p for p in providers if p.name == 'opencryptoki-swtok']
+
+                    if rel.name == 'glibc-langpack':
+                        providers = [p for p in providers if p.name == 'glibc-minimal-langpack']
+
+                    if rel.name == 'selinux-policy-any':
+                        providers = [p for p in providers if p.name == 'selinux-policy-minimum']
+
+                    if rel.name == 'lorax-templates':
+                        providers = [p for p in providers if p.name == 'lorax-templates-generic']
+
+                    if rel.name == 'maven-jdk-binding':
+                        providers = [p for p in providers if p.name == 'maven-unbound']
+
+                    if rel.name == 'mvn(org.apache.tomcat:tomcat-servlet-api)':
+                        providers = [p for p in providers if p.name == 'tomcat-servlet-6.0-api']
+
+                    # packages appearing in several locations
+                    # there should be already only 1 evr per package name, but be safe
+                    providers = list(dict( ((p.name, p.evr), p) for p in providers).values())
+
+                assert len(providers) == 1, f"too many providers for {rel}: {[str(p) for p in providers]} {tuple(p.name for p in providers)}"
+
+                requires.add(providers[0])
+
+            # FIXME: this assumes there is no "more recent provider"
+            # for those packages, that would not match the reldep
+            rdeps = f"\n {'\n '.join(p.name for p in requires)}\n" if requires else ""
+            print(f'RDEPENDS:{p.name} = "{rdeps}"', file=r)
+
+cachedirs = {}
 
 with (tempfile.TemporaryDirectory() as persistdir,
       tempfile.TemporaryDirectory() as reposdir,
