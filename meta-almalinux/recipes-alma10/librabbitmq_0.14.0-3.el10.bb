@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "librabbitmq"
 PE = "0"
 PV = "0.14.0"

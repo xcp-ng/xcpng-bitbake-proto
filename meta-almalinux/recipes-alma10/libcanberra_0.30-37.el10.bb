@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libcanberra"
 PE = "0"
 PV = "0.30"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Canary-Stability"
 PE = "0"
 PV = "2013"

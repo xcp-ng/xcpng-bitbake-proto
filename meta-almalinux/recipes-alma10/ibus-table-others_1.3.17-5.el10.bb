@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ibus-table-others"
 PE = "0"
 PV = "1.3.17"

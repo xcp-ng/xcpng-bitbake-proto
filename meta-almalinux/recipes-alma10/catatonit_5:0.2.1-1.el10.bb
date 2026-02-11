@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "catatonit"
 PE = "5"
 PV = "0.2.1"

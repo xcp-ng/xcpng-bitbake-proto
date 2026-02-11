@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pytest"
 PE = "0"
 PV = "7.4.3"

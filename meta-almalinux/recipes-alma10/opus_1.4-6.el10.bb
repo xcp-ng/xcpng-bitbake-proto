@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "opus"
 PE = "0"
 PV = "1.4"

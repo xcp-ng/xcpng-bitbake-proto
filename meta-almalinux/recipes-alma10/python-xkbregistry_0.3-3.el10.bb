@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-xkbregistry"
 PE = "0"
 PV = "0.3"

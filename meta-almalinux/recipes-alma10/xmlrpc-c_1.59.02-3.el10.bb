@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xmlrpc-c"
 PE = "0"
 PV = "1.59.02"

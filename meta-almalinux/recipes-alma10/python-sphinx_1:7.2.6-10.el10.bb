@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-sphinx"
 PE = "1"
 PV = "7.2.6"

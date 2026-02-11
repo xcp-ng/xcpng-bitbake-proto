@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-kramdown"
 PE = "0"
 PV = "2.4.0"

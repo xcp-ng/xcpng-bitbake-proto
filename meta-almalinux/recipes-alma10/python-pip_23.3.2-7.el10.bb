@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pip"
 PE = "0"
 PV = "23.3.2"

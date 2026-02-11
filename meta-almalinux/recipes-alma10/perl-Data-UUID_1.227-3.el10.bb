@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Data-UUID"
 PE = "0"
 PV = "1.227"

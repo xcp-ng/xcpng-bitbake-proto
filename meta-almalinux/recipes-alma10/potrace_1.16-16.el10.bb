@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "potrace"
 PE = "0"
 PV = "1.16"

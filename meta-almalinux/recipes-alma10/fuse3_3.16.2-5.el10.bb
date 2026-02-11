@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fuse3"
 PE = "0"
 PV = "3.16.2"

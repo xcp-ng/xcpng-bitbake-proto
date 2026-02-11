@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mecab"
 PE = "0"
 PV = "0.996"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-setuptools"
 PE = "0"
 PV = "69.0.3"

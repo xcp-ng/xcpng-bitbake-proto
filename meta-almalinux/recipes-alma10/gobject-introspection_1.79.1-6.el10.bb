@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gobject-introspection"
 PE = "0"
 PV = "1.79.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cloud-init"
 PE = "0"
 PV = "24.4"

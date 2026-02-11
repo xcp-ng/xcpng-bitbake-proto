@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libdvdread"
 PE = "0"
 PV = "6.1.3"

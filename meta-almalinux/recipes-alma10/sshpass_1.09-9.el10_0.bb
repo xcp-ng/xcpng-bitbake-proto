@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sshpass"
 PE = "0"
 PV = "1.09"

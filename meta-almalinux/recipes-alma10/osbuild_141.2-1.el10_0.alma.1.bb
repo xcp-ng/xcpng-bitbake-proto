@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "osbuild"
 PE = "0"
 PV = "141.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hplip"
 PE = "0"
 PV = "3.23.12"

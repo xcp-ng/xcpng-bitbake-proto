@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "publicsuffix-list"
 PE = "0"
 PV = "20240107"

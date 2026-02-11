@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "guestfs-tools"
 PE = "0"
 PV = "1.52.2"

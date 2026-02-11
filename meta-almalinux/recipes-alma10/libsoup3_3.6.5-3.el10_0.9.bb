@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libsoup3"
 PE = "0"
 PV = "3.6.5"

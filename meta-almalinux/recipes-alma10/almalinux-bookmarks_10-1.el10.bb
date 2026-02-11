@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "almalinux-bookmarks"
 PE = "0"
 PV = "10"

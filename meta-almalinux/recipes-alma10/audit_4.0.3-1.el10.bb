@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "audit"
 PE = "0"
 PV = "4.0.3"

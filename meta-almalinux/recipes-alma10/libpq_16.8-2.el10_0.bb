@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpq"
 PE = "0"
 PV = "16.8"

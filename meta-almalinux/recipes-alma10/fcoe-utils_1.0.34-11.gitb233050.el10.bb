@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fcoe-utils"
 PE = "0"
 PV = "1.0.34"

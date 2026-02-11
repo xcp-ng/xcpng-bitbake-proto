@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ModemManager"
 PE = "0"
 PV = "1.22.0"

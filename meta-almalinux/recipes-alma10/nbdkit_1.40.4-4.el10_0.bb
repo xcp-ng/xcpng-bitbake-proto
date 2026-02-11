@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nbdkit"
 PE = "0"
 PV = "1.40.4"

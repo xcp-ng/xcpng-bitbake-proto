@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "golang"
 PE = "0"
 PV = "1.24.6"

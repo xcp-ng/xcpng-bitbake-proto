@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libmicrohttpd"
 PE = "1"
 PV = "1.0.0"

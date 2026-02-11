@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pesign"
 PE = "0"
 PV = "116"

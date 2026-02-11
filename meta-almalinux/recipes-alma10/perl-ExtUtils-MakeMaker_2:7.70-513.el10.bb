@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-ExtUtils-MakeMaker"
 PE = "2"
 PV = "7.70"

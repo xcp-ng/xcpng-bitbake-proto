@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "varnish"
 PE = "0"
 PV = "7.6.1"

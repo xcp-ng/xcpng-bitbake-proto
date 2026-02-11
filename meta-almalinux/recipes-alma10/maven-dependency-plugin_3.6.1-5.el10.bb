@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-dependency-plugin"
 PE = "0"
 PV = "3.6.1"

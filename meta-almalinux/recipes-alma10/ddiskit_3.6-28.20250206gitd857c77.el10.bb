@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ddiskit"
 PE = "0"
 PV = "3.6"

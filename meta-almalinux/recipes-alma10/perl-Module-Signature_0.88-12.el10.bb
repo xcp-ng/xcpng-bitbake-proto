@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-Signature"
 PE = "0"
 PV = "0.88"

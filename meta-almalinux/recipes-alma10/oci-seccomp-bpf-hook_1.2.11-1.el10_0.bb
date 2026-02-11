@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "oci-seccomp-bpf-hook"
 PE = "0"
 PV = "1.2.11"

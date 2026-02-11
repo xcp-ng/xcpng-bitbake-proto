@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Types-Serialiser"
 PE = "0"
 PV = "1.01"

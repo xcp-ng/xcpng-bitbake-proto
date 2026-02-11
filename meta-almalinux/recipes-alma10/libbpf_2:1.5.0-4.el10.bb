@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libbpf"
 PE = "2"
 PV = "1.5.0"

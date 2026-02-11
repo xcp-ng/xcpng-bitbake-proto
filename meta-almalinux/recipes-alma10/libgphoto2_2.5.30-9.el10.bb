@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libgphoto2"
 PE = "0"
 PV = "2.5.30"

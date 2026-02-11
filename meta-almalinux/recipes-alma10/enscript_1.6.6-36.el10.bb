@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "enscript"
 PE = "0"
 PV = "1.6.6"

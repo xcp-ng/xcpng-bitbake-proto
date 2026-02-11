@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dogtag-pki"
 PE = "0"
 PV = "11.6.0"

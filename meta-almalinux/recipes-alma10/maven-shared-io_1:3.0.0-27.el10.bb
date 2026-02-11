@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-shared-io"
 PE = "1"
 PV = "3.0.0"

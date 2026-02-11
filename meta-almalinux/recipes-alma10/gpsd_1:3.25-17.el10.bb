@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gpsd"
 PE = "1"
 PV = "3.25"

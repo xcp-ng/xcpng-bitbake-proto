@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tzdata"
 PE = "0"
 PV = "2025b"

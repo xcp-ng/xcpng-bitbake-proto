@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "docbook-utils"
 PE = "0"
 PV = "0.6.14"

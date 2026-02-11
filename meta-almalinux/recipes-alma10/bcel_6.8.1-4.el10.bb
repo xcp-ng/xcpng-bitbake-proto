@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bcel"
 PE = "0"
 PV = "6.8.1"

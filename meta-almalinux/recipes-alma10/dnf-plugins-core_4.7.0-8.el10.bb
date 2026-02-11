@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dnf-plugins-core"
 PE = "0"
 PV = "4.7.0"

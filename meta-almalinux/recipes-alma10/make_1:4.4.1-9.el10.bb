@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "make"
 PE = "1"
 PV = "4.4.1"

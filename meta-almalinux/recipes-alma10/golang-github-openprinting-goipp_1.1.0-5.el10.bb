@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "golang-github-openprinting-goipp"
 PE = "0"
 PV = "1.1.0"

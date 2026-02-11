@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Tie-IxHash"
 PE = "0"
 PV = "1.23"

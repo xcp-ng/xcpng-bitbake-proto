@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "postgresql16-pg_repack"
 PE = "0"
 PV = "1.5.1"

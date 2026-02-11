@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-rspec-expectations"
 PE = "0"
 PV = "3.13.0"

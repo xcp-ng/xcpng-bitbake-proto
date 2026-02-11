@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "scap-security-guide"
 PE = "0"
 PV = "0.1.78"

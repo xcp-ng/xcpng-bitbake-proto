@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-color-manager"
 PE = "0"
 PV = "3.36.0"

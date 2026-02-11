@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libksba"
 PE = "0"
 PV = "1.6.7"

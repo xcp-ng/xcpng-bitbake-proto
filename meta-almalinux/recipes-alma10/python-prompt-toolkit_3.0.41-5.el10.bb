@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-prompt-toolkit"
 PE = "0"
 PV = "3.0.41"

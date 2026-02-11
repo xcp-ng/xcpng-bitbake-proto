@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-configshell"
 PE = "1"
 PV = "1.1.30"

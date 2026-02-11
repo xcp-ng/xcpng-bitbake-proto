@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libyang"
 PE = "0"
 PV = "2.1.148"

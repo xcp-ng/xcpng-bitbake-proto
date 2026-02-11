@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "chrony"
 PE = "0"
 PV = "4.6.1"

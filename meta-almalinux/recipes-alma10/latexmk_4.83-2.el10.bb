@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "latexmk"
 PE = "0"
 PV = "4.83"

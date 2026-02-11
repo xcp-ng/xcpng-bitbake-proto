@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-devel-docs"
 PE = "0"
 PV = "40.3"

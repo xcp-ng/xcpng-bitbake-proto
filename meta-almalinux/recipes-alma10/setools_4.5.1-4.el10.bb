@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "setools"
 PE = "0"
 PV = "4.5.1"

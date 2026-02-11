@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Time-Local"
 PE = "2"
 PV = "1.350"

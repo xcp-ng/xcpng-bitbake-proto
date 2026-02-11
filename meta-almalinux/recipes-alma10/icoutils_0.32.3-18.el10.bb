@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "icoutils"
 PE = "0"
 PV = "0.32.3"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "crontabs"
 PE = "0"
 PV = "1.11^20190603git9e74f2d"

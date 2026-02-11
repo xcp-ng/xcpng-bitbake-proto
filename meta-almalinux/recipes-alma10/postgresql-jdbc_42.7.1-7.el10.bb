@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "postgresql-jdbc"
 PE = "0"
 PV = "42.7.1"

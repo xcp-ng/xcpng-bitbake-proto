@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xalan-j2"
 PE = "0"
 PV = "2.7.3"

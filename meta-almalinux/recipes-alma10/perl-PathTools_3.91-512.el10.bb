@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-PathTools"
 PE = "0"
 PV = "3.91"

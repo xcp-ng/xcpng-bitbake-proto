@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "composefs"
 PE = "0"
 PV = "1.0.8"

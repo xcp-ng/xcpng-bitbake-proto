@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "thunderbird"
 PE = "0"
 PV = "140.4.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xmlto"
 PE = "0"
 PV = "0.0.28"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tomcat"
 PE = "1"
 PV = "10.1.36"

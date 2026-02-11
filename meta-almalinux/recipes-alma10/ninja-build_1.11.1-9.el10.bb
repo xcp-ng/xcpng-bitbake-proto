@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ninja-build"
 PE = "0"
 PV = "1.11.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dcraw"
 PE = "0"
 PV = "9.28.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "catch1"
 PE = "0"
 PV = "1.12.2"

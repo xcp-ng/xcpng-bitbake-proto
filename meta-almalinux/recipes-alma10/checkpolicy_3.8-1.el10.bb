@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "checkpolicy"
 PE = "0"
 PV = "3.8"

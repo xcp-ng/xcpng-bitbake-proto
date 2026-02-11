@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "weldr-client"
 PE = "0"
 PV = "35.11"

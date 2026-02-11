@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-Temp"
 PE = "1"
 PV = "0.231.100"

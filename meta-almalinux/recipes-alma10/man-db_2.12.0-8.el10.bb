@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "man-db"
 PE = "0"
 PV = "2.12.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pmix"
 PE = "0"
 PV = "4.2.8"

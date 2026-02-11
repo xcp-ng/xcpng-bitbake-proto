@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-CPANfile"
 PE = "0"
 PV = "1.1004"

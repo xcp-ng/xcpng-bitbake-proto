@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rust-coreos-installer"
 PE = "0"
 PV = "0.23.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cglib"
 PE = "0"
 PV = "3.3.0"

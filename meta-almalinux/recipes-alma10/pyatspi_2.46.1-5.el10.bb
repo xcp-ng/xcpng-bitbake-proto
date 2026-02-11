@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pyatspi"
 PE = "0"
 PV = "2.46.1"

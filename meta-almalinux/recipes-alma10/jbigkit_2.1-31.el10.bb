@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jbigkit"
 PE = "0"
 PV = "2.1"

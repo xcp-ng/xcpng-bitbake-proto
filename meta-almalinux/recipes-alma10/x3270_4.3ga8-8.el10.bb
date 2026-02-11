@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "x3270"
 PE = "0"
 PV = "4.3ga8"

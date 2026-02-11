@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpcap"
 PE = "14"
 PV = "1.10.4"

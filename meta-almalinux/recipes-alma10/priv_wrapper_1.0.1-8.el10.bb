@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "priv_wrapper"
 PE = "0"
 PV = "1.0.1"

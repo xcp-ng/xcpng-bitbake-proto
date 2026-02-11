@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "redis"
 PE = "0"
 PV = "7.2.4"

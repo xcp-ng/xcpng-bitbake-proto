@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "file"
 PE = "0"
 PV = "5.45"

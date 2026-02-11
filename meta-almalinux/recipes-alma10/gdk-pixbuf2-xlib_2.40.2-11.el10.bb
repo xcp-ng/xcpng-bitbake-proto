@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gdk-pixbuf2-xlib"
 PE = "0"
 PV = "2.40.2"

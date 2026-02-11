@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Tk"
 PE = "0"
 PV = "804.036"

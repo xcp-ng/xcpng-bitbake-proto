@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "iio-sensor-proxy"
 PE = "0"
 PV = "3.5"

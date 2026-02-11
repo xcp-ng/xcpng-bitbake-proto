@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_fcgid"
 PE = "0"
 PV = "2.3.9"

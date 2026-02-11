@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "scapy"
 PE = "0"
 PV = "2.6.1"

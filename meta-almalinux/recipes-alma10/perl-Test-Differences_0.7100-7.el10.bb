@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Test-Differences"
 PE = "0"
 PV = "0.7100"

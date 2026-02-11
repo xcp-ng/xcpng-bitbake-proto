@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "automake"
 PE = "0"
 PV = "1.16.5"

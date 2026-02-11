@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hwdata"
 PE = "0"
 PV = "0.379"

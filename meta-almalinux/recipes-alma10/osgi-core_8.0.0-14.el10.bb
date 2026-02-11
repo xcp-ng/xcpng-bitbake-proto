@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "osgi-core"
 PE = "0"
 PV = "8.0.0"

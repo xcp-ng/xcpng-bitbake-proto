@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sil-nuosu-fonts"
 PE = "0"
 PV = "2.200"

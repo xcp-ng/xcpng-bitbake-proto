@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "java-21-openjdk"
 PE = "1"
 PV = "21.0.9.0.10"

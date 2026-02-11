@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gfs2-utils"
 PE = "0"
 PV = "3.5.1"

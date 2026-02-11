@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven"
 PE = "1"
 PV = "3.9.9"

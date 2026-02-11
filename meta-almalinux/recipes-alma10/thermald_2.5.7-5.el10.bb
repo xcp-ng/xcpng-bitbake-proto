@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "thermald"
 PE = "0"
 PV = "2.5.7"

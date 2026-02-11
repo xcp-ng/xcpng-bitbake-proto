@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Test-InDistDir"
 PE = "0"
 PV = "1.112071"

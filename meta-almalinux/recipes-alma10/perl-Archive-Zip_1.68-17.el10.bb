@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Archive-Zip"
 PE = "0"
 PV = "1.68"

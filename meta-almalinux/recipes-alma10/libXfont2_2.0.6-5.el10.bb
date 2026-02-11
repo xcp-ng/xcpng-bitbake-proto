@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libXfont2"
 PE = "0"
 PV = "2.0.6"

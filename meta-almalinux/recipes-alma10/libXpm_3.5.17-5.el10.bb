@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libXpm"
 PE = "0"
 PV = "3.5.17"

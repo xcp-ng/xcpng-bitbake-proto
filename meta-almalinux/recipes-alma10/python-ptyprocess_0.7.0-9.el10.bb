@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-ptyprocess"
 PE = "0"
 PV = "0.7.0"

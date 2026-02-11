@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jctools"
 PE = "0"
 PV = "4.0.2"

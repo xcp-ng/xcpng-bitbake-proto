@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "adobe-mappings-cmap"
 PE = "0"
 PV = "20230622"

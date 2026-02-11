@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "teckit"
 PE = "0"
 PV = "2.5.12"

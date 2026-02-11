@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "papi"
 PE = "0"
 PV = "7.1.0"

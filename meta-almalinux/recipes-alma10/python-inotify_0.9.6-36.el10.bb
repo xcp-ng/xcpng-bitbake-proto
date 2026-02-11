@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-inotify"
 PE = "0"
 PV = "0.9.6"

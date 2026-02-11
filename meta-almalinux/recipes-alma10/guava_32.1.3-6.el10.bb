@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "guava"
 PE = "0"
 PV = "32.1.3"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dos2unix"
 PE = "0"
 PV = "7.5.2"

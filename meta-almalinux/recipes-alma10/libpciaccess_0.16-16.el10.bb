@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpciaccess"
 PE = "0"
 PV = "0.16"

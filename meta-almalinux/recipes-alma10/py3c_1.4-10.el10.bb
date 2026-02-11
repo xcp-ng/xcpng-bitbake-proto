@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "py3c"
 PE = "0"
 PV = "1.4"

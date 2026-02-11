@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IO-HTML"
 PE = "0"
 PV = "1.004"

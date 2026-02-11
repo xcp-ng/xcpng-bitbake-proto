@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "qatlib"
 PE = "0"
 PV = "24.09.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "byte-buddy"
 PE = "0"
 PV = "1.14.2"

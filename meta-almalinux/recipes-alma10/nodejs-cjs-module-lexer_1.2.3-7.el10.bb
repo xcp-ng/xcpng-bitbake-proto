@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nodejs-cjs-module-lexer"
 PE = "0"
 PV = "1.2.3"

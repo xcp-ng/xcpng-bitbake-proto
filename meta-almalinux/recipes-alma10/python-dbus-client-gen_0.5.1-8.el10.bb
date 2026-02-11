@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-dbus-client-gen"
 PE = "0"
 PV = "0.5.1"

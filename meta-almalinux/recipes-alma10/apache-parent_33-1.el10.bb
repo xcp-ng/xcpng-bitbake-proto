@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-parent"
 PE = "0"
 PV = "33"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "freeipmi"
 PE = "0"
 PV = "1.6.14"

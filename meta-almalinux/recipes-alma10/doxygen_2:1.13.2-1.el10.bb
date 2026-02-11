@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "doxygen"
 PE = "2"
 PV = "1.13.2"

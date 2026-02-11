@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "satyr"
 PE = "0"
 PV = "0.43"

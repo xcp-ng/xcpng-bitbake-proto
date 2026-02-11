@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "testng"
 PE = "0"
 PV = "7.8.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lsof"
 PE = "0"
 PV = "4.98.0"

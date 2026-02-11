@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Carp"
 PE = "0"
 PV = "1.54"

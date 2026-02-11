@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "log4j"
 PE = "0"
 PV = "2.20.0"

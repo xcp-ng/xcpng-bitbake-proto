@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mysql-selinux"
 PE = "0"
 PV = "1.0.14"

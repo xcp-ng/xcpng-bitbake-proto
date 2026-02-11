@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xorg-x11-xinit"
 PE = "0"
 PV = "1.4.2"

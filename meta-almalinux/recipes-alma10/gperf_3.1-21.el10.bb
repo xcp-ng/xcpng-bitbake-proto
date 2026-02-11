@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gperf"
 PE = "0"
 PV = "3.1"

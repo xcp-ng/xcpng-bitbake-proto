@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-jsonpatch"
 PE = "0"
 PV = "1.33"

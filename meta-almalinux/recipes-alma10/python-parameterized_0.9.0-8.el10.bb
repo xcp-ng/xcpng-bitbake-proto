@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-parameterized"
 PE = "0"
 PV = "0.9.0"

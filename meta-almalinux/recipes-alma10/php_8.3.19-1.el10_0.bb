@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "php"
 PE = "0"
 PV = "8.3.19"

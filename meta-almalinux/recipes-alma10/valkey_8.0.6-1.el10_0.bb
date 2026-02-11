@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "valkey"
 PE = "0"
 PV = "8.0.6"

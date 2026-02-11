@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fetchmail"
 PE = "0"
 PV = "6.4.38"

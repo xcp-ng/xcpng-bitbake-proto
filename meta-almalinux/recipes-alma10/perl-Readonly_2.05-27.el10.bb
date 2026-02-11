@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Readonly"
 PE = "0"
 PV = "2.05"

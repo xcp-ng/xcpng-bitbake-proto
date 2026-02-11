@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apr-util"
 PE = "0"
 PV = "1.6.3"

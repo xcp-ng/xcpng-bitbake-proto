@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libSM"
 PE = "0"
 PV = "1.2.4"

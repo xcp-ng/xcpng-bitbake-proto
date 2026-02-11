@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-srvany"
 PE = "0"
 PV = "1.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "web-assets"
 PE = "0"
 PV = "5"

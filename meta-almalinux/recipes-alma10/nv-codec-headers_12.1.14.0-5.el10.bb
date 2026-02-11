@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nv-codec-headers"
 PE = "0"
 PV = "12.1.14.0"

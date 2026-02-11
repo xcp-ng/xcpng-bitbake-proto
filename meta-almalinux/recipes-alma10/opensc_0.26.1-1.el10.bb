@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "opensc"
 PE = "0"
 PV = "0.26.1"

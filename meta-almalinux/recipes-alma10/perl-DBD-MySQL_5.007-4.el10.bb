@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-DBD-MySQL"
 PE = "0"
 PV = "5.007"

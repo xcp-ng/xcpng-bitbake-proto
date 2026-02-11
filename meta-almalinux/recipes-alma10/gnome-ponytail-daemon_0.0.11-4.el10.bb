@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-ponytail-daemon"
 PE = "0"
 PV = "0.0.11"

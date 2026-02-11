@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "accel-config"
 PE = "0"
 PV = "4.1.8"

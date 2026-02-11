@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "open-sans-fonts"
 PE = "0"
 PV = "1.10"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "waypipe"
 PE = "0"
 PV = "0.8.6"

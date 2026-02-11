@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocaml-dune"
 PE = "0"
 PV = "3.16.0"

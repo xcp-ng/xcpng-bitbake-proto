@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tcsh"
 PE = "0"
 PV = "6.24.10"

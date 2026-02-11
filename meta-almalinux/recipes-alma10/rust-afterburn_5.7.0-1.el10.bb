@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rust-afterburn"
 PE = "0"
 PV = "5.7.0"

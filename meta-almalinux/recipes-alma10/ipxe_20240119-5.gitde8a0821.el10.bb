@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ipxe"
 PE = "0"
 PV = "20240119"

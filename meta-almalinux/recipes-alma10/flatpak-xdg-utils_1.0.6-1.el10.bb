@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "flatpak-xdg-utils"
 PE = "0"
 PV = "1.0.6"

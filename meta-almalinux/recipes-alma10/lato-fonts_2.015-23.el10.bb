@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lato-fonts"
 PE = "0"
 PV = "2.015"

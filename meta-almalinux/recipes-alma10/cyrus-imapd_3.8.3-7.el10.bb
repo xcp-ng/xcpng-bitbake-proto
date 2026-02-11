@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cyrus-imapd"
 PE = "0"
 PV = "3.8.3"

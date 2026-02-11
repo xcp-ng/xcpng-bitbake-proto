@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "containers-common"
 PE = "5"
 PV = "0.62.0"

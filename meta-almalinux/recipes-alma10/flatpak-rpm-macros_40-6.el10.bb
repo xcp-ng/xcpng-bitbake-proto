@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "flatpak-rpm-macros"
 PE = "0"
 PV = "40"

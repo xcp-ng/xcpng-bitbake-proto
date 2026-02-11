@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "udev-hid-bpf"
 PE = "0"
 PV = "2.1.0.20240704"

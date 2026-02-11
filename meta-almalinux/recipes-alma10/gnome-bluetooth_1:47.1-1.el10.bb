@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-bluetooth"
 PE = "1"
 PV = "47.1"

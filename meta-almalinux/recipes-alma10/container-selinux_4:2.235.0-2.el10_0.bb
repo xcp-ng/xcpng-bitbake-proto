@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "container-selinux"
 PE = "4"
 PV = "2.235.0"

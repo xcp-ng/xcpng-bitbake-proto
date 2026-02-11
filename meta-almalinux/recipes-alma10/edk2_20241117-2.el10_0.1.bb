@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "edk2"
 PE = "0"
 PV = "20241117"

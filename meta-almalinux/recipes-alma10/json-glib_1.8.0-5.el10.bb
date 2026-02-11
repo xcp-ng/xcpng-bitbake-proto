@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "json-glib"
 PE = "0"
 PV = "1.8.0"

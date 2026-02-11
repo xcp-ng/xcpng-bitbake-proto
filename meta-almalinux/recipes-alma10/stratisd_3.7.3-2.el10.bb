@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "stratisd"
 PE = "0"
 PV = "3.7.3"

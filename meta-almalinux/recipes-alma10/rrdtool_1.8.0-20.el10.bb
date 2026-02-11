@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rrdtool"
 PE = "0"
 PV = "1.8.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpeas1"
 PE = "0"
 PV = "1.36.0"

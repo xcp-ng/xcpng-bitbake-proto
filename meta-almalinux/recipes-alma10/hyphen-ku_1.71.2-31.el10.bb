@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hyphen-ku"
 PE = "0"
 PV = "1.71.2"

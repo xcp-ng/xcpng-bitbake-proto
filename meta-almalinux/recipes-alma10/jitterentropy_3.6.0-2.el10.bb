@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jitterentropy"
 PE = "0"
 PV = "3.6.0"

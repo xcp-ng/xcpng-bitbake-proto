@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nmstate"
 PE = "0"
 PV = "2.2.54"

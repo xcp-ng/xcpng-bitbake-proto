@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plexus-interpolation"
 PE = "0"
 PV = "1.27"

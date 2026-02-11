@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nvme-cli"
 PE = "0"
 PV = "2.11"

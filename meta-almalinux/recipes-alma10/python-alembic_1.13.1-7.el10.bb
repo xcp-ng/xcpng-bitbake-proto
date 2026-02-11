@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-alembic"
 PE = "0"
 PV = "1.13.1"

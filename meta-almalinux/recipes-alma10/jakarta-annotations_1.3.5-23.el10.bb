@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jakarta-annotations"
 PE = "0"
 PV = "1.3.5"

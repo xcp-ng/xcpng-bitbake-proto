@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "newt"
 PE = "0"
 PV = "0.52.24"

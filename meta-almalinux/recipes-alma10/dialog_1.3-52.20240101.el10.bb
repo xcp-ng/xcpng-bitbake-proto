@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dialog"
 PE = "0"
 PV = "1.3"

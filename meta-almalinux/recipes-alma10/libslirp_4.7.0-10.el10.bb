@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libslirp"
 PE = "0"
 PV = "4.7.0"

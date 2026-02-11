@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Scalar-List-Utils"
 PE = "5"
 PV = "1.63"

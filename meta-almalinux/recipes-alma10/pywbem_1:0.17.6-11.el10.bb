@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pywbem"
 PE = "1"
 PV = "0.17.6"

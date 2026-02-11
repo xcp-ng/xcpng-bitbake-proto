@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libnfnetlink"
 PE = "0"
 PV = "1.0.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mythes-eo"
 PE = "0"
 PV = "0.20180330"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ima-evm-utils"
 PE = "0"
 PV = "1.6.2"

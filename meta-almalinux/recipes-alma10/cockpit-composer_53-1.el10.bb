@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cockpit-composer"
 PE = "0"
 PV = "53"

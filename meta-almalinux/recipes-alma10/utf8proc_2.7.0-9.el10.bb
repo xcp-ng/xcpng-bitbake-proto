@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "utf8proc"
 PE = "0"
 PV = "2.7.0"

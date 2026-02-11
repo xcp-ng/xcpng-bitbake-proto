@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "trace-cmd"
 PE = "0"
 PV = "3.3.1"

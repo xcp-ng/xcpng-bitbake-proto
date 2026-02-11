@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sip6"
 PE = "0"
 PV = "6.9.0"

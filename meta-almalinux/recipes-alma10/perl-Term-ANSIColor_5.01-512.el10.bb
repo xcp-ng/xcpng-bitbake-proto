@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Term-ANSIColor"
 PE = "0"
 PV = "5.01"

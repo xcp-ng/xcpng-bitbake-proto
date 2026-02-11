@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "replacer"
 PE = "0"
 PV = "1.6"

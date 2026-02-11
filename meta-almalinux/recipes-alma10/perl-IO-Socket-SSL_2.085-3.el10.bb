@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IO-Socket-SSL"
 PE = "0"
 PV = "2.085"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-asn1crypto"
 PE = "0"
 PV = "1.5.1"

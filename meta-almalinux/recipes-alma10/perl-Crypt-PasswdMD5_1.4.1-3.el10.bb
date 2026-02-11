@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Crypt-PasswdMD5"
 PE = "0"
 PV = "1.4.1"

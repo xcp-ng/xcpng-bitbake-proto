@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dovecot"
 PE = "1"
 PV = "2.3.21"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_lookup_identity"
 PE = "0"
 PV = "1.0.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libstoragemgmt"
 PE = "0"
 PV = "1.10.1"

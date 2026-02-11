@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "s390utils"
 PE = "2"
 PV = "2.36.0"

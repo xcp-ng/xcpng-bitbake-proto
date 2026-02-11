@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cifs-utils"
 PE = "0"
 PV = "7.2"

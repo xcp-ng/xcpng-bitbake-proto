@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "linuxptp"
 PE = "0"
 PV = "4.4"

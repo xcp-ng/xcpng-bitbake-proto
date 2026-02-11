@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libglvnd"
 PE = "1"
 PV = "1.7.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-thread_order"
 PE = "0"
 PV = "1.1.1"

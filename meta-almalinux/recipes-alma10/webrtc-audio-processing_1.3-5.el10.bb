@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "webrtc-audio-processing"
 PE = "0"
 PV = "1.3"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-cups"
 PE = "0"
 PV = "2.0.1"

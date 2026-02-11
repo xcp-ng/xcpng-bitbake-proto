@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libatomic_ops"
 PE = "0"
 PV = "7.8.2"

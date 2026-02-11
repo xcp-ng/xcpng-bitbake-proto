@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gpgme"
 PE = "0"
 PV = "1.23.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ansible-collection-microsoft-sql"
 PE = "0"
 PV = "2.5.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-requests-ftp"
 PE = "0"
 PV = "0.3.1"

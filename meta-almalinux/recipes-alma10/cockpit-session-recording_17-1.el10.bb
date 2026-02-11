@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cockpit-session-recording"
 PE = "0"
 PV = "17"

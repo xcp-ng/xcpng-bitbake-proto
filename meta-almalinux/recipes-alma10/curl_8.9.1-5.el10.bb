@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "curl"
 PE = "0"
 PV = "8.9.1"

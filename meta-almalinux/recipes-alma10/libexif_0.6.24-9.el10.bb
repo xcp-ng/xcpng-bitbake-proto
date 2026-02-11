@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libexif"
 PE = "0"
 PV = "0.6.24"

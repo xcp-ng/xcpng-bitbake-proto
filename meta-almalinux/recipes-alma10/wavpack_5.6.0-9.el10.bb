@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "wavpack"
 PE = "0"
 PV = "5.6.0"

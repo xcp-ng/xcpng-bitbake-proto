@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "polkit"
 PE = "0"
 PV = "125"

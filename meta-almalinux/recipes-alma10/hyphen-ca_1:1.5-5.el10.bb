@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hyphen-ca"
 PE = "1"
 PV = "1.5"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "basesystem"
 PE = "0"
 PV = "11"

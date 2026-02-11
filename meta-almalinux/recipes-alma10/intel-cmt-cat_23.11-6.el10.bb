@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "intel-cmt-cat"
 PE = "0"
 PV = "23.11"

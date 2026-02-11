@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xerces-j2"
 PE = "0"
 PV = "2.12.2"

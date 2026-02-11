@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-shell-extension-dash-to-panel"
 PE = "0"
 PV = "64"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nodejs-packaging"
 PE = "0"
 PV = "2023.10"

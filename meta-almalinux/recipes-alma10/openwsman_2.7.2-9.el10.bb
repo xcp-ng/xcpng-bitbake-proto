@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "openwsman"
 PE = "0"
 PV = "2.7.2"

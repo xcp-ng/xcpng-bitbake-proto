@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-systemd"
 PE = "0"
 PV = "235"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libuv"
 PE = "1"
 PV = "1.51.0"

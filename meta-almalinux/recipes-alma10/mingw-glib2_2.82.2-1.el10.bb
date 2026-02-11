@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-glib2"
 PE = "0"
 PV = "2.82.2"

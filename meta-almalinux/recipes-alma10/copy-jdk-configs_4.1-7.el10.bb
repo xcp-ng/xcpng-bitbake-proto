@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "copy-jdk-configs"
 PE = "0"
 PV = "4.1"

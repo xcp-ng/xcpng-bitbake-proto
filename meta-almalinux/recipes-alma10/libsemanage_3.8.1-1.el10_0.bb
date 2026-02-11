@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libsemanage"
 PE = "0"
 PV = "3.8.1"

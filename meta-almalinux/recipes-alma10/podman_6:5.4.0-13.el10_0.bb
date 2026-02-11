@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "podman"
 PE = "6"
 PV = "5.4.0"

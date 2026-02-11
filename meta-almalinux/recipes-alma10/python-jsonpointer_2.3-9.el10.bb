@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-jsonpointer"
 PE = "0"
 PV = "2.3"

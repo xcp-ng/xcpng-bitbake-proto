@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "toolbox"
 PE = "0"
 PV = "0.2"

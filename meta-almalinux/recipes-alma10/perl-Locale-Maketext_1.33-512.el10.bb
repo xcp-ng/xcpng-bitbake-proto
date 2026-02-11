@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Locale-Maketext"
 PE = "0"
 PV = "1.33"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jackson-jaxrs-providers"
 PE = "0"
 PV = "2.14.2"

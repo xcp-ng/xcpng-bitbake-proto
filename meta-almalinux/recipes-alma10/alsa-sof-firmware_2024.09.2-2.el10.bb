@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "alsa-sof-firmware"
 PE = "0"
 PV = "2024.09.2"

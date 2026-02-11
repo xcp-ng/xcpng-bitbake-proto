@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libgee"
 PE = "0"
 PV = "0.20.6"

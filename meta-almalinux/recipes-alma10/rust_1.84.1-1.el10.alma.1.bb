@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rust"
 PE = "0"
 PV = "1.84.1"

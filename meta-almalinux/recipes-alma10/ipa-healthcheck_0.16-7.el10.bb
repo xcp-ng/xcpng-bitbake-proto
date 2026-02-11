@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ipa-healthcheck"
 PE = "0"
 PV = "0.16"

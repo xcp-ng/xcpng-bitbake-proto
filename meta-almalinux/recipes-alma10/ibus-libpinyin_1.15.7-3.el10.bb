@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ibus-libpinyin"
 PE = "0"
 PV = "1.15.7"

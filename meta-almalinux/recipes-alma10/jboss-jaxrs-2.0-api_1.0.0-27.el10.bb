@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jboss-jaxrs-2.0-api"
 PE = "0"
 PV = "1.0.0"

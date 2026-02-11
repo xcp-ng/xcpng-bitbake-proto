@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Mozilla-CA"
 PE = "0"
 PV = "20231213"

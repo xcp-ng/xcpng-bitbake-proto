@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Import-Into"
 PE = "0"
 PV = "1.002005"

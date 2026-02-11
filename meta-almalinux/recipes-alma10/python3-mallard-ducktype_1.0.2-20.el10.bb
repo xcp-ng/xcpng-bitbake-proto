@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python3-mallard-ducktype"
 PE = "0"
 PV = "1.0.2"

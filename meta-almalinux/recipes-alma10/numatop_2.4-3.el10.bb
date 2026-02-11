@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "numatop"
 PE = "0"
 PV = "2.4"

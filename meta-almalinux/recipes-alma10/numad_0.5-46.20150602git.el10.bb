@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "numad"
 PE = "0"
 PV = "0.5"

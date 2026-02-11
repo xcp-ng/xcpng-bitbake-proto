@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "osinfo-db"
 PE = "0"
 PV = "20250124"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gcab"
 PE = "0"
 PV = "1.6"

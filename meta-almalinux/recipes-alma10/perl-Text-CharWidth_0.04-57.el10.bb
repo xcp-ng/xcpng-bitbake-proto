@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-CharWidth"
 PE = "0"
 PV = "0.04"

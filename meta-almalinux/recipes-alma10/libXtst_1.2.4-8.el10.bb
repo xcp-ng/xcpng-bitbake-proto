@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libXtst"
 PE = "0"
 PV = "1.2.4"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libwnck3"
 PE = "0"
 PV = "43.0"

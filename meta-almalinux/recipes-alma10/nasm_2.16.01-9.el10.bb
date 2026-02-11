@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nasm"
 PE = "0"
 PV = "2.16.01"

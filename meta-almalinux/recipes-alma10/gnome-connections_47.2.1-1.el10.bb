@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-connections"
 PE = "0"
 PV = "47.2.1"

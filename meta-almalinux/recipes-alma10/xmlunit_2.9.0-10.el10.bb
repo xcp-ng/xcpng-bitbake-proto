@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xmlunit"
 PE = "0"
 PV = "2.9.0"

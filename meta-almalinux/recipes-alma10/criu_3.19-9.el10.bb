@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "criu"
 PE = "0"
 PV = "3.19"

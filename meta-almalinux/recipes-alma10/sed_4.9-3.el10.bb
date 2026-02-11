@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sed"
 PE = "0"
 PV = "4.9"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mobile-broadband-provider-info"
 PE = "0"
 PV = "20230416"

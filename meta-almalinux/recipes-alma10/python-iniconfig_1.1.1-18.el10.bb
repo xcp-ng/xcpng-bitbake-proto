@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-iniconfig"
 PE = "0"
 PV = "1.1.1"

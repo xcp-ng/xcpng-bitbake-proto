@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rpmdevtools"
 PE = "0"
 PV = "9.6"

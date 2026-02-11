@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libgit2"
 PE = "0"
 PV = "1.7.2"

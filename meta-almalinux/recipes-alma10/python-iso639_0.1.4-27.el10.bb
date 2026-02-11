@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-iso639"
 PE = "0"
 PV = "0.1.4"

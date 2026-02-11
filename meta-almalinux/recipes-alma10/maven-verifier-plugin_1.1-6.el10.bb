@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-verifier-plugin"
 PE = "0"
 PV = "1.1"

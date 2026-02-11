@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "anthy-unicode"
 PE = "0"
 PV = "1.0.0.20240502"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fusesource-pom"
 PE = "0"
 PV = "1.12"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xz-java"
 PE = "0"
 PV = "1.9"

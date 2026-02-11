@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cim-schema"
 PE = "0"
 PV = "2.54.1"

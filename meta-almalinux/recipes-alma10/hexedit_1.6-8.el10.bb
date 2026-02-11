@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hexedit"
 PE = "0"
 PV = "1.6"

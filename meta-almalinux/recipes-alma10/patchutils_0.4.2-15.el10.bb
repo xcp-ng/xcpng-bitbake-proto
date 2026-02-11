@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "patchutils"
 PE = "0"
 PV = "0.4.2"

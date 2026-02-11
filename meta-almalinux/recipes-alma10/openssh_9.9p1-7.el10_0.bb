@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "openssh"
 PE = "0"
 PV = "9.9p1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-SGMLSpm"
 PE = "0"
 PV = "1.03ii"

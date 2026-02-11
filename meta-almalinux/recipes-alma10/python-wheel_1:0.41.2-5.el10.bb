@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-wheel"
 PE = "1"
 PV = "0.41.2"

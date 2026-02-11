@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-autodie"
 PE = "0"
 PV = "2.37"

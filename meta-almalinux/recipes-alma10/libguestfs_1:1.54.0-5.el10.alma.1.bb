@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libguestfs"
 PE = "1"
 PV = "1.54.0"

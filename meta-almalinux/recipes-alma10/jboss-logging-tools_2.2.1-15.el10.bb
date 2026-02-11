@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jboss-logging-tools"
 PE = "0"
 PV = "2.2.1"

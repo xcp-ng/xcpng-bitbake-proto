@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cockpit-ostree"
 PE = "1"
 PV = "207"

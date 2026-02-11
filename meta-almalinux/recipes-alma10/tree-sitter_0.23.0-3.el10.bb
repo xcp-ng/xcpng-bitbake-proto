@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tree-sitter"
 PE = "0"
 PV = "0.23.0"

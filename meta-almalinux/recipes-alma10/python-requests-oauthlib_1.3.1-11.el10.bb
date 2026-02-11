@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-requests-oauthlib"
 PE = "0"
 PV = "1.3.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cryptsetup"
 PE = "0"
 PV = "2.7.5"

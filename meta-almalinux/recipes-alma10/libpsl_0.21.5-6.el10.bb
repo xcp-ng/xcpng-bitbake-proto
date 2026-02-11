@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpsl"
 PE = "0"
 PV = "0.21.5"

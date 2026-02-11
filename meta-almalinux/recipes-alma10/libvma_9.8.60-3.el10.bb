@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libvma"
 PE = "0"
 PV = "9.8.60"

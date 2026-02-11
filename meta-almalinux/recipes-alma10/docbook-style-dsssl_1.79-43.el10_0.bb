@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "docbook-style-dsssl"
 PE = "0"
 PV = "1.79"

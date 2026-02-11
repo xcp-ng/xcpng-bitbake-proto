@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lzo"
 PE = "0"
 PV = "2.10"

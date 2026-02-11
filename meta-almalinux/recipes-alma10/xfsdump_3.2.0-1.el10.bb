@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xfsdump"
 PE = "0"
 PV = "3.2.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tuna"
 PE = "0"
 PV = "0.19"

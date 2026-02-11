@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jackson-modules-base"
 PE = "0"
 PV = "2.16.1"

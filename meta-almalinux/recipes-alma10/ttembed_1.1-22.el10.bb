@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ttembed"
 PE = "0"
 PV = "1.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jomolhari-fonts"
 PE = "0"
 PV = "0.003"

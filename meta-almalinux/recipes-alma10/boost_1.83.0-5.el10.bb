@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "boost"
 PE = "0"
 PV = "1.83.0"

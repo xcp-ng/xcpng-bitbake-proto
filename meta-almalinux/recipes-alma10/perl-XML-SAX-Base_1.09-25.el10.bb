@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-XML-SAX-Base"
 PE = "0"
 PV = "1.09"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "qt6-qtspeech"
 PE = "0"
 PV = "6.8.1"

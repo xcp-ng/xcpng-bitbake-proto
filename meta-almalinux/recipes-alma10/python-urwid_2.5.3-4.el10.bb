@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-urwid"
 PE = "0"
 PV = "2.5.3"

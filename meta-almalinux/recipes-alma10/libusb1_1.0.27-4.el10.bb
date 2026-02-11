@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libusb1"
 PE = "0"
 PV = "1.0.27"

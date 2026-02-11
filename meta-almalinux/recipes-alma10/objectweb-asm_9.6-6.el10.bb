@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "objectweb-asm"
 PE = "0"
 PV = "9.6"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "galera"
 PE = "0"
 PV = "26.4.21"

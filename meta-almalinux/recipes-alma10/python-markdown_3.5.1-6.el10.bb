@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-markdown"
 PE = "0"
 PV = "3.5.1"

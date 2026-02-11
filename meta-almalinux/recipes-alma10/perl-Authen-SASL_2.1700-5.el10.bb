@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Authen-SASL"
 PE = "0"
 PV = "2.1700"

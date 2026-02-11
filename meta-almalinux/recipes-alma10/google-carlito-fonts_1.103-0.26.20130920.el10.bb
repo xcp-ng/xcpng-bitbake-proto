@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "google-carlito-fonts"
 PE = "0"
 PV = "1.103"

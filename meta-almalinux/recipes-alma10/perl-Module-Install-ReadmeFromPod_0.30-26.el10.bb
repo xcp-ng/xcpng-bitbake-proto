@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-Install-ReadmeFromPod"
 PE = "0"
 PV = "0.30"

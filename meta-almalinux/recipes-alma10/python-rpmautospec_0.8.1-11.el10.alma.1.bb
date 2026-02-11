@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-rpmautospec"
 PE = "0"
 PV = "0.8.1"

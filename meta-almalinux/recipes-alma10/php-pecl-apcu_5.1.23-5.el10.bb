@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "php-pecl-apcu"
 PE = "0"
 PV = "5.1.23"

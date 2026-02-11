@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plexus-xml"
 PE = "0"
 PV = "3.0.0"

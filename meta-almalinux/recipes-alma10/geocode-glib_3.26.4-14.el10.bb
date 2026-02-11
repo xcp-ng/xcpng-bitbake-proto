@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "geocode-glib"
 PE = "0"
 PV = "3.26.4"

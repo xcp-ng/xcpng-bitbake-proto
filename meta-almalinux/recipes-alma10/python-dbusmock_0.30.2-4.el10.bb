@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-dbusmock"
 PE = "0"
 PV = "0.30.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dejavu-fonts"
 PE = "0"
 PV = "2.37"

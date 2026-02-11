@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-bignum"
 PE = "0"
 PV = "0.67"

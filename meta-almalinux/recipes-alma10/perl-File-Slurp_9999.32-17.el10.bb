@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-Slurp"
 PE = "0"
 PV = "9999.32"

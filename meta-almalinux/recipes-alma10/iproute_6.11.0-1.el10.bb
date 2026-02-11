@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "iproute"
 PE = "0"
 PV = "6.11.0"

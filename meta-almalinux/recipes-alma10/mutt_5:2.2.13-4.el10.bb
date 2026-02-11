@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mutt"
 PE = "5"
 PV = "2.2.13"

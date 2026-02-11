@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-sphinx_rtd_theme"
 PE = "0"
 PV = "2.0.0"

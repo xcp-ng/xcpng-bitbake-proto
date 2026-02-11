@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Taint-Runtime"
 PE = "0"
 PV = "0.03"

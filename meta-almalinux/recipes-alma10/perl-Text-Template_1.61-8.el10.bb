@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-Template"
 PE = "0"
 PV = "1.61"

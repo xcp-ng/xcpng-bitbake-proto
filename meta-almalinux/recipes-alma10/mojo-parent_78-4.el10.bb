@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mojo-parent"
 PE = "0"
 PV = "78"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xhost"
 PE = "0"
 PV = "1.0.9"

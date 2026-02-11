@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-Install"
 PE = "0"
 PV = "1.21"

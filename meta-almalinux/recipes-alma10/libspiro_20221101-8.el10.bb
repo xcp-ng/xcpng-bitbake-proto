@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libspiro"
 PE = "0"
 PV = "20221101"

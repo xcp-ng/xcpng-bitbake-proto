@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fido-device-onboard"
 PE = "0"
 PV = "0.5.3"

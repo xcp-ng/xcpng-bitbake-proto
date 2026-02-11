@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-nokogiri"
 PE = "0"
 PV = "1.16.4"

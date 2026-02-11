@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tboot"
 PE = "1"
 PV = "1.11.9"

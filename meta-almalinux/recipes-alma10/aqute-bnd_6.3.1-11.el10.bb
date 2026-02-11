@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "aqute-bnd"
 PE = "0"
 PV = "6.3.1"

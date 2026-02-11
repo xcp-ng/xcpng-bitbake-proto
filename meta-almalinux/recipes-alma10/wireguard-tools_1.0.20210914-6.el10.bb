@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "wireguard-tools"
 PE = "0"
 PV = "1.0.20210914"

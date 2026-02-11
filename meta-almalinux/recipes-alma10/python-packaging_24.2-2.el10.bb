@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-packaging"
 PE = "0"
 PV = "24.2"

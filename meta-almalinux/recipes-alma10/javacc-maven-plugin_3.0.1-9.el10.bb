@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "javacc-maven-plugin"
 PE = "0"
 PV = "3.0.1"

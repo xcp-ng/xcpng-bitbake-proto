@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Capture-Tiny"
 PE = "0"
 PV = "0.48"

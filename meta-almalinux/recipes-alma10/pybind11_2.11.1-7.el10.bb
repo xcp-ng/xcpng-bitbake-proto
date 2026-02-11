@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pybind11"
 PE = "0"
 PV = "2.11.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mpg123"
 PE = "0"
 PV = "1.32.9"

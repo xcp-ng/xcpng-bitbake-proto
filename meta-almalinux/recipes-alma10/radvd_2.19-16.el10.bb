@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "radvd"
 PE = "0"
 PV = "2.19"

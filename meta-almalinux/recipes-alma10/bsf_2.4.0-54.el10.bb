@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bsf"
 PE = "0"
 PV = "2.4.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pytest-lazy-fixture"
 PE = "0"
 PV = "0.6.3"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libXrandr"
 PE = "0"
 PV = "1.5.4"

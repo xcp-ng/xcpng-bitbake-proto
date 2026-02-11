@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "redfish-finder"
 PE = "0"
 PV = "0.4"

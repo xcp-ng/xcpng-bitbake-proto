@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocl-icd"
 PE = "0"
 PV = "2.3.2"

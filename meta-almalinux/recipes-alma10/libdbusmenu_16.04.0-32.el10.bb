@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libdbusmenu"
 PE = "0"
 PV = "16.04.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tracer"
 PE = "0"
 PV = "1.1"

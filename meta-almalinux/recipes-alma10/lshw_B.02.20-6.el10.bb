@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lshw"
 PE = "0"
 PV = "B.02.20"

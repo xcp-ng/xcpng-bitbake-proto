@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-drgn"
 PE = "0"
 PV = "0.0.29"

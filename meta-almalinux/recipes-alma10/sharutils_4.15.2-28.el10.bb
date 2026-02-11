@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sharutils"
 PE = "0"
 PV = "4.15.2"

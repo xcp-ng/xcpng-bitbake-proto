@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nvmetcli"
 PE = "0"
 PV = "0.8"

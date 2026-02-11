@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-pushd"
 PE = "0"
 PV = "1.016"

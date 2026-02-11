@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libvirt-glib"
 PE = "0"
 PV = "5.0.0"

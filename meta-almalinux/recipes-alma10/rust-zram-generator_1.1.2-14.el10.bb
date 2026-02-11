@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rust-zram-generator"
 PE = "0"
 PV = "1.1.2"

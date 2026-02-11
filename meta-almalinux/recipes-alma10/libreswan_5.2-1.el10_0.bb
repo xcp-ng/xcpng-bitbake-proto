@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libreswan"
 PE = "0"
 PV = "5.2"

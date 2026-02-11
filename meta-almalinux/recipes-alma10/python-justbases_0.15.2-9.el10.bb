@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-justbases"
 PE = "0"
 PV = "0.15.2"

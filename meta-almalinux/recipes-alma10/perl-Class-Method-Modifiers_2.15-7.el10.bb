@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Class-Method-Modifiers"
 PE = "0"
 PV = "2.15"

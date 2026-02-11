@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libgudev"
 PE = "0"
 PV = "238"

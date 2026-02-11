@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "synce4l"
 PE = "0"
 PV = "1.1.0"

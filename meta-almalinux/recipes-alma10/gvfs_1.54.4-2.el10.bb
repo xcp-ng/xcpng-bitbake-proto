@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gvfs"
 PE = "0"
 PV = "1.54.4"

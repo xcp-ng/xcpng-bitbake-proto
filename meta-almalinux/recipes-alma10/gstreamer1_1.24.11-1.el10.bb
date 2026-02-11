@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gstreamer1"
 PE = "0"
 PV = "1.24.11"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fontawesome4-fonts"
 PE = "1"
 PV = "4.7.0"

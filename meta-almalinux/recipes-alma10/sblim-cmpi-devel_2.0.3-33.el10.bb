@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sblim-cmpi-devel"
 PE = "0"
 PV = "2.0.3"

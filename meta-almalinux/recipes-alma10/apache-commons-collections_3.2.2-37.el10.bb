@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-commons-collections"
 PE = "0"
 PV = "3.2.2"

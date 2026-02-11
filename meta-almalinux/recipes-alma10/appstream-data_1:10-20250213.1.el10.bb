@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "appstream-data"
 PE = "1"
 PV = "10"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dbus"
 PE = "1"
 PV = "1.14.10"

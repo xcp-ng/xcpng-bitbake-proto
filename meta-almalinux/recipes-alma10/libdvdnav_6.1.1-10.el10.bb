@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libdvdnav"
 PE = "0"
 PV = "6.1.1"

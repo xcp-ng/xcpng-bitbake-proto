@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libxmlb"
 PE = "0"
 PV = "0.3.15"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mutter"
 PE = "0"
 PV = "47.5"

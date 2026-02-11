@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rhel-system-roles"
 PE = "0"
 PV = "1.95.7"

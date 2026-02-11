@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libsndfile"
 PE = "0"
 PV = "1.2.2"

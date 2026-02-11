@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cockpit"
 PE = "0"
 PV = "334.1"

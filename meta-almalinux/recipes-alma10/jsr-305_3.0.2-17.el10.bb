@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jsr-305"
 PE = "0"
 PV = "3.0.2"

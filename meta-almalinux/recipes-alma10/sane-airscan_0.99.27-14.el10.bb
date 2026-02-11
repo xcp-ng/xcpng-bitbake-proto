@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sane-airscan"
 PE = "0"
 PV = "0.99.27"

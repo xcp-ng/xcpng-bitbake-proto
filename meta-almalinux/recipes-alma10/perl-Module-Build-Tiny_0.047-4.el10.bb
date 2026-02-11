@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-Build-Tiny"
 PE = "0"
 PV = "0.047"

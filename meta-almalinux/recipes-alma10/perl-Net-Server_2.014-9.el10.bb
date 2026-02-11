@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Net-Server"
 PE = "0"
 PV = "2.014"

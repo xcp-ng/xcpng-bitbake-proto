@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "restore"
 PE = "1"
 PV = "0.4"

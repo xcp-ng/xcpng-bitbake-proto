@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "at-spi2-core"
 PE = "0"
 PV = "2.52.0"

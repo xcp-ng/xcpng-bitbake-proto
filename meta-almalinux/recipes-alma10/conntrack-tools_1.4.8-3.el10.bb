@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "conntrack-tools"
 PE = "0"
 PV = "1.4.8"

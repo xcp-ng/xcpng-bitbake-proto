@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-w64-tools"
 PE = "0"
 PV = "12.0.0"

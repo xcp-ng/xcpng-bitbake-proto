@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libtracefs"
 PE = "0"
 PV = "1.8.0"

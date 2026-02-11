@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "subscription-manager-rhsm-certificates"
 PE = "0"
 PV = "20220623"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Crypt-DES"
 PE = "0"
 PV = "2.07"

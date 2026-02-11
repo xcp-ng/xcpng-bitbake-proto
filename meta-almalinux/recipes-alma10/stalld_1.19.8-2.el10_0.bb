@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "stalld"
 PE = "0"
 PV = "1.19.8"

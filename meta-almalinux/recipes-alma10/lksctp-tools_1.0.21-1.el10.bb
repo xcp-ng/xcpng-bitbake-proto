@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lksctp-tools"
 PE = "0"
 PV = "1.0.21"

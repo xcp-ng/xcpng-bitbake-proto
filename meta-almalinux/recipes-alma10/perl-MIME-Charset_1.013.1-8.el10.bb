@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-MIME-Charset"
 PE = "0"
 PV = "1.013.1"

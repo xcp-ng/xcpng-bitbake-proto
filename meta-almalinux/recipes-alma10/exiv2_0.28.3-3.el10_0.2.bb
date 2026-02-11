@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "exiv2"
 PE = "0"
 PV = "0.28.3"

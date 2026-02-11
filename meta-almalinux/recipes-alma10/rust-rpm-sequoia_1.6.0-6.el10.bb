@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rust-rpm-sequoia"
 PE = "0"
 PV = "1.6.0"

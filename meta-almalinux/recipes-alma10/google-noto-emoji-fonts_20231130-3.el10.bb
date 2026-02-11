@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "google-noto-emoji-fonts"
 PE = "0"
 PV = "20231130"

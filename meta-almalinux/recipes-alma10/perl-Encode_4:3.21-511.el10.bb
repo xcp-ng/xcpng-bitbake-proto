@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Encode"
 PE = "4"
 PV = "3.21"

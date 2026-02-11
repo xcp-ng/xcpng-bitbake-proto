@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Sub-Exporter-Progressive"
 PE = "0"
 PV = "0.001013"

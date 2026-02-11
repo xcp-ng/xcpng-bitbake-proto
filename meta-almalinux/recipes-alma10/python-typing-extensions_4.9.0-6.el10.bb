@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-typing-extensions"
 PE = "0"
 PV = "4.9.0"

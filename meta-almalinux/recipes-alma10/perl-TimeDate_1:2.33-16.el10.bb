@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-TimeDate"
 PE = "1"
 PV = "2.33"

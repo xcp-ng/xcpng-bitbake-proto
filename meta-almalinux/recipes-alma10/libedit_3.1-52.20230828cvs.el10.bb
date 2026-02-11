@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libedit"
 PE = "0"
 PV = "3.1"

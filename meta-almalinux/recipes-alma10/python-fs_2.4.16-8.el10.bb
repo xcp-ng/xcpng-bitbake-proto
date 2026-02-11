@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-fs"
 PE = "0"
 PV = "2.4.16"

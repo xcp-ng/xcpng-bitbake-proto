@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bubblewrap"
 PE = "0"
 PV = "0.10.0"

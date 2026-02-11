@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-kiosk"
 PE = "0"
 PV = "47.0"

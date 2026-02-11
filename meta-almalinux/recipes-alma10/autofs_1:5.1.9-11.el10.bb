@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "autofs"
 PE = "1"
 PV = "5.1.9"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-ronn-ng"
 PE = "0"
 PV = "0.10.1"

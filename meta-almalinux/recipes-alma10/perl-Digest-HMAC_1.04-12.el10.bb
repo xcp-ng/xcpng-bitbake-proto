@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Digest-HMAC"
 PE = "0"
 PV = "1.04"

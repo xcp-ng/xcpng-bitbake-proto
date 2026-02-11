@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-Metadata"
 PE = "0"
 PV = "1.000038"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "e2fsprogs"
 PE = "0"
 PV = "1.47.1"

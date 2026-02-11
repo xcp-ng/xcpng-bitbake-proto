@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sudo"
 PE = "0"
 PV = "1.9.15"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "numpy"
 PE = "1"
 PV = "1.26.4"

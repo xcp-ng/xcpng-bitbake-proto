@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "zsh"
 PE = "0"
 PV = "5.9"

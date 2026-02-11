@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "icu"
 PE = "0"
 PV = "74.2"

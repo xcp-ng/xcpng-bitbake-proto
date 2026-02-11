@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-parent"
 PE = "1"
 PV = "0.241"

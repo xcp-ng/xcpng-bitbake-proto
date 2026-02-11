@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IO-Compress"
 PE = "0"
 PV = "2.212"

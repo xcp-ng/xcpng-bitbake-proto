@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bzip2"
 PE = "0"
 PV = "1.0.8"

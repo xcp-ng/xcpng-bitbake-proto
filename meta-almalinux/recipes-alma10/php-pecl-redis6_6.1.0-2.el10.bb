@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "php-pecl-redis6"
 PE = "0"
 PV = "6.1.0"

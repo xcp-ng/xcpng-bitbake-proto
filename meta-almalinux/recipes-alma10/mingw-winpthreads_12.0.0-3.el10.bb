@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-winpthreads"
 PE = "0"
 PV = "12.0.0"

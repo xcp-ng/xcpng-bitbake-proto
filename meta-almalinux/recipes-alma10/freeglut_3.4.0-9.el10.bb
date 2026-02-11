@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "freeglut"
 PE = "0"
 PV = "3.4.0"

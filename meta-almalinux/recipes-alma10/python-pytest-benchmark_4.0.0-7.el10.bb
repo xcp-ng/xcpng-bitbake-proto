@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pytest-benchmark"
 PE = "0"
 PV = "4.0.0"

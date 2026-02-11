@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "targetcli"
 PE = "0"
 PV = "2.1.58"

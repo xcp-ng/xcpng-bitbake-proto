@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-MimeInfo"
 PE = "0"
 PV = "0.34"

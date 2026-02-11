@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pt-sans-fonts"
 PE = "0"
 PV = "20141121"

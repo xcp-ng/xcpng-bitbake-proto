@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nodejs20"
 PE = "1"
 PV = "20.11.0"

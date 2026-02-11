@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Digest-SHA1"
 PE = "0"
 PV = "2.13"

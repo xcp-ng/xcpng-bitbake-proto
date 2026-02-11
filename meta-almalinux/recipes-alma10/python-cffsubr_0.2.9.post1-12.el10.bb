@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-cffsubr"
 PE = "0"
 PV = "0.2.9.post1"

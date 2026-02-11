@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-settings-daemon"
 PE = "0"
 PV = "47.2"

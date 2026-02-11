@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-gssapi"
 PE = "0"
 PV = "1.7.3"

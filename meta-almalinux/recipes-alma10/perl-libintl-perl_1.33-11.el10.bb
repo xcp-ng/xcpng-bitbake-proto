@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-libintl-perl"
 PE = "0"
 PV = "1.33"

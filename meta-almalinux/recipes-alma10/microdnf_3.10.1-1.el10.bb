@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "microdnf"
 PE = "0"
 PV = "3.10.1"

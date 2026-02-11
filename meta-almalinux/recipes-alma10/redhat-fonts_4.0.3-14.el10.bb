@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "redhat-fonts"
 PE = "0"
 PV = "4.0.3"

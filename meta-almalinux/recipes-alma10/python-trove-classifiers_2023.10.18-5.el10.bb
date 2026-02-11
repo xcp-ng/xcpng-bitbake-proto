@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-trove-classifiers"
 PE = "0"
 PV = "2023.10.18"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Math-BigInt-GMP"
 PE = "0"
 PV = "1.7001"

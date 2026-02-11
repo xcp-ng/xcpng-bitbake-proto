@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libthai"
 PE = "0"
 PV = "0.1.29"

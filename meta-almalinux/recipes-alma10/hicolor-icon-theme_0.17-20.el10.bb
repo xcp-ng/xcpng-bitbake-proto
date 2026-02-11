@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hicolor-icon-theme"
 PE = "0"
 PV = "0.17"

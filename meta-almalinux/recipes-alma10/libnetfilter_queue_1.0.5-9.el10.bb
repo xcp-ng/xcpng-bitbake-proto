@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libnetfilter_queue"
 PE = "0"
 PV = "1.0.5"

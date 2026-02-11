@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ignition"
 PE = "0"
 PV = "2.21.0"

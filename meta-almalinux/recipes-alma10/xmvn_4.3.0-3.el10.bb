@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xmvn"
 PE = "0"
 PV = "4.3.0"

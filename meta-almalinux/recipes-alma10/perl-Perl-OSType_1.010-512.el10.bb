@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Perl-OSType"
 PE = "0"
 PV = "1.010"

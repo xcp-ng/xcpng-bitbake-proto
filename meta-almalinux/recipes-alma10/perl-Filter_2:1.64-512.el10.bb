@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Filter"
 PE = "2"
 PV = "1.64"

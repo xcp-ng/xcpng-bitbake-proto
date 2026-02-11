@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-artifact-transfer"
 PE = "1"
 PV = "0.13.1"

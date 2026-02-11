@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lua-posix"
 PE = "0"
 PV = "36.2.1"

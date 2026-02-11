@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "openblas-srpm-macros"
 PE = "0"
 PV = "2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Unicode-Normalize"
 PE = "0"
 PV = "1.32"

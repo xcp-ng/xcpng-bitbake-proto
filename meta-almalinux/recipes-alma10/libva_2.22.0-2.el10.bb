@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libva"
 PE = "0"
 PV = "2.22.0"

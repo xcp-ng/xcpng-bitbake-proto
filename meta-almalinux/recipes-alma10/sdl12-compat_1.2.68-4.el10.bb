@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sdl12-compat"
 PE = "0"
 PV = "1.2.68"

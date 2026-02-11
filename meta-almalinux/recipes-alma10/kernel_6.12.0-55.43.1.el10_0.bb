@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kernel"
 PE = "0"
 PV = "6.12.0"

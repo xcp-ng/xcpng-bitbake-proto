@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libmbim"
 PE = "0"
 PV = "1.30.0"

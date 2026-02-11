@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-setuptools-rust"
 PE = "0"
 PV = "1.10.2"

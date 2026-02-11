@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "linux-firmware"
 PE = "0"
 PV = "20251008"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cockpit-image-builder"
 PE = "0"
 PV = "60"

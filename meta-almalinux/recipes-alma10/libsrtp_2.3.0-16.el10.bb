@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libsrtp"
 PE = "0"
 PV = "2.3.0"

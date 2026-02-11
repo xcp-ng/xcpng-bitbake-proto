@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-ExtUtils-CBuilder"
 PE = "1"
 PV = "0.280240"

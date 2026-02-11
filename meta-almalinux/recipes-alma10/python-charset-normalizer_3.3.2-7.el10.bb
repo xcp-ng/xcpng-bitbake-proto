@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-charset-normalizer"
 PE = "0"
 PV = "3.3.2"

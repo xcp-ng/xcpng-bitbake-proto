@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "uresourced"
 PE = "0"
 PV = "0.5.4"

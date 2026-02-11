@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ucs-miscfixed-fonts"
 PE = "0"
 PV = "0.3"

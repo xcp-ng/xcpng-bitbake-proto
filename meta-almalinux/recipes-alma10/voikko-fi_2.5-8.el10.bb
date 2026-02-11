@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "voikko-fi"
 PE = "0"
 PV = "2.5"

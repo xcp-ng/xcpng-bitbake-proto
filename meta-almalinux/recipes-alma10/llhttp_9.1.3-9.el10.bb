@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "llhttp"
 PE = "0"
 PV = "9.1.3"

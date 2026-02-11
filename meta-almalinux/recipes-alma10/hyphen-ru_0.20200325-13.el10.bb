@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hyphen-ru"
 PE = "0"
 PV = "0.20200325"

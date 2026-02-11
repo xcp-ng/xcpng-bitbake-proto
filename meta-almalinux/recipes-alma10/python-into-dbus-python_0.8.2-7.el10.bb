@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-into-dbus-python"
 PE = "0"
 PV = "0.8.2"

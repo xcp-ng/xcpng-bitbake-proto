@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ghostscript"
 PE = "0"
 PV = "10.02.1"

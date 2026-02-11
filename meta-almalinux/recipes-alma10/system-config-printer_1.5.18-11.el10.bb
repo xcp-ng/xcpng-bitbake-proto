@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "system-config-printer"
 PE = "0"
 PV = "1.5.18"

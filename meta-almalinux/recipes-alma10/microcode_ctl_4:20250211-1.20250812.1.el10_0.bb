@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "microcode_ctl"
 PE = "4"
 PV = "20250211"

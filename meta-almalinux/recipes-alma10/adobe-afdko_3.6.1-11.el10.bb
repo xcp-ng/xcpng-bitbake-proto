@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "adobe-afdko"
 PE = "0"
 PV = "3.6.1"

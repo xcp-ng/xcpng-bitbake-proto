@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "acpica-tools"
 PE = "0"
 PV = "20240322"

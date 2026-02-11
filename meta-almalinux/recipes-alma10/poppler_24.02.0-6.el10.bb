@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "poppler"
 PE = "0"
 PV = "24.02.0"

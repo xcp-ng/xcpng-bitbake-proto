@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "opencryptoki"
 PE = "0"
 PV = "3.24.0"

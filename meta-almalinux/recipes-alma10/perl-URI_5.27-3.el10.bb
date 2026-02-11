@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-URI"
 PE = "0"
 PV = "5.27"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sassc"
 PE = "0"
 PV = "3.4.1"

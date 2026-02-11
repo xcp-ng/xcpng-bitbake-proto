@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "grub2"
 PE = "1"
 PV = "2.12"

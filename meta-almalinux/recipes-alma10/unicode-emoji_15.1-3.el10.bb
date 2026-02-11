@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "unicode-emoji"
 PE = "0"
 PV = "15.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocaml-findlib"
 PE = "0"
 PV = "1.9.6"

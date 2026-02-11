@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cepces"
 PE = "0"
 PV = "0.3.9"

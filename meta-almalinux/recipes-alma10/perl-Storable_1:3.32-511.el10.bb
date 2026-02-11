@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Storable"
 PE = "1"
 PV = "3.32"

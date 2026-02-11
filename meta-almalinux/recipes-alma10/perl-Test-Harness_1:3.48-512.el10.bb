@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Test-Harness"
 PE = "1"
 PV = "3.48"

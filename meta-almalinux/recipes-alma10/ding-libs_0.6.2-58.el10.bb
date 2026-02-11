@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ding-libs"
 PE = "0"
 PV = "0.6.2"

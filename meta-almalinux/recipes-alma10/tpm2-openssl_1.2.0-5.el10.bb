@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tpm2-openssl"
 PE = "0"
 PV = "1.2.0"

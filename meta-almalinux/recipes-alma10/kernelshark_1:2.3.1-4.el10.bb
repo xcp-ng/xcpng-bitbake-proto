@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kernelshark"
 PE = "1"
 PV = "2.3.1"

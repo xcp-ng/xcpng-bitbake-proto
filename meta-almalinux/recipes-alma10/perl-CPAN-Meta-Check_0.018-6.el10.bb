@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-CPAN-Meta-Check"
 PE = "0"
 PV = "0.018"

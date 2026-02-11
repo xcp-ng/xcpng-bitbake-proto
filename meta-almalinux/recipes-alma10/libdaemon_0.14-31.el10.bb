@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libdaemon"
 PE = "0"
 PV = "0.14"

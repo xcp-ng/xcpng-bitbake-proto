@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xhtml1-dtds"
 PE = "0"
 PV = "1.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IO-Socket-INET6"
 PE = "0"
 PV = "2.73"

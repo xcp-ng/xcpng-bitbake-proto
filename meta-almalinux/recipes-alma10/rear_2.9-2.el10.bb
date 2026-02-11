@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rear"
 PE = "0"
 PV = "2.9"

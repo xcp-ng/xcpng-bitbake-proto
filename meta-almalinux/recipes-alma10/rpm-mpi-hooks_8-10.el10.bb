@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rpm-mpi-hooks"
 PE = "0"
 PV = "8"

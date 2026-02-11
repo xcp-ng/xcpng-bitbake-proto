@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libtpms"
 PE = "0"
 PV = "0.9.6"

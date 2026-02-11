@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pyudev"
 PE = "0"
 PV = "0.24.1"

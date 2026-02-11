@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Date-Calc"
 PE = "0"
 PV = "6.4"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pyproject-hooks"
 PE = "0"
 PV = "1.0.0"

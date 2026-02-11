@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "SDL2"
 PE = "0"
 PV = "2.28.5"

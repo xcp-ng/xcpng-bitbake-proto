@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "yara"
 PE = "0"
 PV = "4.5.2"

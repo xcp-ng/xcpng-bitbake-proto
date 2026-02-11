@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rust-sequoia-sqv"
 PE = "0"
 PV = "1.3.0"

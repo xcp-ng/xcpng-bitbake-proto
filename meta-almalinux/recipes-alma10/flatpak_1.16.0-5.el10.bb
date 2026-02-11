@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "flatpak"
 PE = "0"
 PV = "1.16.0"

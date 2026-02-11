@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jansi"
 PE = "0"
 PV = "2.4.1"

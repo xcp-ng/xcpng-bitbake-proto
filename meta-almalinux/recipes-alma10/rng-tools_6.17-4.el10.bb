@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rng-tools"
 PE = "0"
 PV = "6.17"

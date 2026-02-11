@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "librepo"
 PE = "0"
 PV = "1.18.0"

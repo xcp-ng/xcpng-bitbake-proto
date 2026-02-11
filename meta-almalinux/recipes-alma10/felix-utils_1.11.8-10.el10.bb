@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "felix-utils"
 PE = "0"
 PV = "1.11.8"

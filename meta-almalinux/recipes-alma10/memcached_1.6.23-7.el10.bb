@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "memcached"
 PE = "0"
 PV = "1.6.23"

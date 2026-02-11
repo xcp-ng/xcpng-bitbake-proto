@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "postgresql16-pgaudit"
 PE = "0"
 PV = "16.0"

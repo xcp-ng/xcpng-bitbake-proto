@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bind-dyndb-ldap"
 PE = "0"
 PV = "11.11"

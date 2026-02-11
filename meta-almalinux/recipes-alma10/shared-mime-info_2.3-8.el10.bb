@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "shared-mime-info"
 PE = "0"
 PV = "2.3"

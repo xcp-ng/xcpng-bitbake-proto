@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ca-certificates"
 PE = "0"
 PV = "2025.2.80_v9.0.305"

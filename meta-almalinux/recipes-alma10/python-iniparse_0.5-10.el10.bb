@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-iniparse"
 PE = "0"
 PV = "0.5"

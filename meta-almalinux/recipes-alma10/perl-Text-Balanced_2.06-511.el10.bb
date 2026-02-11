@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-Balanced"
 PE = "0"
 PV = "2.06"

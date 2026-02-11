@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rpm-local-generator-support"
 PE = "0"
 PV = "1"

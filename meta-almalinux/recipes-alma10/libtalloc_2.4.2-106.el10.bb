@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libtalloc"
 PE = "0"
 PV = "2.4.2"

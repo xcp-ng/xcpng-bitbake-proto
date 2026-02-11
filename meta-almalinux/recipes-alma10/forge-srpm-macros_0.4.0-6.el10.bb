@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "forge-srpm-macros"
 PE = "0"
 PV = "0.4.0"

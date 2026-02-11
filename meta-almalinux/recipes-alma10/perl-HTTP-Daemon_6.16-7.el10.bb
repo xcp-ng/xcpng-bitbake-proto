@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-HTTP-Daemon"
 PE = "0"
 PV = "6.16"

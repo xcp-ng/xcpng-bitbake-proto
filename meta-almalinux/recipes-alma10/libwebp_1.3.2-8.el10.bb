@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libwebp"
 PE = "0"
 PV = "1.3.2"

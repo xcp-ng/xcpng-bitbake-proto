@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Moo"
 PE = "0"
 PV = "2.005005"

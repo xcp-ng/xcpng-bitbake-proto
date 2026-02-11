@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "argparse-manpage"
 PE = "0"
 PV = "4.5"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-dependency-tree"
 PE = "0"
 PV = "3.2.1"

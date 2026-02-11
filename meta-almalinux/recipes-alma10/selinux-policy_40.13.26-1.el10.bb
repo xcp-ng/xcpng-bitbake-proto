@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "selinux-policy"
 PE = "0"
 PV = "40.13.26"

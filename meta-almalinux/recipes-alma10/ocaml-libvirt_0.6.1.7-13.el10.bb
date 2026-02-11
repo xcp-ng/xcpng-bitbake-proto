@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocaml-libvirt"
 PE = "0"
 PV = "0.6.1.7"

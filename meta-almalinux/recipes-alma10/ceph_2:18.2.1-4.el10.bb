@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ceph"
 PE = "2"
 PV = "18.2.1"

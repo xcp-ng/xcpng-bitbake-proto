@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pappl-retrofit"
 PE = "0"
 PV = "1.0b2"

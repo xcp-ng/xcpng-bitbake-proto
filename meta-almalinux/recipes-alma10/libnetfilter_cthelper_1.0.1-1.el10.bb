@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libnetfilter_cthelper"
 PE = "0"
 PV = "1.0.1"

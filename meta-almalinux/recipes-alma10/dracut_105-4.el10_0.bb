@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dracut"
 PE = "0"
 PV = "105"

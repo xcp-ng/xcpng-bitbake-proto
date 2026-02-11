@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libxcb"
 PE = "0"
 PV = "1.17.0"

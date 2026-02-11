@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pipewire"
 PE = "0"
 PV = "1.2.7"

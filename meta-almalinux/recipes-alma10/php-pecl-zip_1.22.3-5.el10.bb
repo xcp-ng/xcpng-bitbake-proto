@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "php-pecl-zip"
 PE = "0"
 PV = "1.22.3"

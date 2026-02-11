@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Test2-Suite"
 PE = "0"
 PV = "0.000163"

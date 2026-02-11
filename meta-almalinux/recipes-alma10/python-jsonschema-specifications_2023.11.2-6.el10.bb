@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-jsonschema-specifications"
 PE = "0"
 PV = "2023.11.2"

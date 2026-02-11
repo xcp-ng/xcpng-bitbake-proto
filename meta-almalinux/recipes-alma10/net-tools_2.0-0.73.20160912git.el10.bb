@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "net-tools"
 PE = "0"
 PV = "2.0"

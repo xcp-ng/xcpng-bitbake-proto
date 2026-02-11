@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "units"
 PE = "0"
 PV = "2.22"

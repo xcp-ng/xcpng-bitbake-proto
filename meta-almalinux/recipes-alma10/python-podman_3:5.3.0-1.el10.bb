@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-podman"
 PE = "3"
 PV = "5.3.0"

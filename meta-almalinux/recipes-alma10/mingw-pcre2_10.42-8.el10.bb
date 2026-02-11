@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-pcre2"
 PE = "0"
 PV = "10.42"

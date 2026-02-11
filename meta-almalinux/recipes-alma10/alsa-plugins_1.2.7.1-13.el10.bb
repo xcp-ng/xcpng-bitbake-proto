@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "alsa-plugins"
 PE = "0"
 PV = "1.2.7.1"

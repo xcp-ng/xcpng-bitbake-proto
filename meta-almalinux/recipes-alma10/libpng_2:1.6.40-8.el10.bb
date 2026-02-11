@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpng"
 PE = "2"
 PV = "1.6.40"

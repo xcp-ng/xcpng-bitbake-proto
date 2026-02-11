@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libsolv"
 PE = "0"
 PV = "0.7.29"

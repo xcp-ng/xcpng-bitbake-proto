@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "foomatic-db"
 PE = "0"
 PV = "4.0"

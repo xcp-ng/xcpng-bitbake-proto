@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Unicode-LineBreak"
 PE = "0"
 PV = "2019.001"

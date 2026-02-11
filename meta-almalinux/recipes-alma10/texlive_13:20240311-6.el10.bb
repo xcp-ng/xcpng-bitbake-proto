@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "texlive"
 PE = "13"
 PV = "20240311"

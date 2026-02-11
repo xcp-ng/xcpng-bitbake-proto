@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xml-commons-apis"
 PE = "0"
 PV = "1.4.01"

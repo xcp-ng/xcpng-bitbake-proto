@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kexec-tools"
 PE = "0"
 PV = "2.0.29"

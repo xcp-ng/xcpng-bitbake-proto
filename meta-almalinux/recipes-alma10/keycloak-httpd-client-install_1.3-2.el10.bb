@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "keycloak-httpd-client-install"
 PE = "0"
 PV = "1.3"

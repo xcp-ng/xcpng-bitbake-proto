@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "symlinks"
 PE = "0"
 PV = "1.7"

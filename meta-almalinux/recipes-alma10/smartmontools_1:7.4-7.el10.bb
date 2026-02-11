@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "smartmontools"
 PE = "1"
 PV = "7.4"

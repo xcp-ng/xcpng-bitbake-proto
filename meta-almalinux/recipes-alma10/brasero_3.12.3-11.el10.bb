@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "brasero"
 PE = "0"
 PV = "3.12.3"

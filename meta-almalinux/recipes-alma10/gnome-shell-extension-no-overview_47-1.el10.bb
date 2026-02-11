@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-shell-extension-no-overview"
 PE = "0"
 PV = "47"

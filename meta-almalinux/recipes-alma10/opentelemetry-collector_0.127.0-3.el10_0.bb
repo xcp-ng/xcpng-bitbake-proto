@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "opentelemetry-collector"
 PE = "0"
 PV = "0.127.0"

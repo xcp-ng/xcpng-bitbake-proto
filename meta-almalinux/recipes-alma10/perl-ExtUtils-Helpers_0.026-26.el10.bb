@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-ExtUtils-Helpers"
 PE = "0"
 PV = "0.026"

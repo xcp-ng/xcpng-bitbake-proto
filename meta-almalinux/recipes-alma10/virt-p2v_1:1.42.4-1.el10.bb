@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "virt-p2v"
 PE = "1"
 PV = "1.42.4"

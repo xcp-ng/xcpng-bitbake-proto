@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "zziplib"
 PE = "0"
 PV = "0.13.78"

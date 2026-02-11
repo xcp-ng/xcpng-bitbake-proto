@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plexus-io"
 PE = "0"
 PV = "3.4.2"

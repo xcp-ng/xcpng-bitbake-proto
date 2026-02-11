@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "spice-html5"
 PE = "0"
 PV = "0.3.0"

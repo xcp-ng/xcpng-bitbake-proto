@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libuser"
 PE = "0"
 PV = "0.64"

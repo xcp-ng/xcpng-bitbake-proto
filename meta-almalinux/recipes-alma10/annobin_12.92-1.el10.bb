@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "annobin"
 PE = "0"
 PV = "12.92"

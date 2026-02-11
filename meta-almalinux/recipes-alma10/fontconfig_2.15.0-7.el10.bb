@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fontconfig"
 PE = "0"
 PV = "2.15.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "babel"
 PE = "0"
 PV = "2.13.1"

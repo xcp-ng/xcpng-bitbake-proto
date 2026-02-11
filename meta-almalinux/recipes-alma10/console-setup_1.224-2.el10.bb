@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "console-setup"
 PE = "0"
 PV = "1.224"

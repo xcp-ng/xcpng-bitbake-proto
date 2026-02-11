@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "qpdf"
 PE = "0"
 PV = "11.8.0"

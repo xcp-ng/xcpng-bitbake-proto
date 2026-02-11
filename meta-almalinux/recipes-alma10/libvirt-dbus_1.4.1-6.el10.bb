@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libvirt-dbus"
 PE = "0"
 PV = "1.4.1"

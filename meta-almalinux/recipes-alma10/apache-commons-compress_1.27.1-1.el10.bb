@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-commons-compress"
 PE = "0"
 PV = "1.27.1"

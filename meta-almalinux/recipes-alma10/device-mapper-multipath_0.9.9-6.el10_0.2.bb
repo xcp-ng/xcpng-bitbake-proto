@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "device-mapper-multipath"
 PE = "0"
 PV = "0.9.9"

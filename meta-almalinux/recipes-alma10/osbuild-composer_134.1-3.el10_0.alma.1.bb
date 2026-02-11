@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "osbuild-composer"
 PE = "0"
 PV = "134.1"

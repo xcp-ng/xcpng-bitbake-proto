@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "swtpm"
 PE = "0"
 PV = "0.9.0"

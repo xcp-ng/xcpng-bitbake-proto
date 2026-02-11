@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "iptables"
 PE = "0"
 PV = "1.8.11"

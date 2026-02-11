@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpwquality"
 PE = "0"
 PV = "1.4.5"

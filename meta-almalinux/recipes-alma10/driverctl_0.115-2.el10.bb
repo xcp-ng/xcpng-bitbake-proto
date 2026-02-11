@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "driverctl"
 PE = "0"
 PV = "0.115"

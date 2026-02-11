@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ipa"
 PE = "0"
 PV = "4.12.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-websockets"
 PE = "0"
 PV = "14.2"

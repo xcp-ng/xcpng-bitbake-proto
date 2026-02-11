@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Clone"
 PE = "0"
 PV = "0.46"

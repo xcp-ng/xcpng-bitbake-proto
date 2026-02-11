@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "crun"
 PE = "0"
 PV = "1.23.1"

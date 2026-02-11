@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cdi-api"
 PE = "0"
 PV = "2.0.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libosinfo"
 PE = "0"
 PV = "1.11.0"

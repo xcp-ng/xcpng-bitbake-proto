@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libvoikko"
 PE = "0"
 PV = "4.3.2"

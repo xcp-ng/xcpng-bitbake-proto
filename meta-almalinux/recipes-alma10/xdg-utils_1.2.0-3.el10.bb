@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xdg-utils"
 PE = "0"
 PV = "1.2.0"

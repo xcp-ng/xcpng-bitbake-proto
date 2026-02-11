@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "iperf3"
 PE = "0"
 PV = "3.17.1"

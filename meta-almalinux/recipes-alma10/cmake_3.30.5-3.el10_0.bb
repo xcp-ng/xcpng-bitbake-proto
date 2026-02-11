@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cmake"
 PE = "0"
 PV = "3.30.5"

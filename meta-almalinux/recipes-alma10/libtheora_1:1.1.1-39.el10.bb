@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libtheora"
 PE = "1"
 PV = "1.1.1"

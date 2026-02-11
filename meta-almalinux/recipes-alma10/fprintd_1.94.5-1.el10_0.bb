@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fprintd"
 PE = "0"
 PV = "1.94.5"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "docbook5-schemas"
 PE = "0"
 PV = "5.1"

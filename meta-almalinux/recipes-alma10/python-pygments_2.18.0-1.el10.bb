@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pygments"
 PE = "0"
 PV = "2.18.0"

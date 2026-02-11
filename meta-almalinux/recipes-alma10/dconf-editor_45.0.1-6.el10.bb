@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dconf-editor"
 PE = "0"
 PV = "45.0.1"

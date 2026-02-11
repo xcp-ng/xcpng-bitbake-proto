@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "grep"
 PE = "0"
 PV = "3.11"

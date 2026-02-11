@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "google-guice"
 PE = "0"
 PV = "5.1.0"

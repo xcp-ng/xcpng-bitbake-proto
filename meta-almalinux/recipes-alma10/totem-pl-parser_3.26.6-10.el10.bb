@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "totem-pl-parser"
 PE = "0"
 PV = "3.26.6"

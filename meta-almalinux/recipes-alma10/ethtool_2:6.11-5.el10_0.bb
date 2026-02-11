@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ethtool"
 PE = "2"
 PV = "6.11"

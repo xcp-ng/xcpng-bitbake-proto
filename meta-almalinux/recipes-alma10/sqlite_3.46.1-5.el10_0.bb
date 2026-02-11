@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sqlite"
 PE = "0"
 PV = "3.46.1"

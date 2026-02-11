@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-XString"
 PE = "0"
 PV = "0.005"

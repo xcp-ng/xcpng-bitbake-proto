@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "udica"
 PE = "0"
 PV = "0.2.8"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tbb"
 PE = "0"
 PV = "2021.11.0"

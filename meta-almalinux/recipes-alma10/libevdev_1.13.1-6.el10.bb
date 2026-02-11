@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libevdev"
 PE = "0"
 PV = "1.13.1"

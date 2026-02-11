@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-HTTP-Date"
 PE = "0"
 PV = "6.06"

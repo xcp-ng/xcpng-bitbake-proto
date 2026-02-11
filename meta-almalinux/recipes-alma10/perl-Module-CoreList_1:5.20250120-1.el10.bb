@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-CoreList"
 PE = "1"
 PV = "5.20250120"

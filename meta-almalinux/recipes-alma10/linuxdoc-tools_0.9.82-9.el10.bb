@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "linuxdoc-tools"
 PE = "0"
 PV = "0.9.82"

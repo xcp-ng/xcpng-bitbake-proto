@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "smc-tools"
 PE = "0"
 PV = "1.8.4"

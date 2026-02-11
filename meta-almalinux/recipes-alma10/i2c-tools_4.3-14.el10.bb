@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "i2c-tools"
 PE = "0"
 PV = "4.3"

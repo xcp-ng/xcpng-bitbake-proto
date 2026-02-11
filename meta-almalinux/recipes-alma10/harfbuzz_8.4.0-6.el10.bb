@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "harfbuzz"
 PE = "0"
 PV = "8.4.0"

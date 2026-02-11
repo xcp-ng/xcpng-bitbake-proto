@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "spice-gtk"
 PE = "0"
 PV = "0.42"

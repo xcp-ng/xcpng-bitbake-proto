@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xhtml2fo-style-xsl"
 PE = "0"
 PV = "20051222"

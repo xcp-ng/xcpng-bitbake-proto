@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-commons-cli"
 PE = "0"
 PV = "1.6.0"

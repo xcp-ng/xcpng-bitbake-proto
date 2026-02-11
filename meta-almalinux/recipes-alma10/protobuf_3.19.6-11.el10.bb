@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "protobuf"
 PE = "0"
 PV = "3.19.6"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xcb-proto"
 PE = "0"
 PV = "1.17.0"

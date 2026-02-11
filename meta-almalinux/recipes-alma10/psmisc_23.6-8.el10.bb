@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "psmisc"
 PE = "0"
 PV = "23.6"

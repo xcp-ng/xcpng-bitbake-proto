@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "seahorse"
 PE = "0"
 PV = "43.0"

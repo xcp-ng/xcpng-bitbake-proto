@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mm-common"
 PE = "0"
 PV = "1.0.6"

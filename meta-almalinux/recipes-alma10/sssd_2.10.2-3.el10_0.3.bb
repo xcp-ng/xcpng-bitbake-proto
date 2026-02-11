@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sssd"
 PE = "0"
 PV = "2.10.2"

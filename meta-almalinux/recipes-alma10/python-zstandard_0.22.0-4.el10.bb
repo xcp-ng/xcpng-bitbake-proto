@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-zstandard"
 PE = "0"
 PV = "0.22.0"

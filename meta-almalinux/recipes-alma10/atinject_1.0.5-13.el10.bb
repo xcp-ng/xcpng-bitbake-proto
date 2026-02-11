@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "atinject"
 PE = "0"
 PV = "1.0.5"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tix"
 PE = "1"
 PV = "8.4.3"

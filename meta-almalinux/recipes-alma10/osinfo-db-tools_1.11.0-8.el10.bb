@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "osinfo-db-tools"
 PE = "0"
 PV = "1.11.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tuned"
 PE = "0"
 PV = "2.25.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "docbook2X"
 PE = "0"
 PV = "0.8.8"

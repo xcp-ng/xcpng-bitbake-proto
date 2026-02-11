@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "usermode"
 PE = "0"
 PV = "1.114"

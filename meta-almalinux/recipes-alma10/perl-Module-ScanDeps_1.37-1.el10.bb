@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-ScanDeps"
 PE = "0"
 PV = "1.37"

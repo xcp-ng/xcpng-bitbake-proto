@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Encode-Locale"
 PE = "0"
 PV = "1.05"

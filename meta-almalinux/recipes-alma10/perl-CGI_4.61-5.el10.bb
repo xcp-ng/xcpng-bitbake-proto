@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-CGI"
 PE = "0"
 PV = "4.61"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "watchdog"
 PE = "0"
 PV = "5.16"

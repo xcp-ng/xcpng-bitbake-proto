@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mt-st"
 PE = "0"
 PV = "1.7"

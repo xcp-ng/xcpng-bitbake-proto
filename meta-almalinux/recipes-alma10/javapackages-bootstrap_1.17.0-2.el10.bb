@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "javapackages-bootstrap"
 PE = "0"
 PV = "1.17.0"

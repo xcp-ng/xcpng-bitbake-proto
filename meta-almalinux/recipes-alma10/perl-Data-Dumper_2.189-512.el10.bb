@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Data-Dumper"
 PE = "0"
 PV = "2.189"

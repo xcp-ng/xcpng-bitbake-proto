@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xcb-util-renderutil"
 PE = "0"
 PV = "0.3.10"

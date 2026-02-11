@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "intel-lpmd"
 PE = "0"
 PV = "0.0.6"

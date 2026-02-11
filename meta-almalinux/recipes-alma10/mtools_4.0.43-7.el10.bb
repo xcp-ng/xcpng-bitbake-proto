@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mtools"
 PE = "0"
 PV = "4.0.43"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libxkbcommon"
 PE = "0"
 PV = "1.7.0"

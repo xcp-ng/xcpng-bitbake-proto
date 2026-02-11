@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python3.12"
 PE = "0"
 PV = "3.12.9"

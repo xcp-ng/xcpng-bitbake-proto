@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lapack"
 PE = "0"
 PV = "3.12.0"

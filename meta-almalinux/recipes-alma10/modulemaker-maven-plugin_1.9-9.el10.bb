@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "modulemaker-maven-plugin"
 PE = "0"
 PV = "1.9"

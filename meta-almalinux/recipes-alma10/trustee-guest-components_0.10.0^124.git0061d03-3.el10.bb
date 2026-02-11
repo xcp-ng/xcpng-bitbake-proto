@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "trustee-guest-components"
 PE = "0"
 PV = "0.10.0^124.git0061d03"

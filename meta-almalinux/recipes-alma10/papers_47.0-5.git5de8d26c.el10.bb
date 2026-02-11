@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "papers"
 PE = "0"
 PV = "47.0"

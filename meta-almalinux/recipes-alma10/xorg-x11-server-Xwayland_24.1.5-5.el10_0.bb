@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xorg-x11-server-Xwayland"
 PE = "0"
 PV = "24.1.5"

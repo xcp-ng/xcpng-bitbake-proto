@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-productmd"
 PE = "0"
 PV = "1.38"

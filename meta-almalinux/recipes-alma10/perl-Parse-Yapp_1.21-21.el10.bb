@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Parse-Yapp"
 PE = "0"
 PV = "1.21"

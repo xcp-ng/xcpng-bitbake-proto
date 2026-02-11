@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-idna"
 PE = "0"
 PV = "3.7"

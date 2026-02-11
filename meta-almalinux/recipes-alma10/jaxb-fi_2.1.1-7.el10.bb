@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jaxb-fi"
 PE = "0"
 PV = "2.1.1"

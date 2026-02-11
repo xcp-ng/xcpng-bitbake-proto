@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "snpguest"
 PE = "0"
 PV = "0.8.3"

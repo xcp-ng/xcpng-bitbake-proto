@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "keyutils"
 PE = "0"
 PV = "1.6.3"

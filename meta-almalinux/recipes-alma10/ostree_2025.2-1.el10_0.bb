@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ostree"
 PE = "0"
 PV = "2025.2"

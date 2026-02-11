@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Unix-Syslog"
 PE = "0"
 PV = "1.1"

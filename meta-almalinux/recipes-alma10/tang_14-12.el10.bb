@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tang"
 PE = "0"
 PV = "14"

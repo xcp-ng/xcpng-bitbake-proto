@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-mustache"
 PE = "0"
 PV = "1.1.1"

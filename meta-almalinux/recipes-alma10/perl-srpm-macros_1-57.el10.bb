@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-srpm-macros"
 PE = "0"
 PV = "1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-cryptography"
 PE = "0"
 PV = "43.0.0"

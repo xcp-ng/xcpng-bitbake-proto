@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xwayland-run"
 PE = "0"
 PV = "0.0.4"

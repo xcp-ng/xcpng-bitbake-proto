@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-B-COW"
 PE = "0"
 PV = "0.007"

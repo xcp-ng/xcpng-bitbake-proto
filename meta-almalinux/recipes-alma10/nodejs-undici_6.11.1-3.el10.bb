@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nodejs-undici"
 PE = "0"
 PV = "6.11.1"

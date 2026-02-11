@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libdnf"
 PE = "0"
 PV = "0.73.1"

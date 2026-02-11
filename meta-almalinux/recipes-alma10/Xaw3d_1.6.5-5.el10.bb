@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "Xaw3d"
 PE = "0"
 PV = "1.6.5"

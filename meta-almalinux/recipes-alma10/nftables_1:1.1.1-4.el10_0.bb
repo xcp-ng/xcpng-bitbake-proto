@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nftables"
 PE = "1"
 PV = "1.1.1"

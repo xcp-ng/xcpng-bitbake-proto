@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gvisor-tap-vsock"
 PE = "6"
 PV = "0.8.5"

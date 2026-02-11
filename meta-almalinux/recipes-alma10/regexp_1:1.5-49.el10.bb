@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "regexp"
 PE = "1"
 PV = "1.5"

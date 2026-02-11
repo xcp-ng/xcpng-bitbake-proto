@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plexus-cipher"
 PE = "0"
 PV = "2.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gstreamer1-plugins-ugly-free"
 PE = "0"
 PV = "1.24.11"

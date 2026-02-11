@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rdma-core"
 PE = "0"
 PV = "54.0"

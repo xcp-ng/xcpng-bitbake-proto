@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xml-commons-resolver"
 PE = "0"
 PV = "1.2"

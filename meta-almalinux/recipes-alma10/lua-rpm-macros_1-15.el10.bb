@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lua-rpm-macros"
 PE = "0"
 PV = "1"

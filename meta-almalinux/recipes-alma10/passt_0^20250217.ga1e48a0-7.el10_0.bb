@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "passt"
 PE = "0"
 PV = "0^20250217.ga1e48a0"

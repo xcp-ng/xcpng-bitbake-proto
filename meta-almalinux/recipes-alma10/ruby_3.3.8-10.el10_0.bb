@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ruby"
 PE = "0"
 PV = "3.3.8"

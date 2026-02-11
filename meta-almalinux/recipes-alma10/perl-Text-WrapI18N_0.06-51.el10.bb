@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-WrapI18N"
 PE = "0"
 PV = "0.06"

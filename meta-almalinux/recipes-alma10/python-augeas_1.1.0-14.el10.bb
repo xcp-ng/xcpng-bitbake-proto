@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-augeas"
 PE = "0"
 PV = "1.1.0"

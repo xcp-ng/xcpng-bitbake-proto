@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "latex2html"
 PE = "0"
 PV = "2023.2"

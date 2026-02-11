@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "google-crosextra-caladea-fonts"
 PE = "1"
 PV = "1.002"

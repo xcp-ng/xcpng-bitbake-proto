@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hostname"
 PE = "0"
 PV = "3.23"

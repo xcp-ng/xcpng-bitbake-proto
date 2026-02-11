@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-kramdown-parser-gfm"
 PE = "0"
 PV = "1.1.0"

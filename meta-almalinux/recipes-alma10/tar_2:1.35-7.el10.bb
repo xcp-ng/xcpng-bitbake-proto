@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tar"
 PE = "2"
 PV = "1.35"

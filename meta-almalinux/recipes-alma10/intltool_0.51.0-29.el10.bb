@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "intltool"
 PE = "0"
 PV = "0.51.0"

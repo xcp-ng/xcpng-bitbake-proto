@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pigz"
 PE = "0"
 PV = "2.8"

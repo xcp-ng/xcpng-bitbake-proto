@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tecla"
 PE = "0"
 PV = "45.0"

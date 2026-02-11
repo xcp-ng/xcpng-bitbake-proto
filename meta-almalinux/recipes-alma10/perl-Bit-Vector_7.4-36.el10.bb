@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Bit-Vector"
 PE = "0"
 PV = "7.4"

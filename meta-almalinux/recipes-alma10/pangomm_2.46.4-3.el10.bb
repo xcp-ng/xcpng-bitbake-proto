@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pangomm"
 PE = "0"
 PV = "2.46.4"

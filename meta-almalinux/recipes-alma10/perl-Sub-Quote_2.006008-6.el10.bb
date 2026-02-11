@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Sub-Quote"
 PE = "0"
 PV = "2.006008"

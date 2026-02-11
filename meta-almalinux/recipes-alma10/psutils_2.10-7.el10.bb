@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "psutils"
 PE = "0"
 PV = "2.10"

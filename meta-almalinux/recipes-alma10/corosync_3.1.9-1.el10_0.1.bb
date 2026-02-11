@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "corosync"
 PE = "0"
 PV = "3.1.9"

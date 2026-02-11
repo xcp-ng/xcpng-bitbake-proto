@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-XML-Parser"
 PE = "0"
 PV = "2.47"

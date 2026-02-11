@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-rpm-macros"
 PE = "0"
 PV = "3.12"

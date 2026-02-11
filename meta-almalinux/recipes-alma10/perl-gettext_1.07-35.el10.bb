@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-gettext"
 PE = "0"
 PV = "1.07"

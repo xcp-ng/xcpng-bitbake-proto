@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xorg-x11-fonts"
 PE = "0"
 PV = "7.5"

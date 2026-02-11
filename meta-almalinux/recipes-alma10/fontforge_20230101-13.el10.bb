@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fontforge"
 PE = "0"
 PV = "20230101"

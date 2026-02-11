@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "switcheroo-control"
 PE = "0"
 PV = "2.6"

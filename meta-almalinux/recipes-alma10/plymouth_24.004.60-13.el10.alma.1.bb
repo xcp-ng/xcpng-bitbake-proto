@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plymouth"
 PE = "0"
 PV = "24.004.60"

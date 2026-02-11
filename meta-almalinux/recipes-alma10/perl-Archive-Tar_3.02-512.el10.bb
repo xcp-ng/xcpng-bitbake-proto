@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Archive-Tar"
 PE = "0"
 PV = "3.02"

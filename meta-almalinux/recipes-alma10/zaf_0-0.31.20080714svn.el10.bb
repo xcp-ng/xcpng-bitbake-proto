@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "zaf"
 PE = "0"
 PV = "0"

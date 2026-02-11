@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xdg-desktop-portal-gtk"
 PE = "0"
 PV = "1.15.1"

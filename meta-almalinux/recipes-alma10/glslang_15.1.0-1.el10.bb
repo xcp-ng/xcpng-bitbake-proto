@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "glslang"
 PE = "0"
 PV = "15.1.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dosfstools"
 PE = "0"
 PV = "4.2"

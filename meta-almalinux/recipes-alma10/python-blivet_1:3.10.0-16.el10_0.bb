@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-blivet"
 PE = "1"
 PV = "3.10.0"

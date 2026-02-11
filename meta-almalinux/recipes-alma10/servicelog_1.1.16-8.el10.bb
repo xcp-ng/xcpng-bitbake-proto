@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "servicelog"
 PE = "0"
 PV = "1.1.16"

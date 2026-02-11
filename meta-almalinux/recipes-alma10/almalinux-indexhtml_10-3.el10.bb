@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "almalinux-indexhtml"
 PE = "0"
 PV = "10"

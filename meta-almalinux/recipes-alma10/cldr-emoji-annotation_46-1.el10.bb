@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cldr-emoji-annotation"
 PE = "0"
 PV = "46"

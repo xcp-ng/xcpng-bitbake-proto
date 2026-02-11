@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libotf"
 PE = "0"
 PV = "0.9.16"

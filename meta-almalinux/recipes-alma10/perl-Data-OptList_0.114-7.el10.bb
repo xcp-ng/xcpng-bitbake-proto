@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Data-OptList"
 PE = "0"
 PV = "0.114"

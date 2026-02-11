@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "beust-jcommander"
 PE = "0"
 PV = "1.82"

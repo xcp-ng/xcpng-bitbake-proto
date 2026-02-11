@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "valgrind"
 PE = "1"
 PV = "3.24.0"

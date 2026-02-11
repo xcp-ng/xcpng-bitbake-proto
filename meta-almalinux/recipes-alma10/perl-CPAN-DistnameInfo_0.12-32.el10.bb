@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-CPAN-DistnameInfo"
 PE = "0"
 PV = "0.12"

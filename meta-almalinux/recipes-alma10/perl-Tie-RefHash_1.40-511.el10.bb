@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Tie-RefHash"
 PE = "0"
 PV = "1.40"

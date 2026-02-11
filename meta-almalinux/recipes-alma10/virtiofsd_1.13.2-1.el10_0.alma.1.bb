@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "virtiofsd"
 PE = "0"
 PV = "1.13.2"

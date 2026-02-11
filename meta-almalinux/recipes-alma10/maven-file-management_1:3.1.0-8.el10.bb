@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-file-management"
 PE = "1"
 PV = "3.1.0"

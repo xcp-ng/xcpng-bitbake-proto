@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jboss-parent"
 PE = "0"
 PV = "20"

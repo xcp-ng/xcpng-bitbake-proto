@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hwloc"
 PE = "0"
 PV = "2.11.1"

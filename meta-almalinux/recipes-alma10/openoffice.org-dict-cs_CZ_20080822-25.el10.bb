@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "openoffice.org-dict-cs_CZ"
 PE = "0"
 PV = "20080822"

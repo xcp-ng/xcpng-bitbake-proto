@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-asciidoctor"
 PE = "0"
 PV = "2.0.20"

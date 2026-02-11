@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Socket"
 PE = "4"
 PV = "2.038"

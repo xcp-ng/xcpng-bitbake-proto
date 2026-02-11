@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocaml-ocamlbuild"
 PE = "0"
 PV = "0.14.3"

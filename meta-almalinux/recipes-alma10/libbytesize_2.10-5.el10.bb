@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libbytesize"
 PE = "0"
 PV = "2.10"

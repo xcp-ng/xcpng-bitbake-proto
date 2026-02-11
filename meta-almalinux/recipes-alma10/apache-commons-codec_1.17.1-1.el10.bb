@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-commons-codec"
 PE = "0"
 PV = "1.17.1"

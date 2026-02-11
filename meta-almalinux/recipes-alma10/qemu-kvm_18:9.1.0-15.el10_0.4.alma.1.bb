@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "qemu-kvm"
 PE = "18"
 PV = "9.1.0"

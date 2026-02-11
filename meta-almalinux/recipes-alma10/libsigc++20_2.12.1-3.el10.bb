@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libsigc++20"
 PE = "0"
 PV = "2.12.1"

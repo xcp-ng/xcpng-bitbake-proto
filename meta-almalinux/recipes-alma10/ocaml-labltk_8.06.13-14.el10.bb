@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocaml-labltk"
 PE = "0"
 PV = "8.06.13"

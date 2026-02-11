@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libcamera"
 PE = "0"
 PV = "0.3.2"

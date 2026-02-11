@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_auth_openidc"
 PE = "0"
 PV = "2.4.15"

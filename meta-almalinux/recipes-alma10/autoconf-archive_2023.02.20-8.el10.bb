@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "autoconf-archive"
 PE = "0"
 PV = "2023.02.20"

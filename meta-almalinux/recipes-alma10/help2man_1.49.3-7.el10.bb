@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "help2man"
 PE = "0"
 PV = "1.49.3"

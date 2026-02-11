@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libX11"
 PE = "0"
 PV = "1.8.10"

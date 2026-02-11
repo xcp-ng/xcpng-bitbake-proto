@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "texinfo"
 PE = "0"
 PV = "7.1"

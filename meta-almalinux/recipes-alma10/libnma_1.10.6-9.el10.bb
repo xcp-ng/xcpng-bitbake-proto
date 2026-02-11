@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libnma"
 PE = "0"
 PV = "1.10.6"

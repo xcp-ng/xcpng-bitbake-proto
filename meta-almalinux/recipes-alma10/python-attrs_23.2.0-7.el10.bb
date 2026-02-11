@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-attrs"
 PE = "0"
 PV = "23.2.0"

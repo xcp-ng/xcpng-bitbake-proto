@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Compress-Raw-Bzip2"
 PE = "0"
 PV = "2.212"

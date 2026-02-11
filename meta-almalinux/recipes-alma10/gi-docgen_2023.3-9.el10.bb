@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gi-docgen"
 PE = "0"
 PV = "2023.3"

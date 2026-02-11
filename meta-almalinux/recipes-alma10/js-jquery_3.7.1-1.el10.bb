@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "js-jquery"
 PE = "0"
 PV = "3.7.1"

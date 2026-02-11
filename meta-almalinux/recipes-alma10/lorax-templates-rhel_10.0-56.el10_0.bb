@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lorax-templates-rhel"
 PE = "0"
 PV = "10.0"

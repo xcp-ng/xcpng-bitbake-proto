@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "chkconfig"
 PE = "0"
 PV = "1.30"

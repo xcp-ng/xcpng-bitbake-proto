@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-sphinxcontrib-jquery"
 PE = "0"
 PV = "4.1"

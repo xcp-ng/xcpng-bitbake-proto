@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plexus-pom"
 PE = "0"
 PV = "16"

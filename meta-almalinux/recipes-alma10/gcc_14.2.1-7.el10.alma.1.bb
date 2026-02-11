@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gcc"
 PE = "0"
 PV = "14.2.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "espeak-ng"
 PE = "0"
 PV = "1.51.1"

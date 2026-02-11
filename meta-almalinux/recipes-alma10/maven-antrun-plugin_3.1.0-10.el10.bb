@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-antrun-plugin"
 PE = "0"
 PV = "3.1.0"

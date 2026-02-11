@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ksmtuned"
 PE = "0"
 PV = "0.1.0"

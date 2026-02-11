@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cockpit-podman"
 PE = "0"
 PV = "101"

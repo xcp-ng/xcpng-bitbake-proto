@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "classloader-leak-test-framework"
 PE = "0"
 PV = "2.7.0"

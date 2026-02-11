@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "coreutils"
 PE = "0"
 PV = "9.5"

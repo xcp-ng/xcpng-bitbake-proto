@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "greenboot"
 PE = "0"
 PV = "0.15.9"

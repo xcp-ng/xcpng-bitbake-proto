@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "google-roboto-slab-fonts"
 PE = "0"
 PV = "1.100263"

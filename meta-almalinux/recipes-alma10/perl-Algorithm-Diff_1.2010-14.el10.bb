@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Algorithm-Diff"
 PE = "0"
 PV = "1.2010"

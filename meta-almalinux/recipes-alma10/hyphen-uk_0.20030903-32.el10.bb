@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hyphen-uk"
 PE = "0"
 PV = "0.20030903"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sisu"
 PE = "1"
 PV = "0.3.5"

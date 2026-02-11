@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pcsc-lite-ccid"
 PE = "0"
 PV = "1.6.0"

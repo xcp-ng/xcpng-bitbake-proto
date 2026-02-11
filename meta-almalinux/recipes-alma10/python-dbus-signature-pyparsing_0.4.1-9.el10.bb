@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-dbus-signature-pyparsing"
 PE = "0"
 PV = "0.4.1"

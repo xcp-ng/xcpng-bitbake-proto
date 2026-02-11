@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nss-altfiles"
 PE = "0"
 PV = "2.23.0"

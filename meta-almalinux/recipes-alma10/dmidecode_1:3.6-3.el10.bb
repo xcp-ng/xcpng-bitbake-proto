@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dmidecode"
 PE = "1"
 PV = "3.6"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-MIME-Base64"
 PE = "0"
 PV = "3.16"

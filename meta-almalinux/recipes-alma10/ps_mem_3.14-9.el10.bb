@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ps_mem"
 PE = "0"
 PV = "3.14"

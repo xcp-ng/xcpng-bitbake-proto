@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "postfix"
 PE = "2"
 PV = "3.8.5"

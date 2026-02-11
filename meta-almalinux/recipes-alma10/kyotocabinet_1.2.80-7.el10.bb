@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kyotocabinet"
 PE = "0"
 PV = "1.2.80"

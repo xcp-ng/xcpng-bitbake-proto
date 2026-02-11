@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "js-d3-flame-graph"
 PE = "0"
 PV = "4.0.7"

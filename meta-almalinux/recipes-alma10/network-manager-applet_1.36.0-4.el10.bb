@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "network-manager-applet"
 PE = "0"
 PV = "1.36.0"

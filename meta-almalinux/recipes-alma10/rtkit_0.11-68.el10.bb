@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rtkit"
 PE = "0"
 PV = "0.11"

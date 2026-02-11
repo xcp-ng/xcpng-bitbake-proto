@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rubygem-diff-lcs"
 PE = "0"
 PV = "1.5.0"

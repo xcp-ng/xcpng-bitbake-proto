@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Devel-StackTrace"
 PE = "1"
 PV = "2.05"

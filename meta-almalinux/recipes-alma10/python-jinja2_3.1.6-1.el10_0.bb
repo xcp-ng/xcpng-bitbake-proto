@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-jinja2"
 PE = "0"
 PV = "3.1.6"

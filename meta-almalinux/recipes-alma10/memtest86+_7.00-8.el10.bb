@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "memtest86+"
 PE = "0"
 PV = "7.00"

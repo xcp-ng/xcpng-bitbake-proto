@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-HTTP-Tiny"
 PE = "0"
 PV = "0.088"

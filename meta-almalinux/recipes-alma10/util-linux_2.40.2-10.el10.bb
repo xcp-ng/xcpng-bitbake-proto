@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "util-linux"
 PE = "0"
 PV = "2.40.2"

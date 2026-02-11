@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "phodav"
 PE = "0"
 PV = "3.0"

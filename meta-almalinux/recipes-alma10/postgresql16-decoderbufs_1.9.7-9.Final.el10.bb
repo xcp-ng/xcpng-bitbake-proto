@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "postgresql16-decoderbufs"
 PE = "0"
 PV = "1.9.7"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-requests"
 PE = "0"
 PV = "2.32.4"

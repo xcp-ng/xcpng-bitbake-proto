@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "isomd5sum"
 PE = "1"
 PV = "1.2.5"

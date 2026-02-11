@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "irssi"
 PE = "0"
 PV = "1.4.5"

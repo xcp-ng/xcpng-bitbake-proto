@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "glibmm2.68"
 PE = "0"
 PV = "2.78.1"

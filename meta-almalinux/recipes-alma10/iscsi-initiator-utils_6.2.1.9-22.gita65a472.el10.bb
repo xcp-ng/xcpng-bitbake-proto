@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "iscsi-initiator-utils"
 PE = "0"
 PV = "6.2.1.9"

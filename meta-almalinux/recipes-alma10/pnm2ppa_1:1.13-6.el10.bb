@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pnm2ppa"
 PE = "1"
 PV = "1.13"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "adwaita-icon-theme"
 PE = "0"
 PV = "46.0"

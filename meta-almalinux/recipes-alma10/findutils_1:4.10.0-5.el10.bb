@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "findutils"
 PE = "1"
 PV = "4.10.0"

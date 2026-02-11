@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mecab-ipadic"
 PE = "0"
 PV = "2.7.0.20070801"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "whois"
 PE = "0"
 PV = "5.5.20"

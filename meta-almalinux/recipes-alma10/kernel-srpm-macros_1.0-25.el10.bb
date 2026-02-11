@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kernel-srpm-macros"
 PE = "0"
 PV = "1.0"

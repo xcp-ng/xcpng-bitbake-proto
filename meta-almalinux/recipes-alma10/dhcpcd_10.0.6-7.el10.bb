@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dhcpcd"
 PE = "0"
 PV = "10.0.6"

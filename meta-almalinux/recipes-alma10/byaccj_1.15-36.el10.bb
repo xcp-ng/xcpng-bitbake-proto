@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "byaccj"
 PE = "0"
 PV = "1.15"

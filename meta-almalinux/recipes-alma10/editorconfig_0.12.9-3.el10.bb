@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "editorconfig"
 PE = "0"
 PV = "0.12.9"

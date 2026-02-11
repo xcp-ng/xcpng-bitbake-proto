@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jsoup"
 PE = "0"
 PV = "1.17.2"

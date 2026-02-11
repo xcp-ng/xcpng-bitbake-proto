@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-ReadBackwards"
 PE = "0"
 PV = "1.06"

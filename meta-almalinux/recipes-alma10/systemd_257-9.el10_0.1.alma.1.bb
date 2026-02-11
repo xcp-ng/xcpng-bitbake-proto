@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "systemd"
 PE = "0"
 PV = "257"

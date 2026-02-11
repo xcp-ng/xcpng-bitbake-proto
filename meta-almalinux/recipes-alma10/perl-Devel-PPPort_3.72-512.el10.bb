@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Devel-PPPort"
 PE = "0"
 PV = "3.72"

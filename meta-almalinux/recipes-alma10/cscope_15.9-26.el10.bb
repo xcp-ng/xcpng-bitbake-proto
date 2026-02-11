@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cscope"
 PE = "0"
 PV = "15.9"

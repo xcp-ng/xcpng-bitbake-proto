@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "oniguruma"
 PE = "0"
 PV = "6.9.9"

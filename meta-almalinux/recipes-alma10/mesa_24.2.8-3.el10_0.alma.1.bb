@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mesa"
 PE = "0"
 PV = "24.2.8"

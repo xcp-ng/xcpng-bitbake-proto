@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-commons-jxpath"
 PE = "0"
 PV = "1.3"

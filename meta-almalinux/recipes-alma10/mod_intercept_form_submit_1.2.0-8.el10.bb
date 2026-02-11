@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_intercept_form_submit"
 PE = "0"
 PV = "1.2.0"

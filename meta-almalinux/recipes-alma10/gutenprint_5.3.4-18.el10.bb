@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gutenprint"
 PE = "0"
 PV = "5.3.4"

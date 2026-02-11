@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "llvm"
 PE = "0"
 PV = "19.1.7"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "freetype"
 PE = "0"
 PV = "2.13.2"

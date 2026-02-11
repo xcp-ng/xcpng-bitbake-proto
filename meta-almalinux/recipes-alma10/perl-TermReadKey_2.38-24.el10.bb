@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-TermReadKey"
 PE = "0"
 PV = "2.38"

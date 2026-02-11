@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libcbor"
 PE = "0"
 PV = "0.11.0"

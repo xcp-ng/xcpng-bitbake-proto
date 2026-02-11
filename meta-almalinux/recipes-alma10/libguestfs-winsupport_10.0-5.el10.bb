@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libguestfs-winsupport"
 PE = "0"
 PV = "10.0"

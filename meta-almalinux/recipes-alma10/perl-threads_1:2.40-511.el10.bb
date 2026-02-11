@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-threads"
 PE = "1"
 PV = "2.40"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "graphite2"
 PE = "0"
 PV = "1.3.14"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libcacard"
 PE = "3"
 PV = "2.8.1"

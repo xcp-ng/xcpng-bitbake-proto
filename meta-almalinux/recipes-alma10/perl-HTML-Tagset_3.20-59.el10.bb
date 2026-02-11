@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-HTML-Tagset"
 PE = "0"
 PV = "3.20"

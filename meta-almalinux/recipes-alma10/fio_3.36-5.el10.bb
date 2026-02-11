@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fio"
 PE = "0"
 PV = "3.36"

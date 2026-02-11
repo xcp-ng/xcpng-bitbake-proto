@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "passim"
 PE = "0"
 PV = "0.1.8"

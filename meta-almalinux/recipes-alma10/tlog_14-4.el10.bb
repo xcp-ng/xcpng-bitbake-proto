@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tlog"
 PE = "0"
 PV = "14"

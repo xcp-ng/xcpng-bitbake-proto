@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libadwaita"
 PE = "0"
 PV = "1.6.1"

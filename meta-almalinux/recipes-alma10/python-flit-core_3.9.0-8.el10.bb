@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-flit-core"
 PE = "0"
 PV = "3.9.0"

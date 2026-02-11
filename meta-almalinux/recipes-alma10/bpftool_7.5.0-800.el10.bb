@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bpftool"
 PE = "0"
 PV = "7.5.0"

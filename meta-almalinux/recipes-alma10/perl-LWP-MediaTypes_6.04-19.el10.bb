@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-LWP-MediaTypes"
 PE = "0"
 PV = "6.04"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "google-noto-sans-cjk-fonts"
 PE = "1"
 PV = "2.004"

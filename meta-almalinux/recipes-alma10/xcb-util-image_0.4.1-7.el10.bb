@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xcb-util-image"
 PE = "0"
 PV = "0.4.1"

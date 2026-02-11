@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Class-Inspector"
 PE = "0"
 PV = "1.36"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-sphinx-theme-alabaster"
 PE = "0"
 PV = "0.7.16"

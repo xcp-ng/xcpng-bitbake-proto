@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nss_wrapper"
 PE = "0"
 PV = "1.1.15"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pefile"
 PE = "0"
 PV = "2024.8.26"

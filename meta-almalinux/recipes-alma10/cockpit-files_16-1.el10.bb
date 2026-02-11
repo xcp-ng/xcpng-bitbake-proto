@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cockpit-files"
 PE = "0"
 PV = "16"

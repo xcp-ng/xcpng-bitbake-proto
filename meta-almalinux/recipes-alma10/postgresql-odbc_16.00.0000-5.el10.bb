@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "postgresql-odbc"
 PE = "0"
 PV = "16.00.0000"

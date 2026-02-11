@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cups"
 PE = "1"
 PV = "2.4.10"

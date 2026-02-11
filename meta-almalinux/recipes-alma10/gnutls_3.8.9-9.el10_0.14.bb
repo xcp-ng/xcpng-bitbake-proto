@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnutls"
 PE = "0"
 PV = "3.8.9"

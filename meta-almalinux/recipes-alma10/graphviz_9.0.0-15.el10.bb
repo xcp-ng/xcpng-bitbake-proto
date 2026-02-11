@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "graphviz"
 PE = "0"
 PV = "9.0.0"

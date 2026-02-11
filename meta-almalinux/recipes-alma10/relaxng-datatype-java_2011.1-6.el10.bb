@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "relaxng-datatype-java"
 PE = "0"
 PV = "2011.1"

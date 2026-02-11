@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "geolite2"
 PE = "0"
 PV = "20191217"

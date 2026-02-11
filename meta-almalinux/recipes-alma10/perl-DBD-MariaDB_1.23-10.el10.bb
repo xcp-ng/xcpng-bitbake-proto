@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-DBD-MariaDB"
 PE = "0"
 PV = "1.23"

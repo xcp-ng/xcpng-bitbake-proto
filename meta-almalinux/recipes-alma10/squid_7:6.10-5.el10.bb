@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "squid"
 PE = "7"
 PV = "6.10"

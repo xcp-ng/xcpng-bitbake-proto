@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-libnet"
 PE = "0"
 PV = "3.15"

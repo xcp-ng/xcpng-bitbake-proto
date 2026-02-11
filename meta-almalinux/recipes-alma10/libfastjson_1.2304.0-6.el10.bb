@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libfastjson"
 PE = "0"
 PV = "1.2304.0"

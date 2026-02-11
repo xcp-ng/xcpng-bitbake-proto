@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "wayland-protocols"
 PE = "0"
 PV = "1.41"

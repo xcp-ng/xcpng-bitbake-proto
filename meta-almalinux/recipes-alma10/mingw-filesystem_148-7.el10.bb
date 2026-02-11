@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-filesystem"
 PE = "0"
 PV = "148"

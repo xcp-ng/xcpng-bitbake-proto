@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "wireshark"
 PE = "1"
 PV = "4.4.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "adobe-mappings-pdf"
 PE = "0"
 PV = "20190401"

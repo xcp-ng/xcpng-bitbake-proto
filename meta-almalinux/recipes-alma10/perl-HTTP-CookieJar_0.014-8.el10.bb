@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-HTTP-CookieJar"
 PE = "0"
 PV = "0.014"

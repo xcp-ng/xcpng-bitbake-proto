@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "uuid"
 PE = "0"
 PV = "1.6.2"

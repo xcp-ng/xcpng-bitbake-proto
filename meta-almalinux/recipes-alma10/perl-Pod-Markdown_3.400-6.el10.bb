@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Pod-Markdown"
 PE = "0"
 PV = "3.400"

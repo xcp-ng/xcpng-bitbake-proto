@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xdg-desktop-portal"
 PE = "0"
 PV = "1.20.0"

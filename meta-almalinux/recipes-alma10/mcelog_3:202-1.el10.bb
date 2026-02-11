@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mcelog"
 PE = "3"
 PV = "202"

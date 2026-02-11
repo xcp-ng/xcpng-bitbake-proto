@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "vala"
 PE = "0"
 PV = "0.56.17"

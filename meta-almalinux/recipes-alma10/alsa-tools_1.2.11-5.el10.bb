@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "alsa-tools"
 PE = "0"
 PV = "1.2.11"

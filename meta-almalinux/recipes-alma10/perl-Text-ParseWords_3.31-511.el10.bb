@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-ParseWords"
 PE = "0"
 PV = "3.31"

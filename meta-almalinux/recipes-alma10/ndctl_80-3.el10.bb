@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ndctl"
 PE = "0"
 PV = "80"

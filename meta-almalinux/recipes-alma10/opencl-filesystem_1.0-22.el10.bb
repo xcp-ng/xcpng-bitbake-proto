@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "opencl-filesystem"
 PE = "0"
 PV = "1.0"

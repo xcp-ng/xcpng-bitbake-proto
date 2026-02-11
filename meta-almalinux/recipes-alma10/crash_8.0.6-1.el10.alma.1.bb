@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "crash"
 PE = "0"
 PV = "8.0.6"

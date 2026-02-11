@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "procps-ng"
 PE = "0"
 PV = "4.0.4"

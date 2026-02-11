@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-tornado"
 PE = "0"
 PV = "6.4.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "redhat-rpm-config"
 PE = "0"
 PV = "289"

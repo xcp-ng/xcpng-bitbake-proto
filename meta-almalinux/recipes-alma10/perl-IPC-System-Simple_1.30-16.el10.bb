@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IPC-System-Simple"
 PE = "0"
 PV = "1.30"

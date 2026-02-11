@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pyxdg"
 PE = "0"
 PV = "0.27"

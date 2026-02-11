@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libcupsfilters"
 PE = "1"
 PV = "2.0.0"

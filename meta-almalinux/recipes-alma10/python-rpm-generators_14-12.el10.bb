@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-rpm-generators"
 PE = "0"
 PV = "14"

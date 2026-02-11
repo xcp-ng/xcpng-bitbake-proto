@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libvirt-python"
 PE = "0"
 PV = "10.10.0"

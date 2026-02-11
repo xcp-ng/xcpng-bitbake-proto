@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libgtop2"
 PE = "0"
 PV = "2.41.2"

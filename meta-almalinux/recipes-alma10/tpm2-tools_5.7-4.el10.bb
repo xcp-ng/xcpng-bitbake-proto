@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tpm2-tools"
 PE = "0"
 PV = "5.7"

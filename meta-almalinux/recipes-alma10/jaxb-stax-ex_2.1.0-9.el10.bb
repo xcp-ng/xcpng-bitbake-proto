@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jaxb-stax-ex"
 PE = "0"
 PV = "2.1.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ibus-typing-booster"
 PE = "0"
 PV = "2.25.13"

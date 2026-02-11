@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libarchive"
 PE = "0"
 PV = "3.7.7"

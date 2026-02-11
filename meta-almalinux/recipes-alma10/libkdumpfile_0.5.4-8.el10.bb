@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libkdumpfile"
 PE = "0"
 PV = "0.5.4"

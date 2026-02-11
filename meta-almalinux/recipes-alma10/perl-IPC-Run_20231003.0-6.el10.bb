@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IPC-Run"
 PE = "0"
 PV = "20231003.0"

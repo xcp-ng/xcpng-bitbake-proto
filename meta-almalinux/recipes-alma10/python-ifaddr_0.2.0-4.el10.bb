@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-ifaddr"
 PE = "0"
 PV = "0.2.0"

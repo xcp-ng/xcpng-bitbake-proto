@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libffi"
 PE = "0"
 PV = "3.4.4"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "readline"
 PE = "0"
 PV = "8.2"

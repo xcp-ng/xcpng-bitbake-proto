@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "subversion"
 PE = "0"
 PV = "1.14.3"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "extra-enforcer-rules"
 PE = "0"
 PV = "1.7.0"

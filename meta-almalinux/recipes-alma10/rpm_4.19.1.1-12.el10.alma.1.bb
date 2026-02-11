@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rpm"
 PE = "0"
 PV = "4.19.1.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "virt-viewer"
 PE = "0"
 PV = "11.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pdm-backend"
 PE = "0"
 PV = "2.1.8"

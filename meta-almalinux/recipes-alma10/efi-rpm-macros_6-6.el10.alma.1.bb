@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "efi-rpm-macros"
 PE = "0"
 PV = "6"

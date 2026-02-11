@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-YAML"
 PE = "0"
 PV = "1.31"

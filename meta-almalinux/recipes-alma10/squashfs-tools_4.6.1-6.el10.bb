@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "squashfs-tools"
 PE = "0"
 PV = "4.6.1"

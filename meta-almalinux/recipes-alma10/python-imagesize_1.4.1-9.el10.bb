@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-imagesize"
 PE = "0"
 PV = "1.4.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sil-padauk-fonts"
 PE = "0"
 PV = "3.003"

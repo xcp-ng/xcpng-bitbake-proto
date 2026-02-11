@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "stress-ng"
 PE = "0"
 PV = "0.18.06"

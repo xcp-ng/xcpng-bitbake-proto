@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "yelp-xsl"
 PE = "0"
 PV = "42.1"

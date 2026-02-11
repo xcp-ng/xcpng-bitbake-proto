@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocaml-cppo"
 PE = "0"
 PV = "1.6.9"

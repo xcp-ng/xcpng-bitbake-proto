@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "multilib-rpm-config"
 PE = "0"
 PV = "1"

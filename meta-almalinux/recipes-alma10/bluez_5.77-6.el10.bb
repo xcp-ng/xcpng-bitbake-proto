@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bluez"
 PE = "0"
 PV = "5.77"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "skopeo"
 PE = "2"
 PV = "1.18.1"

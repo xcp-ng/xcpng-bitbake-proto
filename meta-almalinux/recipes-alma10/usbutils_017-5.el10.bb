@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "usbutils"
 PE = "0"
 PV = "017"

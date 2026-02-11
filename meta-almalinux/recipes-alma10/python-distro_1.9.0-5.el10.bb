@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-distro"
 PE = "0"
 PV = "1.9.0"

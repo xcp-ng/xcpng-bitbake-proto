@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Test-Pod-Coverage"
 PE = "0"
 PV = "1.10"

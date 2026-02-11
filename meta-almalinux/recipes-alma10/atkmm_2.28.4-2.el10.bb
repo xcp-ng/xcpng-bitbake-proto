@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "atkmm"
 PE = "0"
 PV = "2.28.4"

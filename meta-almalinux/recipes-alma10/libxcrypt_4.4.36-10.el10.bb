@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libxcrypt"
 PE = "0"
 PV = "4.4.36"

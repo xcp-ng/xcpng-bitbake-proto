@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "wireless-regdb"
 PE = "0"
 PV = "2024.01.23"

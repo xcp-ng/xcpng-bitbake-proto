@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_auth_gssapi"
 PE = "0"
 PV = "1.6.5"

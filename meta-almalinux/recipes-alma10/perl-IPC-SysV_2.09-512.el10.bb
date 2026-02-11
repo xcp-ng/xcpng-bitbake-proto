@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IPC-SysV"
 PE = "0"
 PV = "2.09"

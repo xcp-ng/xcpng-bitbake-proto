@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "telnet"
 PE = "1"
 PV = "0.17"

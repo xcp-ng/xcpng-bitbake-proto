@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-disk-utility"
 PE = "0"
 PV = "46~alpha"

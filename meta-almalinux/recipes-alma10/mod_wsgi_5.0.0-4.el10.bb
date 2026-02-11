@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_wsgi"
 PE = "0"
 PV = "5.0.0"

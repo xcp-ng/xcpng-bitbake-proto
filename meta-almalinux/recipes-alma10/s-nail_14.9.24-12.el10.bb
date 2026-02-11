@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "s-nail"
 PE = "0"
 PV = "14.9.24"

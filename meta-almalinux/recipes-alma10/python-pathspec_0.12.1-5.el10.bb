@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pathspec"
 PE = "0"
 PV = "0.12.1"

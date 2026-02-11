@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-pixman"
 PE = "0"
 PV = "0.43.0"

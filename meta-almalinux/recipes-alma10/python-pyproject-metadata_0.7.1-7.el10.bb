@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pyproject-metadata"
 PE = "0"
 PV = "0.7.1"

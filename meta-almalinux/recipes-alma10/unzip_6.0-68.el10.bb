@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "unzip"
 PE = "0"
 PV = "6.0"

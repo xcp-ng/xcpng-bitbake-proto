@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "msv"
 PE = "0"
 PV = "2022.7"

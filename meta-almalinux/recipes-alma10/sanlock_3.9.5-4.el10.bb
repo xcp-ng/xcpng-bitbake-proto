@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sanlock"
 PE = "0"
 PV = "3.9.5"

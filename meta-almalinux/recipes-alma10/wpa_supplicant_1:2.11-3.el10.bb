@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "wpa_supplicant"
 PE = "1"
 PV = "2.11"

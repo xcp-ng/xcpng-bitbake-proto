@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jsoncpp"
 PE = "0"
 PV = "1.9.5"

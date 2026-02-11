@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "quota"
 PE = "1"
 PV = "4.09"

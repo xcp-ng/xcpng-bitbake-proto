@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libtiff"
 PE = "0"
 PV = "4.6.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-control-center"
 PE = "0"
 PV = "47.3"

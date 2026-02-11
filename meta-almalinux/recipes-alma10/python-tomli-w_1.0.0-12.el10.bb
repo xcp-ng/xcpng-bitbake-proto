@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-tomli-w"
 PE = "0"
 PV = "1.0.0"

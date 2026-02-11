@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sound-theme-freedesktop"
 PE = "0"
 PV = "0.8"

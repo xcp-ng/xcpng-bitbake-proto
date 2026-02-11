@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-enforcer"
 PE = "0"
 PV = "3.4.1"

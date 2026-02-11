@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pango"
 PE = "0"
 PV = "1.54.0"

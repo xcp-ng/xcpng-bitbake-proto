@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-text-editor"
 PE = "0"
 PV = "47.3"

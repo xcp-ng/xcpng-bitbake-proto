@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-system-monitor"
 PE = "0"
 PV = "46.0"

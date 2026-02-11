@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gtk-vnc"
 PE = "0"
 PV = "1.3.1"

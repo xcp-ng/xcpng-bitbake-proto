@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-semantic_version"
 PE = "0"
 PV = "2.10.0"

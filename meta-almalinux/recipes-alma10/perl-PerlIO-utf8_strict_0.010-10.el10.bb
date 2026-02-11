@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-PerlIO-utf8_strict"
 PE = "0"
 PV = "0.010"

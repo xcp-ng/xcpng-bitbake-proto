@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Pod-Escapes"
 PE = "1"
 PV = "1.07"

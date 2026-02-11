@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-hatchling"
 PE = "0"
 PV = "1.27.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pygobject3"
 PE = "0"
 PV = "3.46.0"

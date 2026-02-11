@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apiguardian"
 PE = "0"
 PV = "1.1.2"

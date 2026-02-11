@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libisofs"
 PE = "0"
 PV = "1.5.6"

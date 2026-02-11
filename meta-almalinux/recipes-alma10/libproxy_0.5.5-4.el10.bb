@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libproxy"
 PE = "0"
 PV = "0.5.5"

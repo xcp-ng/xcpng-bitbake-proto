@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "c-ares"
 PE = "0"
 PV = "1.25.0"

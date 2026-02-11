@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-rpds-py"
 PE = "0"
 PV = "0.17.1"

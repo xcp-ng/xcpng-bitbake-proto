@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dwarves"
 PE = "0"
 PV = "1.27"

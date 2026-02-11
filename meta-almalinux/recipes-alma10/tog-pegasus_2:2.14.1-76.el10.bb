@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tog-pegasus"
 PE = "2"
 PV = "2.14.1"

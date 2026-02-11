@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-netifaces"
 PE = "0"
 PV = "0.11.0"

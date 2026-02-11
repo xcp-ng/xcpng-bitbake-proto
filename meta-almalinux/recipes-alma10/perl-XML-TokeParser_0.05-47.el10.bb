@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-XML-TokeParser"
 PE = "0"
 PV = "0.05"

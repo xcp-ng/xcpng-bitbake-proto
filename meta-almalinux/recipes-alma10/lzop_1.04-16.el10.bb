@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lzop"
 PE = "0"
 PV = "1.04"

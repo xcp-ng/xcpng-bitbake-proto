@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "beakerlib"
 PE = "0"
 PV = "1.29.2"

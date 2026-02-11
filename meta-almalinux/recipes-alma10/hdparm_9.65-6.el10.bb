@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hdparm"
 PE = "0"
 PV = "9.65"

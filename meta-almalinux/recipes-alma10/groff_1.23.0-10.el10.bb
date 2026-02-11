@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "groff"
 PE = "0"
 PV = "1.23.0"

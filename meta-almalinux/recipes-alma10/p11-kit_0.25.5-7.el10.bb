@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "p11-kit"
 PE = "0"
 PV = "0.25.5"

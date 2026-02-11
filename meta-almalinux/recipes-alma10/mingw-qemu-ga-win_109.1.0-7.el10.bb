@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-qemu-ga-win"
 PE = "0"
 PV = "109.1.0"

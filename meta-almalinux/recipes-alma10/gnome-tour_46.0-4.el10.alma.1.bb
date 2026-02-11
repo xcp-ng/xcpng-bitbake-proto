@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-tour"
 PE = "0"
 PV = "46.0"

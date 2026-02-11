@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "logwatch"
 PE = "0"
 PV = "7.11"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libepoxy"
 PE = "0"
 PV = "1.5.10"

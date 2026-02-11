@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "felix-parent"
 PE = "0"
 PV = "8"

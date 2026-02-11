@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "langpacks"
 PE = "0"
 PV = "4.1"

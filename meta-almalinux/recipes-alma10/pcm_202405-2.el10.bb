@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pcm"
 PE = "0"
 PV = "202405"

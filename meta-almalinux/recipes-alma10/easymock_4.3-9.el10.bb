@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "easymock"
 PE = "0"
 PV = "4.3"

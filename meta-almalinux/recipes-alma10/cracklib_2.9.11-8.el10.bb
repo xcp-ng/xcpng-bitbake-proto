@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cracklib"
 PE = "0"
 PV = "2.9.11"

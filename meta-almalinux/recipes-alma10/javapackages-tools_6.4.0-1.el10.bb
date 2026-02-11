@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "javapackages-tools"
 PE = "0"
 PV = "6.4.0"

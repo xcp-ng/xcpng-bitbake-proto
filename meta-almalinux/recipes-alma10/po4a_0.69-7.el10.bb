@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "po4a"
 PE = "0"
 PV = "0.69"

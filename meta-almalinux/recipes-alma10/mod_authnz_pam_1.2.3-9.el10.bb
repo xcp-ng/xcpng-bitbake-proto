@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_authnz_pam"
 PE = "0"
 PV = "1.2.3"

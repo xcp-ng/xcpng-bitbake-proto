@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Net-SSLeay"
 PE = "0"
 PV = "1.94"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tinycdb"
 PE = "0"
 PV = "0.80"

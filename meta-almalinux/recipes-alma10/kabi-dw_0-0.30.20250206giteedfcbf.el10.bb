@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kabi-dw"
 PE = "0"
 PV = "0"

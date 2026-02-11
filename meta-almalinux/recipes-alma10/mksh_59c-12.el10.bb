@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mksh"
 PE = "0"
 PV = "59c"

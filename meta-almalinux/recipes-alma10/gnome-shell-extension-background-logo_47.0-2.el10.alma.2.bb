@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-shell-extension-background-logo"
 PE = "0"
 PV = "47.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cairomm1.16"
 PE = "0"
 PV = "1.18.0"

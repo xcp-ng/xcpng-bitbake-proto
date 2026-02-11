@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "grafana"
 PE = "0"
 PV = "10.2.6"

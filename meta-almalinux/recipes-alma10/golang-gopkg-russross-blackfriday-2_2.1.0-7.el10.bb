@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "golang-gopkg-russross-blackfriday-2"
 PE = "0"
 PV = "2.1.0"

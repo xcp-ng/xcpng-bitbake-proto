@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pcaudiolib"
 PE = "0"
 PV = "1.1"

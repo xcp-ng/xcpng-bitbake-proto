@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "httpcomponents-project"
 PE = "0"
 PV = "13"

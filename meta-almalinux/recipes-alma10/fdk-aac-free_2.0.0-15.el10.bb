@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fdk-aac-free"
 PE = "0"
 PV = "2.0.0"

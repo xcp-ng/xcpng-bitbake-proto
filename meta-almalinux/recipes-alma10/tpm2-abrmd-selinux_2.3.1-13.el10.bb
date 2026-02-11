@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tpm2-abrmd-selinux"
 PE = "0"
 PV = "2.3.1"

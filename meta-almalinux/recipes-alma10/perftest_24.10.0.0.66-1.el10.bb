@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perftest"
 PE = "0"
 PV = "24.10.0.0.66"

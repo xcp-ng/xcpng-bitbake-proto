@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-qrcode"
 PE = "0"
 PV = "7.4.2"

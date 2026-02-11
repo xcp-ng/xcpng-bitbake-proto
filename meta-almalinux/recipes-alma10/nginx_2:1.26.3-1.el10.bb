@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nginx"
 PE = "2"
 PV = "1.26.3"

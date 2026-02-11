@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "crypto-policies"
 PE = "0"
 PV = "20250214"

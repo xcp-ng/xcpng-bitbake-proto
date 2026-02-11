@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jdom2"
 PE = "0"
 PV = "2.0.6.1"

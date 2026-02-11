@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tomcat-jakartaee-migration"
 PE = "0"
 PV = "1.0.6"

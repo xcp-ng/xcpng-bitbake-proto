@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "HdrHistogram_c"
 PE = "0"
 PV = "0.11.8"

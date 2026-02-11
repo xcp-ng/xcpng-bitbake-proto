@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-meh"
 PE = "0"
 PV = "0.52"

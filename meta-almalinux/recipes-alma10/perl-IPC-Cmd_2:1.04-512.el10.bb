@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IPC-Cmd"
 PE = "2"
 PV = "1.04"

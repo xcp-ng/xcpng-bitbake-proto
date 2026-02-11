@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ocaml-augeas"
 PE = "0"
 PV = "0.6"

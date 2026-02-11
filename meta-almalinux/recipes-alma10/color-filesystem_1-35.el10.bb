@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "color-filesystem"
 PE = "0"
 PV = "1"

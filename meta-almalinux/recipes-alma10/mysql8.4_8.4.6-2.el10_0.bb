@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mysql8.4"
 PE = "0"
 PV = "8.4.6"

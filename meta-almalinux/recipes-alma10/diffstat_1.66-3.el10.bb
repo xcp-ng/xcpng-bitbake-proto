@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "diffstat"
 PE = "0"
 PV = "1.66"

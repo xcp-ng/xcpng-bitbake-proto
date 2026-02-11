@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dotnet9.0"
 PE = "0"
 PV = "9.0.111"

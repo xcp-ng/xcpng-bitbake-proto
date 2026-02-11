@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ksh"
 PE = "3"
 PV = "1.0.10"

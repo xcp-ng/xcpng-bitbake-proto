@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "php-pecl-rrd"
 PE = "0"
 PV = "2.0.3"

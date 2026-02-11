@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "evince"
 PE = "0"
 PV = "46.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jasper"
 PE = "0"
 PV = "4.1.0"

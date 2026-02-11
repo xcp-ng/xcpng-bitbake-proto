@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "urw-base35-fonts"
 PE = "0"
 PV = "20200910"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libnet"
 PE = "0"
 PV = "1.3"

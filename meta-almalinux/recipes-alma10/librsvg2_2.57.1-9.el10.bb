@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "librsvg2"
 PE = "0"
 PV = "2.57.1"

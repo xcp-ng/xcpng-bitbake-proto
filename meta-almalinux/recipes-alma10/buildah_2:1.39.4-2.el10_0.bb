@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "buildah"
 PE = "2"
 PV = "1.39.4"

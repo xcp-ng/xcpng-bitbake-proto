@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-Diff"
 PE = "0"
 PV = "1.45"

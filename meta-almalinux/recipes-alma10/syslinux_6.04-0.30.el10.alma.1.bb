@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "syslinux"
 PE = "0"
 PV = "6.04"

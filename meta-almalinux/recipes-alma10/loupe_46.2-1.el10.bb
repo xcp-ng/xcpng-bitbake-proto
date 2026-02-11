@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "loupe"
 PE = "0"
 PV = "46.2"

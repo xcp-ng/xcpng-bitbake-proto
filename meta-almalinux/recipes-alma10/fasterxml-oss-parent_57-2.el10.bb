@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fasterxml-oss-parent"
 PE = "0"
 PV = "57"

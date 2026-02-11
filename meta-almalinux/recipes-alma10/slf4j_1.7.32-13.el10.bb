@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "slf4j"
 PE = "0"
 PV = "1.7.32"

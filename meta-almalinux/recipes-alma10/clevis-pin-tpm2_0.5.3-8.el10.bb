@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "clevis-pin-tpm2"
 PE = "0"
 PV = "0.5.3"

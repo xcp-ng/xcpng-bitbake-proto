@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "docbook-style-xsl"
 PE = "0"
 PV = "1.79.2"

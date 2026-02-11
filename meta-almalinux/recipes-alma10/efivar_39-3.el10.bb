@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "efivar"
 PE = "0"
 PV = "39"

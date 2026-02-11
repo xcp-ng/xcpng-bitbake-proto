@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kdump-anaconda-addon"
 PE = "0"
 PV = "006"

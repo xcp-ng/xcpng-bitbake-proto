@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "grubby"
 PE = "0"
 PV = "8.40"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-configobj"
 PE = "0"
 PV = "5.0.8"

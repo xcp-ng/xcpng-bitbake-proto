@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Parse-PMFile"
 PE = "0"
 PV = "0.45"

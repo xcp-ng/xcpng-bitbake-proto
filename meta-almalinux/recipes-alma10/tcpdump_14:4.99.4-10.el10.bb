@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "tcpdump"
 PE = "14"
 PV = "4.99.4"

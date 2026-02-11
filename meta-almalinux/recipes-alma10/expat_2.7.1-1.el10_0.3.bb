@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "expat"
 PE = "0"
 PV = "2.7.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "systemtap"
 PE = "0"
 PV = "5.2"

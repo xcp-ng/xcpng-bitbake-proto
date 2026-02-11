@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-Tabs+Wrap"
 PE = "0"
 PV = "2024.001"

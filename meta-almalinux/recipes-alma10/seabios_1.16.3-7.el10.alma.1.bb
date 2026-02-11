@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "seabios"
 PE = "0"
 PV = "1.16.3"

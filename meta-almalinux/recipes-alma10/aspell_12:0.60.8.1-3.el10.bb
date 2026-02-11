@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "aspell"
 PE = "12"
 PV = "0.60.8.1"

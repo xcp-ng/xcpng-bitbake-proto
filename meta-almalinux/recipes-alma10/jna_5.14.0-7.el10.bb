@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jna"
 PE = "0"
 PV = "5.14.0"

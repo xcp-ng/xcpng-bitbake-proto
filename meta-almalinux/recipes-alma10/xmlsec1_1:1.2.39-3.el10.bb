@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xmlsec1"
 PE = "1"
 PV = "1.2.39"

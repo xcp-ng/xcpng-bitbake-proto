@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "words"
 PE = "0"
 PV = "3.0"

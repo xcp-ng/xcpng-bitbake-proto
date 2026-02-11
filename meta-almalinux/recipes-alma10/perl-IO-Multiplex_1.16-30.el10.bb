@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-IO-Multiplex"
 PE = "0"
 PV = "1.16"

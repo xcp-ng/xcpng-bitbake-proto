@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libvorbis"
 PE = "1"
 PV = "1.3.7"

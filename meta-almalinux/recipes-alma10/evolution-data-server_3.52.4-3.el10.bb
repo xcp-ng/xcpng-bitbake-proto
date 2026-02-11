@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "evolution-data-server"
 PE = "0"
 PV = "3.52.4"

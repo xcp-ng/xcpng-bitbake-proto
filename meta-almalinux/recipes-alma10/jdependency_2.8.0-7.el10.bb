@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jdependency"
 PE = "0"
 PV = "2.8.0"

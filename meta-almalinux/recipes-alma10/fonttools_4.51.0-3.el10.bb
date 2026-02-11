@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fonttools"
 PE = "0"
 PV = "4.51.0"

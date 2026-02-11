@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rit-meera-new-fonts"
 PE = "0"
 PV = "1.5.2"

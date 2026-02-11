@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mod_proxy_cluster"
 PE = "0"
 PV = "1.3.22"

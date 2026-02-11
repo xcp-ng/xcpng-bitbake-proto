@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-font-viewer"
 PE = "0"
 PV = "46.0"

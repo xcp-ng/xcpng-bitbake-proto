@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "source-highlight"
 PE = "0"
 PV = "3.1.9"

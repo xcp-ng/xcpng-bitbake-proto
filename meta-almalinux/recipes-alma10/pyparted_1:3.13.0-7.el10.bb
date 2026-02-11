@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pyparted"
 PE = "1"
 PV = "3.13.0"

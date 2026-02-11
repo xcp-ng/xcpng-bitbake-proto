@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pappl"
 PE = "0"
 PV = "1.4.6"

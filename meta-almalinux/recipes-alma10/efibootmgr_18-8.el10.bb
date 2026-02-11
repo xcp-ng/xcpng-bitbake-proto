@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "efibootmgr"
 PE = "0"
 PV = "18"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sblim-sfcb"
 PE = "0"
 PV = "1.4.9"

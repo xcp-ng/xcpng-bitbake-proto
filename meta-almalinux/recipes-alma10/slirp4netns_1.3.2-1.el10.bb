@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "slirp4netns"
 PE = "0"
 PV = "1.3.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "volume_key"
 PE = "0"
 PV = "0.3.12"

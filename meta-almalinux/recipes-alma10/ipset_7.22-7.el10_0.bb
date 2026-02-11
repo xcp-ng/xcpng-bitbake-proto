@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ipset"
 PE = "0"
 PV = "7.22"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "desktop-file-utils"
 PE = "0"
 PV = "0.26"

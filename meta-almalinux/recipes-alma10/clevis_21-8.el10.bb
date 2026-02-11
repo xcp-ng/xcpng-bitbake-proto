@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "clevis"
 PE = "0"
 PV = "21"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "keylime-agent-rust"
 PE = "0"
 PV = "0.2.7"

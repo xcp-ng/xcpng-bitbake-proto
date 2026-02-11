@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sysstat"
 PE = "0"
 PV = "12.7.6"

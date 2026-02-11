@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "upower"
 PE = "0"
 PV = "1.90.6"

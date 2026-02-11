@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libomp"
 PE = "0"
 PV = "18.1.8"

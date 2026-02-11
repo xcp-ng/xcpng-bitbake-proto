@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nettle"
 PE = "0"
 PV = "3.10.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "accountsservice"
 PE = "0"
 PV = "23.13.9"

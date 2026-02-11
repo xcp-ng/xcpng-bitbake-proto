@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-setuptools_scm"
 PE = "0"
 PV = "8.0.4"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libfontenc"
 PE = "0"
 PV = "1.1.7"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rootfiles"
 PE = "0"
 PV = "8.1"

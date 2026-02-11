@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pulseaudio"
 PE = "0"
 PV = "17.0"

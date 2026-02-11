@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-perlfaq"
 PE = "0"
 PV = "5.20240218"

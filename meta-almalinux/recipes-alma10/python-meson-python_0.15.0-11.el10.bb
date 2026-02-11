@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-meson-python"
 PE = "0"
 PV = "0.15.0"

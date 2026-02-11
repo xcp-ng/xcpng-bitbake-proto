@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "irqbalance"
 PE = "2"
 PV = "1.9.4"

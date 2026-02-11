@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libgsf"
 PE = "0"
 PV = "1.14.53"

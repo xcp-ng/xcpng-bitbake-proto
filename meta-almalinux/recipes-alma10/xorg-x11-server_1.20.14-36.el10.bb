@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xorg-x11-server"
 PE = "0"
 PV = "1.20.14"

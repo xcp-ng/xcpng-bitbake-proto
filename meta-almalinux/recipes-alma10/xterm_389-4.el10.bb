@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xterm"
 PE = "0"
 PV = "389"

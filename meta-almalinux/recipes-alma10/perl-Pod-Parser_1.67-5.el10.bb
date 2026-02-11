@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Pod-Parser"
 PE = "0"
 PV = "1.67"

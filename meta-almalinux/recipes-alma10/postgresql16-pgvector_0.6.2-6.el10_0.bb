@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "postgresql16-pgvector"
 PE = "0"
 PV = "0.6.2"

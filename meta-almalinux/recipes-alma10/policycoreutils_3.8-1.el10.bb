@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "policycoreutils"
 PE = "0"
 PV = "3.8"

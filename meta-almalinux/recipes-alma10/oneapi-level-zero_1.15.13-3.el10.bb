@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "oneapi-level-zero"
 PE = "0"
 PV = "1.15.13"

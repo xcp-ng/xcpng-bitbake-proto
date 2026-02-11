@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "jakarta-activation"
 PE = "0"
 PV = "2.1.2"

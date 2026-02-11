@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "almalinux-logos"
 PE = "0"
 PV = "100.3"

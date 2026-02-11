@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "resteasy"
 PE = "0"
 PV = "3.0.26"

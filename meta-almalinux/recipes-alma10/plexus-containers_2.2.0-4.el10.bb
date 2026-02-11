@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plexus-containers"
 PE = "0"
 PV = "2.2.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pyproject-rpm-macros"
 PE = "0"
 PV = "1.16.2"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libqmi"
 PE = "0"
 PV = "1.34.0"

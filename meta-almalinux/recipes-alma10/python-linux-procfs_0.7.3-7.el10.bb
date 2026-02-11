@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-linux-procfs"
 PE = "0"
 PV = "0.7.3"

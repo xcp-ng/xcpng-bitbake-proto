@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "osgi-annotation"
 PE = "0"
 PV = "8.1.0"

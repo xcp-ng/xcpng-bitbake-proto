@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "scl-utils"
 PE = "1"
 PV = "2.0.3"

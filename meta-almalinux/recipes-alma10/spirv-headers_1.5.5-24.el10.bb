@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "spirv-headers"
 PE = "0"
 PV = "1.5.5"

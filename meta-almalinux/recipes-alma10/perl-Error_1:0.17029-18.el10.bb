@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Error"
 PE = "1"
 PV = "0.17029"

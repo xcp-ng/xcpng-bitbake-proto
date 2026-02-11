@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-win-iconv"
 PE = "0"
 PV = "0.0.8"

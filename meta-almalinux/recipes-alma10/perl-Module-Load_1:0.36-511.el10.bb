@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Module-Load"
 PE = "1"
 PV = "0.36"

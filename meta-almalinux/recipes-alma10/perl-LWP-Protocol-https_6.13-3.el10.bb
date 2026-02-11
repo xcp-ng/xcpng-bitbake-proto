@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-LWP-Protocol-https"
 PE = "0"
 PV = "6.13"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "WALinuxAgent"
 PE = "0"
 PV = "2.9.1.1"

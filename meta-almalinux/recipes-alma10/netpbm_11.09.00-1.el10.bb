@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "netpbm"
 PE = "0"
 PV = "11.09.00"

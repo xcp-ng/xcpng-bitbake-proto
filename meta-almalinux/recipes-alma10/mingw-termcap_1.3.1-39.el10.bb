@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mingw-termcap"
 PE = "0"
 PV = "1.3.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fxload"
 PE = "0"
 PV = "2008_10_13"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-podlators"
 PE = "1"
 PV = "5.01"

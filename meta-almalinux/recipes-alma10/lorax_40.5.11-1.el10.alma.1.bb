@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lorax"
 PE = "0"
 PV = "40.5.11"

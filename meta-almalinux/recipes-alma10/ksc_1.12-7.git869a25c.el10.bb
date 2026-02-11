@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ksc"
 PE = "0"
 PV = "1.12"

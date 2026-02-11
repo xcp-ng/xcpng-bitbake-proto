@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Test-Warn"
 PE = "0"
 PV = "0.37"

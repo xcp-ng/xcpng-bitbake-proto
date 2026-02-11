@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bison"
 PE = "0"
 PV = "3.8.2"

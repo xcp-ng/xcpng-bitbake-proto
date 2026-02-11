@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pptp"
 PE = "0"
 PV = "1.10.0"

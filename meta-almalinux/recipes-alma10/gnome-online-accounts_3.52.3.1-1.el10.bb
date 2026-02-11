@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-online-accounts"
 PE = "0"
 PV = "3.52.3.1"

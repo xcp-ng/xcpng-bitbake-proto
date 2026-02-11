@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "netavark"
 PE = "2"
 PV = "1.14.1"

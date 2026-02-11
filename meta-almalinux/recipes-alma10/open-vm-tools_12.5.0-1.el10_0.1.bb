@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "open-vm-tools"
 PE = "0"
 PV = "12.5.0"

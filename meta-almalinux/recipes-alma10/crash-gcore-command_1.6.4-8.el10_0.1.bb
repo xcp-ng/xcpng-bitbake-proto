@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "crash-gcore-command"
 PE = "0"
 PV = "1.6.4"

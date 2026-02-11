@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gtk3"
 PE = "0"
 PV = "3.24.43"

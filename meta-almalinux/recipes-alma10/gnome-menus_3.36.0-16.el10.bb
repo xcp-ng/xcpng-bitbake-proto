@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-menus"
 PE = "0"
 PV = "3.36.0"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-ShareDir-Install"
 PE = "0"
 PV = "0.14"

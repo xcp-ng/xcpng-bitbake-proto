@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libXinerama"
 PE = "0"
 PV = "1.1.5"

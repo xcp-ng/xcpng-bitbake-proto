@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-desktop3"
 PE = "0"
 PV = "44.0"

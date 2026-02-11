@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-keyring"
 PE = "0"
 PV = "42.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pycairo"
 PE = "0"
 PV = "1.25.1"

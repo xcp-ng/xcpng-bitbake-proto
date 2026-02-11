@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rteval-loads"
 PE = "0"
 PV = "1.6"

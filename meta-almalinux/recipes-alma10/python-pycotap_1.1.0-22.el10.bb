@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pycotap"
 PE = "0"
 PV = "1.1.0"

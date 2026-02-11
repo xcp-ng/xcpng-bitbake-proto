@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "assertj-core"
 PE = "0"
 PV = "3.24.2"

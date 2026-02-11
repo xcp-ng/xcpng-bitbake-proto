@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "usbredir"
 PE = "0"
 PV = "0.13.0"

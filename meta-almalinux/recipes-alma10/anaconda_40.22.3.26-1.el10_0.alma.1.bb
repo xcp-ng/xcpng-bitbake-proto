@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "anaconda"
 PE = "0"
 PV = "40.22.3.26"

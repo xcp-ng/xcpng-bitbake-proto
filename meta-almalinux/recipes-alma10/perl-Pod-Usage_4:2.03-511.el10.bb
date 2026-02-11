@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Pod-Usage"
 PE = "4"
 PV = "2.03"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libnbd"
 PE = "0"
 PV = "1.20.3"

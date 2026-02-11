@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "paktype-naskh-basic-fonts"
 PE = "0"
 PV = "6.0"

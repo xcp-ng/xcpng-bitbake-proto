@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "powertop"
 PE = "0"
 PV = "2.15"

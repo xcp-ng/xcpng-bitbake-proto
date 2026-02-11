@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "iso-codes"
 PE = "0"
 PV = "4.16.0"

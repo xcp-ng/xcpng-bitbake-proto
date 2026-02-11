@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Text-Soundex"
 PE = "0"
 PV = "3.05"

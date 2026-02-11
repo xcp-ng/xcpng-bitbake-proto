@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pf-bb-config"
 PE = "0"
 PV = "22.11"

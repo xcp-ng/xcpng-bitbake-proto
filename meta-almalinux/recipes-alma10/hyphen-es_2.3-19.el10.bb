@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hyphen-es"
 PE = "0"
 PV = "2.3"

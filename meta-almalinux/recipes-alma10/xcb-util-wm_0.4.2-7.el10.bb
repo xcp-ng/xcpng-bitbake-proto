@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xcb-util-wm"
 PE = "0"
 PV = "0.4.2"

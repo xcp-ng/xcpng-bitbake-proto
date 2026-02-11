@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "fonts-rpm-macros"
 PE = "1"
 PV = "2.0.5"

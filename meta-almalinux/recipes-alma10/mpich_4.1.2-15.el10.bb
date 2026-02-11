@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mpich"
 PE = "0"
 PV = "4.1.2"

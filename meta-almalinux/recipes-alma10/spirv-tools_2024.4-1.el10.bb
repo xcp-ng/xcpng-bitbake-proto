@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "spirv-tools"
 PE = "0"
 PV = "2024.4"

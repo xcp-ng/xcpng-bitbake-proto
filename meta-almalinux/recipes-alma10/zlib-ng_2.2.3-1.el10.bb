@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "zlib-ng"
 PE = "0"
 PV = "2.2.3"

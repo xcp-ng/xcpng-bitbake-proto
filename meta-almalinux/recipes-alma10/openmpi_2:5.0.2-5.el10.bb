@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "openmpi"
 PE = "2"
 PV = "5.0.2"

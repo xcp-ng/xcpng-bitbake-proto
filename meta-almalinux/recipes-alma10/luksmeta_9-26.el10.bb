@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "luksmeta"
 PE = "0"
 PV = "9"

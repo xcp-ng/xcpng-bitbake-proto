@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-resource-bundles"
 PE = "1"
 PV = "1.5"

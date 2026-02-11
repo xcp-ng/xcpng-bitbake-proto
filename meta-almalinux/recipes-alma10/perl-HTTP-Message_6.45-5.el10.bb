@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-HTTP-Message"
 PE = "0"
 PV = "6.45"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "socket_wrapper"
 PE = "0"
 PV = "1.4.0"

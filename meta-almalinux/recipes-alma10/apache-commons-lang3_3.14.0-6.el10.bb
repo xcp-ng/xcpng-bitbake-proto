@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-commons-lang3"
 PE = "0"
 PV = "3.14.0"

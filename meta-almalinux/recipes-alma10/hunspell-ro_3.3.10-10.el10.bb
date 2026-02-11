@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "hunspell-ro"
 PE = "0"
 PV = "3.3.10"

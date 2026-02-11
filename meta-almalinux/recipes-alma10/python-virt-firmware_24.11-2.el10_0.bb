@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-virt-firmware"
 PE = "0"
 PV = "24.11"

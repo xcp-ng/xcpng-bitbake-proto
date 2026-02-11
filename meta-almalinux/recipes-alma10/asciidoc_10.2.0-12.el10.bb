@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "asciidoc"
 PE = "0"
 PV = "10.2.0"

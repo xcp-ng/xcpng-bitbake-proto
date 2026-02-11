@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libnl3"
 PE = "0"
 PV = "3.11.0"

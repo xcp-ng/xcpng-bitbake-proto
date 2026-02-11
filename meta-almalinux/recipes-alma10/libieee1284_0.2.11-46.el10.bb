@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libieee1284"
 PE = "0"
 PV = "0.2.11"

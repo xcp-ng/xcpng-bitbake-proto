@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xmvn-generator"
 PE = "0"
 PV = "1.2.2"

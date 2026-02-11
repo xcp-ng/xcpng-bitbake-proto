@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "varnish-modules"
 PE = "0"
 PV = "0.25.0"

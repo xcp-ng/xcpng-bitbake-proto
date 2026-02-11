@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "initscripts"
 PE = "0"
 PV = "10.26"

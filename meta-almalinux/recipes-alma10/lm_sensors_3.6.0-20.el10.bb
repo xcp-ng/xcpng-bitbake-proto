@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lm_sensors"
 PE = "0"
 PV = "3.6.0"

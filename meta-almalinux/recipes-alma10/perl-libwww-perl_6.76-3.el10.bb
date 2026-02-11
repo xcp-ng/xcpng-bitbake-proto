@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-libwww-perl"
 PE = "0"
 PV = "6.76"

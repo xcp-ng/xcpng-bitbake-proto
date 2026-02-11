@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Sub-Install"
 PE = "0"
 PV = "0.929"

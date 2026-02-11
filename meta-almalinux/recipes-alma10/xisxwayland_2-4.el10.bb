@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xisxwayland"
 PE = "0"
 PV = "2"

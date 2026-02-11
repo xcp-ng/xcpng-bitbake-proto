@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnupg2"
 PE = "0"
 PV = "2.4.5"

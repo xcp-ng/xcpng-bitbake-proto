@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sblim-indication_helper"
 PE = "0"
 PV = "0.5.0"

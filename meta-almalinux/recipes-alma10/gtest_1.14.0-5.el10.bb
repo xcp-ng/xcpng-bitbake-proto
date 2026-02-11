@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gtest"
 PE = "0"
 PV = "1.14.0"

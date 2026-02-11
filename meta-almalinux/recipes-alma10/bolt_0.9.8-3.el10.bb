@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "bolt"
 PE = "0"
 PV = "0.9.8"

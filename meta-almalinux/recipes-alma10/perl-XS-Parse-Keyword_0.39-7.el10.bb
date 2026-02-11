@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-XS-Parse-Keyword"
 PE = "0"
 PV = "0.39"

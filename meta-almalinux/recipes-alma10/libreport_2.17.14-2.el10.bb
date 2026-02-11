@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libreport"
 PE = "0"
 PV = "2.17.14"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libldac"
 PE = "0"
 PV = "2.0.2.3"

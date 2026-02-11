@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "plexus-compiler"
 PE = "0"
 PV = "2.14.2"

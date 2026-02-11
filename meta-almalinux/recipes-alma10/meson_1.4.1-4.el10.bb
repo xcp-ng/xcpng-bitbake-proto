@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "meson"
 PE = "0"
 PV = "1.4.1"

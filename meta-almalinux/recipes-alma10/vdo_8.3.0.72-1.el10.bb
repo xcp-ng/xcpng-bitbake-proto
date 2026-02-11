@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "vdo"
 PE = "0"
 PV = "8.3.0.72"

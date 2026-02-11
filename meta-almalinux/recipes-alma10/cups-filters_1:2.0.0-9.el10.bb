@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "cups-filters"
 PE = "1"
 PV = "2.0.0"

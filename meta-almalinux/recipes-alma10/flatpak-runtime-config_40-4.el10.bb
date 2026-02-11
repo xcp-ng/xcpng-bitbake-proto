@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "flatpak-runtime-config"
 PE = "0"
 PV = "40"

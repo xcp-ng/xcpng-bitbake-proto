@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-rjsmin"
 PE = "0"
 PV = "1.2.1"

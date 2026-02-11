@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "vazirmatn-fonts"
 PE = "0"
 PV = "33.003"

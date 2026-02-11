@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-wcwidth"
 PE = "0"
 PV = "0.2.6"

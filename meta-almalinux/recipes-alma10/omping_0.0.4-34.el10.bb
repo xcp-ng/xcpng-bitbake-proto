@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "omping"
 PE = "0"
 PV = "0.0.4"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "osgi-compendium"
 PE = "0"
 PV = "7.0.0"

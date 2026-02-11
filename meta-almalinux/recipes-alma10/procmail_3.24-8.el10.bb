@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "procmail"
 PE = "0"
 PV = "3.24"

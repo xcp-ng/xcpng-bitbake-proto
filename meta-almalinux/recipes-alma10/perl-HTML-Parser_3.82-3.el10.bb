@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-HTML-Parser"
 PE = "0"
 PV = "3.82"

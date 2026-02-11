@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libvpx"
 PE = "0"
 PV = "1.14.1"

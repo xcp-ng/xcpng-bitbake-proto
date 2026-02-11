@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-jwcrypto"
 PE = "0"
 PV = "1.5.6"

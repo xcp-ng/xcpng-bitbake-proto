@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "unixODBC"
 PE = "0"
 PV = "2.3.12"

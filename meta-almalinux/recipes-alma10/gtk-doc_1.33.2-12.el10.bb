@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gtk-doc"
 PE = "0"
 PV = "1.33.2"

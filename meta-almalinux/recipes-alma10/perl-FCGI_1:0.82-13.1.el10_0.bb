@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-FCGI"
 PE = "1"
 PV = "0.82"

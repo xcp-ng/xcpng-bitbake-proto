@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "stix-fonts"
 PE = "0"
 PV = "2.13b171"

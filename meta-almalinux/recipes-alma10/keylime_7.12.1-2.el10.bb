@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "keylime"
 PE = "0"
 PV = "7.12.1"

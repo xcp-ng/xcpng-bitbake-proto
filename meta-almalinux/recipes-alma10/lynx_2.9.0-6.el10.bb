@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "lynx"
 PE = "0"
 PV = "2.9.0"

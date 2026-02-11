@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sos"
 PE = "0"
 PV = "4.10.0"

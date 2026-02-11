@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "realtime-setup"
 PE = "0"
 PV = "2.5"

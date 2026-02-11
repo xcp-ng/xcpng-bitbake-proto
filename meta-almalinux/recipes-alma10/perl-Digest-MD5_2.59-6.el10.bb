@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Digest-MD5"
 PE = "0"
 PV = "2.59"

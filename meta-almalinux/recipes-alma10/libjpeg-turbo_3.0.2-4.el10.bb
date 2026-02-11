@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libjpeg-turbo"
 PE = "0"
 PV = "3.0.2"

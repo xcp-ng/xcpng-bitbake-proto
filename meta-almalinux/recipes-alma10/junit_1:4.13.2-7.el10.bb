@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "junit"
 PE = "1"
 PV = "4.13.2"

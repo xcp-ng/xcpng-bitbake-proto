@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nmap"
 PE = "4"
 PV = "7.92"

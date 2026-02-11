@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "maven-compiler-plugin"
 PE = "0"
 PV = "3.12.1"

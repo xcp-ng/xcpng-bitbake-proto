@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pykickstart"
 PE = "0"
 PV = "3.52.8"

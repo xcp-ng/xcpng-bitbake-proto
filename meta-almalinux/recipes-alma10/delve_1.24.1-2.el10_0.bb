@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "delve"
 PE = "0"
 PV = "1.24.1"

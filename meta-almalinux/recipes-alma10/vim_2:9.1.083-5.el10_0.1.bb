@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "vim"
 PE = "2"
 PV = "9.1.083"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xorg-x11-proto-devel"
 PE = "0"
 PV = "2024.1"

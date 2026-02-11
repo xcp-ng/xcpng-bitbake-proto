@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xdg-desktop-portal-gnome"
 PE = "0"
 PV = "47.2"

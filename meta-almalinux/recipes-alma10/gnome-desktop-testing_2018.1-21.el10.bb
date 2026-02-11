@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gnome-desktop-testing"
 PE = "0"
 PV = "2018.1"

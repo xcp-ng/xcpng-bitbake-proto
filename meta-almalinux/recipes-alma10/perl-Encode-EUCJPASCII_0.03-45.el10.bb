@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Encode-EUCJPASCII"
 PE = "0"
 PV = "0.03"

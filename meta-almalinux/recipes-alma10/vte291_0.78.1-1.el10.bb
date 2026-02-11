@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "vte291"
 PE = "0"
 PV = "0.78.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "samba"
 PE = "0"
 PV = "4.21.3"

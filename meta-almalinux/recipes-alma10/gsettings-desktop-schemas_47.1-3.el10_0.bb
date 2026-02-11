@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gsettings-desktop-schemas"
 PE = "0"
 PV = "47.1"

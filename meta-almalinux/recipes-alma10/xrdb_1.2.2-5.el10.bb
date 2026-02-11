@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xrdb"
 PE = "0"
 PV = "1.2.2"

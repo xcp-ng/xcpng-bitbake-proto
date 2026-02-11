@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-List-MoreUtils-XS"
 PE = "0"
 PV = "0.430"

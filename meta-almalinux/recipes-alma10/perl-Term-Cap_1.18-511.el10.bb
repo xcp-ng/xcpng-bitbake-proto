@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Term-Cap"
 PE = "0"
 PV = "1.18"

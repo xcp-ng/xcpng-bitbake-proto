@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-BSD-Resource"
 PE = "0"
 PV = "1.291.100"

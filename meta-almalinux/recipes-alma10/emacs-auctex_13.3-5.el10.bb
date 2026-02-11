@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "emacs-auctex"
 PE = "0"
 PV = "13.3"

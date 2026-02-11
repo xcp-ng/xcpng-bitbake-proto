@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "xcb-util-cursor"
 PE = "0"
 PV = "0.1.4"

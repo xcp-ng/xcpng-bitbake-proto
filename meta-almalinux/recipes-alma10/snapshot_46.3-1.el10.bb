@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "snapshot"
 PE = "0"
 PV = "46.3"

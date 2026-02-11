@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ansible-freeipa"
 PE = "0"
 PV = "1.14.5"

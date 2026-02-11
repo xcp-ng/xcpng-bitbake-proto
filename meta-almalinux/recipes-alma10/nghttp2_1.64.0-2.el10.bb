@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "nghttp2"
 PE = "0"
 PV = "1.64.0"

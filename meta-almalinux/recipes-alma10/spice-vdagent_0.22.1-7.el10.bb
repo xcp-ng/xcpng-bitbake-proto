@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "spice-vdagent"
 PE = "0"
 PV = "0.22.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ansible-pcp"
 PE = "0"
 PV = "2.4.1"

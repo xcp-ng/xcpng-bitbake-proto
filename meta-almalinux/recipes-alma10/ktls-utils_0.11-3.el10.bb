@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ktls-utils"
 PE = "0"
 PV = "0.11"

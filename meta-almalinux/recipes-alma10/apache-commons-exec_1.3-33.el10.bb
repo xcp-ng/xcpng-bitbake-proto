@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-commons-exec"
 PE = "0"
 PV = "1.3"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "php-pecl-xdebug3"
 PE = "0"
 PV = "3.3.1"

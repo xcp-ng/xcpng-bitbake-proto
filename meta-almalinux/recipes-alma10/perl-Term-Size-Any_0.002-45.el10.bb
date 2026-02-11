@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-Term-Size-Any"
 PE = "0"
 PV = "0.002"

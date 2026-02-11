@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "pps-tools"
 PE = "0"
 PV = "1.0.3"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-DesktopEntry"
 PE = "0"
 PV = "0.22"

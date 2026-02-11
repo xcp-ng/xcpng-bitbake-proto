@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "openoffice-lv"
 PE = "0"
 PV = "1.4.0"

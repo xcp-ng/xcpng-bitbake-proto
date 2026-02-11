@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libpfm"
 PE = "0"
 PV = "4.13.0"

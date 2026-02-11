@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "sg3_utils"
 PE = "0"
 PV = "1.48"

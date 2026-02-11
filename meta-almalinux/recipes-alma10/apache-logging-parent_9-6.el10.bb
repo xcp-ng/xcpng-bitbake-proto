@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "apache-logging-parent"
 PE = "0"
 PV = "9"

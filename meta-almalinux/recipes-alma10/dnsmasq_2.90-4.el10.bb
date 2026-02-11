@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dnsmasq"
 PE = "0"
 PV = "2.90"

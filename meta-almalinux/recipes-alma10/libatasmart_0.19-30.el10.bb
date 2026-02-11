@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libatasmart"
 PE = "0"
 PV = "0.19"

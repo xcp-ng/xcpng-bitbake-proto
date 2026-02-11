@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "google-droid-fonts"
 PE = "0"
 PV = "20200215"

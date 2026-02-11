@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-XML-LibXML"
 PE = "1"
 PV = "2.0210"

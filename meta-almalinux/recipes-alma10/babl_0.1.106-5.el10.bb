@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "babl"
 PE = "0"
 PV = "0.1.106"

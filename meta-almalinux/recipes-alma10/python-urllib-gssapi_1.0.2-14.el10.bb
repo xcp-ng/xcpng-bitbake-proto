@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-urllib-gssapi"
 PE = "0"
 PV = "1.0.2"

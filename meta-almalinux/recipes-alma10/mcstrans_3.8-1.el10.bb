@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mcstrans"
 PE = "0"
 PV = "3.8"

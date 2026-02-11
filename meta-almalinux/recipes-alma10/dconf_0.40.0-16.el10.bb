@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dconf"
 PE = "0"
 PV = "0.40.0"

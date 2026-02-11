@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "shaderc"
 PE = "0"
 PV = "2024.4"

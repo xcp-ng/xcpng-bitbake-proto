@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "vulkan-headers"
 PE = "0"
 PV = "1.4.304.0"

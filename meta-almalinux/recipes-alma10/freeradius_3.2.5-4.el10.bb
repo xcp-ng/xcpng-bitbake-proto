@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "freeradius"
 PE = "0"
 PV = "3.2.5"

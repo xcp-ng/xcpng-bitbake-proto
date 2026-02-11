@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "rsyslog"
 PE = "0"
 PV = "8.2412.0"

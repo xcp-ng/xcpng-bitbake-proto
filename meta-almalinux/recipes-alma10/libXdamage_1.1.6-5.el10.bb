@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libXdamage"
 PE = "0"
 PV = "1.1.6"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "liberation-fonts"
 PE = "1"
 PV = "2.1.5"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "kmod"
 PE = "0"
 PV = "31"

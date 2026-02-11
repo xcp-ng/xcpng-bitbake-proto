@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libestr"
 PE = "0"
 PV = "0.1.11"

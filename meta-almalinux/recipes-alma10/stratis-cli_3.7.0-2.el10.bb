@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "stratis-cli"
 PE = "0"
 PV = "3.7.0"

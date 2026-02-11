@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "snappy"
 PE = "0"
 PV = "1.1.10"

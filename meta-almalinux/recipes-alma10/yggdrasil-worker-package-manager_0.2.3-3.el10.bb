@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "yggdrasil-worker-package-manager"
 PE = "0"
 PV = "0.2.3"

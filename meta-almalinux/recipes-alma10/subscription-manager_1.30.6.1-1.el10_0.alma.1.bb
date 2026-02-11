@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "subscription-manager"
 PE = "0"
 PV = "1.30.6.1"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "strace"
 PE = "0"
 PV = "6.12"

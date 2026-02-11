@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "perl-File-Which"
 PE = "0"
 PV = "1.27"

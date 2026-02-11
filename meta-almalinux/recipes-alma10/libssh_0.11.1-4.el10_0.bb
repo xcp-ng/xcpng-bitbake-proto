@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "libssh"
 PE = "0"
 PV = "0.11.1"

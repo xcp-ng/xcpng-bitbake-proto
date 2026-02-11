@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "ptyxis"
 PE = "0"
 PV = "47.10"

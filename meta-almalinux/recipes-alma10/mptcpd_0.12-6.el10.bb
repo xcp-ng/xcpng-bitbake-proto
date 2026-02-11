@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "mptcpd"
 PE = "0"
 PV = "0.12"

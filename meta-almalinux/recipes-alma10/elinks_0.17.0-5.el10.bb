@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "elinks"
 PE = "0"
 PV = "0.17.0"

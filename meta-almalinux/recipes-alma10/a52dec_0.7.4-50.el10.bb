@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "a52dec"
 PE = "0"
 PV = "0.7.4"

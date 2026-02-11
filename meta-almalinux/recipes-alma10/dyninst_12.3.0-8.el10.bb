@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "dyninst"
 PE = "0"
 PV = "12.3.0"

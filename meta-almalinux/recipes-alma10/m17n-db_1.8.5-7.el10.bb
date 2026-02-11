@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "m17n-db"
 PE = "0"
 PV = "1.8.5"

@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "powerpc-utils"
 PE = "0"
 PV = "1.3.13"

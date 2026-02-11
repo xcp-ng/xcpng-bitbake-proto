@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "gtksourceview5"
 PE = "0"
 PV = "5.14.2"

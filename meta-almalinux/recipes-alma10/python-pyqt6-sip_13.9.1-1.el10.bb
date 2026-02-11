@@ -1,4 +1,6 @@
 
+inherit dnf-bridge
+
 PN = "python-pyqt6-sip"
 PE = "0"
 PV = "13.9.1"
