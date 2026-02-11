@@ -137,7 +137,7 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
 
             # FIXME: this assumes there is no "more recent provider"
             # for those packages, that would not match the reldep
-            rdeps = f"\n {'\n '.join(p.name for p in requires)}\n" if requires else ""
+            rdeps = f" \\\n {' \\\n '.join(p.name for p in requires)} \\\n" if requires else ""
             print(f'RDEPENDS:{p.name} = "{rdeps}"', file=r)
 
 cachedirs = {}
