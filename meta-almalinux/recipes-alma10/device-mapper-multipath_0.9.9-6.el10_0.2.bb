@@ -1,0 +1,31 @@
+
+PN = "device-mapper-multipath"
+PE = "0"
+PV = "0.9.9"
+PR = "6.el10_0.2"
+PACKAGES = "device-mapper-multipath device-mapper-multipath-libs kpartx device-mapper-multipath-devel libdmmp libdmmp-devel"
+
+
+URI_device-mapper-multipath = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/device-mapper-multipath-0.9.9-6.el10_0.2.x86_64_v2.rpm;unpack=0"
+RDEPENDS:device-mapper-multipath = "/bin/sh ( ) systemd-units ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libsystemd.so.0()(64bit) ( ) /usr/bin/bash ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libreadline.so.8()(64bit) ( ) libdevmapper.so.1.02()(64bit) ( ) libdevmapper.so.1.02(Base)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_98)(64bit) ( ) liburcu.so.8()(64bit) ( ) libmount ( ) readline ( ) libmpathcmd.so.0()(64bit) ( ) libmpathcmd.so.0(LIBMPATHCMD_1.0.0)(64bit) ( ) libmpathpersist.so.0()(64bit) ( ) libmpathpersist.so.0(LIBMPATHPERSIST_2.1.0)(64bit) ( ) libmpathpersist.so.0(__LIBMPATHPERSIST_INT_1.0.0)(64bit) ( ) libmpathutil.so.0()(64bit) ( ) libmpathutil.so.0(LIBMPATHUTIL_2.0)(64bit) ( ) libmpathutil.so.0(LIBMULTIPATH_16.0.0)(64bit) ( ) libmultipath.so.0()(64bit) ( ) libmultipath.so.0(LIBMPATHCOMMON_1.0.0)(64bit) ( ) libmultipath.so.0(LIBMULTIPATH_24.0.0)(64bit) ( ) userspace-rcu ( ) device-mapper ( >=  1.02.96) device-mapper-multipath-libs ( =  0.9.9-6.el10_0.2) kpartx ( =  0.9.9-6.el10_0.2)"
+RPROVIDES:device-mapper-multipath = "config(device-mapper-multipath) ( =  0.9.9-6.el10_0.2) device-mapper-multipath ( =  0.9.9-6.el10_0.2) device-mapper-multipath(x86-64) ( =  0.9.9-6.el10_0.2)"
+
+URI_device-mapper-multipath-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/device-mapper-multipath-libs-0.9.9-6.el10_0.2.x86_64_v2.rpm;unpack=0"
+RDEPENDS:device-mapper-multipath-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libdevmapper.so.1.02()(64bit) ( ) libdevmapper.so.1.02(Base)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_197)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_97)(64bit) ( ) libmount.so.1()(64bit) ( ) libmount.so.1(MOUNT_2.19)(64bit) ( ) libmount.so.1(MOUNT_2.22)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_98)(64bit) ( ) liburcu.so.8()(64bit) ( ) libaio.so.1()(64bit) ( ) libaio.so.1(LIBAIO_0.1)(64bit) ( ) libaio.so.1(LIBAIO_0.4)(64bit) ( ) libmount.so.1(MOUNT_2.24)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_110)(64bit) ( )"
+RPROVIDES:device-mapper-multipath-libs = "libmpathcmd.so.0()(64bit) ( ) libmpathcmd.so.0(LIBMPATHCMD_1.0.0)(64bit) ( ) libmpathpersist.so.0()(64bit) ( ) libmpathpersist.so.0(LIBMPATHPERSIST_2.1.0)(64bit) ( ) libmpathpersist.so.0(__LIBMPATHPERSIST_INT_1.0.0)(64bit) ( ) libmpathutil.so.0()(64bit) ( ) libmpathutil.so.0(LIBMPATHUTIL_2.0)(64bit) ( ) libmpathutil.so.0(LIBMULTIPATH_16.0.0)(64bit) ( ) libmultipath.so.0()(64bit) ( ) libmultipath.so.0(LIBMPATHCOMMON_1.0.0)(64bit) ( ) libmultipath.so.0(LIBMULTIPATH_24.0.0)(64bit) ( ) libcheckcciss_tur.so()(64bit) ( ) libcheckdirectio.so()(64bit) ( ) libcheckemc_clariion.so()(64bit) ( ) libcheckhp_sw.so()(64bit) ( ) libcheckrdac.so()(64bit) ( ) libcheckreadsector0.so()(64bit) ( ) libchecktur.so()(64bit) ( ) libforeign-nvme.so()(64bit) ( ) libmpathutil.so.0(LIBMPATHCOMMON_1.0.0)(64bit) ( ) libmpathutil.so.0(LIBMPATHUTIL_2.1)(64bit) ( ) libmpathvalid.so.0()(64bit) ( ) libmpathvalid.so.0(MPATH_1.0)(64bit) ( ) libprioalua.so()(64bit) ( ) libprioana.so()(64bit) ( ) libprioconst.so()(64bit) ( ) libpriodatacore.so()(64bit) ( ) libprioemc.so()(64bit) ( ) libpriohds.so()(64bit) ( ) libpriohp_sw.so()(64bit) ( ) libprioiet.so()(64bit) ( ) libprioontap.so()(64bit) ( ) libpriopath_latency.so()(64bit) ( ) libpriorandom.so()(64bit) ( ) libpriordac.so()(64bit) ( ) libpriosysfs.so()(64bit) ( ) libprioweightedpath.so()(64bit) ( ) device-mapper-multipath-libs ( =  0.9.9-6.el10_0.2) device-mapper-multipath-libs(x86-64) ( =  0.9.9-6.el10_0.2)"
+
+URI_kpartx = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kpartx-0.9.9-6.el10_0.2.x86_64_v2.rpm;unpack=0"
+RDEPENDS:kpartx = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/sh ( ) libdevmapper.so.1.02()(64bit) ( ) libdevmapper.so.1.02(Base)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_197)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_97)(64bit) ( )"
+RPROVIDES:kpartx = "kpartx ( =  0.9.9-6.el10_0.2) config(kpartx) ( =  0.9.9-6.el10_0.2) kpartx(x86-64) ( =  0.9.9-6.el10_0.2)"
+
+URI_device-mapper-multipath-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/device-mapper-multipath-devel-0.9.9-6.el10_0.2.x86_64_v2.rpm;unpack=0"
+RDEPENDS:device-mapper-multipath-devel = "libmpathcmd.so.0()(64bit) ( ) libmpathpersist.so.0()(64bit) ( ) libmpathvalid.so.0()(64bit) ( ) device-mapper-multipath ( =  0.9.9-6.el10_0.2) device-mapper-multipath-libs ( =  0.9.9-6.el10_0.2)"
+RPROVIDES:device-mapper-multipath-devel = "device-mapper-multipath-devel ( =  0.9.9-6.el10_0.2) device-mapper-multipath-devel(x86-64) ( =  0.9.9-6.el10_0.2)"
+
+URI_libdmmp = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libdmmp-0.9.9-6.el10_0.2.x86_64_v2.rpm;unpack=0"
+RDEPENDS:libdmmp = "rtld(GNU_HASH) ( ) libjson-c.so.5()(64bit) ( ) libjson-c.so.5(JSONC_0.14)(64bit) ( ) libc.so.6(GLIBC_2.17)(64bit) ( ) json-c ( ) libmpathcmd.so.0()(64bit) ( ) libmpathcmd.so.0(LIBMPATHCMD_1.0.0)(64bit) ( ) device-mapper-multipath ( =  0.9.9-6.el10_0.2) device-mapper-multipath-libs ( =  0.9.9-6.el10_0.2)"
+RPROVIDES:libdmmp = "libdmmp.so.0.2.0()(64bit) ( ) libdmmp ( =  0.9.9-6.el10_0.2) libdmmp(x86-64) ( =  0.9.9-6.el10_0.2)"
+
+URI_libdmmp-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libdmmp-devel-0.9.9-6.el10_0.2.x86_64_v2.rpm;unpack=0"
+RDEPENDS:libdmmp-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) libdmmp.so.0.2.0()(64bit) ( ) libdmmp ( =  0.9.9-6.el10_0.2)"
+RPROVIDES:libdmmp-devel = "pkgconfig(libdmmp) ( =  0.2.0) libdmmp-devel ( =  0.9.9-6.el10_0.2) libdmmp-devel(x86-64) ( =  0.9.9-6.el10_0.2)"

@@ -1,0 +1,15 @@
+
+PN = "spice"
+PE = "0"
+PV = "0.15.1"
+PR = "3.el10"
+PACKAGES = "spice-server spice-server-devel"
+
+
+URI_spice-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-server-0.15.1-3.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:spice-server = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libssl.so.3()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libjpeg.so.62()(64bit) ( ) libjpeg.so.62(LIBJPEG_6.2)(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libpixman-1.so.0()(64bit) ( ) libsasl2.so.3()(64bit) ( ) liblz4.so.1()(64bit) ( ) libgstvideo-1.0.so.0()(64bit) ( ) libgstbase-1.0.so.0()(64bit) ( ) libopus.so.0()(64bit) ( ) libgstapp-1.0.so.0()(64bit) ( ) liborc-0.4.so.0()(64bit) ( )"
+RPROVIDES:spice-server = "libspice-server.so.1()(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.10.0)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.10.1)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.10.2)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.10.3)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.10.4)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.11.2)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.12.2)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.12.3)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.12.4)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.12.5)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.13.1)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.14.2)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.6.0)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.8.1)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.8.2)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.8.3)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.11.4)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.12.6)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.13.2)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.14.3)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.6.1)(64bit) ( ) libspice-server.so.1(SPICE_SERVER_0.8.0)(64bit) ( ) spice-server ( =  0.15.1-3.el10) spice-server(x86-64) ( =  0.15.1-3.el10)"
+
+URI_spice-server-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/spice-server-devel-0.15.1-3.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:spice-server-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) pkgconfig(openssl) ( ) libspice-server.so.1()(64bit) ( ) pkgconfig(glib-2.0) ( >=  2.38) pkgconfig(libcacard) ( >=  2.5.1) pkgconfig(pixman-1) ( >=  0.17.7) pkgconfig(spice-protocol) ( >=  0.14.3) spice-server(x86-64) ( =  0.15.1-3.el10)"
+RPROVIDES:spice-server-devel = "pkgconfig(spice-server) ( =  0.15.1) spice-server-devel ( =  0.15.1-3.el10) spice-server-devel(x86-64) ( =  0.15.1-3.el10)"

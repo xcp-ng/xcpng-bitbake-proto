@@ -1,0 +1,11 @@
+
+PN = "hunspell-ne"
+PE = "0"
+PV = "20080425"
+PR = "34.el10"
+PACKAGES = "hunspell-ne"
+
+
+URI_hunspell-ne = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hunspell-ne-20080425-34.el10.noarch.rpm;unpack=0"
+RDEPENDS:hunspell-ne = "hunspell-filesystem ( )"
+RPROVIDES:hunspell-ne = "hunspell-ne ( =  20080425-34.el10)"

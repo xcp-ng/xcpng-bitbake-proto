@@ -1,0 +1,15 @@
+
+PN = "bsf"
+PE = "0"
+PV = "2.4.0"
+PR = "54.el10"
+PACKAGES = "bsf bsf-javadoc"
+
+
+URI_bsf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bsf-2.4.0-54.el10.noarch.rpm;unpack=0"
+RDEPENDS:bsf = "javapackages-filesystem ( ) mvn(commons-logging:commons-logging) ( )"
+RPROVIDES:bsf = "bsf ( =  2.4.0-54.el10) mvn(bsf:bsf) ( =  2.4.0) mvn(bsf:bsf:pom:) ( =  2.4.0) mvn(org.apache.bsf:bsf) ( =  2.4.0) mvn(org.apache.bsf:bsf:pom:) ( =  2.4.0)"
+
+URI_bsf-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/bsf-javadoc-2.4.0-54.el10.noarch.rpm;unpack=0"
+RDEPENDS:bsf-javadoc = "javapackages-filesystem ( )"
+RPROVIDES:bsf-javadoc = "bsf-javadoc ( =  2.4.0-54.el10)"

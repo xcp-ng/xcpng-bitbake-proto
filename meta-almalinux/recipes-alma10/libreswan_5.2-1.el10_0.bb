@@ -1,0 +1,11 @@
+
+PN = "libreswan"
+PE = "0"
+PV = "5.2"
+PR = "1.el10_0"
+PACKAGES = "libreswan"
+
+
+URI_libreswan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libreswan-5.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+RDEPENDS:libreswan = "/bin/sh ( ) systemd ( ) coreutils ( ) bash ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/sh ( ) libnspr4.so()(64bit) ( ) libnss3.so()(64bit) ( ) libselinux.so.1()(64bit) ( ) libcurl.so.4()(64bit) ( ) libnss3.so(NSS_3.4)(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libnss3.so(NSS_3.2)(64bit) ( ) libnssutil3.so()(64bit) ( ) libcrypt.so.2()(64bit) ( ) libsmime3.so()(64bit) ( ) libssl3.so()(64bit) ( ) libcrypt.so.2(XCRYPT_2.0)(64bit) ( ) libldap.so.2()(64bit) ( ) libcap-ng.so.0()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libnss3.so(NSS_3.9.2)(64bit) ( ) libnss3.so(NSS_3.12)(64bit) ( ) libnss3.so(NSS_3.3)(64bit) ( ) libpam.so.0()(64bit) ( ) libpam.so.0(LIBPAM_1.0)(64bit) ( ) libsmime3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.5)(64bit) ( ) libssl3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.10)(64bit) ( ) libnss3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.9)(64bit) ( ) libsmime3.so(NSS_3.2)(64bit) ( ) liblber.so.2()(64bit) ( ) libseccomp.so.2()(64bit) ( ) libnss3.so(NSS_3.7)(64bit) ( ) libnss3.so(NSS_3.8)(64bit) ( ) libssl3.so(NSS_3.14)(64bit) ( ) libnss3.so(NSS_3.15)(64bit) ( ) liblber.so.2(OPENLDAP_2.200)(64bit) ( ) libnss3.so(NSS_3.11)(64bit) ( ) libnss3.so(NSS_3.30)(64bit) ( ) libnss3.so(NSS_3.52)(64bit) ( ) libnss3.so(NSS_3.22)(64bit) ( ) logrotate ( ) libaudit.so.1()(64bit) ( ) libnss3.so(NSS_3.12.3)(64bit) ( ) libunbound.so.8()(64bit) ( ) nss-tools ( ) libevent_core-2.1.so.7()(64bit) ( ) libnss3.so(NSS_3.11.7)(64bit) ( ) libsmime3.so(NSS_3.3)(64bit) ( ) libevent_pthreads-2.1.so.7()(64bit) ( ) libnssutil3.so(NSSUTIL_3.38)(64bit) ( ) libssl3.so(NSS_3.24)(64bit) ( ) libnss3.so(NSS_3.18)(64bit) ( ) libsmime3.so(NSS_3.9.3)(64bit) ( ) nss-softokn ( ) procps-ng ( ) libldns.so.3()(64bit) ( ) libnss3.so(NSS_3.15.4)(64bit) ( ) iproute ( >=  2.6.8) nss ( >=  3.52) unbound-libs ( >=  1.6.6)"
+RPROVIDES:libreswan = "config(libreswan) ( =  5.2-1.el10_0) libreswan ( =  5.2-1.el10_0) libreswan(x86-64) ( =  5.2-1.el10_0)"

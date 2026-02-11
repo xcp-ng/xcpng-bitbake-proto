@@ -1,0 +1,15 @@
+
+PN = "hunspell-be"
+PE = "0"
+PV = "1.1"
+PR = "32.el10"
+PACKAGES = "hunspell-be hyphen-be"
+
+
+URI_hunspell-be = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hunspell-be-1.1-32.el10.noarch.rpm;unpack=0"
+RDEPENDS:hunspell-be = "hunspell-filesystem ( )"
+RPROVIDES:hunspell-be = "hunspell-be ( =  1.1-32.el10)"
+
+URI_hyphen-be = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hyphen-be-1.1-32.el10.noarch.rpm;unpack=0"
+RDEPENDS:hyphen-be = "hyphen ( )"
+RPROVIDES:hyphen-be = "hyphen-be ( =  1.1-32.el10)"

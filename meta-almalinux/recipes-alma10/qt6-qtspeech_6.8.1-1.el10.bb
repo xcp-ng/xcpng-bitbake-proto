@@ -1,0 +1,27 @@
+
+PN = "qt6-qtspeech"
+PE = "0"
+PV = "6.8.1"
+PR = "1.el10"
+PACKAGES = "qt6-qtspeech qt6-qtspeech-devel qt6-qtspeech-speechd qt6-qtspeech-examples qt6-qtspeech-tests"
+
+
+URI_qt6-qtspeech = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtspeech-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:qt6-qtspeech = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Multimedia.so.6()(64bit) ( ) libQt6Multimedia.so.6(Qt_6)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
+RPROVIDES:qt6-qtspeech = "libQt6TextToSpeech.so.6()(64bit) ( ) libQt6TextToSpeech.so.6(Qt_6)(64bit) ( ) libQt6TextToSpeech.so.6(NonQt)(64bit) ( ) libQt6TextToSpeech.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtexttospeech_mock.so()(64bit) ( ) libqtexttospeech_mock.so(NonQt)(64bit) ( ) libqtexttospeech_mock.so(Qt_6)(64bit) ( ) libqtexttospeech_mock.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libtexttospeechqmlplugin.so()(64bit) ( ) libtexttospeechqmlplugin.so(NonQt)(64bit) ( ) libtexttospeechqmlplugin.so(Qt_6)(64bit) ( ) libtexttospeechqmlplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtTextToSpeech) ( ) qt6-qtspeech(x86-64) ( =  6.8.1-1.el10) qt6-qtspeech ( =  6.8.1-1.el10)"
+
+URI_qt6-qtspeech-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtspeech-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:qt6-qtspeech-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) libQt6TextToSpeech.so.6()(64bit) ( ) pkgconfig(Qt6Multimedia) ( ) qt6-qtspeech(x86-64) ( =  6.8.1-1.el10)"
+RPROVIDES:qt6-qtspeech-devel = "cmake(Qt6QTextToSpeechMockPlugin) ( ) cmake(Qt6TextToSpeech) ( ) cmake(Qt6TextToSpeechQml) ( ) cmake(QtSpeechTests) ( ) cmake(qt6qtexttospeechmockplugin) ( ) cmake(qt6texttospeech) ( ) cmake(qt6texttospeechqml) ( ) cmake(qtspeechtests) ( ) pkgconfig(Qt6TextToSpeech) ( =  6.8.1) qt6-qtspeech-devel ( =  6.8.1-1.el10) qt6-qtspeech-devel(x86-64) ( =  6.8.1-1.el10)"
+
+URI_qt6-qtspeech-speechd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtspeech-speechd-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:qt6-qtspeech-speechd = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) cmake-filesystem(x86-64) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6TextToSpeech.so.6()(64bit) ( ) libQt6TextToSpeech.so.6(Qt_6)(64bit) ( ) libspeechd.so.2()(64bit) ( ) qt6-qtspeech(x86-64) ( =  6.8.1-1.el10)"
+RPROVIDES:qt6-qtspeech-speechd = "cmake(Qt6QTextToSpeechSpeechdPlugin) ( ) cmake(qt6qtexttospeechspeechdplugin) ( ) libqtexttospeech_speechd.so()(64bit) ( ) libqtexttospeech_speechd.so(NonQt)(64bit) ( ) libqtexttospeech_speechd.so(Qt_6)(64bit) ( ) libqtexttospeech_speechd.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtspeech-speechd(x86-64) ( =  6.8.1-1.el10) qt6-qtspeech-speechd ( =  6.8.1-1.el10)"
+
+URI_qt6-qtspeech-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtspeech-examples-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:qt6-qtspeech-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6TextToSpeech.so.6()(64bit) ( ) libQt6TextToSpeech.so.6(Qt_6)(64bit) ( ) qt6-qtspeech(x86-64) ( =  6.8.1-1.el10)"
+RPROVIDES:qt6-qtspeech-examples = "qt6-qtspeech-examples ( =  6.8.1-1.el10) qt6-qtspeech-examples(x86-64) ( =  6.8.1-1.el10)"
+
+URI_qt6-qtspeech-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtspeech-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:qt6-qtspeech-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6QuickTest.so.6()(64bit) ( ) libQt6QuickTest.so.6(Qt_6)(64bit) ( ) libQt6Multimedia.so.6()(64bit) ( ) libQt6Multimedia.so.6(Qt_6)(64bit) ( ) libQt6TextToSpeech.so.6()(64bit) ( ) libQt6TextToSpeech.so.6(Qt_6)(64bit) ( ) qt6-qtspeech(x86-64) ( =  6.8.1-1.el10)"
+RPROVIDES:qt6-qtspeech-tests = "qt6-qtspeech-tests ( =  6.8.1-1.el10) qt6-qtspeech-tests(x86-64) ( =  6.8.1-1.el10)"

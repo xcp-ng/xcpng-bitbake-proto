@@ -1,0 +1,19 @@
+
+PN = "brasero"
+PE = "0"
+PV = "3.12.3"
+PR = "11.el10"
+PACKAGES = "brasero brasero-libs brasero-devel"
+
+
+URI_brasero = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brasero-3.12.3-11.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:brasero = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libcairo.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libxml2.so.2(LIBXML2_2.6.0)(64bit) ( ) libgtk-3.so.0()(64bit) ( ) libgdk-3.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libgstvideo-1.0.so.0()(64bit) ( ) libxml2.so.2(LIBXML2_2.6.5)(64bit) ( ) libgthread-2.0.so.0()(64bit) ( ) libtracker-sparql-3.0.so.0()(64bit) ( ) libburn.so.4()(64bit) ( ) libburn.so.4(LIBBURN4)(64bit) ( ) libisofs.so.6()(64bit) ( ) libisofs.so.6(LIBISOFS6)(64bit) ( ) libbrasero-burn3.so.1()(64bit) ( ) libbrasero-media3.so.1()(64bit) ( ) libbrasero-utils3.so.1()(64bit) ( ) brasero-libs(x86-64) ( =  3.12.3-11.el10)"
+RPROVIDES:brasero = "metainfo() ( ) application() ( ) mimehandler(application/x-cd-image) ( ) application(brasero.desktop) ( ) libbrasero-audio2cue.so()(64bit) ( ) libbrasero-burn-uri.so()(64bit) ( ) libbrasero-cdda2wav.so()(64bit) ( ) libbrasero-cdrecord.so()(64bit) ( ) libbrasero-checksum-file.so()(64bit) ( ) libbrasero-checksum.so()(64bit) ( ) libbrasero-dvdauthor.so()(64bit) ( ) libbrasero-dvdcss.so()(64bit) ( ) libbrasero-libburn.so()(64bit) ( ) libbrasero-libisofs.so()(64bit) ( ) libbrasero-local-track.so()(64bit) ( ) libbrasero-mkisofs.so()(64bit) ( ) libbrasero-normalize.so()(64bit) ( ) libbrasero-readcd.so()(64bit) ( ) libbrasero-transcode.so()(64bit) ( ) libbrasero-vcdimager.so()(64bit) ( ) libbrasero-vob.so()(64bit) ( ) metainfo(brasero.appdata.xml) ( ) mimehandler(application/x-brasero) ( ) mimehandler(application/x-cdrdao-toc) ( ) mimehandler(application/x-cue) ( ) mimehandler(application/x-toc) ( ) mimehandler(audio/x-mp3-playlist) ( ) mimehandler(audio/x-mpegurl) ( ) mimehandler(audio/x-ms-asx) ( ) mimehandler(audio/x-scpls) ( ) mimehandler(x-content/audio-cdda) ( ) mimehandler(x-content/image-picturecd) ( ) mimehandler(x-content/video-dvd) ( ) mimehandler(x-content/video-svcd) ( ) mimehandler(x-content/video-vcd) ( ) brasero ( =  3.12.3-11.el10) brasero(x86-64) ( =  3.12.3-11.el10)"
+
+URI_brasero-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brasero-libs-3.12.3-11.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:brasero-libs = "rtld(GNU_HASH) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libcairo.so.2()(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libgtk-3.so.0()(64bit) ( ) libgdk-3.so.0()(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libgstpbutils-1.0.so.0()(64bit) ( ) libnotify.so.4()(64bit) ( ) libcanberra-gtk3.so.0()(64bit) ( )"
+RPROVIDES:brasero-libs = "libbrasero-burn3.so.1()(64bit) ( ) libbrasero-media3.so.1()(64bit) ( ) libbrasero-utils3.so.1()(64bit) ( ) brasero-libs(x86-64) ( =  3.12.3-11.el10) brasero-libs ( =  3.12.3-11.el10)"
+
+URI_brasero-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/brasero-devel-3.12.3-11.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:brasero-devel = "/usr/bin/pkg-config ( ) pkgconfig(glib-2.0) ( ) pkgconfig(gtk+-3.0) ( ) pkgconfig(gthread-2.0) ( ) libbrasero-burn3.so.1()(64bit) ( ) libbrasero-media3.so.1()(64bit) ( ) libbrasero-utils3.so.1()(64bit) ( ) brasero-libs(x86-64) ( =  3.12.3-11.el10)"
+RPROVIDES:brasero-devel = "brasero-devel ( =  3.12.3-11.el10) brasero-devel(x86-64) ( =  3.12.3-11.el10) pkgconfig(libbrasero-burn3) ( =  3.12.3) pkgconfig(libbrasero-media3) ( =  3.12.3)"

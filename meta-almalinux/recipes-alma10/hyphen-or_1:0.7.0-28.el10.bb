@@ -1,0 +1,7 @@
+
+PN = "hyphen-or"
+PE = "1"
+PV = "0.7.0"
+PR = "28.el10"
+PACKAGES = ""
+

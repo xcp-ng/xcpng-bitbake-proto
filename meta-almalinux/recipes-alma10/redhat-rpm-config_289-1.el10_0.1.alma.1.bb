@@ -1,0 +1,11 @@
+
+PN = "redhat-rpm-config"
+PE = "0"
+PV = "289"
+PR = "1.el10_0.1.alma.1"
+PACKAGES = "redhat-rpm-config"
+
+
+URI_redhat-rpm-config = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/redhat-rpm-config-289-1.el10_0.1.alma.1.noarch.rpm;unpack=0"
+RDEPENDS:redhat-rpm-config = "/bin/sh ( ) /usr/bin/sh ( ) /usr/bin/bash ( ) coreutils ( ) forge-srpm-macros ( ) /usr/bin/find ( ) /usr/bin/grep ( ) /usr/bin/sed ( ) efi-srpm-macros ( ) fonts-srpm-macros ( ) go-srpm-macros ( ) lua-srpm-macros ( ) ocaml-srpm-macros ( ) openblas-srpm-macros ( ) package-notes-srpm-macros ( ) perl-srpm-macros ( ) pyproject-srpm-macros ( ) qt6-srpm-macros ( ) rust-srpm-macros ( ) zip ( ) /usr/bin/file ( ) /usr/bin/xargs ( ) annobin-plugin-gcc ( if  gcc) gawk ( if  clang) gcc-plugin-annobin ( if  gcc) llvm ( if  clang) dwz ( >=  0.4) kernel-srpm-macros ( >=  1.0-12) python-srpm-macros ( >=  3.11-7) rpm ( >=  4.11.0)"
+RPROVIDES:redhat-rpm-config = "rpm_lua(fedora.common) ( ) rpm_macro(_dwz_limit) ( ) rpm_macro(_dwz_low_mem_die_limit) ( ) rpm_macro(_dwz_low_mem_die_limit_armv5tel) ( ) rpm_macro(_dwz_low_mem_die_limit_armv7hl) ( ) rpm_macro(_dwz_max_die_limit) ( ) rpm_macro(_dwz_max_die_limit_armv5tel) ( ) rpm_macro(_dwz_max_die_limit_armv7hl) ( ) rpm_macro(_dwz_max_die_limit_x86_64) ( ) rpm_macro(_find_debuginfo_dwz_opts) ( ) rpm_macro(_metainfodir) ( ) rpm_macro(_monodir) ( ) rpm_macro(_monogacdir) ( ) rpm_macro(_swidtagdir) ( ) rpm_macro(_vpath_builddir) ( ) rpm_macro(_vpath_srcdir) ( ) rpm_macro(autochangelog) ( ) rpm_macro(autorelease) ( ) rpm_macro(bash_completions_dir) ( ) rpm_macro(constrain_build) ( ) rpm_macro(fish_completions_dir) ( ) rpm_macro(gap_arches) ( ) rpm_macro(gpgverify) ( ) rpm_macro(java_arches) ( ) rpm_macro(ldc_arches) ( ) rpm_macro(ldconfig_post) ( ) rpm_macro(ldconfig_postun) ( ) rpm_macro(ldconfig_scriptlets) ( ) rpm_macro(limit_build) ( ) rpm_macro(listfiles) ( ) rpm_macro(mono_arches) ( ) rpm_macro(new_package) ( ) rpm_macro(nodejs_arches) ( ) rpm_macro(rpmmacrodir) ( ) rpm_macro(valgrind_arches) ( ) rpm_macro(wordwrap) ( ) rpm_macro(writevars) ( ) rpm_macro(zsh_completions_dir) ( ) redhat-rpm-config ( =  289-1.el10_0.1.alma.1) system-rpm-config ( =  289-1.el10_0.1.alma.1)"
