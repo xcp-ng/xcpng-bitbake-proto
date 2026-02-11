@@ -4,10 +4,14 @@ from __future__ import annotations
 
 import logging
 import tempfile
+from collections import defaultdict
 
 import dnf
 
 logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.WARNING)
+
+# https://github.com/rpm-software-management/libdnf/issues/1757
+WORKAROUND_LIBDNF_BUG = True
 
 V = '10.0'
 SECTIONS = ['BaseOS', 'AppStream', 'CRB', 'devel']
@@ -50,6 +54,20 @@ with (tempfile.TemporaryDirectory() as persistdir,
     rpms_src: list[dnf.package.Package] = list(dbs['src'].sack.query().filter(latest=1).available())
     print(f"#src={len(rpms_src)}")
 
+    if WORKAROUND_LIBDNF_BUG:
+        # Work around libdnf bug: the provides filter does not work on
+        # non-RPM platforms. Build a provides-to- package map manually
+        # instead.
+        _USRMOVE_PREFIXES = ('/bin/', '/sbin/')
+        provides_map: dict[str, list[dnf.package.Package]] = defaultdict(list)
+        for p in dbs['bin'].sack.query().available():
+            for prov in p.provides:
+                provides_map[prov.name].append(p)
+                # Index file provides under UsrMove-canonical paths too
+                prov_name = prov.name
+                if prov_name.startswith(_USRMOVE_PREFIXES):
+                    provides_map['/usr' + prov_name].append(p)
+
     pkg = rpms_src[0]
     print(f"# src: {pkg}")
     print(f'PN = "{pkg.name}"')
@@ -65,6 +83,8 @@ with (tempfile.TemporaryDirectory() as persistdir,
         rel: hawkey.Reldep
         for rel in p.requires:
             print(f"# {rel.name} {rel.relation} {rel.version}")
-            providers = dbs['bin'].sack.query().filter(provides=rel)
-
+            if WORKAROUND_LIBDNF_BUG:
+                providers = provides_map.get(rel.name, [])
+            else:
+                providers = dbs['bin'].sack.query().filter(provides=rel)
             print(f"{rel}: {[str(p) for p in providers]}")
