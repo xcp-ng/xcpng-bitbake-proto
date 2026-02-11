@@ -37,7 +37,8 @@ def prefer(lst, p1_name, p2_name):
             lst.remove(p2)
 
 def write_recipe(pkg: dnf.package.Package) -> None:
-    rpms: list[dnf.package.Package] = list(dbs['bin'].sack.query().filter(sourcerpm=f"{pkg}.rpm"))
+    pkgname = f"{pkg.name}-{pkg.version}-{pkg.release}.src.rpm"
+    rpms: list[dnf.package.Package] = list(dbs['bin'].sack.query().filter(sourcerpm=f"{pkgname}"))
     fname = f"{pkg.name}_{f'{pkg.epoch}:' if pkg.epoch else ''}{pkg.version}-{pkg.release}.bb"
     with open(f"meta-almalinux/recipes-alma10/{fname}", "w") as r:
         print(f'''
@@ -97,6 +98,14 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
                     prefer(providers, 'curl', 'wget')
                     prefer(providers, 'redhat-display-fonts', 'redhat-display-vf-fonts')
                     prefer(providers, 'redhat-text-fonts', 'redhat-text-vf-fonts')
+                    prefer(providers, 'google-noto-sans-fonts', 'google-noto-sans-vf-fonts')
+                    prefer(providers, 'pipewire-pulseaudio', 'pulseaudio-module-bluetooth')
+                    prefer(providers, 'nodejs-libs', 'nodejs22-libs')
+                    prefer(providers, 'texlive-ragged2e', 'texlive-ms')
+                    prefer(providers, 'texlive-latex', 'texlive-collection-latexrecommended')
+                    prefer(providers, 'texlive-everyshi', 'texlive-ms')
+                    prefer(providers, 'texlive-count1to', 'texlive-ms')
+                    prefer(providers, 'tomcat-el-3.0-api', 'tomcat9-el-3.0-api')
 
                     # WTF!?
                     prefer(providers, 'libtiff', 'golang-tests') # libtiffxx.so.6()(64bit)
@@ -125,8 +134,17 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
                     if rel.name == 'maven-jdk-binding':
                         providers = [p for p in providers if p.name == 'maven-unbound']
 
-                    if rel.name == 'mvn(org.apache.tomcat:tomcat-servlet-api)':
-                        providers = [p for p in providers if p.name == 'tomcat-servlet-6.0-api']
+                    if str(rel) == 'mvn(org.apache.tomcat:tomcat-servlet-api) = 9.0.87':
+                        providers = [p for p in providers if p.name == 'tomcat-servlet-4.0-api']
+
+                    if str(rel) == 'mvn(org.apache.tomcat:tomcat-servlet-api)':
+                        providers = [p for p in providers if p.name == 'tomcat-servlet-4.0-api']
+
+                    if str(rel) == 'mvn(org.apache.tomcat:tomcat-jsp-api) = 9.0.87':
+                        providers = [p for p in providers if p.name == 'tomcat-jsp-2.3-api']
+
+                    if rel.name == 'kernel':
+                        providers = [p for p in providers if p.name == 'kernel']
 
                     # packages appearing in several locations
                     # there should be already only 1 evr per package name, but be safe
