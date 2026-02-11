@@ -3,5 +3,31 @@ PN = "libcupsfilters"
 PE = "1"
 PV = "2.0.0"
 PR = "10.el10"
-PACKAGES = ""
+PACKAGES = "libcupsfilters libcupsfilters-devel"
 
+
+URI_libcupsfilters = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libcupsfilters-2.0.0-10.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:libcupsfilters = " \
+ qpdf-libs \
+ lcms2 \
+ libpng \
+ cups-filesystem \
+ libgcc \
+ cups-libs \
+ ghostscript \
+ fontconfig \
+ poppler-cpp \
+ libstdc++ \
+ colord \
+ libexif \
+ glibc \
+ libjpeg-turbo \
+ dbus-libs \
+ libtiff \
+"
+
+URI_libcupsfilters-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libcupsfilters-devel-2.0.0-10.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:libcupsfilters-devel = " \
+ pkgconf-pkg-config \
+ libcupsfilters \
+"

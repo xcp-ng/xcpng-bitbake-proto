@@ -22,33 +22,33 @@ RDEPENDS:pki-resteasy-core = " \
  jakarta-annotations \
  apache-commons-io \
  javapackages-filesystem \
+ tomcat-servlet-4.0-api \
  jaxb-api \
  jboss-jaxrs-2.0-api \
  jboss-logging \
  jboss-logging-tools \
  java-21-openjdk-headless \
- tomcat-servlet-6.0-api \
 "
 
 URI_pki-resteasy-jackson2-provider = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pki-resteasy-jackson2-provider-3.0.26-30.el10.noarch.rpm;unpack=0"
 RDEPENDS:pki-resteasy-jackson2-provider = " \
  javapackages-filesystem \
+ tomcat-servlet-4.0-api \
  jackson-annotations \
  jackson-core \
  jackson-databind \
  jackson-jaxrs-json-provider \
  java-21-openjdk-headless \
- tomcat-servlet-6.0-api \
 "
 
 URI_pki-resteasy-servlet-initializer = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pki-resteasy-servlet-initializer-3.0.26-30.el10.noarch.rpm;unpack=0"
 RDEPENDS:pki-resteasy-servlet-initializer = " \
  pki-resteasy-core \
  javapackages-filesystem \
+ tomcat-servlet-4.0-api \
  jaxb-api \
  jboss-jaxrs-2.0-api \
  jboss-logging \
  jboss-logging-tools \
  java-21-openjdk-headless \
- tomcat-servlet-6.0-api \
 "

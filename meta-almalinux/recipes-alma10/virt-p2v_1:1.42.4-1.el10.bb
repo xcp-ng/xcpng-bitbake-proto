@@ -3,5 +3,14 @@ PN = "virt-p2v"
 PE = "1"
 PV = "1.42.4"
 PR = "1.el10"
-PACKAGES = ""
+PACKAGES = "virt-p2v"
 
+
+URI_virt-p2v = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/virt-p2v-1.42.4-1.el10.x86_64_v2.rpm;unpack=0"
+RDEPENDS:virt-p2v = " \
+ gzip \
+ gawk \
+ bash \
+ binutils \
+ guestfs-tools \
+"
