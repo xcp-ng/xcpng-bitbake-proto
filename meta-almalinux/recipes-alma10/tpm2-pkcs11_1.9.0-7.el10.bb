@@ -7,21 +7,21 @@ PACKAGES = "tpm2-pkcs11 tpm2-pkcs11-tools"
 
 
 URI_tpm2-pkcs11 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tpm2-pkcs11-1.9.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:tpm2-pkcs11 = "
- openssl-libs
- libyaml
- sqlite-libs
- tpm2-tss
- glibc
- tpm2-tss-fapi
+RDEPENDS:tpm2-pkcs11 = " \
+ openssl-libs \
+ libyaml \
+ sqlite-libs \
+ tpm2-tss \
+ glibc \
+ tpm2-tss-fapi \
 "
 
 URI_tpm2-pkcs11-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tpm2-pkcs11-tools-1.9.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:tpm2-pkcs11-tools = "
- python3
- python3-pyyaml
- python3-cryptography
- python3-pyasn1-modules
- python3-tpm2-pytss
- bash
+RDEPENDS:tpm2-pkcs11-tools = " \
+ python3 \
+ python3-pyyaml \
+ python3-cryptography \
+ python3-pyasn1-modules \
+ python3-tpm2-pytss \
+ bash \
 "

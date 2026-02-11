@@ -7,6 +7,6 @@ PACKAGES = "rit-meera-new-fonts"
 
 
 URI_rit-meera-new-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rit-meera-new-fonts-1.5.2-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:rit-meera-new-fonts = "
- fonts-filesystem
+RDEPENDS:rit-meera-new-fonts = " \
+ fonts-filesystem \
 "

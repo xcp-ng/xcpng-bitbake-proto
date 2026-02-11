@@ -7,14 +7,14 @@ PACKAGES = "httpcomponents-client httpcomponents-client-javadoc"
 
 
 URI_httpcomponents-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/httpcomponents-client-4.5.14-9.el10.noarch.rpm;unpack=0"
-RDEPENDS:httpcomponents-client = "
- publicsuffix-list
- apache-commons-codec
- httpcomponents-core
- javapackages-filesystem
+RDEPENDS:httpcomponents-client = " \
+ publicsuffix-list \
+ apache-commons-codec \
+ httpcomponents-core \
+ javapackages-filesystem \
 "
 
 URI_httpcomponents-client-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/httpcomponents-client-javadoc-4.5.14-9.el10.noarch.rpm;unpack=0"
-RDEPENDS:httpcomponents-client-javadoc = "
- javapackages-filesystem
+RDEPENDS:httpcomponents-client-javadoc = " \
+ javapackages-filesystem \
 "

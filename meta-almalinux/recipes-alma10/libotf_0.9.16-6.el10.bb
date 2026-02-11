@@ -7,17 +7,17 @@ PACKAGES = "libotf libotf-devel"
 
 
 URI_libotf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libotf-0.9.16-6.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libotf = "
- freetype
- libX11
- libXt
- libXaw
- glibc
+RDEPENDS:libotf = " \
+ freetype \
+ libX11 \
+ libXt \
+ libXaw \
+ glibc \
 "
 
 URI_libotf-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libotf-devel-0.9.16-6.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libotf-devel = "
- freetype-devel
- libotf
- pkgconf-pkg-config
+RDEPENDS:libotf-devel = " \
+ freetype-devel \
+ libotf \
+ pkgconf-pkg-config \
 "

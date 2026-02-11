@@ -7,8 +7,8 @@ PACKAGES = "pt-sans-fonts pt-sans-fonts-doc"
 
 
 URI_pt-sans-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pt-sans-fonts-20141121-30.el10.noarch.rpm;unpack=0"
-RDEPENDS:pt-sans-fonts = "
- fonts-filesystem
+RDEPENDS:pt-sans-fonts = " \
+ fonts-filesystem \
 "
 
 URI_pt-sans-fonts-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pt-sans-fonts-doc-20141121-30.el10.noarch.rpm;unpack=0"

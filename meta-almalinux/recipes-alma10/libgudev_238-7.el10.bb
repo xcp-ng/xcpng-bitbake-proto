@@ -7,17 +7,17 @@ PACKAGES = "libgudev libgudev-devel"
 
 
 URI_libgudev = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libgudev-238-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgudev = "
- glibc
- libgcc
- glib2
- systemd-libs
+RDEPENDS:libgudev = " \
+ glibc \
+ libgcc \
+ glib2 \
+ systemd-libs \
 "
 
 URI_libgudev-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgudev-devel-238-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgudev-devel = "
- libgudev
- systemd-devel
- glib2-devel
- pkgconf-pkg-config
+RDEPENDS:libgudev-devel = " \
+ libgudev \
+ systemd-devel \
+ glib2-devel \
+ pkgconf-pkg-config \
 "

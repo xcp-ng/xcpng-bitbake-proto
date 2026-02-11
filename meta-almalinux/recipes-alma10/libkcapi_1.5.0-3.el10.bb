@@ -7,58 +7,58 @@ PACKAGES = "libkcapi libkcapi-hasher libkcapi-hmaccalc libkcapi-devel libkcapi-d
 
 
 URI_libkcapi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libkcapi-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi = "
- glibc
- systemd
+RDEPENDS:libkcapi = " \
+ glibc \
+ systemd \
 "
 
 URI_libkcapi-hasher = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libkcapi-hasher-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi-hasher = "
- glibc
- libkcapi
+RDEPENDS:libkcapi-hasher = " \
+ glibc \
+ libkcapi \
 "
 
 URI_libkcapi-hmaccalc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libkcapi-hmaccalc-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi-hmaccalc = "
- libkcapi-hasher
+RDEPENDS:libkcapi-hmaccalc = " \
+ libkcapi-hasher \
 "
 
 URI_libkcapi-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libkcapi-devel-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi-devel = "
- libkcapi
- pkgconf-pkg-config
+RDEPENDS:libkcapi-devel = " \
+ libkcapi \
+ pkgconf-pkg-config \
 "
 
 URI_libkcapi-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libkcapi-doc-1.5.0-3.el10.noarch.rpm;unpack=0"
-RDEPENDS:libkcapi-doc = "
- libkcapi
+RDEPENDS:libkcapi-doc = " \
+ libkcapi \
 "
 
 URI_libkcapi-fipscheck = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libkcapi-fipscheck-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi-fipscheck = "
- libkcapi-hasher
+RDEPENDS:libkcapi-fipscheck = " \
+ libkcapi-hasher \
 "
 
 URI_libkcapi-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libkcapi-static-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi-static = "
- libkcapi-devel
+RDEPENDS:libkcapi-static = " \
+ libkcapi-devel \
 "
 
 URI_libkcapi-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libkcapi-tests-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi-tests = "
- libkcapi
- libkcapi-hmaccalc
- openssl
- libkcapi-tools
- bash
- glibc
- coreutils
- perl-interpreter
+RDEPENDS:libkcapi-tests = " \
+ libkcapi \
+ libkcapi-hmaccalc \
+ openssl \
+ libkcapi-tools \
+ bash \
+ glibc \
+ coreutils \
+ perl-interpreter \
 "
 
 URI_libkcapi-tools = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libkcapi-tools-1.5.0-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkcapi-tools = "
- glibc
- libkcapi
- libkcapi-hasher
+RDEPENDS:libkcapi-tools = " \
+ glibc \
+ libkcapi \
+ libkcapi-hasher \
 "

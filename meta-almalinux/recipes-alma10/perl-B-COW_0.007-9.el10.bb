@@ -7,22 +7,22 @@ PACKAGES = "perl-B-COW perl-B-COW-tests"
 
 
 URI_perl-B-COW = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-B-COW-0.007-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:perl-B-COW = "
- glibc
- perl-Exporter
- perl-libs
- perl-base
+RDEPENDS:perl-B-COW = " \
+ glibc \
+ perl-Exporter \
+ perl-libs \
+ perl-base \
 "
 
 URI_perl-B-COW-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-B-COW-tests-0.007-9.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-B-COW-tests = "
- perl-Test-Harness
- perl-libs
- perl-ExtUtils-MakeMaker
- perl-B-COW
- perl-Devel-Peek
- perl-Test-Simple
- perl-PathTools
- bash
- perl-interpreter
+RDEPENDS:perl-B-COW-tests = " \
+ perl-Test-Harness \
+ perl-libs \
+ perl-ExtUtils-MakeMaker \
+ perl-B-COW \
+ perl-Devel-Peek \
+ perl-Test-Simple \
+ perl-PathTools \
+ bash \
+ perl-interpreter \
 "

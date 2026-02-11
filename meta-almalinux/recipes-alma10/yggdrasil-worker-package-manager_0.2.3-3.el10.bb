@@ -7,7 +7,7 @@ PACKAGES = "yggdrasil-worker-package-manager"
 
 
 URI_yggdrasil-worker-package-manager = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/yggdrasil-worker-package-manager-0.2.3-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:yggdrasil-worker-package-manager = "
- glibc
- bash
+RDEPENDS:yggdrasil-worker-package-manager = " \
+ glibc \
+ bash \
 "

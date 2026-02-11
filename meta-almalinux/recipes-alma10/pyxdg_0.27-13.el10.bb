@@ -7,6 +7,6 @@ PACKAGES = "python3-pyxdg"
 
 
 URI_python3-pyxdg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pyxdg-0.27-13.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-pyxdg = "
- python3
+RDEPENDS:python3-pyxdg = " \
+ python3 \
 "

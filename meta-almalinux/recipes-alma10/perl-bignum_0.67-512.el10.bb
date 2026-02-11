@@ -7,22 +7,22 @@ PACKAGES = "perl-bignum perl-bignum-tests"
 
 
 URI_perl-bignum = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-bignum-0.67-512.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-bignum = "
- perl-constant
- perl-Math-BigInt
- perl-libs
- perl-Carp
- perl-overload
- perl-Exporter
+RDEPENDS:perl-bignum = " \
+ perl-constant \
+ perl-Math-BigInt \
+ perl-libs \
+ perl-Carp \
+ perl-overload \
+ perl-Exporter \
 "
 
 URI_perl-bignum-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-bignum-tests-0.67-512.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-bignum-tests = "
- perl-Test-Harness
- perl-libs
- perl-Test-Simple
- bash
- perl-Math-BigInt-GMP
- perl-interpreter
- perl-bignum
+RDEPENDS:perl-bignum-tests = " \
+ perl-Test-Harness \
+ perl-libs \
+ perl-Test-Simple \
+ bash \
+ perl-Math-BigInt-GMP \
+ perl-interpreter \
+ perl-bignum \
 "

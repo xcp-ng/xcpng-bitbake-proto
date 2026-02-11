@@ -19,11 +19,11 @@ URI_edk2-ovmf = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/edk2
 RDEPENDS:edk2-ovmf = ""
 
 URI_edk2-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/edk2-tools-20241117-2.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:edk2-tools = "
- glibc
- libgcc
- bash
- libstdc++
+RDEPENDS:edk2-tools = " \
+ glibc \
+ libgcc \
+ bash \
+ libstdc++ \
 "
 
 URI_edk2-tools-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/edk2-tools-doc-20241117-2.el10_0.1.noarch.rpm;unpack=0"

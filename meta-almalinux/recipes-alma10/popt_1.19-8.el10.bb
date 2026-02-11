@@ -7,17 +7,17 @@ PACKAGES = "popt popt-devel popt-static"
 
 
 URI_popt = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/popt-1.19-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:popt = "
- glibc
+RDEPENDS:popt = " \
+ glibc \
 "
 
 URI_popt-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/popt-devel-1.19-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:popt-devel = "
- popt
- pkgconf-pkg-config
+RDEPENDS:popt-devel = " \
+ popt \
+ pkgconf-pkg-config \
 "
 
 URI_popt-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/popt-static-1.19-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:popt-static = "
- popt-devel
+RDEPENDS:popt-static = " \
+ popt-devel \
 "

@@ -7,8 +7,8 @@ PACKAGES = "grep"
 
 
 URI_grep = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/grep-3.11-10.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:grep = "
- glibc
- bash
- pcre2
+RDEPENDS:grep = " \
+ glibc \
+ bash \
+ pcre2 \
 "

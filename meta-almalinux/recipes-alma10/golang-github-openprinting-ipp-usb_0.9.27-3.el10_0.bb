@@ -7,19 +7,19 @@ PACKAGES = "ipp-usb golang-github-openprinting-ipp-usb-devel"
 
 
 URI_ipp-usb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipp-usb-0.9.27-3.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipp-usb = "
- systemd
- systemd-udev
- avahi-libs
- bash
- glibc
- libusb1
+RDEPENDS:ipp-usb = " \
+ systemd \
+ systemd-udev \
+ avahi-libs \
+ bash \
+ glibc \
+ libusb1 \
 "
 
 URI_golang-github-openprinting-ipp-usb-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/golang-github-openprinting-ipp-usb-devel-0.9.27-3.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:golang-github-openprinting-ipp-usb-devel = "
- libusb1-devel
- golang-github-openprinting-goipp-devel
- avahi-devel
- go-filesystem
+RDEPENDS:golang-github-openprinting-ipp-usb-devel = " \
+ libusb1-devel \
+ golang-github-openprinting-goipp-devel \
+ avahi-devel \
+ go-filesystem \
 "

@@ -7,17 +7,17 @@ PACKAGES = "gsm gsm-devel gsm-tools"
 
 
 URI_gsm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gsm-1.0.22-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gsm = "
- glibc
+RDEPENDS:gsm = " \
+ glibc \
 "
 
 URI_gsm-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gsm-devel-1.0.22-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gsm-devel = "
- gsm
+RDEPENDS:gsm-devel = " \
+ gsm \
 "
 
 URI_gsm-tools = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gsm-tools-1.0.22-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gsm-tools = "
- glibc
- gsm
+RDEPENDS:gsm-tools = " \
+ glibc \
+ gsm \
 "

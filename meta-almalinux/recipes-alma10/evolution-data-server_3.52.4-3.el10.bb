@@ -7,71 +7,71 @@ PACKAGES = "evolution-data-server evolution-data-server-langpacks evolution-data
 
 
 URI_evolution-data-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/evolution-data-server-3.52.4-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:evolution-data-server = "
- nss
- pango
- libcanberra
- libcanberra-gtk3
- krb5-libs
- evolution-data-server-langpacks
- json-glib
- libstdc++
- cairo
- gnome-online-accounts
- openldap
- zlib-ng-compat
- libgcc
- libxml2
- sqlite-libs
- libsecret
- libicu
- libgweather
- libsoup3
- libical
- libical-glib
- glib2
- gtk3
- glibc
- gtk4
- nspr
+RDEPENDS:evolution-data-server = " \
+ nss \
+ pango \
+ libcanberra \
+ libcanberra-gtk3 \
+ krb5-libs \
+ evolution-data-server-langpacks \
+ json-glib \
+ libstdc++ \
+ cairo \
+ gnome-online-accounts \
+ openldap \
+ zlib-ng-compat \
+ libgcc \
+ libxml2 \
+ sqlite-libs \
+ libsecret \
+ libicu \
+ libgweather \
+ libsoup3 \
+ libical \
+ libical-glib \
+ glib2 \
+ gtk3 \
+ glibc \
+ gtk4 \
+ nspr \
 "
 
 URI_evolution-data-server-langpacks = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/evolution-data-server-langpacks-3.52.4-3.el10.noarch.rpm;unpack=0"
-RDEPENDS:evolution-data-server-langpacks = "
- evolution-data-server
+RDEPENDS:evolution-data-server-langpacks = " \
+ evolution-data-server \
 "
 
 URI_evolution-data-server-perl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/evolution-data-server-perl-3.52.4-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:evolution-data-server-perl = "
- evolution-data-server
- perl-interpreter
+RDEPENDS:evolution-data-server-perl = " \
+ evolution-data-server \
+ perl-interpreter \
 "
 
 URI_evolution-data-server-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/evolution-data-server-devel-3.52.4-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:evolution-data-server-devel = "
- libxml2-devel
- json-glib-devel
- glib2-devel
- evolution-data-server-devel
- libsoup3-devel
- evolution-data-server
- pkgconf-pkg-config
- gnome-online-accounts-devel
- libsecret-devel
- libgweather-devel
- gtk3-devel
- libical-glib-devel
- gtk4-devel
- sqlite-devel
+RDEPENDS:evolution-data-server-devel = " \
+ libxml2-devel \
+ json-glib-devel \
+ glib2-devel \
+ evolution-data-server-devel \
+ libsoup3-devel \
+ evolution-data-server \
+ pkgconf-pkg-config \
+ gnome-online-accounts-devel \
+ libsecret-devel \
+ libgweather-devel \
+ gtk3-devel \
+ libical-glib-devel \
+ gtk4-devel \
+ sqlite-devel \
 "
 
 URI_evolution-data-server-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/evolution-data-server-doc-3.52.4-3.el10.noarch.rpm;unpack=0"
 RDEPENDS:evolution-data-server-doc = ""
 
 URI_evolution-data-server-tests = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/evolution-data-server-tests-3.52.4-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:evolution-data-server-tests = "
- glibc
- evolution-data-server
- libical-glib
- glib2
+RDEPENDS:evolution-data-server-tests = " \
+ glibc \
+ evolution-data-server \
+ libical-glib \
+ glib2 \
 "

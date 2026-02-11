@@ -7,16 +7,16 @@ PACKAGES = "jzlib jzlib-demo jzlib-javadoc"
 
 
 URI_jzlib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jzlib-1.1.3-30.el10.noarch.rpm;unpack=0"
-RDEPENDS:jzlib = "
- javapackages-filesystem
+RDEPENDS:jzlib = " \
+ javapackages-filesystem \
 "
 
 URI_jzlib-demo = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jzlib-demo-1.1.3-30.el10.noarch.rpm;unpack=0"
-RDEPENDS:jzlib-demo = "
- jzlib
+RDEPENDS:jzlib-demo = " \
+ jzlib \
 "
 
 URI_jzlib-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jzlib-javadoc-1.1.3-30.el10.noarch.rpm;unpack=0"
-RDEPENDS:jzlib-javadoc = "
- javapackages-filesystem
+RDEPENDS:jzlib-javadoc = " \
+ javapackages-filesystem \
 "

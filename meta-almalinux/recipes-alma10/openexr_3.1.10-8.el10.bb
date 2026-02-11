@@ -7,27 +7,27 @@ PACKAGES = "openexr openexr-libs openexr-devel"
 
 
 URI_openexr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openexr-3.1.10-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:openexr = "
- imath
- openexr-libs
- libgcc
- libstdc++
- glibc
+RDEPENDS:openexr = " \
+ imath \
+ openexr-libs \
+ libgcc \
+ libstdc++ \
+ glibc \
 "
 
 URI_openexr-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openexr-libs-3.1.10-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:openexr-libs = "
- imath
- zlib-ng-compat
- libgcc
- libstdc++
- glibc
+RDEPENDS:openexr-libs = " \
+ imath \
+ zlib-ng-compat \
+ libgcc \
+ libstdc++ \
+ glibc \
 "
 
 URI_openexr-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openexr-devel-3.1.10-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:openexr-devel = "
- openexr-libs
- cmake-filesystem
- pkgconf-pkg-config
- imath-devel
+RDEPENDS:openexr-devel = " \
+ openexr-libs \
+ cmake-filesystem \
+ pkgconf-pkg-config \
+ imath-devel \
 "

@@ -7,9 +7,9 @@ PACKAGES = "perl-Unicode-EastAsianWidth"
 
 
 URI_perl-Unicode-EastAsianWidth = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Unicode-EastAsianWidth-12.0-16.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Unicode-EastAsianWidth = "
- perl-Exporter
- perl-libs
- perl-base
- perl-vars
+RDEPENDS:perl-Unicode-EastAsianWidth = " \
+ perl-Exporter \
+ perl-libs \
+ perl-base \
+ perl-vars \
 "

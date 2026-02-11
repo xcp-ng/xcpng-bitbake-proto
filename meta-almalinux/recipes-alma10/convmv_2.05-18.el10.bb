@@ -7,14 +7,14 @@ PACKAGES = "convmv"
 
 
 URI_convmv = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/convmv-2.05-18.el10.noarch.rpm;unpack=0"
-RDEPENDS:convmv = "
- perl-libs
- perl-Unicode-Normalize
- perl-Getopt-Long
- perl-File-Basename
- perl-Encode
- perl-File-Compare
- perl-PathTools
- perl-File-Find
- perl-interpreter
+RDEPENDS:convmv = " \
+ perl-libs \
+ perl-Unicode-Normalize \
+ perl-Getopt-Long \
+ perl-File-Basename \
+ perl-Encode \
+ perl-File-Compare \
+ perl-PathTools \
+ perl-File-Find \
+ perl-interpreter \
 "

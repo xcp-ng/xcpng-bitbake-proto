@@ -7,12 +7,12 @@ PACKAGES = "jakarta-mail jakarta-mail-javadoc"
 
 
 URI_jakarta-mail = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jakarta-mail-2.1.2-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:jakarta-mail = "
- jakarta-activation
- javapackages-filesystem
+RDEPENDS:jakarta-mail = " \
+ jakarta-activation \
+ javapackages-filesystem \
 "
 
 URI_jakarta-mail-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jakarta-mail-javadoc-2.1.2-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:jakarta-mail-javadoc = "
- javapackages-filesystem
+RDEPENDS:jakarta-mail-javadoc = " \
+ javapackages-filesystem \
 "

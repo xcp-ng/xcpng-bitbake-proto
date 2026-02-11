@@ -7,6 +7,6 @@ PACKAGES = "python3-typing-extensions"
 
 
 URI_python3-typing-extensions = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-typing-extensions-4.9.0-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-typing-extensions = "
- python3
+RDEPENDS:python3-typing-extensions = " \
+ python3 \
 "

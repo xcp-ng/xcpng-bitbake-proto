@@ -7,6 +7,6 @@ PACKAGES = "dos2unix"
 
 
 URI_dos2unix = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dos2unix-7.5.2-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dos2unix = "
- glibc
+RDEPENDS:dos2unix = " \
+ glibc \
 "

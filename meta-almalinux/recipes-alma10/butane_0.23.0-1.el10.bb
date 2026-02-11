@@ -7,8 +7,8 @@ PACKAGES = "butane butane-redistributable"
 
 
 URI_butane = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/butane-0.23.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:butane = "
- glibc
+RDEPENDS:butane = " \
+ glibc \
 "
 
 URI_butane-redistributable = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/butane-redistributable-0.23.0-1.el10.noarch.rpm;unpack=0"

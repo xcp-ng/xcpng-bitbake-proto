@@ -7,48 +7,48 @@ PACKAGES = "cryptsetup cryptsetup-libs integritysetup veritysetup cryptsetup-dev
 
 
 URI_cryptsetup = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cryptsetup-2.7.5-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:cryptsetup = "
- libuuid
- cryptsetup-libs
- libpwquality
- libblkid
- popt
- glibc
+RDEPENDS:cryptsetup = " \
+ libuuid \
+ cryptsetup-libs \
+ libpwquality \
+ libblkid \
+ popt \
+ glibc \
 "
 
 URI_cryptsetup-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cryptsetup-libs-2.7.5-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:cryptsetup-libs = "
- libuuid
- device-mapper-libs
- libblkid
- openssl-libs
- json-c
- glibc
+RDEPENDS:cryptsetup-libs = " \
+ libuuid \
+ device-mapper-libs \
+ libblkid \
+ openssl-libs \
+ json-c \
+ glibc \
 "
 
 URI_integritysetup = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/integritysetup-2.7.5-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:integritysetup = "
- libuuid
- cryptsetup-libs
- libblkid
- popt
- glibc
+RDEPENDS:integritysetup = " \
+ libuuid \
+ cryptsetup-libs \
+ libblkid \
+ popt \
+ glibc \
 "
 
 URI_veritysetup = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/veritysetup-2.7.5-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:veritysetup = "
- glibc
- cryptsetup-libs
- popt
+RDEPENDS:veritysetup = " \
+ glibc \
+ cryptsetup-libs \
+ popt \
 "
 
 URI_cryptsetup-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/cryptsetup-devel-2.7.5-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:cryptsetup-devel = "
- libblkid-devel
- cryptsetup-libs
- pkgconf-pkg-config
- libuuid-devel
- openssl-devel
- device-mapper-devel
- json-c-devel
+RDEPENDS:cryptsetup-devel = " \
+ libblkid-devel \
+ cryptsetup-libs \
+ pkgconf-pkg-config \
+ libuuid-devel \
+ openssl-devel \
+ device-mapper-devel \
+ json-c-devel \
 "

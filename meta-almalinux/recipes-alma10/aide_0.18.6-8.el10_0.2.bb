@@ -7,14 +7,14 @@ PACKAGES = "aide"
 
 
 URI_aide = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/aide-0.18.6-8.el10_0.2.x86_64_v2.rpm;unpack=0"
-RDEPENDS:aide = "
- libacl
- zlib-ng-compat
- e2fsprogs-libs
- gnutls
- audit-libs
- pcre2
- libcurl
- glibc
- libselinux
+RDEPENDS:aide = " \
+ libacl \
+ zlib-ng-compat \
+ e2fsprogs-libs \
+ gnutls \
+ audit-libs \
+ pcre2 \
+ libcurl \
+ glibc \
+ libselinux \
 "

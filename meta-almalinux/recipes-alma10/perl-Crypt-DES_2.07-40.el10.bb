@@ -7,11 +7,11 @@ PACKAGES = "perl-Crypt-DES"
 
 
 URI_perl-Crypt-DES = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Crypt-DES-2.07-40.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:perl-Crypt-DES = "
- perl-libs
- perl-Carp
- perl-vars
- perl-DynaLoader
- glibc
- perl-Exporter
+RDEPENDS:perl-Crypt-DES = " \
+ perl-libs \
+ perl-Carp \
+ perl-vars \
+ perl-DynaLoader \
+ glibc \
+ perl-Exporter \
 "

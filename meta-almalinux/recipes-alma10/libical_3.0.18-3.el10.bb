@@ -7,35 +7,35 @@ PACKAGES = "libical libical-glib libical-devel libical-glib-devel libical-glib-d
 
 
 URI_libical = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libical-3.0.18-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libical = "
- tzdata
- libgcc
- libstdc++
- glibc
- libicu
+RDEPENDS:libical = " \
+ tzdata \
+ libgcc \
+ libstdc++ \
+ glibc \
+ libicu \
 "
 
 URI_libical-glib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libical-glib-3.0.18-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libical-glib = "
- glibc
- glib2
- libical
+RDEPENDS:libical-glib = " \
+ glibc \
+ glib2 \
+ libical \
 "
 
 URI_libical-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libical-devel-3.0.18-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libical-devel = "
- libicu-devel
- cmake-filesystem
- pkgconf-pkg-config
- libical
+RDEPENDS:libical-devel = " \
+ libicu-devel \
+ cmake-filesystem \
+ pkgconf-pkg-config \
+ libical \
 "
 
 URI_libical-glib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libical-glib-devel-3.0.18-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libical-glib-devel = "
- libical-glib
- libical-devel
- glib2-devel
- pkgconf-pkg-config
+RDEPENDS:libical-glib-devel = " \
+ libical-glib \
+ libical-devel \
+ glib2-devel \
+ pkgconf-pkg-config \
 "
 
 URI_libical-glib-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libical-glib-doc-3.0.18-3.el10.noarch.rpm;unpack=0"

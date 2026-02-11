@@ -7,14 +7,14 @@ PACKAGES = "rpcbind"
 
 
 URI_rpcbind = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpcbind-1.2.7-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:rpcbind = "
- glibc-common
- setup
- shadow-utils
- systemd
- systemd-libs
- libtirpc
- bash
- glibc
- coreutils
+RDEPENDS:rpcbind = " \
+ glibc-common \
+ setup \
+ shadow-utils \
+ systemd \
+ systemd-libs \
+ libtirpc \
+ bash \
+ glibc \
+ coreutils \
 "

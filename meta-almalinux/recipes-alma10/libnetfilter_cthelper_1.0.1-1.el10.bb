@@ -7,15 +7,15 @@ PACKAGES = "libnetfilter_cthelper libnetfilter_cthelper-devel"
 
 
 URI_libnetfilter_cthelper = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libnetfilter_cthelper-1.0.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libnetfilter_cthelper = "
- glibc
- libmnl
+RDEPENDS:libnetfilter_cthelper = " \
+ glibc \
+ libmnl \
 "
 
 URI_libnetfilter_cthelper-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libnetfilter_cthelper-devel-1.0.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libnetfilter_cthelper-devel = "
- libnetfilter_cthelper
- kernel-headers
- pkgconf-pkg-config
- libmnl-devel
+RDEPENDS:libnetfilter_cthelper-devel = " \
+ libnetfilter_cthelper \
+ kernel-headers \
+ pkgconf-pkg-config \
+ libmnl-devel \
 "

@@ -7,14 +7,14 @@ PACKAGES = "bind-dyndb-ldap"
 
 
 URI_bind-dyndb-ldap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bind-dyndb-ldap-11.11-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:bind-dyndb-ldap = "
- softhsm
- libuuid
- bind-libs
- pkcs11-provider
- krb5-libs
- bash
- glibc
- bind
- openldap
+RDEPENDS:bind-dyndb-ldap = " \
+ softhsm \
+ libuuid \
+ bind-libs \
+ pkcs11-provider \
+ krb5-libs \
+ bash \
+ glibc \
+ bind \
+ openldap \
 "

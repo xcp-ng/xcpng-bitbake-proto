@@ -7,24 +7,24 @@ PACKAGES = "beakerlib beakerlib-vim-syntax"
 
 
 URI_beakerlib = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/beakerlib-1.29.2-2.el10.noarch.rpm;unpack=0"
-RDEPENDS:beakerlib = "
- nfs-utils
- yum-utils
- iproute
- util-linux
- gzip
- tar
- grep
- curl
- time
- bash
- which
- bc
- sed
- coreutils
+RDEPENDS:beakerlib = " \
+ nfs-utils \
+ yum-utils \
+ iproute \
+ util-linux \
+ gzip \
+ tar \
+ grep \
+ curl \
+ time \
+ bash \
+ which \
+ bc \
+ sed \
+ coreutils \
 "
 
 URI_beakerlib-vim-syntax = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/beakerlib-vim-syntax-1.29.2-2.el10.noarch.rpm;unpack=0"
-RDEPENDS:beakerlib-vim-syntax = "
- vim-common
+RDEPENDS:beakerlib-vim-syntax = " \
+ vim-common \
 "

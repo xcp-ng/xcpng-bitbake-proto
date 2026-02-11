@@ -7,14 +7,14 @@ PACKAGES = "apache-commons-compress apache-commons-compress-javadoc"
 
 
 URI_apache-commons-compress = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apache-commons-compress-1.27.1-1.el10.noarch.rpm;unpack=0"
-RDEPENDS:apache-commons-compress = "
- apache-commons-codec
- apache-commons-io
- javapackages-filesystem
- apache-commons-lang3
+RDEPENDS:apache-commons-compress = " \
+ apache-commons-codec \
+ apache-commons-io \
+ javapackages-filesystem \
+ apache-commons-lang3 \
 "
 
 URI_apache-commons-compress-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/apache-commons-compress-javadoc-1.27.1-1.el10.noarch.rpm;unpack=0"
-RDEPENDS:apache-commons-compress-javadoc = "
- javapackages-filesystem
+RDEPENDS:apache-commons-compress-javadoc = " \
+ javapackages-filesystem \
 "

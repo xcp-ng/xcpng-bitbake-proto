@@ -7,30 +7,30 @@ PACKAGES = "perl-JSON perl-JSON-tests"
 
 
 URI_perl-JSON = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-JSON-4.10-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-JSON = "
- perl-constant
- perl-Math-BigInt
- perl-libs
- perl-Carp
- perl-Encode
- perl-overload
- perl-B
- perl-Exporter
+RDEPENDS:perl-JSON = " \
+ perl-constant \
+ perl-Math-BigInt \
+ perl-libs \
+ perl-Carp \
+ perl-Encode \
+ perl-overload \
+ perl-B \
+ perl-Exporter \
 "
 
 URI_perl-JSON-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-JSON-tests-4.10-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-JSON-tests = "
- perl-Test-Harness
- perl-libs
- perl-Test-Simple
- perl-vars
- perl-Tie-IxHash
- perl-Encode
- perl-overload
- bash
- perl-JSON
- perl-Tie
- coreutils
- perl-interpreter
- perl-Data-Dumper
+RDEPENDS:perl-JSON-tests = " \
+ perl-Test-Harness \
+ perl-libs \
+ perl-Test-Simple \
+ perl-vars \
+ perl-Tie-IxHash \
+ perl-Encode \
+ perl-overload \
+ bash \
+ perl-JSON \
+ perl-Tie \
+ coreutils \
+ perl-interpreter \
+ perl-Data-Dumper \
 "

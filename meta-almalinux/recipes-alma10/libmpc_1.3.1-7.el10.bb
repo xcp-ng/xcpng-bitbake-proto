@@ -7,17 +7,17 @@ PACKAGES = "libmpc libmpc-devel libmpc-doc"
 
 
 URI_libmpc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libmpc-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libmpc = "
- glibc
- gmp
- mpfr
+RDEPENDS:libmpc = " \
+ glibc \
+ gmp \
+ mpfr \
 "
 
 URI_libmpc-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libmpc-devel-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libmpc-devel = "
- libmpc
- mpfr-devel
- gmp-devel
+RDEPENDS:libmpc-devel = " \
+ libmpc \
+ mpfr-devel \
+ gmp-devel \
 "
 
 URI_libmpc-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libmpc-doc-1.3.1-7.el10.noarch.rpm;unpack=0"

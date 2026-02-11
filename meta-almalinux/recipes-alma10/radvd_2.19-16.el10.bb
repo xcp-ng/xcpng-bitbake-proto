@@ -7,9 +7,9 @@ PACKAGES = "radvd"
 
 
 URI_radvd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/radvd-2.19-16.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:radvd = "
- glibc
- shadow-utils
- systemd
- bash
+RDEPENDS:radvd = " \
+ glibc \
+ shadow-utils \
+ systemd \
+ bash \
 "

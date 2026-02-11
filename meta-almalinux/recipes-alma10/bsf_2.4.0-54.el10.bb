@@ -7,12 +7,12 @@ PACKAGES = "bsf bsf-javadoc"
 
 
 URI_bsf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bsf-2.4.0-54.el10.noarch.rpm;unpack=0"
-RDEPENDS:bsf = "
- javapackages-filesystem
- apache-commons-logging
+RDEPENDS:bsf = " \
+ javapackages-filesystem \
+ apache-commons-logging \
 "
 
 URI_bsf-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/bsf-javadoc-2.4.0-54.el10.noarch.rpm;unpack=0"
-RDEPENDS:bsf-javadoc = "
- javapackages-filesystem
+RDEPENDS:bsf-javadoc = " \
+ javapackages-filesystem \
 "

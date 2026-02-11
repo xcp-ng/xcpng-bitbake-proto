@@ -7,23 +7,23 @@ PACKAGES = "zziplib zziplib-utils zziplib-devel"
 
 
 URI_zziplib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/zziplib-0.13.78-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:zziplib = "
- glibc
- zlib-ng-compat
+RDEPENDS:zziplib = " \
+ glibc \
+ zlib-ng-compat \
 "
 
 URI_zziplib-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/zziplib-utils-0.13.78-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:zziplib-utils = "
- glibc
- zlib-ng-compat
- zziplib
+RDEPENDS:zziplib-utils = " \
+ glibc \
+ zlib-ng-compat \
+ zziplib \
 "
 
 URI_zziplib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/zziplib-devel-0.13.78-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:zziplib-devel = "
- sdl12-compat-devel
- zlib-ng-compat-devel
- zziplib-devel
- zziplib
- pkgconf-pkg-config
+RDEPENDS:zziplib-devel = " \
+ sdl12-compat-devel \
+ zlib-ng-compat-devel \
+ zziplib-devel \
+ zziplib \
+ pkgconf-pkg-config \
 "

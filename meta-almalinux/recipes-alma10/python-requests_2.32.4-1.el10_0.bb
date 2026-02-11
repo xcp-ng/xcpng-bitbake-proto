@@ -7,9 +7,9 @@ PACKAGES = "python3-requests"
 
 
 URI_python3-requests = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-requests-2.32.4-1.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:python3-requests = "
- python3
- python3-idna
- python3-urllib3
- python3-charset-normalizer
+RDEPENDS:python3-requests = " \
+ python3 \
+ python3-idna \
+ python3-urllib3 \
+ python3-charset-normalizer \
 "

@@ -7,11 +7,11 @@ PACKAGES = "hyphen-pt hyphen-pt-BR"
 
 
 URI_hyphen-pt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hyphen-pt-0.20140727-11.el10.noarch.rpm;unpack=0"
-RDEPENDS:hyphen-pt = "
- hyphen
+RDEPENDS:hyphen-pt = " \
+ hyphen \
 "
 
 URI_hyphen-pt-BR = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hyphen-pt-BR-0.20140727-11.el10.noarch.rpm;unpack=0"
-RDEPENDS:hyphen-pt-BR = "
- hyphen
+RDEPENDS:hyphen-pt-BR = " \
+ hyphen \
 "

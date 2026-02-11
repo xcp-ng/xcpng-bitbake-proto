@@ -7,25 +7,25 @@ PACKAGES = "woff2 woff2-devel woff2-tools"
 
 
 URI_woff2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/woff2-1.0.2-21.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:woff2 = "
- glibc
- libbrotli
- libgcc
- libstdc++
+RDEPENDS:woff2 = " \
+ glibc \
+ libbrotli \
+ libgcc \
+ libstdc++ \
 "
 
 URI_woff2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/woff2-devel-1.0.2-21.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:woff2-devel = "
- woff2
- brotli-devel
- woff2-devel
- pkgconf-pkg-config
+RDEPENDS:woff2-devel = " \
+ woff2 \
+ brotli-devel \
+ woff2-devel \
+ pkgconf-pkg-config \
 "
 
 URI_woff2-tools = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/woff2-tools-1.0.2-21.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:woff2-tools = "
- glibc
- woff2
- libgcc
- libstdc++
+RDEPENDS:woff2-tools = " \
+ glibc \
+ woff2 \
+ libgcc \
+ libstdc++ \
 "

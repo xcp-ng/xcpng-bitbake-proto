@@ -7,14 +7,14 @@ PACKAGES = "redis redis-devel redis-doc"
 
 
 URI_redis = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/redis-7.2.4-4.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:redis = "
- logrotate
- shadow-utils
- systemd
- systemd-libs
- openssl-libs
- bash
- glibc
+RDEPENDS:redis = " \
+ logrotate \
+ shadow-utils \
+ systemd \
+ systemd-libs \
+ openssl-libs \
+ bash \
+ glibc \
 "
 
 URI_redis-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/redis-devel-7.2.4-4.el10.x86_64_v2.rpm;unpack=0"

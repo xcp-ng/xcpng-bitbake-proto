@@ -7,16 +7,16 @@ PACKAGES = "exempi exempi-devel"
 
 
 URI_exempi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/exempi-2.6.4-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:exempi = "
- zlib-ng-compat
- libgcc
- libstdc++
- expat
- glibc
+RDEPENDS:exempi = " \
+ zlib-ng-compat \
+ libgcc \
+ libstdc++ \
+ expat \
+ glibc \
 "
 
 URI_exempi-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/exempi-devel-2.6.4-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:exempi-devel = "
- pkgconf-pkg-config
- exempi
+RDEPENDS:exempi-devel = " \
+ pkgconf-pkg-config \
+ exempi \
 "

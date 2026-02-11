@@ -7,8 +7,8 @@ PACKAGES = "watchdog"
 
 
 URI_watchdog = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/watchdog-5.16-11.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:watchdog = "
- glibc
- systemd
- bash
+RDEPENDS:watchdog = " \
+ glibc \
+ systemd \
+ bash \
 "

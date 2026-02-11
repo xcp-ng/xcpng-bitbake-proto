@@ -7,13 +7,13 @@ PACKAGES = "maven-antrun-plugin maven-antrun-plugin-javadoc"
 
 
 URI_maven-antrun-plugin = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-antrun-plugin-3.1.0-10.el10.noarch.rpm;unpack=0"
-RDEPENDS:maven-antrun-plugin = "
- ant-lib
- plexus-utils
- javapackages-filesystem
+RDEPENDS:maven-antrun-plugin = " \
+ ant-lib \
+ plexus-utils \
+ javapackages-filesystem \
 "
 
 URI_maven-antrun-plugin-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-antrun-plugin-javadoc-3.1.0-10.el10.noarch.rpm;unpack=0"
-RDEPENDS:maven-antrun-plugin-javadoc = "
- javapackages-filesystem
+RDEPENDS:maven-antrun-plugin-javadoc = " \
+ javapackages-filesystem \
 "

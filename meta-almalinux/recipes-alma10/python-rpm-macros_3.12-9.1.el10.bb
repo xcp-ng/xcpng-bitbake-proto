@@ -7,18 +7,18 @@ PACKAGES = "python-rpm-macros python-srpm-macros python3-rpm-macros"
 
 
 URI_python-rpm-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python-rpm-macros-3.12-9.1.el10.noarch.rpm;unpack=0"
-RDEPENDS:python-rpm-macros = "
- python-srpm-macros
+RDEPENDS:python-rpm-macros = " \
+ python-srpm-macros \
 "
 
 URI_python-srpm-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python-srpm-macros-3.12-9.1.el10.noarch.rpm;unpack=0"
-RDEPENDS:python-srpm-macros = "
- redhat-rpm-config
- bash
+RDEPENDS:python-srpm-macros = " \
+ redhat-rpm-config \
+ bash \
 "
 
 URI_python3-rpm-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-rpm-macros-3.12-9.1.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-rpm-macros = "
- python-rpm-macros
- python-srpm-macros
+RDEPENDS:python3-rpm-macros = " \
+ python-rpm-macros \
+ python-srpm-macros \
 "

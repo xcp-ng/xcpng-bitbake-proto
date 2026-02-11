@@ -7,44 +7,44 @@ PACKAGES = "perl-autodie perl-autodie-tests"
 
 
 URI_perl-autodie = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-autodie-2.37-512.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-autodie = "
- perl-constant
- perl-Scalar-List-Utils
- perl-libs
- perl-Carp
- perl-Fcntl
- perl-POSIX
- perl-overload
- perl-IPC-System-Simple
- perl-parent
- perl-B
- perl-autodie
- perl-Exporter
- perl-Tie-RefHash
+RDEPENDS:perl-autodie = " \
+ perl-constant \
+ perl-Scalar-List-Utils \
+ perl-libs \
+ perl-Carp \
+ perl-Fcntl \
+ perl-POSIX \
+ perl-overload \
+ perl-IPC-System-Simple \
+ perl-parent \
+ perl-B \
+ perl-autodie \
+ perl-Exporter \
+ perl-Tie-RefHash \
 "
 
 URI_perl-autodie-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-autodie-tests-2.37-512.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-autodie-tests = "
- perl-Scalar-List-Utils
- perl-libs
- perl-Import-Into
- perl-FindBin
- perl-Socket
- perl-open
- perl-parent
- perl-BSD-Resource
- perl-Test-Harness
- perl-Test-Simple
- perl-IO
- perl-lib
- bash
- perl-autodie
- perl-Exporter
- perl-constant
- perl-Fcntl
- perl-POSIX
- perl-File-Copy
- perl-PathTools
- perl-interpreter
- perl-File-Temp
+RDEPENDS:perl-autodie-tests = " \
+ perl-Scalar-List-Utils \
+ perl-libs \
+ perl-Import-Into \
+ perl-FindBin \
+ perl-Socket \
+ perl-open \
+ perl-parent \
+ perl-BSD-Resource \
+ perl-Test-Harness \
+ perl-Test-Simple \
+ perl-IO \
+ perl-lib \
+ bash \
+ perl-autodie \
+ perl-Exporter \
+ perl-constant \
+ perl-Fcntl \
+ perl-POSIX \
+ perl-File-Copy \
+ perl-PathTools \
+ perl-interpreter \
+ perl-File-Temp \
 "

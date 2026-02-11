@@ -7,15 +7,15 @@ PACKAGES = "conntrack-tools"
 
 
 URI_conntrack-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/conntrack-tools-1.4.8-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:conntrack-tools = "
- systemd
- systemd-libs
- libmnl
- libnetfilter_conntrack
- bash
- libnfnetlink
- libnetfilter_cthelper
- glibc
- libnetfilter_cttimeout
- libnetfilter_queue
+RDEPENDS:conntrack-tools = " \
+ systemd \
+ systemd-libs \
+ libmnl \
+ libnetfilter_conntrack \
+ bash \
+ libnfnetlink \
+ libnetfilter_cthelper \
+ glibc \
+ libnetfilter_cttimeout \
+ libnetfilter_queue \
 "

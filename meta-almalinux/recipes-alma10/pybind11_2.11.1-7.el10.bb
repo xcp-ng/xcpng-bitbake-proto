@@ -7,15 +7,15 @@ PACKAGES = "pybind11-devel python3-pybind11"
 
 
 URI_pybind11-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/pybind11-devel-2.11.1-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pybind11-devel = "
- python3
- cmake-filesystem
- pkgconf-pkg-config
- cmake
+RDEPENDS:pybind11-devel = " \
+ python3 \
+ cmake-filesystem \
+ pkgconf-pkg-config \
+ cmake \
 "
 
 URI_python3-pybind11 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-pybind11-2.11.1-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:python3-pybind11 = "
- python3
- pybind11-devel
+RDEPENDS:python3-pybind11 = " \
+ python3 \
+ pybind11-devel \
 "

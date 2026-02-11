@@ -7,10 +7,10 @@ PACKAGES = "clevis-pin-tpm2"
 
 
 URI_clevis-pin-tpm2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/clevis-pin-tpm2-0.5.3-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:clevis-pin-tpm2 = "
- openssl-libs
- libgcc
- clevis
- tpm2-tss
- glibc
+RDEPENDS:clevis-pin-tpm2 = " \
+ openssl-libs \
+ libgcc \
+ clevis \
+ tpm2-tss \
+ glibc \
 "

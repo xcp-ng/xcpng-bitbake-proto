@@ -7,15 +7,15 @@ PACKAGES = "glslang glslang-devel"
 
 
 URI_glslang = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/glslang-15.1.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:glslang = "
- glibc
- spirv-tools-libs
- libstdc++
+RDEPENDS:glslang = " \
+ glibc \
+ spirv-tools-libs \
+ libstdc++ \
 "
 
 URI_glslang-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/glslang-devel-15.1.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:glslang-devel = "
- glslang
- cmake-filesystem
- pkgconf-pkg-config
+RDEPENDS:glslang-devel = " \
+ glslang \
+ cmake-filesystem \
+ pkgconf-pkg-config \
 "

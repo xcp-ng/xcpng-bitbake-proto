@@ -7,6 +7,6 @@ PACKAGES = "python3-pid"
 
 
 URI_python3-pid = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pid-2.2.3-22.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-pid = "
- python3
+RDEPENDS:python3-pid = " \
+ python3 \
 "

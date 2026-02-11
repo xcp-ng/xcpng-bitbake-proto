@@ -7,6 +7,6 @@ PACKAGES = "setserial"
 
 
 URI_setserial = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/setserial-2.17-63.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:setserial = "
- glibc
+RDEPENDS:setserial = " \
+ glibc \
 "

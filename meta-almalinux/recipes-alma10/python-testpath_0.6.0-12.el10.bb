@@ -10,6 +10,6 @@ URI_python-testpath-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Pac
 RDEPENDS:python-testpath-doc = ""
 
 URI_python3-testpath = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-testpath-0.6.0-12.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-testpath = "
- python3
+RDEPENDS:python3-testpath = " \
+ python3 \
 "

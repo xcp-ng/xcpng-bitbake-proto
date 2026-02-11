@@ -7,8 +7,8 @@ PACKAGES = "rpcgen rpcsvc-proto-devel"
 
 
 URI_rpcgen = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpcgen-1.4-17.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:rpcgen = "
- glibc
+RDEPENDS:rpcgen = " \
+ glibc \
 "
 
 URI_rpcsvc-proto-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/rpcsvc-proto-devel-1.4-17.el10.x86_64_v2.rpm;unpack=0"

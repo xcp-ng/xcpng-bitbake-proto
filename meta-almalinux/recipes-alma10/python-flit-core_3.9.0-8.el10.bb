@@ -7,6 +7,6 @@ PACKAGES = "python3-flit-core"
 
 
 URI_python3-flit-core = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-flit-core-3.9.0-8.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-flit-core = "
- python3
+RDEPENDS:python3-flit-core = " \
+ python3 \
 "

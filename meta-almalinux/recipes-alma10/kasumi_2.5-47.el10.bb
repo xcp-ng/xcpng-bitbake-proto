@@ -10,12 +10,12 @@ URI_kasumi-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Pac
 RDEPENDS:kasumi-common = ""
 
 URI_kasumi-unicode = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kasumi-unicode-2.5-47.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:kasumi-unicode = "
- kasumi-common
- libgcc
- libstdc++
- glib2
- gtk3
- glibc
- anthy-unicode
+RDEPENDS:kasumi-unicode = " \
+ kasumi-common \
+ libgcc \
+ libstdc++ \
+ glib2 \
+ gtk3 \
+ glibc \
+ anthy-unicode \
 "

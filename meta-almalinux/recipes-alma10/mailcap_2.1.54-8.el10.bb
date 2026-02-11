@@ -10,6 +10,6 @@ URI_mailcap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/mai
 RDEPENDS:mailcap = ""
 
 URI_nginx-mimetypes = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/nginx-mimetypes-2.1.54-8.el10.noarch.rpm;unpack=0"
-RDEPENDS:nginx-mimetypes = "
- nginx-filesystem
+RDEPENDS:nginx-mimetypes = " \
+ nginx-filesystem \
 "

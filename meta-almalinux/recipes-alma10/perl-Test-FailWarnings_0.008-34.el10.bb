@@ -7,9 +7,9 @@ PACKAGES = "perl-Test-FailWarnings"
 
 
 URI_perl-Test-FailWarnings = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-FailWarnings-0.008-34.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Test-FailWarnings = "
- perl-PathTools
- perl-libs
- perl-Test-Simple
- perl-Carp
+RDEPENDS:perl-Test-FailWarnings = " \
+ perl-PathTools \
+ perl-libs \
+ perl-Test-Simple \
+ perl-Carp \
 "

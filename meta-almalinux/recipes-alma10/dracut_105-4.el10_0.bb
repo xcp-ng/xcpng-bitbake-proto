@@ -7,78 +7,78 @@ PACKAGES = "dracut dracut-config-generic dracut-config-rescue dracut-network dra
 
 
 URI_dracut = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dracut-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut = "
- systemd
- kmod
- kmod-libs
- systemd-udev
- util-linux
- sed
- xz
- openssl-libs
- libgcc
- grep
- bash
- filesystem
- findutils
- glibc
- libkcapi-hmaccalc
- gzip
- procps-ng
- coreutils
- cpio
+RDEPENDS:dracut = " \
+ systemd \
+ kmod \
+ kmod-libs \
+ systemd-udev \
+ util-linux \
+ sed \
+ xz \
+ openssl-libs \
+ libgcc \
+ grep \
+ bash \
+ filesystem \
+ findutils \
+ glibc \
+ libkcapi-hmaccalc \
+ gzip \
+ procps-ng \
+ coreutils \
+ cpio \
 "
 
 URI_dracut-config-generic = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dracut-config-generic-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut-config-generic = "
- dracut
+RDEPENDS:dracut-config-generic = " \
+ dracut \
 "
 
 URI_dracut-config-rescue = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dracut-config-rescue-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut-config-rescue = "
- bash
- dracut
+RDEPENDS:dracut-config-rescue = " \
+ bash \
+ dracut \
 "
 
 URI_dracut-network = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dracut-network-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut-network = "
- iproute
- NetworkManager
- jq
- iputils
- bash
- dracut
+RDEPENDS:dracut-network = " \
+ iproute \
+ NetworkManager \
+ jq \
+ iputils \
+ bash \
+ dracut \
 "
 
 URI_dracut-squash = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dracut-squash-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut-squash = "
- erofs-utils
- bash
- dracut
+RDEPENDS:dracut-squash = " \
+ erofs-utils \
+ bash \
+ dracut \
 "
 
 URI_dracut-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dracut-tools-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut-tools = "
- bash
- dracut
+RDEPENDS:dracut-tools = " \
+ bash \
+ dracut \
 "
 
 URI_dracut-caps = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dracut-caps-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut-caps = "
- bash
- dracut
- libcap
+RDEPENDS:dracut-caps = " \
+ bash \
+ dracut \
+ libcap \
 "
 
 URI_dracut-live = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dracut-live-105-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dracut-live = "
- device-mapper
- gzip
- tar
- curl
- parted
- bash
- dracut
- dracut-network
- coreutils
+RDEPENDS:dracut-live = " \
+ device-mapper \
+ gzip \
+ tar \
+ curl \
+ parted \
+ bash \
+ dracut \
+ dracut-network \
+ coreutils \
 "

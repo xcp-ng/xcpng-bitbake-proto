@@ -7,9 +7,9 @@ PACKAGES = "net-tools"
 
 
 URI_net-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/net-tools-2.0-0.73.20160912git.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:net-tools = "
- glibc
- libselinux
- systemd
- bash
+RDEPENDS:net-tools = " \
+ glibc \
+ libselinux \
+ systemd \
+ bash \
 "

@@ -7,14 +7,14 @@ PACKAGES = "liboqs liboqs-devel"
 
 
 URI_liboqs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/liboqs-0.12.0-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:liboqs = "
- glibc
+RDEPENDS:liboqs = " \
+ glibc \
 "
 
 URI_liboqs-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/liboqs-devel-0.12.0-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:liboqs-devel = "
- openssl-devel
- cmake-filesystem
- pkgconf-pkg-config
- liboqs
+RDEPENDS:liboqs-devel = " \
+ openssl-devel \
+ cmake-filesystem \
+ pkgconf-pkg-config \
+ liboqs \
 "

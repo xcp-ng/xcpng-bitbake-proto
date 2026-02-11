@@ -7,20 +7,20 @@ PACKAGES = "slang slang-devel slang-slsh"
 
 
 URI_slang = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/slang-2.3.3-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:slang = "
- glibc
+RDEPENDS:slang = " \
+ glibc \
 "
 
 URI_slang-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/slang-devel-2.3.3-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:slang-devel = "
- slang
- pkgconf-pkg-config
+RDEPENDS:slang-devel = " \
+ slang \
+ pkgconf-pkg-config \
 "
 
 URI_slang-slsh = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/slang-slsh-2.3.3-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:slang-slsh = "
- glibc
- slang
- zlib-ng-compat
- libpng
+RDEPENDS:slang-slsh = " \
+ glibc \
+ slang \
+ zlib-ng-compat \
+ libpng \
 "

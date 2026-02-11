@@ -7,6 +7,6 @@ PACKAGES = "hyphen-tk"
 
 
 URI_hyphen-tk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hyphen-tk-0.20210322-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:hyphen-tk = "
- hyphen
+RDEPENDS:hyphen-tk = " \
+ hyphen \
 "

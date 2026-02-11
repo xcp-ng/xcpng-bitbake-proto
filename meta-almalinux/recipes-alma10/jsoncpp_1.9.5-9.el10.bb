@@ -7,17 +7,17 @@ PACKAGES = "jsoncpp jsoncpp-devel jsoncpp-doc"
 
 
 URI_jsoncpp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jsoncpp-1.9.5-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:jsoncpp = "
- glibc
- libgcc
- libstdc++
+RDEPENDS:jsoncpp = " \
+ glibc \
+ libgcc \
+ libstdc++ \
 "
 
 URI_jsoncpp-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jsoncpp-devel-1.9.5-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:jsoncpp-devel = "
- jsoncpp
- cmake-filesystem
- pkgconf-pkg-config
+RDEPENDS:jsoncpp-devel = " \
+ jsoncpp \
+ cmake-filesystem \
+ pkgconf-pkg-config \
 "
 
 URI_jsoncpp-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jsoncpp-doc-1.9.5-9.el10.noarch.rpm;unpack=0"

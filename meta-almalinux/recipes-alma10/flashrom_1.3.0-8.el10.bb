@@ -7,18 +7,18 @@ PACKAGES = "flashrom flashrom-devel"
 
 
 URI_flashrom = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flashrom-1.3.0-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flashrom = "
- systemd-udev
- dmidecode
- pciutils-libs
- glibc
- libusb1
+RDEPENDS:flashrom = " \
+ systemd-udev \
+ dmidecode \
+ pciutils-libs \
+ glibc \
+ libusb1 \
 "
 
 URI_flashrom-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flashrom-devel-1.3.0-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flashrom-devel = "
- libusb1-devel
- flashrom
- pkgconf-pkg-config
- pciutils-devel
+RDEPENDS:flashrom-devel = " \
+ libusb1-devel \
+ flashrom \
+ pkgconf-pkg-config \
+ pciutils-devel \
 "

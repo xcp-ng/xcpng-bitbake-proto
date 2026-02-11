@@ -7,23 +7,23 @@ PACKAGES = "mingw32-win-iconv mingw32-win-iconv-static mingw64-win-iconv mingw64
 
 
 URI_mingw32-win-iconv = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-win-iconv-0.0.8-15.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw32-win-iconv = "
- mingw32-crt
- mingw32-filesystem
+RDEPENDS:mingw32-win-iconv = " \
+ mingw32-crt \
+ mingw32-filesystem \
 "
 
 URI_mingw32-win-iconv-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-win-iconv-static-0.0.8-15.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw32-win-iconv-static = "
- mingw32-win-iconv
+RDEPENDS:mingw32-win-iconv-static = " \
+ mingw32-win-iconv \
 "
 
 URI_mingw64-win-iconv = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-win-iconv-0.0.8-15.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw64-win-iconv = "
- mingw64-crt
- mingw64-filesystem
+RDEPENDS:mingw64-win-iconv = " \
+ mingw64-crt \
+ mingw64-filesystem \
 "
 
 URI_mingw64-win-iconv-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-win-iconv-static-0.0.8-15.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw64-win-iconv-static = "
- mingw64-win-iconv
+RDEPENDS:mingw64-win-iconv-static = " \
+ mingw64-win-iconv \
 "

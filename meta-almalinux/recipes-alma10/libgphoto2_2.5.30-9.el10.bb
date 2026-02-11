@@ -7,24 +7,24 @@ PACKAGES = "libgphoto2 libgphoto2-devel"
 
 
 URI_libgphoto2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgphoto2-2.5.30-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgphoto2 = "
- gd
- libtool-ltdl
- libxml2
- libexif
- bash
- libcurl
- glibc
- libjpeg-turbo
- lockdev
- libusb1
+RDEPENDS:libgphoto2 = " \
+ gd \
+ libtool-ltdl \
+ libxml2 \
+ libexif \
+ bash \
+ libcurl \
+ glibc \
+ libjpeg-turbo \
+ lockdev \
+ libusb1 \
 "
 
 URI_libgphoto2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libgphoto2-devel-2.5.30-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgphoto2-devel = "
- libgphoto2-devel
- pkgconf-pkg-config
- libgphoto2
- bash
- libexif-devel
+RDEPENDS:libgphoto2-devel = " \
+ libgphoto2-devel \
+ pkgconf-pkg-config \
+ libgphoto2 \
+ bash \
+ libexif-devel \
 "

@@ -7,6 +7,6 @@ PACKAGES = "rootfiles"
 
 
 URI_rootfiles = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rootfiles-8.1-41.el10.noarch.rpm;unpack=0"
-RDEPENDS:rootfiles = "
- bash
+RDEPENDS:rootfiles = " \
+ bash \
 "

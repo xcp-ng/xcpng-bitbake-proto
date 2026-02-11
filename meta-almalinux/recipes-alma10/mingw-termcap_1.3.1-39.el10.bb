@@ -7,23 +7,23 @@ PACKAGES = "mingw32-termcap mingw64-termcap mingw32-termcap-static mingw64-termc
 
 
 URI_mingw32-termcap = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-termcap-1.3.1-39.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw32-termcap = "
- mingw32-crt
- mingw32-filesystem
+RDEPENDS:mingw32-termcap = " \
+ mingw32-crt \
+ mingw32-filesystem \
 "
 
 URI_mingw64-termcap = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-termcap-1.3.1-39.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw64-termcap = "
- mingw64-crt
- mingw64-filesystem
+RDEPENDS:mingw64-termcap = " \
+ mingw64-crt \
+ mingw64-filesystem \
 "
 
 URI_mingw32-termcap-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw32-termcap-static-1.3.1-39.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw32-termcap-static = "
- mingw32-termcap
+RDEPENDS:mingw32-termcap-static = " \
+ mingw32-termcap \
 "
 
 URI_mingw64-termcap-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw64-termcap-static-1.3.1-39.el10.noarch.rpm;unpack=0"
-RDEPENDS:mingw64-termcap-static = "
- mingw64-termcap
+RDEPENDS:mingw64-termcap-static = " \
+ mingw64-termcap \
 "

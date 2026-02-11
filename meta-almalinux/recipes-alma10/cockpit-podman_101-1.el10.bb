@@ -7,7 +7,7 @@ PACKAGES = "cockpit-podman"
 
 
 URI_cockpit-podman = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cockpit-podman-101-1.el10.noarch.rpm;unpack=0"
-RDEPENDS:cockpit-podman = "
- podman
- cockpit-bridge
+RDEPENDS:cockpit-podman = " \
+ podman \
+ cockpit-bridge \
 "

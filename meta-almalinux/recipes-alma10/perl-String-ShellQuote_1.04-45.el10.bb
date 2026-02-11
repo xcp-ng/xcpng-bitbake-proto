@@ -7,21 +7,21 @@ PACKAGES = "perl-String-ShellQuote perl-String-ShellQuote-tests"
 
 
 URI_perl-String-ShellQuote = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-String-ShellQuote-1.04-45.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-String-ShellQuote = "
- perl-libs
- perl-Carp
- perl-vars
- perl-interpreter
- perl-Getopt-Long
- perl-String-ShellQuote
- perl-Exporter
+RDEPENDS:perl-String-ShellQuote = " \
+ perl-libs \
+ perl-Carp \
+ perl-vars \
+ perl-interpreter \
+ perl-Getopt-Long \
+ perl-String-ShellQuote \
+ perl-Exporter \
 "
 
 URI_perl-String-ShellQuote-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-String-ShellQuote-tests-1.04-45.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-String-ShellQuote-tests = "
- perl-Test-Harness
- perl-libs
- perl-String-ShellQuote
- bash
- perl-interpreter
+RDEPENDS:perl-String-ShellQuote-tests = " \
+ perl-Test-Harness \
+ perl-libs \
+ perl-String-ShellQuote \
+ bash \
+ perl-interpreter \
 "

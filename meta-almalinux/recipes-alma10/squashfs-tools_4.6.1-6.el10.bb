@@ -7,12 +7,12 @@ PACKAGES = "squashfs-tools"
 
 
 URI_squashfs-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/squashfs-tools-4.6.1-6.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:squashfs-tools = "
- zlib-ng-compat
- lz4-libs
- lzo
- libgcc
- libzstd
- glibc
- xz-libs
+RDEPENDS:squashfs-tools = " \
+ zlib-ng-compat \
+ lz4-libs \
+ lzo \
+ libgcc \
+ libzstd \
+ glibc \
+ xz-libs \
 "

@@ -7,18 +7,18 @@ PACKAGES = "hostapd hostapd-logwatch"
 
 
 URI_hostapd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hostapd-2.11-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:hostapd = "
- systemd
- openssl-libs
- libnl3
- bash
- glibc
+RDEPENDS:hostapd = " \
+ systemd \
+ openssl-libs \
+ libnl3 \
+ bash \
+ glibc \
 "
 
 URI_hostapd-logwatch = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/hostapd-logwatch-2.11-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:hostapd-logwatch = "
- perl-interpreter
- perl-libs
- hostapd
- logwatch
+RDEPENDS:hostapd-logwatch = " \
+ perl-interpreter \
+ perl-libs \
+ hostapd \
+ logwatch \
 "

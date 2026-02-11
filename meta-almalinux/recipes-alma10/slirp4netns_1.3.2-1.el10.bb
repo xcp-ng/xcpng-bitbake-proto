@@ -7,9 +7,9 @@ PACKAGES = "slirp4netns"
 
 
 URI_slirp4netns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/slirp4netns-1.3.2-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:slirp4netns = "
- glibc
- libslirp
- glib2
- libseccomp
+RDEPENDS:slirp4netns = " \
+ glibc \
+ libslirp \
+ glib2 \
+ libseccomp \
 "

@@ -7,24 +7,24 @@ PACKAGES = "perl-Tie-RefHash perl-Tie-RefHash-tests"
 
 
 URI_perl-Tie-RefHash = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Tie-RefHash-1.40-511.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Tie-RefHash = "
- perl-overload
- perl-libs
- perl-Carp
+RDEPENDS:perl-Tie-RefHash = " \
+ perl-overload \
+ perl-libs \
+ perl-Carp \
 "
 
 URI_perl-Tie-RefHash-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Tie-RefHash-tests-1.40-511.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Tie-RefHash-tests = "
- perl-threads
- perl-Test-Harness
- perl-libs
- perl-Test-Simple
- perl-ExtUtils-MakeMaker
- perl-Storable
- perl-overload
- bash
- perl-PathTools
- perl-interpreter
- perl-Tie-RefHash
- perl-Data-Dumper
+RDEPENDS:perl-Tie-RefHash-tests = " \
+ perl-threads \
+ perl-Test-Harness \
+ perl-libs \
+ perl-Test-Simple \
+ perl-ExtUtils-MakeMaker \
+ perl-Storable \
+ perl-overload \
+ bash \
+ perl-PathTools \
+ perl-interpreter \
+ perl-Tie-RefHash \
+ perl-Data-Dumper \
 "

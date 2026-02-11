@@ -7,25 +7,25 @@ PACKAGES = "perl-IPC-System-Simple perl-IPC-System-Simple-tests"
 
 
 URI_perl-IPC-System-Simple = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-IPC-System-Simple-1.30-16.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-IPC-System-Simple = "
- perl-constant
- perl-Scalar-List-Utils
- perl-libs
- perl-Carp
- perl-POSIX
- perl-Exporter
+RDEPENDS:perl-IPC-System-Simple = " \
+ perl-constant \
+ perl-Scalar-List-Utils \
+ perl-libs \
+ perl-Carp \
+ perl-POSIX \
+ perl-Exporter \
 "
 
 URI_perl-IPC-System-Simple-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-IPC-System-Simple-tests-1.30-16.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-IPC-System-Simple-tests = "
- perl-constant
- perl-Test
- perl-Test-Harness
- perl-libs
- perl-Test-Simple
- perl-Scalar-List-Utils
- perl-File-Basename
- bash
- perl-IPC-System-Simple
- perl-interpreter
+RDEPENDS:perl-IPC-System-Simple-tests = " \
+ perl-constant \
+ perl-Test \
+ perl-Test-Harness \
+ perl-libs \
+ perl-Test-Simple \
+ perl-Scalar-List-Utils \
+ perl-File-Basename \
+ bash \
+ perl-IPC-System-Simple \
+ perl-interpreter \
 "

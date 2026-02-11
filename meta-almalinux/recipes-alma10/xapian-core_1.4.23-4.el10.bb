@@ -7,28 +7,28 @@ PACKAGES = "xapian-core xapian-core-libs xapian-core-devel"
 
 
 URI_xapian-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xapian-core-1.4.23-4.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xapian-core = "
- libgcc
- xapian-core-libs
- libstdc++
- bash
- glibc
+RDEPENDS:xapian-core = " \
+ libgcc \
+ xapian-core-libs \
+ libstdc++ \
+ bash \
+ glibc \
 "
 
 URI_xapian-core-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xapian-core-libs-1.4.23-4.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xapian-core-libs = "
- libuuid
- zlib-ng-compat
- libgcc
- libstdc++
- glibc
+RDEPENDS:xapian-core-libs = " \
+ libuuid \
+ zlib-ng-compat \
+ libgcc \
+ libstdc++ \
+ glibc \
 "
 
 URI_xapian-core-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xapian-core-devel-1.4.23-4.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xapian-core-devel = "
- pkgconf-pkg-config
- libuuid-devel
- bash
- xapian-core
- xapian-core-libs
+RDEPENDS:xapian-core-devel = " \
+ pkgconf-pkg-config \
+ libuuid-devel \
+ bash \
+ xapian-core \
+ xapian-core-libs \
 "

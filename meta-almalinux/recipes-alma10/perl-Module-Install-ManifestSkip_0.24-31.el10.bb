@@ -7,18 +7,18 @@ PACKAGES = "perl-Module-Install-ManifestSkip perl-Module-Install-ManifestSkip-te
 
 
 URI_perl-Module-Install-ManifestSkip = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Install-ManifestSkip-0.24-31.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Install-ManifestSkip = "
- perl-Module-Install
- perl-Module-Manifest-Skip
- perl-libs
- perl-base
+RDEPENDS:perl-Module-Install-ManifestSkip = " \
+ perl-Module-Install \
+ perl-Module-Manifest-Skip \
+ perl-libs \
+ perl-base \
 "
 
 URI_perl-Module-Install-ManifestSkip-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Install-ManifestSkip-tests-0.24-31.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Install-ManifestSkip-tests = "
- perl-Module-Install-ManifestSkip
- perl-Test-Harness
- perl-Test-Simple
- bash
- perl-interpreter
+RDEPENDS:perl-Module-Install-ManifestSkip-tests = " \
+ perl-Module-Install-ManifestSkip \
+ perl-Test-Harness \
+ perl-Test-Simple \
+ bash \
+ perl-interpreter \
 "

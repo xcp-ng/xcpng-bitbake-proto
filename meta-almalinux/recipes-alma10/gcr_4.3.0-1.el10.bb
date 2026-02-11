@@ -7,32 +7,32 @@ PACKAGES = "gcr gcr-devel gcr-libs"
 
 
 URI_gcr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcr-4.3.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gcr = "
- gnupg2
- systemd-libs
- openssh-clients
- pango
- libsecret
- bash
- glib2
- glibc
- gtk4
- gcr-libs
+RDEPENDS:gcr = " \
+ gnupg2 \
+ systemd-libs \
+ openssh-clients \
+ pango \
+ libsecret \
+ bash \
+ glib2 \
+ glibc \
+ gtk4 \
+ gcr-libs \
 "
 
 URI_gcr-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcr-devel-4.3.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gcr-devel = "
- p11-kit-devel
- glib2-devel
- pkgconf-pkg-config
- gcr-devel
- gcr-libs
+RDEPENDS:gcr-devel = " \
+ p11-kit-devel \
+ glib2-devel \
+ pkgconf-pkg-config \
+ gcr-devel \
+ gcr-libs \
 "
 
 URI_gcr-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcr-libs-4.3.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gcr-libs = "
- glibc
- gnutls
- glib2
- p11-kit
+RDEPENDS:gcr-libs = " \
+ glibc \
+ gnutls \
+ glib2 \
+ p11-kit \
 "

@@ -7,19 +7,19 @@ PACKAGES = "maven-assembly-plugin maven-assembly-plugin-javadoc"
 
 
 URI_maven-assembly-plugin = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-assembly-plugin-3.6.0-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:maven-assembly-plugin = "
- maven-filtering
- plexus-interpolation
- apache-commons-io
- plexus-utils
- javapackages-filesystem
- maven-archiver
- maven-common-artifact-filters
- plexus-archiver
- plexus-io
+RDEPENDS:maven-assembly-plugin = " \
+ maven-filtering \
+ plexus-interpolation \
+ apache-commons-io \
+ plexus-utils \
+ javapackages-filesystem \
+ maven-archiver \
+ maven-common-artifact-filters \
+ plexus-archiver \
+ plexus-io \
 "
 
 URI_maven-assembly-plugin-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-assembly-plugin-javadoc-3.6.0-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:maven-assembly-plugin-javadoc = "
- javapackages-filesystem
+RDEPENDS:maven-assembly-plugin-javadoc = " \
+ javapackages-filesystem \
 "

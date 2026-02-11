@@ -7,48 +7,48 @@ PACKAGES = "firefox firefox-x11"
 
 
 URI_firefox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/firefox-140.4.0-3.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:firefox = "
- nss
- pango
- fontconfig
- libX11
- libX11-xcb
- nss-util
- dbus-libs
- libXcomposite
- libXcursor
- libXdamage
- libXext
- libXfixes
- libXi
- libXrandr
- libXrender
- libstdc++
- cairo
- almalinux-indexhtml
- cairo-gobject
- alsa-lib
- atk
- zlib-ng-compat
- libffi
- libgcc
- p11-kit-trust
- gdk-pixbuf2
- libxcb
- pciutils-libs
- bash
- freetype
- harfbuzz
- glib2
- gtk3
- glibc
- mozilla-filesystem
- libjpeg-turbo
- nspr
+RDEPENDS:firefox = " \
+ nss \
+ pango \
+ fontconfig \
+ libX11 \
+ libX11-xcb \
+ nss-util \
+ dbus-libs \
+ libXcomposite \
+ libXcursor \
+ libXdamage \
+ libXext \
+ libXfixes \
+ libXi \
+ libXrandr \
+ libXrender \
+ libstdc++ \
+ cairo \
+ almalinux-indexhtml \
+ cairo-gobject \
+ alsa-lib \
+ atk \
+ zlib-ng-compat \
+ libffi \
+ libgcc \
+ p11-kit-trust \
+ gdk-pixbuf2 \
+ libxcb \
+ pciutils-libs \
+ bash \
+ freetype \
+ harfbuzz \
+ glib2 \
+ gtk3 \
+ glibc \
+ mozilla-filesystem \
+ libjpeg-turbo \
+ nspr \
 "
 
 URI_firefox-x11 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/firefox-x11-140.4.0-3.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:firefox-x11 = "
- bash
- firefox
+RDEPENDS:firefox-x11 = " \
+ bash \
+ firefox \
 "

@@ -7,8 +7,8 @@ PACKAGES = "iptraf-ng"
 
 
 URI_iptraf-ng = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/iptraf-ng-1.2.2-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:iptraf-ng = "
- glibc
- logrotate
- ncurses-libs
+RDEPENDS:iptraf-ng = " \
+ glibc \
+ logrotate \
+ ncurses-libs \
 "

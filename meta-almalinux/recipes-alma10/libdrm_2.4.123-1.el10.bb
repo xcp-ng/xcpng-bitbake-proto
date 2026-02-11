@@ -7,22 +7,22 @@ PACKAGES = "libdrm libdrm-devel drm-utils"
 
 
 URI_libdrm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libdrm-2.4.123-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libdrm = "
- glibc
- libpciaccess
+RDEPENDS:libdrm = " \
+ glibc \
+ libpciaccess \
 "
 
 URI_libdrm-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libdrm-devel-2.4.123-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libdrm-devel = "
- kernel-headers
- libpciaccess-devel
- pkgconf-pkg-config
- libdrm
- libdrm-devel
+RDEPENDS:libdrm-devel = " \
+ kernel-headers \
+ libpciaccess-devel \
+ pkgconf-pkg-config \
+ libdrm \
+ libdrm-devel \
 "
 
 URI_drm-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/drm-utils-2.4.123-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:drm-utils = "
- glibc
- libdrm
+RDEPENDS:drm-utils = " \
+ glibc \
+ libdrm \
 "

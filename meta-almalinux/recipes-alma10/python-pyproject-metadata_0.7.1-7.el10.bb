@@ -7,7 +7,7 @@ PACKAGES = "python3-pyproject-metadata"
 
 
 URI_python3-pyproject-metadata = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-pyproject-metadata-0.7.1-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-pyproject-metadata = "
- python3
- python3-packaging
+RDEPENDS:python3-pyproject-metadata = " \
+ python3 \
+ python3-packaging \
 "

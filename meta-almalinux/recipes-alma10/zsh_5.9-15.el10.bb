@@ -7,13 +7,13 @@ PACKAGES = "zsh zsh-html"
 
 
 URI_zsh = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/zsh-5.9-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:zsh = "
- grep
- ncurses-libs
- bash
- pcre2
- glibc
- coreutils
+RDEPENDS:zsh = " \
+ grep \
+ ncurses-libs \
+ bash \
+ pcre2 \
+ glibc \
+ coreutils \
 "
 
 URI_zsh-html = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/zsh-html-5.9-15.el10.noarch.rpm;unpack=0"

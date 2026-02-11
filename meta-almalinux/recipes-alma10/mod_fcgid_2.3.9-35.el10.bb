@@ -7,8 +7,8 @@ PACKAGES = "mod_fcgid"
 
 
 URI_mod_fcgid = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mod_fcgid-2.3.9-35.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mod_fcgid = "
- glibc
- systemd
- httpd-core
+RDEPENDS:mod_fcgid = " \
+ glibc \
+ systemd \
+ httpd-core \
 "

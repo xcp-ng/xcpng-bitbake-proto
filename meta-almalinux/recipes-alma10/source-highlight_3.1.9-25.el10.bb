@@ -7,17 +7,17 @@ PACKAGES = "source-highlight source-highlight-devel"
 
 
 URI_source-highlight = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/source-highlight-3.1.9-25.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:source-highlight = "
- libgcc
- boost-regex
- libstdc++
- bash
- glibc
+RDEPENDS:source-highlight = " \
+ libgcc \
+ boost-regex \
+ libstdc++ \
+ bash \
+ glibc \
 "
 
 URI_source-highlight-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/source-highlight-devel-3.1.9-25.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:source-highlight-devel = "
- source-highlight
- pkgconf-pkg-config
- boost-devel
+RDEPENDS:source-highlight-devel = " \
+ source-highlight \
+ pkgconf-pkg-config \
+ boost-devel \
 "

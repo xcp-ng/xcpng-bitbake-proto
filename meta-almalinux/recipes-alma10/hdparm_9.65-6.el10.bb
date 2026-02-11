@@ -7,6 +7,6 @@ PACKAGES = "hdparm"
 
 
 URI_hdparm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/hdparm-9.65-6.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:hdparm = "
- glibc
+RDEPENDS:hdparm = " \
+ glibc \
 "

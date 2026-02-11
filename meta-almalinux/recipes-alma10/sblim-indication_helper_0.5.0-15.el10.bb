@@ -7,13 +7,13 @@ PACKAGES = "sblim-indication_helper sblim-indication_helper-devel"
 
 
 URI_sblim-indication_helper = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sblim-indication_helper-0.5.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:sblim-indication_helper = "
- glibc
+RDEPENDS:sblim-indication_helper = " \
+ glibc \
 "
 
 URI_sblim-indication_helper-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/sblim-indication_helper-devel-0.5.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:sblim-indication_helper-devel = "
- glibc-devel
- sblim-indication_helper
- sblim-cmpi-devel
+RDEPENDS:sblim-indication_helper-devel = " \
+ glibc-devel \
+ sblim-indication_helper \
+ sblim-cmpi-devel \
 "

@@ -7,23 +7,23 @@ PACKAGES = "composefs composefs-libs composefs-devel"
 
 
 URI_composefs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/composefs-1.0.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:composefs = "
- glibc
- composefs-libs
- libgcc
+RDEPENDS:composefs = " \
+ glibc \
+ composefs-libs \
+ libgcc \
 "
 
 URI_composefs-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/composefs-libs-1.0.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:composefs-libs = "
- glibc
- openssl-libs
- libgcc
+RDEPENDS:composefs-libs = " \
+ glibc \
+ openssl-libs \
+ libgcc \
 "
 
 URI_composefs-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/composefs-devel-1.0.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:composefs-devel = "
- composefs
- composefs-libs
- openssl-devel
- pkgconf-pkg-config
+RDEPENDS:composefs-devel = " \
+ composefs \
+ composefs-libs \
+ openssl-devel \
+ pkgconf-pkg-config \
 "

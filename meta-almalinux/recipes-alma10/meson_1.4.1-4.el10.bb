@@ -7,8 +7,8 @@ PACKAGES = "meson"
 
 
 URI_meson = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/meson-1.4.1-4.el10.noarch.rpm;unpack=0"
-RDEPENDS:meson = "
- python3
- ninja-build
- python3-setuptools
+RDEPENDS:meson = " \
+ python3 \
+ ninja-build \
+ python3-setuptools \
 "

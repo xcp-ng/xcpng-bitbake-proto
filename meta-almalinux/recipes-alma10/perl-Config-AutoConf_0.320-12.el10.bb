@@ -7,15 +7,15 @@ PACKAGES = "perl-Config-AutoConf"
 
 
 URI_perl-Config-AutoConf = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Config-AutoConf-0.320-12.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Config-AutoConf = "
- perl-constant
- perl-libs
- perl-Carp
- perl-Text-ParseWords
- perl-Capture-Tiny
- perl-File-Basename
- perl-PathTools
- perl-Exporter
- perl-base
- perl-File-Temp
+RDEPENDS:perl-Config-AutoConf = " \
+ perl-constant \
+ perl-libs \
+ perl-Carp \
+ perl-Text-ParseWords \
+ perl-Capture-Tiny \
+ perl-File-Basename \
+ perl-PathTools \
+ perl-Exporter \
+ perl-base \
+ perl-File-Temp \
 "

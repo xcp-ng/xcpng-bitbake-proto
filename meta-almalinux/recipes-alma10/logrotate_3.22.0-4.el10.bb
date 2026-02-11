@@ -7,12 +7,12 @@ PACKAGES = "logrotate"
 
 
 URI_logrotate = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/logrotate-3.22.0-4.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:logrotate = "
- libacl
- systemd
- libselinux
- bash
- popt
- glibc
- coreutils
+RDEPENDS:logrotate = " \
+ libacl \
+ systemd \
+ libselinux \
+ bash \
+ popt \
+ glibc \
+ coreutils \
 "

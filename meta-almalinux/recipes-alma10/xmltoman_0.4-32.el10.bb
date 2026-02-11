@@ -7,7 +7,7 @@ PACKAGES = "xmltoman"
 
 
 URI_xmltoman = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmltoman-0.4-32.el10.noarch.rpm;unpack=0"
-RDEPENDS:xmltoman = "
- perl-interpreter
- perl-XML-Parser
+RDEPENDS:xmltoman = " \
+ perl-interpreter \
+ perl-XML-Parser \
 "

@@ -7,28 +7,28 @@ PACKAGES = "perl-Sys-Syslog perl-Sys-Syslog-tests"
 
 
 URI_perl-Sys-Syslog = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Sys-Syslog-0.36-512.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:perl-Sys-Syslog = "
- perl-constant
- perl-libs
- perl-Carp
- perl-vars
- perl-Socket
- perl-Fcntl
- perl-POSIX
- perl-File-Basename
- glibc
- perl-Exporter
+RDEPENDS:perl-Sys-Syslog = " \
+ perl-constant \
+ perl-libs \
+ perl-Carp \
+ perl-vars \
+ perl-Socket \
+ perl-Fcntl \
+ perl-POSIX \
+ perl-File-Basename \
+ glibc \
+ perl-Exporter \
 "
 
 URI_perl-Sys-Syslog-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Sys-Syslog-tests-0.36-512.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:perl-Sys-Syslog-tests = "
- perl-Test-Harness
- perl-libs
- perl-Test-Simple
- perl-FileHandle
- perl-Socket
- bash
- perl-PathTools
- perl-Sys-Syslog
- perl-interpreter
+RDEPENDS:perl-Sys-Syslog-tests = " \
+ perl-Test-Harness \
+ perl-libs \
+ perl-Test-Simple \
+ perl-FileHandle \
+ perl-Socket \
+ bash \
+ perl-PathTools \
+ perl-Sys-Syslog \
+ perl-interpreter \
 "

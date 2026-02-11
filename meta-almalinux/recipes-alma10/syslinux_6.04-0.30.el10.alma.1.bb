@@ -7,58 +7,58 @@ PACKAGES = "syslinux syslinux-extlinux syslinux-extlinux-nonlinux syslinux-nonli
 
 
 URI_syslinux = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/syslinux-6.04-0.30.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:syslinux = "
- glibc
- libuuid
- syslinux-nonlinux
- mtools
+RDEPENDS:syslinux = " \
+ glibc \
+ libuuid \
+ syslinux-nonlinux \
+ mtools \
 "
 
 URI_syslinux-extlinux = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/syslinux-extlinux-6.04-0.30.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:syslinux-extlinux = "
- glibc
- syslinux-extlinux-nonlinux
- bash
- syslinux
+RDEPENDS:syslinux-extlinux = " \
+ glibc \
+ syslinux-extlinux-nonlinux \
+ bash \
+ syslinux \
 "
 
 URI_syslinux-extlinux-nonlinux = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/syslinux-extlinux-nonlinux-6.04-0.30.el10.alma.1.noarch.rpm;unpack=0"
-RDEPENDS:syslinux-extlinux-nonlinux = "
- glibc
- syslinux
+RDEPENDS:syslinux-extlinux-nonlinux = " \
+ glibc \
+ syslinux \
 "
 
 URI_syslinux-nonlinux = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/syslinux-nonlinux-6.04-0.30.el10.alma.1.noarch.rpm;unpack=0"
-RDEPENDS:syslinux-nonlinux = "
- glibc
- syslinux
+RDEPENDS:syslinux-nonlinux = " \
+ glibc \
+ syslinux \
 "
 
 URI_syslinux-tftpboot = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/syslinux-tftpboot-6.04-0.30.el10.alma.1.noarch.rpm;unpack=0"
-RDEPENDS:syslinux-tftpboot = "
- glibc
+RDEPENDS:syslinux-tftpboot = " \
+ glibc \
 "
 
 URI_syslinux-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/syslinux-devel-6.04-0.30.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:syslinux-devel = "
- glibc
+RDEPENDS:syslinux-devel = " \
+ glibc \
 "
 
 URI_syslinux-efi64 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/syslinux-efi64-6.04-0.30.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:syslinux-efi64 = "
- glibc
+RDEPENDS:syslinux-efi64 = " \
+ glibc \
 "
 
 URI_syslinux-perl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/syslinux-perl-6.04-0.30.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:syslinux-perl = "
- perl-libs
- perl-IO
- perl-Socket
- perl-Digest-SHA
- perl-Fcntl
- perl-PathTools
- perl-Errno
- perl-interpreter
- perl-Crypt-PasswdMD5
- perl-MIME-Base64
+RDEPENDS:syslinux-perl = " \
+ perl-libs \
+ perl-IO \
+ perl-Socket \
+ perl-Digest-SHA \
+ perl-Fcntl \
+ perl-PathTools \
+ perl-Errno \
+ perl-interpreter \
+ perl-Crypt-PasswdMD5 \
+ perl-MIME-Base64 \
 "

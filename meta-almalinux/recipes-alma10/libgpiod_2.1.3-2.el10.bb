@@ -7,35 +7,35 @@ PACKAGES = "libgpiod libgpiod-c++ libgpiod-devel libgpiod-utils python3-libgpiod
 
 
 URI_libgpiod = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgpiod-2.1.3-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgpiod = "
- glibc
+RDEPENDS:libgpiod = " \
+ glibc \
 "
 
 URI_libgpiod-c++ = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgpiod-c++-2.1.3-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgpiod-c++ = "
- glibc
- libgcc
- libstdc++
- libgpiod
+RDEPENDS:libgpiod-c++ = " \
+ glibc \
+ libgcc \
+ libstdc++ \
+ libgpiod \
 "
 
 URI_libgpiod-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgpiod-devel-2.1.3-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgpiod-devel = "
- libgpiod-c++
- python3-libgpiod
- pkgconf-pkg-config
- libgpiod
+RDEPENDS:libgpiod-devel = " \
+ libgpiod-c++ \
+ python3-libgpiod \
+ pkgconf-pkg-config \
+ libgpiod \
 "
 
 URI_libgpiod-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgpiod-utils-2.1.3-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libgpiod-utils = "
- glibc
- libgpiod
+RDEPENDS:libgpiod-utils = " \
+ glibc \
+ libgpiod \
 "
 
 URI_python3-libgpiod = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-libgpiod-2.1.3-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:python3-libgpiod = "
- glibc
- python3
- libgpiod
+RDEPENDS:python3-libgpiod = " \
+ glibc \
+ python3 \
+ libgpiod \
 "

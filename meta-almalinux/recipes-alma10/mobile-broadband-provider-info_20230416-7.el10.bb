@@ -10,7 +10,7 @@ URI_mobile-broadband-provider-info = "https://vault.almalinux.org/10.0/AppStream
 RDEPENDS:mobile-broadband-provider-info = ""
 
 URI_mobile-broadband-provider-info-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mobile-broadband-provider-info-devel-20230416-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:mobile-broadband-provider-info-devel = "
- mobile-broadband-provider-info
- pkgconf-pkg-config
+RDEPENDS:mobile-broadband-provider-info-devel = " \
+ mobile-broadband-provider-info \
+ pkgconf-pkg-config \
 "

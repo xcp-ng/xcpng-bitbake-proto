@@ -7,23 +7,23 @@ PACKAGES = "libsepol libsepol-devel libsepol-utils libsepol-static"
 
 
 URI_libsepol = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libsepol-3.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libsepol = "
- glibc
+RDEPENDS:libsepol = " \
+ glibc \
 "
 
 URI_libsepol-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libsepol-devel-3.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libsepol-devel = "
- pkgconf-pkg-config
- libsepol
+RDEPENDS:libsepol-devel = " \
+ pkgconf-pkg-config \
+ libsepol \
 "
 
 URI_libsepol-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libsepol-utils-3.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libsepol-utils = "
- glibc
- libsepol
+RDEPENDS:libsepol-utils = " \
+ glibc \
+ libsepol \
 "
 
 URI_libsepol-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libsepol-static-3.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libsepol-static = "
- libsepol-devel
+RDEPENDS:libsepol-static = " \
+ libsepol-devel \
 "

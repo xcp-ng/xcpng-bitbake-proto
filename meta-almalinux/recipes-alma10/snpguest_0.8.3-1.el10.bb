@@ -7,8 +7,8 @@ PACKAGES = "snpguest"
 
 
 URI_snpguest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/snpguest-0.8.3-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:snpguest = "
- glibc
- openssl-libs
- libgcc
+RDEPENDS:snpguest = " \
+ glibc \
+ openssl-libs \
+ libgcc \
 "

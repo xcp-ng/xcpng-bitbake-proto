@@ -7,8 +7,8 @@ PACKAGES = "python3-pyyaml"
 
 
 URI_python3-pyyaml = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-pyyaml-6.0.1-19.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:python3-pyyaml = "
- glibc
- python3
- libyaml
+RDEPENDS:python3-pyyaml = " \
+ glibc \
+ python3 \
+ libyaml \
 "

@@ -7,14 +7,14 @@ PACKAGES = "libtirpc libtirpc-devel"
 
 
 URI_libtirpc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libtirpc-1.3.5-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libtirpc = "
- glibc
- krb5-libs
- libcom_err
+RDEPENDS:libtirpc = " \
+ glibc \
+ krb5-libs \
+ libcom_err \
 "
 
 URI_libtirpc-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libtirpc-devel-1.3.5-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libtirpc-devel = "
- libtirpc
- pkgconf-pkg-config
+RDEPENDS:libtirpc-devel = " \
+ libtirpc \
+ pkgconf-pkg-config \
 "

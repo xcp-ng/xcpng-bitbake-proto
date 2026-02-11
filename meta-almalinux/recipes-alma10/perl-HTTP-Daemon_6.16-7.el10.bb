@@ -7,31 +7,31 @@ PACKAGES = "perl-HTTP-Daemon perl-HTTP-Daemon-tests"
 
 
 URI_perl-HTTP-Daemon = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-HTTP-Daemon-6.16-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-HTTP-Daemon = "
- perl-libs
- perl-Carp
- perl-Socket
- perl-IO-Socket-IP
- perl-LWP-MediaTypes
- perl-HTTP-Date
- perl-HTTP-Message
+RDEPENDS:perl-HTTP-Daemon = " \
+ perl-libs \
+ perl-Carp \
+ perl-Socket \
+ perl-IO-Socket-IP \
+ perl-LWP-MediaTypes \
+ perl-HTTP-Date \
+ perl-HTTP-Message \
 "
 
 URI_perl-HTTP-Daemon-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-HTTP-Daemon-tests-6.16-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-HTTP-Daemon-tests = "
- perl-Test-Harness
- perl-libs
- perl-libwww-perl
- perl-Test-Simple
- perl-IO
- perl-Socket
- perl-Module-Metadata
- perl-File-Temp
- perl-PathTools
- bash
- perl-Test-Needs
- perl-interpreter
- perl-HTTP-Daemon
- perl-lib
- perl-MIME-Base64
+RDEPENDS:perl-HTTP-Daemon-tests = " \
+ perl-Test-Harness \
+ perl-libs \
+ perl-libwww-perl \
+ perl-Test-Simple \
+ perl-IO \
+ perl-Socket \
+ perl-Module-Metadata \
+ perl-File-Temp \
+ perl-PathTools \
+ bash \
+ perl-Test-Needs \
+ perl-interpreter \
+ perl-HTTP-Daemon \
+ perl-lib \
+ perl-MIME-Base64 \
 "

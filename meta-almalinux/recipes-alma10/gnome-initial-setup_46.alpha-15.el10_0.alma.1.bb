@@ -7,31 +7,31 @@ PACKAGES = "gnome-initial-setup"
 
 
 URI_gnome-initial-setup = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-initial-setup-46.alpha-15.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gnome-initial-setup = "
- libpwquality
- pango
- fontconfig
- krb5-libs
- ibus-libs
- NetworkManager-libnm
- libnma-gtk4
- tecla
- accountsservice-libs
- gnome-desktop4
- cairo
- libadwaita
- shadow-utils
- libgcc
- gdk-pixbuf2
- libsecret
- bash
- gdm
- geoclue2-libs
- geocode-glib
- libgweather
- polkit
- polkit-libs
- glib2
- glibc
- gtk4
+RDEPENDS:gnome-initial-setup = " \
+ libpwquality \
+ pango \
+ fontconfig \
+ krb5-libs \
+ ibus-libs \
+ NetworkManager-libnm \
+ libnma-gtk4 \
+ tecla \
+ accountsservice-libs \
+ gnome-desktop4 \
+ cairo \
+ libadwaita \
+ shadow-utils \
+ libgcc \
+ gdk-pixbuf2 \
+ libsecret \
+ bash \
+ gdm \
+ geoclue2-libs \
+ geocode-glib \
+ libgweather \
+ polkit \
+ polkit-libs \
+ glib2 \
+ glibc \
+ gtk4 \
 "

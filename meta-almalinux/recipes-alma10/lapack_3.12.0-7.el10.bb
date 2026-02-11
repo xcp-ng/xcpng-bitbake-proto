@@ -7,78 +7,78 @@ PACKAGES = "blas lapack blas-devel blas64 blas64_ lapack-devel lapack-static lap
 
 
 URI_blas = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/blas-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:blas = "
- glibc
- libgcc
- libgfortran
+RDEPENDS:blas = " \
+ glibc \
+ libgcc \
+ libgfortran \
 "
 
 URI_lapack = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lapack-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:lapack = "
- glibc
- libgcc
- libgfortran
- blas
+RDEPENDS:lapack = " \
+ glibc \
+ libgcc \
+ libgfortran \
+ blas \
 "
 
 URI_blas-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/blas-devel-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:blas-devel = "
- blas-devel
- blas64
- blas64_
- cmake-filesystem
- pkgconf-pkg-config
- blas
- gcc-gfortran
+RDEPENDS:blas-devel = " \
+ blas-devel \
+ blas64 \
+ blas64_ \
+ cmake-filesystem \
+ pkgconf-pkg-config \
+ blas \
+ gcc-gfortran \
 "
 
 URI_blas64 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/blas64-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:blas64 = "
- glibc
- libgcc
- libgfortran
+RDEPENDS:blas64 = " \
+ glibc \
+ libgcc \
+ libgfortran \
 "
 
 URI_blas64_ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/blas64_-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:blas64_ = "
- glibc
- libgcc
- libgfortran
+RDEPENDS:blas64_ = " \
+ glibc \
+ libgcc \
+ libgfortran \
 "
 
 URI_lapack-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack-devel-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:lapack-devel = "
- blas-devel
- lapack
- lapack-devel
- cmake-filesystem
- lapack64
- lapack64_
- pkgconf-pkg-config
+RDEPENDS:lapack-devel = " \
+ blas-devel \
+ lapack \
+ lapack-devel \
+ cmake-filesystem \
+ lapack64 \
+ lapack64_ \
+ pkgconf-pkg-config \
 "
 
 URI_lapack-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack-static-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:lapack-static = "
- lapack-devel
+RDEPENDS:lapack-static = " \
+ lapack-devel \
 "
 
 URI_lapack64 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack64-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:lapack64 = "
- glibc
- blas64
- libgcc
- libgfortran
+RDEPENDS:lapack64 = " \
+ glibc \
+ blas64 \
+ libgcc \
+ libgfortran \
 "
 
 URI_lapack64_ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack64_-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:lapack64_ = "
- glibc
- blas64_
- libgcc
- libgfortran
+RDEPENDS:lapack64_ = " \
+ glibc \
+ blas64_ \
+ libgcc \
+ libgfortran \
 "
 
 URI_blas-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/blas-static-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:blas-static = "
- blas-devel
+RDEPENDS:blas-static = " \
+ blas-devel \
 "

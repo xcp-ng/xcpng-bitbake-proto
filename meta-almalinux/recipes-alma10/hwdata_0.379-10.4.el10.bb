@@ -10,7 +10,7 @@ URI_hwdata = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/hwda
 RDEPENDS:hwdata = ""
 
 URI_hwdata-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/hwdata-devel-0.379-10.4.el10.noarch.rpm;unpack=0"
-RDEPENDS:hwdata-devel = "
- pkgconf-pkg-config
- hwdata
+RDEPENDS:hwdata-devel = " \
+ pkgconf-pkg-config \
+ hwdata \
 "
