@@ -20,6 +20,30 @@ CONFS = ('src', 'bin')
 cachedirs = {}
 dbs = {}
 
+def str_reldep(rel: hawkey.Reldep) -> str:
+    return f"{rel.name} ({rel.relation} {rel.version})"
+
+def write_recipe(pkg: dnf.package.Package) -> None:
+    rpms: list[dnf.package.Package] = list(dbs['bin'].sack.query().filter(sourcerpm=f"{pkg}.rpm"))
+    fname = f"{pkg.name}_{f'{pkg.epoch}:' if pkg.epoch else ''}{pkg.version}-{pkg.release}.bb"
+    with open(f"meta-almalinux/recipes-alma10/{fname}", "w") as r:
+        print(f'''
+PN = "{pkg.name}"
+PE = "{pkg.epoch}"
+PV = "{pkg.version}"
+PR = "{pkg.release}"
+PACKAGES = "{' '.join(p.name for p in rpms)}"
+''', file=r)
+
+        for p in rpms:
+            print(f'\nURI_{p.name} = "{p.remote_location(schemes=["https", "http", "file"])};unpack=0"',
+                  file=r)
+            rel: hawkey.Reldep
+            print(f'''RDEPENDS:{p.name} = "{' '.join(str_reldep(rel) for rel in p.requires)}"''',
+                  file=r)
+            print(f'''RPROVIDES:{p.name} = "{' '.join(str_reldep(rel) for rel in p.provides)}"''',
+                  file=r)
+
 with (tempfile.TemporaryDirectory() as persistdir,
       tempfile.TemporaryDirectory() as reposdir,
       tempfile.TemporaryDirectory() as cachedirs['src'],
@@ -68,23 +92,5 @@ with (tempfile.TemporaryDirectory() as persistdir,
                 if prov_name.startswith(_USRMOVE_PREFIXES):
                     provides_map['/usr' + prov_name].append(p)
 
-    pkg = rpms_src[0]
-    print(f"# src: {pkg}")
-    print(f'PN = "{pkg.name}"')
-    print(f'PE = "{pkg.epoch}"')
-    print(f'PV = "{pkg.version}"')
-    print(f'PR = "{pkg.release}"')
-
-    rpms: list[dnf.package.Package] = list(dbs['bin'].sack.query().filter(sourcerpm=f"{pkg}.rpm").available())
-    print(f'PACKAGES = "{" ".join(p.name for p in rpms)}"')
-
-    for p in rpms:
-        print(f'URI_{p.name} = "{p.remote_location(schemes=["https", "http", "file"])};unpack=0"')
-        rel: hawkey.Reldep
-        for rel in p.requires:
-            print(f"# {rel.name} {rel.relation} {rel.version}")
-            if WORKAROUND_LIBDNF_BUG:
-                providers = provides_map.get(rel.name, [])
-            else:
-                providers = dbs['bin'].sack.query().filter(provides=rel)
-            print(f"{rel}: {[str(p) for p in providers]}")
+    for pkg in rpms_src:
+        write_recipe(pkg)
