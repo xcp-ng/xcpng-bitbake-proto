@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import logging
+import sys
 import tempfile
 from collections import defaultdict
 
@@ -191,4 +192,6 @@ with (tempfile.TemporaryDirectory() as persistdir,
                     provides_map['/usr' + prov_name].append(p)
 
     for pkg in rpms_src:
+        if len(sys.argv) > 1 and pkg.name not in sys.argv[1:]:
+            continue
         write_recipe(pkg)
