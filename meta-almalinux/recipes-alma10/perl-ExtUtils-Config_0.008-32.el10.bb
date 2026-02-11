@@ -7,5 +7,7 @@ PACKAGES = "perl-ExtUtils-Config"
 
 
 URI_perl-ExtUtils-Config = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-ExtUtils-Config-0.008-32.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-ExtUtils-Config = "perl(strict) ( ) perl(warnings) ( ) perl(Config) ( ) perl-libs ( ) perl(Data::Dumper) ( )"
-RPROVIDES:perl-ExtUtils-Config = "perl(ExtUtils::Config) ( =  0.008) perl-ExtUtils-Config ( =  0.008-32.el10)"
+RDEPENDS:perl-ExtUtils-Config = "
+ perl-libs
+ perl-Data-Dumper
+"

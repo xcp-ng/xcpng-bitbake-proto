@@ -7,5 +7,8 @@ PACKAGES = "driverctl"
 
 
 URI_driverctl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/driverctl-0.115-2.el10.noarch.rpm;unpack=0"
-RDEPENDS:driverctl = "/bin/sh ( ) /usr/sbin/udevadm ( ) /usr/bin/bash ( ) coreutils ( ) udev ( )"
-RPROVIDES:driverctl = "driverctl ( =  0.115-2.el10)"
+RDEPENDS:driverctl = "
+ coreutils
+ systemd-udev
+ bash
+"

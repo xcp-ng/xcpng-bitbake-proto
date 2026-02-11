@@ -7,5 +7,7 @@ PACKAGES = "jdeparser"
 
 
 URI_jdeparser = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jdeparser-2.0.3-17.el10.noarch.rpm;unpack=0"
-RDEPENDS:jdeparser = "javapackages-filesystem ( ) java-headless ( or  (REL))"
-RPROVIDES:jdeparser = "jdeparser ( =  2.0.3-17.el10) mvn(org.jboss.jdeparser:jdeparser) ( =  2.0.3.Final) mvn(org.jboss.jdeparser:jdeparser:pom:) ( =  2.0.3.Final)"
+RDEPENDS:jdeparser = "
+ javapackages-filesystem
+ java-21-openjdk-headless
+"

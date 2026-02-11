@@ -7,17 +7,45 @@ PACKAGES = "qt6-qtvirtualkeyboard qt6-qtvirtualkeyboard-devel qt6-qtvirtualkeybo
 
 
 URI_qt6-qtvirtualkeyboard = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtvirtualkeyboard-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtvirtualkeyboard = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6Svg.so.6()(64bit) ( ) libQt6Svg.so.6(Qt_6)(64bit) ( ) libhunspell-1.7.so.0()(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtvirtualkeyboard = "libQt6HunspellInputMethod.so.6()(64bit) ( ) libQt6VirtualKeyboard.so.6()(64bit) ( ) libQt6VirtualKeyboardSettings.so.6()(64bit) ( ) bundled(libpinyin) ( ) libQt6HunspellInputMethod.so.6(NonQt)(64bit) ( ) libQt6HunspellInputMethod.so.6(Qt_6)(64bit) ( ) libQt6HunspellInputMethod.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6VirtualKeyboard.so.6(NonQt)(64bit) ( ) libQt6VirtualKeyboard.so.6(Qt_6)(64bit) ( ) libQt6VirtualKeyboard.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6VirtualKeyboardSettings.so.6(NonQt)(64bit) ( ) libQt6VirtualKeyboardSettings.so.6(Qt_6)(64bit) ( ) libQt6VirtualKeyboardSettings.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvirtualkeyboardplugin.so()(64bit) ( ) libqtvirtualkeyboardplugin.so(NonQt)(64bit) ( ) libqtvirtualkeyboardplugin.so(Qt_6)(64bit) ( ) libqtvirtualkeyboardplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbbuiltinstylesplugin.so()(64bit) ( ) libqtvkbbuiltinstylesplugin.so(NonQt)(64bit) ( ) libqtvkbbuiltinstylesplugin.so(Qt_6)(64bit) ( ) libqtvkbbuiltinstylesplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbcomponentsplugin.so()(64bit) ( ) libqtvkbcomponentsplugin.so(NonQt)(64bit) ( ) libqtvkbcomponentsplugin.so(Qt_6)(64bit) ( ) libqtvkbcomponentsplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbhangulplugin.so()(64bit) ( ) libqtvkbhangulplugin.so(NonQt)(64bit) ( ) libqtvkbhangulplugin.so(Qt_6)(64bit) ( ) libqtvkbhangulplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbhunspellplugin.so()(64bit) ( ) libqtvkbhunspellplugin.so(NonQt)(64bit) ( ) libqtvkbhunspellplugin.so(Qt_6)(64bit) ( ) libqtvkbhunspellplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkblayoutsplugin.so()(64bit) ( ) libqtvkblayoutsplugin.so(NonQt)(64bit) ( ) libqtvkblayoutsplugin.so(Qt_6)(64bit) ( ) libqtvkblayoutsplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbopenwnnplugin.so()(64bit) ( ) libqtvkbopenwnnplugin.so(NonQt)(64bit) ( ) libqtvkbopenwnnplugin.so(Qt_6)(64bit) ( ) libqtvkbopenwnnplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbpinyinplugin.so()(64bit) ( ) libqtvkbpinyinplugin.so(NonQt)(64bit) ( ) libqtvkbpinyinplugin.so(Qt_6)(64bit) ( ) libqtvkbpinyinplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbplugin.so()(64bit) ( ) libqtvkbplugin.so(NonQt)(64bit) ( ) libqtvkbplugin.so(Qt_6)(64bit) ( ) libqtvkbplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbpluginsplugin.so()(64bit) ( ) libqtvkbpluginsplugin.so(NonQt)(64bit) ( ) libqtvkbpluginsplugin.so(Qt_6)(64bit) ( ) libqtvkbpluginsplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbsettingsplugin.so()(64bit) ( ) libqtvkbsettingsplugin.so(NonQt)(64bit) ( ) libqtvkbsettingsplugin.so(Qt_6)(64bit) ( ) libqtvkbsettingsplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbstylesplugin.so()(64bit) ( ) libqtvkbstylesplugin.so(NonQt)(64bit) ( ) libqtvkbstylesplugin.so(Qt_6)(64bit) ( ) libqtvkbstylesplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbtcimeplugin.so()(64bit) ( ) libqtvkbtcimeplugin.so(NonQt)(64bit) ( ) libqtvkbtcimeplugin.so(Qt_6)(64bit) ( ) libqtvkbtcimeplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvkbthaiplugin.so()(64bit) ( ) libqtvkbthaiplugin.so(NonQt)(64bit) ( ) libqtvkbthaiplugin.so(Qt_6)(64bit) ( ) libqtvkbthaiplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtQuick.VirtualKeyboard) ( ) qt6qml(QtQuick.VirtualKeyboard.Components) ( ) qt6qml(QtQuick.VirtualKeyboard.Layouts) ( ) qt6qml(QtQuick.VirtualKeyboard.Plugins) ( ) qt6qml(QtQuick.VirtualKeyboard.Plugins.Hangul) ( ) qt6qml(QtQuick.VirtualKeyboard.Plugins.Hunspell) ( ) qt6qml(QtQuick.VirtualKeyboard.Plugins.OpenWNN) ( ) qt6qml(QtQuick.VirtualKeyboard.Plugins.Pinyin) ( ) qt6qml(QtQuick.VirtualKeyboard.Plugins.TCIme) ( ) qt6qml(QtQuick.VirtualKeyboard.Plugins.Thai) ( ) qt6qml(QtQuick.VirtualKeyboard.Settings) ( ) qt6qml(QtQuick.VirtualKeyboard.Styles) ( ) qt6qml(QtQuick.VirtualKeyboard.Styles.Builtin) ( ) qt6-qtvirtualkeyboard(x86-64) ( =  6.8.1-1.el10) qt6-qtvirtualkeyboard ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtvirtualkeyboard = "
+ qt6-qtdeclarative
+ qt6-qtsvg
+ qt6-qtbase
+ hunspell
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtvirtualkeyboard-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtvirtualkeyboard-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtvirtualkeyboard-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) pkgconfig(Qt6Gui) ( ) pkgconfig(Qt6Qml) ( ) pkgconfig(Qt6Quick) ( ) libQt6HunspellInputMethod.so.6()(64bit) ( ) libQt6VirtualKeyboard.so.6()(64bit) ( ) libQt6VirtualKeyboardSettings.so.6()(64bit) ( ) pkgconfig(Qt6VirtualKeyboard) ( ) qt6-qtvirtualkeyboard(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtvirtualkeyboard-devel = "cmake(Qt6HunspellInputMethod) ( ) cmake(Qt6QVirtualKeyboardPlugin) ( ) cmake(Qt6VirtualKeyboard) ( ) cmake(Qt6VirtualKeyboardSettings) ( ) cmake(Qt6qtvkbbuiltinstylesplugin) ( ) cmake(Qt6qtvkbcomponentsplugin) ( ) cmake(Qt6qtvkbhangulplugin) ( ) cmake(Qt6qtvkbhunspellplugin) ( ) cmake(Qt6qtvkblayoutsplugin) ( ) cmake(Qt6qtvkbopenwnnplugin) ( ) cmake(Qt6qtvkbpinyinplugin) ( ) cmake(Qt6qtvkbplugin) ( ) cmake(Qt6qtvkbpluginsplugin) ( ) cmake(Qt6qtvkbsettingsplugin) ( ) cmake(Qt6qtvkbstylesplugin) ( ) cmake(Qt6qtvkbtcimeplugin) ( ) cmake(Qt6qtvkbthaiplugin) ( ) cmake(QtVirtualKeyboardTests) ( ) cmake(qt6hunspellinputmethod) ( ) cmake(qt6qtvkbbuiltinstylesplugin) ( ) cmake(qt6qtvkbcomponentsplugin) ( ) cmake(qt6qtvkbhangulplugin) ( ) cmake(qt6qtvkbhunspellplugin) ( ) cmake(qt6qtvkblayoutsplugin) ( ) cmake(qt6qtvkbopenwnnplugin) ( ) cmake(qt6qtvkbpinyinplugin) ( ) cmake(qt6qtvkbplugin) ( ) cmake(qt6qtvkbpluginsplugin) ( ) cmake(qt6qtvkbsettingsplugin) ( ) cmake(qt6qtvkbstylesplugin) ( ) cmake(qt6qtvkbtcimeplugin) ( ) cmake(qt6qtvkbthaiplugin) ( ) cmake(qt6qvirtualkeyboardplugin) ( ) cmake(qt6virtualkeyboard) ( ) cmake(qt6virtualkeyboardsettings) ( ) cmake(qtvirtualkeyboardtests) ( ) pkgconfig(Qt6HunspellInputMethod) ( =  6.8.1) pkgconfig(Qt6VirtualKeyboard) ( =  6.8.1) pkgconfig(Qt6VirtualKeyboardSettings) ( =  6.8.1) qt6-qtvirtualkeyboard-devel ( =  6.8.1-1.el10) qt6-qtvirtualkeyboard-devel(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtvirtualkeyboard-devel = "
+ qt6-qtdeclarative-devel
+ cmake-filesystem
+ pkgconf-pkg-config
+ qt6-qtvirtualkeyboard
+ qt6-qtvirtualkeyboard-devel
+ qt6-qtbase-devel
+"
 
 URI_qt6-qtvirtualkeyboard-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtvirtualkeyboard-examples-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtvirtualkeyboard-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) qt6-qtvirtualkeyboard(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtvirtualkeyboard-examples = "qt6-qtvirtualkeyboard-examples ( =  6.8.1-1.el10) qt6-qtvirtualkeyboard-examples(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtvirtualkeyboard-examples = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ qt6-qtvirtualkeyboard
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtvirtualkeyboard-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtvirtualkeyboard-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtvirtualkeyboard-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) /usr/bin/python3 ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6QuickTest.so.6()(64bit) ( ) libQt6QuickTest.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6VirtualKeyboard.so.6()(64bit) ( ) libQt6VirtualKeyboard.so.6(Qt_6)(64bit) ( ) qt6-qtvirtualkeyboard(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtvirtualkeyboard-tests = "qt6-qtvirtualkeyboard-tests ( =  6.8.1-1.el10) qt6-qtvirtualkeyboard-tests(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtvirtualkeyboard-tests = "
+ python3
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ qt6-qtvirtualkeyboard
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"

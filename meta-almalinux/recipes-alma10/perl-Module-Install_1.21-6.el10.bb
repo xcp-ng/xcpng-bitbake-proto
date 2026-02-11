@@ -7,9 +7,48 @@ PACKAGES = "perl-Module-Install perl-Module-Install-tests"
 
 
 URI_perl-Module-Install = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Module-Install-1.21-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Install = "perl(strict) ( ) perl-libs ( ) perl(Carp) ( ) perl(vars) ( ) perl(File::Basename) ( ) perl(Config) ( ) perl(Cwd) ( ) perl(Fcntl) ( ) perl(File::Temp) ( ) perl(File::Path) ( ) perl(FindBin) ( ) perl(File::Find) ( ) perl(FileHandle) ( ) perl(Module::Install::Base) ( ) perl(Socket) ( ) perl(Module::Install) ( ) perl(inc::Module::Install) ( ) perl(CPAN) ( ) perl(ExtUtils::MM_Unix) ( ) perl(ExtUtils::Manifest) ( ) perl(:VERSION) ( >=  5.6.0) perl(Archive::Zip) ( >=  1.37) perl(Devel::PPPort) ( >=  3.16) perl(ExtUtils::MakeMaker) ( >=  6.59) perl(File::Remove) ( >=  1.42) perl(File::Spec) ( >=  3.28) perl(Module::Build) ( >=  0.29) perl(Module::CoreList) ( >=  2.17) perl(Module::ScanDeps) ( >=  1.09) perl(Parse::CPAN::Meta) ( >=  1.4413) perl(YAML::Tiny) ( >=  1.38)"
-RPROVIDES:perl-Module-Install = "perl(Module::Install::Base::FakeAdmin) ( ) perl(Module::AutoInstall) ( =  1.21) perl(Module::Install) ( =  1.21) perl(Module::Install::Admin) ( =  1.21) perl(Module::Install::Admin::Bundle) ( =  1.21) perl(Module::Install::Admin::Compiler) ( =  1.21) perl(Module::Install::Admin::Find) ( =  1.21) perl(Module::Install::Admin::Include) ( =  1.21) perl(Module::Install::Admin::Makefile) ( =  1.21) perl(Module::Install::Admin::Manifest) ( =  1.21) perl(Module::Install::Admin::Metadata) ( =  1.21) perl(Module::Install::Admin::ScanDeps) ( =  1.21) perl(Module::Install::Admin::WriteAll) ( =  1.21) perl(Module::Install::AutoInstall) ( =  1.21) perl(Module::Install::Base) ( =  1.21) perl(Module::Install::Bundle) ( =  1.21) perl(Module::Install::Can) ( =  1.21) perl(Module::Install::Compiler) ( =  1.21) perl(Module::Install::Deprecated) ( =  1.21) perl(Module::Install::External) ( =  1.21) perl(Module::Install::Fetch) ( =  1.21) perl(Module::Install::Include) ( =  1.21) perl(Module::Install::Inline) ( =  1.21) perl(Module::Install::MakeMaker) ( =  1.21) perl(Module::Install::Makefile) ( =  1.21) perl(Module::Install::Metadata) ( =  1.21) perl(Module::Install::PAR) ( =  1.21) perl(Module::Install::Run) ( =  1.21) perl(Module::Install::Scripts) ( =  1.21) perl(Module::Install::Share) ( =  1.21) perl(Module::Install::Win32) ( =  1.21) perl(Module::Install::With) ( =  1.21) perl(Module::Install::WriteAll) ( =  1.21) perl(inc::Module::Install) ( =  1.21) perl-Module-Install ( =  1.21-6.el10)"
+RDEPENDS:perl-Module-Install = "
+ perl-libs
+ perl-FileHandle
+ perl-Module-Install
+ perl-FindBin
+ perl-Socket
+ perl-Module-ScanDeps
+ perl-Archive-Zip
+ perl-CPAN
+ perl-CPAN-Meta
+ perl-Carp
+ perl-vars
+ perl-YAML-Tiny
+ perl-Devel-PPPort
+ perl-Module-Build
+ perl-Module-CoreList
+ perl-ExtUtils-MakeMaker
+ perl-ExtUtils-Manifest
+ perl-Fcntl
+ perl-File-Basename
+ perl-PathTools
+ perl-File-Find
+ perl-File-Path
+ perl-File-Remove
+ perl-File-Temp
+"
 
 URI_perl-Module-Install-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Install-tests-1.21-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Install-tests = "perl(strict) ( ) /usr/bin/perl ( ) perl-Test-Harness ( ) perl(warnings) ( ) perl(Test::More) ( ) /usr/bin/bash ( ) perl(lib) ( ) perl(Config) ( ) perl(vars) ( ) perl(File::Temp) ( ) perl(Cwd) ( ) perl(utf8) ( ) perl(File::Path) ( ) perl(Symbol) ( ) perl(Parse::CPAN::Meta) ( ) perl(ExtUtils::MM) ( ) perl(autodie) ( ) perl(Module::AutoInstall) ( ) perl(Module::Install::Admin) ( ) perl(Module::Install::Metadata) ( ) perl-Module-Install ( =  1.21-6.el10)"
-RPROVIDES:perl-Module-Install-tests = "perl-Module-Install-tests ( =  1.21-6.el10)"
+RDEPENDS:perl-Module-Install-tests = "
+ perl-CPAN-Meta
+ perl-Test-Harness
+ perl-libs
+ perl-Test-Simple
+ perl-vars
+ perl-ExtUtils-MakeMaker
+ perl-Module-Install
+ perl-File-Temp
+ perl-Symbol
+ bash
+ perl-PathTools
+ perl-autodie
+ perl-interpreter
+ perl-File-Path
+ perl-lib
+"

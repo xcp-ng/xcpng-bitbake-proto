@@ -7,5 +7,6 @@ PACKAGES = "python3-six"
 
 
 URI_python3-six = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-six-1.16.0-16.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-six = "python(abi) ( =  3.12)"
-RPROVIDES:python3-six = "python-six ( =  1.16.0-16.el10) python3-six ( =  1.16.0-16.el10) python3.12-six ( =  1.16.0-16.el10) python3.12dist(six) ( =  1.16) python3dist(six) ( =  1.16)"
+RDEPENDS:python3-six = "
+ python3
+"

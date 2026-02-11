@@ -7,5 +7,7 @@ PACKAGES = "ftp"
 
 
 URI_ftp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ftp-0.17-97.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ftp = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libreadline.so.8()(64bit) ( )"
-RPROVIDES:ftp = "ftp ( =  0.17-97.el10) ftp(x86-64) ( =  0.17-97.el10)"
+RDEPENDS:ftp = "
+ glibc
+ readline
+"

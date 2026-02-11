@@ -7,17 +7,26 @@ PACKAGES = "libtalloc python3-talloc libtalloc-devel python3-talloc-devel"
 
 
 URI_libtalloc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libtalloc-2.4.2-106.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libtalloc = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( )"
-RPROVIDES:libtalloc = "libtalloc.so.2()(64bit) ( ) libtalloc.so.2(TALLOC_2.0.2)(64bit) ( ) bundled(libreplace) ( ) libtalloc.so.2(TALLOC_2.3.5)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.0)(64bit) ( ) libtalloc.so.2(TALLOC_2.0.3)(64bit) ( ) libtalloc.so.2(TALLOC_2.0.4)(64bit) ( ) libtalloc.so.2(TALLOC_2.0.5)(64bit) ( ) libtalloc.so.2(TALLOC_2.0.6)(64bit) ( ) libtalloc.so.2(TALLOC_2.0.7)(64bit) ( ) libtalloc.so.2(TALLOC_2.0.8)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.1)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.10)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.11)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.12)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.13)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.14)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.15)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.16)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.2)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.3)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.4)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.5)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.6)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.7)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.8)(64bit) ( ) libtalloc.so.2(TALLOC_2.1.9)(64bit) ( ) libtalloc.so.2(TALLOC_2.2.0)(64bit) ( ) libtalloc.so.2(TALLOC_2.3.0)(64bit) ( ) libtalloc.so.2(TALLOC_2.3.1)(64bit) ( ) libtalloc.so.2(TALLOC_2.3.2)(64bit) ( ) libtalloc.so.2(TALLOC_2.3.3)(64bit) ( ) libtalloc.so.2(TALLOC_2.3.4)(64bit) ( ) libtalloc.so.2(TALLOC_2.4.0)(64bit) ( ) libtalloc.so.2(TALLOC_2.4.1)(64bit) ( ) libtalloc.so.2(TALLOC_2.4.2)(64bit) ( ) libtalloc ( =  2.4.2-106.el10) libtalloc(x86-64) ( =  2.4.2-106.el10)"
+RDEPENDS:libtalloc = "
+ glibc
+"
 
 URI_python3-talloc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-talloc-2.4.2-106.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:python3-talloc = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libtalloc.so.2()(64bit) ( ) libtalloc.so.2(TALLOC_2.0.2)(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libpython3.12.so.1.0()(64bit) ( ) python(abi) ( =  3.12) libtalloc ( =  2.4.2-106.el10)"
-RPROVIDES:python3-talloc = "libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2()(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.0.6)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.6)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.9)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.3.0)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL.CPYTHON_312_X86_64_LINUX_GNU_2.4.2)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.0.7)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.0.8)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.0)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.1)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.10)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.11)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.12)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.13)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.14)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.15)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.16)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.2)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.3)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.4)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.5)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.7)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.1.8)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.2.0)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.3.1)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.3.2)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.3.3)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.3.4)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.3.5)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.4.0)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.4.1)(64bit) ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2(PYTALLOC_UTIL_2.4.2)(64bit) ( ) python-talloc ( =  2.4.2-106.el10) python3-talloc ( =  2.4.2-106.el10) python3-talloc(x86-64) ( =  2.4.2-106.el10) python3.12-talloc ( =  2.4.2-106.el10)"
+RDEPENDS:python3-talloc = "
+ glibc
+ python3
+ libtalloc
+ python3-libs
+"
 
 URI_libtalloc-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libtalloc-devel-2.4.2-106.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libtalloc-devel = "/usr/bin/pkg-config ( ) libtalloc.so.2()(64bit) ( ) libtalloc ( =  2.4.2-106.el10)"
-RPROVIDES:libtalloc-devel = "libtalloc-devel ( =  2.4.2-106.el10) libtalloc-devel(x86-64) ( =  2.4.2-106.el10) pkgconfig(talloc) ( =  2.4.2)"
+RDEPENDS:libtalloc-devel = "
+ pkgconf-pkg-config
+ libtalloc
+"
 
 URI_python3-talloc-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-talloc-devel-2.4.2-106.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:python3-talloc-devel = "/usr/bin/pkg-config ( ) libpytalloc-util.cpython-312-x86-64-linux-gnu.so.2()(64bit) ( ) python3-talloc ( =  2.4.2-106.el10)"
-RPROVIDES:python3-talloc-devel = "pkgconfig(pytalloc-util.cpython-312-x86_64-linux-gnu) ( =  2.4.2) python-talloc-devel ( =  2.4.2-106.el10) python3-talloc-devel ( =  2.4.2-106.el10) python3-talloc-devel(x86-64) ( =  2.4.2-106.el10) python3.12-talloc-devel ( =  2.4.2-106.el10)"
+RDEPENDS:python3-talloc-devel = "
+ python3-talloc
+ pkgconf-pkg-config
+"

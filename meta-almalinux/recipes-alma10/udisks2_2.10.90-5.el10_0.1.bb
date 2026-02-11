@@ -7,25 +7,101 @@ PACKAGES = "libudisks2 udisks2 udisks2-iscsi udisks2-lsm udisks2-lvm2 libudisks2
 
 
 URI_libudisks2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libudisks2-2.10.90-5.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libudisks2 = "rtld(GNU_HASH) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( )"
-RPROVIDES:libudisks2 = "libudisks2.so.0()(64bit) ( ) libudisks2(x86-64) ( =  2.10.90-5.el10_0.1) libstoraged ( =  2.10.90-5.el10_0.1) libudisks2 ( =  2.10.90-5.el10_0.1)"
+RDEPENDS:libudisks2 = "
+ glibc
+ glib2
+"
 
 URI_udisks2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/udisks2-2.10.90-5.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:udisks2 = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libbd_utils.so.3()(64bit) ( ) libuuid.so.1()(64bit) ( ) libuuid.so.1(UUID_1.0)(64bit) ( ) util-linux ( ) libpolkit-gobject-1.so.0()(64bit) ( ) libgudev-1.0.so.0()(64bit) ( ) libblkid.so.1()(64bit) ( ) libacl.so.1()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libmount.so.1()(64bit) ( ) libblkid.so.1(BLKID_1.0)(64bit) ( ) libblockdev.so.3()(64bit) ( ) libmount.so.1(MOUNT_2.19)(64bit) ( ) libudisks2.so.0()(64bit) ( ) libmount.so.1(MOUNT_2.20)(64bit) ( ) libmount.so.1(MOUNT_2.24)(64bit) ( ) libmount.so.1(MOUNT_2.26)(64bit) ( ) libpolkit-agent-1.so.0()(64bit) ( ) libmount ( ) libudisks2(x86-64) ( =  2.10.90-5.el10_0.1) dbus ( >=  1.4.0) libblockdev ( >=  3.2) libblockdev-crypto ( >=  3.2) libblockdev-fs ( >=  3.2) libblockdev-loop ( >=  3.2) libblockdev-mdraid ( >=  3.2) libblockdev-nvme ( >=  3.2) libblockdev-part ( >=  3.2) libblockdev-smart ( >=  3.2) libblockdev-swap ( >=  3.2) polkit ( >=  0.102) udev ( >=  208)"
-RPROVIDES:udisks2 = "storaged ( =  2.10.90-5.el10_0.1) udisks2 ( =  2.10.90-5.el10_0.1) udisks2(x86-64) ( =  2.10.90-5.el10_0.1)"
+RDEPENDS:udisks2 = "
+ systemd-libs
+ systemd-udev
+ libudisks2
+ dbus
+ libacl
+ util-linux
+ libblkid
+ libuuid
+ libgcc
+ libblockdev
+ libblockdev-crypto
+ libgudev
+ bash
+ libblockdev-fs
+ libblockdev-loop
+ libblockdev-mdraid
+ libblockdev-nvme
+ libmount
+ libblockdev-part
+ polkit
+ polkit-libs
+ libblockdev-smart
+ glib2
+ glibc
+ libblockdev-swap
+ libblockdev-utils
+"
 
 URI_udisks2-iscsi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/udisks2-iscsi-2.10.90-5.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:udisks2-iscsi = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libbd_utils.so.3()(64bit) ( ) libuuid.so.1()(64bit) ( ) libuuid.so.1(UUID_1.0)(64bit) ( ) libpolkit-gobject-1.so.0()(64bit) ( ) libgudev-1.0.so.0()(64bit) ( ) libblkid.so.1()(64bit) ( ) libacl.so.1()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libmount.so.1()(64bit) ( ) libblkid.so.1(BLKID_1.0)(64bit) ( ) libblockdev.so.3()(64bit) ( ) libmount.so.1(MOUNT_2.19)(64bit) ( ) libudisks2.so.0()(64bit) ( ) libmount.so.1(MOUNT_2.20)(64bit) ( ) libmount.so.1(MOUNT_2.24)(64bit) ( ) libmount.so.1(MOUNT_2.26)(64bit) ( ) iscsi-initiator-utils ( ) libiscsi.so.0()(64bit) ( ) libudisks2(x86-64) ( =  2.10.90-5.el10_0.1)"
-RPROVIDES:udisks2-iscsi = "libudisks2_iscsi.so()(64bit) ( ) storaged-iscsi ( =  2.10.90-5.el10_0.1) udisks2-iscsi ( =  2.10.90-5.el10_0.1) udisks2-iscsi(x86-64) ( =  2.10.90-5.el10_0.1)"
+RDEPENDS:udisks2-iscsi = "
+ libuuid
+ libacl
+ systemd-libs
+ libgcc
+ libblkid
+ libmount
+ libblockdev
+ libudisks2
+ libgudev
+ iscsi-initiator-utils
+ polkit-libs
+ glib2
+ glibc
+ libblockdev-utils
+"
 
 URI_udisks2-lsm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/udisks2-lsm-2.10.90-5.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:udisks2-lsm = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libbd_utils.so.3()(64bit) ( ) libuuid.so.1()(64bit) ( ) libuuid.so.1(UUID_1.0)(64bit) ( ) libpolkit-gobject-1.so.0()(64bit) ( ) libgudev-1.0.so.0()(64bit) ( ) libblkid.so.1()(64bit) ( ) libacl.so.1()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libmount.so.1()(64bit) ( ) libblkid.so.1(BLKID_1.0)(64bit) ( ) libblockdev.so.3()(64bit) ( ) libmount.so.1(MOUNT_2.19)(64bit) ( ) libudisks2.so.0()(64bit) ( ) libstoragemgmt ( ) libmount.so.1(MOUNT_2.20)(64bit) ( ) libmount.so.1(MOUNT_2.24)(64bit) ( ) libmount.so.1(MOUNT_2.26)(64bit) ( ) libconfig.so.11()(64bit) ( ) libstoragemgmt.so.1()(64bit) ( ) libudisks2(x86-64) ( =  2.10.90-5.el10_0.1)"
-RPROVIDES:udisks2-lsm = "libudisks2_lsm.so()(64bit) ( ) storaged-lsm ( =  2.10.90-5.el10_0.1) udisks2-lsm ( =  2.10.90-5.el10_0.1) udisks2-lsm(x86-64) ( =  2.10.90-5.el10_0.1)"
+RDEPENDS:udisks2-lsm = "
+ libuuid
+ libacl
+ systemd-libs
+ libgcc
+ libblkid
+ libmount
+ libblockdev
+ libudisks2
+ libgudev
+ libstoragemgmt
+ polkit-libs
+ glib2
+ libconfig
+ glibc
+ libblockdev-utils
+"
 
 URI_udisks2-lvm2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/udisks2-lvm2-2.10.90-5.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:udisks2-lvm2 = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libbd_utils.so.3()(64bit) ( ) libuuid.so.1()(64bit) ( ) libuuid.so.1(UUID_1.0)(64bit) ( ) libpolkit-gobject-1.so.0()(64bit) ( ) libgudev-1.0.so.0()(64bit) ( ) libblkid.so.1()(64bit) ( ) libacl.so.1()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libmount.so.1()(64bit) ( ) libblkid.so.1(BLKID_1.0)(64bit) ( ) lvm2 ( ) libblockdev.so.3()(64bit) ( ) libmount.so.1(MOUNT_2.19)(64bit) ( ) libudisks2.so.0()(64bit) ( ) libmount.so.1(MOUNT_2.20)(64bit) ( ) libmount.so.1(MOUNT_2.24)(64bit) ( ) libmount.so.1(MOUNT_2.26)(64bit) ( ) libudisks2(x86-64) ( =  2.10.90-5.el10_0.1) libblockdev-lvm ( >=  3.2)"
-RPROVIDES:udisks2-lvm2 = "libudisks2_lvm2.so()(64bit) ( ) storaged-lvm2 ( =  2.10.90-5.el10_0.1) udisks2-lvm2 ( =  2.10.90-5.el10_0.1) udisks2-lvm2(x86-64) ( =  2.10.90-5.el10_0.1)"
+RDEPENDS:udisks2-lvm2 = "
+ libuuid
+ libacl
+ systemd-libs
+ lvm2
+ libgcc
+ libblkid
+ libmount
+ libblockdev
+ libudisks2
+ libgudev
+ polkit-libs
+ glib2
+ glibc
+ libblockdev-lvm
+ libblockdev-utils
+"
 
 URI_libudisks2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libudisks2-devel-2.10.90-5.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libudisks2-devel = "/usr/bin/pkg-config ( ) pkgconfig(glib-2.0) ( ) pkgconfig(gio-2.0) ( ) pkgconfig(gobject-2.0) ( ) pkgconfig(udisks2) ( ) libudisks2.so.0()(64bit) ( ) libudisks2(x86-64) ( =  2.10.90-5.el10_0.1)"
-RPROVIDES:libudisks2-devel = "pkgconfig(udisks2) ( =  2.10.90) pkgconfig(udisks2-iscsi) ( =  2.10.90) pkgconfig(udisks2-lsm) ( =  2.10.90) pkgconfig(udisks2-lvm2) ( =  2.10.90) libstoraged-devel ( =  2.10.90-5.el10_0.1) libudisks2-devel ( =  2.10.90-5.el10_0.1) libudisks2-devel(x86-64) ( =  2.10.90-5.el10_0.1)"
+RDEPENDS:libudisks2-devel = "
+ glib2-devel
+ pkgconf-pkg-config
+ libudisks2-devel
+ libudisks2
+"

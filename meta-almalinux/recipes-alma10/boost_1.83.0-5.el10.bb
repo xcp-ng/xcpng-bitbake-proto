@@ -7,193 +7,410 @@ PACKAGES = "boost-system boost boost-atomic boost-chrono boost-container boost-c
 
 
 URI_boost-system = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/boost-system-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-system = "rtld(GNU_HASH) ( )"
-RPROVIDES:boost-system = "libboost_system.so.1.83.0()(64bit) ( ) boost-system ( =  1.83.0-5.el10) boost-system(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-system = "
+ glibc
+"
 
 URI_boost = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost = "boost-system(x86-64) ( =  1.83.0-5.el10) boost-chrono(x86-64) ( =  1.83.0-5.el10) boost-thread(x86-64) ( =  1.83.0-5.el10) boost-date-time(x86-64) ( =  1.83.0-5.el10) boost-filesystem(x86-64) ( =  1.83.0-5.el10) boost-python3(x86-64) ( =  1.83.0-5.el10) boost-regex(x86-64) ( =  1.83.0-5.el10) boost-atomic(x86-64) ( =  1.83.0-5.el10) boost-container(x86-64) ( =  1.83.0-5.el10) boost-context(x86-64) ( =  1.83.0-5.el10) boost-contract(x86-64) ( =  1.83.0-5.el10) boost-coroutine(x86-64) ( =  1.83.0-5.el10) boost-fiber(x86-64) ( =  1.83.0-5.el10) boost-graph(x86-64) ( =  1.83.0-5.el10) boost-iostreams(x86-64) ( =  1.83.0-5.el10) boost-json(x86-64) ( =  1.83.0-5.el10) boost-locale(x86-64) ( =  1.83.0-5.el10) boost-log(x86-64) ( =  1.83.0-5.el10) boost-math(x86-64) ( =  1.83.0-5.el10) boost-nowide(x86-64) ( =  1.83.0-5.el10) boost-program-options(x86-64) ( =  1.83.0-5.el10) boost-random(x86-64) ( =  1.83.0-5.el10) boost-serialization(x86-64) ( =  1.83.0-5.el10) boost-stacktrace(x86-64) ( =  1.83.0-5.el10) boost-test(x86-64) ( =  1.83.0-5.el10) boost-timer(x86-64) ( =  1.83.0-5.el10) boost-type_erasure(x86-64) ( =  1.83.0-5.el10) boost-wave(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost = "boost(x86-64) ( =  1.83.0-5.el10) boost ( =  1.83.0-5.el10)"
+RDEPENDS:boost = "
+ boost-fiber
+ boost-filesystem
+ boost-graph
+ boost-iostreams
+ boost-json
+ boost-locale
+ boost-log
+ boost-math
+ boost-nowide
+ boost-program-options
+ boost-python3
+ boost-random
+ boost-regex
+ boost-serialization
+ boost-stacktrace
+ boost-test
+ boost-thread
+ boost-timer
+ boost-type_erasure
+ boost-wave
+ boost-system
+ boost-atomic
+ boost-chrono
+ boost-container
+ boost-context
+ boost-contract
+ boost-coroutine
+ boost-date-time
+"
 
 URI_boost-atomic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-atomic-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-atomic = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( )"
-RPROVIDES:boost-atomic = "libboost_atomic.so.1.83.0()(64bit) ( ) boost-atomic(x86-64) ( =  1.83.0-5.el10) boost-atomic ( =  1.83.0-5.el10)"
+RDEPENDS:boost-atomic = "
+ glibc
+ libstdc++
+"
 
 URI_boost-chrono = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-chrono-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-chrono = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libc.so.6(GLIBC_2.17)(64bit) ( ) boost-system(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-chrono = "libboost_chrono.so.1.83.0()(64bit) ( ) boost-chrono(x86-64) ( =  1.83.0-5.el10) boost-chrono ( =  1.83.0-5.el10)"
+RDEPENDS:boost-chrono = "
+ glibc
+ libgcc
+ boost-system
+ libstdc++
+"
 
 URI_boost-container = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-container-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-container = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( )"
-RPROVIDES:boost-container = "libboost_container.so.1.83.0()(64bit) ( ) boost-container(x86-64) ( =  1.83.0-5.el10) boost-container ( =  1.83.0-5.el10)"
+RDEPENDS:boost-container = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-context = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-context-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-context = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( )"
-RPROVIDES:boost-context = "libboost_context.so.1.83.0()(64bit) ( ) boost-context(x86-64) ( =  1.83.0-5.el10) boost-context ( =  1.83.0-5.el10)"
+RDEPENDS:boost-context = "
+ glibc
+ libstdc++
+"
 
 URI_boost-contract = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-contract-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-contract = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( )"
-RPROVIDES:boost-contract = "libboost_contract.so.1.83.0()(64bit) ( ) boost-contract(x86-64) ( =  1.83.0-5.el10) boost-contract ( =  1.83.0-5.el10)"
+RDEPENDS:boost-contract = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-coroutine = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-coroutine-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-coroutine = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libboost_context.so.1.83.0()(64bit) ( )"
-RPROVIDES:boost-coroutine = "libboost_coroutine.so.1.83.0()(64bit) ( ) boost-coroutine(x86-64) ( =  1.83.0-5.el10) boost-coroutine ( =  1.83.0-5.el10)"
+RDEPENDS:boost-coroutine = "
+ glibc
+ libstdc++
+ boost-context
+"
 
 URI_boost-date-time = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-date-time-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-date-time = "rtld(GNU_HASH) ( )"
-RPROVIDES:boost-date-time = "libboost_date_time.so.1.83.0()(64bit) ( ) boost-date-time(x86-64) ( =  1.83.0-5.el10) boost-date-time ( =  1.83.0-5.el10)"
+RDEPENDS:boost-date-time = "
+ glibc
+"
 
 URI_boost-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-devel-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-devel = "libicu-devel(x86-64) ( ) libquadmath-devel(x86-64) ( ) boost(x86-64) ( =  1.83.0-5.el10) boost-numpy3(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-devel = "boost-devel ( =  1.83.0-5.el10) boost-devel(x86-64) ( =  1.83.0-5.el10) boost-python3-devel ( =  1.83.0-5.el10) boost-python3-devel(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-devel = "
+ libquadmath-devel
+ libicu-devel
+ boost-numpy3
+ boost
+"
 
 URI_boost-fiber = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-fiber-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-fiber = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.7)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) libboost_filesystem.so.1.83.0()(64bit) ( ) libboost_context.so.1.83.0()(64bit) ( )"
-RPROVIDES:boost-fiber = "libboost_fiber.so.1.83.0()(64bit) ( ) boost-fiber(x86-64) ( =  1.83.0-5.el10) boost-fiber ( =  1.83.0-5.el10)"
+RDEPENDS:boost-fiber = "
+ boost-filesystem
+ libgcc
+ libstdc++
+ glibc
+ boost-context
+"
 
 URI_boost-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-filesystem-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-filesystem = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libboost_atomic.so.1.83.0()(64bit) ( ) boost-system(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-filesystem = "libboost_filesystem.so.1.83.0()(64bit) ( ) boost-filesystem(x86-64) ( =  1.83.0-5.el10) boost-filesystem ( =  1.83.0-5.el10)"
+RDEPENDS:boost-filesystem = "
+ boost-atomic
+ libgcc
+ libstdc++
+ glibc
+ boost-system
+"
 
 URI_boost-graph = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-graph-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-graph = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libicuuc.so.74()(64bit) ( ) libicui18n.so.74()(64bit) ( ) libc.so.6(GLIBC_2.32)(64bit) ( ) libicudata.so.74()(64bit) ( ) libboost_regex.so.1.83.0()(64bit) ( ) boost-regex(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-graph = "libboost_graph.so.1.83.0()(64bit) ( ) boost-graph(x86-64) ( =  1.83.0-5.el10) boost-graph ( =  1.83.0-5.el10)"
+RDEPENDS:boost-graph = "
+ libgcc
+ boost-regex
+ libstdc++
+ glibc
+ libicu
+"
 
 URI_boost-iostreams = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-iostreams-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-iostreams = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libzstd.so.1()(64bit) ( ) liblzma.so.5()(64bit) ( ) liblzma.so.5(XZ_5.0)(64bit) ( ) libc.so.6(GLIBC_2.33)(64bit) ( ) libbz2.so.1()(64bit) ( ) liblzma.so.5(XZ_5.2)(64bit) ( )"
-RPROVIDES:boost-iostreams = "libboost_iostreams.so.1.83.0()(64bit) ( ) boost-iostreams(x86-64) ( =  1.83.0-5.el10) boost-iostreams ( =  1.83.0-5.el10)"
+RDEPENDS:boost-iostreams = "
+ zlib-ng-compat
+ bzip2-libs
+ libgcc
+ libzstd
+ libstdc++
+ glibc
+ xz-libs
+"
 
 URI_boost-json = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-json-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-json = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libboost_container.so.1.83.0()(64bit) ( )"
-RPROVIDES:boost-json = "libboost_json.so.1.83.0()(64bit) ( ) boost-json(x86-64) ( =  1.83.0-5.el10) boost-json ( =  1.83.0-5.el10)"
+RDEPENDS:boost-json = "
+ glibc
+ boost-container
+ libgcc
+ libstdc++
+"
 
 URI_boost-locale = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-locale-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-locale = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libicuuc.so.74()(64bit) ( ) libicui18n.so.74()(64bit) ( ) libicudata.so.74()(64bit) ( ) libboost_thread.so.1.83.0()(64bit) ( ) libboost_chrono.so.1.83.0()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.7)(64bit) ( ) boost-system(x86-64) ( =  1.83.0-5.el10) boost-chrono(x86-64) ( =  1.83.0-5.el10) boost-thread(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-locale = "libboost_locale.so.1.83.0()(64bit) ( ) boost-locale(x86-64) ( =  1.83.0-5.el10) boost-locale ( =  1.83.0-5.el10)"
+RDEPENDS:boost-locale = "
+ libgcc
+ boost-chrono
+ boost-thread
+ libstdc++
+ glibc
+ libicu
+ boost-system
+"
 
 URI_boost-log = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-log-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-log = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libicuuc.so.74()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libicui18n.so.74()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) libicudata.so.74()(64bit) ( ) libboost_thread.so.1.83.0()(64bit) ( ) libboost_chrono.so.1.83.0()(64bit) ( ) libboost_filesystem.so.1.83.0()(64bit) ( ) libboost_regex.so.1.83.0()(64bit) ( ) libboost_atomic.so.1.83.0()(64bit) ( )"
-RPROVIDES:boost-log = "libboost_log.so.1.83.0()(64bit) ( ) libboost_log_setup.so.1.83.0()(64bit) ( ) boost-log(x86-64) ( =  1.83.0-5.el10) boost-log ( =  1.83.0-5.el10)"
+RDEPENDS:boost-log = "
+ boost-filesystem
+ boost-atomic
+ libgcc
+ boost-chrono
+ boost-regex
+ boost-thread
+ libstdc++
+ glibc
+ libicu
+"
 
 URI_boost-math = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-math-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-math = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( )"
-RPROVIDES:boost-math = "libboost_math_c99.so.1.83.0()(64bit) ( ) libboost_math_c99f.so.1.83.0()(64bit) ( ) libboost_math_c99l.so.1.83.0()(64bit) ( ) libboost_math_tr1.so.1.83.0()(64bit) ( ) libboost_math_tr1f.so.1.83.0()(64bit) ( ) libboost_math_tr1l.so.1.83.0()(64bit) ( ) boost-math(x86-64) ( =  1.83.0-5.el10) boost-math ( =  1.83.0-5.el10)"
+RDEPENDS:boost-math = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-nowide = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-nowide-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-nowide = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( )"
-RPROVIDES:boost-nowide = "libboost_nowide.so.1.83.0()(64bit) ( ) boost-nowide(x86-64) ( =  1.83.0-5.el10) boost-nowide ( =  1.83.0-5.el10)"
+RDEPENDS:boost-nowide = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-numpy3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-numpy3-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-numpy3 = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) python3-numpy ( ) libboost_python312.so.1.83.0()(64bit) ( ) boost-python3(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-numpy3 = "libboost_numpy312.so.1.83.0()(64bit) ( ) boost-numpy3(x86-64) ( =  1.83.0-5.el10) boost-numpy3 ( =  1.83.0-5.el10)"
+RDEPENDS:boost-numpy3 = "
+ boost-python3
+ libgcc
+ libstdc++
+ glibc
+ python3-numpy
+"
 
 URI_boost-program-options = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-program-options-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-program-options = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( )"
-RPROVIDES:boost-program-options = "libboost_program_options.so.1.83.0()(64bit) ( ) boost-program-options(x86-64) ( =  1.83.0-5.el10) boost-program-options ( =  1.83.0-5.el10)"
+RDEPENDS:boost-program-options = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-python3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-python3-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-python3 = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) python(abi) ( =  3.12)"
-RPROVIDES:boost-python3 = "libboost_python312.so.1.83.0()(64bit) ( ) boost-python3(x86-64) ( =  1.83.0-5.el10) boost-python3 ( =  1.83.0-5.el10)"
+RDEPENDS:boost-python3 = "
+ glibc
+ python3
+ libgcc
+ libstdc++
+"
 
 URI_boost-random = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-random-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-random = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( )"
-RPROVIDES:boost-random = "libboost_random.so.1.83.0()(64bit) ( ) boost-random(x86-64) ( =  1.83.0-5.el10) boost-random ( =  1.83.0-5.el10)"
+RDEPENDS:boost-random = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-regex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-regex-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-regex = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libicuuc.so.74()(64bit) ( ) libicui18n.so.74()(64bit) ( ) libicudata.so.74()(64bit) ( )"
-RPROVIDES:boost-regex = "libboost_regex.so.1.83.0()(64bit) ( ) boost-regex(x86-64) ( =  1.83.0-5.el10) boost-regex ( =  1.83.0-5.el10)"
+RDEPENDS:boost-regex = "
+ glibc
+ libicu
+ libgcc
+ libstdc++
+"
 
 URI_boost-serialization = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-serialization-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-serialization = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libc.so.6(GLIBC_2.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.5)(64bit) ( )"
-RPROVIDES:boost-serialization = "libboost_serialization.so.1.83.0()(64bit) ( ) libboost_wserialization.so.1.83.0()(64bit) ( ) boost-serialization(x86-64) ( =  1.83.0-5.el10) boost-serialization ( =  1.83.0-5.el10)"
+RDEPENDS:boost-serialization = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-stacktrace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-stacktrace-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-stacktrace = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( )"
-RPROVIDES:boost-stacktrace = "libboost_stacktrace_addr2line.so.1.83.0()(64bit) ( ) libboost_stacktrace_basic.so.1.83.0()(64bit) ( ) libboost_stacktrace_noop.so.1.83.0()(64bit) ( ) boost-stacktrace(x86-64) ( =  1.83.0-5.el10) boost-stacktrace ( =  1.83.0-5.el10)"
+RDEPENDS:boost-stacktrace = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-test = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-test-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-test = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( )"
-RPROVIDES:boost-test = "libboost_prg_exec_monitor.so.1.83.0()(64bit) ( ) libboost_unit_test_framework.so.1.83.0()(64bit) ( ) boost-test(x86-64) ( =  1.83.0-5.el10) boost-test ( =  1.83.0-5.el10)"
+RDEPENDS:boost-test = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-thread = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-thread-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-thread = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) boost-system(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-thread = "libboost_thread.so.1.83.0()(64bit) ( ) boost-thread(x86-64) ( =  1.83.0-5.el10) boost-thread ( =  1.83.0-5.el10)"
+RDEPENDS:boost-thread = "
+ glibc
+ libgcc
+ boost-system
+ libstdc++
+"
 
 URI_boost-timer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-timer-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-timer = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) boost-system(x86-64) ( =  1.83.0-5.el10) boost-chrono(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-timer = "libboost_timer.so.1.83.0()(64bit) ( ) boost-timer(x86-64) ( =  1.83.0-5.el10) boost-timer ( =  1.83.0-5.el10)"
+RDEPENDS:boost-timer = "
+ libgcc
+ libstdc++
+ glibc
+ boost-chrono
+ boost-system
+"
 
 URI_boost-type_erasure = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-type_erasure-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-type_erasure = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libboost_thread.so.1.83.0()(64bit) ( ) libboost_chrono.so.1.83.0()(64bit) ( ) boost-system(x86-64) ( =  1.83.0-5.el10) boost-chrono(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-type_erasure = "libboost_type_erasure.so.1.83.0()(64bit) ( ) boost-type_erasure(x86-64) ( =  1.83.0-5.el10) boost-type_erasure ( =  1.83.0-5.el10)"
+RDEPENDS:boost-type_erasure = "
+ libgcc
+ boost-thread
+ libstdc++
+ glibc
+ boost-chrono
+ boost-system
+"
 
 URI_boost-wave = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/boost-wave-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-wave = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libboost_thread.so.1.83.0()(64bit) ( ) libboost_chrono.so.1.83.0()(64bit) ( ) libboost_filesystem.so.1.83.0()(64bit) ( ) boost-system(x86-64) ( =  1.83.0-5.el10) boost-chrono(x86-64) ( =  1.83.0-5.el10) boost-thread(x86-64) ( =  1.83.0-5.el10) boost-date-time(x86-64) ( =  1.83.0-5.el10) boost-filesystem(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-wave = "libboost_wave.so.1.83.0()(64bit) ( ) boost-wave(x86-64) ( =  1.83.0-5.el10) boost-wave ( =  1.83.0-5.el10)"
+RDEPENDS:boost-wave = "
+ boost-filesystem
+ libgcc
+ boost-thread
+ libstdc++
+ glibc
+ boost-chrono
+ boost-system
+ boost-date-time
+"
 
 URI_boost-b2 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-b2-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-b2 = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.17)(64bit) ( )"
-RPROVIDES:boost-b2 = "boost-b2 ( =  1.83.0-5.el10) boost-b2(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-b2 = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_boost-build = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-build-1.83.0-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:boost-build = "/usr/bin/python3 ( ) boost-b2 ( )"
-RPROVIDES:boost-build = "boost-build ( =  1.83.0-5.el10)"
+RDEPENDS:boost-build = "
+ python3
+ boost-b2
+"
 
 URI_boost-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-doc-1.83.0-5.el10.noarch.rpm;unpack=0"
 RDEPENDS:boost-doc = ""
-RPROVIDES:boost-doc = "boost-doc ( =  1.83.0-5.el10)"
 
 URI_boost-doctools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-doctools-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-doctools = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) docbook-dtds ( ) docbook-style-xsl ( ) libstdc++.so.6(CXXABI_1.3.1)(64bit) ( )"
-RPROVIDES:boost-doctools = "boost-doctools ( =  1.83.0-5.el10) boost-doctools(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-doctools = "
+ libgcc
+ docbook-dtds
+ docbook-style-xsl
+ libstdc++
+ bash
+ glibc
+"
 
 URI_boost-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-examples-1.83.0-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:boost-examples = "boost-devel ( =  1.83.0-5.el10)"
-RPROVIDES:boost-examples = "boost-examples ( =  1.83.0-5.el10)"
+RDEPENDS:boost-examples = "
+ boost-devel
+"
 
 URI_boost-graph-mpich = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-graph-mpich-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-graph-mpich = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libboost_serialization.so.1.83.0()(64bit) ( ) libboost_mpi.so.1.83.0()(64bit)(mpich-x86_64) ( ) libmpi.so.12()(64bit)(mpich-x86_64) ( ) libmpicxx.so.12()(64bit)(mpich-x86_64) ( ) boost-serialization(x86-64) ( =  1.83.0-5.el10) boost-mpich(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-graph-mpich = "libboost_graph_parallel.so.1.83.0()(64bit)(mpich-x86_64) ( ) boost-graph-mpich(x86-64) ( =  1.83.0-5.el10) boost-graph-mpich ( =  1.83.0-5.el10)"
+RDEPENDS:boost-graph-mpich = "
+ boost-mpich
+ libgcc
+ boost-serialization
+ libstdc++
+ glibc
+ mpich
+"
 
 URI_boost-graph-openmpi = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-graph-openmpi-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-graph-openmpi = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libboost_serialization.so.1.83.0()(64bit) ( ) libboost_mpi.so.1.83.0()(64bit)(openmpi-x86_64) ( ) libmpi.so.40()(64bit)(openmpi-x86_64) ( ) boost-serialization(x86-64) ( =  1.83.0-5.el10) boost-openmpi(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-graph-openmpi = "libboost_graph_parallel.so.1.83.0()(64bit)(openmpi-x86_64) ( ) boost-graph-openmpi(x86-64) ( =  1.83.0-5.el10) boost-graph-openmpi ( =  1.83.0-5.el10)"
+RDEPENDS:boost-graph-openmpi = "
+ openmpi
+ libgcc
+ boost-openmpi
+ boost-serialization
+ libstdc++
+ glibc
+"
 
 URI_boost-mpich = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-mpich-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-mpich = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libboost_serialization.so.1.83.0()(64bit) ( ) libmpi.so.12()(64bit)(mpich-x86_64) ( ) libmpicxx.so.12()(64bit)(mpich-x86_64) ( ) boost-serialization(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-mpich = "libboost_mpi.so.1.83.0()(64bit)(mpich-x86_64) ( ) boost-mpich(x86-64) ( =  1.83.0-5.el10) boost-mpich ( =  1.83.0-5.el10)"
+RDEPENDS:boost-mpich = "
+ libgcc
+ boost-serialization
+ libstdc++
+ glibc
+ mpich
+"
 
 URI_boost-mpich-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-mpich-devel-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-mpich-devel = "boost-mpich(x86-64) ( =  1.83.0-5.el10) boost-devel(x86-64) ( =  1.83.0-5.el10) boost-graph-mpich(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-mpich-devel = "boost-mpich-devel ( =  1.83.0-5.el10) boost-mpich-devel(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-mpich-devel = "
+ boost-graph-mpich
+ boost-mpich
+ boost-devel
+"
 
 URI_boost-mpich-python3 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-mpich-python3-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-mpich-python3 = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libboost_serialization.so.1.83.0()(64bit) ( ) libboost_mpi.so.1.83.0()(64bit)(mpich-x86_64) ( ) libc.so.6(GLIBC_2.32)(64bit) ( ) libmpi.so.12()(64bit)(mpich-x86_64) ( ) libmpicxx.so.12()(64bit)(mpich-x86_64) ( ) libboost_python312.so.1.83.0()(64bit) ( ) python3-mpich(x86-64) ( ) python(abi) ( =  3.12) boost-serialization(x86-64) ( =  1.83.0-5.el10) boost-mpich(x86-64) ( =  1.83.0-5.el10) boost-python3(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-mpich-python3 = "libboost_mpi_python312.so.1.83.0()(64bit)(mpich-x86_64) ( ) boost-mpich-python3 ( =  1.83.0-5.el10) boost-mpich-python3(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-mpich-python3 = "
+ python3
+ python3-mpich
+ boost-mpich
+ libgcc
+ boost-python3
+ boost-serialization
+ libstdc++
+ glibc
+ mpich
+"
 
 URI_boost-openmpi = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-openmpi-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-openmpi = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libboost_serialization.so.1.83.0()(64bit) ( ) libmpi.so.40()(64bit)(openmpi-x86_64) ( ) boost-serialization(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-openmpi = "libboost_mpi.so.1.83.0()(64bit)(openmpi-x86_64) ( ) boost-openmpi(x86-64) ( =  1.83.0-5.el10) boost-openmpi ( =  1.83.0-5.el10)"
+RDEPENDS:boost-openmpi = "
+ openmpi
+ libgcc
+ boost-serialization
+ libstdc++
+ glibc
+"
 
 URI_boost-openmpi-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-openmpi-devel-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-openmpi-devel = "boost-openmpi(x86-64) ( =  1.83.0-5.el10) boost-devel(x86-64) ( =  1.83.0-5.el10) boost-graph-openmpi(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-openmpi-devel = "boost-openmpi-devel ( =  1.83.0-5.el10) boost-openmpi-devel(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-openmpi-devel = "
+ boost-graph-openmpi
+ boost-openmpi
+ boost-devel
+"
 
 URI_boost-openmpi-python3 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-openmpi-python3-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-openmpi-python3 = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libboost_serialization.so.1.83.0()(64bit) ( ) libboost_mpi.so.1.83.0()(64bit)(openmpi-x86_64) ( ) libc.so.6(GLIBC_2.32)(64bit) ( ) libmpi.so.40()(64bit)(openmpi-x86_64) ( ) libboost_python312.so.1.83.0()(64bit) ( ) python3-openmpi(x86-64) ( ) python(abi) ( =  3.12) boost-serialization(x86-64) ( =  1.83.0-5.el10) boost-openmpi(x86-64) ( =  1.83.0-5.el10) boost-python3(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-openmpi-python3 = "libboost_mpi_python312.so.1.83.0()(64bit)(openmpi-x86_64) ( ) boost-openmpi-python3 ( =  1.83.0-5.el10) boost-openmpi-python3(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-openmpi-python3 = "
+ python3
+ openmpi
+ libgcc
+ boost-python3
+ python3-openmpi
+ boost-openmpi
+ boost-serialization
+ libstdc++
+ glibc
+"
 
 URI_boost-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/boost-static-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-static = "boost-devel(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-static = "boost-static ( =  1.83.0-5.el10) boost-static(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-static = "
+ boost-devel
+"
 
 URI_boost-mpich-python3-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/boost-mpich-python3-devel-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-mpich-python3-devel = "boost-devel(x86-64) ( =  1.83.0-5.el10) boost-mpich-devel(x86-64) ( =  1.83.0-5.el10) boost-mpich-python3(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-mpich-python3-devel = "boost-mpich-python3-devel ( =  1.83.0-5.el10) boost-mpich-python3-devel(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-mpich-python3-devel = "
+ boost-mpich-devel
+ boost-mpich-python3
+ boost-devel
+"
 
 URI_boost-openmpi-python3-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/boost-openmpi-python3-devel-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-openmpi-python3-devel = "boost-devel(x86-64) ( =  1.83.0-5.el10) boost-openmpi-devel(x86-64) ( =  1.83.0-5.el10) boost-openmpi-python3(x86-64) ( =  1.83.0-5.el10)"
-RPROVIDES:boost-openmpi-python3-devel = "boost-openmpi-python3-devel ( =  1.83.0-5.el10) boost-openmpi-python3-devel(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-openmpi-python3-devel = "
+ boost-openmpi-python3
+ boost-openmpi-devel
+ boost-devel
+"
 
 URI_boost-url = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/boost-url-1.83.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:boost-url = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( )"
-RPROVIDES:boost-url = "libboost_url.so.1.83.0()(64bit) ( ) boost-url ( =  1.83.0-5.el10) boost-url(x86-64) ( =  1.83.0-5.el10)"
+RDEPENDS:boost-url = "
+ glibc
+ libgcc
+ libstdc++
+"

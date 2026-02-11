@@ -7,49 +7,134 @@ PACKAGES = "systemd systemd-container systemd-libs systemd-oomd systemd-pam syst
 
 
 URI_systemd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd = "/bin/sh ( ) coreutils ( ) grep ( ) openssl-libs ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libcrypto.so.3()(64bit) ( ) /usr/bin/sh ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libselinux.so.1()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libz.so.1()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) /usr/bin/bash ( ) libcap.so.2()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libpam.so.0()(64bit) ( ) libpam.so.0(LIBPAM_1.0)(64bit) ( ) liblzma.so.5()(64bit) ( ) liblzma.so.5(XZ_5.0)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libaudit.so.1()(64bit) ( ) libcrypt.so.2()(64bit) ( ) libacl.so.1()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libbz2.so.1()(64bit) ( ) libcrypt.so.2(XCRYPT_2.0)(64bit) ( ) libblkid.so.1()(64bit) ( ) libblkid.so.1(BLKID_2.15)(64bit) ( ) libblkid.so.1(BLKID_2.17)(64bit) ( ) libmount.so.1()(64bit) ( ) libmount.so.1(MOUNT_2.19)(64bit) ( ) libpam.so.0(LIBPAM_EXTENSION_1.0)(64bit) ( ) libm.so.6(GLIBC_2.39)(64bit) ( ) libmount.so.1(MOUNT_2.22)(64bit) ( ) libc.so.6(GLIBC_2.39)(64bit) ( ) libmount.so.1(MOUNT_2.20)(64bit) ( ) libblkid.so.1(BLKID_2.18)(64bit) ( ) libmount.so.1(MOUNT_2.26)(64bit) ( ) libfdisk.so.1()(64bit) ( ) libfdisk.so.1(FDISK_2.26)(64bit) ( ) libseccomp.so.2()(64bit) ( ) libblkid.so.1(BLKID_2.30)(64bit) ( ) libmount.so.1(MOUNT_2.23)(64bit) ( ) libcrypt.so.2(XCRYPT_4.4)(64bit) ( ) dbus ( >=  1.9.18) systemd-libs(x86-64) ( =  257-9.el10_0.1.alma.1) systemd-pam(x86-64) ( =  257-9.el10_0.1.alma.1) systemd-rpm-macros ( if  rpm-build) util-linux-core ( or  util-linux)"
-RPROVIDES:systemd = "libsystemd-shared-257-9.el10_0.1.alma.1.so()(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so(SD_SHARED)(64bit) ( ) /bin/systemctl ( ) /sbin/shutdown ( ) libsystemd-core-257-9.el10_0.1.alma.1.so()(64bit) ( ) libsystemd-core-257-9.el10_0.1.alma.1.so(SD_SHARED)(64bit) ( ) syslog ( ) systemd(x86-64) ( =  257-9.el10_0.1.alma.1) systemd ( =  257-9.el10_0.1.alma.1) config(systemd) ( =  257-9.el10_0.1.alma.1) group(systemd-journal) ( =  ZyBzeXN0ZW1kLWpvdXJuYWwgMTkwIC0A) pkgconfig(systemd) ( =  257) pkgconfig(udev) ( =  257) system-setup-keyboard ( =  0.9) systemd-shutdown ( =  257-9.el10_0.1.alma.1) systemd-sysusers ( =  257-9.el10_0.1.alma.1) systemd-sysv ( =  206) systemd-tmpfiles ( =  257-9.el10_0.1.alma.1) systemd-units ( =  257-9.el10_0.1.alma.1) timedatex ( =  0.6-3)"
+RDEPENDS:systemd = "
+ systemd-libs
+ systemd-pam
+ systemd-rpm-macros
+ dbus
+ libseccomp
+ libselinux
+ libacl
+ util-linux
+ libblkid
+ libcap
+ xz-libs
+ zlib-ng-compat
+ libfdisk
+ libxcrypt
+ audit-libs
+ openssl-libs
+ libgcc
+ grep
+ pam-libs
+ bash
+ bzip2-libs
+ libmount
+ glibc
+ coreutils
+"
 
 URI_systemd-container = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-container-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-container = "systemd(x86-64) ( =  257-9.el10_0.1.alma.1) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libselinux.so.1()(64bit) ( ) libz.so.1()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libcap.so.2()(64bit) ( ) liblzma.so.5()(64bit) ( ) liblzma.so.5(XZ_5.0)(64bit) ( ) libacl.so.1()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libbz2.so.1()(64bit) ( ) libcurl.so.4()(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so()(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so(SD_SHARED)(64bit) ( ) libseccomp.so.2()(64bit) ( )"
-RPROVIDES:systemd-container = "libnss_mymachines.so.2()(64bit) ( ) systemd-container ( =  257-9.el10_0.1.alma.1) systemd-container(x86-64) ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-container = "
+ libacl
+ systemd
+ zlib-ng-compat
+ bzip2-libs
+ libseccomp
+ libgcc
+ openssl-libs
+ libcap
+ libcurl
+ glibc
+ libselinux
+ xz-libs
+"
 
 URI_systemd-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-libs-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libcap.so.2()(64bit) ( ) libm.so.6(GLIBC_2.39)(64bit) ( )"
-RPROVIDES:systemd-libs = "libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_221)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_233)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_213)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_222)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_227)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_237)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_254)(64bit) ( ) libudev.so.1(LIBUDEV_196)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_214)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_219)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_220)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_229)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_230)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_243)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_245)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_246)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_253)(64bit) ( ) libudev.so.1(LIBUDEV_199)(64bit) ( ) libudev.so.1(LIBUDEV_247)(64bit) ( ) libnss_myhostname.so.2()(64bit) ( ) libnss_resolve.so.2()(64bit) ( ) libnss_systemd.so.2()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_211)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_216)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_217)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_226)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_231)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_232)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_234)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_236)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_238)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_239)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_240)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_241)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_247)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_248)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_249)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_250)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_251)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_252)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_255)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_256)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_257)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_258)(64bit) ( ) libudev.so.1(LIBUDEV_189)(64bit) ( ) libudev.so.1(LIBUDEV_215)(64bit) ( ) systemd-libs(x86-64) ( =  257-9.el10_0.1.alma.1) nss-myhostname ( =  0.4) nss-myhostname(x86-64) ( =  0.4) systemd-libs ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-libs = "
+ glibc
+ libgcc
+ libcap
+"
 
 URI_systemd-oomd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-oomd-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-oomd = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so()(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so(SD_SHARED)(64bit) ( ) systemd-udev ( =  257-9.el10_0.1.alma.1)"
-RPROVIDES:systemd-oomd = "config(systemd-oomd) ( =  257-9.el10_0.1.alma.1) systemd-oomd ( =  257-9.el10_0.1.alma.1) systemd-oomd(x86-64) ( =  257-9.el10_0.1.alma.1) systemd-oomd-defaults ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-oomd = "
+ systemd
+ systemd-udev
+ libgcc
+ bash
+ glibc
+"
 
 URI_systemd-pam = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-pam-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-pam = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libcap.so.2()(64bit) ( ) libpam.so.0()(64bit) ( ) libpam.so.0(LIBPAM_1.0)(64bit) ( ) libpam.so.0(LIBPAM_EXTENSION_1.0)(64bit) ( ) libpam_misc.so.0()(64bit) ( ) libm.so.6(GLIBC_2.39)(64bit) ( ) libpam_misc.so.0(LIBPAM_MISC_1.0)(64bit) ( ) systemd ( =  257-9.el10_0.1.alma.1)"
-RPROVIDES:systemd-pam = "systemd-pam(x86-64) ( =  257-9.el10_0.1.alma.1) systemd-pam ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-pam = "
+ systemd
+ libgcc
+ libcap
+ pam-libs
+ glibc
+"
 
 URI_systemd-resolved = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-resolved-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-resolved = "/bin/sh ( ) shadow-utils ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libssl.so.3()(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) grep ( ) libidn2.so.0()(64bit) ( ) libidn2.so.0(IDN2_0.0.0)(64bit) ( ) libm.so.6(GLIBC_2.39)(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so()(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so(SD_SHARED)(64bit) ( ) systemd(x86-64) ( =  257-9.el10_0.1.alma.1)"
-RPROVIDES:systemd-resolved = "config(systemd-resolved) ( =  257-9.el10_0.1.alma.1) systemd-resolved ( =  257-9.el10_0.1.alma.1) systemd-resolved(x86-64) ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-resolved = "
+ shadow-utils
+ systemd
+ libgcc
+ openssl-libs
+ grep
+ bash
+ glibc
+ libidn2
+"
 
 URI_systemd-rpm-macros = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-rpm-macros-257-9.el10_0.1.alma.1.noarch.rpm;unpack=0"
-RDEPENDS:systemd-rpm-macros = "/usr/bin/bash ( )"
-RPROVIDES:systemd-rpm-macros = "rpm_macro(_binfmtdir) ( ) rpm_macro(_environmentdir) ( ) rpm_macro(_journalcatalogdir) ( ) rpm_macro(_kernel_install_dir) ( ) rpm_macro(_modprobedir) ( ) rpm_macro(_modulesloaddir) ( ) rpm_macro(_presetdir) ( ) rpm_macro(_sysctldir) ( ) rpm_macro(_systemd_system_env_generator_dir) ( ) rpm_macro(_systemd_user_env_generator_dir) ( ) rpm_macro(_systemd_util_dir) ( ) rpm_macro(_systemdgeneratordir) ( ) rpm_macro(_systemdusergeneratordir) ( ) rpm_macro(_sysusersdir) ( ) rpm_macro(_tmpfilesdir) ( ) rpm_macro(_udevhwdbdir) ( ) rpm_macro(_udevrulesdir) ( ) rpm_macro(_unitdir) ( ) rpm_macro(_user_tmpfilesdir) ( ) rpm_macro(_userpresetdir) ( ) rpm_macro(_userunitdir) ( ) rpm_macro(binfmt_apply) ( ) rpm_macro(journal_catalog_update) ( ) rpm_macro(sysctl_apply) ( ) rpm_macro(systemd_ordering) ( ) rpm_macro(systemd_post) ( ) rpm_macro(systemd_posttrans_with_reload) ( ) rpm_macro(systemd_posttrans_with_restart) ( ) rpm_macro(systemd_postun) ( ) rpm_macro(systemd_postun_with_reload) ( ) rpm_macro(systemd_postun_with_restart) ( ) rpm_macro(systemd_preun) ( ) rpm_macro(systemd_requires) ( ) rpm_macro(systemd_user_daemon_reexec) ( ) rpm_macro(systemd_user_post) ( ) rpm_macro(systemd_user_posttrans_with_reload) ( ) rpm_macro(systemd_user_posttrans_with_restart) ( ) rpm_macro(systemd_user_postun) ( ) rpm_macro(systemd_user_postun_with_reload) ( ) rpm_macro(systemd_user_postun_with_restart) ( ) rpm_macro(systemd_user_preun) ( ) rpm_macro(sysusers_create) ( ) rpm_macro(sysusers_create_compat) ( ) rpm_macro(sysusers_create_inline) ( ) rpm_macro(sysusers_create_package) ( ) rpm_macro(sysusers_requires_compat) ( ) rpm_macro(tmpfiles_create) ( ) rpm_macro(tmpfiles_create_package) ( ) rpm_macro(udev_hwdb_update) ( ) rpm_macro(udev_rules_update) ( ) systemd-rpm-macros ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-rpm-macros = "
+ bash
+"
 
 URI_systemd-udev = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-udev-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-udev = "/bin/sh ( ) grep ( ) systemd(x86-64) ( =  257-9.el10_0.1.alma.1) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libcrypto.so.3()(64bit) ( ) /usr/bin/sh ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libblkid.so.1()(64bit) ( ) libblkid.so.1(BLKID_2.15)(64bit) ( ) libblkid.so.1(BLKID_2.17)(64bit) ( ) libkmod.so.2()(64bit) ( ) libkmod.so.2(LIBKMOD_5)(64bit) ( ) libcryptsetup.so.12()(64bit) ( ) libcryptsetup.so.12(CRYPTSETUP_2.4)(64bit) ( ) libblkid.so.1(BLKID_2.21)(64bit) ( ) kbd ( ) libblkid.so.1(BLKID_2.18)(64bit) ( ) libcryptsetup.so.12(CRYPTSETUP_2.0)(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so()(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so(SD_SHARED)(64bit) ( ) libfdisk.so.1()(64bit) ( ) libfdisk.so.1(FDISK_2.26)(64bit) ( ) libblkid.so.1(BLKID_2_37)(64bit) ( ) libcryptsetup.so.12(CRYPTSETUP_2.7)(64bit) ( ) libfdisk.so.1(FDISK_2.31)(64bit) ( ) grubby ( if  grubby) sdubby ( if  sdubby) kmod ( >=  18-4)"
-RPROVIDES:systemd-udev = "libcryptsetup-token-systemd-fido2.so()(64bit) ( ) libcryptsetup-token-systemd-fido2.so(CRYPTSETUP_TOKEN_1.0)(64bit) ( ) libcryptsetup-token-systemd-pkcs11.so()(64bit) ( ) libcryptsetup-token-systemd-pkcs11.so(CRYPTSETUP_TOKEN_1.0)(64bit) ( ) libcryptsetup-token-systemd-tpm2.so()(64bit) ( ) libcryptsetup-token-systemd-tpm2.so(CRYPTSETUP_TOKEN_1.0)(64bit) ( ) systemd-udev ( =  257-9.el10_0.1.alma.1) config(systemd-udev) ( =  257-9.el10_0.1.alma.1) systemd-repart ( =  257-9.el10_0.1.alma.1) systemd-udev(x86-64) ( =  257-9.el10_0.1.alma.1) u2f-hidraw-policy ( =  1.0.2-40) udev ( =  257) udev(x86-64) ( =  257)"
+RDEPENDS:systemd-udev = "
+ systemd
+ grubby
+ libfdisk
+ cryptsetup-libs
+ kmod
+ libgcc
+ openssl-libs
+ grep
+ libblkid
+ kmod-libs
+ kbd
+ bash
+ glibc
+"
 
 URI_systemd-boot-unsigned = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-boot-unsigned-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
 RDEPENDS:systemd-boot-unsigned = ""
-RPROVIDES:systemd-boot-unsigned = "systemd-boot ( =  257-9.el10_0.1.alma.1) systemd-boot(x86-64) ( =  257-9.el10_0.1.alma.1) systemd-boot-unsigned ( =  257-9.el10_0.1.alma.1) systemd-boot-unsigned(x86-64) ( =  257-9.el10_0.1.alma.1) systemd-boot-unsigned-x64 ( =  257-9.el10_0.1.alma.1) version(systemd-boot-unsigned) ( =  257) version(systemd-boot-unsigned)(x86-64) ( =  257)"
 
 URI_systemd-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-devel-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-devel = "libsystemd.so.0()(64bit) ( ) libudev.so.1()(64bit) ( ) systemd-rpm-macros ( if  rpm-build) systemd-libs(x86-64) ( =  257-9.el10_0.1.alma.1)"
-RPROVIDES:systemd-devel = "libudev-devel ( =  257) libudev-devel(x86-64) ( =  257) pkgconfig(libsystemd) ( =  257) pkgconfig(libudev) ( =  257) systemd-devel ( =  257-9.el10_0.1.alma.1) systemd-devel(x86-64) ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-devel = "
+ systemd-rpm-macros
+ systemd-libs
+"
 
 URI_systemd-journal-remote = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-journal-remote-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:systemd-journal-remote = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libcurl.so.4()(64bit) ( ) libmicrohttpd.so.12()(64bit) ( ) firewalld-filesystem ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so()(64bit) ( ) libsystemd-shared-257-9.el10_0.1.alma.1.so(SD_SHARED)(64bit) ( ) systemd(x86-64) ( =  257-9.el10_0.1.alma.1)"
-RPROVIDES:systemd-journal-remote = "config(systemd-journal-remote) ( =  257-9.el10_0.1.alma.1) systemd-journal-gateway ( =  257-9.el10_0.1.alma.1) systemd-journal-gateway(x86-64) ( =  257-9.el10_0.1.alma.1) systemd-journal-remote ( =  257-9.el10_0.1.alma.1) systemd-journal-remote(x86-64) ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-journal-remote = "
+ firewalld-filesystem
+ systemd
+ libgcc
+ libmicrohttpd
+ bash
+ libcurl
+ glibc
+"
 
 URI_systemd-ukify = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-ukify-257-9.el10_0.1.alma.1.noarch.rpm;unpack=0"
-RDEPENDS:systemd-ukify = "/usr/bin/python3 ( ) python3dist(cryptography) ( ) python3dist(pefile) ( ) python3dist(zstd) ( ) systemd ( =  257-9.el10_0.1.alma.1) systemd-boot ( if  (REL))"
-RPROVIDES:systemd-ukify = "systemd-ukify ( =  257-9.el10_0.1.alma.1)"
+RDEPENDS:systemd-ukify = "
+ python3
+ systemd
+ python3-pefile
+ python3-cryptography
+ systemd-boot-unsigned
+ python3-zstd
+"

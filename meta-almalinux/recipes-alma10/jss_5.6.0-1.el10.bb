@@ -7,21 +7,40 @@ PACKAGES = "idm-jss idm-jss-tomcat idm-jss-javadoc idm-jss-tests idm-jss-tools"
 
 
 URI_idm-jss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-jss-5.6.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:idm-jss = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) javapackages-filesystem ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libnspr4.so()(64bit) ( ) libnss3.so()(64bit) ( ) libplc4.so()(64bit) ( ) libnss3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.2)(64bit) ( ) libplds4.so()(64bit) ( ) libsmime3.so()(64bit) ( ) libssl3.so()(64bit) ( ) libnss3.so(NSS_3.9.2)(64bit) ( ) libnss3.so(NSS_3.12)(64bit) ( ) libnss3.so(NSS_3.3)(64bit) ( ) libsmime3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.5)(64bit) ( ) libssl3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.10)(64bit) ( ) libnss3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.9)(64bit) ( ) libsmime3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.12.5)(64bit) ( ) libnss3.so(NSS_3.8)(64bit) ( ) libssl3.so(NSS_3.14)(64bit) ( ) libnss3.so(NSS_3.15)(64bit) ( ) libssl3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.21)(64bit) ( ) libssl3.so(NSS_3.13.2)(64bit) ( ) libssl3.so(NSS_3.15.4)(64bit) ( ) libssl3.so(NSS_3.33)(64bit) ( ) libnss3.so(NSS_3.12.4)(64bit) ( ) libssl3.so(NSS_3.21)(64bit) ( ) libssl3.so(NSS_3.30.0.1)(64bit) ( ) libnss3.so(NSS_3.10.2)(64bit) ( ) libnss3.so(NSS_3.12.3)(64bit) ( ) libnss3.so(NSS_3.34)(64bit) ( ) mvn(org.slf4j:slf4j-api) ( ) java-21-openjdk-headless ( ) libnss3.so(NSS_3.11.7)(64bit) ( ) libsmime3.so(NSS_3.3)(64bit) ( ) libssl3.so(NSS_3.24)(64bit) ( ) mvn(org.apache.commons:commons-lang3) ( ) libnss3.so(NSS_3.12.1)(64bit) ( ) mvn(org.slf4j:slf4j-jdk14) ( ) libnss3.so(NSS_3.3.1)(64bit) ( ) libnss3.so(NSS_3.59)(64bit) ( ) nss ( >=  3.97)"
-RPROVIDES:idm-jss = "libjss-symkey.so()(64bit) ( ) libjss.so()(64bit) ( ) libjss.so(JSS_3.0)(64bit) ( ) libjss.so(JSS_3.1)(64bit) ( ) libjss.so(JSS_3.1.1)(64bit) ( ) libjss.so(JSS_3.2)(64bit) ( ) libjss.so(JSS_3.3)(64bit) ( ) libjss.so(JSS_3.4)(64bit) ( ) libjss.so(JSS_3.5)(64bit) ( ) libjss.so(JSS_4.1)(64bit) ( ) libjss.so(JSS_4.2)(64bit) ( ) libjss.so(JSS_4.2.3)(64bit) ( ) libjss.so(JSS_4.2.5)(64bit) ( ) libjss.so(JSS_4.2.6)(64bit) ( ) libjss.so(JSS_4.3)(64bit) ( ) libjss.so(JSS_4.3.1)(64bit) ( ) libjss.so(JSS_4.4.1)(64bit) ( ) libjss.so(JSS_4.5)(64bit) ( ) libjss.so(JSS_4.5.1)(64bit) ( ) libjss.so(JSS_4.5.3)(64bit) ( ) libjss.so(JSS_4.6.2)(64bit) ( ) libjss.so(JSS_4.6.3)(64bit) ( ) libjss.so(JSS_4.7.0)(64bit) ( ) libjss.so(JSS_4.7.1)(64bit) ( ) libjss.so(JSS_4.7.3)(64bit) ( ) libjss.so(JSS_4.8.1)(64bit) ( ) libjss.so(JSS_4.9.3)(64bit) ( ) libjss.so(JSS_5.5.0)(64bit) ( ) libjss.so(JSS_5.6.0)(64bit) ( ) idm-jss ( =  5.6.0-1.el10) mvn(org.dogtagpki.jss:jss-base) ( =  5.6.0.SNAPSHOT) idm-jss ( =  5.6) idm-jss(x86-64) ( =  5.6.0-1.el10) jss ( =  5.6) jss ( =  5.6.0-1.el10) mvn(org.dogtagpki.jss:jss-base:pom:) ( =  5.6.0.SNAPSHOT) mvn(org.dogtagpki.jss:jss-parent:pom:) ( =  5.6.0.SNAPSHOT)"
+RDEPENDS:idm-jss = "
+ nss
+ javapackages-filesystem
+ apache-commons-lang3
+ libgcc
+ libstdc++
+ slf4j
+ java-21-openjdk-headless
+ slf4j-jdk14
+ glibc
+ nspr
+"
 
 URI_idm-jss-tomcat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-jss-tomcat-5.6.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:idm-jss-tomcat = "javapackages-filesystem ( ) mvn(org.apache.tomcat:tomcat-catalina) ( ) mvn(org.apache.tomcat:tomcat-coyote) ( ) mvn(org.apache.tomcat:tomcat-juli) ( ) idm-jss ( =  5.6.0-1.el10) mvn(org.dogtagpki.jss:jss-base) ( =  5.6.0.SNAPSHOT) tomcat9 ( >=  1:9.0.62) mvn(org.apache.tomcat:tomcat-catalina) ( >=  9.0.62) mvn(org.apache.tomcat:tomcat-coyote) ( >=  9.0.62) mvn(org.apache.tomcat:tomcat-juli) ( >=  9.0.62)"
-RPROVIDES:idm-jss-tomcat = "idm-jss-tomcat ( =  5.6.0-1.el10) idm-jss-tomcat(x86-64) ( =  5.6.0-1.el10) mvn(org.dogtagpki.jss:jss-tomcat) ( =  5.6.0.SNAPSHOT) mvn(org.dogtagpki.jss:jss-tomcat-9.0) ( =  5.6.0.SNAPSHOT) mvn(org.dogtagpki.jss:jss-tomcat-9.0:pom:) ( =  5.6.0.SNAPSHOT) mvn(org.dogtagpki.jss:jss-tomcat:pom:) ( =  5.6.0.SNAPSHOT)"
+RDEPENDS:idm-jss-tomcat = "
+ tomcat9
+ tomcat-lib
+ javapackages-filesystem
+ idm-jss
+"
 
 URI_idm-jss-javadoc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/idm-jss-javadoc-5.6.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:idm-jss-javadoc = "javapackages-filesystem ( )"
-RPROVIDES:idm-jss-javadoc = "idm-jss-javadoc ( =  5.6) idm-jss-javadoc ( =  5.6.0-1.el10) idm-jss-javadoc(x86-64) ( =  5.6.0-1.el10) jss-javadoc ( =  5.6) jss-javadoc ( =  5.6.0-1.el10)"
+RDEPENDS:idm-jss-javadoc = "
+ javapackages-filesystem
+"
 
 URI_idm-jss-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/idm-jss-tests-5.6.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:idm-jss-tests = "/usr/bin/bash ( )"
-RPROVIDES:idm-jss-tests = "idm-jss-tests ( =  5.6.0-1.el10) idm-jss-tests(x86-64) ( =  5.6.0-1.el10)"
+RDEPENDS:idm-jss-tests = "
+ bash
+"
 
 URI_idm-jss-tools = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/idm-jss-tools-5.6.0-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:idm-jss-tools = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libnss3.so()(64bit) ( ) libnss3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.4)(64bit) ( ) libnspr4.so()(64bit) ( ) libnss3.so(NSS_3.10)(64bit) ( ) libnss3.so(NSS_3.12)(64bit) ( ) libnss3.so(NSS_3.13)(64bit) ( ) libnss3.so(NSS_3.21)(64bit) ( ) libnss3.so(NSS_3.3)(64bit) ( ) libnss3.so(NSS_3.5)(64bit) ( ) libnss3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.8)(64bit) ( ) libnss3.so(NSS_3.9)(64bit) ( ) libplc4.so()(64bit) ( ) libplds4.so()(64bit) ( ) libsmime3.so()(64bit) ( ) libsmime3.so(NSS_3.10)(64bit) ( ) libsmime3.so(NSS_3.2)(64bit) ( ) libsmime3.so(NSS_3.4)(64bit) ( ) libssl3.so()(64bit) ( ) libssl3.so(NSS_3.12.6)(64bit) ( ) libssl3.so(NSS_3.14)(64bit) ( ) libssl3.so(NSS_3.2)(64bit) ( ) libssl3.so(NSS_3.4)(64bit) ( )"
-RPROVIDES:idm-jss-tools = "idm-jss-tools ( =  5.6) idm-jss-tools ( =  5.6.0-1.el10) idm-jss-tools(x86-64) ( =  5.6.0-1.el10) jss-tools ( =  5.6) jss-tools ( =  5.6.0-1.el10)"
+RDEPENDS:idm-jss-tools = "
+ glibc
+ nss
+ nspr
+"

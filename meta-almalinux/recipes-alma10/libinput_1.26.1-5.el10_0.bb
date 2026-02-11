@@ -7,17 +7,38 @@ PACKAGES = "libinput libinput-utils libinput-devel libinput-test"
 
 
 URI_libinput = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libinput-1.26.1-5.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libinput = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libudev.so.1()(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libevdev.so.2()(64bit) ( ) libevdev.so.2(LIBEVDEV_1)(64bit) ( ) libwacom.so.9()(64bit) ( ) libwacom.so.9(LIBWACOM_2.0)(64bit) ( ) libevdev.so.2(LIBEVDEV_1_3)(64bit) ( ) libmtdev.so.1()(64bit) ( ) libevdev.so.2(LIBEVDEV_1_10)(64bit) ( )"
-RPROVIDES:libinput = "libinput.so.10()(64bit) ( ) libinput.so.10(LIBINPUT_0.12.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.14.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.19.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.20.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.21.0)(64bit) ( ) libinput.so.10(LIBINPUT_1.1)(64bit) ( ) libinput.so.10(LIBINPUT_1.15)(64bit) ( ) libinput.so.10(LIBINPUT_1.19)(64bit) ( ) libinput.so.10(LIBINPUT_1.2)(64bit) ( ) libinput.so.10(LIBINPUT_1.26)(64bit) ( ) libinput.so.10(LIBINPUT_1.3)(64bit) ( ) libinput.so.10(LIBINPUT_1.4)(64bit) ( ) libinput.so.10(LIBINPUT_1.5)(64bit) ( ) libinput.so.10(LIBINPUT_1.7)(64bit) ( ) libinput.so.10(LIBINPUT_1.21)(64bit) ( ) libinput.so.10(LIBINPUT_1.23)(64bit) ( ) libinput.so.10(LIBINPUT_1.9)(64bit) ( ) libinput.so.10(LIBINPUT_0.15.0)(64bit) ( ) libinput.so.10(LIBINPUT_1.11)(64bit) ( ) libinput.so.10(LIBINPUT_1.14)(64bit) ( ) libinput(x86-64) ( =  1.26.1-5.el10_0) libinput ( =  1.26.1-5.el10_0)"
+RDEPENDS:libinput = "
+ libwacom
+ systemd-libs
+ mtdev
+ libevdev
+ bash
+ glibc
+"
 
 URI_libinput-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libinput-utils-1.26.1-5.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libinput-utils = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) /usr/bin/python3 ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libevdev.so.2()(64bit) ( ) libevdev.so.2(LIBEVDEV_1)(64bit) ( ) libinput.so.10()(64bit) ( ) libinput.so.10(LIBINPUT_0.12.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.14.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.19.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.20.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.21.0)(64bit) ( ) libinput.so.10(LIBINPUT_1.1)(64bit) ( ) libinput.so.10(LIBINPUT_1.15)(64bit) ( ) libinput.so.10(LIBINPUT_1.2)(64bit) ( ) libinput.so.10(LIBINPUT_1.26)(64bit) ( ) libinput.so.10(LIBINPUT_1.3)(64bit) ( ) libinput.so.10(LIBINPUT_1.4)(64bit) ( ) libinput.so.10(LIBINPUT_1.5)(64bit) ( ) libinput.so.10(LIBINPUT_1.7)(64bit) ( ) libevdev.so.2(LIBEVDEV_1_3)(64bit) ( ) python3-pyudev ( ) libinput.so.10(LIBINPUT_1.21)(64bit) ( ) libinput.so.10(LIBINPUT_1.23)(64bit) ( ) python3-libevdev ( ) libinput(x86-64) ( =  1.26.1-5.el10_0)"
-RPROVIDES:libinput-utils = "libinput-utils ( =  1.26.1-5.el10_0) libinput-utils(x86-64) ( =  1.26.1-5.el10_0)"
+RDEPENDS:libinput-utils = "
+ python3
+ python3-pyudev
+ python3-libevdev
+ systemd-libs
+ libinput
+ libevdev
+ glibc
+"
 
 URI_libinput-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libinput-devel-1.26.1-5.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libinput-devel = "/usr/bin/pkg-config ( ) libinput.so.10()(64bit) ( ) libinput(x86-64) ( =  1.26.1-5.el10_0)"
-RPROVIDES:libinput-devel = "pkgconfig(libinput) ( =  1.26.1) libinput-devel ( =  1.26.1-5.el10_0) libinput-devel(x86-64) ( =  1.26.1-5.el10_0)"
+RDEPENDS:libinput-devel = "
+ libinput
+ pkgconf-pkg-config
+"
 
 URI_libinput-test = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libinput-test-1.26.1-5.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libinput-test = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libsystemd.so.0()(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_221)(64bit) ( ) libwacom.so.9()(64bit) ( ) libwacom.so.9(LIBWACOM_2.0)(64bit) ( ) libevdev.so.2()(64bit) ( ) libevdev.so.2(LIBEVDEV_1)(64bit) ( ) libinput.so.10()(64bit) ( ) libinput.so.10(LIBINPUT_0.12.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.14.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.19.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.21.0)(64bit) ( ) libinput.so.10(LIBINPUT_1.1)(64bit) ( ) libinput.so.10(LIBINPUT_1.11)(64bit) ( ) libinput.so.10(LIBINPUT_1.15)(64bit) ( ) libinput.so.10(LIBINPUT_1.19)(64bit) ( ) libinput.so.10(LIBINPUT_1.2)(64bit) ( ) libinput.so.10(LIBINPUT_1.23)(64bit) ( ) libinput.so.10(LIBINPUT_1.3)(64bit) ( ) libinput.so.10(LIBINPUT_1.4)(64bit) ( ) libinput.so.10(LIBINPUT_1.5)(64bit) ( ) libcheck.so.0()(64bit) ( ) libevdev.so.2(LIBEVDEV_1_3)(64bit) ( ) libinput.so.10(LIBINPUT_0.15.0)(64bit) ( ) libinput.so.10(LIBINPUT_0.20.0)(64bit) ( ) libinput.so.10(LIBINPUT_1.14)(64bit) ( ) libinput.so.10(LIBINPUT_1.21)(64bit) ( ) libinput.so.10(LIBINPUT_1.26)(64bit) ( ) libinput.so.10(LIBINPUT_1.7)(64bit) ( ) libinput.so.10(LIBINPUT_1.9)(64bit) ( ) libinput(x86-64) ( =  1.26.1-5.el10_0)"
-RPROVIDES:libinput-test = "libinput-test ( =  1.26.1-5.el10_0) libinput-test(x86-64) ( =  1.26.1-5.el10_0)"
+RDEPENDS:libinput-test = "
+ libwacom
+ systemd-libs
+ check
+ libinput
+ libevdev
+ glibc
+"

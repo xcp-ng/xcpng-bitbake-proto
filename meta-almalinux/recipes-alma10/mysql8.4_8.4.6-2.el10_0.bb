@@ -7,33 +7,151 @@ PACKAGES = "mysql8.4 mysql8.4-common mysql8.4-errmsg mysql8.4-libs mysql8.4-serv
 
 
 URI_mysql8.4 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mysql8.4 = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libssl.so.3()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libresolv.so.2()(64bit) ( ) libzstd.so.1()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) coreutils ( ) grep ( ) bash ( ) libedit.so.0()(64bit) ( ) libresolv.so.2(GLIBC_2.9)(64bit) ( ) libz.so.1(ZLIB_1.2.9)(64bit) ( ) mysql8.4-common ( =  8.4.6-2.el10_0)"
-RPROVIDES:mysql8.4 = "mysql-any ( ) bundled(rapidjson) ( ) bundled(unordered_dense) ( ) bundled(boost) ( =  1.84.0) mysql8.4(x86-64) ( =  8.4.6-2.el10_0) mysql8.4 ( =  8.4.6-2.el10_0)"
+RDEPENDS:mysql8.4 = "
+ zlib-ng-compat
+ openssl-libs
+ libgcc
+ grep
+ libzstd
+ libstdc++
+ bash
+ mysql8.4-common
+ glibc
+ coreutils
+ libedit
+"
 
 URI_mysql8.4-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-common-8.4.6-2.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:mysql8.4-common = "/etc/my.cnf ( )"
-RPROVIDES:mysql8.4-common = "mysql-common-any ( ) mysql8.4-common ( =  8.4.6-2.el10_0)"
+RDEPENDS:mysql8.4-common = "
+ mariadb-connector-c-config
+"
 
 URI_mysql8.4-errmsg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-errmsg-8.4.6-2.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:mysql8.4-errmsg = "mysql8.4-common ( =  8.4.6-2.el10_0)"
-RPROVIDES:mysql8.4-errmsg = "mysql-errmsg-any ( ) mysql8.4-errmsg ( =  8.4.6-2.el10_0)"
+RDEPENDS:mysql8.4-errmsg = "
+ mysql8.4-common
+"
 
 URI_mysql8.4-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-libs-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mysql8.4-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libssl.so.3()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libresolv.so.2()(64bit) ( ) libzstd.so.1()(64bit) ( ) libresolv.so.2(GLIBC_2.9)(64bit) ( ) mysql8.4-common ( =  8.4.6-2.el10_0)"
-RPROVIDES:mysql8.4-libs = "mysql-libs-any ( ) libmysqlclient.so.24()(64bit) ( ) libmysqlclient.so.24(libmysqlclient_24.0)(64bit) ( ) config(mysql8.4-libs) ( =  8.4.6-2.el10_0) mysql8.4-libs ( =  8.4.6-2.el10_0) mysql8.4-libs(x86-64) ( =  8.4.6-2.el10_0)"
+RDEPENDS:mysql8.4-libs = "
+ zlib-ng-compat
+ openssl-libs
+ libgcc
+ libzstd
+ libstdc++
+ mysql8.4-common
+ glibc
+"
 
 URI_mysql8.4-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-server-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mysql8.4-server = "/bin/sh ( ) systemd ( ) policycoreutils-python-utils ( ) /usr/sbin/useradd ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /usr/bin/sh ( ) perl(strict) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) /usr/bin/bash ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libssl.so.3()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) /usr/bin/perl ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libzstd.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) coreutils ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) perl(Getopt::Long) ( ) libnuma.so.1()(64bit) ( ) libnuma.so.1(libnuma_1.2)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.7)(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) libnuma.so.1(libnuma_1.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libicuuc.so.74()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.17)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libicui18n.so.74()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) liblz4.so.1()(64bit) ( ) libaio.so.1()(64bit) ( ) libaio.so.1(LIBAIO_0.1)(64bit) ( ) libaio.so.1(LIBAIO_0.4)(64bit) ( ) /etc/my.cnf ( ) libz.so.1(ZLIB_1.2.9)(64bit) ( ) /etc/my.cnf.d ( ) libmecab.so.2()(64bit) ( ) libprotobuf-lite.so.30()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.3)(64bit) ( ) mysql8.4-common ( =  8.4.6-2.el10_0) mysql8.4(x86-64) ( =  8.4.6-2.el10_0) mysql8.4-errmsg ( =  8.4.6-2.el10_0) mysql-selinux ( if  selinux-policy-targeted)"
-RPROVIDES:mysql8.4-server = "mysql-server-any ( ) config(mysql8.4-server) ( =  8.4.6-2.el10_0) mysql8.4-server ( =  8.4.6-2.el10_0) mysql8.4-server(x86-64) ( =  8.4.6-2.el10_0)"
+RDEPENDS:mysql8.4-server = "
+ systemd
+ perl-libs
+ policycoreutils-python-utils
+ perl-Getopt-Long
+ mysql-selinux
+ mysql8.4
+ mysql8.4-common
+ mysql8.4-errmsg
+ libaio
+ numactl-libs
+ libstdc++
+ libtirpc
+ mecab
+ protobuf-lite
+ shadow-utils
+ zlib-ng-compat
+ libgcc
+ openssl-libs
+ libzstd
+ bash
+ libicu
+ lz4-libs
+ mariadb-connector-c-config
+ glibc
+ coreutils
+ perl-interpreter
+"
 
 URI_mysql8.4-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mysql8.4-devel-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mysql8.4-devel = "/usr/bin/pkg-config ( ) /usr/bin/sh ( ) pkgconfig(openssl) ( ) openssl-devel ( ) zlib-devel ( ) libmysqlclient.so.24()(64bit) ( ) libzstd-devel ( ) mysql8.4-libs(x86-64) ( =  8.4.6-2.el10_0)"
-RPROVIDES:mysql8.4-devel = "mysql-devel-any ( ) mysql8.4-devel ( =  8.4.6-2.el10_0) mysql8.4-devel(x86-64) ( =  8.4.6-2.el10_0) pkgconfig(mysqlclient) ( =  24.0.6)"
+RDEPENDS:mysql8.4-devel = "
+ zlib-ng-compat-devel
+ libzstd-devel
+ pkgconf-pkg-config
+ openssl-devel
+ bash
+ mysql8.4-libs
+"
 
 URI_mysql8.4-test = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mysql8.4-test-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mysql8.4-test = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) /usr/bin/sh ( ) perl(Exporter) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libz.so.1()(64bit) ( ) perl(Getopt::Long) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libssl.so.3()(64bit) ( ) perl(Fcntl) ( ) perl(File::Temp) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libresolv.so.2()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) perl(Data::Dumper) ( ) perl(FindBin) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libzstd.so.1()(64bit) ( ) openssl ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libresolv.so.2(GLIBC_2.9)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libprotobuf.so.30()(64bit) ( ) perl(Sys::Hostname) ( ) perl(Test::More) ( ) gzip ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) perl(Digest::MD5) ( ) perl(JSON) ( ) perl(Memoize) ( ) perl(Socket) ( ) perl(Time::HiRes) ( ) perl(File::Compare) ( ) perl(IPC::Open3) ( ) liblz4.so.1()(64bit) ( ) libz.so.1(ZLIB_1.2.9)(64bit) ( ) lz4 ( ) perl(Digest::file) ( ) perl(Env) ( ) perl(LWP::Simple) ( ) mysql8.4-test-data ( =  8.4.6-2.el10_0) mysql8.4(x86-64) ( =  8.4.6-2.el10_0) mysql8.4-common ( =  8.4.6-2.el10_0) mysql8.4-server(x86-64) ( =  8.4.6-2.el10_0)"
-RPROVIDES:mysql8.4-test = "mysql-test-any ( ) mysql8.4-test ( =  8.4.6-2.el10_0) mysql8.4-test(x86-64) ( =  8.4.6-2.el10_0)"
+RDEPENDS:mysql8.4-test = "
+ mysql8.4-test-data
+ perl-libwww-perl
+ perl-FindBin
+ perl-Socket
+ perl-Getopt-Long
+ perl-Sys-Hostname
+ mysql8.4
+ mysql8.4-common
+ mysql8.4-server
+ perl-Test-Simple
+ perl-IPC-Open3
+ libstdc++
+ perl-JSON
+ perl-Data-Dumper
+ perl-Time-HiRes
+ protobuf
+ zlib-ng-compat
+ perl-Digest
+ perl-Memoize
+ openssl
+ perl-Digest-MD5
+ libgcc
+ openssl-libs
+ libzstd
+ bash
+ perl-Env
+ perl-Exporter
+ lz4
+ lz4-libs
+ gzip
+ perl-Fcntl
+ perl-File-Compare
+ glibc
+ perl-File-Temp
+"
 
 URI_mysql8.4-test-data = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mysql8.4-test-data-8.4.6-2.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:mysql8.4-test-data = "perl(strict) ( ) /usr/bin/sh ( ) perl(warnings) ( ) perl(Exporter) ( ) perl(Carp) ( ) /usr/bin/perl ( ) /usr/bin/bash ( ) perl(Getopt::Long) ( ) perl(File::Spec) ( ) perl(File::Basename) ( ) perl(Config) ( ) perl(base) ( ) perl(Cwd) ( ) perl(constant) ( ) perl(Fcntl) ( ) perl(File::Temp) ( ) perl(POSIX) ( ) perl(Data::Dumper) ( ) perl(File::Path) ( ) perl(FindBin) ( ) perl(File::Copy) ( ) perl(IO::Handle) ( ) perl(overload) ( ) perl(IO::File) ( ) perl(lib) ( ) perl(File::Find) ( ) perl(IO::Socket) ( ) perl(Sys::Hostname) ( ) perl(Test::More) ( ) perl(File::Spec::Functions) ( ) perl(JSON) ( ) perl(Memoize) ( ) perl(Time::HiRes) ( ) perl(if) ( ) perl(threads) ( ) perl(English) ( ) perl(IO::Pipe) ( ) perl(IO::Select) ( ) perl(IO::Socket::INET) ( ) perl(Time::localtime) ( ) perl(threads::shared) ( ) mysql8.4-test ( =  8.4.6-2.el10_0)"
-RPROVIDES:mysql8.4-test-data = "mysql-test-data-any ( ) mysql8.4-test-data ( =  8.4.6-2.el10_0)"
+RDEPENDS:mysql8.4-test-data = "
+ perl-libs
+ perl-FindBin
+ perl-Getopt-Long
+ perl-overload
+ mysql8.4-test
+ perl-Sys-Hostname
+ perl-threads
+ perl-threads-shared
+ perl-Carp
+ perl-Test-Simple
+ perl-IO
+ perl-JSON
+ perl-lib
+ perl-Data-Dumper
+ perl-Time
+ perl-Time-HiRes
+ perl-Memoize
+ bash
+ perl-English
+ perl-Exporter
+ perl-base
+ perl-constant
+ perl-Fcntl
+ perl-File-Basename
+ perl-POSIX
+ perl-File-Copy
+ perl-PathTools
+ perl-if
+ perl-File-Find
+ perl-interpreter
+ perl-File-Path
+ perl-File-Temp
+"

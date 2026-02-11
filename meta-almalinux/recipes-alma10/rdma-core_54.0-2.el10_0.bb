@@ -7,53 +7,108 @@ PACKAGES = "ibacm iwpmd libibumad libibverbs libibverbs-utils librdmacm librdmac
 
 
 URI_ibacm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/ibacm-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ibacm = "/bin/sh ( ) systemd ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libnl-3.so.200()(64bit) ( ) libnl-3.so.200(libnl_3)(64bit) ( ) libibverbs.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.1)(64bit) ( ) libnl-route-3.so.200()(64bit) ( ) libnl-route-3.so.200(libnl_3)(64bit) ( ) libibumad.so.3()(64bit) ( ) libibumad.so.3(IBUMAD_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.5)(64bit) ( ) libibverbs(x86-64) ( =  54.0-2.el10_0) libibumad(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:ibacm = "libibacmp.so()(64bit) ( ) libibacmp.so(ACMP_1.0)(64bit) ( ) config(ibacm) ( =  54.0-2.el10_0) ibacm ( =  54.0-2.el10_0) ibacm(x86-64) ( =  54.0-2.el10_0)"
+RDEPENDS:ibacm = "
+ systemd
+ systemd-libs
+ libnl3
+ libibumad
+ bash
+ libibverbs
+ glibc
+"
 
 URI_iwpmd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/iwpmd-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:iwpmd = "/bin/sh ( ) systemd ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libnl-3.so.200()(64bit) ( ) libnl-3.so.200(libnl_3)(64bit) ( )"
-RPROVIDES:iwpmd = "config(iwpmd) ( =  54.0-2.el10_0) iwpmd ( =  54.0-2.el10_0) iwpmd(x86-64) ( =  54.0-2.el10_0)"
+RDEPENDS:iwpmd = "
+ systemd
+ systemd-libs
+ libnl3
+ bash
+ glibc
+"
 
 URI_libibumad = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libibumad-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libibumad = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.4)(64bit) ( )"
-RPROVIDES:libibumad = "libibumad.so.3()(64bit) ( ) libibumad.so.3(IBUMAD_1.0)(64bit) ( ) libibumad.so.3(IBUMAD_1.1)(64bit) ( ) libibumad.so.3(IBUMAD_1.2)(64bit) ( ) libibumad.so.3(IBUMAD_1.3)(64bit) ( ) libibumad(x86-64) ( =  54.0-2.el10_0) libibumad ( =  54.0-2.el10_0)"
+RDEPENDS:libibumad = "
+ glibc
+"
 
 URI_libibverbs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libibverbs-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libibverbs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libnl-3.so.200()(64bit) ( ) libnl-3.so.200(libnl_3)(64bit) ( ) libnl-route-3.so.200()(64bit) ( ) libnl-route-3.so.200(libnl_3)(64bit) ( )"
-RPROVIDES:libibverbs = "libibverbs.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.1)(64bit) ( ) libibverbs.so.1(IBVERBS_1.5)(64bit) ( ) libibverbs.so.1(IBVERBS_1.6)(64bit) ( ) libibverbs.so.1(IBVERBS_1.10)(64bit) ( ) libibverbs.so.1(IBVERBS_1.9)(64bit) ( ) libibverbs.so.1(IBVERBS_PRIVATE_34)(64bit) ( ) libefa.so.1()(64bit) ( ) libefa.so.1(EFA_1.1)(64bit) ( ) libhns.so.1()(64bit) ( ) libhns.so.1(HNS_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.11)(64bit) ( ) libibverbs.so.1(IBVERBS_1.12)(64bit) ( ) libibverbs.so.1(IBVERBS_1.8)(64bit) ( ) libmlx5.so.1()(64bit) ( ) libmlx5.so.1(MLX5_1.10)(64bit) ( ) libmlx5.so.1(MLX5_1.21)(64bit) ( ) libmlx5.so.1(MLX5_1.3)(64bit) ( ) libmlx5.so.1(MLX5_1.7)(64bit) ( ) libbnxt_re-rdmav34.so()(64bit) ( ) libcxgb4-rdmav34.so()(64bit) ( ) libefa.so.1(EFA_1.0)(64bit) ( ) libefa.so.1(EFA_1.2)(64bit) ( ) libefa.so.1(EFA_1.3)(64bit) ( ) liberdma-rdmav34.so()(64bit) ( ) libhfi1verbs-rdmav34.so()(64bit) ( ) libibverbs.so.1(IBVERBS_1.13)(64bit) ( ) libibverbs.so.1(IBVERBS_1.14)(64bit) ( ) libibverbs.so.1(IBVERBS_1.7)(64bit) ( ) libipathverbs-rdmav34.so()(64bit) ( ) libirdma-rdmav34.so()(64bit) ( ) libmana.so.1()(64bit) ( ) libmana.so.1(MANA_1.0)(64bit) ( ) libmlx4.so.1()(64bit) ( ) libmlx4.so.1(MLX4_1.0)(64bit) ( ) libmlx5.so.1(MLX5_1.0)(64bit) ( ) libmlx5.so.1(MLX5_1.1)(64bit) ( ) libmlx5.so.1(MLX5_1.11)(64bit) ( ) libmlx5.so.1(MLX5_1.12)(64bit) ( ) libmlx5.so.1(MLX5_1.13)(64bit) ( ) libmlx5.so.1(MLX5_1.14)(64bit) ( ) libmlx5.so.1(MLX5_1.15)(64bit) ( ) libmlx5.so.1(MLX5_1.16)(64bit) ( ) libmlx5.so.1(MLX5_1.17)(64bit) ( ) libmlx5.so.1(MLX5_1.18)(64bit) ( ) libmlx5.so.1(MLX5_1.19)(64bit) ( ) libmlx5.so.1(MLX5_1.2)(64bit) ( ) libmlx5.so.1(MLX5_1.20)(64bit) ( ) libmlx5.so.1(MLX5_1.22)(64bit) ( ) libmlx5.so.1(MLX5_1.23)(64bit) ( ) libmlx5.so.1(MLX5_1.24)(64bit) ( ) libmlx5.so.1(MLX5_1.25)(64bit) ( ) libmlx5.so.1(MLX5_1.4)(64bit) ( ) libmlx5.so.1(MLX5_1.5)(64bit) ( ) libmlx5.so.1(MLX5_1.6)(64bit) ( ) libmlx5.so.1(MLX5_1.8)(64bit) ( ) libmlx5.so.1(MLX5_1.9)(64bit) ( ) libmthca-rdmav34.so()(64bit) ( ) libocrdma-rdmav34.so()(64bit) ( ) libqedr-rdmav34.so()(64bit) ( ) librxe-rdmav34.so()(64bit) ( ) libsiw-rdmav34.so()(64bit) ( ) libvmw_pvrdma-rdmav34.so()(64bit) ( ) libibverbs(x86-64) ( =  54.0-2.el10_0) config(libibverbs) ( =  54.0-2.el10_0) libcxgb4 ( =  54.0-2.el10_0) libefa ( =  54.0-2.el10_0) libhfi1 ( =  54.0-2.el10_0) libibverbs ( =  54.0-2.el10_0) libipathverbs ( =  54.0-2.el10_0) libirdma ( =  54.0-2.el10_0) libmlx4 ( =  54.0-2.el10_0) libmlx5 ( =  54.0-2.el10_0) libmthca ( =  54.0-2.el10_0) libocrdma ( =  54.0-2.el10_0) librxe ( =  54.0-2.el10_0)"
+RDEPENDS:libibverbs = "
+ glibc
+ libnl3
+"
 
 URI_libibverbs-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libibverbs-utils-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libibverbs-utils = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libibverbs.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.1)(64bit) ( ) libibverbs.so.1(IBVERBS_1.6)(64bit) ( ) libibverbs.so.1(IBVERBS_PRIVATE_34)(64bit) ( ) libibverbs(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:libibverbs-utils = "libibverbs-utils ( =  54.0-2.el10_0) libibverbs-utils(x86-64) ( =  54.0-2.el10_0)"
+RDEPENDS:libibverbs-utils = "
+ glibc
+ libibverbs
+"
 
 URI_librdmacm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/librdmacm-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:librdmacm = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libnl-3.so.200()(64bit) ( ) libnl-3.so.200(libnl_3)(64bit) ( ) libibverbs.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.1)(64bit) ( ) libibverbs.so.1(IBVERBS_1.5)(64bit) ( ) libibverbs.so.1(IBVERBS_1.10)(64bit) ( ) libibverbs.so.1(IBVERBS_1.9)(64bit) ( ) libibverbs(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:librdmacm = "librdmacm.so.1()(64bit) ( ) librdmacm.so.1(RDMACM_1.0)(64bit) ( ) librdmacm.so.1(RDMACM_1.1)(64bit) ( ) librdmacm.so.1(RDMACM_1.2)(64bit) ( ) librdmacm.so.1(RDMACM_1.3)(64bit) ( ) librspreload.so()(64bit) ( ) librdmacm(x86-64) ( =  54.0-2.el10_0) librdmacm ( =  54.0-2.el10_0)"
+RDEPENDS:librdmacm = "
+ glibc
+ libnl3
+ libibverbs
+"
 
 URI_librdmacm-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/librdmacm-utils-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:librdmacm-utils = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libibverbs.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.1)(64bit) ( ) librdmacm.so.1()(64bit) ( ) librdmacm.so.1(RDMACM_1.0)(64bit) ( ) librdmacm.so.1(RDMACM_1.1)(64bit) ( ) librdmacm.so.1(RDMACM_1.2)(64bit) ( ) libibverbs(x86-64) ( =  54.0-2.el10_0) librdmacm(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:librdmacm-utils = "librdmacm-utils ( =  54.0-2.el10_0) librdmacm-utils(x86-64) ( =  54.0-2.el10_0)"
+RDEPENDS:librdmacm-utils = "
+ glibc
+ libibverbs
+ librdmacm
+"
 
 URI_rdma-core = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rdma-core-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:rdma-core = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libsystemd.so.0()(64bit) ( ) /usr/bin/bash ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libnl-3.so.200()(64bit) ( ) libnl-3.so.200(libnl_3)(64bit) ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) pciutils ( )"
-RPROVIDES:rdma-core = "config(rdma-core) ( =  54.0-2.el10_0) rdma ( =  54.0-2.el10_0) rdma-core ( =  54.0-2.el10_0) rdma-core(x86-64) ( =  54.0-2.el10_0)"
+RDEPENDS:rdma-core = "
+ systemd-libs
+ libnl3
+ pciutils
+ bash
+ glibc
+"
 
 URI_srp_daemon = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/srp_daemon-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:srp_daemon = "/bin/sh ( ) systemd ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) /usr/bin/bash ( ) libibverbs.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.1)(64bit) ( ) libibumad.so.3()(64bit) ( ) libibumad.so.3(IBUMAD_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.5)(64bit) ( ) libibverbs(x86-64) ( =  54.0-2.el10_0) libibumad(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:srp_daemon = "config(srp_daemon) ( =  54.0-2.el10_0) srp_daemon ( =  54.0-2.el10_0) srp_daemon(x86-64) ( =  54.0-2.el10_0) srptools ( =  54.0-2.el10_0)"
+RDEPENDS:srp_daemon = "
+ systemd
+ libibumad
+ bash
+ libibverbs
+ glibc
+"
 
 URI_infiniband-diags = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/infiniband-diags-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:infiniband-diags = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) /usr/bin/sh ( ) perl(strict) ( ) perl-libs ( ) /usr/bin/perl ( ) perl(Getopt::Std) ( ) libibumad.so.3()(64bit) ( ) libibumad.so.3(IBUMAD_1.0)(64bit) ( ) libibumad.so.3(IBUMAD_1.1)(64bit) ( ) libibumad.so.3(IBUMAD_1.2)(64bit) ( ) libibumad(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:infiniband-diags = "libibmad.so.5()(64bit) ( ) libibmad.so.5(IBMAD_1.3)(64bit) ( ) libibnetdisc.so.5()(64bit) ( ) libibmad.so.5(IBMAD_1.4)(64bit) ( ) libibnetdisc.so.5(IBNETDISC_1.0)(64bit) ( ) libibnetdisc.so.5(IBNETDISC_1.1)(64bit) ( ) perl(IBswcountlimits) ( ) infiniband-diags(x86-64) ( =  54.0-2.el10_0) config(infiniband-diags) ( =  54.0-2.el10_0) infiniband-diags ( =  54.0-2.el10_0) libibmad ( =  54.0-2.el10_0)"
+RDEPENDS:infiniband-diags = "
+ perl-libs
+ perl-Getopt-Std
+ libibumad
+ bash
+ glibc
+ perl-interpreter
+"
 
 URI_python3-pyverbs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pyverbs-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:python3-pyverbs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libpython3.12.so.1.0()(64bit) ( ) libibverbs.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.1)(64bit) ( ) librdmacm.so.1()(64bit) ( ) libibverbs.so.1(IBVERBS_1.0)(64bit) ( ) libmlx5.so.1()(64bit) ( ) librdmacm.so.1(RDMACM_1.0)(64bit) ( ) libmlx5.so.1(MLX5_1.7)(64bit) ( ) libefa.so.1()(64bit) ( ) libmlx5.so.1(MLX5_1.2)(64bit) ( ) libmlx5.so.1(MLX5_1.8)(64bit) ( ) libibverbs.so.1(IBVERBS_1.10)(64bit) ( ) libibverbs.so.1(IBVERBS_1.12)(64bit) ( ) libibverbs.so.1(IBVERBS_1.13)(64bit) ( ) libibverbs.so.1(IBVERBS_1.8)(64bit) ( ) libmlx5.so.1(MLX5_1.0)(64bit) ( ) libmlx5.so.1(MLX5_1.1)(64bit) ( ) libmlx5.so.1(MLX5_1.14)(64bit) ( ) libmlx5.so.1(MLX5_1.19)(64bit) ( ) libmlx5.so.1(MLX5_1.3)(64bit) ( ) librdmacm.so.1(RDMACM_1.2)(64bit) ( ) libefa.so.1(EFA_1.1)(64bit) ( ) libefa.so.1(EFA_1.2)(64bit) ( ) libefa.so.1(EFA_1.3)(64bit) ( ) libibverbs.so.1(IBVERBS_1.14)(64bit) ( ) libibverbs.so.1(IBVERBS_1.6)(64bit) ( ) libmlx5.so.1(MLX5_1.10)(64bit) ( ) libmlx5.so.1(MLX5_1.12)(64bit) ( ) libmlx5.so.1(MLX5_1.13)(64bit) ( ) libmlx5.so.1(MLX5_1.15)(64bit) ( ) libmlx5.so.1(MLX5_1.16)(64bit) ( ) libmlx5.so.1(MLX5_1.17)(64bit) ( ) libmlx5.so.1(MLX5_1.20)(64bit) ( ) libmlx5.so.1(MLX5_1.21)(64bit) ( ) libmlx5.so.1(MLX5_1.24)(64bit) ( ) libmlx5.so.1(MLX5_1.4)(64bit) ( ) libmlx5.so.1(MLX5_1.6)(64bit) ( ) libefa.so.1(EFA_1.0)(64bit) ( ) libibverbs.so.1(IBVERBS_1.11)(64bit) ( ) libibverbs.so.1(IBVERBS_1.5)(64bit) ( ) libibverbs.so.1(IBVERBS_1.9)(64bit) ( ) libibverbs.so.1(IBVERBS_PRIVATE_34)(64bit) ( ) libmlx5.so.1(MLX5_1.18)(64bit) ( ) libmlx5.so.1(MLX5_1.23)(64bit) ( ) librdmacm.so.1(RDMACM_1.1)(64bit) ( ) librdmacm.so.1(RDMACM_1.3)(64bit) ( ) python(abi) ( =  3.12) libibverbs(x86-64) ( =  54.0-2.el10_0) librdmacm(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:python3-pyverbs = "libefa.cpython-312-x86_64-linux-gnu.so()(64bit) ( ) libibverbs.cpython-312-x86_64-linux-gnu.so()(64bit) ( ) libibverbs_enums.cpython-312-x86_64-linux-gnu.so()(64bit) ( ) libmlx5.cpython-312-x86_64-linux-gnu.so()(64bit) ( ) librdmacm.cpython-312-x86_64-linux-gnu.so()(64bit) ( ) librdmacm_enums.cpython-312-x86_64-linux-gnu.so()(64bit) ( ) python-pyverbs ( =  54.0-2.el10_0) python3-pyverbs ( =  54.0-2.el10_0) python3-pyverbs(x86-64) ( =  54.0-2.el10_0) python3.12-pyverbs ( =  54.0-2.el10_0)"
+RDEPENDS:python3-pyverbs = "
+ python3
+ python3-libs
+ librdmacm
+ libibverbs
+ glibc
+"
 
 URI_rdma-core-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rdma-core-devel-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:rdma-core-devel = "/usr/bin/pkg-config ( ) libibverbs.so.1()(64bit) ( ) librdmacm.so.1()(64bit) ( ) libmlx5.so.1()(64bit) ( ) libibmad.so.5()(64bit) ( ) libibumad.so.3()(64bit) ( ) libefa.so.1()(64bit) ( ) pkgconfig(libibverbs) ( ) libibnetdisc.so.5()(64bit) ( ) libmana.so.1()(64bit) ( ) pkgconfig(libibmad) ( ) pkgconfig(libibumad) ( ) libhns.so.1()(64bit) ( ) libmlx4.so.1()(64bit) ( ) libibumad(x86-64) ( =  54.0-2.el10_0) libibverbs(x86-64) ( =  54.0-2.el10_0) librdmacm(x86-64) ( =  54.0-2.el10_0) infiniband-diags(x86-64) ( =  54.0-2.el10_0)"
-RPROVIDES:rdma-core-devel = "pkgconfig(libefa) ( =  1.3.54.0) pkgconfig(libhns) ( =  1.0.54.0) pkgconfig(libibmad) ( =  5.4.54.0) pkgconfig(libibnetdisc) ( =  5.1.54.0) pkgconfig(libibumad) ( =  3.3.54.0) pkgconfig(libibverbs) ( =  1.14.54.0) pkgconfig(libmana) ( =  1.0.54.0) pkgconfig(libmlx4) ( =  1.0.54.0) pkgconfig(libmlx5) ( =  1.25.54.0) pkgconfig(librdmacm) ( =  1.3.54.0) ibacm-devel ( =  54.0-2.el10_0) infiniband-diags-devel ( =  54.0-2.el10_0) libibmad-devel ( =  54.0-2.el10_0) libibumad-devel ( =  54.0-2.el10_0) libibverbs-devel ( =  54.0-2.el10_0) librdmacm-devel ( =  54.0-2.el10_0) rdma-core-devel ( =  54.0-2.el10_0) rdma-core-devel(x86-64) ( =  54.0-2.el10_0)"
+RDEPENDS:rdma-core-devel = "
+ infiniband-diags
+ pkgconf-pkg-config
+ librdmacm
+ libibumad
+ libibverbs
+ rdma-core-devel
+"
 
 URI_infiniband-diags-compat = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/infiniband-diags-compat-54.0-2.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:infiniband-diags-compat = "perl(strict) ( ) /usr/bin/perl ( ) /usr/bin/sh ( ) perl(Getopt::Std) ( ) perl(IBswcountlimits) ( )"
-RPROVIDES:infiniband-diags-compat = "infiniband-diags-compat ( =  54.0-2.el10_0) infiniband-diags-compat(x86-64) ( =  54.0-2.el10_0)"
+RDEPENDS:infiniband-diags-compat = "
+ infiniband-diags
+ perl-libs
+ perl-Getopt-Std
+ bash
+ perl-interpreter
+"

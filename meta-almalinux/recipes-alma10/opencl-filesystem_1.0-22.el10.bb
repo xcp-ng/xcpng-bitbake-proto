@@ -8,4 +8,3 @@ PACKAGES = "opencl-filesystem"
 
 URI_opencl-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/opencl-filesystem-1.0-22.el10.noarch.rpm;unpack=0"
 RDEPENDS:opencl-filesystem = ""
-RPROVIDES:opencl-filesystem = "opencl-filesystem ( =  1.0-22.el10)"

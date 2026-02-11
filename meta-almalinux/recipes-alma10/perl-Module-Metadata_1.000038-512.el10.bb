@@ -7,9 +7,30 @@ PACKAGES = "perl-Module-Metadata perl-Module-Metadata-tests"
 
 
 URI_perl-Module-Metadata = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-Metadata-1.000038-512.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Metadata = "perl(strict) ( ) perl-libs ( ) perl(warnings) ( ) perl(Carp) ( ) perl(File::Spec) ( ) perl(Fcntl) ( ) perl(Encode) ( ) perl(File::Find) ( ) perl(version) ( >=  0.87)"
-RPROVIDES:perl-Module-Metadata = "perl(Module::Metadata) ( =  1.000038) perl-Module-Metadata ( =  1.000038-512.el10)"
+RDEPENDS:perl-Module-Metadata = "
+ perl-libs
+ perl-Carp
+ perl-version
+ perl-Fcntl
+ perl-Encode
+ perl-PathTools
+ perl-File-Find
+"
 
 URI_perl-Module-Metadata-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Metadata-tests-1.000038-512.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Metadata-tests = "perl(strict) ( ) /usr/bin/perl ( ) /usr/bin/sh ( ) perl-Test-Harness ( ) perl(warnings) ( ) perl(File::Spec) ( ) perl(lib) ( ) perl(Config) ( ) perl(Carp) ( ) perl(File::Temp) ( ) perl(Cwd) ( ) perl(File::Path) ( ) perl(File::Basename) ( ) perl(Encode) ( ) perl(IO::File) ( ) perl(Module::Metadata) ( ) perl(Test::More) ( >=  0.88) perl-Module-Metadata ( =  1.000038-512.el10) perl(Test::More) ( >=  0.82)"
-RPROVIDES:perl-Module-Metadata-tests = "perl-Module-Metadata-tests ( =  1.000038-512.el10)"
+RDEPENDS:perl-Module-Metadata-tests = "
+ perl-Test-Harness
+ perl-libs
+ perl-Carp
+ perl-Test-Simple
+ perl-IO
+ perl-File-Basename
+ perl-Encode
+ perl-File-Temp
+ perl-Module-Metadata
+ perl-PathTools
+ bash
+ perl-interpreter
+ perl-File-Path
+ perl-lib
+"

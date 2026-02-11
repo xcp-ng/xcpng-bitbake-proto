@@ -7,17 +7,38 @@ PACKAGES = "qt6-qtwebchannel qt6-qtwebchannel-devel qt6-qtwebchannel-examples qt
 
 
 URI_qt6-qtwebchannel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtwebchannel-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtwebchannel = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtwebchannel = "libQt6WebChannel.so.6()(64bit) ( ) libQt6WebChannel.so.6(Qt_6)(64bit) ( ) libQt6WebChannelQuick.so.6()(64bit) ( ) libQt6WebChannel.so.6(NonQt)(64bit) ( ) libQt6WebChannel.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6WebChannelQuick.so.6(NonQt)(64bit) ( ) libQt6WebChannelQuick.so.6(Qt_6)(64bit) ( ) libQt6WebChannelQuick.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libwebchannelquickplugin.so()(64bit) ( ) libwebchannelquickplugin.so(NonQt)(64bit) ( ) libwebchannelquickplugin.so(Qt_6)(64bit) ( ) libwebchannelquickplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtWebChannel) ( ) qt6-qtwebchannel(x86-64) ( =  6.8.1-2.el10) qt6-qtwebchannel ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtwebchannel = "
+ glibc
+ qt6-qtdeclarative
+ libstdc++
+ qt6-qtbase
+"
 
 URI_qt6-qtwebchannel-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtwebchannel-devel-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtwebchannel-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Qml) ( ) libQt6WebChannel.so.6()(64bit) ( ) libQt6WebChannelQuick.so.6()(64bit) ( ) qt6-qtwebchannel(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtwebchannel-devel = "cmake(Qt6WebChannel) ( ) cmake(Qt6WebChannelQuick) ( ) cmake(Qt6WebChannelQuickplugin) ( ) cmake(QtWebChannelTests) ( ) cmake(qt6webchannel) ( ) cmake(qt6webchannelquick) ( ) cmake(qt6webchannelquickplugin) ( ) cmake(qtwebchanneltests) ( ) pkgconfig(Qt6WebChannel) ( =  6.8.1) pkgconfig(Qt6WebChannelQuick) ( =  6.8.1) qt6-qtwebchannel-devel ( =  6.8.1-2.el10) qt6-qtwebchannel-devel(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtwebchannel-devel = "
+ qt6-qtdeclarative-devel
+ cmake-filesystem
+ pkgconf-pkg-config
+ qt6-qtwebchannel
+ qt6-qtbase-devel
+"
 
 URI_qt6-qtwebchannel-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtwebchannel-examples-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtwebchannel-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6WebSockets.so.6()(64bit) ( ) libQt6WebSockets.so.6(Qt_6)(64bit) ( ) libQt6WebChannel.so.6()(64bit) ( ) libQt6WebChannel.so.6(Qt_6)(64bit) ( ) qt6-qtwebchannel(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtwebchannel-examples = "qt6-qtwebchannel-examples ( =  6.8.1-2.el10) qt6-qtwebchannel-examples(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtwebchannel-examples = "
+ libgcc
+ qt6-qtbase
+ qt6-qtwebchannel
+ libstdc++
+ qt6-qtwebsockets
+ glibc
+"
 
 URI_qt6-qtwebchannel-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtwebchannel-tests-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtwebchannel-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6QuickTest.so.6()(64bit) ( ) libQt6QuickTest.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6WebChannel.so.6()(64bit) ( ) libQt6WebChannel.so.6(Qt_6)(64bit) ( ) libQt6WebChannel.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6WebChannelQuick.so.6()(64bit) ( ) libQt6WebChannelQuick.so.6(Qt_6)(64bit) ( ) qt6-qtwebchannel(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtwebchannel-tests = "qt6-qtwebchannel-tests ( =  6.8.1-2.el10) qt6-qtwebchannel-tests(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtwebchannel-tests = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ qt6-qtwebchannel
+ libstdc++
+ glibc
+"

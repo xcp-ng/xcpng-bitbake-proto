@@ -7,5 +7,7 @@ PACKAGES = "itstool"
 
 
 URI_itstool = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/itstool-2.0.7-10.el10.noarch.rpm;unpack=0"
-RDEPENDS:itstool = "/usr/bin/python3 ( ) python3-libxml2 ( )"
-RPROVIDES:itstool = "itstool ( =  2.0.7-10.el10)"
+RDEPENDS:itstool = "
+ python3
+ python3-libxml2
+"

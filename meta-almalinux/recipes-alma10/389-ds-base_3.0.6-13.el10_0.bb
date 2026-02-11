@@ -7,25 +7,128 @@ PACKAGES = "389-ds-base 389-ds-base-libs 389-ds-base-snmp python3-lib389 389-ds-
 
 
 URI_389-ds-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/389-ds-base-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:389-ds-base = "/bin/sh ( ) systemd ( ) shadow-utils ( ) rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /usr/bin/sh ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) /usr/bin/python3 ( ) libz.so.1()(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libssl.so.3()(64bit) ( ) ld-linux-x86-64.so.2()(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) ( ) /usr/bin/perl ( ) libsystemd.so.0()(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libnspr4.so()(64bit) ( ) libnss3.so()(64bit) ( ) libplc4.so()(64bit) ( ) libnss3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.2)(64bit) ( ) libnssutil3.so()(64bit) ( ) libcrypt.so.2()(64bit) ( ) libplds4.so()(64bit) ( ) libsmime3.so()(64bit) ( ) libkrb5.so.3()(64bit) ( ) libssl3.so()(64bit) ( ) libpcre2-8.so.0()(64bit) ( ) libcom_err.so.2()(64bit) ( ) libcrypt.so.2(XCRYPT_2.0)(64bit) ( ) libldap.so.2()(64bit) ( ) libicuuc.so.74()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libnss3.so(NSS_3.9.2)(64bit) ( ) policycoreutils-python-utils ( ) libnss3.so(NSS_3.12)(64bit) ( ) libpam.so.0()(64bit) ( ) libc.so.6(GLIBC_2.39)(64bit) ( ) libpam.so.0(LIBPAM_1.0)(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libjson-c.so.5()(64bit) ( ) libssl3.so(NSS_3.2)(64bit) ( ) libicui18n.so.74()(64bit) ( ) liblber.so.2()(64bit) ( ) libsasl2.so.3()(64bit) ( ) libssl3.so(NSS_3.14)(64bit) ( ) libnss3.so(NSS_3.15)(64bit) ( ) liblber.so.2(OPENLDAP_2.200)(64bit) ( ) zlib-devel ( ) liblmdb.so.0.0.0()(64bit) ( ) libicudata.so.74()(64bit) ( ) nss-tools ( ) acl ( ) libcrypto.so.3(OPENSSL_3.2.0)(64bit) ( ) perl-debugger ( ) perl-sigtrap ( ) libssl3.so(NSS_3.7.4)(64bit) ( ) perl-Archive-Tar ( ) cracklib-dicts ( ) openldap-clients ( ) cyrus-sasl-md5 ( ) json-c ( ) libcrack.so.2()(64bit) ( ) libldaputil.so.0()(64bit) ( ) libns-dshttpd.so.0()(64bit) ( ) libsemanage-python3 ( ) libslapd.so.0()(64bit) ( ) libsvrcore.so.0()(64bit) ( ) python3-file-magic ( ) cyrus-sasl-gssapi ( ) cyrus-sasl-plain ( ) lmdb-libs ( ) 389-ds-base-libs ( =  3.0.6-13.el10_0) nss ( >=  3.112.0) python3-lib389 ( =  3.0.6-13.el10_0)"
-RPROVIDES:389-ds-base = "group(dirsrv) ( ) libacctpolicy-plugin.so()(64bit) ( ) libacctusability-plugin.so()(64bit) ( ) libacl-plugin.so()(64bit) ( ) libaddn-plugin.so()(64bit) ( ) libalias-entries-plugin.so()(64bit) ( ) libattr-unique-plugin.so()(64bit) ( ) libautomember-plugin.so()(64bit) ( ) libback-ldbm.so()(64bit) ( ) libbitwise-plugin.so()(64bit) ( ) libchainingdb-plugin.so()(64bit) ( ) libcollation-plugin.so()(64bit) ( ) libcontentsync-plugin.so()(64bit) ( ) libcos-plugin.so()(64bit) ( ) libderef-plugin.so()(64bit) ( ) libdistrib-plugin.so()(64bit) ( ) libdna-plugin.so()(64bit) ( ) libentryuuid-plugin.so()(64bit) ( ) libentryuuid-syntax-plugin.so()(64bit) ( ) liblinkedattrs-plugin.so()(64bit) ( ) libmanagedentries-plugin.so()(64bit) ( ) libmemberof-plugin.so()(64bit) ( ) libpam-passthru-plugin.so()(64bit) ( ) libpassthru-plugin.so()(64bit) ( ) libpbe-plugin.so()(64bit) ( ) libposix-winsync-plugin.so()(64bit) ( ) libpwdchan-plugin.so()(64bit) ( ) libpwdstorage-plugin.so()(64bit) ( ) libreferint-plugin.so()(64bit) ( ) libreplication-plugin.so()(64bit) ( ) libretrocl-plugin.so()(64bit) ( ) libroles-plugin.so()(64bit) ( ) librootdn-access-plugin.so()(64bit) ( ) libschemareload-plugin.so()(64bit) ( ) libstatechange-plugin.so()(64bit) ( ) libsyntax-plugin.so()(64bit) ( ) libusn-plugin.so()(64bit) ( ) libviews-plugin.so()(64bit) ( ) libwhoami-plugin.so()(64bit) ( ) bundled(crate(byteorder)) ( =  1.5.0) bundled(crate(heck)) ( =  0.4.1) bundled(crate(atty)) ( =  0.2.14) bundled(crate(strsim)) ( =  0.10.0) bundled(crate(termcolor)) ( =  1.4.1) bundled(crate(indexmap)) ( =  1.9.3) bundled(crate(toml)) ( =  0.5.11) bundled(crate(shlex)) ( =  1.3.0) bundled(crate(clap)) ( =  3.2.25) bundled(crate(clap_lex)) ( =  0.2.4) bundled(crate(foreign-types)) ( =  0.3.2) bundled(crate(foreign-types-shared)) ( =  0.1.1) bundled(crate(openssl-macros)) ( =  0.1.1) bundled(crate(vcpkg)) ( =  0.2.15) bundled(crate(zeroize_derive)) ( =  1.4.2) bundled(crate(cbindgen)) ( =  0.26.0) bundled(crate(base64)) ( =  0.13.1) bundled(crate(os_str_bytes)) ( =  6.6.1) bundled(crate(pin-project-lite)) ( =  0.2.16) bundled(crate(tracing)) ( =  0.1.41) bundled(crate(fastrand)) ( =  2.3.0) bundled(crate(zeroize)) ( =  1.8.1) bundled(crate(crossbeam-utils)) ( =  0.8.21) bundled(crate(itoa)) ( =  1.0.15) bundled(crate(once_cell)) ( =  1.21.3) bundled(crate(serde)) ( =  1.0.219) bundled(crate(serde_derive)) ( =  1.0.219) bundled(crate(equivalent)) ( =  1.0.2) bundled(crate(getrandom)) ( =  0.3.3) bundled(crate(foldhash)) ( =  0.1.5) bundled(crate(jobserver)) ( =  0.1.33) bundled(crate(quote)) ( =  1.0.40) bundled(crate(crossbeam-epoch)) ( =  0.9.18) bundled(crate(ryu)) ( =  1.0.20) bundled(crate(textwrap)) ( =  0.16.2) 389-ds-base ( =  3.0.6-13.el10_0) bundled(crate(autocfg)) ( =  1.5.0) bundled(crate(log)) ( =  0.4.27) bundled(crate(tracing-attributes)) ( =  0.1.30) bundled(crate(tracing-core)) ( =  0.1.34) bundled(crate(unicode-ident)) ( =  1.0.18) bundled(crate(addr2line)) ( =  0.24.2) bundled(crate(allocator-api2)) ( =  0.2.21) bundled(crate(crossbeam-queue)) ( =  0.3.12) bundled(crate(fernet)) ( =  0.1.4) bundled(crate(gimli)) ( =  0.31.1) bundled(crate(hermit-abi)) ( =  0.1.19) bundled(crate(memchr)) ( =  2.7.5) bundled(crate(mio)) ( =  1.0.4) bundled(crate(object)) ( =  0.36.7) bundled(crate(paste)) ( =  0.1.18) bundled(crate(paste-impl)) ( =  0.1.18) bundled(crate(proc-macro-hack)) ( =  0.5.20+deprecated) bundled(crate(proc-macro2)) ( =  1.0.101) bundled(crate(slab)) ( =  0.4.11) bundled(crate(uuid)) ( =  0.8.2) bundled(crate(winapi)) ( =  0.3.9) bundled(crate(winapi-i686-pc-windows-gnu)) ( =  0.4.0) bundled(crate(winapi-x86_64-pc-windows-gnu)) ( =  0.4.0) group(dirsrv) ( =  ZyBkaXJzcnYgMzg5) ldif2ldbm ( >=  0) user(dirsrv) ( =  dSBkaXJzcnYgMzg5OjM4OSAidXNlciBmb3IgMzg5LWRzLWJhc2UiIC91c3Ivc2hhcmUvZGlyc3J2LyAvc2Jpbi9ub2xvZ2lu) 389-ds-base(x86-64) ( =  3.0.6-13.el10_0) bundled(crate(adler2)) ( =  2.0.1) bundled(crate(backtrace)) ( =  0.3.75) bundled(crate(bitflags)) ( =  2.9.2) bundled(crate(cc)) ( =  1.2.33) bundled(crate(cfg-if)) ( =  1.0.3) bundled(crate(concread)) ( =  0.5.7) bundled(crate(errno)) ( =  0.3.13) bundled(crate(hashbrown)) ( =  0.15.5) bundled(crate(io-uring)) ( =  0.7.9) bundled(crate(libc)) ( =  0.2.175) bundled(crate(linux-raw-sys)) ( =  0.9.4) bundled(crate(lru)) ( =  0.13.0) bundled(crate(miniz_oxide)) ( =  0.8.9) bundled(crate(openssl)) ( =  0.10.73) bundled(crate(openssl-sys)) ( =  0.9.109) bundled(crate(pkg-config)) ( =  0.3.32) bundled(crate(r-efi)) ( =  5.3.0) bundled(crate(rustc-demangle)) ( =  0.1.26) bundled(crate(rustix)) ( =  1.0.8) bundled(crate(serde_json)) ( =  1.0.143) bundled(crate(smallvec)) ( =  1.15.1) bundled(crate(sptr)) ( =  0.3.2) bundled(crate(syn)) ( =  2.0.106) bundled(crate(tempfile)) ( =  3.21.0) bundled(crate(tokio)) ( =  1.47.1) bundled(crate(wasi)) ( =  0.14.2+wasi_0.2.4) bundled(crate(winapi-util)) ( =  0.1.10) bundled(crate(windows-link)) ( =  0.1.3) bundled(crate(windows-sys)) ( =  0.60.2) bundled(crate(windows-targets)) ( =  0.53.3) bundled(crate(windows_aarch64_gnullvm)) ( =  0.53.0) bundled(crate(windows_aarch64_msvc)) ( =  0.53.0) bundled(crate(windows_i686_gnu)) ( =  0.53.0) bundled(crate(windows_i686_gnullvm)) ( =  0.53.0) bundled(crate(windows_i686_msvc)) ( =  0.53.0) bundled(crate(windows_x86_64_gnu)) ( =  0.53.0) bundled(crate(windows_x86_64_gnullvm)) ( =  0.53.0) bundled(crate(windows_x86_64_msvc)) ( =  0.53.0) bundled(crate(wit-bindgen-rt)) ( =  0.39.0) config(389-ds-base) ( =  3.0.6-13.el10_0)"
+RDEPENDS:389-ds-base = "
+ python3
+ systemd
+ nss
+ systemd-libs
+ policycoreutils-python-utils
+ perl-Archive-Tar
+ cyrus-sasl-gssapi
+ krb5-libs
+ cyrus-sasl-lib
+ nss-tools
+ nss-util
+ cyrus-sasl-plain
+ perl-sigtrap
+ python3-lib389
+ json-c
+ acl
+ cyrus-sasl-md5
+ python3-libsemanage
+ libstdc++
+ libcom_err
+ openldap
+ openldap-clients
+ shadow-utils
+ zlib-ng-compat
+ python3-file-magic
+ libxcrypt
+ zlib-ng-compat-devel
+ libgcc
+ openssl-libs
+ pam-libs
+ bash
+ pcre2
+ libicu
+ lmdb-libs
+ perl-debugger
+ 389-ds-base-libs
+ glibc
+ perl-interpreter
+ cracklib
+ cracklib-dicts
+ nspr
+"
 
 URI_389-ds-base-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/389-ds-base-libs-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:389-ds-base-libs = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libz.so.1()(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libssl.so.3()(64bit) ( ) ld-linux-x86-64.so.2()(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) ( ) libsystemd.so.0()(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libnspr4.so()(64bit) ( ) libnss3.so()(64bit) ( ) libplc4.so()(64bit) ( ) libnss3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.2)(64bit) ( ) libnssutil3.so()(64bit) ( ) libplds4.so()(64bit) ( ) libsmime3.so()(64bit) ( ) libkrb5.so.3()(64bit) ( ) libssl3.so()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libpcre2-8.so.0()(64bit) ( ) libcom_err.so.2()(64bit) ( ) libldap.so.2()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libnss3.so(NSS_3.12)(64bit) ( ) libnss3.so(NSS_3.3)(64bit) ( ) libc.so.6(GLIBC_2.39)(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libjson-c.so.5()(64bit) ( ) libssl3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.9)(64bit) ( ) libjson-c.so.5(JSONC_0.14)(64bit) ( ) liblber.so.2()(64bit) ( ) libsasl2.so.3()(64bit) ( ) libssl3.so(NSS_3.14)(64bit) ( ) libssl3.so(NSS_3.12.6)(64bit) ( ) liblber.so.2(OPENLDAP_2.200)(64bit) ( ) libssl3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.10.2)(64bit) ( ) nspr ( ) libcrypto.so.3(OPENSSL_3.2.0)(64bit) ( ) libssl3.so(NSS_3.20)(64bit) ( ) systemd-libs ( ) openldap ( ) krb5-libs ( ) libcrack.so.2()(64bit) ( ) cyrus-sasl-lib ( ) nss ( >=  3.112.0)"
-RPROVIDES:389-ds-base-libs = "libldaputil.so.0()(64bit) ( ) libns-dshttpd.so.0()(64bit) ( ) libslapd.so.0()(64bit) ( ) libsvrcore.so.0()(64bit) ( ) librewriters.so.0()(64bit) ( ) 389-ds-base-libs ( =  3.0.6-13.el10_0) svrcore ( =  4.1.4) 389-ds-base-libs(x86-64) ( =  3.0.6-13.el10_0)"
+RDEPENDS:389-ds-base-libs = "
+ zlib-ng-compat
+ nss
+ systemd-libs
+ openssl-libs
+ libgcc
+ json-c
+ krb5-libs
+ cyrus-sasl-lib
+ libstdc++
+ nss-util
+ pcre2
+ libcom_err
+ cracklib
+ glibc
+ openldap
+ nspr
+"
 
 URI_389-ds-base-snmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/389-ds-base-snmp-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:389-ds-base-snmp = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libnspr4.so()(64bit) ( ) libldap.so.2()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libnetsnmp.so.40()(64bit) ( ) libnetsnmpagent.so.40()(64bit) ( ) 389-ds-base ( =  3.0.6-13.el10_0)"
-RPROVIDES:389-ds-base-snmp = "389-ds-base-snmp ( =  3.0.6-13.el10_0) 389-ds-base-snmp(x86-64) ( =  3.0.6-13.el10_0) config(389-ds-base-snmp) ( =  3.0.6-13.el10_0)"
+RDEPENDS:389-ds-base-snmp = "
+ net-snmp-agent-libs
+ net-snmp-libs
+ 389-ds-base
+ bash
+ glibc
+ openldap
+ nspr
+"
 
 URI_python3-lib389 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-lib389-3.0.6-13.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:python3-lib389 = "/usr/bin/python3 ( ) python3 ( ) openssl ( ) iproute ( ) python3-pyasn1 ( ) python3-cryptography ( ) python3-libselinux ( ) python3.12dist(pyasn1) ( ) python3-dateutil ( ) python3.12dist(cryptography) ( ) python3-pyasn1-modules ( ) python3-argcomplete ( ) openssl-perl ( ) python3-distro ( ) python3-ldap ( ) python3-setuptools ( ) python3.12dist(pyasn1-modules) ( ) python3.12dist(setuptools) ( ) python3.12dist(psutil) ( ) python3.12dist(python-dateutil) ( ) python3.12dist(distro) ( ) python3.12dist(python-ldap) ( ) python3.12dist(argcomplete) ( ) python(abi) ( =  3.12) 389-ds-base ( =  3.0.6-13.el10_0)"
-RPROVIDES:python3-lib389 = "python3-lib389 ( =  3.0.6-13.el10_0) python3.12dist(lib389) ( =  3.0.6) python3dist(lib389) ( =  3.0.6) python-lib389 ( =  3.0.6-13.el10_0) python3.12-lib389 ( =  3.0.6-13.el10_0)"
+RDEPENDS:python3-lib389 = "
+ python3
+ python3-ldap
+ python3-psutil
+ python3-cryptography
+ openssl
+ iproute
+ python3-pyasn1
+ python3-dateutil
+ python3-pyasn1-modules
+ python3-libselinux
+ python3-setuptools
+ 389-ds-base
+ openssl-perl
+ python3-distro
+ python3-argcomplete
+"
 
 URI_389-ds-base-bdb = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/389-ds-base-bdb-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:389-ds-base-bdb = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libz.so.1()(64bit) ( ) libcrypto.so.3()(64bit) ( ) libssl.so.3()(64bit) ( ) libcom_err.so.2()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libkrb5.so.3()(64bit) ( ) libsystemd.so.0()(64bit) ( ) liblmdb.so.0.0.0()(64bit) ( ) libpcre2-8.so.0()(64bit) ( ) libsasl2.so.3()(64bit) ( ) libslapd.so.0()(64bit) ( ) libsvrcore.so.0()(64bit) ( ) libcrack.so.2()(64bit) ( ) libjson-c.so.5()(64bit) ( ) libback-ldbm.so()(64bit) ( ) liblber.so.2()(64bit) ( ) liblber.so.2(OPENLDAP_2.200)(64bit) ( ) libldap.so.2()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libnspr4.so()(64bit) ( ) libnss3.so()(64bit) ( ) libnssutil3.so()(64bit) ( ) libplc4.so()(64bit) ( ) libplds4.so()(64bit) ( ) libsmime3.so()(64bit) ( ) libssl3.so()(64bit) ( ) 389-ds-base-libs ( =  3.0.6-13.el10_0) 389-ds-base ( =  3.0.6-13.el10_0)"
-RPROVIDES:389-ds-base-bdb = "deprecated() ( ) libback-bdb.so()(64bit) ( ) libdb-5.3-389ds.so()(64bit) ( ) 389-ds-base-bdb ( =  3.0.6-13.el10_0) 389-ds-base-bdb(x86-64) ( =  3.0.6-13.el10_0)"
+RDEPENDS:389-ds-base-bdb = "
+ zlib-ng-compat
+ nss
+ systemd-libs
+ openssl-libs
+ libgcc
+ json-c
+ openldap
+ krb5-libs
+ cyrus-sasl-lib
+ libcom_err
+ pcre2
+ 389-ds-base-libs
+ cracklib
+ 389-ds-base
+ glibc
+ nss-util
+ lmdb-libs
+ nspr
+"
 
 URI_389-ds-base-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/389-ds-base-devel-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:389-ds-base-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) libslapd.so.0()(64bit) ( ) libsvrcore.so.0()(64bit) ( ) libldaputil.so.0()(64bit) ( ) libns-dshttpd.so.0()(64bit) ( ) nspr-devel ( ) openldap-devel ( ) pkgconfig(nspr) ( ) pkgconfig(nss) ( ) systemd-libs ( ) 389-ds-base-libs ( =  3.0.6-13.el10_0) nss-devel ( >=  3.34)"
-RPROVIDES:389-ds-base-devel = "pkgconfig(dirsrv) ( =  3.0.6) pkgconfig(svrcore) ( =  3.0.6) svrcore-devel ( =  4.1.4) 389-ds-base-devel ( =  3.0.6-13.el10_0) 389-ds-base-devel(x86-64) ( =  3.0.6-13.el10_0)"
+RDEPENDS:389-ds-base-devel = "
+ nspr-devel
+ systemd-libs
+ nss-devel
+ openldap-devel
+ pkgconf-pkg-config
+ 389-ds-base-libs
+"

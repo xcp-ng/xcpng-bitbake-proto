@@ -7,13 +7,83 @@ PACKAGES = "perl-Tk perl-Tk-devel perl-Tk-tests"
 
 
 URI_perl-Tk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Tk-804.036-17.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:perl-Tk = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) perl(strict) ( ) perl-libs ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) perl(Carp) ( ) perl(Exporter) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libperl.so.5.40()(64bit) ( ) /usr/bin/perl ( ) libX11.so.6()(64bit) ( ) perl(vars) ( ) perl(XSLoader) ( ) perl(File::Spec) ( ) perl(Config) ( ) perl(File::Basename) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) perl(Getopt::Long) ( ) libjpeg.so.62()(64bit) ( ) libjpeg.so.62(LIBJPEG_6.2)(64bit) ( ) perl(:MODULE_COMPAT_5.40.0) ( ) libfontconfig.so.1()(64bit) ( ) perl(overload) ( ) perl(Cwd) ( ) libpng16.so.16()(64bit) ( ) perl(base) ( ) perl(Encode) ( ) libpng16.so.16(PNG16_0)(64bit) ( ) perl(Symbol) ( ) perl(IO::Handle) ( ) perl(Getopt::Std) ( ) perl(DynaLoader) ( ) perl(Socket) ( ) perl(IO::Socket) ( ) perl(locale) ( ) perl(if) ( ) perl(AutoLoader) ( ) perl(Text::Tabs) ( ) libXft.so.2()(64bit) ( ) perl(subs) ( ) perl(DirHandle) ( ) perl(open) ( ) perl(Tk::After) ( ) perl(Tk::Button) ( ) perl(Tk::Canvas) ( ) perl(Tk::Clipboard) ( ) perl(Tk::CmdLine) ( ) perl(Tk::ColorDialog) ( ) perl(Tk::ColorSelect) ( ) perl(Tk::Configure) ( ) perl(Tk::Derived) ( ) perl(Tk::Dialog) ( ) perl(Tk::DialogBox) ( ) perl(Tk::DragDrop) ( ) perl(Tk::DragDrop::Common) ( ) perl(Tk::DragDrop::Rect) ( ) perl(Tk::DragDrop::SunConst) ( ) perl(Tk::DropSite) ( ) perl(Tk::Entry) ( ) perl(Tk::Event) ( ) perl(Tk::Event::IO) ( ) perl(Tk::Frame) ( ) perl(Tk::HList) ( ) perl(Tk::Image) ( ) perl(Tk::JPEG) ( ) perl(Tk::LabEntry) ( ) perl(Tk::Label) ( ) perl(Tk::MainWindow) ( ) perl(Tk::Menu) ( ) perl(Tk::Menu::Item) ( ) perl(Tk::Menubutton) ( ) perl(Tk::NBFrame) ( ) perl(Tk::Photo) ( ) perl(Tk::Pretty) ( ) perl(Tk::ROText) ( ) perl(Tk::Reindex) ( ) perl(Tk::ReindexedROText) ( ) perl(Tk::Submethods) ( ) perl(Tk::Text) ( ) perl(Tk::TextUndo) ( ) perl(Tk::Toplevel) ( ) perl(Tk::Trace) ( ) perl(Tk::Tree) ( ) perl(Tk::Widget) ( ) perl(Tk::Wm) ( ) perl(Tk::Xlib) ( ) perl(Tk::widgets) ( ) perl(:VERSION) ( >=  5.5.0) perl(:VERSION) ( >=  5.4.0) perl(:VERSION) ( >=  5.2.0) perl(:VERSION) ( >=  5.7.0) perl(Tk) ( >=  800.005) perl(Tk) ( >=  800.015)"
-RPROVIDES:perl-Tk = "perl(Tie::Watch) ( ) perl(Tk::DirTreeDialog) ( ) perl(Tk::DummyEncode::X11ControlChars) ( ) perl(Tk::DummyEncode::iso8859_1) ( ) perl(Tk::Menu::Button) ( ) perl(Tk::Menu::Cascade) ( ) perl(Tk::Menu::Checkbutton) ( ) perl(Tk::Menu::Radiobutton) ( ) perl(Tk::Menu::Separator) ( ) perl(Tk) ( =  804.036) perl(Tk::Adjuster) ( =  4.008) perl(Tk::After) ( =  4.008) perl(Tk::Animation) ( =  4.008) perl(Tk::Balloon) ( =  4.013) perl(Tk::Bitmap) ( =  4.004) perl(Tk::BrowseEntry) ( =  4.015) perl(Tk::Button) ( =  4.010) perl(Tk::Canvas) ( =  4.013) perl(Tk::Checkbutton) ( =  4.006) perl(Tk::Clipboard) ( =  4.009) perl(Tk::CmdLine) ( =  4.007) perl(Tk::ColorDialog) ( =  4.014) perl(Tk::ColorEditor) ( =  4.014) perl(Tk::ColorSelect) ( =  4.014) perl(Tk::Compound) ( =  4.004) perl(Tk::Config) ( =  804.036) perl(Tk::Configure) ( =  4.009) perl(Tk::Derived) ( =  4.011) perl(Tk::Dialog) ( =  4.005) perl(Tk::DialogBox) ( =  4.016) perl(Tk::DirTree) ( =  4.022) perl(Tk::Dirlist) ( =  4.004) perl(Tk::DragDrop) ( =  4.015) perl(Tk::DragDrop::Common) ( =  4.005) perl(Tk::DragDrop::Local) ( =  4.004) perl(Tk::DragDrop::Rect) ( =  4.012) perl(Tk::DragDrop::SunConst) ( =  4.004) perl(Tk::DragDrop::SunDrop) ( =  4.006) perl(Tk::DragDrop::SunSite) ( =  4.007) perl(Tk::DragDrop::XDNDDrop) ( =  4.007) perl(Tk::DragDrop::XDNDSite) ( =  4.007) perl(Tk::DropSite) ( =  4.008) perl(Tk::DummyEncode) ( =  4.007) perl(Tk::English) ( =  4.006) perl(Tk::Entry) ( =  4.018) perl(Tk::ErrorDialog) ( =  4.008) perl(Tk::Event) ( =  4.040) perl(Tk::Event::IO) ( =  4.009) perl(Tk::FBox) ( =  4.021) perl(Tk::FileSelect) ( =  4.018) perl(Tk::FloatEntry) ( =  4.004) perl(Tk::Font) ( =  4.004) perl(Tk::Frame) ( =  4.010) perl(Tk::HList) ( =  4.015) perl(Tk::IO) ( =  4.006) perl(Tk::IconList) ( =  4.007) perl(Tk::Image) ( =  4.011) perl(Tk::InputO) ( =  4.004) perl(Tk::ItemStyle) ( =  4.004) perl(Tk::JPEG) ( =  4.003) perl(Tk::LabEntry) ( =  4.006) perl(Tk::LabFrame) ( =  4.010) perl(Tk::LabRadio) ( =  4.004) perl(Tk::LabRadiobutton) ( =  4.004) perl(Tk::Label) ( =  4.006) perl(Tk::Labelframe) ( =  4.003) perl(Tk::Listbox) ( =  4.015) perl(Tk::MMtry) ( =  4.011) perl(Tk::MainWindow) ( =  4.015) perl(Tk::Menu) ( =  4.023) perl(Tk::Menu::Item) ( =  4.006) perl(Tk::Menubar) ( =  4.006) perl(Tk::Menubutton) ( =  4.005) perl(Tk::Message) ( =  4.006) perl(Tk::MsgBox) ( =  4.002) perl(Tk::Mwm) ( =  4.004) perl(Tk::NBFrame) ( =  4.004) perl(Tk::NoteBook) ( =  4.012) perl(Tk::Optionmenu) ( =  4.014) perl(Tk::PNG) ( =  4.004) perl(Tk::Pane) ( =  4.007) perl(Tk::Panedwindow) ( =  4.004) perl(Tk::Photo) ( =  4.006) perl(Tk::Pixmap) ( =  4.004) perl(Tk::Pretty) ( =  4.006) perl(Tk::ProgressBar) ( =  4.015) perl(Tk::ROText) ( =  4.011) perl(Tk::Radiobutton) ( =  4.006) perl(Tk::Region) ( =  4.006) perl(Tk::Reindex) ( =  4.006) perl(Tk::ReindexedROText) ( =  4.004) perl(Tk::ReindexedText) ( =  4.004) perl(Tk::Scale) ( =  4.004) perl(Tk::Scrollbar) ( =  4.010) perl(Tk::Spinbox) ( =  4.007) perl(Tk::Stats) ( =  4.004) perl(Tk::Submethods) ( =  4.005) perl(Tk::TList) ( =  4.006) perl(Tk::Table) ( =  4.016) perl(Tk::Text) ( =  4.031) perl(Tk::Text::Tag) ( =  4.004) perl(Tk::TextEdit) ( =  4.005) perl(Tk::TextList) ( =  4.006) perl(Tk::TextUndo) ( =  4.015) perl(Tk::Tiler) ( =  4.013) perl(Tk::TixGrid) ( =  4.010) perl(Tk::Toplevel) ( =  4.006) perl(Tk::Trace) ( =  4.009) perl(Tk::Tree) ( =  4.72) perl(Tk::Widget) ( =  4.037) perl(Tk::WinPhoto) ( =  4.005) perl(Tk::Wm) ( =  4.015) perl(Tk::X) ( =  4.005) perl(Tk::X11Font) ( =  4.007) perl(Tk::Xlib) ( =  4.004) perl(Tk::Xrm) ( =  4.005) perl(Tk::widgets) ( =  4.005) perl-Tk ( =  804.036-17.el10) perl-Tk(x86-64) ( =  804.036-17.el10)"
+RDEPENDS:perl-Tk = "
+ perl-libs
+ libpng
+ perl-locale
+ perl-Socket
+ perl-Getopt-Long
+ fontconfig
+ libX11
+ perl-Getopt-Std
+ perl-overload
+ perl-Symbol
+ perl-AutoLoader
+ perl-open
+ perl-subs
+ perl-Carp
+ libXft
+ perl-vars
+ perl-IO
+ perl-Text-Tabs+Wrap
+ perl-Tk
+ perl-DirHandle
+ perl-DynaLoader
+ perl-Encode
+ perl-Exporter
+ perl-base
+ perl-File-Basename
+ perl-PathTools
+ perl-if
+ glibc
+ perl-interpreter
+ libjpeg-turbo
+"
 
 URI_perl-Tk-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Tk-devel-804.036-17.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:perl-Tk-devel = "perl(strict) ( ) perl-libs ( ) perl(Exporter) ( ) perl(Carp) ( ) perl(vars) ( ) perl(File::Basename) ( ) perl(Config) ( ) perl(base) ( ) perl(Cwd) ( ) perl(ExtUtils::MakeMaker) ( ) perl(File::Spec::Functions) ( ) perl(Tk::MakeDepend) ( ) perl(Tk::Config) ( ) perl-Tk ( =  804.036-17.el10)"
-RPROVIDES:perl-Tk-devel = "perl(Tk::MMutil) ( =  4.026) perl(Tk::MakeDepend) ( =  4.016) perl(Tk::install) ( =  4.004) perl-Tk-devel ( =  804.036-17.el10) perl-Tk-devel(x86-64) ( =  804.036-17.el10)"
+RDEPENDS:perl-Tk-devel = "
+ perl-Tk
+ perl-libs
+ perl-Carp
+ perl-vars
+ perl-ExtUtils-MakeMaker
+ perl-Tk-devel
+ perl-File-Basename
+ perl-PathTools
+ perl-Exporter
+ perl-base
+"
 
 URI_perl-Tk-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Tk-tests-804.036-17.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:perl-Tk-tests = "perl(strict) ( ) /usr/bin/perl ( ) perl-Test-Harness ( ) perl(warnings) ( ) perl(Test::More) ( ) /usr/bin/bash ( ) perl(File::Spec) ( ) perl(lib) ( ) perl(Config) ( ) perl(Exporter) ( ) perl(Carp) ( ) perl(vars) ( ) perl(File::Temp) ( ) perl(base) ( ) perl(Data::Dumper) ( ) perl(utf8) ( ) perl(constant) ( ) perl(Encode) ( ) perl(File::Spec::Functions) ( ) perl(Test) ( ) perl(POSIX) ( ) perl(FindBin) ( ) perl(Getopt::Long) ( ) perl(File::Copy) ( ) perl(IO::Socket) ( ) mutter ( ) perl(Devel::Peek) ( ) perl(subs) ( ) google-noto-sans-fonts ( ) font(:lang=en) ( ) liberation-sans-fonts ( ) mesa-dri-drivers ( ) perl(Tk) ( ) perl(Tk::After) ( ) perl(Tk::Balloon) ( ) perl(Tk::BrowseEntry) ( ) perl(Tk::Button) ( ) perl(Tk::Canvas) ( ) perl(Tk::Config) ( ) perl(Tk::Derived) ( ) perl(Tk::FBox) ( ) perl(Tk::Font) ( ) perl(Tk::Frame) ( ) perl(Tk::HList) ( ) perl(Tk::ItemStyle) ( ) perl(Tk::LabEntry) ( ) perl(Tk::NoteBook) ( ) perl(Tk::Photo) ( ) perl(Tk::ROText) ( ) perl(Tk::Spinbox) ( ) perl(Tk::Trace) ( ) perl(Tk::Widget) ( ) perl(Tk::X) ( ) perl(Tk::widgets) ( ) xwayland-run ( ) perl(:VERSION) ( >=  5.5.0) perl-Tk ( =  804.036-17.el10)"
-RPROVIDES:perl-Tk-tests = "perl-Tk-tests ( =  804.036-17.el10) perl-Tk-tests(x86-64) ( =  804.036-17.el10)"
+RDEPENDS:perl-Tk-tests = "
+ perl-libs
+ perl-FindBin
+ perl-Getopt-Long
+ mutter
+ default-fonts-core-sans
+ perl-subs
+ perl-Test
+ perl-Test-Harness
+ perl-Test-Simple
+ perl-Carp
+ perl-vars
+ perl-IO
+ liberation-sans-fonts
+ perl-lib
+ perl-Data-Dumper
+ xwayland-run
+ perl-Devel-Peek
+ perl-Tk
+ mesa-dri-drivers
+ perl-Encode
+ bash
+ google-noto-sans-fonts
+ perl-Exporter
+ perl-base
+ perl-constant
+ perl-POSIX
+ perl-File-Copy
+ perl-PathTools
+ perl-interpreter
+ perl-File-Temp
+"

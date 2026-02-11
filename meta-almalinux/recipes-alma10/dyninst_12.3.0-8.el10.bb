@@ -7,17 +7,36 @@ PACKAGES = "dyninst dyninst-devel dyninst-doc dyninst-testsuite"
 
 
 URI_dyninst = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dyninst-12.3.0-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dyninst = "/sbin/ldconfig ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) ld-linux-x86-64.so.2()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libelf.so.1()(64bit) ( ) libelf.so.1(ELFUTILS_1.0)(64bit) ( ) libelf.so.1(ELFUTILS_1.5)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.7)(64bit) ( ) libdw.so.1()(64bit) ( ) libdw.so.1(ELFUTILS_0.122)(64bit) ( ) libelf.so.1(ELFUTILS_1.6)(64bit) ( ) libdw.so.1(ELFUTILS_0.130)(64bit) ( ) libdw.so.1(ELFUTILS_0.157)(64bit) ( ) libdw.so.1(ELFUTILS_0.142)(64bit) ( ) libdw.so.1(ELFUTILS_0.156)(64bit) ( ) libdw.so.1(ELFUTILS_0.160)(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) libgomp.so.1()(64bit) ( ) libgomp.so.1(GOMP_4.0)(64bit) ( ) libgomp.so.1(OMP_1.0)(64bit) ( ) ld-linux-x86-64.so.2(GLIBC_2.2.5)(64bit) ( ) libboost_thread.so.1.83.0()(64bit) ( ) libdw.so.1(ELFUTILS_0.148)(64bit) ( ) libboost_filesystem.so.1.83.0()(64bit) ( ) libdw.so.1(ELFUTILS_0.159)(64bit) ( ) libtbb.so.12()(64bit) ( ) libgomp.so.1(GOMP_1.0)(64bit) ( ) libgomp.so.1(GOMP_2.0)(64bit) ( ) libtbbmalloc_proxy.so.2()(64bit) ( ) libgomp.so.1(GOMP_4.5)(64bit) ( ) libdw.so.1(ELFUTILS_0.173)(64bit) ( ) libdw.so.1(ELFUTILS_0.186)(64bit) ( )"
-RPROVIDES:dyninst = "libcommon.so.12.3()(64bit) ( ) libinstructionAPI.so.12.3()(64bit) ( ) libparseAPI.so.12.3()(64bit) ( ) libsymtabAPI.so.12.3()(64bit) ( ) libdyninstAPI.so.12.3()(64bit) ( ) libdynC_API.so.12.3()(64bit) ( ) libdynDwarf.so.12.3()(64bit) ( ) libdynElf.so.12.3()(64bit) ( ) libdyninstAPI_RT.so.12.3()(64bit) ( ) libpatchAPI.so.12.3()(64bit) ( ) libpcontrol.so.12.3()(64bit) ( ) libstackwalk.so.12.3()(64bit) ( ) libsymLite.so.12.3()(64bit) ( ) config(dyninst) ( =  12.3.0-8.el10) dyninst ( =  12.3.0-8.el10) dyninst(x86-64) ( =  12.3.0-8.el10)"
+RDEPENDS:dyninst = "
+ boost-filesystem
+ elfutils-debuginfod-client
+ libgcc
+ elfutils-libelf
+ libgomp
+ elfutils-libs
+ boost-thread
+ libstdc++
+ glibc
+ tbb
+"
 
 URI_dyninst-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/dyninst-devel-12.3.0-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dyninst-devel = "cmake-filesystem(x86-64) ( ) boost-devel ( ) libdyninstAPI.so.12.3()(64bit) ( ) libcommon.so.12.3()(64bit) ( ) libdynC_API.so.12.3()(64bit) ( ) libdynDwarf.so.12.3()(64bit) ( ) libdynElf.so.12.3()(64bit) ( ) libdyninstAPI_RT.so.12.3()(64bit) ( ) libinstructionAPI.so.12.3()(64bit) ( ) libparseAPI.so.12.3()(64bit) ( ) libpatchAPI.so.12.3()(64bit) ( ) libpcontrol.so.12.3()(64bit) ( ) libstackwalk.so.12.3()(64bit) ( ) libsymLite.so.12.3()(64bit) ( ) libsymtabAPI.so.12.3()(64bit) ( ) tbb-devel ( ) dyninst ( =  12.3.0-8.el10)"
-RPROVIDES:dyninst-devel = "dyninst-devel ( =  12.3.0-8.el10) cmake(Dyninst) ( =  12.3.0) cmake(dyninst) ( =  12.3.0) dyninst-devel(x86-64) ( =  12.3.0-8.el10)"
+RDEPENDS:dyninst-devel = "
+ cmake-filesystem
+ tbb-devel
+ dyninst
+ boost-devel
+"
 
 URI_dyninst-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/dyninst-doc-12.3.0-8.el10.x86_64_v2.rpm;unpack=0"
 RDEPENDS:dyninst-doc = ""
-RPROVIDES:dyninst-doc = "dyninst-doc ( =  12.3.0-8.el10) dyninst-doc(x86-64) ( =  12.3.0-8.el10)"
 
 URI_dyninst-testsuite = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/dyninst-testsuite-12.3.0-8.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:dyninst-testsuite = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libdyninstAPI.so.12.3()(64bit) ( ) libtbbmalloc_proxy.so.2()(64bit) ( ) dyninst ( =  12.3.0-8.el10) dyninst-devel ( =  12.3.0-8.el10)"
-RPROVIDES:dyninst-testsuite = "dyninst-testsuite ( =  12.3.0-8.el10) dyninst-testsuite(x86-64) ( =  12.3.0-8.el10)"
+RDEPENDS:dyninst-testsuite = "
+ libgcc
+ dyninst
+ libstdc++
+ dyninst-devel
+ glibc
+ tbb
+"

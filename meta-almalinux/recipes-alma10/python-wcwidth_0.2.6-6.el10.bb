@@ -7,5 +7,6 @@ PACKAGES = "python3-wcwidth"
 
 
 URI_python3-wcwidth = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-wcwidth-0.2.6-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-wcwidth = "python(abi) ( =  3.12)"
-RPROVIDES:python3-wcwidth = "python-wcwidth ( =  0.2.6-6.el10) python3-wcwidth ( =  0.2.6-6.el10) python3.12-wcwidth ( =  0.2.6-6.el10) python3.12dist(wcwidth) ( =  0.2.6) python3dist(wcwidth) ( =  0.2.6)"
+RDEPENDS:python3-wcwidth = "
+ python3
+"

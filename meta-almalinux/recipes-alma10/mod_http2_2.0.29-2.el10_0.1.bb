@@ -7,5 +7,9 @@ PACKAGES = "mod_http2"
 
 
 URI_mod_http2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mod_http2-2.0.29-2.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mod_http2 = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libnghttp2.so.14()(64bit) ( ) httpd-mmn ( =  20120211x8664)"
-RPROVIDES:mod_http2 = "config(mod_http2) ( =  2.0.29-2.el10_0.1) mod_http2 ( =  2.0.29-2.el10_0.1) mod_http2(x86-64) ( =  2.0.29-2.el10_0.1)"
+RDEPENDS:mod_http2 = "
+ glibc
+ openssl-libs
+ httpd-core
+ libnghttp2
+"

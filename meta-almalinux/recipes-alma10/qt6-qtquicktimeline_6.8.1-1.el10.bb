@@ -7,13 +7,31 @@ PACKAGES = "qt6-qtquicktimeline qt6-qtquicktimeline-devel qt6-qtquicktimeline-te
 
 
 URI_qt6-qtquicktimeline = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtquicktimeline-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtquicktimeline = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtquicktimeline = "libQt6QuickTimeline.so.6()(64bit) ( ) libQt6QuickTimeline.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6QuickTimelineBlendTrees.so.6()(64bit) ( ) libQt6QuickTimeline.so.6(NonQt)(64bit) ( ) libQt6QuickTimeline.so.6(Qt_6)(64bit) ( ) libQt6QuickTimelineBlendTrees.so.6(NonQt)(64bit) ( ) libQt6QuickTimelineBlendTrees.so.6(Qt_6)(64bit) ( ) libQt6QuickTimelineBlendTrees.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtquicktimelineblendtreesplugin.so()(64bit) ( ) libqtquicktimelineblendtreesplugin.so(NonQt)(64bit) ( ) libqtquicktimelineblendtreesplugin.so(Qt_6)(64bit) ( ) libqtquicktimelineblendtreesplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtquicktimelineplugin.so()(64bit) ( ) libqtquicktimelineplugin.so(NonQt)(64bit) ( ) libqtquicktimelineplugin.so(Qt_6)(64bit) ( ) libqtquicktimelineplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtQuick.Timeline) ( ) qt6qml(QtQuick.Timeline.BlendTrees) ( ) qt6-qtquicktimeline(x86-64) ( =  6.8.1-1.el10) qt6-qtquicktimeline ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtquicktimeline = "
+ qt6-qtdeclarative
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtquicktimeline-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtquicktimeline-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtquicktimeline-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) pkgconfig(Qt6Qml) ( ) pkgconfig(Qt6Quick) ( ) qt6-qtdeclarative-devel(x86-64) ( ) libQt6QuickTimeline.so.6()(64bit) ( ) libQt6QuickTimelineBlendTrees.so.6()(64bit) ( ) pkgconfig(Qt6QuickTimeline) ( ) qt6-qtquicktimeline(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtquicktimeline-devel = "cmake(Qt6QuickTimeline) ( ) cmake(Qt6QuickTimelineBlendTrees) ( ) cmake(Qt6qtquicktimelineblendtreesplugin) ( ) cmake(Qt6qtquicktimelineplugin) ( ) cmake(QtQuickTimelineTests) ( ) cmake(qt6qtquicktimelineblendtreesplugin) ( ) cmake(qt6qtquicktimelineplugin) ( ) cmake(qt6quicktimeline) ( ) cmake(qt6quicktimelineblendtrees) ( ) cmake(qtquicktimelinetests) ( ) pkgconfig(Qt6QuickTimeline) ( =  6.8.1) pkgconfig(Qt6QuickTimelineBlendTrees) ( =  6.8.1) qt6-qtquicktimeline-devel ( =  6.8.1-1.el10) qt6-qtquicktimeline-devel(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtquicktimeline-devel = "
+ qt6-qtdeclarative-devel
+ cmake-filesystem
+ pkgconf-pkg-config
+ qt6-qtbase-devel
+ qt6-qtquicktimeline
+ qt6-qtquicktimeline-devel
+"
 
 URI_qt6-qtquicktimeline-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtquicktimeline-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtquicktimeline-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) qt6-qtquicktimeline(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtquicktimeline-tests = "qt6-qtquicktimeline-tests ( =  6.8.1-1.el10) qt6-qtquicktimeline-tests(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtquicktimeline-tests = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ qt6-qtquicktimeline
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"

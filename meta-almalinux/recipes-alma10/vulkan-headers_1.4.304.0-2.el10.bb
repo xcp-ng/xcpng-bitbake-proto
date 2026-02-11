@@ -7,5 +7,7 @@ PACKAGES = "vulkan-headers"
 
 
 URI_vulkan-headers = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/vulkan-headers-1.4.304.0-2.el10.noarch.rpm;unpack=0"
-RDEPENDS:vulkan-headers = "/usr/bin/python3 ( ) cmake-filesystem ( )"
-RPROVIDES:vulkan-headers = "cmake(VulkanHeaders) ( =  1.4.304) cmake(vulkanheaders) ( =  1.4.304) vulkan-headers ( =  1.4.304.0-2.el10)"
+RDEPENDS:vulkan-headers = "
+ python3
+ cmake-filesystem
+"

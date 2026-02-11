@@ -7,21 +7,32 @@ PACKAGES = "nmstate nmstate-libs python3-libnmstate nmstate-devel nmstate-static
 
 
 URI_nmstate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nmstate-2.2.54-1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nmstate = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) ld-linux-x86-64.so.2()(64bit) ( ) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libc.so.6(GLIBC_2.39)(64bit) ( ) nmstate-libs(x86-64) ( if  nmstate-libs)"
-RPROVIDES:nmstate = "bundled(crate(pin-utils)) ( =  0.1.0) bundled(crate(bitflags)) ( =  1.3.2) bundled(crate(hex)) ( =  0.4.3) bundled(crate(atty)) ( =  0.2.14) bundled(crate(strsim)) ( =  0.10.0) bundled(crate(termcolor)) ( =  1.4.1) bundled(crate(static_assertions)) ( =  1.1.0) bundled(crate(indexmap)) ( =  1.9.3) bundled(crate(hashbrown)) ( =  0.12.3) bundled(crate(clap)) ( =  3.2.25) bundled(crate(clap_lex)) ( =  0.2.4) bundled(crate(aho-corasick)) ( =  1.1.3) bundled(crate(num-traits)) ( =  0.2.19) bundled(crate(utf8parse)) ( =  0.2.2) bundled(crate(unsafe-libyaml)) ( =  0.2.11) bundled(crate(cfg_aliases)) ( =  0.2.1) bundled(crate(is_terminal_polyfill)) ( =  1.70.1) bundled(crate(nix)) ( =  0.29.0) bundled(crate(os_str_bytes)) ( =  6.6.1) bundled(crate(pin-project-lite)) ( =  0.2.16) bundled(crate(tracing)) ( =  0.1.41) bundled(crate(futures-channel)) ( =  0.3.31) bundled(crate(futures-core)) ( =  0.3.31) bundled(crate(futures-task)) ( =  0.3.31) bundled(crate(futures-util)) ( =  0.3.31) bundled(crate(memoffset)) ( =  0.9.1) bundled(crate(thiserror)) ( =  1.0.69) bundled(crate(thiserror-impl)) ( =  1.0.69) bundled(crate(fastrand)) ( =  2.3.0) bundled(crate(futures-io)) ( =  0.3.31) bundled(crate(futures-sink)) ( =  0.3.31) bundled(crate(futures-executor)) ( =  0.3.31) bundled(crate(futures-macro)) ( =  0.3.31) bundled(crate(crossbeam-utils)) ( =  0.8.21) bundled(crate(itoa)) ( =  1.0.15) bundled(crate(endi)) ( =  1.1.0) bundled(crate(ordered-stream)) ( =  0.2.0) bundled(crate(futures)) ( =  0.3.31) bundled(crate(once_cell)) ( =  1.21.3) bundled(crate(serde_yaml)) ( =  0.9.34) bundled(crate(equivalent)) ( =  1.0.2) bundled(crate(concurrent-queue)) ( =  2.5.0) bundled(crate(parking)) ( =  2.2.1) bundled(crate(async-broadcast)) ( =  0.7.2) bundled(crate(paste)) ( =  1.0.15) bundled(crate(ryu)) ( =  1.0.20) bundled(crate(textwrap)) ( =  0.16.2) bundled(crate(anstyle-parse)) ( =  0.2.7) bundled(crate(colorchoice)) ( =  1.0.4) bundled(crate(netlink-sys)) ( =  0.8.7) bundled(crate(autocfg)) ( =  1.5.0) bundled(crate(tracing-attributes)) ( =  0.1.30) bundled(crate(tracing-core)) ( =  0.1.34) bundled(crate(bytes)) ( =  1.10.1) bundled(crate(serde_repr)) ( =  0.1.20) bundled(crate(sha1_smol)) ( =  1.0.1) bundled(crate(zbus_names)) ( =  4.2.0) bundled(crate(proc-macro2)) ( =  1.0.101) bundled(crate(slab)) ( =  0.4.11) bundled(crate(enumflags2)) ( =  0.7.12) bundled(crate(enumflags2_derive)) ( =  0.7.12) bundled(crate(env_logger)) ( =  0.11.8) bundled(crate(event-listener-strategy)) ( =  0.5.4) bundled(crate(jiff)) ( =  0.2.15) bundled(crate(nix)) ( =  0.30.1) bundled(crate(anstream)) ( =  0.6.21) bundled(crate(anstyle)) ( =  1.0.13) bundled(crate(anstyle-query)) ( =  1.1.4) bundled(crate(async-trait)) ( =  0.1.89) bundled(crate(bitflags)) ( =  2.10.0) bundled(crate(cfg-if)) ( =  1.0.4) bundled(crate(chrono)) ( =  0.4.42) bundled(crate(env_filter)) ( =  0.1.4) bundled(crate(ethtool)) ( =  0.2.9) bundled(crate(event-listener)) ( =  5.4.1) bundled(crate(futures-lite)) ( =  2.6.1) bundled(crate(genetlink)) ( =  0.2.6) bundled(crate(getrandom)) ( =  0.3.4) bundled(crate(hashbrown)) ( =  0.16.0) bundled(crate(iana-time-zone)) ( =  0.1.64) bundled(crate(indexmap)) ( =  2.12.0) bundled(crate(libc)) ( =  0.2.177) bundled(crate(log)) ( =  0.4.28) bundled(crate(memchr)) ( =  2.7.6) bundled(crate(mio)) ( =  1.1.0) bundled(crate(mptcp-pm)) ( =  0.1.4) bundled(crate(netlink-packet-core)) ( =  0.8.1) bundled(crate(netlink-packet-generic)) ( =  0.4.0) bundled(crate(netlink-packet-route)) ( =  0.25.1) bundled(crate(netlink-proto)) ( =  0.12.0) bundled(crate(nispor)) ( =  1.2.27) bundled(crate(proc-macro-crate)) ( =  3.4.0) bundled(crate(quote)) ( =  1.0.41) bundled(crate(regex)) ( =  1.12.2) bundled(crate(regex-automata)) ( =  0.4.13) bundled(crate(regex-syntax)) ( =  0.8.8) bundled(crate(rtnetlink)) ( =  0.18.1) bundled(crate(serde)) ( =  1.0.228) bundled(crate(serde_core)) ( =  1.0.228) bundled(crate(serde_derive)) ( =  1.0.228) bundled(crate(serde_json)) ( =  1.0.145) bundled(crate(serde_spanned)) ( =  1.0.3) bundled(crate(signal-hook-registry)) ( =  1.4.6) bundled(crate(socket2)) ( =  0.6.1) bundled(crate(syn)) ( =  2.0.107) bundled(crate(thiserror)) ( =  2.0.17) bundled(crate(thiserror-impl)) ( =  2.0.17) bundled(crate(tokio)) ( =  1.48.0) bundled(crate(tokio-macros)) ( =  2.6.0) bundled(crate(toml)) ( =  0.9.8) bundled(crate(toml_datetime)) ( =  0.7.3) bundled(crate(toml_edit)) ( =  0.23.7) bundled(crate(toml_parser)) ( =  1.0.4) bundled(crate(toml_writer)) ( =  1.0.4) bundled(crate(unicode-ident)) ( =  1.0.19) bundled(crate(uuid)) ( =  1.18.1) bundled(crate(winnow)) ( =  0.7.13) bundled(crate(wl-nl80211)) ( =  0.3.2) bundled(crate(zbus)) ( =  5.12.0) bundled(crate(zbus_macros)) ( =  5.12.0) bundled(crate(zvariant)) ( =  5.8.0) bundled(crate(zvariant_derive)) ( =  5.8.0) bundled(crate(zvariant_utils)) ( =  3.2.1) nmstate ( =  2.2.54-1.el10_0) nmstate(x86-64) ( =  2.2.54-1.el10_0)"
+RDEPENDS:nmstate = "
+ glibc
+ nmstate-libs
+ libgcc
+"
 
 URI_nmstate-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nmstate-libs-2.2.54-1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nmstate-libs = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) ld-linux-x86-64.so.2()(64bit) ( ) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libc.so.6(GLIBC_2.39)(64bit) ( )"
-RPROVIDES:nmstate-libs = "libnmstate.so.2()(64bit) ( ) nmstate-libs(x86-64) ( =  2.2.54-1.el10_0) nmstate-libs ( =  2.2.54-1.el10_0)"
+RDEPENDS:nmstate-libs = "
+ glibc
+ libgcc
+"
 
 URI_python3-libnmstate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-libnmstate-2.2.54-1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:python3-libnmstate = "python3.12dist(pyyaml) ( ) python(abi) ( =  3.12) nmstate-libs(x86-64) ( =  2.2.54-1.el10_0)"
-RPROVIDES:python3-libnmstate = "nmstate-plugin-ovsdb ( =  2.2.54-1.el10_0) python-libnmstate ( =  2.2.54-1.el10_0) python3-libnmstate ( =  2.2.54-1.el10_0) python3-libnmstate(x86-64) ( =  2.2.54-1.el10_0) python3.12-libnmstate ( =  2.2.54-1.el10_0) python3.12dist(nmstate) ( =  2.2.54) python3dist(nmstate) ( =  2.2.54)"
+RDEPENDS:python3-libnmstate = "
+ python3
+ python3-pyyaml
+ nmstate-libs
+"
 
 URI_nmstate-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nmstate-devel-2.2.54-1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nmstate-devel = "/usr/bin/pkg-config ( ) libnmstate.so.2()(64bit) ( ) nmstate-libs(x86-64) ( =  2.2.54-1.el10_0)"
-RPROVIDES:nmstate-devel = "nmstate-devel(x86-64) ( =  2.2.54-1.el10_0) nmstate-devel ( =  2.2.54-1.el10_0) pkgconfig(nmstate) ( =  2.2.54)"
+RDEPENDS:nmstate-devel = "
+ nmstate-libs
+ pkgconf-pkg-config
+"
 
 URI_nmstate-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nmstate-static-2.2.54-1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nmstate-static = "nmstate-devel(x86-64) ( =  2.2.54-1.el10_0)"
-RPROVIDES:nmstate-static = "nmstate-static ( =  2.2.54-1.el10_0) nmstate-static(x86-64) ( =  2.2.54-1.el10_0)"
+RDEPENDS:nmstate-static = "
+ nmstate-devel
+"

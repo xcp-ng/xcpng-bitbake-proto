@@ -7,17 +7,40 @@ PACKAGES = "qt6-qt5compat qt6-qt5compat-devel qt6-qt5compat-examples qt6-qt5comp
 
 
 URI_qt6-qt5compat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qt5compat-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qt5compat = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libicuuc.so.74()(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6ShaderTools.so.6()(64bit) ( ) libQt6ShaderTools.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qt5compat = "libQt6Core5Compat.so.6()(64bit) ( ) libQt6Core5Compat.so.6(Qt_6)(64bit) ( ) libQt6Core5Compat.so.6(NonQt)(64bit) ( ) libQt6Core5Compat.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtgraphicaleffectsplugin.so()(64bit) ( ) libqtgraphicaleffectsplugin.so(NonQt)(64bit) ( ) libqtgraphicaleffectsplugin.so(Qt_6)(64bit) ( ) libqtgraphicaleffectsplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtgraphicaleffectsprivateplugin.so()(64bit) ( ) libqtgraphicaleffectsprivateplugin.so(NonQt)(64bit) ( ) libqtgraphicaleffectsprivateplugin.so(Qt_6)(64bit) ( ) libqtgraphicaleffectsprivateplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(Qt5Compat.GraphicalEffects) ( ) qt6qml(Qt5Compat.GraphicalEffects.private) ( ) qt6-qt5compat(x86-64) ( =  6.8.1-1.el10) qt6-qt5compat ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qt5compat = "
+ qt6-qtdeclarative
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ libicu
+ qt6-qtshadertools
+"
 
 URI_qt6-qt5compat-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qt5compat-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qt5compat-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) libQt6Core5Compat.so.6()(64bit) ( ) qt6-qt5compat(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qt5compat-devel = "cmake(Qt5CompatTests) ( ) cmake(Qt6Core5Compat) ( ) cmake(Qt6qtgraphicaleffectsplugin) ( ) cmake(Qt6qtgraphicaleffectsprivate) ( ) cmake(qt5compattests) ( ) cmake(qt6core5compat) ( ) cmake(qt6qtgraphicaleffectsplugin) ( ) cmake(qt6qtgraphicaleffectsprivate) ( ) pkgconfig(Qt6Core5Compat) ( =  6.8.1) qt6-qt5compat-devel ( =  6.8.1-1.el10) qt6-qt5compat-devel(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qt5compat-devel = "
+ qt6-qtbase-devel
+ qt6-qt5compat
+ cmake-filesystem
+ pkgconf-pkg-config
+"
 
 URI_qt6-qt5compat-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qt5compat-examples-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qt5compat-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Core5Compat.so.6()(64bit) ( ) libQt6Core5Compat.so.6(Qt_6)(64bit) ( ) qt6-qt5compat(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qt5compat-examples = "qt6-qt5compat-examples ( =  6.8.1-1.el10) qt6-qt5compat-examples(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qt5compat-examples = "
+ libgcc
+ qt6-qt5compat
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qt5compat-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qt5compat-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qt5compat-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/bash ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.1)(64bit) ( ) libQt6Core5Compat.so.6()(64bit) ( ) libQt6Core5Compat.so.6(Qt_6)(64bit) ( ) qt6-qt5compat(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qt5compat-tests = "qt6-qt5compat-tests ( =  6.8.1-1.el10) qt6-qt5compat-tests(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qt5compat-tests = "
+ libgcc
+ qt6-qt5compat
+ qt6-qtbase
+ libstdc++
+ bash
+ glibc
+"

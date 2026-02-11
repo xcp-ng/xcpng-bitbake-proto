@@ -7,53 +7,107 @@ PACKAGES = "nspr nspr-devel nss nss-devel nss-softokn nss-softokn-devel nss-soft
 
 
 URI_nspr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nspr-4.36.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nspr = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( )"
-RPROVIDES:nspr = "libnspr4.so()(64bit) ( ) libplc4.so()(64bit) ( ) libplds4.so()(64bit) ( ) nspr(x86-64) ( =  4.36.0-4.el10_0) nspr ( =  4.36.0-4.el10_0)"
+RDEPENDS:nspr = "
+ glibc
+"
 
 URI_nspr-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nspr-devel-4.36.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nspr-devel = "/usr/bin/sh ( ) /usr/bin/pkg-config ( ) pkgconfig ( ) nspr(x86-64) ( =  4.36.0-4.el10_0)"
-RPROVIDES:nspr-devel = "nspr-devel ( =  4.36.0-4.el10_0) nspr-devel(x86-64) ( =  4.36.0-4.el10_0) pkgconfig(nspr) ( =  4.36.0)"
+RDEPENDS:nspr-devel = "
+ bash
+ pkgconf-pkg-config
+ nspr
+"
 
 URI_nss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libnspr4.so()(64bit) ( ) libplc4.so()(64bit) ( ) libnssutil3.so()(64bit) ( ) libplds4.so()(64bit) ( ) libnssutil3.so(NSSUTIL_3.12)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.3)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.5)(64bit) ( ) libnssutil3.so(NSSUTIL_3.13)(64bit) ( ) p11-kit-trust ( ) libnssutil3.so(NSSUTIL_3.15)(64bit) ( ) libnssutil3.so(NSSUTIL_3.14)(64bit) ( ) libnssutil3.so(NSSUTIL_3.101)(64bit) ( ) libnssutil3.so(NSSUTIL_3.17.1)(64bit) ( ) libnssutil3.so(NSSUTIL_3.24)(64bit) ( ) libnssutil3.so(NSSUTIL_3.38)(64bit) ( ) libnssutil3.so(NSSUTIL_3.94)(64bit) ( ) libnssutil3.so(NSSUTIL_3.21)(64bit) ( ) libnssutil3.so(NSSUTIL_3.31)(64bit) ( ) libnssutil3.so(NSSUTIL_3.39)(64bit) ( ) libnssutil3.so(NSSUTIL_3.59)(64bit) ( ) libnssutil3.so(NSSUTIL_3.82)(64bit) ( ) nss-system-init ( ) libnssutil3.so(NSSUTIL_3.108)(64bit) ( ) libnssutil3.so(NSSUTIL_3.25)(64bit) ( ) nspr ( >=  4.36.0) crypto-policies ( >=  20240522) nss-softokn(x86-64) ( >=  3.112.0) nss-util ( >=  3.112.0)"
-RPROVIDES:nss = "libnss3.so()(64bit) ( ) libnss3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.2)(64bit) ( ) libsmime3.so()(64bit) ( ) libssl3.so()(64bit) ( ) libnss3.so(NSS_3.9.2)(64bit) ( ) libnss3.so(NSS_3.12)(64bit) ( ) libnss3.so(NSS_3.3)(64bit) ( ) libsmime3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.5)(64bit) ( ) libssl3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.10)(64bit) ( ) libnss3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.9)(64bit) ( ) libsmime3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.12.5)(64bit) ( ) libnss3.so(NSS_3.7)(64bit) ( ) libnss3.so(NSS_3.8)(64bit) ( ) libssl3.so(NSS_3.14)(64bit) ( ) libnss3.so(NSS_3.15)(64bit) ( ) libssl3.so(NSS_3.12.6)(64bit) ( ) libnss3.so(NSS_3.9.3)(64bit) ( ) libssl3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.11)(64bit) ( ) libnss3.so(NSS_3.16.2)(64bit) ( ) libnss3.so(NSS_3.21)(64bit) ( ) libnss3.so(NSS_3.30)(64bit) ( ) libnss3.so(NSS_3.52)(64bit) ( ) libssl3.so(NSS_3.13.2)(64bit) ( ) libssl3.so(NSS_3.15.4)(64bit) ( ) libssl3.so(NSS_3.33)(64bit) ( ) libnss3.so(NSS_3.12.4)(64bit) ( ) libnss3.so(NSS_3.13)(64bit) ( ) libnss3.so(NSS_3.16.1)(64bit) ( ) libsmime3.so(NSS_3.16)(64bit) ( ) libssl3.so(NSS_3.15)(64bit) ( ) libssl3.so(NSS_3.22)(64bit) ( ) libssl3.so(NSS_3.27)(64bit) ( ) libssl3.so(NSS_3.28)(64bit) ( ) libssl3.so(NSS_3.80)(64bit) ( ) libnss3.so(NSS_3.11.2)(64bit) ( ) libnss3.so(NSS_3.22)(64bit) ( ) libssl3.so(NSS_3.21)(64bit) ( ) libssl3.so(NSS_3.30.0.1)(64bit) ( ) libnss3.so(NSS_3.101)(64bit) ( ) libnss3.so(NSS_3.19)(64bit) ( ) libnss3.so(NSS_3.45)(64bit) ( ) libnss3.so(NSS_3.47)(64bit) ( ) libnss3.so(NSS_3.55)(64bit) ( ) libnss3.so(NSS_3.58)(64bit) ( ) libnss3.so(NSS_3.79)(64bit) ( ) libsmime3.so(NSS_3.13)(64bit) ( ) libssl3.so(NSS_3.13)(64bit) ( ) libssl3.so(NSS_3.23)(64bit) ( ) libnss3.so(NSS_3.31)(64bit) ( ) libnss3.so(NSS_3.10.2)(64bit) ( ) libnss3.so(NSS_3.12.3)(64bit) ( ) libnss3.so(NSS_3.44)(64bit) ( ) libnss3.so(NSS_3.34)(64bit) ( ) libsmime3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.12.9)(64bit) ( ) libsmime3.so(NSS_3.4.1)(64bit) ( ) libnss3.so(NSS_3.13.2)(64bit) ( ) libnss3.so(NSS_3.2.1)(64bit) ( ) libnss3.so(NSS_3.43)(64bit) ( ) libsmime3.so(NSS_3.89)(64bit) ( ) libsmime3.so(NSS_3.99)(64bit) ( ) libnss3.so(NSS_3.11.7)(64bit) ( ) libsmime3.so(NSS_3.3)(64bit) ( ) libssl3.so(NSS_3.7.4)(64bit) ( ) libssl3.so(NSS_3.20)(64bit) ( ) libssl3.so(NSS_3.24)(64bit) ( ) libnss3.so(NSS_3.107)(64bit) ( ) libnss3.so(NSS_3.12.1)(64bit) ( ) libnss3.so(NSS_3.18)(64bit) ( ) libsmime3.so(NSS_3.9.3)(64bit) ( ) libnss3.so(NSS_3.12.6)(64bit) ( ) libnss3.so(NSS_3.14)(64bit) ( ) libnss3.so(NSS_3.14.1)(64bit) ( ) libnss3.so(NSS_3.33)(64bit) ( ) libnss3.so(NSS_3.39)(64bit) ( ) libsmime3.so(NSS_3.10)(64bit) ( ) libnss3.so(NSS_3.15.4)(64bit) ( ) libnss3.so(NSS_3.3.1)(64bit) ( ) libnss3.so(NSS_3.59)(64bit) ( ) libsmime3.so(NSS_3.15)(64bit) ( ) libnss3.so(NSS_3.11.1)(64bit) ( ) libnss3.so(NSS_3.11.9)(64bit) ( ) libnss3.so(NSS_3.12.10)(64bit) ( ) libnss3.so(NSS_3.12.7)(64bit) ( ) libnss3.so(NSS_3.14.3)(64bit) ( ) libnss3.so(NSS_3.19.1)(64bit) ( ) libnss3.so(NSS_3.53)(64bit) ( ) libnss3.so(NSS_3.62)(64bit) ( ) libnss3.so(NSS_3.65)(64bit) ( ) libnss3.so(NSS_3.66)(64bit) ( ) libnss3.so(NSS_3.7.1)(64bit) ( ) libnss3.so(NSS_3.77)(64bit) ( ) libsmime3.so(NSS_3.101)(64bit) ( ) libsmime3.so(NSS_3.12.10)(64bit) ( ) libsmime3.so(NSS_3.12.2)(64bit) ( ) libsmime3.so(NSS_3.18)(64bit) ( ) libsmime3.so(NSS_3.2.1)(64bit) ( ) libsmime3.so(NSS_3.7)(64bit) ( ) libsmime3.so(NSS_3.7.2)(64bit) ( ) libsmime3.so(NSS_3.8)(64bit) ( ) libsmime3.so(NSS_3.9)(64bit) ( ) libssl3.so(NSS_3.11.4)(64bit) ( ) libssl3.so(NSS_3.11.8)(64bit) ( ) libssl3.so(NSS_3.12.10)(64bit) ( ) libssl3.so(NSS_3.2.1)(64bit) ( ) libssl3.so(NSS_3.30)(64bit) ( ) libssl3.so(NSS_3.77)(64bit) ( ) libnss3.so(NSS_3.110)(64bit) ( ) nss(x86-64) ( =  3.112.0-4.el10_0) config(nss) ( =  3.112.0-4.el10_0) nss ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss = "
+ crypto-policies
+ nss-softokn
+ p11-kit-trust
+ nss-sysinit
+ nss-util
+ bash
+ glibc
+ nspr
+"
 
 URI_nss-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-devel = "/usr/bin/sh ( ) /usr/bin/pkg-config ( ) pkgconfig ( ) nss-util-devel ( ) nss-softokn-devel ( ) nss(x86-64) ( =  3.112.0-4.el10_0) nspr-devel ( >=  4.36.0) pkgconfig(nspr) ( >=  4.36.0) pkgconfig(nss-util) ( >=  3.112.0)"
-RPROVIDES:nss-devel = "nss-devel ( =  3.112.0-4.el10_0) nss-devel(x86-64) ( =  3.112.0-4.el10_0) nss-static ( =  3.112.0-4.el10_0) pkgconfig(nss) ( =  3.112.0)"
+RDEPENDS:nss-devel = "
+ nspr-devel
+ nss
+ nss-softokn-devel
+ pkgconf-pkg-config
+ bash
+ nss-util-devel
+"
 
 URI_nss-softokn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-softokn = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libnspr4.so()(64bit) ( ) libplc4.so()(64bit) ( ) libnssutil3.so()(64bit) ( ) libplds4.so()(64bit) ( ) libsqlite3.so.0()(64bit) ( ) libnssutil3.so(NSSUTIL_3.12)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.3)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.5)(64bit) ( ) libnssutil3.so(NSSUTIL_3.13)(64bit) ( ) libnssutil3.so(NSSUTIL_3.15)(64bit) ( ) libnssutil3.so(NSSUTIL_3.14)(64bit) ( ) libnssutil3.so(NSSUTIL_3.17.1)(64bit) ( ) libnssutil3.so(NSSUTIL_3.38)(64bit) ( ) libnssutil3.so(NSSUTIL_3.94)(64bit) ( ) libnssutil3.so(NSSUTIL_3.33)(64bit) ( ) libnssutil3.so(NSSUTIL_3.108)(64bit) ( ) nspr ( >=  4.36.0) nss-softokn-freebl(x86-64) ( >=  3.112.0-4.el10_0) nss-util ( >=  3.112.0-4.el10_0)"
-RPROVIDES:nss-softokn = "libsoftokn3.so()(64bit) ( ) libsoftokn3.so(NSS_3.4)(64bit) ( ) libsoftokn3.so(NSS_3.52)(64bit) ( ) nss-softokn(x86-64) ( =  3.112.0-4.el10_0) nss-softokn ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss-softokn = "
+ nss-softokn-freebl
+ sqlite-libs
+ nss-util
+ glibc
+ nspr
+"
 
 URI_nss-softokn-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-softokn-devel = "/usr/bin/sh ( ) /usr/bin/pkg-config ( ) pkgconfig ( ) nspr-devel ( >=  4.36.0) pkgconfig(nspr) ( >=  4.36.0) pkgconfig(nss-util) ( >=  3.112.0) nss-softokn(x86-64) ( =  3.112.0-4.el10_0) nss-softokn-freebl-devel(x86-64) ( =  3.112.0-4.el10_0) nss-util-devel ( >=  3.112.0-4.el10_0)"
-RPROVIDES:nss-softokn-devel = "nss-softokn-devel ( =  3.112.0-4.el10_0) nss-softokn-devel(x86-64) ( =  3.112.0-4.el10_0) pkgconfig(nss-softokn) ( =  3.112.0)"
+RDEPENDS:nss-softokn-devel = "
+ nspr-devel
+ nss-softokn
+ pkgconf-pkg-config
+ nss-softokn-freebl-devel
+ bash
+ nss-util-devel
+"
 
 URI_nss-softokn-freebl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-freebl-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-softokn-freebl = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/bash ( ) nspr ( >=  4.12) nss-util ( >=  3.33)"
-RPROVIDES:nss-softokn-freebl = "libfreebl3.so()(64bit) ( ) libfreebl3.so(NSSRAWHASH_3.12.3)(64bit) ( ) libfreebl3.so(NSSprivate_3.11)(64bit) ( ) libfreeblpriv3.so()(64bit) ( ) libfreeblpriv3.so(NSSprivate_3.11)(64bit) ( ) libfreeblpriv3.so(NSSprivate_3.16)(64bit) ( ) nss-softokn-freebl(x86-64) ( =  3.112.0-4.el10_0) nss-softokn-freebl ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss-softokn-freebl = "
+ glibc
+ nss-util
+ bash
+ nspr
+"
 
 URI_nss-softokn-freebl-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-freebl-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-softokn-freebl-devel = "nss-softokn-freebl(x86-64) ( =  3.112.0-4.el10_0)"
-RPROVIDES:nss-softokn-freebl-devel = "nss-softokn-freebl-devel(x86-64) ( =  3.112.0-4.el10_0) nss-softokn-freebl-devel ( =  3.112.0-4.el10_0) nss-softokn-freebl-static ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss-softokn-freebl-devel = "
+ nss-softokn-freebl
+"
 
 URI_nss-sysinit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-sysinit-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-sysinit = "coreutils ( ) sed ( ) rtld(GNU_HASH) ( ) /bin/sh ( ) /usr/bin/sh ( ) libnspr4.so()(64bit) ( ) libplc4.so()(64bit) ( ) libnssutil3.so()(64bit) ( ) libc.so.6(GLIBC_2.33)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12)(64bit) ( ) libnssutil3.so(NSSUTIL_3.14)(64bit) ( ) nss(x86-64) ( =  3.112.0-4.el10_0)"
-RPROVIDES:nss-sysinit = "nss-system-init ( ) libnsssysinit.so()(64bit) ( ) libnsssysinit.so(NSS_3.15)(64bit) ( ) nss-sysinit ( =  3.112.0-4.el10_0) nss-sysinit(x86-64) ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss-sysinit = "
+ glibc
+ nss
+ bash
+ nss-util
+ sed
+ coreutils
+ nspr
+"
 
 URI_nss-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-tools-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-tools = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libz.so.1()(64bit) ( ) libnspr4.so()(64bit) ( ) libnss3.so()(64bit) ( ) libplc4.so()(64bit) ( ) libnss3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.2)(64bit) ( ) libnssutil3.so()(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libplds4.so()(64bit) ( ) libsmime3.so()(64bit) ( ) libssl3.so()(64bit) ( ) libnss3.so(NSS_3.9.2)(64bit) ( ) libnss3.so(NSS_3.12)(64bit) ( ) libnss3.so(NSS_3.3)(64bit) ( ) libsmime3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.5)(64bit) ( ) libssl3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.10)(64bit) ( ) libnss3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.9)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12)(64bit) ( ) libsmime3.so(NSS_3.2)(64bit) ( ) libnss3.so(NSS_3.7)(64bit) ( ) libnss3.so(NSS_3.8)(64bit) ( ) libssl3.so(NSS_3.14)(64bit) ( ) libnss3.so(NSS_3.15)(64bit) ( ) libssl3.so(NSS_3.12.6)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.3)(64bit) ( ) libnss3.so(NSS_3.9.3)(64bit) ( ) libssl3.so(NSS_3.4)(64bit) ( ) libnss3.so(NSS_3.11)(64bit) ( ) libnss3.so(NSS_3.16.2)(64bit) ( ) libnss3.so(NSS_3.21)(64bit) ( ) libnss3.so(NSS_3.30)(64bit) ( ) libnss3.so(NSS_3.52)(64bit) ( ) libssl3.so(NSS_3.13.2)(64bit) ( ) libssl3.so(NSS_3.15.4)(64bit) ( ) libssl3.so(NSS_3.33)(64bit) ( ) libnss3.so(NSS_3.13)(64bit) ( ) libnss3.so(NSS_3.16.1)(64bit) ( ) libssl3.so(NSS_3.15)(64bit) ( ) libssl3.so(NSS_3.22)(64bit) ( ) libssl3.so(NSS_3.27)(64bit) ( ) libssl3.so(NSS_3.28)(64bit) ( ) libssl3.so(NSS_3.80)(64bit) ( ) libnss3.so(NSS_3.31)(64bit) ( ) libnss3.so(NSS_3.12.3)(64bit) ( ) libnss3.so(NSS_3.34)(64bit) ( ) libsmime3.so(NSS_3.6)(64bit) ( ) libnss3.so(NSS_3.12.9)(64bit) ( ) libnssutil3.so(NSSUTIL_3.15)(64bit) ( ) libnss3.so(NSS_3.11.7)(64bit) ( ) libsmime3.so(NSS_3.3)(64bit) ( ) libssl3.so(NSS_3.7.4)(64bit) ( ) libnssutil3.so(NSSUTIL_3.101)(64bit) ( ) libnssutil3.so(NSSUTIL_3.24)(64bit) ( ) libssl3.so(NSS_3.20)(64bit) ( ) libssl3.so(NSS_3.24)(64bit) ( ) libnss3.so(NSS_3.12.1)(64bit) ( ) libnss3.so(NSS_3.18)(64bit) ( ) libsmime3.so(NSS_3.9.3)(64bit) ( ) libnss3.so(NSS_3.12.6)(64bit) ( ) libnss3.so(NSS_3.14)(64bit) ( ) libnss3.so(NSS_3.14.1)(64bit) ( ) libnss3.so(NSS_3.33)(64bit) ( ) libnss3.so(NSS_3.39)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.7)(64bit) ( ) libsmime3.so(NSS_3.10)(64bit) ( ) nss(x86-64) ( =  3.112.0-4.el10_0)"
-RPROVIDES:nss-tools = "nss-tools ( =  3.112.0-4.el10_0) nss-tools(x86-64) ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss-tools = "
+ zlib-ng-compat
+ nss
+ nss-util
+ glibc
+ nspr
+"
 
 URI_nss-util = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-util-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-util = "rtld(GNU_HASH) ( ) libnspr4.so()(64bit) ( ) libplc4.so()(64bit) ( ) libplds4.so()(64bit) ( ) libc.so.6(GLIBC_2.33)(64bit) ( ) nspr ( >=  4.36.0)"
-RPROVIDES:nss-util = "libnssutil3.so()(64bit) ( ) libnssutil3.so(NSSUTIL_3.12)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.3)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.5)(64bit) ( ) libnssutil3.so(NSSUTIL_3.13)(64bit) ( ) libnssutil3.so(NSSUTIL_3.15)(64bit) ( ) libnssutil3.so(NSSUTIL_3.14)(64bit) ( ) libnssutil3.so(NSSUTIL_3.101)(64bit) ( ) libnssutil3.so(NSSUTIL_3.17.1)(64bit) ( ) libnssutil3.so(NSSUTIL_3.24)(64bit) ( ) libnssutil3.so(NSSUTIL_3.38)(64bit) ( ) libnssutil3.so(NSSUTIL_3.94)(64bit) ( ) libnssutil3.so(NSSUTIL_3.12.7)(64bit) ( ) libnssutil3.so(NSSUTIL_3.21)(64bit) ( ) libnssutil3.so(NSSUTIL_3.31)(64bit) ( ) libnssutil3.so(NSSUTIL_3.33)(64bit) ( ) libnssutil3.so(NSSUTIL_3.39)(64bit) ( ) libnssutil3.so(NSSUTIL_3.59)(64bit) ( ) libnssutil3.so(NSSUTIL_3.82)(64bit) ( ) libnssutil3.so(NSSUTIL_3.108)(64bit) ( ) libnssutil3.so(NSSUTIL_3.25)(64bit) ( ) libnssutil3.so(NSSUTIL_3.90)(64bit) ( ) nss-util(x86-64) ( =  3.112.0-4.el10_0) nss-util ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss-util = "
+ glibc
+ nspr
+"
 
 URI_nss-util-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-util-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-util-devel = "/usr/bin/sh ( ) /usr/bin/pkg-config ( ) pkgconfig ( ) nspr-devel ( >=  4.36.0) pkgconfig(nspr) ( >=  4.36.0) nss-util(x86-64) ( =  3.112.0-4.el10_0)"
-RPROVIDES:nss-util-devel = "nss-util-devel ( =  3.112.0-4.el10_0) nss-util-devel(x86-64) ( =  3.112.0-4.el10_0) pkgconfig(nss-util) ( =  3.112.0)"
+RDEPENDS:nss-util-devel = "
+ nspr-devel
+ nss-util
+ bash
+ pkgconf-pkg-config
+"
 
 URI_nss-pkcs11-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/nss-pkcs11-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nss-pkcs11-devel = "nss-devel ( =  3.112.0-4.el10_0) nss-softokn-freebl-devel ( =  3.112.0-4.el10_0)"
-RPROVIDES:nss-pkcs11-devel = "nss-pkcs11-devel ( =  3.112.0-4.el10_0) nss-pkcs11-devel(x86-64) ( =  3.112.0-4.el10_0) nss-pkcs11-devel-static ( =  3.112.0-4.el10_0)"
+RDEPENDS:nss-pkcs11-devel = "
+ nss-softokn-freebl-devel
+ nss-devel
+"

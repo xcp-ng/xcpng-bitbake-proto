@@ -7,5 +7,6 @@ PACKAGES = "hyphen-uk"
 
 
 URI_hyphen-uk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hyphen-uk-0.20030903-32.el10.noarch.rpm;unpack=0"
-RDEPENDS:hyphen-uk = "hyphen ( )"
-RPROVIDES:hyphen-uk = "hyphen-uk ( =  0.20030903-32.el10)"
+RDEPENDS:hyphen-uk = "
+ hyphen
+"

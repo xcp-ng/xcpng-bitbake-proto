@@ -7,5 +7,7 @@ PACKAGES = "xcb-proto"
 
 
 URI_xcb-proto = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xcb-proto-1.17.0-3.el10.noarch.rpm;unpack=0"
-RDEPENDS:xcb-proto = "/usr/bin/pkg-config ( ) python(abi) ( =  3.12)"
-RPROVIDES:xcb-proto = "pkgconfig(xcb-proto) ( =  1.17.0) xcb-proto ( =  1.17.0-3.el10)"
+RDEPENDS:xcb-proto = "
+ python3
+ pkgconf-pkg-config
+"

@@ -7,5 +7,6 @@ PACKAGES = "chrpath"
 
 
 URI_chrpath = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/chrpath-0.16-25.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:chrpath = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( )"
-RPROVIDES:chrpath = "chrpath ( =  0.16-25.el10) chrpath(x86-64) ( =  0.16-25.el10)"
+RDEPENDS:chrpath = "
+ glibc
+"

@@ -7,29 +7,75 @@ PACKAGES = "binutils binutils-gold binutils-devel binutils-gprofng cross-binutil
 
 
 URI_binutils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/binutils-2.41-53.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:binutils = "/bin/sh ( ) coreutils ( ) /usr/sbin/alternatives ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libjansson.so.4()(64bit) ( ) libjansson.so.4(libjansson.so.4)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) binutils-gold ( >=  2.41)"
-RPROVIDES:binutils = "bundled(libiberty) ( ) libbfd-2.41-53.el10.alma.1.so()(64bit) ( ) libctf-nobfd.so.0()(64bit) ( ) libctf-nobfd.so.0(LIBCTF_1.0)(64bit) ( ) libctf-nobfd.so.0(LIBCTF_1.1)(64bit) ( ) libctf-nobfd.so.0(LIBCTF_1.2)(64bit) ( ) libctf.so.0()(64bit) ( ) libctf.so.0(LIBCTF_1.0)(64bit) ( ) libctf.so.0(LIBCTF_1.1)(64bit) ( ) libctf.so.0(LIBCTF_1.2)(64bit) ( ) libdep.so()(64bit) ( ) libgprofng.so.0()(64bit) ( ) libopcodes-2.41-53.el10.alma.1.so()(64bit) ( ) libsframe.so.1()(64bit) ( ) libsframe.so.1(LIBSFRAME_0.0)(64bit) ( ) libsframe.so.1(LIBSFRAME_1.0)(64bit) ( ) binutils ( =  2.41-53.el10.alma.1) binutils(x86-64) ( =  2.41-53.el10.alma.1)"
+RDEPENDS:binutils = "
+ zlib-ng-compat
+ jansson
+ elfutils-debuginfod-client
+ libgcc
+ libstdc++
+ bash
+ glibc
+ coreutils
+ binutils-gold
+ alternatives
+"
 
 URI_binutils-gold = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/binutils-gold-2.41-53.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:binutils-gold = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libjansson.so.4()(64bit) ( ) libjansson.so.4(libjansson.so.4)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) binutils ( >=  2.41)"
-RPROVIDES:binutils-gold = "binutils-gold ( =  2.41-53.el10.alma.1) binutils-gold(x86-64) ( =  2.41-53.el10.alma.1) gold ( =  2.41-53.el10.alma.1)"
+RDEPENDS:binutils-gold = "
+ zlib-ng-compat
+ jansson
+ libgcc
+ libstdc++
+ bash
+ binutils
+ glibc
+"
 
 URI_binutils-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/binutils-devel-2.41-53.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:binutils-devel = "coreutils ( ) zlib-devel ( ) binutils ( =  2.41-53.el10.alma.1)"
-RPROVIDES:binutils-devel = "binutils-devel ( =  2.41-53.el10.alma.1) binutils-devel(x86-64) ( =  2.41-53.el10.alma.1) binutils-static ( =  2.41-53.el10.alma.1)"
+RDEPENDS:binutils-devel = "
+ coreutils
+ zlib-ng-compat-devel
+ binutils
+"
 
 URI_binutils-gprofng = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/binutils-gprofng-2.41-53.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:binutils-gprofng = "rtld(GNU_HASH) ( ) /usr/bin/perl ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libgprofng.so.0()(64bit) ( ) binutils ( =  2.41-53.el10.alma.1)"
-RPROVIDES:binutils-gprofng = "libgp-collector.so()(64bit) ( ) libgp-collector.so(GLIBC_2.0)(64bit) ( ) libgp-collector.so(GLIBC_2.1)(64bit) ( ) libgp-collector.so(GLIBC_2.15)(64bit) ( ) libgp-collector.so(GLIBC_2.17)(64bit) ( ) libgp-collector.so(GLIBC_2.2)(64bit) ( ) libgp-collector.so(GLIBC_2.2.5)(64bit) ( ) libgp-collector.so(GLIBC_2.3.2)(64bit) ( ) libgp-collector.so(GLIBC_2.3.3)(64bit) ( ) libgp-collector.so(GLIBC_2.32)(64bit) ( ) libgp-collector.so(GLIBC_2.34)(64bit) ( ) libgp-collectorAPI.so()(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.0)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.1)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.15)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.17)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.2)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.2.5)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.3.2)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.3.3)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.32)(64bit) ( ) libgp-collectorAPI.so(GLIBC_2.34)(64bit) ( ) libgp-heap.so()(64bit) ( ) libgp-heap.so(GLIBC_2.0)(64bit) ( ) libgp-heap.so(GLIBC_2.1)(64bit) ( ) libgp-heap.so(GLIBC_2.15)(64bit) ( ) libgp-heap.so(GLIBC_2.17)(64bit) ( ) libgp-heap.so(GLIBC_2.2)(64bit) ( ) libgp-heap.so(GLIBC_2.2.5)(64bit) ( ) libgp-heap.so(GLIBC_2.3.2)(64bit) ( ) libgp-heap.so(GLIBC_2.3.3)(64bit) ( ) libgp-heap.so(GLIBC_2.32)(64bit) ( ) libgp-heap.so(GLIBC_2.34)(64bit) ( ) libgp-iotrace.so()(64bit) ( ) libgp-iotrace.so(GLIBC_2.0)(64bit) ( ) libgp-iotrace.so(GLIBC_2.1)(64bit) ( ) libgp-iotrace.so(GLIBC_2.15)(64bit) ( ) libgp-iotrace.so(GLIBC_2.17)(64bit) ( ) libgp-iotrace.so(GLIBC_2.2)(64bit) ( ) libgp-iotrace.so(GLIBC_2.2.5)(64bit) ( ) libgp-iotrace.so(GLIBC_2.3.2)(64bit) ( ) libgp-iotrace.so(GLIBC_2.3.3)(64bit) ( ) libgp-iotrace.so(GLIBC_2.32)(64bit) ( ) libgp-iotrace.so(GLIBC_2.34)(64bit) ( ) libgp-sync.so()(64bit) ( ) libgp-sync.so(GLIBC_2.0)(64bit) ( ) libgp-sync.so(GLIBC_2.1)(64bit) ( ) libgp-sync.so(GLIBC_2.15)(64bit) ( ) libgp-sync.so(GLIBC_2.17)(64bit) ( ) libgp-sync.so(GLIBC_2.2)(64bit) ( ) libgp-sync.so(GLIBC_2.2.5)(64bit) ( ) libgp-sync.so(GLIBC_2.3.2)(64bit) ( ) libgp-sync.so(GLIBC_2.3.3)(64bit) ( ) libgp-sync.so(GLIBC_2.32)(64bit) ( ) libgp-sync.so(GLIBC_2.34)(64bit) ( ) binutils-gprofng ( =  2.41-53.el10.alma.1) binutils-gprofng(x86-64) ( =  2.41-53.el10.alma.1) gprofng ( =  2.41-53.el10.alma.1)"
+RDEPENDS:binutils-gprofng = "
+ libgcc
+ libstdc++
+ binutils
+ glibc
+ perl-interpreter
+"
 
 URI_cross-binutils-aarch64 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/cross-binutils-aarch64-2.41-53.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:cross-binutils-aarch64 = "rtld(GNU_HASH) ( ) /usr/bin/perl ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) coreutils ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libjansson.so.4()(64bit) ( ) libjansson.so.4(libjansson.so.4)(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) zlib-devel ( )"
-RPROVIDES:cross-binutils-aarch64 = "cross-binutils-aarch64 ( =  2.41-53.el10.alma.1) cross-binutils-aarch64(x86-64) ( =  2.41-53.el10.alma.1)"
+RDEPENDS:cross-binutils-aarch64 = "
+ zlib-ng-compat
+ jansson
+ elfutils-debuginfod-client
+ libgcc
+ zlib-ng-compat-devel
+ libstdc++
+ glibc
+ coreutils
+ perl-interpreter
+"
 
 URI_cross-binutils-ppc64le = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/cross-binutils-ppc64le-2.41-53.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:cross-binutils-ppc64le = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libz.so.1()(64bit) ( ) coreutils ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libjansson.so.4()(64bit) ( ) libjansson.so.4(libjansson.so.4)(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) zlib-devel ( )"
-RPROVIDES:cross-binutils-ppc64le = "cross-binutils-ppc64le ( =  2.41-53.el10.alma.1) cross-binutils-ppc64le(x86-64) ( =  2.41-53.el10.alma.1)"
+RDEPENDS:cross-binutils-ppc64le = "
+ zlib-ng-compat
+ jansson
+ elfutils-debuginfod-client
+ zlib-ng-compat-devel
+ glibc
+ coreutils
+"
 
 URI_cross-binutils-s390x = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/cross-binutils-s390x-2.41-53.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:cross-binutils-s390x = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libz.so.1()(64bit) ( ) coreutils ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libjansson.so.4()(64bit) ( ) libjansson.so.4(libjansson.so.4)(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) zlib-devel ( )"
-RPROVIDES:cross-binutils-s390x = "cross-binutils-s390x ( =  2.41-53.el10.alma.1) cross-binutils-s390x(x86-64) ( =  2.41-53.el10.alma.1)"
+RDEPENDS:cross-binutils-s390x = "
+ zlib-ng-compat
+ jansson
+ elfutils-debuginfod-client
+ zlib-ng-compat-devel
+ glibc
+ coreutils
+"

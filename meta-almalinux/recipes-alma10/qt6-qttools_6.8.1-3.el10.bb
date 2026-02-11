@@ -7,57 +7,147 @@ PACKAGES = "qt6-assistant qt6-designer qt6-doctools qt6-linguist qt6-qdbusviewer
 
 
 URI_qt6-assistant = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-assistant-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-assistant = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6PrintSupport.so.6()(64bit) ( ) libQt6PrintSupport.so.6(Qt_6)(64bit) ( ) libQt6Help.so.6()(64bit) ( ) libQt6Help.so.6(Qt_6)(64bit) ( ) qt6-qttools-common ( =  6.8.1-3.el10) qt6-qttools-libs-help(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-assistant = "application() ( ) application(qt6-assistant.desktop) ( ) qt6-assistant ( =  6.8.1-3.el10) qt6-assistant(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-assistant = "
+ qt6-qttools-common
+ libgcc
+ qt6-qttools-libs-help
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-designer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-designer-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-designer = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6PrintSupport.so.6()(64bit) ( ) libQt6PrintSupport.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) libQt6Designer.so.6()(64bit) ( ) libQt6Designer.so.6(Qt_6)(64bit) ( ) libQt6DesignerComponents.so.6()(64bit) ( ) libQt6DesignerComponents.so.6(Qt_6)(64bit) ( ) qt6-qttools-libs-designer(x86-64) ( =  6.8.1-3.el10) qt6-qttools-libs-designercomponents(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-designer = "application() ( ) application(qt6-designer.desktop) ( ) mimehandler(application/x-designer) ( ) qt6-designer ( =  6.8.1-3.el10) qt6-designer(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-designer = "
+ qt6-qttools-libs-designer
+ qt6-qttools-libs-designercomponents
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-doctools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-doctools-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-doctools = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libLLVM.so.19.1()(64bit) ( ) libLLVM.so.19.1(LLVM_19.1)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libclang-cpp.so.19.1()(64bit) ( ) libQt6Help.so.6()(64bit) ( ) libclang.so.19.1()(64bit) ( ) libQt6Help.so.6(Qt_6)(64bit) ( ) libclang.so.19.1(LLVM_13)(64bit) ( ) qt6-qttools-libs-help(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-doctools = "metainfo() ( ) metainfo(io.qt.Designer.metainfo.xml) ( ) qt6-doctools ( =  6.8.1-3.el10) qt6-doctools(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-doctools = "
+ qt6-qtdeclarative
+ qt6-qttools-libs-help
+ clang-libs
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ llvm-libs
+"
 
 URI_qt6-linguist = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-linguist-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-linguist = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libLLVM.so.19.1()(64bit) ( ) libLLVM.so.19.1(LLVM_19.1)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.17)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6PrintSupport.so.6()(64bit) ( ) libQt6PrintSupport.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.28)(64bit) ( ) libclang-cpp.so.19.1()(64bit) ( ) libQt6UiTools.so.6()(64bit) ( ) libQt6UiTools.so.6(Qt_6)(64bit) ( ) libQt6UiTools.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qttools-common ( =  6.8.1-3.el10) qt6-qttools(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-linguist = "metainfo() ( ) application() ( ) application(qt6-linguist.desktop) ( ) metainfo(io.qt.Linguist.metainfo.xml) ( ) mimehandler(application/x-linguist) ( ) mimehandler(text/vnd.trolltech.linguist) ( ) qt6-linguist ( =  6.8.1-3.el10) qt6-linguist(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-linguist = "
+ qt6-qtdeclarative
+ qt6-qttools
+ qt6-qttools-common
+ clang-libs
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ llvm-libs
+"
 
 URI_qt6-qdbusviewer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qdbusviewer-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qdbusviewer = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6DBus.so.6()(64bit) ( ) libQt6DBus.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) qt6-qttools-common ( =  6.8.1-3.el10) qt6-qtbase(x86-64) ( >=  6.8.1)"
-RPROVIDES:qt6-qdbusviewer = "metainfo() ( ) application() ( ) application(qt6-qdbusviewer.desktop) ( ) metainfo(io.qt.qdbusviewer.metainfo.xml) ( ) qt6-qdbusviewer ( =  6.8.1-3.el10) qt6-qdbusviewer(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qdbusviewer = "
+ qt6-qttools-common
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qttools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qttools-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6DBus.so.6()(64bit) ( ) libQt6DBus.so.6(Qt_6)(64bit) ( ) libQt6OpenGLWidgets.so.6()(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6OpenGLWidgets.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1) qt6-qttools-common ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools = "libQt6UiTools.so.6()(64bit) ( ) libQt6UiTools.so.6(Qt_6)(64bit) ( ) libQt6UiTools.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6UiTools.so.6(NonQt)(64bit) ( ) qt6-qttools(x86-64) ( =  6.8.1-3.el10) qt6-qttools ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools = "
+ qt6-qttools-common
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qttools-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qttools-common-6.8.1-3.el10.noarch.rpm;unpack=0"
 RDEPENDS:qt6-qttools-common = ""
-RPROVIDES:qt6-qttools-common = "qt6-qttools-common ( =  6.8.1-3.el10)"
 
 URI_qt6-qttools-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qttools-devel-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools-devel = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) /usr/bin/pkg-config ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) cmake-filesystem(x86-64) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) qt6-qtbase-devel(x86-64) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) pkgconfig(Qt6Core) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) pkgconfig(Qt6Gui) ( ) libQt6OpenGL.so.6()(64bit) ( ) libQt6OpenGL.so.6(Qt_6)(64bit) ( ) pkgconfig(Qt6Widgets) ( ) libQt6Designer.so.6()(64bit) ( ) libQt6Help.so.6()(64bit) ( ) libQt6DesignerComponents.so.6()(64bit) ( ) libQt6UiTools.so.6()(64bit) ( ) pkgconfig(Qt6OpenGLWidgets) ( ) pkgconfig(Qt6Sql) ( ) pkgconfig(Qt6UiPlugin) ( ) pkgconfig(Qt6Xml) ( ) qt6-qttools-libs-help(x86-64) ( =  6.8.1-3.el10) qt6-qttools-libs-designer(x86-64) ( =  6.8.1-3.el10) qt6-qttools-libs-designercomponents(x86-64) ( =  6.8.1-3.el10) qt6-designer ( =  6.8.1-3.el10) qt6-doctools ( =  6.8.1-3.el10) qt6-linguist ( =  6.8.1-3.el10) qt6-qttools ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools-devel = "cmake(Qt6Designer) ( ) cmake(Qt6DesignerComponentsPrivate) ( ) cmake(Qt6Help) ( ) cmake(Qt6Linguist) ( ) cmake(Qt6LinguistTools) ( ) cmake(Qt6QDocCatchConversionsPrivate) ( ) cmake(Qt6QDocCatchGeneratorsPrivate) ( ) cmake(Qt6QDocCatchPrivate) ( ) cmake(Qt6QQuickWidgetPlugin) ( ) cmake(Qt6Tools) ( ) cmake(Qt6ToolsTools) ( ) cmake(Qt6UiPlugin) ( ) cmake(Qt6UiTools) ( ) cmake(QtToolsTests) ( ) cmake(qt6designer) ( ) cmake(qt6designercomponentsprivate) ( ) cmake(qt6help) ( ) cmake(qt6linguist) ( ) cmake(qt6linguisttools) ( ) cmake(qt6qdoccatchconversionsprivate) ( ) cmake(qt6qdoccatchgeneratorsprivate) ( ) cmake(qt6qdoccatchprivate) ( ) cmake(qt6qquickwidgetplugin) ( ) cmake(qt6tools) ( ) cmake(qt6toolstools) ( ) cmake(qt6uiplugin) ( ) cmake(qt6uitools) ( ) cmake(qttoolstests) ( ) pkgconfig(Qt6Designer) ( =  6.8.1) pkgconfig(Qt6Help) ( =  6.8.1) pkgconfig(Qt6Linguist) ( =  6.8.1) pkgconfig(Qt6UiPlugin) ( =  6.8.1) pkgconfig(Qt6UiTools) ( =  6.8.1) qt6-qttools-devel ( =  6.8.1-3.el10) qt6-qttools-devel(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools-devel = "
+ cmake-filesystem
+ qt6-designer
+ qt6-doctools
+ qt6-qttools
+ qt6-linguist
+ qt6-qttools-devel
+ qt6-qttools-libs-designer
+ qt6-qttools-libs-designercomponents
+ qt6-qttools-libs-help
+ pkgconf-pkg-config
+ qt6-qtbase
+ qt6-qtbase-devel
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qttools-libs-designer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qttools-libs-designer-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools-libs-designer = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libzstd.so.1()(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6OpenGLWidgets.so.6()(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6OpenGLWidgets.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6QuickWidgets.so.6()(64bit) ( ) libQt6QuickWidgets.so.6(Qt_6)(64bit) ( ) qt6-qttools-common ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools-libs-designer = "libQt6Designer.so.6()(64bit) ( ) libQt6Designer.so.6(Qt_6)(64bit) ( ) libQt6Designer.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Designer.so.6(NonQt)(64bit) ( ) libcontainerextension.so()(64bit) ( ) libcustomwidgetplugin.so()(64bit) ( ) libqquickwidget.so()(64bit) ( ) libqquickwidget.so(NonQt)(64bit) ( ) libqquickwidget.so(Qt_6)(64bit) ( ) libqquickwidget.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libtaskmenuextension.so()(64bit) ( ) qt6-qttools-libs-designer(x86-64) ( =  6.8.1-3.el10) qt6-qttools-libs-designer ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools-libs-designer = "
+ qt6-qtdeclarative
+ qt6-qttools-common
+ libgcc
+ qt6-qtbase
+ libzstd
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qttools-libs-designercomponents = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qttools-libs-designercomponents-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools-libs-designercomponents = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) libQt6Designer.so.6()(64bit) ( ) libQt6Designer.so.6(Qt_6)(64bit) ( ) libQt6Designer.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qttools-common ( =  6.8.1-3.el10) qt6-qttools-libs-designer(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools-libs-designercomponents = "libQt6DesignerComponents.so.6()(64bit) ( ) libQt6DesignerComponents.so.6(Qt_6)(64bit) ( ) libQt6DesignerComponents.so.6(NonQt)(64bit) ( ) libQt6DesignerComponents.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qttools-libs-designercomponents(x86-64) ( =  6.8.1-3.el10) qt6-qttools-libs-designercomponents ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools-libs-designercomponents = "
+ qt6-qttools-common
+ qt6-qttools-libs-designer
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qttools-libs-help = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qttools-libs-help-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools-libs-help = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libc.so.6(GLIBC_2.32)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) qt6-qttools-common ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools-libs-help = "libQt6Help.so.6()(64bit) ( ) libQt6Help.so.6(Qt_6)(64bit) ( ) libQt6Help.so.6(NonQt)(64bit) ( ) libQt6Help.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qttools-libs-help(x86-64) ( =  6.8.1-3.el10) qt6-qttools-libs-help ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools-libs-help = "
+ qt6-qttools-common
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qttools-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qttools-examples-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Help.so.6()(64bit) ( ) libQt6Help.so.6(Qt_6)(64bit) ( ) libQt6UiTools.so.6()(64bit) ( ) libQt6UiTools.so.6(Qt_6)(64bit) ( ) qt6-qttools-common ( =  6.8.1-3.el10) qt6-qttools-libs-help(x86-64) ( =  6.8.1-3.el10) qt6-qttools ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools-examples = "qt6-qttools-examples ( =  6.8.1-3.el10) qt6-qttools-examples(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools-examples = "
+ qt6-qttools
+ qt6-qttools-common
+ libgcc
+ qt6-qttools-libs-help
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qttools-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qttools-static-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools-static = "qt6-qttools-devel(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools-static = "qt6-qttools-static ( =  6.8.1-3.el10) qt6-qttools-static(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools-static = "
+ qt6-qttools-devel
+"
 
 URI_qt6-qttools-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qttools-tests-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qttools-tests = "rtld(GNU_HASH) ( ) /usr/bin/perl ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Help.so.6()(64bit) ( ) libQt6Help.so.6(Qt_6)(64bit) ( ) qt6-qttools-libs-help(x86-64) ( =  6.8.1-3.el10) qt6-qttools(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qttools-tests = "qt6-qttools-tests ( =  6.8.1-3.el10) qt6-qttools-tests(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qttools-tests = "
+ qt6-qttools
+ libgcc
+ qt6-qttools-libs-help
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ perl-interpreter
+"

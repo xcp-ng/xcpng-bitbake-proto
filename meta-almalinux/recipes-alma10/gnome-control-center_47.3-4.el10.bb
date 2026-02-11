@@ -7,9 +7,62 @@ PACKAGES = "gnome-control-center gnome-control-center-filesystem"
 
 
 URI_gnome-control-center = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-control-center-47.3-4.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gnome-control-center = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) /usr/bin/pkg-config ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libxml2.so.2()(64bit) ( ) libX11.so.6()(64bit) ( ) libcairo.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libgnutls.so.30()(64bit) ( ) libgnutls.so.30(GNUTLS_3_4)(64bit) ( ) libkrb5.so.3()(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libgtk-4.so.1()(64bit) ( ) libXi.so.6()(64bit) ( ) libcups.so.2()(64bit) ( ) libjson-glib-1.0.so.0()(64bit) ( ) libjson-glib-1.0.so.0(libjson-glib-1.0.so.0)(64bit) ( ) libpolkit-gobject-1.so.0()(64bit) ( ) dbus ( ) libgudev-1.0.so.0()(64bit) ( ) libadwaita-1.so.0()(64bit) ( ) libadwaita-1.so.0(LIBADWAITA_1_0)(64bit) ( ) libgraphene-1.0.so.0()(64bit) ( ) libpulse.so.0()(64bit) ( ) libsoup-3.0.so.0()(64bit) ( ) libpulse.so.0(PULSE_0)(64bit) ( ) libsecret-1.so.0()(64bit) ( ) libepoxy.so.0()(64bit) ( ) libnm.so.0()(64bit) ( ) libnm.so.0(libnm_1_0_0)(64bit) ( ) libudisks2.so.0()(64bit) ( ) libgcr-4.so.4()(64bit) ( ) libnm.so.0(libnm_1_2_0)(64bit) ( ) libcolord.so.2()(64bit) ( ) libibus-1.0.so.5()(64bit) ( ) libgnome-desktop-4.so.2()(64bit) ( ) iso-codes ( ) libpwquality.so.1()(64bit) ( ) libpwquality.so.1(LIBPWQUALITY_1.0)(64bit) ( ) libwacom.so.9()(64bit) ( ) libwacom.so.9(LIBWACOM_2.0)(64bit) ( ) colord ( ) libpulse-mainloop-glib.so.0()(64bit) ( ) libupower-glib.so.3()(64bit) ( ) libpulse-mainloop-glib.so.0(PULSE_0)(64bit) ( ) accountsservice ( ) alsa-lib ( ) libsmbclient.so.0()(64bit) ( ) libsmbclient.so.0(SMBCLIENT_0.1.0)(64bit) ( ) libaccountsservice.so.0()(64bit) ( ) libnma-gtk4.so.0()(64bit) ( ) libnma-gtk4.so.0(libnma_1_2_0)(64bit) ( ) /usr/bin/tecla ( ) libgoa-1.0.so.0()(64bit) ( ) libmm-glib.so.0()(64bit) ( ) cups-pk-helper ( ) libgnome-bg-4.so.2()(64bit) ( ) libgsound.so.0()(64bit) ( ) libgtop-2.0.so.11()(64bit) ( ) libcolord-gtk4.so.1()(64bit) ( ) libgnome-bluetooth-ui-3.0.so.13()(64bit) ( ) libgnome-rr-4.so.2()(64bit) ( ) libgoa-backend-1.0.so.2()(64bit) ( ) libnm.so.0(libnm_1_12_0)(64bit) ( ) libnm.so.0(libnm_1_16_0)(64bit) ( ) libnm.so.0(libnm_1_40_0)(64bit) ( ) libnma-gtk4.so.0(libnma_1_8_28)(64bit) ( ) libnm.so.0(libnm_1_14_0)(64bit) ( ) libnm.so.0(libnm_1_24_0)(64bit) ( ) gnome-desktop4(x86-64) ( >=  44.0-7) gtk4(x86-64) ( >=  4.15.2) gnome-control-center-filesystem ( =  47.3-4.el10) libadwaita(x86-64) ( >=  1.6~alpha) glib2(x86-64) ( >=  2.76.6) gnome-online-accounts(x86-64) ( >=  3.50.0) gnome-settings-daemon(x86-64) ( >=  41.0) gsettings-desktop-schemas(x86-64) ( >=  46~beta) upower(x86-64) ( >=  0.99.8)"
-RPROVIDES:gnome-control-center = "metainfo() ( ) application() ( ) application(gnome-about-panel.desktop) ( ) application(gnome-applications-panel.desktop) ( ) application(gnome-background-panel.desktop) ( ) application(gnome-bluetooth-panel.desktop) ( ) application(gnome-color-panel.desktop) ( ) application(gnome-datetime-panel.desktop) ( ) application(gnome-display-panel.desktop) ( ) application(gnome-keyboard-panel.desktop) ( ) application(gnome-mouse-panel.desktop) ( ) application(gnome-multitasking-panel.desktop) ( ) application(gnome-network-panel.desktop) ( ) application(gnome-notifications-panel.desktop) ( ) application(gnome-online-accounts-panel.desktop) ( ) application(gnome-power-panel.desktop) ( ) application(gnome-printers-panel.desktop) ( ) application(gnome-privacy-panel.desktop) ( ) application(gnome-region-panel.desktop) ( ) application(gnome-search-panel.desktop) ( ) application(gnome-sharing-panel.desktop) ( ) application(gnome-sound-panel.desktop) ( ) application(gnome-subman-panel.desktop) ( ) application(gnome-system-panel.desktop) ( ) application(gnome-universal-access-panel.desktop) ( ) application(gnome-users-panel.desktop) ( ) application(gnome-wacom-panel.desktop) ( ) application(gnome-wifi-panel.desktop) ( ) application(gnome-wwan-panel.desktop) ( ) application(org.gnome.Settings.desktop) ( ) metainfo(org.gnome.Settings.appdata.xml) ( ) control-center ( =  1:47.3-4.el10) control-center(x86-64) ( =  1:47.3-4.el10) gnome-control-center ( =  47.3-4.el10) gnome-control-center(x86-64) ( =  47.3-4.el10) pkgconfig(gnome-keybindings) ( =  47.3)"
+RDEPENDS:gnome-control-center = "
+ ModemManager-glib
+ libpwquality
+ cups-libs
+ pango
+ fontconfig
+ libX11
+ krb5-libs
+ libudisks2
+ dbus
+ upower-libs
+ ibus-libs
+ upower
+ NetworkManager-libnm
+ libnma-gtk4
+ gnome-bluetooth-libs
+ libsmbclient
+ cups-pk-helper
+ libXi
+ accountsservice
+ accountsservice-libs
+ tecla
+ libepoxy
+ gnome-desktop4
+ gnome-control-center-filesystem
+ json-glib
+ cairo
+ gnome-online-accounts
+ libadwaita
+ gcr-libs
+ alsa-lib
+ gnome-settings-daemon
+ libwacom
+ gnutls
+ pulseaudio-libs
+ libgcc
+ pulseaudio-libs-glib2
+ libxml2
+ gdk-pixbuf2
+ libgudev
+ libsecret
+ libgtop2
+ graphene
+ libsoup3
+ gsound
+ gsettings-desktop-schemas
+ pkgconf-pkg-config
+ polkit-libs
+ colord
+ glib2
+ colord-libs
+ colord-gtk4
+ glibc
+ gtk4
+ iso-codes
+"
 
 URI_gnome-control-center-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-control-center-filesystem-47.3-4.el10.noarch.rpm;unpack=0"
 RDEPENDS:gnome-control-center-filesystem = ""
-RPROVIDES:gnome-control-center-filesystem = "gnome-control-center-filesystem ( =  47.3-4.el10) control-center-filesystem ( =  1:47.3-4.el10)"

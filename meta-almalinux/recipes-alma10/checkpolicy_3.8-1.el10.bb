@@ -7,5 +7,6 @@ PACKAGES = "checkpolicy"
 
 
 URI_checkpolicy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/checkpolicy-3.8-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:checkpolicy = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( )"
-RPROVIDES:checkpolicy = "checkpolicy ( =  3.8-1.el10) checkpolicy(x86-64) ( =  3.8-1.el10)"
+RDEPENDS:checkpolicy = "
+ glibc
+"

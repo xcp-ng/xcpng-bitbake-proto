@@ -7,5 +7,6 @@ PACKAGES = "ps_mem"
 
 
 URI_ps_mem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ps_mem-3.14-9.el10.noarch.rpm;unpack=0"
-RDEPENDS:ps_mem = "/usr/bin/python3 ( )"
-RPROVIDES:ps_mem = "ps_mem ( =  3.14-9.el10)"
+RDEPENDS:ps_mem = "
+ python3
+"

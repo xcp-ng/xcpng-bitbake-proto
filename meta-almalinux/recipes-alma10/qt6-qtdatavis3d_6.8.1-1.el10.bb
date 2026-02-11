@@ -7,17 +7,41 @@ PACKAGES = "qt6-qtdatavis3d qt6-qtdatavis3d-devel qt6-qtdatavis3d-examples qt6-q
 
 
 URI_qt6-qtdatavis3d = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtdatavis3d-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtdatavis3d = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6OpenGL.so.6()(64bit) ( ) libQt6OpenGL.so.6(Qt_6)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtdatavis3d = "libQt6DataVisualization.so.6()(64bit) ( ) libQt6DataVisualizationQml.so.6()(64bit) ( ) libQt6DataVisualization.so.6(NonQt)(64bit) ( ) libQt6DataVisualization.so.6(Qt_6)(64bit) ( ) libQt6DataVisualization.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6DataVisualizationQml.so.6(NonQt)(64bit) ( ) libQt6DataVisualizationQml.so.6(Qt_6)(64bit) ( ) libQt6DataVisualizationQml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libdatavisualizationqmlplugin.so()(64bit) ( ) libdatavisualizationqmlplugin.so(NonQt)(64bit) ( ) libdatavisualizationqmlplugin.so(Qt_6)(64bit) ( ) libdatavisualizationqmlplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtDataVisualization) ( ) qt6-qtdatavis3d(x86-64) ( =  6.8.1-1.el10) qt6-qtdatavis3d ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtdatavis3d = "
+ qt6-qtdeclarative
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtdatavis3d-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtdatavis3d-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtdatavis3d-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) pkgconfig(Qt6Gui) ( ) pkgconfig(Qt6OpenGL) ( ) qt6-qtdeclarative-devel(x86-64) ( ) libQt6DataVisualization.so.6()(64bit) ( ) libQt6DataVisualizationQml.so.6()(64bit) ( ) qt6-qtdatavis3d(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtdatavis3d-devel = "cmake(Qt6DataVisualization) ( ) cmake(Qt6DataVisualizationQml) ( ) cmake(Qt6DataVisualizationQmlplugin) ( ) cmake(QtDataVisualizationTests) ( ) cmake(qt6datavisualization) ( ) cmake(qt6datavisualizationqml) ( ) cmake(qt6datavisualizationqmlplugin) ( ) cmake(qtdatavisualizationtests) ( ) pkgconfig(Qt6DataVisualization) ( =  6.8.1) pkgconfig(Qt6DataVisualizationQml) ( =  6.8.1) qt6-qtdatavis3d-devel ( =  6.8.1-1.el10) qt6-qtdatavis3d-devel(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtdatavis3d-devel = "
+ qt6-qtdeclarative-devel
+ cmake-filesystem
+ pkgconf-pkg-config
+ qt6-qtbase-devel
+ qt6-qtdatavis3d
+"
 
 URI_qt6-qtdatavis3d-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtdatavis3d-examples-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtdatavis3d-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6DataVisualization.so.6()(64bit) ( ) libQt6DataVisualization.so.6(Qt_6)(64bit) ( ) qt6-qtdatavis3d(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtdatavis3d-examples = "qt6-qtdatavis3d-examples ( =  6.8.1-1.el10) qt6-qtdatavis3d-examples(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtdatavis3d-examples = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ qt6-qtdatavis3d
+"
 
 URI_qt6-qtdatavis3d-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtdatavis3d-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtdatavis3d-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6QuickTest.so.6()(64bit) ( ) libQt6QuickTest.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6DataVisualization.so.6()(64bit) ( ) libQt6DataVisualization.so.6(Qt_6)(64bit) ( ) qt6-qtdatavis3d(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtdatavis3d-tests = "qt6-qtdatavis3d-tests ( =  6.8.1-1.el10) qt6-qtdatavis3d-tests(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtdatavis3d-tests = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ qt6-qtdatavis3d
+"

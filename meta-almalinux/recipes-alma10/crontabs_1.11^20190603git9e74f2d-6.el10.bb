@@ -7,5 +7,8 @@ PACKAGES = "crontabs"
 
 
 URI_crontabs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/crontabs-1.11^20190603git9e74f2d-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:crontabs = "/usr/bin/bash ( ) sed ( ) cronie ( )"
-RPROVIDES:crontabs = "config(crontabs) ( =  1.11^20190603git9e74f2d-6.el10) crontabs ( =  1.11^20190603git9e74f2d-6.el10)"
+RDEPENDS:crontabs = "
+ sed
+ bash
+ cronie
+"

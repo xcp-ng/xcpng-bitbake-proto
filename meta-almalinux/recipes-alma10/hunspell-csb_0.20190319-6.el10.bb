@@ -7,5 +7,6 @@ PACKAGES = "hunspell-csb"
 
 
 URI_hunspell-csb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hunspell-csb-0.20190319-6.el10.noarch.rpm;unpack=0"
-RDEPENDS:hunspell-csb = "hunspell-filesystem ( )"
-RPROVIDES:hunspell-csb = "hunspell-csb ( =  0.20190319-6.el10)"
+RDEPENDS:hunspell-csb = "
+ hunspell-filesystem
+"

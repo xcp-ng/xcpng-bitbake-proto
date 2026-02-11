@@ -7,33 +7,127 @@ PACKAGES = "krb5-libs krb5-pkinit krb5-server krb5-server-ldap krb5-workstation 
 
 
 URI_krb5-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/krb5-libs-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:krb5-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) coreutils ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libselinux.so.1()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libkeyutils.so.1()(64bit) ( ) libssl.so.3()(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libresolv.so.2()(64bit) ( ) sed ( ) gawk ( ) libkeyutils.so.1(KEYUTILS_0.3)(64bit) ( ) libresolv.so.2(GLIBC_2.9)(64bit) ( ) libkeyutils.so.1(KEYUTILS_1.5)(64bit) ( ) libkeyutils.so.1(KEYUTILS_1.0)(64bit) ( ) libverto.so.1()(64bit) ( ) /etc/crypto-policies/back-ends/krb5.config ( ) keyutils-libs ( >=  1.5.8) openssl-libs ( >=  1:3.0.0)"
-RPROVIDES:krb5-libs = "libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libgssapi_krb5.so.2()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit) ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libkrb5support.so.0()(64bit) ( ) libkrb5support.so.0(krb5support_0_MIT)(64bit) ( ) libkdb5.so.10()(64bit) ( ) libkdb5.so.10(kdb5_10_MIT)(64bit) ( ) libgssrpc.so.4()(64bit) ( ) libgssrpc.so.4(gssrpc_4_MIT)(64bit) ( ) libkrad.so.0()(64bit) ( ) libkrad.so.0(krad_0_MIT)(64bit) ( ) libgssapi_krb5.so.2(HIDDEN)(64bit) ( ) libgssrpc.so.4(HIDDEN)(64bit) ( ) libk5crypto.so.3(HIDDEN)(64bit) ( ) libkdb5.so.10(HIDDEN)(64bit) ( ) libkrad.so.0(HIDDEN)(64bit) ( ) libkrb5.so.3(HIDDEN)(64bit) ( ) libkrb5support.so.0(HIDDEN)(64bit) ( ) krb5-libs(x86-64) ( =  1.21.3-8.el10_0) config(krb5-libs) ( =  1.21.3-8.el10_0) krb5-libs ( =  1.21.3-8.el10_0)"
+RDEPENDS:krb5-libs = "
+ libverto
+ crypto-policies
+ keyutils-libs
+ openssl-libs
+ gawk
+ libselinux
+ libcom_err
+ glibc
+ coreutils
+ sed
+"
 
 URI_krb5-pkinit = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/krb5-pkinit-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:krb5-pkinit = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libkeyutils.so.1()(64bit) ( ) libresolv.so.2()(64bit) ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libkrb5support.so.0()(64bit) ( ) libkrb5support.so.0(krb5support_0_MIT)(64bit) ( ) krb5-libs(x86-64) ( =  1.21.3-8.el10_0)"
-RPROVIDES:krb5-pkinit = "krb5-pkinit(x86-64) ( =  1.21.3-8.el10_0) krb5-pkinit ( =  1.21.3-8.el10_0) krb5-pkinit-openssl ( =  1.21.3-8.el10_0)"
+RDEPENDS:krb5-pkinit = "
+ keyutils-libs
+ openssl-libs
+ krb5-libs
+ libcom_err
+ glibc
+"
 
 URI_krb5-server = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/krb5-server-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:krb5-server = "/bin/sh ( ) systemd-units ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libselinux.so.1()(64bit) ( ) libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libgssapi_krb5.so.2()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit) ( ) libkeyutils.so.1()(64bit) ( ) libresolv.so.2()(64bit) ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libkrb5support.so.0()(64bit) ( ) libkrb5support.so.0(krb5support_0_MIT)(64bit) ( ) libkdb5.so.10()(64bit) ( ) libkdb5.so.10(kdb5_10_MIT)(64bit) ( ) libgssrpc.so.4()(64bit) ( ) libgssrpc.so.4(gssrpc_4_MIT)(64bit) ( ) libkadm5srv_mit.so.12()(64bit) ( ) libkadm5srv_mit.so.12(kadm5srv_mit_12_MIT)(64bit) ( ) logrotate ( ) liblmdb.so.0.0.0()(64bit) ( ) libverto.so.1()(64bit) ( ) libkadm5clnt_mit.so.12()(64bit) ( ) libkadm5clnt_mit.so.12(kadm5clnt_mit_12_MIT)(64bit) ( ) libkrad.so.0()(64bit) ( ) libkrad.so.0(krad_0_MIT)(64bit) ( ) libss.so.2()(64bit) ( ) libverto-module-base ( ) words ( ) krb5-libs(x86-64) ( =  1.21.3-8.el10_0) libkadm5(x86-64) ( =  1.21.3-8.el10_0) krb5-pkinit(x86-64) ( =  1.21.3-8.el10_0)"
-RPROVIDES:krb5-server = "krb5-kdb-version ( =  9.0) krb5-server(x86-64) ( =  1.21.3-8.el10_0) config(krb5-server) ( =  1.21.3-8.el10_0) krb5-server ( =  1.21.3-8.el10_0)"
+RDEPENDS:krb5-server = "
+ libkadm5
+ logrotate
+ systemd
+ libverto
+ libss
+ libverto-libev
+ keyutils-libs
+ openssl-libs
+ krb5-libs
+ libcom_err
+ bash
+ krb5-pkinit
+ words
+ glibc
+ libselinux
+ lmdb-libs
+"
 
 URI_krb5-server-ldap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/krb5-server-ldap-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:krb5-server-ldap = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libkrb5.so.3()(64bit) ( ) libldap.so.2()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libcom_err.so.2()(64bit) ( ) liblber.so.2()(64bit) ( ) libgssapi_krb5.so.2()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libkeyutils.so.1()(64bit) ( ) libresolv.so.2()(64bit) ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libkrb5support.so.0()(64bit) ( ) libkrb5support.so.0(krb5support_0_MIT)(64bit) ( ) libkdb5.so.10()(64bit) ( ) libkdb5.so.10(kdb5_10_MIT)(64bit) ( ) libgssrpc.so.4()(64bit) ( ) libgssrpc.so.4(gssrpc_4_MIT)(64bit) ( ) libkadm5srv_mit.so.12()(64bit) ( ) libkadm5srv_mit.so.12(kadm5srv_mit_12_MIT)(64bit) ( ) krb5-libs(x86-64) ( =  1.21.3-8.el10_0) libkadm5(x86-64) ( =  1.21.3-8.el10_0) krb5-server(x86-64) ( =  1.21.3-8.el10_0)"
-RPROVIDES:krb5-server-ldap = "libkdb_ldap.so.1()(64bit) ( ) libkdb_ldap.so.1(HIDDEN)(64bit) ( ) libkdb_ldap.so.1(kdb_ldap_1_MIT)(64bit) ( ) krb5-server-ldap ( =  1.21.3-8.el10_0) krb5-server-ldap(x86-64) ( =  1.21.3-8.el10_0)"
+RDEPENDS:krb5-server-ldap = "
+ libkadm5
+ keyutils-libs
+ openssl-libs
+ krb5-libs
+ libcom_err
+ krb5-server
+ glibc
+ openldap
+"
 
 URI_krb5-workstation = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/krb5-workstation-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:krb5-workstation = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) /usr/bin/sh ( ) libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libpam.so.0()(64bit) ( ) libpam.so.0(LIBPAM_1.0)(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libkrb5support.so.0()(64bit) ( ) libkrb5support.so.0(krb5support_0_MIT)(64bit) ( ) libkdb5.so.10()(64bit) ( ) libkdb5.so.10(kdb5_10_MIT)(64bit) ( ) libkadm5srv_mit.so.12()(64bit) ( ) libkadm5srv_mit.so.12(kadm5srv_mit_12_MIT)(64bit) ( ) libkadm5clnt_mit.so.12()(64bit) ( ) libkadm5clnt_mit.so.12(kadm5clnt_mit_12_MIT)(64bit) ( ) libss.so.2()(64bit) ( ) krb5-libs(x86-64) ( =  1.21.3-8.el10_0) libkadm5(x86-64) ( =  1.21.3-8.el10_0) krb5-pkinit(x86-64) ( =  1.21.3-8.el10_0)"
-RPROVIDES:krb5-workstation = "config(krb5-workstation) ( =  1.21.3-8.el10_0) krb5-workstation ( =  1.21.3-8.el10_0) krb5-workstation(x86-64) ( =  1.21.3-8.el10_0)"
+RDEPENDS:krb5-workstation = "
+ libkadm5
+ libss
+ pam-libs
+ krb5-libs
+ libcom_err
+ bash
+ krb5-pkinit
+ glibc
+"
 
 URI_libkadm5 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libkadm5-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libkadm5 = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libgssapi_krb5.so.2()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit) ( ) libkeyutils.so.1()(64bit) ( ) libresolv.so.2()(64bit) ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libkrb5support.so.0()(64bit) ( ) libkrb5support.so.0(krb5support_0_MIT)(64bit) ( ) libkdb5.so.10()(64bit) ( ) libkdb5.so.10(kdb5_10_MIT)(64bit) ( ) libgssrpc.so.4()(64bit) ( ) libgssrpc.so.4(gssrpc_4_MIT)(64bit) ( ) krb5-libs(x86-64) ( =  1.21.3-8.el10_0)"
-RPROVIDES:libkadm5 = "libkadm5srv_mit.so.12()(64bit) ( ) libkadm5srv_mit.so.12(kadm5srv_mit_12_MIT)(64bit) ( ) libkadm5clnt_mit.so.12()(64bit) ( ) libkadm5clnt_mit.so.12(kadm5clnt_mit_12_MIT)(64bit) ( ) libkadm5clnt_mit.so.12(HIDDEN)(64bit) ( ) libkadm5srv_mit.so.12(HIDDEN)(64bit) ( ) libkadm5(x86-64) ( =  1.21.3-8.el10_0) libkadm5 ( =  1.21.3-8.el10_0)"
+RDEPENDS:libkadm5 = "
+ keyutils-libs
+ openssl-libs
+ krb5-libs
+ libcom_err
+ glibc
+"
 
 URI_krb5-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/krb5-devel-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:krb5-devel = "/usr/bin/sh ( ) /usr/bin/pkg-config ( ) libkrb5.so.3()(64bit) ( ) libgssapi_krb5.so.2()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libkrad.so.0()(64bit) ( ) libselinux-devel ( ) keyutils-libs-devel ( ) libcom_err-devel ( ) libverto-devel ( ) libkrb5support.so.0()(64bit) ( ) pkgconfig(gssrpc) ( ) pkgconfig(kdb) ( ) pkgconfig(mit-krb5) ( ) pkgconfig(mit-krb5-gssapi) ( ) libgssrpc.so.4()(64bit) ( ) libkdb5.so.10()(64bit) ( ) krb5-libs(x86-64) ( =  1.21.3-8.el10_0) libkadm5(x86-64) ( =  1.21.3-8.el10_0)"
-RPROVIDES:krb5-devel = "krb5-kdb-devel-version ( =  9.0) pkgconfig(gssrpc) ( =  1.21.3) pkgconfig(kadm-client) ( =  1.21.3) pkgconfig(kadm-server) ( =  1.21.3) pkgconfig(kdb) ( =  1.21.3) pkgconfig(krb5) ( =  1.21.3) pkgconfig(krb5-gssapi) ( =  1.21.3) pkgconfig(mit-krb5) ( =  1.21.3) pkgconfig(mit-krb5-gssapi) ( =  1.21.3) krb5-devel ( =  1.21.3-8.el10_0) krb5-devel(x86-64) ( =  1.21.3-8.el10_0)"
+RDEPENDS:krb5-devel = "
+ libkadm5
+ pkgconf-pkg-config
+ krb5-libs
+ libselinux-devel
+ bash
+ libcom_err-devel
+ keyutils-libs-devel
+ krb5-devel
+ libverto-devel
+"
 
 URI_krb5-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/krb5-tests-1.21.3-8.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:krb5-tests = "/usr/bin/sh ( ) coreutils ( ) keyutils ( ) gawk ( ) iproute ( ) sed ( ) perl-interpreter ( ) procps-ng ( ) net-tools ( ) softhsm ( ) gettext ( ) libss-devel ( ) resolv_wrapper ( ) /etc/crypto-policies/back-ends/krb5.config ( ) dejagnu ( ) gcc-c++ ( ) hostname ( ) libverto-module-base ( ) logrotate ( ) libcmocka-devel ( ) libcom_err-devel ( ) libselinux-devel ( ) libverto-devel ( ) lmdb-devel ( ) openldap-devel ( ) opensc ( ) pam-devel ( ) python3-kdcproxy ( ) redhat-rpm-config ( ) rpcbind ( ) words ( ) keyutils-libs-devel ( >=  1.5.8) openssl-devel ( >=  1:3.0.0)"
-RPROVIDES:krb5-tests = "krb5-tests ( =  1.21.3-8.el10_0) krb5-tests(x86-64) ( =  1.21.3-8.el10_0)"
+RDEPENDS:krb5-tests = "
+ resolv_wrapper
+ crypto-policies
+ keyutils
+ iproute
+ pam-devel
+ libcom_err-devel
+ net-tools
+ python3-kdcproxy
+ libverto-devel
+ rpcbind
+ words
+ sed
+ gcc-c++
+ libss-devel
+ softhsm
+ opensc
+ libverto-libev
+ openldap-devel
+ redhat-rpm-config
+ openssl-devel
+ bash
+ libselinux-devel
+ lmdb-devel
+ keyutils-libs-devel
+ logrotate
+ coreutils
+ libcmocka-devel
+ gawk
+ hostname
+ gettext
+ procps-ng
+ dejagnu
+ perl-interpreter
+"

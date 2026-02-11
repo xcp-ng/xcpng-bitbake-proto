@@ -7,5 +7,6 @@ PACKAGES = "hunspell-ln"
 
 
 URI_hunspell-ln = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hunspell-ln-0.02-31.el10.noarch.rpm;unpack=0"
-RDEPENDS:hunspell-ln = "hunspell-filesystem ( )"
-RPROVIDES:hunspell-ln = "hunspell-ln ( =  0.02-31.el10)"
+RDEPENDS:hunspell-ln = "
+ hunspell-filesystem
+"

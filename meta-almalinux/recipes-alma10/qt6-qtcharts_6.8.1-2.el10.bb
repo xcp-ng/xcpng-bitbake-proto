@@ -7,17 +7,42 @@ PACKAGES = "qt6-qtcharts qt6-qtcharts-devel qt6-qtcharts-examples qt6-qtcharts-t
 
 
 URI_qt6-qtcharts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtcharts-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtcharts = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6OpenGL.so.6()(64bit) ( ) libQt6OpenGL.so.6(Qt_6)(64bit) ( ) libQt6OpenGLWidgets.so.6()(64bit) ( ) libQt6OpenGLWidgets.so.6(Qt_6)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtcharts = "libQt6Charts.so.6()(64bit) ( ) libQt6ChartsQml.so.6()(64bit) ( ) libQt6Charts.so.6(NonQt)(64bit) ( ) libQt6Charts.so.6(Qt_6)(64bit) ( ) libQt6Charts.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6ChartsQml.so.6(NonQt)(64bit) ( ) libQt6ChartsQml.so.6(Qt_6)(64bit) ( ) libQt6ChartsQml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtchartsqml2plugin.so()(64bit) ( ) libqtchartsqml2plugin.so(NonQt)(64bit) ( ) libqtchartsqml2plugin.so(Qt_6)(64bit) ( ) libqtchartsqml2plugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtCharts) ( ) qt6-qtcharts(x86-64) ( =  6.8.1-2.el10) qt6-qtcharts ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtcharts = "
+ qt6-qtdeclarative
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtcharts-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtcharts-devel-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtcharts-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) pkgconfig(Qt6Gui) ( ) pkgconfig(Qt6Qml) ( ) pkgconfig(Qt6Quick) ( ) pkgconfig(Qt6Widgets) ( ) pkgconfig(Qt6OpenGL) ( ) pkgconfig(Qt6OpenGLWidgets) ( ) libQt6Charts.so.6()(64bit) ( ) libQt6ChartsQml.so.6()(64bit) ( ) pkgconfig(Qt6Charts) ( ) qt6-qtcharts(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtcharts-devel = "cmake(Qt6Charts) ( ) cmake(Qt6ChartsQml) ( ) cmake(Qt6qtchartsqml2) ( ) cmake(QtChartsTests) ( ) cmake(qt6charts) ( ) cmake(qt6chartsqml) ( ) cmake(qt6qtchartsqml2) ( ) cmake(qtchartstests) ( ) pkgconfig(Qt6Charts) ( =  6.8.1) pkgconfig(Qt6ChartsQml) ( =  6.8.1) qt6-qtcharts-devel ( =  6.8.1-2.el10) qt6-qtcharts-devel(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtcharts-devel = "
+ qt6-qtdeclarative-devel
+ cmake-filesystem
+ pkgconf-pkg-config
+ qt6-qtbase-devel
+ qt6-qtcharts
+ qt6-qtcharts-devel
+"
 
 URI_qt6-qtcharts-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtcharts-examples-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtcharts-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6Charts.so.6()(64bit) ( ) libQt6Charts.so.6(Qt_6)(64bit) ( ) libQt6Charts.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtcharts(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtcharts-examples = "qt6-qtcharts-examples ( =  6.8.1-2.el10) qt6-qtcharts-examples(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtcharts-examples = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ qt6-qtcharts
+"
 
 URI_qt6-qtcharts-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtcharts-tests-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtcharts-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6QuickTest.so.6()(64bit) ( ) libQt6QuickTest.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Charts.so.6()(64bit) ( ) libQt6Charts.so.6(Qt_6)(64bit) ( ) libQt6Charts.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtcharts(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtcharts-tests = "qt6-qtcharts-tests ( =  6.8.1-2.el10) qt6-qtcharts-tests(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtcharts-tests = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ qt6-qtcharts
+"

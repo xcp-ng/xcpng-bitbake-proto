@@ -7,21 +7,41 @@ PACKAGES = "iptables-libs iptables-devel iptables-nft iptables-nft-services ipta
 
 
 URI_iptables-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/iptables-libs-1.8.11-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:iptables-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libnetfilter_conntrack.so.3()(64bit) ( )"
-RPROVIDES:iptables-libs = "libxtables.so.12()(64bit) ( ) libip6t_DNPT.so()(64bit) ( ) libip6t_HL.so()(64bit) ( ) libip6t_NETMAP.so()(64bit) ( ) libip6t_REJECT.so()(64bit) ( ) libip6t_SNPT.so()(64bit) ( ) libip6t_ah.so()(64bit) ( ) libip6t_dst.so()(64bit) ( ) libip6t_eui64.so()(64bit) ( ) libip6t_frag.so()(64bit) ( ) libip6t_hbh.so()(64bit) ( ) libip6t_hl.so()(64bit) ( ) libip6t_icmp6.so()(64bit) ( ) libip6t_ipv6header.so()(64bit) ( ) libip6t_mh.so()(64bit) ( ) libip6t_rt.so()(64bit) ( ) libip6t_srh.so()(64bit) ( ) libipt_CLUSTERIP.so()(64bit) ( ) libipt_ECN.so()(64bit) ( ) libipt_NETMAP.so()(64bit) ( ) libipt_REJECT.so()(64bit) ( ) libipt_TTL.so()(64bit) ( ) libipt_ULOG.so()(64bit) ( ) libipt_ah.so()(64bit) ( ) libipt_icmp.so()(64bit) ( ) libipt_realm.so()(64bit) ( ) libipt_ttl.so()(64bit) ( ) libxt_AUDIT.so()(64bit) ( ) libxt_CHECKSUM.so()(64bit) ( ) libxt_CLASSIFY.so()(64bit) ( ) libxt_CONNMARK.so()(64bit) ( ) libxt_CONNSECMARK.so()(64bit) ( ) libxt_CT.so()(64bit) ( ) libxt_DSCP.so()(64bit) ( ) libxt_HMARK.so()(64bit) ( ) libxt_IDLETIMER.so()(64bit) ( ) libxt_LED.so()(64bit) ( ) libxt_LOG.so()(64bit) ( ) libxt_MARK.so()(64bit) ( ) libxt_NAT.so()(64bit) ( ) libxt_NFLOG.so()(64bit) ( ) libxt_NFQUEUE.so()(64bit) ( ) libxt_RATEEST.so()(64bit) ( ) libxt_SECMARK.so()(64bit) ( ) libxt_SET.so()(64bit) ( ) libxt_SYNPROXY.so()(64bit) ( ) libxt_TCPMSS.so()(64bit) ( ) libxt_TCPOPTSTRIP.so()(64bit) ( ) libxt_TEE.so()(64bit) ( ) libxt_TOS.so()(64bit) ( ) libxt_TPROXY.so()(64bit) ( ) libxt_TRACE.so()(64bit) ( ) libxt_addrtype.so()(64bit) ( ) libxt_bpf.so()(64bit) ( ) libxt_cgroup.so()(64bit) ( ) libxt_cluster.so()(64bit) ( ) libxt_comment.so()(64bit) ( ) libxt_connbytes.so()(64bit) ( ) libxt_connlabel.so()(64bit) ( ) libxt_connlimit.so()(64bit) ( ) libxt_connmark.so()(64bit) ( ) libxt_conntrack.so()(64bit) ( ) libxt_cpu.so()(64bit) ( ) libxt_dccp.so()(64bit) ( ) libxt_devgroup.so()(64bit) ( ) libxt_dscp.so()(64bit) ( ) libxt_ecn.so()(64bit) ( ) libxt_esp.so()(64bit) ( ) libxt_hashlimit.so()(64bit) ( ) libxt_helper.so()(64bit) ( ) libxt_ipcomp.so()(64bit) ( ) libxt_iprange.so()(64bit) ( ) libxt_ipvs.so()(64bit) ( ) libxt_length.so()(64bit) ( ) libxt_limit.so()(64bit) ( ) libxt_mac.so()(64bit) ( ) libxt_mark.so()(64bit) ( ) libxt_multiport.so()(64bit) ( ) libxt_nfacct.so()(64bit) ( ) libxt_osf.so()(64bit) ( ) libxt_owner.so()(64bit) ( ) libxt_physdev.so()(64bit) ( ) libxt_pkttype.so()(64bit) ( ) libxt_policy.so()(64bit) ( ) libxt_quota.so()(64bit) ( ) libxt_rateest.so()(64bit) ( ) libxt_recent.so()(64bit) ( ) libxt_rpfilter.so()(64bit) ( ) libxt_sctp.so()(64bit) ( ) libxt_set.so()(64bit) ( ) libxt_socket.so()(64bit) ( ) libxt_standard.so()(64bit) ( ) libxt_statistic.so()(64bit) ( ) libxt_string.so()(64bit) ( ) libxt_tcp.so()(64bit) ( ) libxt_tcpmss.so()(64bit) ( ) libxt_time.so()(64bit) ( ) libxt_tos.so()(64bit) ( ) libxt_u32.so()(64bit) ( ) libxt_udp.so()(64bit) ( ) iptables-libs ( =  1.8.11-9.el10_0) iptables-libs(x86-64) ( =  1.8.11-9.el10_0)"
+RDEPENDS:iptables-libs = "
+ glibc
+ libnetfilter_conntrack
+"
 
 URI_iptables-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/iptables-devel-1.8.11-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:iptables-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) libxtables.so.12()(64bit) ( ) iptables-libs(x86-64) ( =  1.8.11-9.el10_0)"
-RPROVIDES:iptables-devel = "pkgconfig(xtables) ( =  1.8.11) iptables-devel ( =  1.8.11-9.el10_0) iptables-devel(x86-64) ( =  1.8.11-9.el10_0)"
+RDEPENDS:iptables-devel = "
+ pkgconf-pkg-config
+ iptables-libs
+"
 
 URI_iptables-nft = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/iptables-nft-1.8.11-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:iptables-nft = "/bin/sh ( ) /usr/sbin/update-alternatives ( ) /usr/bin/readlink ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/sh ( ) libmnl.so.0()(64bit) ( ) libmnl.so.0(LIBMNL_1.0)(64bit) ( ) libxtables.so.12()(64bit) ( ) libnftnl.so.11()(64bit) ( ) libnftnl.so.11(LIBNFTNL_11)(64bit) ( ) libnftnl.so.11(LIBNFTNL_12)(64bit) ( ) libnftnl.so.11(LIBNFTNL_13)(64bit) ( ) kernel-64k-debug-modules-extra ( if  kernel-64k-debug-core) kernel-64k-modules-extra ( if  kernel-64k-core) kernel-debug-modules-extra ( if  kernel-debug-core) kernel-modules-extra ( if  kernel-core) kernel-rt-64k-debug-modules-extra ( if  kernel-rt-64k-debug-core) kernel-rt-64k-modules-extra ( if  kernel-rt-64k-core) kernel-rt-debug-modules-extra ( if  kernel-rt-debug-core) kernel-rt-modules-extra ( if  kernel-rt-core) iptables-libs(x86-64) ( =  1.8.11-9.el10_0)"
-RPROVIDES:iptables-nft = "iptables ( ) ebtables ( ) arptables ( ) arptables-helper ( ) libarpt_mangle.so()(64bit) ( ) libebt_802_3.so()(64bit) ( ) libebt_among.so()(64bit) ( ) libebt_arp.so()(64bit) ( ) libebt_arpreply.so()(64bit) ( ) libebt_dnat.so()(64bit) ( ) libebt_ip.so()(64bit) ( ) libebt_ip6.so()(64bit) ( ) libebt_log.so()(64bit) ( ) libebt_mark.so()(64bit) ( ) libebt_mark_m.so()(64bit) ( ) libebt_nflog.so()(64bit) ( ) libebt_pkttype.so()(64bit) ( ) libebt_redirect.so()(64bit) ( ) libebt_snat.so()(64bit) ( ) libebt_stp.so()(64bit) ( ) libebt_vlan.so()(64bit) ( ) iptables-nft ( =  1.8.11-9.el10_0) iptables-nft(x86-64) ( =  1.8.11-9.el10_0)"
+RDEPENDS:iptables-nft = "
+ coreutils
+ libmnl
+ iptables-libs
+ kernel-modules-extra
+ bash
+ libnftnl
+ glibc
+ alternatives
+ kernel-debug-modules-extra
+"
 
 URI_iptables-nft-services = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/iptables-nft-services-1.8.11-9.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:iptables-nft-services = "/bin/sh ( ) /usr/bin/bash ( ) iptables-nft ( =  1.8.11-9.el10_0)"
-RPROVIDES:iptables-nft-services = "arptables-services ( ) ebtables-services ( ) config(iptables-nft-services) ( =  1.8.11-9.el10_0) iptables-nft-services ( =  1.8.11-9.el10_0) iptables-services ( =  1.8.11-9.el10_0)"
+RDEPENDS:iptables-nft-services = "
+ iptables-nft
+ bash
+"
 
 URI_iptables-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/iptables-utils-1.8.11-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:iptables-utils = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/bash ( ) libpcap.so.1()(64bit) ( ) libnfnetlink.so.0()(64bit) ( ) libnfnetlink.so.0(NFNETLINK_1.0.1)(64bit) ( ) iptables ( =  1.8.11-9.el10_0)"
-RPROVIDES:iptables-utils = "iptables-utils ( =  1.8.11-9.el10_0) iptables-utils(x86-64) ( =  1.8.11-9.el10_0)"
+RDEPENDS:iptables-utils = "
+ libpcap
+ libnfnetlink
+ iptables-nft
+ bash
+ glibc
+"

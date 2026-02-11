@@ -7,5 +7,6 @@ PACKAGES = "python3-installer"
 
 
 URI_python3-installer = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-installer-0.7.0-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-installer = "python(abi) ( =  3.12)"
-RPROVIDES:python3-installer = "python-installer ( =  0.7.0-7.el10) python3-installer ( =  0.7.0-7.el10) python3.12-installer ( =  0.7.0-7.el10) python3.12dist(installer) ( =  0.7) python3dist(installer) ( =  0.7)"
+RDEPENDS:python3-installer = "
+ python3
+"

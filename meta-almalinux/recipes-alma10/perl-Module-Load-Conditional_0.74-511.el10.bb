@@ -7,9 +7,33 @@ PACKAGES = "perl-Module-Load-Conditional perl-Module-Load-Conditional-tests"
 
 
 URI_perl-Module-Load-Conditional = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-Load-Conditional-0.74-511.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Load-Conditional = "perl(strict) ( ) perl-libs ( ) perl(Carp) ( ) perl(Exporter) ( ) perl(vars) ( ) perl(constant) ( ) perl(File::Spec) ( ) perl(Config) ( ) perl(FileHandle) ( ) perl(Locale::Maketext::Simple) ( ) perl(Params::Check) ( ) perl(Module::CoreList) ( >=  2.22) perl(Module::Load) ( >=  0.28) perl(Module::Metadata) ( >=  1.000005) perl(version) ( >=  0.69)"
-RPROVIDES:perl-Module-Load-Conditional = "perl(Module::Load::Conditional) ( =  0.74) perl-Module-Load-Conditional ( =  0.74-511.el10)"
+RDEPENDS:perl-Module-Load-Conditional = "
+ perl-constant
+ perl-libs
+ perl-Carp
+ perl-vars
+ perl-FileHandle
+ perl-version
+ perl-Module-CoreList
+ perl-Module-Load
+ perl-Params-Check
+ perl-Module-Metadata
+ perl-PathTools
+ perl-Exporter
+ perl-Locale-Maketext-Simple
+"
 
 URI_perl-Module-Load-Conditional-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Load-Conditional-tests-0.74-511.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Module-Load-Conditional-tests = "perl(strict) ( ) /usr/bin/perl ( ) /usr/bin/sh ( ) perl-Test-Harness ( ) perl(warnings) ( ) perl(Test::More) ( ) perl(File::Spec) ( ) perl(lib) ( ) perl(Exporter) ( ) perl(constant) ( ) perl(FindBin) ( ) perl-Module-Load-Conditional ( =  0.74-511.el10)"
-RPROVIDES:perl-Module-Load-Conditional-tests = "perl-Module-Load-Conditional-tests ( =  0.74-511.el10)"
+RDEPENDS:perl-Module-Load-Conditional-tests = "
+ perl-constant
+ perl-Test-Harness
+ perl-libs
+ perl-Test-Simple
+ perl-FindBin
+ perl-Module-Load-Conditional
+ bash
+ perl-PathTools
+ perl-interpreter
+ perl-Exporter
+ perl-lib
+"

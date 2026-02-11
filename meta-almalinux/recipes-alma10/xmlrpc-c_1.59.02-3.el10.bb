@@ -7,25 +7,57 @@ PACKAGES = "xmlrpc-c xmlrpc-c-apps xmlrpc-c-c++ xmlrpc-c-client++ xmlrpc-c-clien
 
 
 URI_xmlrpc-c = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xmlrpc-c-1.59.02-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xmlrpc-c = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libssl.so.3()(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( )"
-RPROVIDES:xmlrpc-c = "libxmlrpc.so.3()(64bit) ( ) libxmlrpc_util.so.4()(64bit) ( ) libxmlrpc_server.so.3()(64bit) ( ) libxmlrpc_server_abyss.so.3()(64bit) ( ) libxmlrpc_abyss.so.3()(64bit) ( ) libxmlrpc_xmlparse.so.3()(64bit) ( ) libxmlrpc_xmltok.so.3()(64bit) ( ) libxmlrpc_server_cgi.so.3()(64bit) ( ) bundled(expat) ( ) xmlrpc-c(x86-64) ( =  1.59.02-3.el10) xmlrpc-c ( =  1.59.02-3.el10)"
+RDEPENDS:xmlrpc-c = "
+ glibc
+ openssl-libs
+ libgcc
+"
 
 URI_xmlrpc-c-apps = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xmlrpc-c-apps-1.59.02-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xmlrpc-c-apps = "rtld(GNU_HASH) ( ) /usr/bin/perl ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libxmlrpc.so.3()(64bit) ( ) libxmlrpc_util.so.4()(64bit) ( ) libxmlrpc_client.so.3()(64bit) ( ) libreadline.so.8()(64bit) ( ) libxmlrpc++.so.9()(64bit) ( ) libxmlrpc_server.so.3()(64bit) ( ) libxmlrpc_server_abyss.so.3()(64bit) ( ) libxmlrpc_util++.so.9()(64bit) ( ) libxmlrpc_client++.so.9()(64bit) ( ) libxmlrpc_cpp.so.9()(64bit) ( ) xmlrpc-c(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-c++(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-client(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-client++(x86-64) ( =  1.59.02-3.el10)"
-RPROVIDES:xmlrpc-c-apps = "xmlrpc-c-apps ( =  1.59.02-3.el10) xmlrpc-c-apps(x86-64) ( =  1.59.02-3.el10)"
+RDEPENDS:xmlrpc-c-apps = "
+ xmlrpc-c
+ xmlrpc-c-c++
+ xmlrpc-c-client++
+ xmlrpc-c-client
+ libgcc
+ readline
+ libstdc++
+ glibc
+ perl-interpreter
+"
 
 URI_xmlrpc-c-c++ = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xmlrpc-c-c++-1.59.02-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xmlrpc-c-c++ = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libxmlrpc.so.3()(64bit) ( ) libxmlrpc_util.so.4()(64bit) ( ) libxmlrpc_server.so.3()(64bit) ( ) libxmlrpc_server_abyss.so.3()(64bit) ( ) libxmlrpc_abyss.so.3()(64bit) ( ) xmlrpc-c(x86-64) ( =  1.59.02-3.el10)"
-RPROVIDES:xmlrpc-c-c++ = "libxmlrpc++.so.9()(64bit) ( ) libxmlrpc_util++.so.9()(64bit) ( ) libxmlrpc_cpp.so.9()(64bit) ( ) libxmlrpc_packetsocket.so.9()(64bit) ( ) libxmlrpc_abyss++.so.9()(64bit) ( ) libxmlrpc_server++.so.9()(64bit) ( ) libxmlrpc_server_abyss++.so.9()(64bit) ( ) libxmlrpc_server_cgi++.so.9()(64bit) ( ) libxmlrpc_server_pstream++.so.9()(64bit) ( ) xmlrpc-c-c++(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-c++ ( =  1.59.02-3.el10)"
+RDEPENDS:xmlrpc-c-c++ = "
+ glibc
+ xmlrpc-c
+ libgcc
+ libstdc++
+"
 
 URI_xmlrpc-c-client++ = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xmlrpc-c-client++-1.59.02-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xmlrpc-c-client++ = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libxmlrpc.so.3()(64bit) ( ) libxmlrpc_util.so.4()(64bit) ( ) libxmlrpc_client.so.3()(64bit) ( ) libxmlrpc++.so.9()(64bit) ( ) libxmlrpc_util++.so.9()(64bit) ( ) libxmlrpc_packetsocket.so.9()(64bit) ( ) xmlrpc-c(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-c++(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-client(x86-64) ( =  1.59.02-3.el10)"
-RPROVIDES:xmlrpc-c-client++ = "libxmlrpc_client++.so.9()(64bit) ( ) xmlrpc-c-client++(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-client++ ( =  1.59.02-3.el10)"
+RDEPENDS:xmlrpc-c-client++ = "
+ xmlrpc-c
+ xmlrpc-c-c++
+ xmlrpc-c-client
+ libgcc
+ libstdc++
+ glibc
+"
 
 URI_xmlrpc-c-client = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xmlrpc-c-client-1.59.02-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xmlrpc-c-client = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libxmlrpc.so.3()(64bit) ( ) libxmlrpc_util.so.4()(64bit) ( ) libcurl.so.4()(64bit) ( ) xmlrpc-c(x86-64) ( =  1.59.02-3.el10)"
-RPROVIDES:xmlrpc-c-client = "libxmlrpc_client.so.3()(64bit) ( ) xmlrpc-c-client(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-client ( =  1.59.02-3.el10)"
+RDEPENDS:xmlrpc-c-client = "
+ glibc
+ xmlrpc-c
+ libcurl
+"
 
 URI_xmlrpc-c-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xmlrpc-c-devel-1.59.02-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:xmlrpc-c-devel = "/usr/bin/sh ( ) /usr/bin/pkg-config ( ) libxmlrpc.so.3()(64bit) ( ) libxmlrpc_util.so.4()(64bit) ( ) libxmlrpc_client.so.3()(64bit) ( ) libxmlrpc++.so.9()(64bit) ( ) libxmlrpc_server.so.3()(64bit) ( ) libxmlrpc_server_abyss.so.3()(64bit) ( ) libxmlrpc_util++.so.9()(64bit) ( ) libxmlrpc_abyss.so.3()(64bit) ( ) libxmlrpc_client++.so.9()(64bit) ( ) libxmlrpc_cpp.so.9()(64bit) ( ) libxmlrpc_packetsocket.so.9()(64bit) ( ) libxmlrpc_xmlparse.so.3()(64bit) ( ) libxmlrpc_xmltok.so.3()(64bit) ( ) pkgconfig(xmlrpc) ( ) pkgconfig(xmlrpc_client) ( ) libxmlrpc_abyss++.so.9()(64bit) ( ) libxmlrpc_server++.so.9()(64bit) ( ) libxmlrpc_server_abyss++.so.9()(64bit) ( ) libxmlrpc_server_cgi++.so.9()(64bit) ( ) libxmlrpc_server_cgi.so.3()(64bit) ( ) libxmlrpc_server_pstream++.so.9()(64bit) ( ) pkgconfig(xmlrpc++) ( ) pkgconfig(xmlrpc_abyss) ( ) pkgconfig(xmlrpc_expat) ( ) pkgconfig(xmlrpc_server) ( ) pkgconfig(xmlrpc_server++) ( ) pkgconfig(xmlrpc_util) ( ) pkgconfig(xmlrpc_util++) ( ) xmlrpc-c(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-c++(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-client(x86-64) ( =  1.59.02-3.el10) xmlrpc-c-client++(x86-64) ( =  1.59.02-3.el10)"
-RPROVIDES:xmlrpc-c-devel = "pkgconfig(xmlrpc) ( =  1.59.2) pkgconfig(xmlrpc++) ( =  1.59.2) pkgconfig(xmlrpc_abyss) ( =  1.59.2) pkgconfig(xmlrpc_abyss++) ( =  1.59.2) pkgconfig(xmlrpc_client) ( =  1.59.2) pkgconfig(xmlrpc_client++) ( =  1.59.2) pkgconfig(xmlrpc_expat) ( =  1.59.2) pkgconfig(xmlrpc_server) ( =  1.59.2) pkgconfig(xmlrpc_server++) ( =  1.59.2) pkgconfig(xmlrpc_server_abyss) ( =  1.59.2) pkgconfig(xmlrpc_server_cgi) ( =  1.59.2) pkgconfig(xmlrpc_server_pstream++) ( =  1.59.2) pkgconfig(xmlrpc_util) ( =  1.59.2) pkgconfig(xmlrpc_util++) ( =  1.59.2) xmlrpc-c-devel ( =  1.59.02-3.el10) xmlrpc-c-devel(x86-64) ( =  1.59.02-3.el10)"
+RDEPENDS:xmlrpc-c-devel = "
+ xmlrpc-c
+ xmlrpc-c-c++
+ xmlrpc-c-client++
+ xmlrpc-c-client
+ xmlrpc-c-devel
+ pkgconf-pkg-config
+ bash
+"

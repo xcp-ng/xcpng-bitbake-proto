@@ -7,17 +7,103 @@ PACKAGES = "gtk4 gtk4-devel gtk4-devel-docs gtk4-devel-tools"
 
 
 URI_gtk4 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk4-4.16.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gtk4 = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libX11.so.6()(64bit) ( ) libm.so.6(GLIBC_2.27)(64bit) ( ) libcairo.so.2()(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libXext.so.6()(64bit) ( ) libjpeg.so.62()(64bit) ( ) libjpeg.so.62(LIBJPEG_6.2)(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libpng16.so.16()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libXfixes.so.3()(64bit) ( ) libXi.so.6()(64bit) ( ) libcups.so.2()(64bit) ( ) libpng16.so.16(PNG16_0)(64bit) ( ) libcairo-gobject.so.2()(64bit) ( ) libwayland-client.so.0()(64bit) ( ) libXrandr.so.2()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libXdamage.so.1()(64bit) ( ) libgraphene-1.0.so.0()(64bit) ( ) hicolor-icon-theme ( ) libXcursor.so.1()(64bit) ( ) libtiff.so.6()(64bit) ( ) libxkbcommon.so.0()(64bit) ( ) libtiff.so.6(LIBTIFF_4.0)(64bit) ( ) libxkbcommon.so.0(V_0.5.0)(64bit) ( ) libepoxy.so.0()(64bit) ( ) libgstvideo-1.0.so.0()(64bit) ( ) libXinerama.so.1()(64bit) ( ) libfribidi.so.0()(64bit) ( ) libcolord.so.2()(64bit) ( ) libjpeg.so.62(LIBJPEGTURBO_6.2)(64bit) ( ) libpangoft2-1.0.so.0()(64bit) ( ) libvulkan.so.1()(64bit) ( ) libgstallocators-1.0.so.0()(64bit) ( ) libgstgl-1.0.so.0()(64bit) ( ) libtracker-sparql-3.0.so.0()(64bit) ( ) libwayland-egl.so.1()(64bit) ( ) adwaita-icon-theme ( ) gdk-pixbuf2-modules(x86-64) ( ) gtk-update-icon-cache ( ) libcairo-script-interpreter.so.2()(64bit) ( ) libgstplayer-1.0.so.0()(64bit) ( ) libharfbuzz-subset.so.0()(64bit) ( ) libepoxy(x86-64) ( >=  1.4) glib2(x86-64) ( >=  2.76.0) cairo(x86-64) ( >=  1.18.0) cairo-gobject(x86-64) ( >=  1.18.0) libwayland-client(x86-64) ( >=  1.21.0) libwayland-cursor(x86-64) ( >=  1.21.0) pango(x86-64) ( >=  1.52.0)"
-RPROVIDES:gtk4 = "libgtk-4.so.1()(64bit) ( ) gtk4(x86-64) ( =  4.16.7-1.el10) gtk4 ( =  4.16.7-1.el10)"
+RDEPENDS:gtk4 = "
+ libpng
+ libtracker-sparql
+ cups-libs
+ pango
+ fontconfig
+ libX11
+ hicolor-icon-theme
+ libXcursor
+ libXdamage
+ libXext
+ libXfixes
+ libXi
+ libXinerama
+ libepoxy
+ fribidi
+ adwaita-icon-theme
+ libXrandr
+ cairo
+ cairo-gobject
+ libwayland-client
+ libwayland-cursor
+ libwayland-egl
+ gdk-pixbuf2
+ gdk-pixbuf2-modules
+ graphene
+ libxkbcommon
+ vulkan-loader
+ gstreamer1
+ harfbuzz
+ gstreamer1-plugins-bad-free-libs
+ gstreamer1-plugins-base
+ gtk-update-icon-cache
+ glib2
+ colord-libs
+ glibc
+ libjpeg-turbo
+ libtiff
+"
 
 URI_gtk4-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk4-devel-4.16.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gtk4-devel = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) /usr/bin/pkg-config ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libX11.so.6()(64bit) ( ) libm.so.6(GLIBC_2.27)(64bit) ( ) libcairo.so.2()(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libXext.so.6()(64bit) ( ) libjpeg.so.62()(64bit) ( ) libjpeg.so.62(LIBJPEG_6.2)(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libgtk-4.so.1()(64bit) ( ) libpng16.so.16()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libXfixes.so.3()(64bit) ( ) libXi.so.6()(64bit) ( ) libpng16.so.16(PNG16_0)(64bit) ( ) libcairo-gobject.so.2()(64bit) ( ) libwayland-client.so.0()(64bit) ( ) libXrandr.so.2()(64bit) ( ) libXdamage.so.1()(64bit) ( ) libgraphene-1.0.so.0()(64bit) ( ) libXcursor.so.1()(64bit) ( ) pkgconfig(x11) ( ) libtiff.so.6()(64bit) ( ) libxkbcommon.so.0()(64bit) ( ) libtiff.so.6(LIBTIFF_4.0)(64bit) ( ) libxkbcommon.so.0(V_0.5.0)(64bit) ( ) libepoxy.so.0()(64bit) ( ) libXinerama.so.1()(64bit) ( ) libfribidi.so.0()(64bit) ( ) libjpeg.so.62(LIBJPEGTURBO_6.2)(64bit) ( ) libpangoft2-1.0.so.0()(64bit) ( ) libvulkan.so.1()(64bit) ( ) libtracker-sparql-3.0.so.0()(64bit) ( ) libwayland-egl.so.1()(64bit) ( ) libcairo-script-interpreter.so.2()(64bit) ( ) pkgconfig(vulkan) ( ) libharfbuzz-subset.so.0()(64bit) ( ) pkgconfig(gtk4) ( ) pkgconfig(gdk-pixbuf-2.0) ( >=  2.30.0) gtk4(x86-64) ( =  4.16.7-1.el10) pkgconfig(cairo) ( >=  1.18.0) pkgconfig(cairo-gobject) ( >=  1.18.0) pkgconfig(gio-2.0) ( >=  2.76.0) pkgconfig(graphene-gobject-1.0) ( >=  1.10.0) pkgconfig(pango) ( >=  1.52.0) pkgconfig(pangocairo) ( >=  1.52.0) pkgconfig(wayland-client) ( >=  1.21.0)"
-RPROVIDES:gtk4-devel = "gtk4-devel ( =  4.16.7-1.el10) gtk4-devel(x86-64) ( =  4.16.7-1.el10) pkgconfig(gtk4) ( =  4.16.7) pkgconfig(gtk4-atspi) ( =  4.16.7) pkgconfig(gtk4-unix-print) ( =  4.16.7) pkgconfig(gtk4-wayland) ( =  4.16.7) pkgconfig(gtk4-x11) ( =  4.16.7)"
+RDEPENDS:gtk4-devel = "
+ glib2-devel
+ libpng
+ libtracker-sparql
+ pango
+ fontconfig
+ libX11
+ pango-devel
+ libX11-devel
+ libXcursor
+ libXdamage
+ libXext
+ libXfixes
+ libXi
+ libXinerama
+ libepoxy
+ fribidi
+ libXrandr
+ cairo
+ cairo-devel
+ cairo-gobject
+ cairo-gobject-devel
+ libwayland-client
+ libwayland-egl
+ gdk-pixbuf2
+ gdk-pixbuf2-devel
+ graphene
+ graphene-devel
+ libxkbcommon
+ vulkan-loader
+ vulkan-loader-devel
+ wayland-devel
+ harfbuzz
+ pkgconf-pkg-config
+ glib2
+ glibc
+ gtk4
+ gtk4-devel
+ libjpeg-turbo
+ libtiff
+"
 
 URI_gtk4-devel-docs = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtk4-devel-docs-4.16.7-1.el10.noarch.rpm;unpack=0"
-RDEPENDS:gtk4-devel-docs = "gtk4 ( =  4.16.7-1.el10)"
-RPROVIDES:gtk4-devel-docs = "gtk4-devel-docs ( =  4.16.7-1.el10)"
+RDEPENDS:gtk4-devel-docs = "
+ gtk4
+"
 
 URI_gtk4-devel-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtk4-devel-tools-4.16.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gtk4-devel-tools = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libcairo.so.2()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libgtk-4.so.1()(64bit) ( ) libepoxy.so.0()(64bit) ( ) libgraphene-1.0.so.0()(64bit) ( ) gtk4(x86-64) ( =  4.16.7-1.el10)"
-RPROVIDES:gtk4-devel-tools = "application() ( ) metainfo() ( ) application(org.gtk.Demo4.desktop) ( ) application(org.gtk.IconBrowser4.desktop) ( ) application(org.gtk.PrintEditor4.desktop) ( ) application(org.gtk.WidgetFactory4.desktop) ( ) application(org.gtk.gtk4.NodeEditor.desktop) ( ) metainfo(org.gtk.Demo4.appdata.xml) ( ) metainfo(org.gtk.IconBrowser4.appdata.xml) ( ) metainfo(org.gtk.PrintEditor4.appdata.xml) ( ) metainfo(org.gtk.WidgetFactory4.appdata.xml) ( ) metainfo(org.gtk.gtk4.NodeEditor.appdata.xml) ( ) gtk4-devel-tools ( =  4.16.7-1.el10) gtk4-devel-tools(x86-64) ( =  4.16.7-1.el10)"
+RDEPENDS:gtk4-devel-tools = "
+ libepoxy
+ harfbuzz
+ pango
+ gdk-pixbuf2
+ cairo
+ glib2
+ graphene
+ glibc
+ gtk4
+"

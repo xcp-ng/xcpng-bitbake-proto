@@ -7,5 +7,6 @@ PACKAGES = "flatpak-rpm-macros"
 
 
 URI_flatpak-rpm-macros = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/flatpak-rpm-macros-40-6.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flatpak-rpm-macros = "/usr/bin/bash ( )"
-RPROVIDES:flatpak-rpm-macros = "flatpak-rpm-macros ( =  40-6.el10) flatpak-rpm-macros(x86-64) ( =  40-6.el10)"
+RDEPENDS:flatpak-rpm-macros = "
+ bash
+"

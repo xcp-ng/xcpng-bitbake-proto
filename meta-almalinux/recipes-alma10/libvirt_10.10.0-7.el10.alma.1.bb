@@ -7,133 +7,393 @@ PACKAGES = "libvirt libvirt-client libvirt-client-qemu libvirt-daemon libvirt-da
 
 
 URI_libvirt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt = "libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-network ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-nwfilter ( =  10.10.0-7.el10.alma.1) libvirt-client ( =  10.10.0-7.el10.alma.1) libvirt-daemon ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-interface ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-nodedev ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-qemu ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-secret ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage ( =  10.10.0-7.el10.alma.1) libvirt-client-qemu ( =  10.10.0-7.el10.alma.1) libvirt-daemon-config-network ( =  10.10.0-7.el10.alma.1) libvirt-daemon-config-nwfilter ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt = "libvirt ( =  10.10.0-7.el10.alma.1) libvirt(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt = "
+ libvirt-client-qemu
+ libvirt-daemon
+ libvirt-daemon-config-network
+ libvirt-daemon-config-nwfilter
+ libvirt-daemon-driver-interface
+ libvirt-daemon-driver-network
+ libvirt-daemon-driver-nodedev
+ libvirt-daemon-driver-nwfilter
+ libvirt-daemon-driver-qemu
+ libvirt-daemon-driver-secret
+ libvirt-daemon-driver-storage
+ libvirt-libs
+ libvirt-client
+"
 
 URI_libvirt-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-client-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-client = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/sh ( ) libglib-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libgnutls.so.30()(64bit) ( ) libgnutls.so.30(GNUTLS_3_4)(64bit) ( ) libvirt.so.0()(64bit) ( ) libreadline.so.8()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.0)(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_2.0.0)(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.4)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.17)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-client = "libvirt-client ( =  10.10.0-7.el10.alma.1) libvirt-client(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-client = "
+ gnutls
+ libgcc
+ readline
+ libxml2
+ bash
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-client-qemu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-client-qemu-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-client-qemu = "/usr/bin/python3 ( ) python3-cryptography ( ) python3-lxml ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) python3-libvirt ( >=  3.7.0)"
-RPROVIDES:libvirt-client-qemu = "libvirt-client-qemu ( =  10.10.0-7.el10.alma.1) libvirt-client-qemu(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-client-qemu = "
+ python3
+ python3-cryptography
+ python3-libvirt
+ python3-lxml
+ libvirt-libs
+"
 
 URI_libvirt-daemon = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1) libvirt-daemon-lock ( =  10.10.0-7.el10.alma.1) libvirt-daemon-log ( =  10.10.0-7.el10.alma.1) libvirt-daemon-plugin-lockd ( =  10.10.0-7.el10.alma.1) libvirt-daemon-proxy ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon = "libvirt-daemon ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon) ( =  10.10.0-7.el10.alma.1) libvirt-daemon(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon = "
+ libvirt-daemon-common
+ libgcc
+ bash
+ glib2
+ libvirt-daemon-lock
+ libvirt-daemon-log
+ glibc
+ libtirpc
+ libvirt-libs
+ libvirt-daemon-plugin-lockd
+ libvirt-daemon-proxy
+"
 
 URI_libvirt-daemon-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-common-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-common = "/bin/sh ( ) shadow-utils ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/sh ( ) libglib-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libreadline.so.8()(64bit) ( ) dbus ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libacl.so.1()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) iproute ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) gettext ( ) dmidecode ( ) /usr/bin/systemctl ( ) libvirt-admin.so.0()(64bit) ( ) libvirt-admin.so.0(LIBVIRT_ADMIN_2.0.0)(64bit) ( ) libvirt-admin.so.0(LIBVIRT_ADMIN_3.0.0)(64bit) ( ) libvirt-admin.so.0(LIBVIRT_ADMIN_8.6.0)(64bit) ( ) iproute-tc ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) polkit ( >=  0.112)"
-RPROVIDES:libvirt-daemon-common = "libvirt-daemon-common ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-common) ( =  10.10.0-7.el10.alma.1) libvirt-admin ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-common = "
+ libacl
+ shadow-utils
+ systemd
+ iproute
+ iproute-tc
+ libgcc
+ readline
+ dmidecode
+ gettext
+ polkit
+ bash
+ glib2
+ dbus
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-config-network = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-config-network-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-config-network = "/bin/sh ( ) libvirt-daemon-driver-network ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-config-network = "libvirt-daemon-config-network ( =  10.10.0-7.el10.alma.1) libvirt-daemon-config-network(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-config-network = "
+ bash
+ libvirt-daemon-driver-network
+"
 
 URI_libvirt-daemon-config-nwfilter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-config-nwfilter-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-config-nwfilter = "/bin/sh ( ) libvirt-daemon-driver-nwfilter ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-config-nwfilter = "libvirt-daemon-config-nwfilter ( =  10.10.0-7.el10.alma.1) libvirt-daemon-config-nwfilter(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-config-nwfilter = "
+ libvirt-daemon-driver-nwfilter
+ bash
+"
 
 URI_libvirt-daemon-driver-interface = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-interface-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-interface = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-interface = "libvirt_driver_interface.so()(64bit) ( ) libvirt-daemon-driver-interface ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-driver-interface) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-interface(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-interface = "
+ libvirt-daemon-common
+ systemd-libs
+ libgcc
+ bash
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-network = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-network-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-network = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) nftables ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1) dnsmasq ( >=  2.41)"
-RPROVIDES:libvirt-daemon-driver-network = "libvirt_driver_network.so()(64bit) ( ) libvirt-daemon-driver-network ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-driver-network) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-network(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-network = "
+ libvirt-daemon-common
+ nftables
+ libgcc
+ dnsmasq
+ bash
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-nodedev = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-nodedev-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-nodedev = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libudev.so.1()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) libpciaccess.so.0()(64bit) ( ) mdevctl ( ) module-init-tools ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1) systemd ( >=  185)"
-RPROVIDES:libvirt-daemon-driver-nodedev = "libvirt_driver_nodedev.so()(64bit) ( ) libvirt-daemon-driver-nodedev ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-driver-nodedev) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-nodedev(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-nodedev = "
+ libpciaccess
+ libvirt-daemon-common
+ systemd
+ systemd-libs
+ kmod
+ libgcc
+ bash
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+ mdevctl
+"
 
 URI_libvirt-daemon-driver-nwfilter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-nwfilter-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-nwfilter = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) iptables ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libpcap.so.1()(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) ebtables ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-nwfilter = "libvirt_driver_nwfilter.so()(64bit) ( ) libvirt-daemon-driver-nwfilter ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-driver-nwfilter) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-nwfilter(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-nwfilter = "
+ libpcap
+ libvirt-daemon-common
+ libgcc
+ bash
+ glib2
+ iptables-nft
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-qemu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-qemu-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-qemu = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libgnutls.so.30()(64bit) ( ) libgnutls.so.30(GNUTLS_3_4)(64bit) ( ) libselinux.so.1()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) bzip2 ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) xz ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) gzip ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) /usr/bin/qemu-img ( ) libnbd.so.0()(64bit) ( ) libnbd.so.0(LIBNBD_1.0)(64bit) ( ) zstd ( ) swtpm-tools ( ) lzop ( ) numad ( ) systemd-container ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1) libvirt-daemon-log ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-qemu = "group(qemu) ( ) libvirt_driver_qemu.so()(64bit) ( ) libvirt-daemon-driver-qemu ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-driver-qemu) ( =  10.10.0-7.el10.alma.1) group(kvm) ( =  ZyBrdm0gMzYA) group(qemu) ( =  ZyBxZW11IDEwNwAA) libvirt-daemon-driver-qemu(x86-64) ( =  10.10.0-7.el10.alma.1) user(qemu) ( =  dSBxZW11IDEwNzpxZW11ICJxZW11IHVzZXIiIC0gLQAA)"
+RDEPENDS:libvirt-daemon-driver-qemu = "
+ systemd-container
+ libnbd
+ libselinux
+ libvirt-daemon-common
+ numad
+ qemu-img
+ libvirt-daemon-log
+ libtirpc
+ libvirt-libs
+ xz
+ gnutls
+ zstd
+ libgcc
+ libxml2
+ bash
+ bzip2
+ gzip
+ lzop
+ glib2
+ glibc
+ swtpm-tools
+"
 
 URI_libvirt-daemon-driver-secret = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-secret-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-secret = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-secret = "libvirt_driver_secret.so()(64bit) ( ) libvirt-daemon-driver-secret ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-driver-secret) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-secret(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-secret = "
+ libvirt-daemon-common
+ libgcc
+ bash
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-storage = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage = "libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-disk ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-iscsi ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-logical ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-mpath ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-rbd ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-scsi ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage = "libvirt-daemon-driver-storage ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage = "
+ libvirt-daemon-driver-storage-core
+ libvirt-daemon-driver-storage-disk
+ libvirt-daemon-driver-storage-iscsi
+ libvirt-daemon-driver-storage-logical
+ libvirt-daemon-driver-storage-mpath
+ libvirt-daemon-driver-storage-rbd
+ libvirt-daemon-driver-storage-scsi
+"
 
 URI_libvirt-daemon-driver-storage-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-core-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage-core = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libselinux.so.1()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libvirt.so.0()(64bit) ( ) util-linux ( ) libblkid.so.1()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libblkid.so.1(BLKID_1.0)(64bit) ( ) libblkid.so.1(BLKID_2.17)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libblkid.so.1(BLKID_2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) /usr/bin/qemu-img ( ) libparted.so.2()(64bit) ( ) scrub ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage-core = "libvirt_driver_storage.so()(64bit) ( ) libvirt_storage_backend_fs.so()(64bit) ( ) libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-driver-storage-core) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-core(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage-core = "
+ libvirt-daemon-common
+ util-linux
+ scrub
+ libgcc
+ libblkid
+ libxml2
+ qemu-img
+ parted
+ libtirpc
+ bash
+ glib2
+ glibc
+ libselinux
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-storage-disk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-disk-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage-disk = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) parted ( ) device-mapper ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage-disk = "libvirt_storage_backend_disk.so()(64bit) ( ) libvirt-daemon-driver-storage-disk ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-disk(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage-disk = "
+ device-mapper
+ libgcc
+ libvirt-daemon-driver-storage-core
+ parted
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-storage-iscsi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-iscsi-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage-iscsi = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) iscsi-initiator-utils ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage-iscsi = "libvirt_storage_backend_iscsi.so()(64bit) ( ) libvirt-daemon-driver-storage-iscsi ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-iscsi(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage-iscsi = "
+ libgcc
+ libvirt-daemon-driver-storage-core
+ iscsi-initiator-utils
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-storage-logical = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-logical-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage-logical = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) lvm2 ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage-logical = "libvirt_storage_backend_logical.so()(64bit) ( ) libvirt-daemon-driver-storage-logical ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-logical(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage-logical = "
+ lvm2
+ libgcc
+ libvirt-daemon-driver-storage-core
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-storage-mpath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-mpath-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage-mpath = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libdevmapper.so.1.02()(64bit) ( ) libdevmapper.so.1.02(Base)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_197)(64bit) ( ) libdevmapper.so.1.02(DM_1_02_97)(64bit) ( ) device-mapper ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage-mpath = "libvirt_storage_backend_mpath.so()(64bit) ( ) libvirt-daemon-driver-storage-mpath ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-mpath(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage-mpath = "
+ device-mapper
+ device-mapper-libs
+ libgcc
+ libvirt-daemon-driver-storage-core
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-storage-rbd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-rbd-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage-rbd = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) librados.so.2()(64bit) ( ) librbd.so.1()(64bit) ( ) librados.so.2(LIBRADOS_14.2.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage-rbd = "libvirt_storage_backend_rbd.so()(64bit) ( ) libvirt-daemon-driver-storage-rbd ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-rbd(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage-rbd = "
+ librados2
+ librbd1
+ libgcc
+ libvirt-daemon-driver-storage-core
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-driver-storage-scsi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-scsi-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-driver-storage-scsi = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-core ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-driver-storage-scsi = "libvirt_storage_backend_scsi.so()(64bit) ( ) libvirt-daemon-driver-storage-scsi ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage-scsi(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-driver-storage-scsi = "
+ libgcc
+ libvirt-daemon-driver-storage-core
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-kvm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-kvm-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-kvm = "qemu-kvm ( ) libvirt-daemon-common ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-network ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-nwfilter ( =  10.10.0-7.el10.alma.1) libvirt-daemon-lock ( =  10.10.0-7.el10.alma.1) libvirt-daemon-log ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-interface ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-nodedev ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-qemu ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-secret ( =  10.10.0-7.el10.alma.1) libvirt-daemon-driver-storage ( =  10.10.0-7.el10.alma.1) libvirt-daemon-plugin-lockd ( =  10.10.0-7.el10.alma.1) libvirt-daemon-proxy ( =  10.10.0-7.el10.alma.1) libvirt-ssh-proxy ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-kvm = "libvirt-daemon-kvm ( =  10.10.0-7.el10.alma.1) libvirt-daemon-kvm(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-kvm = "
+ libvirt-daemon-common
+ libvirt-daemon-driver-interface
+ libvirt-daemon-driver-network
+ libvirt-daemon-driver-nodedev
+ libvirt-daemon-driver-nwfilter
+ libvirt-daemon-driver-qemu
+ libvirt-daemon-driver-secret
+ libvirt-daemon-driver-storage
+ qemu-kvm
+ libvirt-daemon-lock
+ libvirt-daemon-log
+ libvirt-daemon-plugin-lockd
+ libvirt-daemon-proxy
+ libvirt-ssh-proxy
+"
 
 URI_libvirt-daemon-lock = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-lock-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-lock = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-lock = "libvirt-daemon-lock ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-lock) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-lock(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-lock = "
+ libgcc
+ bash
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-log = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-log-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-log = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-log = "libvirt-daemon-log ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-log) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-log(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-log = "
+ libgcc
+ bash
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-plugin-lockd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-plugin-lockd-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-plugin-lockd = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libvirt.so.0()(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) libvirt-daemon-lock ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-plugin-lockd = "libvirt-daemon-plugin-lockd ( =  10.10.0-7.el10.alma.1) libvirt-daemon-plugin-lockd(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-plugin-lockd = "
+ libgcc
+ libvirt-daemon-lock
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-proxy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-proxy-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-proxy = "/bin/sh ( ) rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-daemon-proxy = "libvirt-daemon-proxy ( =  10.10.0-7.el10.alma.1) config(libvirt-daemon-proxy) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-proxy(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-proxy = "
+ libgcc
+ bash
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"
 
 URI_libvirt-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-libs-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libxml2.so.2(LIBXML2_2.6.0)(64bit) ( ) libgnutls.so.30()(64bit) ( ) libnuma.so.1()(64bit) ( ) libgnutls.so.30(GNUTLS_3_4)(64bit) ( ) libnuma.so.1(libnuma_1.2)(64bit) ( ) libselinux.so.1()(64bit) ( ) libcurl.so.4()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libnuma.so.1(libnuma_1.1)(64bit) ( ) libcap-ng.so.0()(64bit) ( ) libjson-c.so.5()(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libacl.so.1()(64bit) ( ) libjson-c.so.5(JSONC_0.14)(64bit) ( ) libsasl2.so.3()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) libnl-3.so.200()(64bit) ( ) libnl-3.so.200(libnl_3)(64bit) ( ) libaudit.so.1()(64bit) ( ) libxml2.so.2(LIBXML2_2.5.2)(64bit) ( ) libxml2.so.2(LIBXML2_2.7.3)(64bit) ( ) libssh.so.4()(64bit) ( ) libssh.so.4(LIBSSH_4_5_0)(64bit) ( ) libxml2.so.2(LIBXML2_2.8.0)(64bit) ( ) libnuma.so.1(libnuma_1.6)(64bit) ( ) libxml2.so.2(LIBXML2_2.5.4)(64bit) ( ) cyrus-sasl-gssapi ( ) libjson-c.so.5(JSONC_0.15)(64bit) ( ) libssh.so.4(LIBSSH_4_10_0)(64bit) ( )"
-RPROVIDES:libvirt-libs = "libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.8)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.13)(64bit) ( ) libvirt.so.0(LIBVIRT_0.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.10)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.7)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.9)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.2)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.3.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.7)(64bit) ( ) libvirt.so.0(LIBVIRT_0.10.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.4)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.2)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.6)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.8)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.11)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.5)(64bit) ( ) libvirt.so.0(LIBVIRT_0.9.9)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.0.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.11)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.14)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.15)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.16)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.19)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.3)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.5)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.6)(64bit) ( ) libvirt.so.0(LIBVIRT_1.3.3)(64bit) ( ) libvirt.so.0(LIBVIRT_2.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_2.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.5.0)(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.2)(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.10.0)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.8.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_0.9.4)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_1.2.3)(64bit) ( ) libvirt-qemu.so.0(LIBVIRT_QEMU_8.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.8.1)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.12)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.9)(64bit) ( ) libvirt.so.0(LIBVIRT_10.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_10.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_3.9.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_6.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.2.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.3.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_7.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.5.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.0.0)(64bit) ( ) libvirt.so.0(LIBVIRT_9.7.0)(64bit) ( ) libvirt.so.0(LIBVIRT_4.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_5.8.0)(64bit) ( ) libvirt.so.0(LIBVIRT_8.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.6.0)(64bit) ( ) libvirt.so.0(LIBVIRT_1.1.0)(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_2.0.0)(64bit) ( ) libvirt-admin.so.0()(64bit) ( ) libvirt-admin.so.0(LIBVIRT_ADMIN_2.0.0)(64bit) ( ) libvirt-admin.so.0(LIBVIRT_ADMIN_3.0.0)(64bit) ( ) libvirt-admin.so.0(LIBVIRT_ADMIN_8.6.0)(64bit) ( ) libvirt-lxc.so.0(LIBVIRT_LXC_1.0.4)(64bit) ( ) libvirt.so.0(LIBVIRT_1.2.17)(64bit) ( ) libvirt-admin.so.0(LIBVIRT_ADMIN_PRIVATE_10.10.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) config(libvirt-libs) ( =  10.10.0-7.el10.alma.1) libvirt-libs(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-libs = "
+ libacl
+ gnutls
+ numactl-libs
+ libssh
+ audit-libs
+ libgcc
+ json-c
+ libxml2
+ libnl3
+ libcap-ng
+ cyrus-sasl-gssapi
+ cyrus-sasl-lib
+ libtirpc
+ glib2
+ libcurl
+ glibc
+ libselinux
+"
 
 URI_libvirt-nss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-nss-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-nss = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libjson-c.so.5()(64bit) ( ) libjson-c.so.5(JSONC_0.14)(64bit) ( ) libvirt-daemon-driver-network ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-nss = "libnss_libvirt.so.2()(64bit) ( ) libnss_libvirt_guest.so.2()(64bit) ( ) libvirt-nss ( =  10.10.0-7.el10.alma.1) libvirt-nss(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-nss = "
+ glibc
+ json-c
+ libvirt-daemon-driver-network
+"
 
 URI_libvirt-ssh-proxy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-ssh-proxy-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-ssh-proxy = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libvirt.so.0()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-ssh-proxy = "libvirt-ssh-proxy ( =  10.10.0-7.el10.alma.1) config(libvirt-ssh-proxy) ( =  10.10.0-7.el10.alma.1) libvirt-ssh-proxy(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-ssh-proxy = "
+ libgcc
+ libxml2
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-daemon-plugin-sanlock = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libvirt-daemon-plugin-sanlock-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-daemon-plugin-sanlock = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) /usr/bin/sh ( ) libglib-2.0.so.0()(64bit) ( ) libvirt.so.0()(64bit) ( ) augeas ( ) libsanlock_client.so.1()(64bit) ( ) libvirt.so.0(LIBVIRT_0.0.3)(64bit) ( ) libvirt.so.0(LIBVIRT_0.1.1)(64bit) ( ) libvirt.so.0(LIBVIRT_0.4.0)(64bit) ( ) libvirt.so.0(LIBVIRT_0.7.3)(64bit) ( ) libvirt.so.0(LIBVIRT_PRIVATE_10.10.0)(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1) sanlock ( >=  2.4)"
-RPROVIDES:libvirt-daemon-plugin-sanlock = "config(libvirt-daemon-plugin-sanlock) ( =  10.10.0-7.el10.alma.1) libvirt-daemon-plugin-sanlock ( =  10.10.0-7.el10.alma.1) libvirt-daemon-plugin-sanlock(x86-64) ( =  10.10.0-7.el10.alma.1) libvirt-lock-sanlock ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-daemon-plugin-sanlock = "
+ augeas
+ sanlock-lib
+ sanlock
+ libgcc
+ bash
+ glib2
+ glibc
+ libvirt-libs
+"
 
 URI_libvirt-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libvirt-devel-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) libvirt.so.0()(64bit) ( ) pkgconfig(libvirt) ( ) libvirt-admin.so.0()(64bit) ( ) libvirt-lxc.so.0()(64bit) ( ) libvirt-qemu.so.0()(64bit) ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-devel = "libvirt-devel ( =  10.10.0-7.el10.alma.1) libvirt-devel(x86-64) ( =  10.10.0-7.el10.alma.1) pkgconfig(libvirt) ( =  10.10.0) pkgconfig(libvirt-admin) ( =  10.10.0) pkgconfig(libvirt-lxc) ( =  10.10.0) pkgconfig(libvirt-qemu) ( =  10.10.0)"
+RDEPENDS:libvirt-devel = "
+ libvirt-devel
+ libvirt-libs
+ pkgconf-pkg-config
+"
 
 URI_libvirt-docs = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libvirt-docs-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
 RDEPENDS:libvirt-docs = ""
-RPROVIDES:libvirt-docs = "libvirt-docs ( =  10.10.0-7.el10.alma.1) libvirt-docs(x86-64) ( =  10.10.0-7.el10.alma.1)"
 
 URI_libvirt-wireshark = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvirt-wireshark-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:libvirt-wireshark = "rtld(GNU_HASH) ( ) libglib-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libtirpc.so.3()(64bit) ( ) libtirpc.so.3(TIRPC_0.3.0)(64bit) ( ) libwireshark.so.18()(64bit) ( ) wireshark ( ) libvirt-libs ( =  10.10.0-7.el10.alma.1)"
-RPROVIDES:libvirt-wireshark = "libvirt.so()(64bit) ( ) libvirt-wireshark ( =  10.10.0-7.el10.alma.1) libvirt-wireshark(x86-64) ( =  10.10.0-7.el10.alma.1)"
+RDEPENDS:libvirt-wireshark = "
+ wireshark
+ wireshark-cli
+ glib2
+ glibc
+ libtirpc
+ libvirt-libs
+"

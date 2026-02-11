@@ -7,121 +7,367 @@ PACKAGES = "mingw32-cpp mingw32-gcc mingw32-gcc-c++ mingw32-libgcc mingw32-libst
 
 
 URI_mingw32-cpp = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-cpp-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-cpp = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw32-filesystem ( >=  133)"
-RPROVIDES:mingw32-cpp = "mingw32-cpp ( =  14.2.1-3.el10) mingw32-cpp(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-cpp = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ libmpc
+ libstdc++
+ mingw32-filesystem
+ glibc
+"
 
 URI_mingw32-gcc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-gcc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-gcc = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /bin/sh ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) mingw32-crt ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw32-binutils ( ) mingw32-cpp ( ) mingw32-headers ( ) mingw32-libgcc ( ) mingw32-winpthreads-static ( )"
-RPROVIDES:mingw32-gcc = "liblto_plugin.so()(64bit) ( ) mingw32-gcc ( =  14.2.1-3.el10) mingw32-gcc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-gcc = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ mingw32-winpthreads-static
+ libgcc
+ libmpc
+ libstdc++
+ bash
+ mingw32-crt
+ mingw32-binutils
+ mingw32-cpp
+ glibc
+ mingw32-headers
+ mingw32-libgcc
+"
 
 URI_mingw32-gcc-c++ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-gcc-c++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-gcc-c++ = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libz.so.1(ZLIB_1.2.2)(64bit) ( ) mingw32-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw32-gcc-c++ = "mingw32-gcc-c++ ( =  14.2.1-3.el10) mingw32-gcc-c++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-gcc-c++ = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ libmpc
+ libstdc++
+ mingw32-gcc
+ glibc
+"
 
 URI_mingw32-libgcc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-libgcc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-libgcc = "mingw32-crt ( ) mingw32(kernel32.dll) ( ) mingw32(msvcrt.dll) ( ) mingw32(advapi32.dll) ( ) mingw32(libwinpthread-1.dll) ( ) mingw32-filesystem ( >=  95)"
-RPROVIDES:mingw32-libgcc = "mingw32(libgcc_s_dw2-1.dll) ( ) mingw32(libatomic-1.dll) ( ) mingw32(libssp-0.dll) ( ) mingw32-libgcc ( =  14.2.1-3.el10) mingw32-libgcc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-libgcc = "
+ mingw32-crt
+ mingw32-filesystem
+ mingw32-winpthreads
+"
 
 URI_mingw32-libstdc++ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-libstdc++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-libstdc++ = "mingw32-crt ( ) mingw32(kernel32.dll) ( ) mingw32(msvcrt.dll) ( ) mingw32(libgcc_s_dw2-1.dll) ( ) mingw32(libwinpthread-1.dll) ( ) mingw32-filesystem ( >=  95)"
-RPROVIDES:mingw32-libstdc++ = "mingw32(libstdc++-6.dll) ( ) mingw32-libstdc++ ( =  14.2.1-3.el10) mingw32-libstdc++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-libstdc++ = "
+ mingw32-filesystem
+ mingw32-crt
+ mingw32-winpthreads
+ mingw32-libgcc
+"
 
 URI_mingw64-cpp = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-cpp-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-cpp = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw64-filesystem ( >=  133)"
-RPROVIDES:mingw64-cpp = "mingw64-cpp ( =  14.2.1-3.el10) mingw64-cpp(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-cpp = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ mingw64-filesystem
+ libmpc
+ libstdc++
+ glibc
+"
 
 URI_mingw64-gcc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-gcc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-gcc = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /bin/sh ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) mingw64-crt ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw64-binutils ( ) mingw64-cpp ( ) mingw64-headers ( ) mingw64-libgcc ( ) mingw64-winpthreads-static ( )"
-RPROVIDES:mingw64-gcc = "liblto_plugin.so()(64bit) ( ) mingw64-gcc ( =  14.2.1-3.el10) mingw64-gcc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-gcc = "
+ mingw64-winpthreads-static
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ mingw64-binutils
+ mingw64-crt
+ mingw64-cpp
+ libmpc
+ libstdc++
+ bash
+ mingw64-headers
+ mingw64-libgcc
+ glibc
+"
 
 URI_mingw64-gcc-c++ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-gcc-c++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-gcc-c++ = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libz.so.1(ZLIB_1.2.2)(64bit) ( ) mingw64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw64-gcc-c++ = "mingw64-gcc-c++ ( =  14.2.1-3.el10) mingw64-gcc-c++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-gcc-c++ = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ mingw64-gcc
+ libmpc
+ libstdc++
+ glibc
+"
 
 URI_mingw64-libgcc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-libgcc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-libgcc = "mingw64-crt ( ) mingw64(kernel32.dll) ( ) mingw64(msvcrt.dll) ( ) mingw64(advapi32.dll) ( ) mingw64(libwinpthread-1.dll) ( ) mingw64-filesystem ( >=  95)"
-RPROVIDES:mingw64-libgcc = "mingw64(libgcc_s_seh-1.dll) ( ) mingw64(libatomic-1.dll) ( ) mingw64(libssp-0.dll) ( ) mingw64-libgcc ( =  14.2.1-3.el10) mingw64-libgcc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-libgcc = "
+ mingw64-crt
+ mingw64-filesystem
+ mingw64-winpthreads
+"
 
 URI_mingw64-libstdc++ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-libstdc++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-libstdc++ = "mingw64-crt ( ) mingw64(kernel32.dll) ( ) mingw64(msvcrt.dll) ( ) mingw64(libgcc_s_seh-1.dll) ( ) mingw64(libwinpthread-1.dll) ( ) mingw64-filesystem ( >=  95)"
-RPROVIDES:mingw64-libstdc++ = "mingw64(libstdc++-6.dll) ( ) mingw64-libstdc++ ( =  14.2.1-3.el10) mingw64-libstdc++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-libstdc++ = "
+ mingw64-filesystem
+ mingw64-crt
+ mingw64-winpthreads
+ mingw64-libgcc
+"
 
 URI_mingw32-gcc-gfortran = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw32-gcc-gfortran-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-gcc-gfortran = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw32(kernel32.dll) ( ) mingw32(msvcrt.dll) ( ) mingw32-crt ( ) mingw32(libgcc_s_dw2-1.dll) ( ) mingw32(libwinpthread-1.dll) ( ) mingw32(advapi32.dll) ( ) mingw32-filesystem ( >=  95) mingw32-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw32-gcc-gfortran = "mingw32(libgfortran-5.dll) ( ) mingw32(libquadmath-0.dll) ( ) mingw32-gcc-gfortran ( =  14.2.1-3.el10) mingw32-gcc-gfortran(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-gcc-gfortran = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ mingw32-winpthreads
+ libgcc
+ libmpc
+ libstdc++
+ mingw32-crt
+ mingw32-filesystem
+ mingw32-gcc
+ glibc
+ mingw32-libgcc
+"
 
 URI_mingw32-gcc-objc++ = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw32-gcc-objc++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-gcc-objc++ = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libz.so.1(ZLIB_1.2.2)(64bit) ( ) mingw32-gcc-objc ( =  14.2.1-3.el10) mingw32-gcc-c++ ( =  14.2.1-3.el10)"
-RPROVIDES:mingw32-gcc-objc++ = "mingw32-gcc-objc++ ( =  14.2.1-3.el10) mingw32-gcc-objc++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-gcc-objc++ = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ libmpc
+ mingw32-gcc-c++
+ libstdc++
+ mingw32-gcc-objc
+ glibc
+"
 
 URI_mingw32-gcc-objc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw32-gcc-objc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-gcc-objc = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw32(kernel32.dll) ( ) mingw32(msvcrt.dll) ( ) mingw32-crt ( ) mingw32(libgcc_s_dw2-1.dll) ( ) mingw32(libwinpthread-1.dll) ( ) mingw32-filesystem ( >=  95) mingw32-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw32-gcc-objc = "mingw32(libobjc-4.dll) ( ) mingw32-gcc-objc ( =  14.2.1-3.el10) mingw32-gcc-objc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-gcc-objc = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ mingw32-winpthreads
+ libgcc
+ libmpc
+ libstdc++
+ mingw32-crt
+ mingw32-filesystem
+ mingw32-gcc
+ glibc
+ mingw32-libgcc
+"
 
 URI_mingw32-gcc-plugin-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw32-gcc-plugin-devel-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-gcc-plugin-devel = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) mingw32-gcc ( =  14.2.1-3.el10) gmp-devel ( >=  4.1.2-8) libmpc-devel ( >=  0.8.1) mpfr-devel ( >=  3.1.0)"
-RPROVIDES:mingw32-gcc-plugin-devel = "mingw32-gcc-plugin-devel ( =  14.2.1-3.el10) mingw32-gcc-plugin-devel(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-gcc-plugin-devel = "
+ libgcc
+ libmpc-devel
+ libstdc++
+ mingw32-gcc
+ glibc
+ mpfr-devel
+ gmp-devel
+"
 
 URI_mingw32-libgomp = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw32-libgomp-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw32-libgomp = "mingw32(kernel32.dll) ( ) mingw32(msvcrt.dll) ( ) mingw32-crt ( ) mingw32(libgcc_s_dw2-1.dll) ( ) mingw32(libwinpthread-1.dll) ( ) mingw32-filesystem ( >=  95) mingw32-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw32-libgomp = "mingw32(libgomp-1.dll) ( ) mingw32-libgomp ( =  14.2.1-3.el10) mingw32-libgomp(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw32-libgomp = "
+ mingw32-winpthreads
+ mingw32-crt
+ mingw32-filesystem
+ mingw32-gcc
+ mingw32-libgcc
+"
 
 URI_mingw64-gcc-gfortran = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw64-gcc-gfortran-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-gcc-gfortran = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw64(kernel32.dll) ( ) mingw64(msvcrt.dll) ( ) mingw64-crt ( ) mingw64(libgcc_s_seh-1.dll) ( ) mingw64(libwinpthread-1.dll) ( ) mingw64(advapi32.dll) ( ) mingw64-filesystem ( >=  95) mingw64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw64-gcc-gfortran = "mingw64(libgfortran-5.dll) ( ) mingw64(libquadmath-0.dll) ( ) mingw64-gcc-gfortran ( =  14.2.1-3.el10) mingw64-gcc-gfortran(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-gcc-gfortran = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ mingw64-crt
+ mingw64-filesystem
+ mingw64-gcc
+ libmpc
+ libstdc++
+ mingw64-libgcc
+ glibc
+ mingw64-winpthreads
+"
 
 URI_mingw64-gcc-objc++ = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw64-gcc-objc++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-gcc-objc++ = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libz.so.1(ZLIB_1.2.2)(64bit) ( ) mingw64-gcc-objc ( =  14.2.1-3.el10) mingw64-gcc-c++ ( =  14.2.1-3.el10)"
-RPROVIDES:mingw64-gcc-objc++ = "mingw64-gcc-objc++ ( =  14.2.1-3.el10) mingw64-gcc-objc++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-gcc-objc++ = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ libmpc
+ mingw64-gcc-c++
+ libstdc++
+ glibc
+ mingw64-gcc-objc
+"
 
 URI_mingw64-gcc-objc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw64-gcc-objc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-gcc-objc = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) mingw64(kernel32.dll) ( ) mingw64(msvcrt.dll) ( ) mingw64-crt ( ) mingw64(libgcc_s_seh-1.dll) ( ) mingw64(libwinpthread-1.dll) ( ) mingw64-filesystem ( >=  95) mingw64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw64-gcc-objc = "mingw64(libobjc-4.dll) ( ) mingw64-gcc-objc ( =  14.2.1-3.el10) mingw64-gcc-objc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-gcc-objc = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ libgcc
+ mingw64-crt
+ mingw64-filesystem
+ mingw64-gcc
+ libmpc
+ libstdc++
+ mingw64-libgcc
+ glibc
+ mingw64-winpthreads
+"
 
 URI_mingw64-gcc-plugin-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw64-gcc-plugin-devel-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-gcc-plugin-devel = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) mingw64-gcc ( =  14.2.1-3.el10) gmp-devel ( >=  4.1.2-8) libmpc-devel ( >=  0.8.1) mpfr-devel ( >=  3.1.0)"
-RPROVIDES:mingw64-gcc-plugin-devel = "mingw64-gcc-plugin-devel ( =  14.2.1-3.el10) mingw64-gcc-plugin-devel(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-gcc-plugin-devel = "
+ libgcc
+ mingw64-gcc
+ libmpc-devel
+ libstdc++
+ glibc
+ mpfr-devel
+ gmp-devel
+"
 
 URI_mingw64-libgomp = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mingw64-libgomp-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mingw64-libgomp = "mingw64(kernel32.dll) ( ) mingw64(msvcrt.dll) ( ) mingw64-crt ( ) mingw64(libgcc_s_seh-1.dll) ( ) mingw64(libwinpthread-1.dll) ( ) mingw64-filesystem ( >=  95) mingw64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:mingw64-libgomp = "mingw64(libgomp-1.dll) ( ) mingw64-libgomp ( =  14.2.1-3.el10) mingw64-libgomp(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:mingw64-libgomp = "
+ mingw64-crt
+ mingw64-filesystem
+ mingw64-gcc
+ mingw64-libgcc
+ mingw64-winpthreads
+"
 
 URI_ucrt64-cpp = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-cpp-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-cpp = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) ucrt64-filesystem ( >=  133)"
-RPROVIDES:ucrt64-cpp = "ucrt64-cpp ( =  14.2.1-3.el10) ucrt64-cpp(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-cpp = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ ucrt64-filesystem
+ libgcc
+ libmpc
+ libstdc++
+ glibc
+"
 
 URI_ucrt64-gcc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-gcc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-gcc = "rtld(GNU_HASH) ( ) /bin/sh ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) ucrt64-crt ( ) ucrt64-binutils ( ) ucrt64-cpp ( ) ucrt64-headers ( ) ucrt64-libgcc ( ) ucrt64-winpthreads-static ( )"
-RPROVIDES:ucrt64-gcc = "liblto_plugin.so()(64bit) ( ) ucrt64-gcc ( =  14.2.1-3.el10) ucrt64-gcc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-gcc = "
+ ucrt64-binutils
+ gmp
+ zlib-ng-compat
+ mpfr
+ ucrt64-crt
+ ucrt64-cpp
+ libgcc
+ ucrt64-headers
+ ucrt64-libgcc
+ libmpc
+ ucrt64-winpthreads-static
+ libstdc++
+ bash
+ glibc
+"
 
 URI_ucrt64-gcc-c++ = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-gcc-c++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-gcc-c++ = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libz.so.1(ZLIB_1.2.2)(64bit) ( ) ucrt64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:ucrt64-gcc-c++ = "ucrt64-gcc-c++ ( =  14.2.1-3.el10) ucrt64-gcc-c++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-gcc-c++ = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ ucrt64-gcc
+ libgcc
+ libmpc
+ libstdc++
+ glibc
+"
 
 URI_ucrt64-gcc-gfortran = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-gcc-gfortran-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-gcc-gfortran = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) ucrt64-crt ( ) ucrt64(api-ms-win-crt-environment-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-heap-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-private-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-runtime-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-stdio-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-string-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-time-l1-1-0.dll) ( ) ucrt64(kernel32.dll) ( ) ucrt64(api-ms-win-crt-convert-l1-1-0.dll) ( ) ucrt64(libwinpthread-1.dll) ( ) ucrt64(api-ms-win-crt-filesystem-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-locale-l1-1-0.dll) ( ) ucrt64(libgcc_s_seh-1.dll) ( ) ucrt64(advapi32.dll) ( ) ucrt64(api-ms-win-crt-math-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-utility-l1-1-0.dll) ( ) ucrt64-filesystem ( >=  95) ucrt64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:ucrt64-gcc-gfortran = "ucrt64(libgfortran-5.dll) ( ) ucrt64(libquadmath-0.dll) ( ) ucrt64-gcc-gfortran ( =  14.2.1-3.el10) ucrt64-gcc-gfortran(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-gcc-gfortran = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ ucrt64-crt
+ ucrt64-filesystem
+ ucrt64-gcc
+ libgcc
+ ucrt64-libgcc
+ ucrt64-winpthreads
+ libmpc
+ libstdc++
+ glibc
+"
 
 URI_ucrt64-gcc-objc++ = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-gcc-objc++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-gcc-objc++ = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libz.so.1(ZLIB_1.2.2)(64bit) ( ) ucrt64-gcc-c++ ( =  14.2.1-3.el10) ucrt64-gcc-objc ( =  14.2.1-3.el10)"
-RPROVIDES:ucrt64-gcc-objc++ = "ucrt64-gcc-objc++ ( =  14.2.1-3.el10) ucrt64-gcc-objc++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-gcc-objc++ = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ ucrt64-gcc-c++
+ ucrt64-gcc-objc
+ libgcc
+ libmpc
+ libstdc++
+ glibc
+"
 
 URI_ucrt64-gcc-objc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-gcc-objc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-gcc-objc = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpc.so.3()(64bit) ( ) libmpfr.so.6()(64bit) ( ) ucrt64-crt ( ) ucrt64(api-ms-win-crt-environment-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-heap-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-private-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-runtime-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-stdio-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-string-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-time-l1-1-0.dll) ( ) ucrt64(kernel32.dll) ( ) ucrt64(api-ms-win-crt-convert-l1-1-0.dll) ( ) ucrt64(libwinpthread-1.dll) ( ) ucrt64(api-ms-win-crt-filesystem-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-locale-l1-1-0.dll) ( ) ucrt64(libgcc_s_seh-1.dll) ( ) ucrt64-filesystem ( >=  95) ucrt64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:ucrt64-gcc-objc = "ucrt64(libobjc-4.dll) ( ) ucrt64-gcc-objc ( =  14.2.1-3.el10) ucrt64-gcc-objc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-gcc-objc = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ ucrt64-crt
+ ucrt64-filesystem
+ ucrt64-gcc
+ libgcc
+ ucrt64-libgcc
+ ucrt64-winpthreads
+ libmpc
+ libstdc++
+ glibc
+"
 
 URI_ucrt64-gcc-plugin-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-gcc-plugin-devel-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-gcc-plugin-devel = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) ucrt64-gcc ( =  14.2.1-3.el10) gmp-devel ( >=  4.1.2-8) libmpc-devel ( >=  0.8.1) mpfr-devel ( >=  3.1.0)"
-RPROVIDES:ucrt64-gcc-plugin-devel = "ucrt64-gcc-plugin-devel ( =  14.2.1-3.el10) ucrt64-gcc-plugin-devel(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-gcc-plugin-devel = "
+ ucrt64-gcc
+ libgcc
+ libmpc-devel
+ libstdc++
+ glibc
+ mpfr-devel
+ gmp-devel
+"
 
 URI_ucrt64-libgcc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-libgcc-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-libgcc = "ucrt64-crt ( ) ucrt64(api-ms-win-crt-environment-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-heap-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-private-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-runtime-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-stdio-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-string-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-time-l1-1-0.dll) ( ) ucrt64(kernel32.dll) ( ) ucrt64(libwinpthread-1.dll) ( ) ucrt64(advapi32.dll) ( ) ucrt64-filesystem ( >=  95)"
-RPROVIDES:ucrt64-libgcc = "ucrt64(libgcc_s_seh-1.dll) ( ) ucrt64(libatomic-1.dll) ( ) ucrt64(libssp-0.dll) ( ) ucrt64-libgcc ( =  14.2.1-3.el10) ucrt64-libgcc(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-libgcc = "
+ ucrt64-crt
+ ucrt64-filesystem
+ ucrt64-winpthreads
+"
 
 URI_ucrt64-libgomp = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-libgomp-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-libgomp = "ucrt64-crt ( ) ucrt64(api-ms-win-crt-environment-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-heap-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-private-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-runtime-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-stdio-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-string-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-time-l1-1-0.dll) ( ) ucrt64(kernel32.dll) ( ) ucrt64(api-ms-win-crt-convert-l1-1-0.dll) ( ) ucrt64(libwinpthread-1.dll) ( ) ucrt64(api-ms-win-crt-filesystem-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-locale-l1-1-0.dll) ( ) ucrt64(libgcc_s_seh-1.dll) ( ) ucrt64-filesystem ( >=  95) ucrt64-gcc ( =  14.2.1-3.el10)"
-RPROVIDES:ucrt64-libgomp = "ucrt64(libgomp-1.dll) ( ) ucrt64-libgomp ( =  14.2.1-3.el10) ucrt64-libgomp(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-libgomp = "
+ ucrt64-crt
+ ucrt64-filesystem
+ ucrt64-gcc
+ ucrt64-libgcc
+ ucrt64-winpthreads
+"
 
 URI_ucrt64-libstdc++ = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ucrt64-libstdc++-14.2.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ucrt64-libstdc++ = "ucrt64-crt ( ) ucrt64(api-ms-win-crt-environment-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-heap-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-private-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-runtime-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-stdio-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-string-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-time-l1-1-0.dll) ( ) ucrt64(kernel32.dll) ( ) ucrt64(api-ms-win-crt-convert-l1-1-0.dll) ( ) ucrt64(libwinpthread-1.dll) ( ) ucrt64(api-ms-win-crt-filesystem-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-locale-l1-1-0.dll) ( ) ucrt64(libgcc_s_seh-1.dll) ( ) ucrt64(api-ms-win-crt-math-l1-1-0.dll) ( ) ucrt64(api-ms-win-crt-utility-l1-1-0.dll) ( ) ucrt64-filesystem ( >=  95)"
-RPROVIDES:ucrt64-libstdc++ = "ucrt64(libstdc++-6.dll) ( ) ucrt64-libstdc++ ( =  14.2.1-3.el10) ucrt64-libstdc++(x86-64) ( =  14.2.1-3.el10)"
+RDEPENDS:ucrt64-libstdc++ = "
+ ucrt64-filesystem
+ ucrt64-crt
+ ucrt64-libgcc
+ ucrt64-winpthreads
+"

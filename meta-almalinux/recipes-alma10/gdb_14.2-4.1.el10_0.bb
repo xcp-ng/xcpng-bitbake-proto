@@ -7,21 +7,52 @@ PACKAGES = "gdb gdb-doc gdb-gdbserver gdb-headless gdb-minimal"
 
 
 URI_gdb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gdb-14.2-4.1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gdb = "/usr/bin/sh ( ) /usr/bin/bash ( ) gdb-headless(x86-64) ( =  14.2-4.1.el10_0)"
-RPROVIDES:gdb = "gdb ( =  14.2-4.1.el10_0) gdb(x86-64) ( =  14.2-4.1.el10_0)"
+RDEPENDS:gdb = "
+ gdb-headless
+ bash
+"
 
 URI_gdb-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gdb-doc-14.2-4.1.el10_0.noarch.rpm;unpack=0"
 RDEPENDS:gdb-doc = ""
-RPROVIDES:gdb-doc = "gdb-doc ( =  14.2-4.1.el10_0)"
 
 URI_gdb-gdbserver = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gdb-gdbserver-14.2-4.1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gdb-gdbserver = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( )"
-RPROVIDES:gdb-gdbserver = "libinproctrace.so()(64bit) ( ) gdb-gdbserver ( =  14.2-4.1.el10_0) gdb-gdbserver(x86-64) ( =  14.2-4.1.el10_0)"
+RDEPENDS:gdb-gdbserver = "
+ glibc
+ libgcc
+ libstdc++
+"
 
 URI_gdb-headless = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gdb-headless-14.2-4.1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gdb-headless = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /usr/bin/sh ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libpython3.12.so.1.0()(64bit) ( ) liblzma.so.5()(64bit) ( ) liblzma.so.5(XZ_5.0)(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) libtinfo.so.6()(64bit) ( ) libbabeltrace-ctf.so.1()(64bit) ( ) libexpat.so.1()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libreadline.so.8()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.17)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) libgmp.so.10()(64bit) ( ) libncursesw.so.6()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.179)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.1)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.188)(64bit) ( ) libbabeltrace.so.1()(64bit) ( ) libipt.so.2()(64bit) ( ) libsource-highlight.so.4()(64bit) ( )"
-RPROVIDES:gdb-headless = "gdb-headless(x86-64) ( =  14.2-4.1.el10_0) bundled(binutils) ( =  20220501) bundled(gnulib) ( =  20220501) bundled(libiberty) ( =  20220501) bundled(md5-gcc) ( =  20220501) config(gdb-headless) ( =  14.2-4.1.el10_0) gdb-headless ( =  14.2-4.1.el10_0)"
+RDEPENDS:gdb-headless = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ source-highlight
+ libbabeltrace
+ elfutils-debuginfod-client
+ libgcc
+ readline
+ python3-libs
+ libstdc++
+ bash
+ ncurses-libs
+ libipt
+ expat
+ glibc
+ xz-libs
+"
 
 URI_gdb-minimal = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gdb-minimal-14.2-4.1.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gdb-minimal = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /usr/bin/sh ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) liblzma.so.5()(64bit) ( ) liblzma.so.5(XZ_5.0)(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) libtinfo.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libreadline.so.8()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.17)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) libgmp.so.10()(64bit) ( ) libmpfr.so.6()(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.179)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.1)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.188)(64bit) ( )"
-RPROVIDES:gdb-minimal = "gdb-minimal ( =  14.2-4.1.el10_0) gdb-minimal(x86-64) ( =  14.2-4.1.el10_0)"
+RDEPENDS:gdb-minimal = "
+ gmp
+ zlib-ng-compat
+ mpfr
+ elfutils-debuginfod-client
+ libgcc
+ readline
+ libstdc++
+ bash
+ ncurses-libs
+ glibc
+ xz-libs
+"

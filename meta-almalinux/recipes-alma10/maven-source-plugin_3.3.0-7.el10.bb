@@ -7,9 +7,14 @@ PACKAGES = "maven-source-plugin maven-source-plugin-javadoc"
 
 
 URI_maven-source-plugin = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-source-plugin-3.3.0-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:maven-source-plugin = "javapackages-filesystem ( ) mvn(org.codehaus.plexus:plexus-utils) ( ) mvn(org.codehaus.plexus:plexus-archiver) ( ) mvn(org.apache.maven:maven-archiver) ( )"
-RPROVIDES:maven-source-plugin = "maven-source-plugin ( =  3.3.0-7.el10) mvn(org.apache.maven.plugins:maven-source-plugin) ( =  3.3.0) mvn(org.apache.maven.plugins:maven-source-plugin:pom:) ( =  3.3.0)"
+RDEPENDS:maven-source-plugin = "
+ plexus-archiver
+ plexus-utils
+ javapackages-filesystem
+ maven-archiver
+"
 
 URI_maven-source-plugin-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-source-plugin-javadoc-3.3.0-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:maven-source-plugin-javadoc = "javapackages-filesystem ( )"
-RPROVIDES:maven-source-plugin-javadoc = "maven-source-plugin-javadoc ( =  3.3.0-7.el10)"
+RDEPENDS:maven-source-plugin-javadoc = "
+ javapackages-filesystem
+"

@@ -7,17 +7,42 @@ PACKAGES = "qt6-qtscxml qt6-qtscxml-devel qt6-qtscxml-examples qt6-qtscxml-tests
 
 
 URI_qt6-qtscxml = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtscxml-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtscxml = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtscxml = "libQt6StateMachine.so.6()(64bit) ( ) libQt6Scxml.so.6()(64bit) ( ) libQt6ScxmlQml.so.6()(64bit) ( ) libQt6StateMachine.so.6(Qt_6)(64bit) ( ) libQt6StateMachineQml.so.6()(64bit) ( ) libQt6Scxml.so.6(NonQt)(64bit) ( ) libQt6Scxml.so.6(Qt_6)(64bit) ( ) libQt6Scxml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6ScxmlQml.so.6(NonQt)(64bit) ( ) libQt6ScxmlQml.so.6(Qt_6)(64bit) ( ) libQt6ScxmlQml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6StateMachine.so.6(NonQt)(64bit) ( ) libQt6StateMachine.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6StateMachineQml.so.6(NonQt)(64bit) ( ) libQt6StateMachineQml.so.6(Qt_6)(64bit) ( ) libQt6StateMachineQml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libdeclarative_scxmlplugin.so()(64bit) ( ) libdeclarative_scxmlplugin.so(NonQt)(64bit) ( ) libdeclarative_scxmlplugin.so(Qt_6)(64bit) ( ) libdeclarative_scxmlplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqscxmlecmascriptdatamodel.so()(64bit) ( ) libqscxmlecmascriptdatamodel.so(NonQt)(64bit) ( ) libqscxmlecmascriptdatamodel.so(Qt_6)(64bit) ( ) libqscxmlecmascriptdatamodel.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtqmlstatemachineplugin.so()(64bit) ( ) libqtqmlstatemachineplugin.so(NonQt)(64bit) ( ) libqtqmlstatemachineplugin.so(Qt_6)(64bit) ( ) libqtqmlstatemachineplugin.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtQml.StateMachine) ( ) qt6qml(QtScxml) ( ) qt6-qtscxml(x86-64) ( =  6.8.1-3.el10) qt6-qtscxml ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qtscxml = "
+ qt6-qtdeclarative
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtscxml-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtscxml-devel-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtscxml-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) pkgconfig(Qt6Gui) ( ) pkgconfig(Qt6Qml) ( ) qt6-qtdeclarative-devel(x86-64) ( ) libQt6StateMachine.so.6()(64bit) ( ) libQt6Scxml.so.6()(64bit) ( ) libQt6ScxmlQml.so.6()(64bit) ( ) libQt6StateMachineQml.so.6()(64bit) ( ) pkgconfig(Qt6Scxml) ( ) pkgconfig(Qt6StateMachine) ( ) qt6-qtscxml(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qtscxml-devel = "cmake(Qt6QScxmlEcmaScriptDataModelPlugin) ( ) cmake(Qt6Scxml) ( ) cmake(Qt6ScxmlQml) ( ) cmake(Qt6ScxmlTools) ( ) cmake(Qt6StateMachine) ( ) cmake(Qt6StateMachineQml) ( ) cmake(Qt6declarative_scxml) ( ) cmake(Qt6qtqmlstatemachine) ( ) cmake(QtScxmlTests) ( ) cmake(qt6declarative_scxml) ( ) cmake(qt6qscxmlecmascriptdatamodelplugin) ( ) cmake(qt6qtqmlstatemachine) ( ) cmake(qt6scxml) ( ) cmake(qt6scxmlqml) ( ) cmake(qt6scxmltools) ( ) cmake(qt6statemachine) ( ) cmake(qt6statemachineqml) ( ) cmake(qtscxmltests) ( ) pkgconfig(Qt6Scxml) ( =  6.8.1) pkgconfig(Qt6ScxmlQml) ( =  6.8.1) pkgconfig(Qt6StateMachine) ( =  6.8.1) pkgconfig(Qt6StateMachineQml) ( =  6.8.1) qt6-qtscxml-devel ( =  6.8.1-3.el10) qt6-qtscxml-devel(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qtscxml-devel = "
+ qt6-qtdeclarative-devel
+ cmake-filesystem
+ pkgconf-pkg-config
+ qt6-qtbase-devel
+ qt6-qtscxml
+ qt6-qtscxml-devel
+"
 
 URI_qt6-qtscxml-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtscxml-examples-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtscxml-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6Scxml.so.6()(64bit) ( ) libQt6Scxml.so.6(Qt_6)(64bit) ( ) libQt6StateMachine.so.6()(64bit) ( ) libQt6StateMachine.so.6(Qt_6)(64bit) ( ) qt6-qtscxml(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qtscxml-examples = "qt6-qtscxml-examples ( =  6.8.1-3.el10) qt6-qtscxml-examples(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qtscxml-examples = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ qt6-qtscxml
+ glibc
+"
 
 URI_qt6-qtscxml-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtscxml-tests-6.8.1-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtscxml-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6QuickTest.so.6()(64bit) ( ) libQt6QuickTest.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Scxml.so.6()(64bit) ( ) libQt6Scxml.so.6(Qt_6)(64bit) ( ) libQt6Scxml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6ScxmlQml.so.6()(64bit) ( ) libQt6ScxmlQml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6StateMachine.so.6()(64bit) ( ) libQt6StateMachine.so.6(Qt_6)(64bit) ( ) libQt6StateMachine.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6StateMachineQml.so.6()(64bit) ( ) libQt6StateMachineQml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtscxml(x86-64) ( =  6.8.1-3.el10)"
-RPROVIDES:qt6-qtscxml-tests = "qt6-qtscxml-tests ( =  6.8.1-3.el10) qt6-qtscxml-tests(x86-64) ( =  6.8.1-3.el10)"
+RDEPENDS:qt6-qtscxml-tests = "
+ qt6-qtdeclarative
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ qt6-qtscxml
+ glibc
+"

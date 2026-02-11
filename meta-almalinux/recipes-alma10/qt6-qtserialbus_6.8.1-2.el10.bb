@@ -7,17 +7,38 @@ PACKAGES = "qt6-qtserialbus qt6-qtserialbus-devel qt6-qtserialbus-examples qt6-q
 
 
 URI_qt6-qtserialbus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtserialbus-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtserialbus = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6SerialPort.so.6()(64bit) ( ) libQt6SerialPort.so.6(Qt_6)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtserialbus = "libQt6SerialBus.so.6()(64bit) ( ) libQt6SerialBus.so.6(NonQt)(64bit) ( ) libQt6SerialBus.so.6(Qt_6)(64bit) ( ) libQt6SerialBus.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtpassthrucanbus.so()(64bit) ( ) libqtpassthrucanbus.so(NonQt)(64bit) ( ) libqtpassthrucanbus.so(Qt_6)(64bit) ( ) libqtpassthrucanbus.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtpeakcanbus.so()(64bit) ( ) libqtpeakcanbus.so(NonQt)(64bit) ( ) libqtpeakcanbus.so(Qt_6)(64bit) ( ) libqtpeakcanbus.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtsocketcanbus.so()(64bit) ( ) libqtsocketcanbus.so(NonQt)(64bit) ( ) libqtsocketcanbus.so(Qt_6)(64bit) ( ) libqtsocketcanbus.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqttinycanbus.so()(64bit) ( ) libqttinycanbus.so(NonQt)(64bit) ( ) libqttinycanbus.so(Qt_6)(64bit) ( ) libqttinycanbus.so(Qt_6.8_PRIVATE_API)(64bit) ( ) libqtvirtualcanbus.so()(64bit) ( ) libqtvirtualcanbus.so(NonQt)(64bit) ( ) libqtvirtualcanbus.so(Qt_6)(64bit) ( ) libqtvirtualcanbus.so(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtserialbus(x86-64) ( =  6.8.1-2.el10) qt6-qtserialbus ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtserialbus = "
+ glibc
+ libstdc++
+ qt6-qtserialport
+ qt6-qtbase
+"
 
 URI_qt6-qtserialbus-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtserialbus-devel-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtserialbus-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) pkgconfig(Qt6Network) ( ) libQt6SerialBus.so.6()(64bit) ( ) pkgconfig(Qt6SerialPort) ( ) qt6-qtserialbus(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtserialbus-devel = "cmake(Qt6PassThruCanBusPlugin) ( ) cmake(Qt6PeakCanBusPlugin) ( ) cmake(Qt6SerialBus) ( ) cmake(Qt6SocketCanBusPlugin) ( ) cmake(Qt6TinyCanBusPlugin) ( ) cmake(Qt6VirtualCanBusPlugin) ( ) cmake(QtSerialBusTests) ( ) cmake(qt6passthrucanbusplugin) ( ) cmake(qt6peakcanbusplugin) ( ) cmake(qt6serialbus) ( ) cmake(qt6socketcanbusplugin) ( ) cmake(qt6tinycanbusplugin) ( ) cmake(qt6virtualcanbusplugin) ( ) cmake(qtserialbustests) ( ) pkgconfig(Qt6SerialBus) ( =  6.8.1) qt6-qtserialbus-devel ( =  6.8.1-2.el10) qt6-qtserialbus-devel(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtserialbus-devel = "
+ cmake-filesystem
+ pkgconf-pkg-config
+ qt6-qtbase-devel
+ qt6-qtserialbus
+ qt6-qtserialport-devel
+"
 
 URI_qt6-qtserialbus-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtserialbus-examples-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtserialbus-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6SerialPort.so.6()(64bit) ( ) libQt6SerialPort.so.6(Qt_6)(64bit) ( ) libQt6SerialBus.so.6()(64bit) ( ) libQt6SerialBus.so.6(Qt_6)(64bit) ( ) qt6-qtserialbus(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtserialbus-examples = "qt6-qtserialbus-examples ( =  6.8.1-2.el10) qt6-qtserialbus-examples(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtserialbus-examples = "
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+ qt6-qtserialbus
+ qt6-qtserialport
+"
 
 URI_qt6-qtserialbus-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtserialbus-tests-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtserialbus-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6SerialBus.so.6()(64bit) ( ) libQt6SerialBus.so.6(Qt_6)(64bit) ( ) libQt6SerialBus.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtserialbus(x86-64) ( =  6.8.1-2.el10)"
-RPROVIDES:qt6-qtserialbus-tests = "qt6-qtserialbus-tests ( =  6.8.1-2.el10) qt6-qtserialbus-tests(x86-64) ( =  6.8.1-2.el10)"
+RDEPENDS:qt6-qtserialbus-tests = "
+ libgcc
+ qt6-qtbase
+ libstdc++
+ glibc
+ qt6-qtserialbus
+"

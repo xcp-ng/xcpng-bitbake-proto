@@ -7,49 +7,151 @@ PACKAGES = "graphviz graphviz-doc graphviz-gd graphviz-python3 graphviz-ruby gra
 
 
 URI_graphviz = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) /bin/sh ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /usr/bin/sh ( ) libglib-2.0.so.0()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libX11.so.6()(64bit) ( ) libcairo.so.2()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libfreetype.so.6()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libexpat.so.1()(64bit) ( ) libXrender.so.1()(64bit) ( ) libltdl.so.7()(64bit) ( ) urw-base35-fonts ( ) libgd.so.3()(64bit) ( ) libpangoft2-1.0.so.0()(64bit) ( ) libwebp.so.7()(64bit) ( ) librsvg-2.so.2()(64bit) ( ) libgs.so.10()(64bit) ( ) libpoppler-glib.so.8()(64bit) ( )"
-RPROVIDES:graphviz = "libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) libgvplugin_core.so.6()(64bit) ( ) libgvplugin_dot_layout.so.6()(64bit) ( ) libgvplugin_gs.so.6()(64bit) ( ) libgvplugin_kitty.so.6()(64bit) ( ) libgvplugin_neato_layout.so.6()(64bit) ( ) libgvplugin_pango.so.6()(64bit) ( ) libgvplugin_poppler.so.6()(64bit) ( ) libgvplugin_rsvg.so.6()(64bit) ( ) libgvplugin_vt.so.6()(64bit) ( ) libgvplugin_webp.so.6()(64bit) ( ) libgvplugin_xlib.so.6()(64bit) ( ) libgvpr.so.2()(64bit) ( ) liblab_gamut.so.1()(64bit) ( ) graphviz ( =  9.0.0-15.el10) graphviz(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz = "
+ libtool-ltdl
+ pango
+ fontconfig
+ libX11
+ poppler-glib
+ urw-base35-fonts
+ libXrender
+ libstdc++
+ cairo
+ gd
+ zlib-ng-compat
+ librsvg2
+ libgcc
+ libwebp
+ gdk-pixbuf2
+ libgs
+ bash
+ expat
+ freetype
+ harfbuzz
+ glib2
+ glibc
+"
 
 URI_graphviz-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-doc-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
 RDEPENDS:graphviz-doc = ""
-RPROVIDES:graphviz-doc = "graphviz-doc ( =  9.0.0-15.el10) graphviz-doc(x86-64) ( =  9.0.0-15.el10)"
 
 URI_graphviz-gd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-gd-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-gd = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libz.so.1()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libcairo.so.2()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libexpat.so.1()(64bit) ( ) libltdl.so.7()(64bit) ( ) libgd.so.3()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) graphviz ( =  9.0.0-15.el10)"
-RPROVIDES:graphviz-gd = "libgvplugin_gd.so.6()(64bit) ( ) graphviz-gd ( =  9.0.0-15.el10) graphviz-gd(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz-gd = "
+ gd
+ zlib-ng-compat
+ libtool-ltdl
+ harfbuzz
+ pango
+ cairo
+ glib2
+ expat
+ glibc
+ graphviz
+"
 
 URI_graphviz-python3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-python3-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-python3 = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libz.so.1()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libexpat.so.1()(64bit) ( ) libltdl.so.7()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) python(abi) ( =  3.12) graphviz ( =  9.0.0-15.el10)"
-RPROVIDES:graphviz-python3 = "libgv_python3.so()(64bit) ( ) graphviz-python3 ( =  9.0.0-15.el10) graphviz-python3(x86-64) ( =  9.0.0-15.el10) python3.12dist(gv) ( =  9.0.0) python3dist(gv) ( =  9.0.0)"
+RDEPENDS:graphviz-python3 = "
+ python3
+ zlib-ng-compat
+ libtool-ltdl
+ libgcc
+ libstdc++
+ expat
+ glibc
+ graphviz
+"
 
 URI_graphviz-ruby = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-ruby-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-ruby = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libz.so.1()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) ruby ( ) libexpat.so.1()(64bit) ( ) libruby.so.3.3()(64bit) ( ) libltdl.so.7()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) graphviz ( =  9.0.0-15.el10)"
-RPROVIDES:graphviz-ruby = "libgv_ruby.so()(64bit) ( ) graphviz-ruby ( =  9.0.0-15.el10) graphviz-ruby(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz-ruby = "
+ zlib-ng-compat
+ libtool-ltdl
+ libgcc
+ ruby
+ libstdc++
+ ruby-libs
+ expat
+ glibc
+ graphviz
+"
 
 URI_graphviz-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/graphviz-devel-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libgvplugin_core.so.6()(64bit) ( ) libgvplugin_dot_layout.so.6()(64bit) ( ) libgvplugin_gd.so.6()(64bit) ( ) libgvplugin_gs.so.6()(64bit) ( ) libgvplugin_kitty.so.6()(64bit) ( ) libgvplugin_neato_layout.so.6()(64bit) ( ) libgvplugin_pango.so.6()(64bit) ( ) libgvplugin_poppler.so.6()(64bit) ( ) libgvplugin_rsvg.so.6()(64bit) ( ) libgvplugin_vt.so.6()(64bit) ( ) libgvplugin_webp.so.6()(64bit) ( ) libgvplugin_xlib.so.6()(64bit) ( ) libgvpr.so.2()(64bit) ( ) liblab_gamut.so.1()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) graphviz ( =  9.0.0-15.el10) graphviz-gd ( =  9.0.0-15.el10)"
-RPROVIDES:graphviz-devel = "graphviz-devel ( =  9.0.0-15.el10) graphviz-devel(x86-64) ( =  9.0.0-15.el10) pkgconfig(libcdt) ( =  9.0.0) pkgconfig(libcgraph) ( =  9.0.0) pkgconfig(libgvc) ( =  9.0.0) pkgconfig(libgvpr) ( =  9.0.0) pkgconfig(liblab_gamut) ( =  9.0.0) pkgconfig(libpathplan) ( =  9.0.0) pkgconfig(libxdot) ( =  9.0.0)"
+RDEPENDS:graphviz-devel = "
+ graphviz
+ graphviz-gd
+ pkgconf-pkg-config
+"
 
 URI_graphviz-go = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-go-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-go = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libz.so.1()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libltdl.so.7()(64bit) ( ) libexpat.so.1()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) golang ( ) graphviz ( =  9.0.0-15.el10)"
-RPROVIDES:graphviz-go = "libgv_go.so()(64bit) ( ) graphviz-go ( =  9.0.0-15.el10) graphviz-go(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz-go = "
+ zlib-ng-compat
+ libtool-ltdl
+ libgcc
+ libstdc++
+ expat
+ glibc
+ graphviz
+ golang
+"
 
 URI_graphviz-graphs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-graphs-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
 RDEPENDS:graphviz-graphs = ""
-RPROVIDES:graphviz-graphs = "graphviz-graphs ( =  9.0.0-15.el10) graphviz-graphs(x86-64) ( =  9.0.0-15.el10)"
 
 URI_graphviz-java = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-java-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-java = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libz.so.1()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libltdl.so.7()(64bit) ( ) libexpat.so.1()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) graphviz ( =  9.0.0-15.el10)"
-RPROVIDES:graphviz-java = "libgv_java.so()(64bit) ( ) graphviz-java ( =  9.0.0-15.el10) graphviz-java(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz-java = "
+ zlib-ng-compat
+ libtool-ltdl
+ libgcc
+ libstdc++
+ expat
+ glibc
+ graphviz
+"
 
 URI_graphviz-lua = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-lua-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-lua = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libz.so.1()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libltdl.so.7()(64bit) ( ) libexpat.so.1()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) liblua-5.4.so()(64bit) ( ) lua ( ) graphviz ( =  9.0.0-15.el10) lua(abi) ( =  5.4)"
-RPROVIDES:graphviz-lua = "libgv_lua.so()(64bit) ( ) graphviz-lua ( =  9.0.0-15.el10) graphviz-lua(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz-lua = "
+ zlib-ng-compat
+ libtool-ltdl
+ lua-libs
+ libgcc
+ libstdc++
+ lua
+ expat
+ glibc
+ graphviz
+"
 
 URI_graphviz-perl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-perl-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-perl = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) perl(Exporter) ( ) libz.so.1()(64bit) ( ) perl-libs ( ) perl(base) ( ) libltdl.so.7()(64bit) ( ) libcrypt.so.2()(64bit) ( ) perl(DynaLoader) ( ) libexpat.so.1()(64bit) ( ) libresolv.so.2()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) perl(:MODULE_COMPAT_5.40.0) ( ) libperl.so.5.40()(64bit) ( ) graphviz ( =  9.0.0-15.el10)"
-RPROVIDES:graphviz-perl = "libgv_perl.so()(64bit) ( ) perl(gv) ( ) perl(gvc) ( ) graphviz-perl ( =  9.0.0-15.el10) graphviz-perl(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz-perl = "
+ zlib-ng-compat
+ perl-libs
+ libtool-ltdl
+ libxcrypt
+ libgcc
+ perl-DynaLoader
+ libstdc++
+ expat
+ glibc
+ graphviz
+ perl-Exporter
+ perl-base
+"
 
 URI_graphviz-tcl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-tcl-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:graphviz-tcl = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libcairo.so.2()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libltdl.so.7()(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libexpat.so.1()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libfreetype.so.6()(64bit) ( ) libcdt.so.5()(64bit) ( ) libcgraph.so.6()(64bit) ( ) libgvc.so.6()(64bit) ( ) libpathplan.so.4()(64bit) ( ) libxdot.so.4()(64bit) ( ) libgd.so.3()(64bit) ( ) libpangoft2-1.0.so.0()(64bit) ( ) tk ( ) graphviz ( =  9.0.0-15.el10) tcl ( >=  8.3)"
-RPROVIDES:graphviz-tcl = "libgdtclft.so()(64bit) ( ) libgv_tcl.so()(64bit) ( ) libtcldot.so()(64bit) ( ) libtcldot_builtin.so()(64bit) ( ) libtclplan.so()(64bit) ( ) graphviz-tcl ( =  9.0.0-15.el10) graphviz-tcl(x86-64) ( =  9.0.0-15.el10)"
+RDEPENDS:graphviz-tcl = "
+ gd
+ zlib-ng-compat
+ libtool-ltdl
+ freetype
+ libgcc
+ harfbuzz
+ tk
+ pango
+ fontconfig
+ tcl
+ libstdc++
+ glib2
+ cairo
+ expat
+ glibc
+ graphviz
+"

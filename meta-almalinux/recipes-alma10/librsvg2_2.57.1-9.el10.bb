@@ -7,17 +7,57 @@ PACKAGES = "librsvg2 librsvg2-devel librsvg2-tools rsvg-pixbuf-loader"
 
 
 URI_librsvg2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librsvg2-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:librsvg2 = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) ld-linux-x86-64.so.2()(64bit) ( ) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) ( ) libxml2.so.2()(64bit) ( ) libcairo.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libxml2.so.2(LIBXML2_2.6.0)(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libfreetype.so.6()(64bit) ( ) libpng16.so.16()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libcairo-gobject.so.2()(64bit) ( ) libpangoft2-1.0.so.0()(64bit) ( ) rsvg-pixbuf-loader ( ) libxml2.so.2(LIBXML2_2.7.0)(64bit) ( ) cairo(x86-64) ( >=  1.16.0) cairo-gobject(x86-64) ( >=  1.16.0)"
-RPROVIDES:librsvg2 = "librsvg-2.so.2()(64bit) ( ) bundled(crate(cfg-if)) ( =  1.0.0) bundled(crate(pin-utils)) ( =  0.1.0) bundled(crate(byteorder)) ( =  1.5.0) bundled(crate(rand_chacha)) ( =  0.3.1) bundled(crate(rand)) ( =  0.8.5) bundled(crate(rand_core)) ( =  0.6.4) bundled(crate(equivalent)) ( =  1.0.1) bundled(crate(autocfg)) ( =  1.1.0) bundled(crate(version_check)) ( =  0.9.4) bundled(crate(heck)) ( =  0.4.1) bundled(crate(stable_deref_trait)) ( =  1.2.0) bundled(crate(lazy_static)) ( =  1.4.0) bundled(crate(form_urlencoded)) ( =  1.2.1) bundled(crate(percent-encoding)) ( =  2.3.1) bundled(crate(strsim)) ( =  0.10.0) bundled(crate(ppv-lite86)) ( =  0.2.17) bundled(crate(idna)) ( =  0.5.0) bundled(crate(syn)) ( =  1.0.109) bundled(crate(memoffset)) ( =  0.9.0) bundled(crate(parking_lot)) ( =  0.12.1) bundled(crate(url)) ( =  2.5.0) bundled(crate(parking_lot_core)) ( =  0.9.9) bundled(crate(tinyvec_macros)) ( =  0.1.1) bundled(crate(once_cell)) ( =  1.19.0) bundled(crate(slab)) ( =  0.4.9) bundled(crate(log)) ( =  0.4.20) bundled(crate(new_debug_unreachable)) ( =  1.0.4) bundled(crate(precomputed-hash)) ( =  0.1.1) bundled(crate(cssparser-macros)) ( =  0.6.1) bundled(crate(fxhash)) ( =  0.2.1) bundled(crate(phf)) ( =  0.11.2) bundled(crate(phf_generator)) ( =  0.11.2) bundled(crate(phf_macros)) ( =  0.11.2) bundled(crate(phf_shared)) ( =  0.11.2) bundled(crate(typenum)) ( =  1.17.0) bundled(crate(cstr)) ( =  0.2.11) bundled(crate(num-integer)) ( =  0.1.45) bundled(crate(scopeguard)) ( =  1.2.0) bundled(crate(unicode-normalization)) ( =  0.1.22) bundled(crate(colorchoice)) ( =  1.0.0) bundled(crate(utf8parse)) ( =  0.2.1) bundled(crate(unicode-ident)) ( =  1.0.12) bundled(crate(hashbrown)) ( =  0.14.3) bundled(crate(regex-syntax)) ( =  0.8.2) bundled(crate(rayon-core)) ( =  1.12.0) bundled(crate(tinyvec)) ( =  1.6.0) bundled(crate(pin-project-lite)) ( =  0.2.13) bundled(crate(anstyle-parse)) ( =  0.2.3) bundled(crate(anstyle-query)) ( =  1.0.2) bundled(crate(itoa)) ( =  1.0.10) bundled(crate(paste)) ( =  1.0.14) bundled(crate(lock_api)) ( =  0.4.11) bundled(crate(clap_derive)) ( =  4.4.7) bundled(crate(clap_lex)) ( =  0.6.0) bundled(crate(encoding_rs)) ( =  0.8.33) bundled(crate(utf-8)) ( =  0.7.6) bundled(crate(serde)) ( =  1.0.193) bundled(crate(serde_derive)) ( =  1.0.193) bundled(crate(aho-corasick)) ( =  1.1.2) bundled(crate(locale_config)) ( =  0.3.0) bundled(crate(system-deps)) ( =  6.2.0) bundled(crate(version-compare)) ( =  0.1.1) bundled(crate(proc-macro-error)) ( =  1.0.4) bundled(crate(proc-macro-error-attr)) ( =  1.0.4) bundled(crate(bitflags)) ( =  2.4.1) librsvg2(x86-64) ( =  2.57.1-9.el10) bundled(crate(indexmap)) ( =  2.1.0) bundled(crate(derive_more)) ( =  0.99.17) bundled(crate(language-tags)) ( =  0.3.2) bundled(crate(num-rational)) ( =  0.4.1) bundled(crate(pkg-config)) ( =  0.3.27) bundled(crate(libloading)) ( =  0.8.1) bundled(crate(phf_shared)) ( =  0.10.0) bundled(crate(siphasher)) ( =  0.3.11) bundled(crate(string_cache)) ( =  0.8.7) bundled(crate(approx)) ( =  0.5.1) bundled(crate(cast)) ( =  0.3.0) bundled(crate(cssparser)) ( =  0.31.2) bundled(crate(data-url)) ( =  0.3.1) bundled(crate(dtoa)) ( =  1.0.9) bundled(crate(dtoa-short)) ( =  0.3.4) bundled(crate(float-cmp)) ( =  0.9.0) bundled(crate(futf)) ( =  0.1.5) bundled(crate(mac)) ( =  0.1.1) bundled(crate(markup5ever)) ( =  0.11.0) bundled(crate(matrixmultiply)) ( =  0.3.8) bundled(crate(nalgebra-macros)) ( =  0.2.1) bundled(crate(phf)) ( =  0.10.1) bundled(crate(phf_codegen)) ( =  0.10.0) bundled(crate(phf_generator)) ( =  0.10.0) bundled(crate(rawpointer)) ( =  0.2.1) bundled(crate(rgb)) ( =  0.8.37) bundled(crate(safe_arch)) ( =  0.7.1) bundled(crate(selectors)) ( =  0.25.0) bundled(crate(servo_arc)) ( =  0.3.0) bundled(crate(simba)) ( =  0.8.1) bundled(crate(string_cache_codegen)) ( =  0.5.2) bundled(crate(tendril)) ( =  0.4.3) bundled(crate(xml5ever)) ( =  0.17.0) bundled(crate(anstream)) ( =  0.6.5) bundled(crate(anstyle)) ( =  1.0.4) bundled(crate(regex)) ( =  1.10.2) bundled(crate(regex-automata)) ( =  0.4.3) bundled(crate(toml)) ( =  0.8.2) bundled(crate(toml_edit)) ( =  0.20.2) bundled(crate(either)) ( =  1.9.0) bundled(crate(num-traits)) ( =  0.2.17) bundled(crate(anyhow)) ( =  1.0.75) bundled(crate(bytemuck)) ( =  1.14.0) bundled(crate(cairo-rs)) ( =  0.18.3) bundled(crate(cairo-sys-rs)) ( =  0.18.2) bundled(crate(cfg-expr)) ( =  0.15.5) bundled(crate(chrono)) ( =  0.4.31) bundled(crate(clap)) ( =  4.4.11) bundled(crate(clap_builder)) ( =  4.4.11) bundled(crate(clap_complete)) ( =  4.4.4) bundled(crate(const-cstr)) ( =  0.3.0) bundled(crate(crossbeam-deque)) ( =  0.8.4) bundled(crate(crossbeam-epoch)) ( =  0.9.16) bundled(crate(crossbeam-utils)) ( =  0.8.17) bundled(crate(dlib)) ( =  0.5.2) bundled(crate(futures-channel)) ( =  0.3.29) bundled(crate(futures-core)) ( =  0.3.29) bundled(crate(futures-executor)) ( =  0.3.29) bundled(crate(futures-io)) ( =  0.3.29) bundled(crate(futures-macro)) ( =  0.3.29) bundled(crate(futures-task)) ( =  0.3.29) bundled(crate(futures-util)) ( =  0.3.29) bundled(crate(gdk-pixbuf)) ( =  0.18.3) bundled(crate(gdk-pixbuf-sys)) ( =  0.18.0) bundled(crate(getrandom)) ( =  0.2.11) bundled(crate(gio)) ( =  0.18.4) bundled(crate(gio-sys)) ( =  0.18.1) bundled(crate(glib)) ( =  0.18.4) bundled(crate(glib-macros)) ( =  0.18.3) bundled(crate(glib-sys)) ( =  0.18.1) bundled(crate(gobject-sys)) ( =  0.18.0) bundled(crate(iana-time-zone)) ( =  0.1.58) bundled(crate(itertools)) ( =  0.11.0) bundled(crate(libc)) ( =  0.2.151) bundled(crate(libm)) ( =  0.2.8) bundled(crate(memchr)) ( =  2.6.4) bundled(crate(nalgebra)) ( =  0.32.3) bundled(crate(num-complex)) ( =  0.4.4) bundled(crate(pango)) ( =  0.18.3) bundled(crate(pango-sys)) ( =  0.18.0) bundled(crate(pangocairo)) ( =  0.18.0) bundled(crate(pangocairo-sys)) ( =  0.18.0) bundled(crate(proc-macro-crate)) ( =  2.0.1) bundled(crate(proc-macro2)) ( =  1.0.70) bundled(crate(quote)) ( =  1.0.33) bundled(crate(rayon)) ( =  1.8.0) bundled(crate(rctree)) ( =  0.5.0) bundled(crate(serde_spanned)) ( =  0.6.4) bundled(crate(smallvec)) ( =  1.11.2) bundled(crate(syn)) ( =  2.0.41) bundled(crate(target-lexicon)) ( =  0.12.12) bundled(crate(thiserror)) ( =  1.0.50) bundled(crate(thiserror-impl)) ( =  1.0.50) bundled(crate(toml_datetime)) ( =  0.6.3) bundled(crate(unicode-bidi)) ( =  0.3.14) bundled(crate(wide)) ( =  0.7.13) bundled(crate(winnow)) ( =  0.5.28) bundled(crate(yeslogic-fontconfig-sys)) ( =  4.0.1) librsvg2 ( =  2.57.1-9.el10)"
+RDEPENDS:librsvg2 = "
+ freetype
+ libpng
+ libgcc
+ harfbuzz
+ libxml2
+ pango
+ gdk-pixbuf2
+ fontconfig
+ cairo
+ glib2
+ cairo-gobject
+ glibc
+ rsvg-pixbuf-loader
+"
 
 URI_librsvg2-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librsvg2-devel-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:librsvg2-devel = "/usr/bin/pkg-config ( ) pkgconfig(glib-2.0) ( ) pkgconfig(gio-2.0) ( ) librsvg-2.so.2()(64bit) ( ) pkgconfig(cairo) ( ) pkgconfig(gdk-pixbuf-2.0) ( ) librsvg2(x86-64) ( =  2.57.1-9.el10)"
-RPROVIDES:librsvg2-devel = "librsvg2-devel ( =  2.57.1-9.el10) librsvg2-devel(x86-64) ( =  2.57.1-9.el10) pkgconfig(librsvg-2.0) ( =  2.57.1)"
+RDEPENDS:librsvg2-devel = "
+ glib2-devel
+ librsvg2
+ pkgconf-pkg-config
+ gdk-pixbuf2-devel
+ cairo-devel
+"
 
 URI_librsvg2-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librsvg2-tools-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:librsvg2-tools = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) ld-linux-x86-64.so.2()(64bit) ( ) ld-linux-x86-64.so.2(GLIBC_2.3)(64bit) ( ) libxml2.so.2()(64bit) ( ) libcairo.so.2()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libgcc_s.so.1(GCC_3.3)(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libxml2.so.2(LIBXML2_2.6.0)(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libcairo-gobject.so.2()(64bit) ( ) libpangoft2-1.0.so.0()(64bit) ( ) libxml2.so.2(LIBXML2_2.7.0)(64bit) ( ) librsvg2(x86-64) ( =  2.57.1-9.el10)"
-RPROVIDES:librsvg2-tools = "librsvg2-tools ( =  2.57.1-9.el10) librsvg2-tools(x86-64) ( =  2.57.1-9.el10)"
+RDEPENDS:librsvg2-tools = "
+ librsvg2
+ libgcc
+ libxml2
+ pango
+ gdk-pixbuf2
+ fontconfig
+ cairo
+ glib2
+ cairo-gobject
+ glibc
+"
 
 URI_rsvg-pixbuf-loader = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rsvg-pixbuf-loader-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:rsvg-pixbuf-loader = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libcairo.so.2()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libpangocairo-1.0.so.0()(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libfreetype.so.6()(64bit) ( ) libpng16.so.16()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libcairo-gobject.so.2()(64bit) ( ) libpangoft2-1.0.so.0()(64bit) ( ) librsvg-2.so.2()(64bit) ( ) gdk-pixbuf2(x86-64) ( ) librsvg2(x86-64) ( =  2.57.1-9.el10)"
-RPROVIDES:rsvg-pixbuf-loader = "libpixbufloader-svg.so()(64bit) ( ) rsvg-pixbuf-loader ( =  2.57.1-9.el10) rsvg-pixbuf-loader(x86-64) ( =  2.57.1-9.el10)"
+RDEPENDS:rsvg-pixbuf-loader = "
+ freetype
+ libpng
+ librsvg2
+ harfbuzz
+ libxml2
+ pango
+ gdk-pixbuf2
+ fontconfig
+ cairo
+ glib2
+ cairo-gobject
+ glibc
+"

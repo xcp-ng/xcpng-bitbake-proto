@@ -7,61 +7,141 @@ PACKAGES = "pipewire pipewire-alsa pipewire-devel pipewire-gstreamer pipewire-ja
 
 
 URI_pipewire = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire = "/bin/sh ( ) shadow-utils ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) systemd ( ) libpipewire-0.3.so.0()(64bit) ( ) pipewire-session-manager ( ) rtkit ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire = "group(pipewire) ( ) pipewire(x86-64) ( =  1.2.7-1.el10) pipewire ( =  1.2.7-1.el10) config(pipewire) ( =  1.2.7-1.el10) user(pipewire) ( =  dSBwaXBld2lyZSAtICJQaXBlV2lyZSBTeXN0ZW0gRGFlbW9uIiAvcnVuL3BpcGV3aXJlIC0A)"
+RDEPENDS:pipewire = "
+ shadow-utils
+ systemd
+ wireplumber
+ bash
+ rtkit
+ glibc
+ pipewire-libs
+"
 
 URI_pipewire-alsa = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-alsa-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-alsa = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libasound.so.2()(64bit) ( ) libasound.so.2(ALSA_0.9)(64bit) ( ) libasound.so.2(ALSA_0.9.0rc4)(64bit) ( ) libpipewire-0.3.so.0()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-alsa = "libasound_module_ctl_pipewire.so()(64bit) ( ) libasound_module_pcm_pipewire.so()(64bit) ( ) config(pipewire-alsa) ( =  1.2.7-1.el10) pipewire-alsa ( =  1.2.7-1.el10) pipewire-alsa(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-alsa = "
+ glibc
+ pipewire-libs
+ alsa-lib
+"
 
 URI_pipewire-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-devel-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-devel = "/usr/bin/pkg-config ( ) libpipewire-0.3.so.0()(64bit) ( ) pkgconfig(libspa-0.2) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-devel = "pipewire-devel ( =  1.2.7-1.el10) pipewire-devel(x86-64) ( =  1.2.7-1.el10) pkgconfig(libpipewire-0.3) ( =  1.2.7) pkgconfig(libspa-0.2) ( =  0.2)"
+RDEPENDS:pipewire-devel = "
+ pipewire-libs
+ pipewire-devel
+ pkgconf-pkg-config
+"
 
 URI_pipewire-gstreamer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-gstreamer-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-gstreamer = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libgstvideo-1.0.so.0()(64bit) ( ) libpipewire-0.3.so.0()(64bit) ( ) libgstbase-1.0.so.0()(64bit) ( ) libgstallocators-1.0.so.0()(64bit) ( ) libgstaudio-1.0.so.0()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-gstreamer = "gstreamer1(element-pipewiresink)()(64bit) ( ) gstreamer1(element-pipewiresrc)()(64bit) ( ) libgstpipewire.so()(64bit) ( ) pipewire-gstreamer ( =  1.2.7-1.el10) pipewire-gstreamer(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-gstreamer = "
+ gstreamer1
+ libgcc
+ gstreamer1-plugins-base
+ glib2
+ glibc
+ pipewire-libs
+"
 
 URI_pipewire-jack-audio-connection-kit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-jack-audio-connection-kit-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-jack-audio-connection-kit = "pipewire-jack-audio-connection-kit-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-jack-audio-connection-kit = "pipewire-jack-audio-connection-kit(x86-64) ( =  1.2.7-1.el10) pipewire-jack-audio-connection-kit ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-jack-audio-connection-kit = "
+ pipewire-jack-audio-connection-kit-libs
+"
 
 URI_pipewire-jack-audio-connection-kit-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-jack-audio-connection-kit-devel-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-jack-audio-connection-kit-devel = "/usr/bin/pkg-config ( ) libjack.so.0()(64bit) ( ) libjacknet.so.0()(64bit) ( ) libjackserver.so.0()(64bit) ( ) pipewire-jack-audio-connection-kit-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-jack-audio-connection-kit-devel = "pipewire-jack-audio-connection-kit-devel ( =  1.2.7-1.el10) pipewire-jack-audio-connection-kit-devel(x86-64) ( =  1.2.7-1.el10) pkgconfig(jack) ( =  1.9.17)"
+RDEPENDS:pipewire-jack-audio-connection-kit-devel = "
+ pipewire-jack-audio-connection-kit-libs
+ pkgconf-pkg-config
+"
 
 URI_pipewire-jack-audio-connection-kit-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-jack-audio-connection-kit-libs-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-jack-audio-connection-kit-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) /usr/bin/sh ( ) libpipewire-0.3.so.0()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10) pipewire-jack-audio-connection-kit(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-jack-audio-connection-kit-libs = "libjack.so.0()(64bit) ( ) libjacknet.so.0()(64bit) ( ) libjackserver.so.0()(64bit) ( ) pipewire-jack-audio-connection-kit-libs(x86-64) ( =  1.2.7-1.el10) pipewire-jack-audio-connection-kit-libs ( =  1.2.7-1.el10) pipewire-libjack ( =  1.2.7-1.el10) pipewire-libjack(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-jack-audio-connection-kit-libs = "
+ glibc
+ pipewire-libs
+ bash
+ pipewire-jack-audio-connection-kit
+"
 
 URI_pipewire-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-libs-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6(GLIBC_2.27)(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libudev.so.1()(64bit) ( ) libdbus-1.so.3()(64bit) ( ) libselinux.so.1()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libdbus-1.so.3(LIBDBUS_1_3)(64bit) ( ) libasound.so.2()(64bit) ( ) libasound.so.2(ALSA_0.9)(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libavahi-common.so.3()(64bit) ( ) libusb-1.0.so.0()(64bit) ( ) libavahi-client.so.3()(64bit) ( ) libpulse.so.0()(64bit) ( ) libasound.so.2(ALSA_0.9.0rc4)(64bit) ( ) libpulse.so.0(PULSE_0)(64bit) ( ) libopus.so.0()(64bit) ( ) libsndfile.so.1()(64bit) ( ) libsndfile.so.1(libsndfile.so.1.0)(64bit) ( ) libfdk-aac.so.2()(64bit) ( ) libbluetooth.so.3()(64bit) ( ) libasound.so.2(ALSA_0.9.0rc8)(64bit) ( ) liblc3.so.1()(64bit) ( ) libwebrtc-audio-processing-1.so.3()(64bit) ( ) libldacBT_abr.so.2()(64bit) ( ) libldacBT_enc.so.2()(64bit) ( ) libsbc.so.1()(64bit) ( ) libsbc.so.1(SBC_1.0)(64bit) ( ) libsbc.so.1(SBC_1.1)(64bit) ( )"
-RPROVIDES:pipewire-libs = "libpipewire-0.3.so.0()(64bit) ( ) libpipewire-module-access.so()(64bit) ( ) libpipewire-module-adapter.so()(64bit) ( ) libpipewire-module-avb.so()(64bit) ( ) libpipewire-module-client-device.so()(64bit) ( ) libpipewire-module-client-node.so()(64bit) ( ) libpipewire-module-combine-stream.so()(64bit) ( ) libpipewire-module-echo-cancel.so()(64bit) ( ) libpipewire-module-fallback-sink.so()(64bit) ( ) libpipewire-module-filter-chain.so()(64bit) ( ) libpipewire-module-link-factory.so()(64bit) ( ) libpipewire-module-loopback.so()(64bit) ( ) libpipewire-module-metadata.so()(64bit) ( ) libpipewire-module-netjack2-driver.so()(64bit) ( ) libpipewire-module-netjack2-manager.so()(64bit) ( ) libpipewire-module-parametric-equalizer.so()(64bit) ( ) libpipewire-module-pipe-tunnel.so()(64bit) ( ) libpipewire-module-portal.so()(64bit) ( ) libpipewire-module-profiler.so()(64bit) ( ) libpipewire-module-protocol-native.so()(64bit) ( ) libpipewire-module-protocol-simple.so()(64bit) ( ) libpipewire-module-pulse-tunnel.so()(64bit) ( ) libpipewire-module-raop-discover.so()(64bit) ( ) libpipewire-module-raop-sink.so()(64bit) ( ) libpipewire-module-rt.so()(64bit) ( ) libpipewire-module-rtkit.so()(64bit) ( ) libpipewire-module-rtp-sap.so()(64bit) ( ) libpipewire-module-rtp-session.so()(64bit) ( ) libpipewire-module-rtp-sink.so()(64bit) ( ) libpipewire-module-rtp-source.so()(64bit) ( ) libpipewire-module-session-manager.so()(64bit) ( ) libpipewire-module-snapcast-discover.so()(64bit) ( ) libpipewire-module-spa-device-factory.so()(64bit) ( ) libpipewire-module-spa-device.so()(64bit) ( ) libpipewire-module-spa-node-factory.so()(64bit) ( ) libpipewire-module-spa-node.so()(64bit) ( ) libpipewire-module-vban-recv.so()(64bit) ( ) libpipewire-module-vban-send.so()(64bit) ( ) libpipewire-module-zeroconf-discover.so()(64bit) ( ) libspa-aec-null.so()(64bit) ( ) libspa-aec-webrtc.so()(64bit) ( ) libspa-alsa.so()(64bit) ( ) libspa-audioconvert.so()(64bit) ( ) libspa-audiomixer.so()(64bit) ( ) libspa-avb.so()(64bit) ( ) libspa-bluez5.so()(64bit) ( ) libspa-codec-bluez5-aac.so()(64bit) ( ) libspa-codec-bluez5-faststream.so()(64bit) ( ) libspa-codec-bluez5-lc3.so()(64bit) ( ) libspa-codec-bluez5-ldac.so()(64bit) ( ) libspa-codec-bluez5-opus-g.so()(64bit) ( ) libspa-codec-bluez5-opus.so()(64bit) ( ) libspa-codec-bluez5-sbc.so()(64bit) ( ) libspa-control.so()(64bit) ( ) libspa-dbus.so()(64bit) ( ) libspa-journal.so()(64bit) ( ) libspa-support.so()(64bit) ( ) libspa-v4l2.so()(64bit) ( ) libspa-videoconvert.so()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10) pipewire-libs ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-libs = "
+ liblc3
+ libldac
+ systemd-libs
+ dbus-libs
+ libselinux
+ libstdc++
+ fdk-aac-free
+ libusb1
+ alsa-lib
+ pulseaudio-libs
+ openssl-libs
+ libgcc
+ libsbc
+ avahi-libs
+ bluez-libs
+ opus
+ libsndfile
+ webrtc-audio-processing
+ glib2
+ glibc
+"
 
 URI_pipewire-module-x11 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-module-x11-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-module-x11 = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.4)(64bit) ( ) libX11.so.6()(64bit) ( ) libXfixes.so.3()(64bit) ( ) libpipewire-0.3.so.0()(64bit) ( ) libcanberra.so.0()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-module-x11 = "libpipewire-module-x11-bell.so()(64bit) ( ) pipewire-module-x11 ( =  1.2.7-1.el10) pipewire-module-x11(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-module-x11 = "
+ libXfixes
+ libcanberra
+ libX11
+ glibc
+ pipewire-libs
+"
 
 URI_pipewire-plugin-libcamera = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-plugin-libcamera-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-plugin-libcamera = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libc.so.6(GLIBC_2.32)(64bit) ( ) libcamera ( ) libcamera-base.so.0.3()(64bit) ( ) libcamera.so.0.3()(64bit) ( ) libdrm ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-plugin-libcamera = "libspa-libcamera.so()(64bit) ( ) pipewire-plugin-libcamera ( =  1.2.7-1.el10) pipewire-plugin-libcamera(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-plugin-libcamera = "
+ libcamera
+ libgcc
+ libstdc++
+ glibc
+ pipewire-libs
+ libdrm
+"
 
 URI_pipewire-pulseaudio = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-pulseaudio-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-pulseaudio = "/bin/sh ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libsystemd.so.0()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libdbus-1.so.3()(64bit) ( ) libdbus-1.so.3(LIBDBUS_1_3)(64bit) ( ) libavahi-common.so.3()(64bit) ( ) libavahi-client.so.3()(64bit) ( ) libpipewire-0.3.so.0()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-pulseaudio = "pulseaudio-daemon ( ) pulseaudio-module-bluetooth ( ) pulseaudio-module-jack ( ) libpipewire-module-protocol-pulse.so()(64bit) ( ) pipewire-pulseaudio ( =  1.2.7-1.el10) pipewire-pulseaudio(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-pulseaudio = "
+ systemd-libs
+ libgcc
+ avahi-libs
+ bash
+ glib2
+ glibc
+ pipewire-libs
+ dbus-libs
+"
 
 URI_pipewire-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-utils-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-utils = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libdbus-1.so.3()(64bit) ( ) libdbus-1.so.3(LIBDBUS_1_3)(64bit) ( ) libtinfo.so.6()(64bit) ( ) libasound.so.2()(64bit) ( ) libasound.so.2(ALSA_0.9)(64bit) ( ) libreadline.so.8()(64bit) ( ) libasound.so.2(ALSA_0.9.0rc4)(64bit) ( ) libpipewire-0.3.so.0()(64bit) ( ) libncursesw.so.6()(64bit) ( ) libsndfile.so.1()(64bit) ( ) libsndfile.so.1(libsndfile.so.1.0)(64bit) ( ) pipewire(x86-64) ( =  1.2.7-1.el10) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-utils = "pipewire-utils ( =  1.2.7-1.el10) pipewire-utils(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-utils = "
+ alsa-lib
+ libgcc
+ readline
+ pipewire
+ ncurses-libs
+ glibc
+ pipewire-libs
+ dbus-libs
+ libsndfile
+"
 
 URI_pipewire-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pipewire-doc-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
 RDEPENDS:pipewire-doc = ""
-RPROVIDES:pipewire-doc = "pipewire-doc ( =  1.2.7-1.el10) pipewire-doc(x86-64) ( =  1.2.7-1.el10)"
 
 URI_pipewire-plugin-vulkan = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pipewire-plugin-vulkan-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-plugin-vulkan = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libdrm.so.2()(64bit) ( ) libvulkan.so.1()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-plugin-vulkan = "libspa-vulkan.so()(64bit) ( ) pipewire-plugin-vulkan ( =  1.2.7-1.el10) pipewire-plugin-vulkan(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-plugin-vulkan = "
+ glibc
+ pipewire-libs
+ vulkan-loader
+ libdrm
+"
 
 URI_pipewire-v4l2 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pipewire-v4l2-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:pipewire-v4l2 = "rtld(GNU_HASH) ( ) /usr/bin/sh ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libpipewire-0.3.so.0()(64bit) ( ) pipewire-libs(x86-64) ( =  1.2.7-1.el10)"
-RPROVIDES:pipewire-v4l2 = "libpw-v4l2.so()(64bit) ( ) pipewire-v4l2 ( =  1.2.7-1.el10) pipewire-v4l2(x86-64) ( =  1.2.7-1.el10)"
+RDEPENDS:pipewire-v4l2 = "
+ glibc
+ pipewire-libs
+ bash
+"

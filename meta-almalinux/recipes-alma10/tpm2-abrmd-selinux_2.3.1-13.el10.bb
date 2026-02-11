@@ -7,5 +7,10 @@ PACKAGES = "tpm2-abrmd-selinux"
 
 
 URI_tpm2-abrmd-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tpm2-abrmd-selinux-2.3.1-13.el10.noarch.rpm;unpack=0"
-RDEPENDS:tpm2-abrmd-selinux = "/bin/sh ( ) policycoreutils ( ) policycoreutils-python-utils ( ) libselinux-utils ( ) selinux-policy-base ( >=  3.14.3-22) selinux-policy ( >=  3.14.3-22)"
-RPROVIDES:tpm2-abrmd-selinux = "tpm2-abrmd-selinux ( =  2.3.1-13.el10)"
+RDEPENDS:tpm2-abrmd-selinux = "
+ policycoreutils-python-utils
+ policycoreutils
+ bash
+ selinux-policy
+ libselinux-utils
+"

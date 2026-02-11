@@ -7,13 +7,33 @@ PACKAGES = "perl-Font-TTF perl-Font-TTF-XMLparse perl-Font-TTF-tests"
 
 
 URI_perl-Font-TTF = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Font-TTF-1.06-26.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Font-TTF = "perl(strict) ( ) perl(Exporter) ( ) perl(vars) ( ) perl-libs ( ) perl(Data::Dumper) ( ) perl(IO::File) ( ) perl(Symbol) ( ) perl(bytes) ( ) perl(Font::TTF::Font) ( ) perl(IO::String) ( ) perl(Font::TTF::Cvt_) ( ) perl(Font::TTF::Fpgm) ( ) perl(Font::TTF::Name) ( ) perl(Font::TTF::Post) ( ) perl(Font::TTF::Prep) ( ) perl(Font::TTF::Segarr) ( ) perl(Font::TTF::Table) ( ) perl(Font::TTF::Ttc) ( ) perl(Font::TTF::Utils) ( ) perl(:VERSION) ( >=  5.4.0)"
-RPROVIDES:perl-Font-TTF = "perl(Font::TTF::OTTags) ( ) perl(Font::TTF::AATKern) ( ) perl(Font::TTF::AATutils) ( ) perl(Font::TTF::Anchor) ( ) perl(Font::TTF::Bsln) ( ) perl(Font::TTF::Cmap) ( ) perl(Font::TTF::Coverage) ( ) perl(Font::TTF::DSIG) ( ) perl(Font::TTF::Delta) ( ) perl(Font::TTF::Dumper) ( ) perl(Font::TTF::EBDT) ( ) perl(Font::TTF::EBLC) ( ) perl(Font::TTF::Fdsc) ( ) perl(Font::TTF::Feat) ( ) perl(Font::TTF::Features::Cvar) ( ) perl(Font::TTF::Features::Size) ( ) perl(Font::TTF::Features::Sset) ( ) perl(Font::TTF::Fmtx) ( ) perl(Font::TTF::GDEF) ( ) perl(Font::TTF::GPOS) ( ) perl(Font::TTF::GSUB) ( ) perl(Font::TTF::Glat) ( ) perl(Font::TTF::Gloc) ( ) perl(Font::TTF::Glyf) ( ) perl(Font::TTF::Glyph) ( ) perl(Font::TTF::GrFeat) ( ) perl(Font::TTF::Hdmx) ( ) perl(Font::TTF::Head) ( ) perl(Font::TTF::Hhea) ( ) perl(Font::TTF::Hmtx) ( ) perl(Font::TTF::Kern) ( ) perl(Font::TTF::Kern::ClassArray) ( ) perl(Font::TTF::Kern::CompactClassArray) ( ) perl(Font::TTF::Kern::OrderedList) ( ) perl(Font::TTF::Kern::StateTable) ( ) perl(Font::TTF::Kern::Subtable) ( ) perl(Font::TTF::LTSH) ( ) perl(Font::TTF::Loca) ( ) perl(Font::TTF::Maxp) ( ) perl(Font::TTF::Mort) ( ) perl(Font::TTF::Mort::Chain) ( ) perl(Font::TTF::Mort::Contextual) ( ) perl(Font::TTF::Mort::Insertion) ( ) perl(Font::TTF::Mort::Ligature) ( ) perl(Font::TTF::Mort::Noncontextual) ( ) perl(Font::TTF::Mort::Rearrangement) ( ) perl(Font::TTF::Mort::Subtable) ( ) perl(Font::TTF::OS_2) ( ) perl(Font::TTF::OldCmap) ( ) perl(Font::TTF::OldMort) ( ) perl(Font::TTF::PCLT) ( ) perl(Font::TTF::PSNames) ( ) perl(Font::TTF::Prop) ( ) perl(Font::TTF::Silf) ( ) perl(Font::TTF::Sill) ( ) perl(Font::TTF::Ttopen) ( ) perl(Font::TTF::Vhea) ( ) perl(Font::TTF::Vmtx) ( ) perl(Font::TTF::Woff) ( ) perl(Font::TTF::Woff::MetaData) ( ) perl(Font::TTF::Woff::PrivateData) ( ) perl-Font-TTF ( =  1.06-26.el10) perl(Font::TTF) ( =  1.06) perl(Font::TTF::Cvt_) ( =  0.0001) perl(Font::TTF::Font) ( =  0.39) perl(Font::TTF::Fpgm) ( =  0.0001) perl(Font::TTF::Name) ( =  1.1) perl(Font::TTF::Post) ( =  0.01) perl(Font::TTF::Prep) ( =  0.0001) perl(Font::TTF::Segarr) ( =  0.0001) perl(Font::TTF::Table) ( =  0.0001) perl(Font::TTF::Ttc) ( =  0.0001) perl(Font::TTF::Utils) ( =  0.0001)"
+RDEPENDS:perl-Font-TTF = "
+ perl-libs
+ perl-Font-TTF
+ perl-vars
+ perl-IO
+ perl-Symbol
+ perl-Exporter
+ perl-Data-Dumper
+ perl-IO-String
+"
 
 URI_perl-Font-TTF-XMLparse = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Font-TTF-XMLparse-1.06-26.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Font-TTF-XMLparse = "perl(strict) ( ) perl(Exporter) ( ) perl(vars) ( ) perl-libs ( ) perl(XML::Parser::Expat) ( )"
-RPROVIDES:perl-Font-TTF-XMLparse = "perl(Font::TTF::XMLparse) ( ) perl-Font-TTF-XMLparse ( =  1.06-26.el10)"
+RDEPENDS:perl-Font-TTF-XMLparse = "
+ perl-Exporter
+ perl-libs
+ perl-XML-Parser
+ perl-vars
+"
 
 URI_perl-Font-TTF-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Font-TTF-tests-1.06-26.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Font-TTF-tests = "perl(strict) ( ) /usr/bin/perl ( ) /usr/bin/sh ( ) perl-Test-Harness ( ) perl(Test::Simple) ( ) perl(File::Compare) ( ) perl(Font::TTF::Font) ( ) perl(Compress::Zlib) ( ) perl(Font::TTF::OTTags) ( ) perl-Font-TTF ( =  1.06-26.el10)"
-RPROVIDES:perl-Font-TTF-tests = "perl-Font-TTF-tests ( =  1.06-26.el10)"
+RDEPENDS:perl-Font-TTF-tests = "
+ perl-Test-Harness
+ perl-libs
+ perl-Test-Simple
+ perl-Font-TTF
+ perl-IO-Compress
+ perl-File-Compare
+ bash
+ perl-interpreter
+"

@@ -7,5 +7,6 @@ PACKAGES = "hunspell-ky"
 
 
 URI_hunspell-ky = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hunspell-ky-0.20090415-34.el10.noarch.rpm;unpack=0"
-RDEPENDS:hunspell-ky = "hunspell-filesystem ( )"
-RPROVIDES:hunspell-ky = "hunspell-ky ( =  0.20090415-34.el10)"
+RDEPENDS:hunspell-ky = "
+ hunspell-filesystem
+"

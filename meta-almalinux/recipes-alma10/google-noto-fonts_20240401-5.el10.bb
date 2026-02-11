@@ -8,1236 +8,2453 @@ PACKAGES = "google-noto-fonts-common google-noto-sans-mono-vf-fonts google-noto-
 
 URI_google-noto-fonts-common = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/google-noto-fonts-common-20240401-5.el10.noarch.rpm;unpack=0"
 RDEPENDS:google-noto-fonts-common = ""
-RPROVIDES:google-noto-fonts-common = "google-noto-fonts-common ( =  20240401-5.el10)"
 
 URI_google-noto-sans-mono-vf-fonts = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/google-noto-sans-mono-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mono-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mono-vf-fonts = "metainfo() ( ) font(notosansmono) ( ) metainfo(org.fedoraproject.google-noto-sans-mono-vf-fonts.metainfo.xml) ( ) config(google-noto-sans-mono-vf-fonts) ( =  20240401-5.el10) google-noto-sans-mono-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mono-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-vf-fonts = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/google-noto-sans-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-vf-fonts = "metainfo() ( ) font(notosans) ( ) metainfo(org.fedoraproject.google-noto-sans-vf-fonts.metainfo.xml) ( ) config(google-noto-sans-vf-fonts) ( =  20240401-5.el10) google-noto-sans-display-vf-fonts ( =  20240401-5.el10) google-noto-sans-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-vf-fonts = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/google-noto-serif-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-vf-fonts = "metainfo() ( ) font(notoserif) ( ) metainfo(org.fedoraproject.google-noto-serif-vf-fonts.metainfo.xml) ( ) config(google-noto-serif-vf-fonts) ( =  20240401-5.el10) google-noto-serif-display-vf-fonts ( =  20240401-5.el10) google-noto-serif-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-fangsong-kss-rotated-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-fangsong-kss-rotated-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-fangsong-kss-rotated-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-fangsong-kss-rotated-fonts = "metainfo() ( ) font(notofangsongkssrotated) ( ) metainfo(org.fedoraproject.google-noto-fangsong-kss-rotated-fonts.metainfo.xml) ( ) google-noto-fangsong-kss-rotated-fonts ( =  20240401-5.el10) config(google-noto-fangsong-kss-rotated-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-fangsong-kss-rotated-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-fangsong-kss-vertical-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-fangsong-kss-vertical-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-fangsong-kss-vertical-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-fangsong-kss-vertical-fonts = "metainfo() ( ) font(notofangsongkssvertical) ( ) metainfo(org.fedoraproject.google-noto-fangsong-kss-vertical-fonts.metainfo.xml) ( ) google-noto-fangsong-kss-vertical-fonts ( =  20240401-5.el10) config(google-noto-fangsong-kss-vertical-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-fangsong-kss-vertical-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-fonts-all = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-fonts-all-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-fonts-all = "google-noto-sans-balinese-fonts ( =  20240401-5.el10) google-noto-fangsong-kss-rotated-fonts ( =  20240401-5.el10) google-noto-fangsong-kss-vertical-fonts ( =  20240401-5.el10) google-noto-kufi-arabic-fonts ( =  20240401-5.el10) google-noto-kufi-arabic-vf-fonts ( =  20240401-5.el10) google-noto-music-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-ui-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-ui-vf-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-vf-fonts ( =  20240401-5.el10) google-noto-nastaliq-urdu-fonts ( =  20240401-5.el10) google-noto-nastaliq-urdu-vf-fonts ( =  20240401-5.el10) google-noto-rashi-hebrew-fonts ( =  20240401-5.el10) google-noto-rashi-hebrew-vf-fonts ( =  20240401-5.el10) google-noto-sans-adlam-fonts ( =  20240401-5.el10) google-noto-sans-adlam-unjoined-fonts ( =  20240401-5.el10) google-noto-sans-adlam-unjoined-vf-fonts ( =  20240401-5.el10) google-noto-sans-adlam-vf-fonts ( =  20240401-5.el10) google-noto-sans-anatolian-hieroglyphs-fonts ( =  20240401-5.el10) google-noto-sans-arabic-fonts ( =  20240401-5.el10) google-noto-sans-arabic-vf-fonts ( =  20240401-5.el10) google-noto-sans-armenian-fonts ( =  20240401-5.el10) google-noto-sans-armenian-vf-fonts ( =  20240401-5.el10) google-noto-sans-avestan-fonts ( =  20240401-5.el10) google-noto-sans-balinese-vf-fonts ( =  20240401-5.el10) google-noto-sans-bamum-fonts ( =  20240401-5.el10) google-noto-sans-bamum-vf-fonts ( =  20240401-5.el10) google-noto-sans-bassa-vah-fonts ( =  20240401-5.el10) google-noto-sans-bassa-vah-vf-fonts ( =  20240401-5.el10) google-noto-sans-batak-fonts ( =  20240401-5.el10) google-noto-sans-bengali-fonts ( =  20240401-5.el10) google-noto-sans-bengali-ui-fonts ( =  20240401-5.el10) google-noto-sans-bengali-vf-fonts ( =  20240401-5.el10) google-noto-sans-bhaiksuki-fonts ( =  20240401-5.el10) google-noto-sans-brahmi-fonts ( =  20240401-5.el10) google-noto-sans-buginese-fonts ( =  20240401-5.el10) google-noto-sans-buhid-fonts ( =  20240401-5.el10) google-noto-sans-canadian-aboriginal-fonts ( =  20240401-5.el10) google-noto-sans-canadian-aboriginal-vf-fonts ( =  20240401-5.el10) google-noto-sans-carian-fonts ( =  20240401-5.el10) google-noto-sans-caucasian-albanian-fonts ( =  20240401-5.el10) google-noto-sans-chakma-fonts ( =  20240401-5.el10) google-noto-sans-cham-fonts ( =  20240401-5.el10) google-noto-sans-cham-vf-fonts ( =  20240401-5.el10) google-noto-sans-cherokee-fonts ( =  20240401-5.el10) google-noto-sans-cherokee-vf-fonts ( =  20240401-5.el10) google-noto-sans-chorasmian-fonts ( =  20240401-5.el10) google-noto-sans-coptic-fonts ( =  20240401-5.el10) google-noto-sans-cuneiform-fonts ( =  20240401-5.el10) google-noto-sans-cypriot-fonts ( =  20240401-5.el10) google-noto-sans-cypro-minoan-fonts ( =  20240401-5.el10) google-noto-sans-deseret-fonts ( =  20240401-5.el10) google-noto-sans-devanagari-fonts ( =  20240401-5.el10) google-noto-sans-devanagari-ui-fonts ( =  20240401-5.el10) google-noto-sans-devanagari-vf-fonts ( =  20240401-5.el10) google-noto-sans-duployan-fonts ( =  20240401-5.el10) google-noto-sans-egyptian-hieroglyphs-fonts ( =  20240401-5.el10) google-noto-sans-elbasan-fonts ( =  20240401-5.el10) google-noto-sans-elymaic-fonts ( =  20240401-5.el10) google-noto-sans-ethiopic-fonts ( =  20240401-5.el10) google-noto-sans-ethiopic-vf-fonts ( =  20240401-5.el10) google-noto-sans-fonts ( =  20240401-5.el10) google-noto-sans-georgian-fonts ( =  20240401-5.el10) google-noto-sans-georgian-vf-fonts ( =  20240401-5.el10) google-noto-sans-glagolitic-fonts ( =  20240401-5.el10) google-noto-sans-gothic-fonts ( =  20240401-5.el10) google-noto-sans-grantha-fonts ( =  20240401-5.el10) google-noto-sans-gujarati-fonts ( =  20240401-5.el10) google-noto-sans-gujarati-ui-fonts ( =  20240401-5.el10) google-noto-sans-gujarati-vf-fonts ( =  20240401-5.el10) google-noto-sans-gunjala-gondi-fonts ( =  20240401-5.el10) google-noto-sans-gunjala-gondi-vf-fonts ( =  20240401-5.el10) google-noto-sans-gurmukhi-fonts ( =  20240401-5.el10) google-noto-sans-gurmukhi-ui-fonts ( =  20240401-5.el10) google-noto-sans-gurmukhi-vf-fonts ( =  20240401-5.el10) google-noto-sans-hanifi-rohingya-fonts ( =  20240401-5.el10) google-noto-sans-hanifi-rohingya-vf-fonts ( =  20240401-5.el10) google-noto-sans-hanunoo-fonts ( =  20240401-5.el10) google-noto-sans-hatran-fonts ( =  20240401-5.el10) google-noto-sans-hebrew-fonts ( =  20240401-5.el10) google-noto-sans-hebrew-vf-fonts ( =  20240401-5.el10) google-noto-sans-imperial-aramaic-fonts ( =  20240401-5.el10) google-noto-sans-indic-siyaq-numbers-fonts ( =  20240401-5.el10) google-noto-sans-inscriptional-pahlavi-fonts ( =  20240401-5.el10) google-noto-sans-inscriptional-parthian-fonts ( =  20240401-5.el10) google-noto-sans-javanese-fonts ( =  20240401-5.el10) google-noto-sans-javanese-vf-fonts ( =  20240401-5.el10) google-noto-sans-kaithi-fonts ( =  20240401-5.el10) google-noto-sans-kannada-fonts ( =  20240401-5.el10) google-noto-sans-kannada-ui-fonts ( =  20240401-5.el10) google-noto-sans-kannada-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-kannada-vf-fonts ( =  20240401-5.el10) google-noto-sans-kawi-fonts ( =  20240401-5.el10) google-noto-sans-kawi-vf-fonts ( =  20240401-5.el10) google-noto-sans-kayah-li-fonts ( =  20240401-5.el10) google-noto-sans-kayah-li-vf-fonts ( =  20240401-5.el10) google-noto-sans-kharoshthi-fonts ( =  20240401-5.el10) google-noto-sans-khmer-fonts ( =  20240401-5.el10) google-noto-sans-khmer-vf-fonts ( =  20240401-5.el10) google-noto-sans-khojki-fonts ( =  20240401-5.el10) google-noto-sans-khudawadi-fonts ( =  20240401-5.el10) google-noto-sans-lao-fonts ( =  20240401-5.el10) google-noto-sans-lao-looped-fonts ( =  20240401-5.el10) google-noto-sans-lao-looped-vf-fonts ( =  20240401-5.el10) google-noto-sans-lao-vf-fonts ( =  20240401-5.el10) google-noto-sans-lepcha-fonts ( =  20240401-5.el10) google-noto-sans-limbu-fonts ( =  20240401-5.el10) google-noto-sans-linear-a-fonts ( =  20240401-5.el10) google-noto-sans-linear-b-fonts ( =  20240401-5.el10) google-noto-sans-lisu-fonts ( =  20240401-5.el10) google-noto-sans-lisu-vf-fonts ( =  20240401-5.el10) google-noto-sans-lycian-fonts ( =  20240401-5.el10) google-noto-sans-lydian-fonts ( =  20240401-5.el10) google-noto-sans-mahajani-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-ui-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-vf-fonts ( =  20240401-5.el10) google-noto-sans-mandaic-fonts ( =  20240401-5.el10) google-noto-sans-manichaean-fonts ( =  20240401-5.el10) google-noto-sans-marchen-fonts ( =  20240401-5.el10) google-noto-sans-masaram-gondi-fonts ( =  20240401-5.el10) google-noto-sans-math-fonts ( =  20240401-5.el10) google-noto-sans-mayan-numerals-fonts ( =  20240401-5.el10) google-noto-sans-medefaidrin-fonts ( =  20240401-5.el10) google-noto-sans-medefaidrin-vf-fonts ( =  20240401-5.el10) google-noto-sans-meetei-mayek-fonts ( =  20240401-5.el10) google-noto-sans-meetei-mayek-vf-fonts ( =  20240401-5.el10) google-noto-sans-mende-kikakui-fonts ( =  20240401-5.el10) google-noto-sans-meroitic-fonts ( =  20240401-5.el10) google-noto-sans-miao-fonts ( =  20240401-5.el10) google-noto-sans-modi-fonts ( =  20240401-5.el10) google-noto-sans-mongolian-fonts ( =  20240401-5.el10) google-noto-sans-mono-fonts ( =  20240401-5.el10) google-noto-sans-mro-fonts ( =  20240401-5.el10) google-noto-sans-multani-fonts ( =  20240401-5.el10) google-noto-sans-myanmar-fonts ( =  20240401-5.el10) google-noto-sans-myanmar-vf-fonts ( =  20240401-5.el10) google-noto-sans-nabataean-fonts ( =  20240401-5.el10) google-noto-sans-nag-mundari-fonts ( =  20240401-5.el10) google-noto-sans-nag-mundari-vf-fonts ( =  20240401-5.el10) google-noto-sans-nandinagari-fonts ( =  20240401-5.el10) google-noto-sans-new-tai-lue-fonts ( =  20240401-5.el10) google-noto-sans-new-tai-lue-vf-fonts ( =  20240401-5.el10) google-noto-sans-newa-fonts ( =  20240401-5.el10) google-noto-sans-nko-fonts ( =  20240401-5.el10) google-noto-sans-nko-unjoined-fonts ( =  20240401-5.el10) google-noto-sans-nko-unjoined-vf-fonts ( =  20240401-5.el10) google-noto-sans-nushu-fonts ( =  20240401-5.el10) google-noto-sans-ogham-fonts ( =  20240401-5.el10) google-noto-sans-ol-chiki-fonts ( =  20240401-5.el10) google-noto-sans-ol-chiki-vf-fonts ( =  20240401-5.el10) google-noto-sans-old-hungarian-fonts ( =  20240401-5.el10) google-noto-sans-old-italic-fonts ( =  20240401-5.el10) google-noto-sans-old-north-arabian-fonts ( =  20240401-5.el10) google-noto-sans-old-permic-fonts ( =  20240401-5.el10) google-noto-sans-old-persian-fonts ( =  20240401-5.el10) google-noto-sans-old-sogdian-fonts ( =  20240401-5.el10) google-noto-sans-old-south-arabian-fonts ( =  20240401-5.el10) google-noto-sans-old-turkic-fonts ( =  20240401-5.el10) google-noto-sans-oriya-fonts ( =  20240401-5.el10) google-noto-sans-oriya-vf-fonts ( =  20240401-5.el10) google-noto-sans-osage-fonts ( =  20240401-5.el10) google-noto-sans-osmanya-fonts ( =  20240401-5.el10) google-noto-sans-pahawh-hmong-fonts ( =  20240401-5.el10) google-noto-sans-palmyrene-fonts ( =  20240401-5.el10) google-noto-sans-pau-cin-hau-fonts ( =  20240401-5.el10) google-noto-sans-phagspa-fonts ( =  20240401-5.el10) google-noto-sans-phoenician-fonts ( =  20240401-5.el10) google-noto-sans-psalter-pahlavi-fonts ( =  20240401-5.el10) google-noto-sans-rejang-fonts ( =  20240401-5.el10) google-noto-sans-runic-fonts ( =  20240401-5.el10) google-noto-sans-samaritan-fonts ( =  20240401-5.el10) google-noto-sans-saurashtra-fonts ( =  20240401-5.el10) google-noto-sans-sharada-fonts ( =  20240401-5.el10) google-noto-sans-shavian-fonts ( =  20240401-5.el10) google-noto-sans-siddham-fonts ( =  20240401-5.el10) google-noto-sans-signwriting-fonts ( =  20240401-5.el10) google-noto-sans-sinhala-fonts ( =  20240401-5.el10) google-noto-sans-sinhala-ui-fonts ( =  20240401-5.el10) google-noto-sans-sinhala-vf-fonts ( =  20240401-5.el10) google-noto-sans-sogdian-fonts ( =  20240401-5.el10) google-noto-sans-sora-sompeng-fonts ( =  20240401-5.el10) google-noto-sans-sora-sompeng-vf-fonts ( =  20240401-5.el10) google-noto-sans-soyombo-fonts ( =  20240401-5.el10) google-noto-sans-sundanese-fonts ( =  20240401-5.el10) google-noto-sans-sundanese-vf-fonts ( =  20240401-5.el10) google-noto-sans-syloti-nagri-fonts ( =  20240401-5.el10) google-noto-sans-symbols-2-fonts ( =  20240401-5.el10) google-noto-sans-symbols-fonts ( =  20240401-5.el10) google-noto-sans-symbols-vf-fonts ( =  20240401-5.el10) google-noto-sans-syriac-eastern-fonts ( =  20240401-5.el10) google-noto-sans-syriac-eastern-vf-fonts ( =  20240401-5.el10) google-noto-sans-syriac-fonts ( =  20240401-5.el10) google-noto-sans-syriac-vf-fonts ( =  20240401-5.el10) google-noto-sans-syriac-western-fonts ( =  20240401-5.el10) google-noto-sans-syriac-western-vf-fonts ( =  20240401-5.el10) google-noto-sans-tagalog-fonts ( =  20240401-5.el10) google-noto-sans-tagbanwa-fonts ( =  20240401-5.el10) google-noto-sans-tai-le-fonts ( =  20240401-5.el10) google-noto-sans-tai-tham-fonts ( =  20240401-5.el10) google-noto-sans-tai-tham-vf-fonts ( =  20240401-5.el10) google-noto-sans-tai-viet-fonts ( =  20240401-5.el10) google-noto-sans-takri-fonts ( =  20240401-5.el10) google-noto-sans-tamil-fonts ( =  20240401-5.el10) google-noto-sans-tamil-supplement-fonts ( =  20240401-5.el10) google-noto-sans-tamil-ui-fonts ( =  20240401-5.el10) google-noto-sans-tamil-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-tamil-vf-fonts ( =  20240401-5.el10) google-noto-sans-tangsa-fonts ( =  20240401-5.el10) google-noto-sans-tangsa-vf-fonts ( =  20240401-5.el10) google-noto-sans-telugu-fonts ( =  20240401-5.el10) google-noto-sans-telugu-ui-fonts ( =  20240401-5.el10) google-noto-sans-telugu-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-telugu-vf-fonts ( =  20240401-5.el10) google-noto-sans-thaana-fonts ( =  20240401-5.el10) google-noto-sans-thaana-vf-fonts ( =  20240401-5.el10) google-noto-sans-thai-fonts ( =  20240401-5.el10) google-noto-sans-thai-looped-fonts ( =  20240401-5.el10) google-noto-sans-thai-vf-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-adrar-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-agraw-imazighen-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-ahaggar-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-air-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-apt-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-azawagh-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-ghat-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-hawad-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-rhissa-ixa-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-sil-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-tawellemmet-fonts ( =  20240401-5.el10) google-noto-sans-tirhuta-fonts ( =  20240401-5.el10) google-noto-sans-ugaritic-fonts ( =  20240401-5.el10) google-noto-sans-vai-fonts ( =  20240401-5.el10) google-noto-sans-vithkuqi-fonts ( =  20240401-5.el10) google-noto-sans-vithkuqi-vf-fonts ( =  20240401-5.el10) google-noto-sans-wancho-fonts ( =  20240401-5.el10) google-noto-sans-warang-citi-fonts ( =  20240401-5.el10) google-noto-sans-yi-fonts ( =  20240401-5.el10) google-noto-sans-zanabazar-square-fonts ( =  20240401-5.el10) google-noto-serif-ahom-fonts ( =  20240401-5.el10) google-noto-serif-armenian-fonts ( =  20240401-5.el10) google-noto-serif-armenian-vf-fonts ( =  20240401-5.el10) google-noto-serif-balinese-fonts ( =  20240401-5.el10) google-noto-serif-bengali-fonts ( =  20240401-5.el10) google-noto-serif-bengali-vf-fonts ( =  20240401-5.el10) google-noto-serif-devanagari-fonts ( =  20240401-5.el10) google-noto-serif-devanagari-vf-fonts ( =  20240401-5.el10) google-noto-serif-dives-akuru-fonts ( =  20240401-5.el10) google-noto-serif-dogra-fonts ( =  20240401-5.el10) google-noto-serif-ethiopic-fonts ( =  20240401-5.el10) google-noto-serif-ethiopic-vf-fonts ( =  20240401-5.el10) google-noto-serif-fonts ( =  20240401-5.el10) google-noto-serif-georgian-fonts ( =  20240401-5.el10) google-noto-serif-georgian-vf-fonts ( =  20240401-5.el10) google-noto-serif-grantha-fonts ( =  20240401-5.el10) google-noto-serif-gujarati-fonts ( =  20240401-5.el10) google-noto-serif-gujarati-vf-fonts ( =  20240401-5.el10) google-noto-serif-gurmukhi-fonts ( =  20240401-5.el10) google-noto-serif-gurmukhi-vf-fonts ( =  20240401-5.el10) google-noto-serif-hebrew-fonts ( =  20240401-5.el10) google-noto-serif-hebrew-vf-fonts ( =  20240401-5.el10) google-noto-serif-kannada-fonts ( =  20240401-5.el10) google-noto-serif-kannada-vf-fonts ( =  20240401-5.el10) google-noto-serif-khitan-small-script-fonts ( =  20240401-5.el10) google-noto-serif-khmer-fonts ( =  20240401-5.el10) google-noto-serif-khmer-vf-fonts ( =  20240401-5.el10) google-noto-serif-khojki-fonts ( =  20240401-5.el10) google-noto-serif-khojki-vf-fonts ( =  20240401-5.el10) google-noto-serif-lao-fonts ( =  20240401-5.el10) google-noto-serif-lao-vf-fonts ( =  20240401-5.el10) google-noto-serif-makasar-fonts ( =  20240401-5.el10) google-noto-serif-malayalam-fonts ( =  20240401-5.el10) google-noto-serif-malayalam-vf-fonts ( =  20240401-5.el10) google-noto-serif-myanmar-fonts ( =  20240401-5.el10) google-noto-serif-myanmar-vf-fonts ( =  20240401-5.el10) google-noto-serif-np-hmong-fonts ( =  20240401-5.el10) google-noto-serif-np-hmong-vf-fonts ( =  20240401-5.el10) google-noto-serif-old-uyghur-fonts ( =  20240401-5.el10) google-noto-serif-oriya-fonts ( =  20240401-5.el10) google-noto-serif-oriya-vf-fonts ( =  20240401-5.el10) google-noto-serif-ottoman-siyaq-fonts ( =  20240401-5.el10) google-noto-serif-sinhala-fonts ( =  20240401-5.el10) google-noto-serif-sinhala-vf-fonts ( =  20240401-5.el10) google-noto-serif-tamil-fonts ( =  20240401-5.el10) google-noto-serif-tamil-vf-fonts ( =  20240401-5.el10) google-noto-serif-tangut-fonts ( =  20240401-5.el10) google-noto-serif-telugu-fonts ( =  20240401-5.el10) google-noto-serif-telugu-vf-fonts ( =  20240401-5.el10) google-noto-serif-thai-fonts ( =  20240401-5.el10) google-noto-serif-thai-vf-fonts ( =  20240401-5.el10) google-noto-serif-tibetan-fonts ( =  20240401-5.el10) google-noto-serif-tibetan-vf-fonts ( =  20240401-5.el10) google-noto-serif-toto-fonts ( =  20240401-5.el10) google-noto-serif-toto-vf-fonts ( =  20240401-5.el10) google-noto-serif-vithkuqi-fonts ( =  20240401-5.el10) google-noto-serif-vithkuqi-vf-fonts ( =  20240401-5.el10) google-noto-serif-yezidi-fonts ( =  20240401-5.el10) google-noto-serif-yezidi-vf-fonts ( =  20240401-5.el10) google-noto-traditional-nushu-fonts ( =  20240401-5.el10) google-noto-traditional-nushu-vf-fonts ( =  20240401-5.el10) google-noto-sans-mono-vf-fonts ( =  20240401-5.el10) google-noto-sans-vf-fonts ( =  20240401-5.el10) google-noto-serif-vf-fonts ( =  20240401-5.el10)"
-RPROVIDES:google-noto-fonts-all = "google-noto-fonts-all ( =  20240401-5.el10)"
+RDEPENDS:google-noto-fonts-all = "
+ google-noto-sans-khudawadi-fonts
+ google-noto-sans-lao-fonts
+ google-noto-sans-lao-looped-fonts
+ google-noto-sans-lao-looped-vf-fonts
+ google-noto-sans-lao-vf-fonts
+ google-noto-sans-lepcha-fonts
+ google-noto-sans-limbu-fonts
+ google-noto-sans-linear-a-fonts
+ google-noto-sans-linear-b-fonts
+ google-noto-sans-lisu-fonts
+ google-noto-sans-lisu-vf-fonts
+ google-noto-sans-lycian-fonts
+ google-noto-sans-lydian-fonts
+ google-noto-sans-mahajani-fonts
+ google-noto-sans-malayalam-fonts
+ google-noto-sans-malayalam-ui-fonts
+ google-noto-sans-malayalam-ui-vf-fonts
+ google-noto-sans-malayalam-vf-fonts
+ google-noto-sans-mandaic-fonts
+ google-noto-sans-manichaean-fonts
+ google-noto-sans-marchen-fonts
+ google-noto-sans-masaram-gondi-fonts
+ google-noto-sans-math-fonts
+ google-noto-sans-mayan-numerals-fonts
+ google-noto-sans-medefaidrin-fonts
+ google-noto-sans-medefaidrin-vf-fonts
+ google-noto-sans-meetei-mayek-fonts
+ google-noto-sans-meetei-mayek-vf-fonts
+ google-noto-sans-mende-kikakui-fonts
+ google-noto-sans-meroitic-fonts
+ google-noto-sans-miao-fonts
+ google-noto-sans-modi-fonts
+ google-noto-sans-mongolian-fonts
+ google-noto-sans-mono-fonts
+ google-noto-sans-mro-fonts
+ google-noto-sans-multani-fonts
+ google-noto-sans-myanmar-fonts
+ google-noto-sans-myanmar-vf-fonts
+ google-noto-sans-nabataean-fonts
+ google-noto-sans-nag-mundari-fonts
+ google-noto-sans-nag-mundari-vf-fonts
+ google-noto-sans-nandinagari-fonts
+ google-noto-sans-new-tai-lue-fonts
+ google-noto-sans-new-tai-lue-vf-fonts
+ google-noto-sans-newa-fonts
+ google-noto-sans-nko-fonts
+ google-noto-sans-nko-unjoined-fonts
+ google-noto-sans-nko-unjoined-vf-fonts
+ google-noto-sans-nushu-fonts
+ google-noto-sans-ogham-fonts
+ google-noto-sans-ol-chiki-fonts
+ google-noto-sans-ol-chiki-vf-fonts
+ google-noto-sans-old-hungarian-fonts
+ google-noto-sans-old-italic-fonts
+ google-noto-sans-old-north-arabian-fonts
+ google-noto-sans-old-permic-fonts
+ google-noto-sans-old-persian-fonts
+ google-noto-sans-old-sogdian-fonts
+ google-noto-sans-old-south-arabian-fonts
+ google-noto-sans-old-turkic-fonts
+ google-noto-sans-oriya-fonts
+ google-noto-sans-oriya-vf-fonts
+ google-noto-sans-osage-fonts
+ google-noto-sans-osmanya-fonts
+ google-noto-sans-pahawh-hmong-fonts
+ google-noto-sans-palmyrene-fonts
+ google-noto-sans-pau-cin-hau-fonts
+ google-noto-sans-phagspa-fonts
+ google-noto-sans-phoenician-fonts
+ google-noto-sans-psalter-pahlavi-fonts
+ google-noto-sans-rejang-fonts
+ google-noto-sans-runic-fonts
+ google-noto-sans-samaritan-fonts
+ google-noto-sans-saurashtra-fonts
+ google-noto-sans-sharada-fonts
+ google-noto-sans-shavian-fonts
+ google-noto-sans-siddham-fonts
+ google-noto-sans-signwriting-fonts
+ google-noto-sans-sinhala-fonts
+ google-noto-sans-sinhala-ui-fonts
+ google-noto-sans-sinhala-vf-fonts
+ google-noto-sans-sogdian-fonts
+ google-noto-sans-sora-sompeng-fonts
+ google-noto-sans-sora-sompeng-vf-fonts
+ google-noto-sans-soyombo-fonts
+ google-noto-sans-sundanese-fonts
+ google-noto-sans-sundanese-vf-fonts
+ google-noto-sans-syloti-nagri-fonts
+ google-noto-sans-symbols-2-fonts
+ google-noto-sans-symbols-fonts
+ google-noto-sans-symbols-vf-fonts
+ google-noto-sans-syriac-eastern-fonts
+ google-noto-sans-syriac-eastern-vf-fonts
+ google-noto-sans-syriac-fonts
+ google-noto-sans-syriac-vf-fonts
+ google-noto-sans-syriac-western-fonts
+ google-noto-sans-syriac-western-vf-fonts
+ google-noto-sans-tagalog-fonts
+ google-noto-sans-tagbanwa-fonts
+ google-noto-sans-tai-le-fonts
+ google-noto-sans-tai-tham-fonts
+ google-noto-sans-tai-tham-vf-fonts
+ google-noto-sans-tai-viet-fonts
+ google-noto-sans-takri-fonts
+ google-noto-sans-tamil-fonts
+ google-noto-sans-tamil-supplement-fonts
+ google-noto-sans-tamil-ui-fonts
+ google-noto-sans-tamil-ui-vf-fonts
+ google-noto-sans-tamil-vf-fonts
+ google-noto-sans-tangsa-fonts
+ google-noto-sans-tangsa-vf-fonts
+ google-noto-sans-telugu-fonts
+ google-noto-sans-telugu-ui-fonts
+ google-noto-sans-telugu-ui-vf-fonts
+ google-noto-sans-telugu-vf-fonts
+ google-noto-sans-thaana-fonts
+ google-noto-sans-thaana-vf-fonts
+ google-noto-sans-thai-fonts
+ google-noto-sans-thai-looped-fonts
+ google-noto-sans-thai-vf-fonts
+ google-noto-sans-tifinagh-adrar-fonts
+ google-noto-sans-tifinagh-agraw-imazighen-fonts
+ google-noto-sans-tifinagh-ahaggar-fonts
+ google-noto-sans-tifinagh-air-fonts
+ google-noto-sans-tifinagh-apt-fonts
+ google-noto-sans-tifinagh-azawagh-fonts
+ google-noto-sans-tifinagh-fonts
+ google-noto-sans-tifinagh-ghat-fonts
+ google-noto-sans-tifinagh-hawad-fonts
+ google-noto-sans-tifinagh-rhissa-ixa-fonts
+ google-noto-sans-tifinagh-sil-fonts
+ google-noto-sans-tifinagh-tawellemmet-fonts
+ google-noto-sans-tirhuta-fonts
+ google-noto-sans-ugaritic-fonts
+ google-noto-sans-vai-fonts
+ google-noto-sans-vithkuqi-fonts
+ google-noto-sans-vithkuqi-vf-fonts
+ google-noto-sans-wancho-fonts
+ google-noto-sans-warang-citi-fonts
+ google-noto-sans-yi-fonts
+ google-noto-sans-zanabazar-square-fonts
+ google-noto-serif-ahom-fonts
+ google-noto-serif-armenian-fonts
+ google-noto-serif-armenian-vf-fonts
+ google-noto-serif-balinese-fonts
+ google-noto-serif-bengali-fonts
+ google-noto-serif-bengali-vf-fonts
+ google-noto-serif-devanagari-fonts
+ google-noto-serif-devanagari-vf-fonts
+ google-noto-serif-dives-akuru-fonts
+ google-noto-serif-dogra-fonts
+ google-noto-serif-ethiopic-fonts
+ google-noto-serif-ethiopic-vf-fonts
+ google-noto-serif-fonts
+ google-noto-serif-georgian-fonts
+ google-noto-serif-georgian-vf-fonts
+ google-noto-serif-grantha-fonts
+ google-noto-serif-gujarati-fonts
+ google-noto-serif-gujarati-vf-fonts
+ google-noto-serif-gurmukhi-fonts
+ google-noto-serif-gurmukhi-vf-fonts
+ google-noto-serif-hebrew-fonts
+ google-noto-serif-hebrew-vf-fonts
+ google-noto-serif-kannada-fonts
+ google-noto-serif-kannada-vf-fonts
+ google-noto-serif-khitan-small-script-fonts
+ google-noto-serif-khmer-fonts
+ google-noto-serif-khmer-vf-fonts
+ google-noto-serif-khojki-fonts
+ google-noto-serif-khojki-vf-fonts
+ google-noto-serif-lao-fonts
+ google-noto-serif-lao-vf-fonts
+ google-noto-serif-makasar-fonts
+ google-noto-serif-malayalam-fonts
+ google-noto-serif-malayalam-vf-fonts
+ google-noto-serif-myanmar-fonts
+ google-noto-serif-np-hmong-fonts
+ google-noto-serif-np-hmong-vf-fonts
+ google-noto-serif-old-uyghur-fonts
+ google-noto-serif-oriya-fonts
+ google-noto-serif-oriya-vf-fonts
+ google-noto-serif-ottoman-siyaq-fonts
+ google-noto-serif-sinhala-fonts
+ google-noto-serif-sinhala-vf-fonts
+ google-noto-serif-tamil-fonts
+ google-noto-serif-tamil-vf-fonts
+ google-noto-serif-tangut-fonts
+ google-noto-serif-telugu-fonts
+ google-noto-serif-telugu-vf-fonts
+ google-noto-serif-thai-fonts
+ google-noto-serif-thai-vf-fonts
+ google-noto-serif-tibetan-fonts
+ google-noto-serif-tibetan-vf-fonts
+ google-noto-serif-toto-fonts
+ google-noto-serif-toto-vf-fonts
+ google-noto-serif-vithkuqi-fonts
+ google-noto-serif-vithkuqi-vf-fonts
+ google-noto-serif-yezidi-fonts
+ google-noto-serif-yezidi-vf-fonts
+ google-noto-traditional-nushu-fonts
+ google-noto-traditional-nushu-vf-fonts
+ google-noto-sans-mono-vf-fonts
+ google-noto-sans-vf-fonts
+ google-noto-serif-vf-fonts
+ google-noto-fangsong-kss-rotated-fonts
+ google-noto-fangsong-kss-vertical-fonts
+ google-noto-kufi-arabic-fonts
+ google-noto-kufi-arabic-vf-fonts
+ google-noto-music-fonts
+ google-noto-naskh-arabic-fonts
+ google-noto-naskh-arabic-ui-fonts
+ google-noto-naskh-arabic-ui-vf-fonts
+ google-noto-naskh-arabic-vf-fonts
+ google-noto-nastaliq-urdu-fonts
+ google-noto-nastaliq-urdu-vf-fonts
+ google-noto-rashi-hebrew-fonts
+ google-noto-rashi-hebrew-vf-fonts
+ google-noto-sans-adlam-fonts
+ google-noto-sans-adlam-unjoined-fonts
+ google-noto-sans-adlam-unjoined-vf-fonts
+ google-noto-sans-adlam-vf-fonts
+ google-noto-sans-anatolian-hieroglyphs-fonts
+ google-noto-sans-arabic-fonts
+ google-noto-sans-arabic-vf-fonts
+ google-noto-sans-armenian-fonts
+ google-noto-sans-armenian-vf-fonts
+ google-noto-sans-avestan-fonts
+ google-noto-sans-balinese-fonts
+ google-noto-sans-balinese-vf-fonts
+ google-noto-sans-bamum-fonts
+ google-noto-sans-bamum-vf-fonts
+ google-noto-sans-bassa-vah-fonts
+ google-noto-sans-bassa-vah-vf-fonts
+ google-noto-sans-batak-fonts
+ google-noto-sans-bengali-fonts
+ google-noto-sans-bengali-ui-fonts
+ google-noto-sans-bengali-vf-fonts
+ google-noto-sans-bhaiksuki-fonts
+ google-noto-sans-brahmi-fonts
+ google-noto-sans-buginese-fonts
+ google-noto-sans-buhid-fonts
+ google-noto-sans-canadian-aboriginal-fonts
+ google-noto-sans-canadian-aboriginal-vf-fonts
+ google-noto-sans-carian-fonts
+ google-noto-sans-caucasian-albanian-fonts
+ google-noto-sans-chakma-fonts
+ google-noto-sans-cham-fonts
+ google-noto-sans-cham-vf-fonts
+ google-noto-sans-cherokee-fonts
+ google-noto-sans-cherokee-vf-fonts
+ google-noto-sans-chorasmian-fonts
+ google-noto-sans-coptic-fonts
+ google-noto-sans-cuneiform-fonts
+ google-noto-sans-cypriot-fonts
+ google-noto-sans-cypro-minoan-fonts
+ google-noto-sans-deseret-fonts
+ google-noto-sans-devanagari-fonts
+ google-noto-sans-devanagari-ui-fonts
+ google-noto-sans-devanagari-vf-fonts
+ google-noto-sans-duployan-fonts
+ google-noto-sans-egyptian-hieroglyphs-fonts
+ google-noto-sans-elbasan-fonts
+ google-noto-sans-elymaic-fonts
+ google-noto-sans-ethiopic-fonts
+ google-noto-sans-ethiopic-vf-fonts
+ google-noto-sans-fonts
+ google-noto-sans-georgian-fonts
+ google-noto-sans-georgian-vf-fonts
+ google-noto-sans-glagolitic-fonts
+ google-noto-sans-gothic-fonts
+ google-noto-sans-grantha-fonts
+ google-noto-sans-gujarati-fonts
+ google-noto-sans-gujarati-ui-fonts
+ google-noto-sans-gujarati-vf-fonts
+ google-noto-sans-gunjala-gondi-fonts
+ google-noto-sans-gunjala-gondi-vf-fonts
+ google-noto-sans-gurmukhi-fonts
+ google-noto-sans-gurmukhi-ui-fonts
+ google-noto-sans-gurmukhi-vf-fonts
+ google-noto-sans-hanifi-rohingya-fonts
+ google-noto-sans-hanifi-rohingya-vf-fonts
+ google-noto-sans-hanunoo-fonts
+ google-noto-sans-hatran-fonts
+ google-noto-sans-hebrew-fonts
+ google-noto-sans-hebrew-vf-fonts
+ google-noto-sans-imperial-aramaic-fonts
+ google-noto-sans-indic-siyaq-numbers-fonts
+ google-noto-sans-inscriptional-pahlavi-fonts
+ google-noto-sans-inscriptional-parthian-fonts
+ google-noto-sans-javanese-fonts
+ google-noto-sans-javanese-vf-fonts
+ google-noto-sans-kaithi-fonts
+ google-noto-sans-kannada-fonts
+ google-noto-sans-kannada-ui-fonts
+ google-noto-sans-kannada-ui-vf-fonts
+ google-noto-sans-kannada-vf-fonts
+ google-noto-sans-kawi-fonts
+ google-noto-sans-kawi-vf-fonts
+ google-noto-sans-kayah-li-fonts
+ google-noto-sans-kayah-li-vf-fonts
+ google-noto-sans-kharoshthi-fonts
+ google-noto-sans-khmer-fonts
+ google-noto-sans-khmer-vf-fonts
+ google-noto-sans-khojki-fonts
+"
 
 URI_google-noto-kufi-arabic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-kufi-arabic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-kufi-arabic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-kufi-arabic-fonts = "metainfo() ( ) font(notokufiarabic) ( ) font(notokufiarabicblack) ( ) font(notokufiarabicextrabold) ( ) font(notokufiarabicextralight) ( ) font(notokufiarabiclight) ( ) font(notokufiarabicmedium) ( ) font(notokufiarabicsemibold) ( ) font(notokufiarabicthin) ( ) metainfo(org.fedoraproject.google-noto-kufi-arabic-fonts.metainfo.xml) ( ) google-noto-kufi-arabic-fonts ( =  20240401-5.el10) config(google-noto-kufi-arabic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-kufi-arabic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-kufi-arabic-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-kufi-arabic-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-kufi-arabic-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-kufi-arabic-vf-fonts = "metainfo() ( ) font(notokufiarabic) ( ) metainfo(org.fedoraproject.google-noto-kufi-arabic-vf-fonts.metainfo.xml) ( ) google-noto-kufi-arabic-vf-fonts ( =  20240401-5.el10) config(google-noto-kufi-arabic-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-kufi-arabic-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-music-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-music-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-music-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-music-fonts = "metainfo() ( ) font(notomusic) ( ) metainfo(org.fedoraproject.google-noto-music-fonts.metainfo.xml) ( ) google-noto-music-fonts ( =  20240401-5.el10) config(google-noto-music-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-music-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-naskh-arabic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-naskh-arabic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-naskh-arabic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-naskh-arabic-fonts = "metainfo() ( ) font(notonaskharabic) ( ) font(notonaskharabicmedium) ( ) font(notonaskharabicsemibold) ( ) metainfo(org.fedoraproject.google-noto-naskh-arabic-fonts.metainfo.xml) ( ) google-noto-naskh-arabic-fonts ( =  20240401-5.el10) config(google-noto-naskh-arabic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-naskh-arabic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-naskh-arabic-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-naskh-arabic-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-naskh-arabic-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-naskh-arabic-ui-fonts = "metainfo() ( ) font(notonaskharabicui) ( ) font(notonaskharabicuimedium) ( ) font(notonaskharabicuisemi) ( ) metainfo(org.fedoraproject.google-noto-naskh-arabic-ui-fonts.metainfo.xml) ( ) google-noto-naskh-arabic-ui-fonts ( =  20240401-5.el10) config(google-noto-naskh-arabic-ui-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-naskh-arabic-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-naskh-arabic-ui-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-naskh-arabic-ui-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-naskh-arabic-ui-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-naskh-arabic-ui-vf-fonts = "metainfo() ( ) font(notonaskharabicui) ( ) metainfo(org.fedoraproject.google-noto-naskh-arabic-ui-vf-fonts.metainfo.xml) ( ) google-noto-naskh-arabic-ui-vf-fonts ( =  20240401-5.el10) config(google-noto-naskh-arabic-ui-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-naskh-arabic-ui-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-naskh-arabic-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-naskh-arabic-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-naskh-arabic-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-naskh-arabic-vf-fonts = "metainfo() ( ) font(notonaskharabic) ( ) metainfo(org.fedoraproject.google-noto-naskh-arabic-vf-fonts.metainfo.xml) ( ) google-noto-naskh-arabic-vf-fonts ( =  20240401-5.el10) config(google-noto-naskh-arabic-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-naskh-arabic-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-nastaliq-urdu-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-nastaliq-urdu-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-nastaliq-urdu-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-nastaliq-urdu-fonts = "metainfo() ( ) font(notonastaliqurdu) ( ) metainfo(org.fedoraproject.google-noto-nastaliq-urdu-fonts.metainfo.xml) ( ) google-noto-nastaliq-urdu-fonts ( =  20240401-5.el10) config(google-noto-nastaliq-urdu-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-nastaliq-urdu-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-nastaliq-urdu-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-nastaliq-urdu-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-nastaliq-urdu-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-nastaliq-urdu-vf-fonts = "metainfo() ( ) font(notonastaliqurdu) ( ) metainfo(org.fedoraproject.google-noto-nastaliq-urdu-vf-fonts.metainfo.xml) ( ) google-noto-nastaliq-urdu-vf-fonts ( =  20240401-5.el10) config(google-noto-nastaliq-urdu-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-nastaliq-urdu-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-rashi-hebrew-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-rashi-hebrew-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-rashi-hebrew-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-rashi-hebrew-fonts = "metainfo() ( ) font(notorashihebrew) ( ) font(notorashihebrewblack) ( ) font(notorashihebrewextrabold) ( ) font(notorashihebrewextralight) ( ) font(notorashihebrewlight) ( ) font(notorashihebrewmedium) ( ) font(notorashihebrewsemibold) ( ) font(notorashihebrewthin) ( ) metainfo(org.fedoraproject.google-noto-rashi-hebrew-fonts.metainfo.xml) ( ) google-noto-rashi-hebrew-fonts ( =  20240401-5.el10) config(google-noto-rashi-hebrew-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-rashi-hebrew-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-rashi-hebrew-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-rashi-hebrew-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-rashi-hebrew-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-rashi-hebrew-vf-fonts = "metainfo() ( ) font(notorashihebrew) ( ) metainfo(org.fedoraproject.google-noto-rashi-hebrew-vf-fonts.metainfo.xml) ( ) google-noto-rashi-hebrew-vf-fonts ( =  20240401-5.el10) config(google-noto-rashi-hebrew-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-rashi-hebrew-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-adlam-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-adlam-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-adlam-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-adlam-fonts = "metainfo() ( ) font(notosansadlam) ( ) metainfo(org.fedoraproject.google-noto-sans-adlam-fonts.metainfo.xml) ( ) google-noto-sans-adlam-fonts ( =  20240401-5.el10) config(google-noto-sans-adlam-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-adlam-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-adlam-unjoined-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-adlam-unjoined-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-adlam-unjoined-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-adlam-unjoined-fonts = "metainfo() ( ) font(notosansadlamunjoined) ( ) metainfo(org.fedoraproject.google-noto-sans-adlam-unjoined-fonts.metainfo.xml) ( ) google-noto-sans-adlam-unjoined-fonts ( =  20240401-5.el10) config(google-noto-sans-adlam-unjoined-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-adlam-unjoined-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-adlam-unjoined-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-adlam-unjoined-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-adlam-unjoined-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-adlam-unjoined-vf-fonts = "metainfo() ( ) font(notosansadlamunjoined) ( ) metainfo(org.fedoraproject.google-noto-sans-adlam-unjoined-vf-fonts.metainfo.xml) ( ) google-noto-sans-adlam-unjoined-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-adlam-unjoined-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-adlam-unjoined-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-adlam-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-adlam-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-adlam-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-adlam-vf-fonts = "metainfo() ( ) font(notosansadlam) ( ) metainfo(org.fedoraproject.google-noto-sans-adlam-vf-fonts.metainfo.xml) ( ) google-noto-sans-adlam-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-adlam-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-adlam-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-anatolian-hieroglyphs-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-anatolian-hieroglyphs-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-anatolian-hieroglyphs-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-anatolian-hieroglyphs-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-anatolian-hieroglyphs-fonts.metainfo.xml) ( ) google-noto-sans-anatolian-hieroglyphs-fonts ( =  20240401-5.el10) config(google-noto-sans-anatolian-hieroglyphs-fonts) ( =  20240401-5.el10) google-noto-sans-anatolian-hieroglyphs-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-anatolian-hieroglyphs-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-arabic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-arabic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-arabic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-arabic-fonts = "metainfo() ( ) font(notosansarabic) ( ) font(notosansarabicblk) ( ) font(notosansarabiccond) ( ) font(notosansarabiccondblk) ( ) font(notosansarabiccondextbd) ( ) font(notosansarabiccondextlt) ( ) font(notosansarabiccondlight) ( ) font(notosansarabiccondmed) ( ) font(notosansarabiccondsembd) ( ) font(notosansarabiccondthin) ( ) font(notosansarabicextbd) ( ) font(notosansarabicextcond) ( ) font(notosansarabicextcondblk) ( ) font(notosansarabicextcondextbd) ( ) font(notosansarabicextcondextlt) ( ) font(notosansarabicextcondlight) ( ) font(notosansarabicextcondmed) ( ) font(notosansarabicextcondsembd) ( ) font(notosansarabicextcondthin) ( ) font(notosansarabicextlt) ( ) font(notosansarabiclight) ( ) font(notosansarabicmed) ( ) font(notosansarabicsembd) ( ) font(notosansarabicsemcond) ( ) font(notosansarabicsemcondblk) ( ) font(notosansarabicsemcondextbd) ( ) font(notosansarabicsemcondextlt) ( ) font(notosansarabicsemcondlight) ( ) font(notosansarabicsemcondmed) ( ) font(notosansarabicsemcondsembd) ( ) font(notosansarabicsemcondthin) ( ) font(notosansarabicthin) ( ) metainfo(org.fedoraproject.google-noto-sans-arabic-fonts.metainfo.xml) ( ) google-noto-sans-arabic-fonts ( =  20240401-5.el10) config(google-noto-sans-arabic-fonts) ( =  20240401-5.el10) google-noto-sans-arabic-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-arabic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-arabic-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-arabic-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-arabic-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-arabic-vf-fonts = "metainfo() ( ) font(notosansarabic) ( ) metainfo(org.fedoraproject.google-noto-sans-arabic-vf-fonts.metainfo.xml) ( ) google-noto-sans-arabic-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-arabic-vf-fonts) ( =  20240401-5.el10) google-noto-sans-arabic-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-arabic-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-armenian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-armenian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-armenian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-armenian-fonts = "metainfo() ( ) font(notosansarmenian) ( ) font(notosansarmenianblack) ( ) font(notosansarmeniancondensed) ( ) font(notosansarmeniancondensedblack) ( ) font(notosansarmeniancondensedextrabold) ( ) font(notosansarmeniancondensedextralight) ( ) font(notosansarmeniancondensedlight) ( ) font(notosansarmeniancondensedmedium) ( ) font(notosansarmeniancondensedsemibold) ( ) font(notosansarmeniancondensedthin) ( ) font(notosansarmenianextrabold) ( ) font(notosansarmenianextracondensed) ( ) font(notosansarmenianextracondensedblack) ( ) font(notosansarmenianextracondensedextrabold) ( ) font(notosansarmenianextracondensedextralight) ( ) font(notosansarmenianextracondensedlight) ( ) font(notosansarmenianextracondensedmedium) ( ) font(notosansarmenianextracondensedsemibold) ( ) font(notosansarmenianextracondensedthin) ( ) font(notosansarmenianextralight) ( ) font(notosansarmenianlight) ( ) font(notosansarmenianmedium) ( ) font(notosansarmeniansemibold) ( ) font(notosansarmeniansemicondensed) ( ) font(notosansarmeniansemicondensedblack) ( ) font(notosansarmeniansemicondensedextrabold) ( ) font(notosansarmeniansemicondensedextralight) ( ) font(notosansarmeniansemicondensedlight) ( ) font(notosansarmeniansemicondensedmedium) ( ) font(notosansarmeniansemicondensedsemibold) ( ) font(notosansarmeniansemicondensedthin) ( ) font(notosansarmenianthin) ( ) metainfo(org.fedoraproject.google-noto-sans-armenian-fonts.metainfo.xml) ( ) google-noto-sans-armenian-fonts ( =  20240401-5.el10) config(google-noto-sans-armenian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-armenian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-armenian-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-armenian-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-armenian-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-armenian-vf-fonts = "metainfo() ( ) font(notosansarmenian) ( ) metainfo(org.fedoraproject.google-noto-sans-armenian-vf-fonts.metainfo.xml) ( ) google-noto-sans-armenian-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-armenian-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-armenian-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-avestan-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-avestan-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-avestan-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-avestan-fonts = "metainfo() ( ) font(notosansavestan) ( ) metainfo(org.fedoraproject.google-noto-sans-avestan-fonts.metainfo.xml) ( ) google-noto-sans-avestan-fonts ( =  20240401-5.el10) config(google-noto-sans-avestan-fonts) ( =  20240401-5.el10) google-noto-sans-avestan-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-avestan-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-balinese-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-balinese-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-balinese-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-balinese-fonts = "metainfo() ( ) font(notosansbalinese) ( ) font(notosansbalinesemedium) ( ) font(notosansbalinesesemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-balinese-fonts.metainfo.xml) ( ) google-noto-sans-balinese-fonts ( =  20240401-5.el10) config(google-noto-sans-balinese-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-balinese-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-balinese-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-balinese-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-balinese-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-balinese-vf-fonts = "metainfo() ( ) font(notosansbalinese) ( ) metainfo(org.fedoraproject.google-noto-sans-balinese-vf-fonts.metainfo.xml) ( ) google-noto-sans-balinese-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-balinese-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-balinese-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bamum-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bamum-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bamum-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bamum-fonts = "metainfo() ( ) font(notosansbamum) ( ) font(notosansbamummedium) ( ) font(notosansbamumsemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-bamum-fonts.metainfo.xml) ( ) google-noto-sans-bamum-fonts ( =  20240401-5.el10) config(google-noto-sans-bamum-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bamum-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bamum-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bamum-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bamum-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bamum-vf-fonts = "metainfo() ( ) font(notosansbamum) ( ) metainfo(org.fedoraproject.google-noto-sans-bamum-vf-fonts.metainfo.xml) ( ) google-noto-sans-bamum-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-bamum-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bamum-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bassa-vah-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bassa-vah-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bassa-vah-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bassa-vah-fonts = "metainfo() ( ) font(notosansbassavah) ( ) font(notosansbassavahmedium) ( ) font(notosansbassavahsemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-bassa-vah-fonts.metainfo.xml) ( ) google-noto-sans-bassa-vah-fonts ( =  20240401-5.el10) config(google-noto-sans-bassa-vah-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bassa-vah-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bassa-vah-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bassa-vah-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bassa-vah-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bassa-vah-vf-fonts = "metainfo() ( ) font(notosansbassavah) ( ) metainfo(org.fedoraproject.google-noto-sans-bassa-vah-vf-fonts.metainfo.xml) ( ) google-noto-sans-bassa-vah-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-bassa-vah-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bassa-vah-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-batak-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-batak-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-batak-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-batak-fonts = "metainfo() ( ) font(notosansbatak) ( ) metainfo(org.fedoraproject.google-noto-sans-batak-fonts.metainfo.xml) ( ) google-noto-sans-batak-fonts ( =  20240401-5.el10) config(google-noto-sans-batak-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-batak-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bengali-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bengali-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bengali-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bengali-fonts = "metainfo() ( ) font(notosansbengali) ( ) font(notosansbengaliblack) ( ) font(notosansbengalicondensed) ( ) font(notosansbengaliextrabold) ( ) font(notosansbengaliextracondensed) ( ) font(notosansbengaliextralight) ( ) font(notosansbengalilight) ( ) font(notosansbengalimedium) ( ) font(notosansbengalisemibold) ( ) font(notosansbengalisemicondensed) ( ) font(notosansbengalithin) ( ) metainfo(org.fedoraproject.google-noto-sans-bengali-fonts.metainfo.xml) ( ) google-noto-sans-bengali-fonts ( =  20240401-5.el10) config(google-noto-sans-bengali-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bengali-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bengali-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bengali-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bengali-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bengali-ui-fonts = "metainfo() ( ) font(notosansbengaliui) ( ) font(notosansbengaliuiblack) ( ) font(notosansbengaliuicondensed) ( ) font(notosansbengaliuiextrabold) ( ) font(notosansbengaliuiextracondensed) ( ) font(notosansbengaliuiextralight) ( ) font(notosansbengaliuilight) ( ) font(notosansbengaliuimedium) ( ) font(notosansbengaliuisemibold) ( ) font(notosansbengaliuisemicondensed) ( ) font(notosansbengaliuithin) ( ) metainfo(org.fedoraproject.google-noto-sans-bengali-ui-fonts.metainfo.xml) ( ) google-noto-sans-bengali-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-bengali-ui-fonts) ( =  20240401-5.el10) google-noto-sans-bengali-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bengali-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bengali-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bengali-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bengali-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bengali-vf-fonts = "metainfo() ( ) font(notosansbengali) ( ) metainfo(org.fedoraproject.google-noto-sans-bengali-vf-fonts.metainfo.xml) ( ) google-noto-sans-bengali-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-bengali-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bengali-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-bhaiksuki-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-bhaiksuki-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-bhaiksuki-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-bhaiksuki-fonts = "metainfo() ( ) font(notosansbhaiksuki) ( ) metainfo(org.fedoraproject.google-noto-sans-bhaiksuki-fonts.metainfo.xml) ( ) google-noto-sans-bhaiksuki-fonts ( =  20240401-5.el10) config(google-noto-sans-bhaiksuki-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-bhaiksuki-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-brahmi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-brahmi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-brahmi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-brahmi-fonts = "metainfo() ( ) font(notosansbrahmi) ( ) metainfo(org.fedoraproject.google-noto-sans-brahmi-fonts.metainfo.xml) ( ) google-noto-sans-brahmi-fonts ( =  20240401-5.el10) config(google-noto-sans-brahmi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-brahmi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-buginese-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-buginese-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-buginese-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-buginese-fonts = "metainfo() ( ) font(notosansbuginese) ( ) metainfo(org.fedoraproject.google-noto-sans-buginese-fonts.metainfo.xml) ( ) google-noto-sans-buginese-fonts ( =  20240401-5.el10) config(google-noto-sans-buginese-fonts) ( =  20240401-5.el10) google-noto-sans-buginese-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-buginese-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-buhid-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-buhid-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-buhid-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-buhid-fonts = "metainfo() ( ) font(notosansbuhid) ( ) metainfo(org.fedoraproject.google-noto-sans-buhid-fonts.metainfo.xml) ( ) google-noto-sans-buhid-fonts ( =  20240401-5.el10) config(google-noto-sans-buhid-fonts) ( =  20240401-5.el10) google-noto-sans-buhid-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-buhid-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-canadian-aboriginal-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-canadian-aboriginal-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-canadian-aboriginal-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-canadian-aboriginal-fonts = "metainfo() ( ) font(notosanscanadianaboriginal) ( ) font(notosanscanadianaboriginalblack) ( ) font(notosanscanadianaboriginalextrabold) ( ) font(notosanscanadianaboriginalextralight) ( ) font(notosanscanadianaboriginallight) ( ) font(notosanscanadianaboriginalmedium) ( ) font(notosanscanadianaboriginalsemibold) ( ) font(notosanscanadianaboriginalthin) ( ) metainfo(org.fedoraproject.google-noto-sans-canadian-aboriginal-fonts.metainfo.xml) ( ) google-noto-sans-canadian-aboriginal-fonts ( =  20240401-5.el10) config(google-noto-sans-canadian-aboriginal-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-canadian-aboriginal-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-canadian-aboriginal-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-canadian-aboriginal-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-canadian-aboriginal-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-canadian-aboriginal-vf-fonts = "metainfo() ( ) font(notosanscanadianaboriginal) ( ) metainfo(org.fedoraproject.google-noto-sans-canadian-aboriginal-vf-fonts.metainfo.xml) ( ) google-noto-sans-canadian-aboriginal-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-canadian-aboriginal-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-canadian-aboriginal-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-carian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-carian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-carian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-carian-fonts = "metainfo() ( ) font(notosanscarian) ( ) metainfo(org.fedoraproject.google-noto-sans-carian-fonts.metainfo.xml) ( ) google-noto-sans-carian-fonts ( =  20240401-5.el10) config(google-noto-sans-carian-fonts) ( =  20240401-5.el10) google-noto-sans-carian-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-carian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-caucasian-albanian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-caucasian-albanian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-caucasian-albanian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-caucasian-albanian-fonts = "metainfo() ( ) font(notosanscaucasianalbanian) ( ) metainfo(org.fedoraproject.google-noto-sans-caucasian-albanian-fonts.metainfo.xml) ( ) google-noto-sans-caucasian-albanian-fonts ( =  20240401-5.el10) config(google-noto-sans-caucasian-albanian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-caucasian-albanian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-chakma-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-chakma-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-chakma-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-chakma-fonts = "metainfo() ( ) font(notosanschakma) ( ) metainfo(org.fedoraproject.google-noto-sans-chakma-fonts.metainfo.xml) ( ) google-noto-sans-chakma-fonts ( =  20240401-5.el10) config(google-noto-sans-chakma-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-chakma-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-cham-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-cham-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-cham-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-cham-fonts = "metainfo() ( ) font(notosanscham) ( ) font(notosanschamblack) ( ) font(notosanschamextrabold) ( ) font(notosanschamextralight) ( ) font(notosanschamlight) ( ) font(notosanschammedium) ( ) font(notosanschamsemibold) ( ) font(notosanschamthin) ( ) metainfo(org.fedoraproject.google-noto-sans-cham-fonts.metainfo.xml) ( ) google-noto-sans-cham-fonts ( =  20240401-5.el10) config(google-noto-sans-cham-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-cham-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-cham-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-cham-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-cham-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-cham-vf-fonts = "metainfo() ( ) font(notosanscham) ( ) metainfo(org.fedoraproject.google-noto-sans-cham-vf-fonts.metainfo.xml) ( ) google-noto-sans-cham-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-cham-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-cham-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-cherokee-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-cherokee-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-cherokee-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-cherokee-fonts = "metainfo() ( ) font(notosanscherokee) ( ) font(notosanscherokeeblack) ( ) font(notosanscherokeeextrabold) ( ) font(notosanscherokeeextralight) ( ) font(notosanscherokeelight) ( ) font(notosanscherokeemedium) ( ) font(notosanscherokeesemibold) ( ) font(notosanscherokeethin) ( ) metainfo(org.fedoraproject.google-noto-sans-cherokee-fonts.metainfo.xml) ( ) google-noto-sans-cherokee-fonts ( =  20240401-5.el10) config(google-noto-sans-cherokee-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-cherokee-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-cherokee-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-cherokee-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-cherokee-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-cherokee-vf-fonts = "metainfo() ( ) font(notosanscherokee) ( ) metainfo(org.fedoraproject.google-noto-sans-cherokee-vf-fonts.metainfo.xml) ( ) google-noto-sans-cherokee-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-cherokee-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-cherokee-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-chorasmian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-chorasmian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-chorasmian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-chorasmian-fonts = "metainfo() ( ) font(notosanschorasmian) ( ) metainfo(org.fedoraproject.google-noto-sans-chorasmian-fonts.metainfo.xml) ( ) google-noto-sans-chorasmian-fonts ( =  20240401-5.el10) config(google-noto-sans-chorasmian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-chorasmian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-coptic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-coptic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-coptic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-coptic-fonts = "metainfo() ( ) font(notosanscoptic) ( ) metainfo(org.fedoraproject.google-noto-sans-coptic-fonts.metainfo.xml) ( ) google-noto-sans-coptic-fonts ( =  20240401-5.el10) config(google-noto-sans-coptic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-coptic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-cuneiform-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-cuneiform-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-cuneiform-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-cuneiform-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-cuneiform-fonts.metainfo.xml) ( ) google-noto-sans-cuneiform-fonts ( =  20240401-5.el10) config(google-noto-sans-cuneiform-fonts) ( =  20240401-5.el10) google-noto-sans-cuneiform-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-cuneiform-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-cypriot-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-cypriot-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-cypriot-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-cypriot-fonts = "metainfo() ( ) font(notosanscypriot) ( ) metainfo(org.fedoraproject.google-noto-sans-cypriot-fonts.metainfo.xml) ( ) google-noto-sans-cypriot-fonts ( =  20240401-5.el10) config(google-noto-sans-cypriot-fonts) ( =  20240401-5.el10) google-noto-sans-cypriot-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-cypriot-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-cypro-minoan-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-cypro-minoan-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-cypro-minoan-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-cypro-minoan-fonts = "metainfo() ( ) font(notosanscyprominoan) ( ) metainfo(org.fedoraproject.google-noto-sans-cypro-minoan-fonts.metainfo.xml) ( ) google-noto-sans-cypro-minoan-fonts ( =  20240401-5.el10) config(google-noto-sans-cypro-minoan-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-cypro-minoan-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-deseret-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-deseret-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-deseret-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-deseret-fonts = "metainfo() ( ) font(notosansdeseret) ( ) metainfo(org.fedoraproject.google-noto-sans-deseret-fonts.metainfo.xml) ( ) google-noto-sans-deseret-fonts ( =  20240401-5.el10) config(google-noto-sans-deseret-fonts) ( =  20240401-5.el10) google-noto-sans-deseret-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-deseret-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-devanagari-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-devanagari-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-devanagari-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-devanagari-fonts = "metainfo() ( ) font(notosansdevanagari) ( ) font(notosansdevanagariblack) ( ) font(notosansdevanagaricondensed) ( ) font(notosansdevanagaricondensedblack) ( ) font(notosansdevanagaricondensedextrabold) ( ) font(notosansdevanagaricondensedextralight) ( ) font(notosansdevanagaricondensedlight) ( ) font(notosansdevanagaricondensedmedium) ( ) font(notosansdevanagaricondensedsemibold) ( ) font(notosansdevanagaricondensedthin) ( ) font(notosansdevanagariextrabold) ( ) font(notosansdevanagariextracondensed) ( ) font(notosansdevanagariextracondensedblack) ( ) font(notosansdevanagariextracondensedextrabold) ( ) font(notosansdevanagariextracondensedextralight) ( ) font(notosansdevanagariextracondensedlight) ( ) font(notosansdevanagariextracondensedmedium) ( ) font(notosansdevanagariextracondensedsemibold) ( ) font(notosansdevanagariextracondensedthin) ( ) font(notosansdevanagariextralight) ( ) font(notosansdevanagarilight) ( ) font(notosansdevanagarimedium) ( ) font(notosansdevanagarisemibold) ( ) font(notosansdevanagarisemicondensed) ( ) font(notosansdevanagarisemicondensedblack) ( ) font(notosansdevanagarisemicondensedextrabold) ( ) font(notosansdevanagarisemicondensedextralight) ( ) font(notosansdevanagarisemicondensedlight) ( ) font(notosansdevanagarisemicondensedmedium) ( ) font(notosansdevanagarisemicondensedsemibold) ( ) font(notosansdevanagarisemicondensedthin) ( ) font(notosansdevanagarithin) ( ) metainfo(org.fedoraproject.google-noto-sans-devanagari-fonts.metainfo.xml) ( ) google-noto-sans-devanagari-fonts ( =  20240401-5.el10) config(google-noto-sans-devanagari-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-devanagari-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-devanagari-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-devanagari-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-devanagari-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-devanagari-ui-fonts = "metainfo() ( ) font(notosansdevanagariui) ( ) font(notosansdevanagariuiblack) ( ) font(notosansdevanagariuicondensed) ( ) font(notosansdevanagariuicondensedblack) ( ) font(notosansdevanagariuicondensedextrabold) ( ) font(notosansdevanagariuicondensedextralight) ( ) font(notosansdevanagariuicondensedlight) ( ) font(notosansdevanagariuicondensedmedium) ( ) font(notosansdevanagariuicondensedsemibold) ( ) font(notosansdevanagariuicondensedthin) ( ) font(notosansdevanagariuiextrabold) ( ) font(notosansdevanagariuiextracondensed) ( ) font(notosansdevanagariuiextracondensedblack) ( ) font(notosansdevanagariuiextracondensedextrabold) ( ) font(notosansdevanagariuiextracondensedextralight) ( ) font(notosansdevanagariuiextracondensedlight) ( ) font(notosansdevanagariuiextracondensedmedium) ( ) font(notosansdevanagariuiextracondensedsemibold) ( ) font(notosansdevanagariuiextracondensedthin) ( ) font(notosansdevanagariuiextralight) ( ) font(notosansdevanagariuilight) ( ) font(notosansdevanagariuimedium) ( ) font(notosansdevanagariuisemibold) ( ) font(notosansdevanagariuisemicondensed) ( ) font(notosansdevanagariuisemicondensedblack) ( ) font(notosansdevanagariuisemicondensedextrabold) ( ) font(notosansdevanagariuisemicondensedextralight) ( ) font(notosansdevanagariuisemicondensedlight) ( ) font(notosansdevanagariuisemicondensedmedium) ( ) font(notosansdevanagariuisemicondensedsemibold) ( ) font(notosansdevanagariuisemicondensedthin) ( ) font(notosansdevanagariuithin) ( ) metainfo(org.fedoraproject.google-noto-sans-devanagari-ui-fonts.metainfo.xml) ( ) google-noto-sans-devanagari-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-devanagari-ui-fonts) ( =  20240401-5.el10) google-noto-sans-devanagari-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-devanagari-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-devanagari-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-devanagari-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-devanagari-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-devanagari-vf-fonts = "metainfo() ( ) font(notosansdevanagari) ( ) metainfo(org.fedoraproject.google-noto-sans-devanagari-vf-fonts.metainfo.xml) ( ) google-noto-sans-devanagari-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-devanagari-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-devanagari-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-duployan-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-duployan-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-duployan-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-duployan-fonts = "metainfo() ( ) font(notosansduployan) ( ) metainfo(org.fedoraproject.google-noto-sans-duployan-fonts.metainfo.xml) ( ) google-noto-sans-duployan-fonts ( =  20240401-5.el10) config(google-noto-sans-duployan-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-duployan-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-egyptian-hieroglyphs-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-egyptian-hieroglyphs-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-egyptian-hieroglyphs-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-egyptian-hieroglyphs-fonts = "metainfo() ( ) font(notosansegyptianhieroglyphs) ( ) metainfo(org.fedoraproject.google-noto-sans-egyptian-hieroglyphs-fonts.metainfo.xml) ( ) google-noto-sans-egyptian-hieroglyphs-fonts ( =  20240401-5.el10) config(google-noto-sans-egyptian-hieroglyphs-fonts) ( =  20240401-5.el10) google-noto-sans-egyptian-hieroglyphs-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-egyptian-hieroglyphs-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-elbasan-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-elbasan-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-elbasan-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-elbasan-fonts = "metainfo() ( ) font(notosanselbasan) ( ) metainfo(org.fedoraproject.google-noto-sans-elbasan-fonts.metainfo.xml) ( ) google-noto-sans-elbasan-fonts ( =  20240401-5.el10) config(google-noto-sans-elbasan-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-elbasan-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-elymaic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-elymaic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-elymaic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-elymaic-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-elymaic-fonts.metainfo.xml) ( ) google-noto-sans-elymaic-fonts ( =  20240401-5.el10) config(google-noto-sans-elymaic-fonts) ( =  20240401-5.el10) google-noto-sans-elymaic-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-elymaic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-ethiopic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-ethiopic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-ethiopic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-ethiopic-fonts = "metainfo() ( ) font(notosansethiopic) ( ) font(notosansethiopicblack) ( ) font(notosansethiopiccondensed) ( ) font(notosansethiopiccondensedblack) ( ) font(notosansethiopiccondensedextrabold) ( ) font(notosansethiopiccondensedextralight) ( ) font(notosansethiopiccondensedlight) ( ) font(notosansethiopiccondensedmedium) ( ) font(notosansethiopiccondensedsemibold) ( ) font(notosansethiopiccondensedthin) ( ) font(notosansethiopicextrabold) ( ) font(notosansethiopicextracondensed) ( ) font(notosansethiopicextracondensedblack) ( ) font(notosansethiopicextracondensedextrabold) ( ) font(notosansethiopicextracondensedextralight) ( ) font(notosansethiopicextracondensedlight) ( ) font(notosansethiopicextracondensedmedium) ( ) font(notosansethiopicextracondensedsemibold) ( ) font(notosansethiopicextracondensedthin) ( ) font(notosansethiopicextralight) ( ) font(notosansethiopiclight) ( ) font(notosansethiopicmedium) ( ) font(notosansethiopicsemibold) ( ) font(notosansethiopicsemicondensed) ( ) font(notosansethiopicsemicondensedblack) ( ) font(notosansethiopicsemicondensedextrabold) ( ) font(notosansethiopicsemicondensedextralight) ( ) font(notosansethiopicsemicondensedlight) ( ) font(notosansethiopicsemicondensedmedium) ( ) font(notosansethiopicsemicondensedsemibold) ( ) font(notosansethiopicsemicondensedthin) ( ) font(notosansethiopicthin) ( ) metainfo(org.fedoraproject.google-noto-sans-ethiopic-fonts.metainfo.xml) ( ) google-noto-sans-ethiopic-fonts ( =  20240401-5.el10) config(google-noto-sans-ethiopic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-ethiopic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-ethiopic-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-ethiopic-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-ethiopic-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-ethiopic-vf-fonts = "metainfo() ( ) font(notosansethiopic) ( ) metainfo(org.fedoraproject.google-noto-sans-ethiopic-vf-fonts.metainfo.xml) ( ) google-noto-sans-ethiopic-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-ethiopic-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-ethiopic-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-fonts = "metainfo() ( ) font(notosans) ( ) font(notosansblack) ( ) font(notosanscondensed) ( ) font(notosanscondensedblack) ( ) font(notosanscondensedextrabold) ( ) font(notosanscondensedextralight) ( ) font(notosanscondensedlight) ( ) font(notosanscondensedmedium) ( ) font(notosanscondensedsemibold) ( ) font(notosanscondensedthin) ( ) font(notosansextrabold) ( ) font(notosansextracondensed) ( ) font(notosansextracondensedblack) ( ) font(notosansextracondensedextrabold) ( ) font(notosansextracondensedextralight) ( ) font(notosansextracondensedlight) ( ) font(notosansextracondensedmedium) ( ) font(notosansextracondensedsemibold) ( ) font(notosansextracondensedthin) ( ) font(notosansextralight) ( ) font(notosanslight) ( ) font(notosansmedium) ( ) font(notosanssemibold) ( ) font(notosanssemicondensed) ( ) font(notosanssemicondensedblack) ( ) font(notosanssemicondensedextrabold) ( ) font(notosanssemicondensedextralight) ( ) font(notosanssemicondensedlight) ( ) font(notosanssemicondensedmedium) ( ) font(notosanssemicondensedsemibold) ( ) font(notosanssemicondensedthin) ( ) font(notosansthin) ( ) metainfo(org.fedoraproject.google-noto-sans-fonts.metainfo.xml) ( ) google-noto-sans-fonts ( =  20240401-5.el10) config(google-noto-sans-fonts) ( =  20240401-5.el10) google-noto-sans-display-fonts ( =  20240401-5.el10) google-noto-sans-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-georgian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-georgian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-georgian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-georgian-fonts = "metainfo() ( ) font(notosansgeorgian) ( ) font(notosansgeorgianblack) ( ) font(notosansgeorgianbold) ( ) font(notosansgeorgiancondensed) ( ) font(notosansgeorgiancondensedblack) ( ) font(notosansgeorgiancondensedbold) ( ) font(notosansgeorgiancondensedextrabold) ( ) font(notosansgeorgiancondensedextralight) ( ) font(notosansgeorgiancondensedlight) ( ) font(notosansgeorgiancondensedmedium) ( ) font(notosansgeorgiancondensedsemibold) ( ) font(notosansgeorgiancondensedthin) ( ) font(notosansgeorgianextrabold) ( ) font(notosansgeorgianextracondensed) ( ) font(notosansgeorgianextracondensedblack) ( ) font(notosansgeorgianextracondensedbold) ( ) font(notosansgeorgianextracondensedextrabold) ( ) font(notosansgeorgianextracondensedextralight) ( ) font(notosansgeorgianextracondensedlight) ( ) font(notosansgeorgianextracondensedmedium) ( ) font(notosansgeorgianextracondensedsemibold) ( ) font(notosansgeorgianextracondensedthin) ( ) font(notosansgeorgianextralight) ( ) font(notosansgeorgianlight) ( ) font(notosansgeorgianmedium) ( ) font(notosansgeorgiansemibold) ( ) font(notosansgeorgiansemicondensed) ( ) font(notosansgeorgiansemicondensedblack) ( ) font(notosansgeorgiansemicondensedbold) ( ) font(notosansgeorgiansemicondensedextrabold) ( ) font(notosansgeorgiansemicondensedextralight) ( ) font(notosansgeorgiansemicondensedlight) ( ) font(notosansgeorgiansemicondensedmedium) ( ) font(notosansgeorgiansemicondensedsemibold) ( ) font(notosansgeorgiansemicondensedthin) ( ) font(notosansgeorgianthin) ( ) metainfo(org.fedoraproject.google-noto-sans-georgian-fonts.metainfo.xml) ( ) google-noto-sans-georgian-fonts ( =  20240401-5.el10) config(google-noto-sans-georgian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-georgian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-georgian-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-georgian-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-georgian-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-georgian-vf-fonts = "metainfo() ( ) font(notosansgeorgian) ( ) metainfo(org.fedoraproject.google-noto-sans-georgian-vf-fonts.metainfo.xml) ( ) google-noto-sans-georgian-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-georgian-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-georgian-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-glagolitic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-glagolitic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-glagolitic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-glagolitic-fonts = "metainfo() ( ) font(notosansglagolitic) ( ) metainfo(org.fedoraproject.google-noto-sans-glagolitic-fonts.metainfo.xml) ( ) google-noto-sans-glagolitic-fonts ( =  20240401-5.el10) config(google-noto-sans-glagolitic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-glagolitic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gothic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gothic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gothic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gothic-fonts = "metainfo() ( ) font(notosansgothic) ( ) metainfo(org.fedoraproject.google-noto-sans-gothic-fonts.metainfo.xml) ( ) google-noto-sans-gothic-fonts ( =  20240401-5.el10) config(google-noto-sans-gothic-fonts) ( =  20240401-5.el10) google-noto-sans-gothic-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gothic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-grantha-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-grantha-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-grantha-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-grantha-fonts = "metainfo() ( ) font(notosansgrantha) ( ) metainfo(org.fedoraproject.google-noto-sans-grantha-fonts.metainfo.xml) ( ) google-noto-sans-grantha-fonts ( =  20240401-5.el10) config(google-noto-sans-grantha-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-grantha-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gujarati-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gujarati-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gujarati-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gujarati-fonts = "metainfo() ( ) font(notosansgujarati) ( ) font(notosansgujaratiblack) ( ) font(notosansgujaraticondensed) ( ) font(notosansgujaraticondensedblack) ( ) font(notosansgujaraticondensedextrabold) ( ) font(notosansgujaraticondensedextralight) ( ) font(notosansgujaraticondensedlight) ( ) font(notosansgujaraticondensedmedium) ( ) font(notosansgujaraticondensedsemibold) ( ) font(notosansgujaraticondensedthin) ( ) font(notosansgujaratiextrabold) ( ) font(notosansgujaratiextracondensed) ( ) font(notosansgujaratiextracondensedblack) ( ) font(notosansgujaratiextracondensedextrabold) ( ) font(notosansgujaratiextracondensedextralight) ( ) font(notosansgujaratiextracondensedlight) ( ) font(notosansgujaratiextracondensedmedium) ( ) font(notosansgujaratiextracondensedsemibold) ( ) font(notosansgujaratiextracondensedthin) ( ) font(notosansgujaratiextralight) ( ) font(notosansgujaratilight) ( ) font(notosansgujaratimedium) ( ) font(notosansgujaratisemibold) ( ) font(notosansgujaratisemicondensed) ( ) font(notosansgujaratisemicondensedblack) ( ) font(notosansgujaratisemicondensedextrabold) ( ) font(notosansgujaratisemicondensedextralight) ( ) font(notosansgujaratisemicondensedlight) ( ) font(notosansgujaratisemicondensedmedium) ( ) font(notosansgujaratisemicondensedsemibold) ( ) font(notosansgujaratisemicondensedthin) ( ) font(notosansgujaratithin) ( ) metainfo(org.fedoraproject.google-noto-sans-gujarati-fonts.metainfo.xml) ( ) google-noto-sans-gujarati-fonts ( =  20240401-5.el10) config(google-noto-sans-gujarati-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gujarati-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gujarati-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gujarati-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gujarati-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gujarati-ui-fonts = "metainfo() ( ) font(notosansgujaratiui) ( ) font(notosansgujaratiuiblack) ( ) font(notosansgujaratiuicondensed) ( ) font(notosansgujaratiuicondensedblack) ( ) font(notosansgujaratiuicondensedextrabold) ( ) font(notosansgujaratiuicondensedextralight) ( ) font(notosansgujaratiuicondensedlight) ( ) font(notosansgujaratiuicondensedmedium) ( ) font(notosansgujaratiuicondensedsemibold) ( ) font(notosansgujaratiuicondensedthin) ( ) font(notosansgujaratiuiextrabold) ( ) font(notosansgujaratiuiextracondensed) ( ) font(notosansgujaratiuiextracondensedblack) ( ) font(notosansgujaratiuiextracondensedextrabold) ( ) font(notosansgujaratiuiextracondensedextralight) ( ) font(notosansgujaratiuiextracondensedlight) ( ) font(notosansgujaratiuiextracondensedmedium) ( ) font(notosansgujaratiuiextracondensedsemibold) ( ) font(notosansgujaratiuiextracondensedthin) ( ) font(notosansgujaratiuiextralight) ( ) font(notosansgujaratiuilight) ( ) font(notosansgujaratiuimedium) ( ) font(notosansgujaratiuisemibold) ( ) font(notosansgujaratiuisemicondensed) ( ) font(notosansgujaratiuisemicondensedblack) ( ) font(notosansgujaratiuisemicondensedextrabold) ( ) font(notosansgujaratiuisemicondensedextralight) ( ) font(notosansgujaratiuisemicondensedlight) ( ) font(notosansgujaratiuisemicondensedmedium) ( ) font(notosansgujaratiuisemicondensedsemibold) ( ) font(notosansgujaratiuisemicondensedthin) ( ) font(notosansgujaratiuithin) ( ) metainfo(org.fedoraproject.google-noto-sans-gujarati-ui-fonts.metainfo.xml) ( ) google-noto-sans-gujarati-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-gujarati-ui-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gujarati-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gujarati-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gujarati-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gujarati-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gujarati-vf-fonts = "metainfo() ( ) font(notosansgujarati) ( ) metainfo(org.fedoraproject.google-noto-sans-gujarati-vf-fonts.metainfo.xml) ( ) google-noto-sans-gujarati-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-gujarati-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gujarati-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gunjala-gondi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gunjala-gondi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gunjala-gondi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gunjala-gondi-fonts = "metainfo() ( ) font(notosansgunjalagondi) ( ) font(notosansgunjalagondimedium) ( ) font(notosansgunjalagondisemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-gunjala-gondi-fonts.metainfo.xml) ( ) google-noto-sans-gunjala-gondi-fonts ( =  20240401-5.el10) config(google-noto-sans-gunjala-gondi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gunjala-gondi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gunjala-gondi-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gunjala-gondi-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gunjala-gondi-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gunjala-gondi-vf-fonts = "metainfo() ( ) font(notosansgunjalagondi) ( ) metainfo(org.fedoraproject.google-noto-sans-gunjala-gondi-vf-fonts.metainfo.xml) ( ) google-noto-sans-gunjala-gondi-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-gunjala-gondi-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gunjala-gondi-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gurmukhi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gurmukhi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gurmukhi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gurmukhi-fonts = "metainfo() ( ) font(notosansgurmukhi) ( ) font(notosansgurmukhiblack) ( ) font(notosansgurmukhicondensed) ( ) font(notosansgurmukhicondensedblack) ( ) font(notosansgurmukhicondensedextrabold) ( ) font(notosansgurmukhicondensedextralight) ( ) font(notosansgurmukhicondensedlight) ( ) font(notosansgurmukhicondensedmedium) ( ) font(notosansgurmukhicondensedsemibold) ( ) font(notosansgurmukhicondensedthin) ( ) font(notosansgurmukhiextrabold) ( ) font(notosansgurmukhiextracondensed) ( ) font(notosansgurmukhiextracondensedblack) ( ) font(notosansgurmukhiextracondensedextrabold) ( ) font(notosansgurmukhiextracondensedextralight) ( ) font(notosansgurmukhiextracondensedlight) ( ) font(notosansgurmukhiextracondensedmedium) ( ) font(notosansgurmukhiextracondensedsemibold) ( ) font(notosansgurmukhiextracondensedthin) ( ) font(notosansgurmukhiextralight) ( ) font(notosansgurmukhilight) ( ) font(notosansgurmukhimedium) ( ) font(notosansgurmukhisemibold) ( ) font(notosansgurmukhisemicondensed) ( ) font(notosansgurmukhisemicondensedblack) ( ) font(notosansgurmukhisemicondensedextrabold) ( ) font(notosansgurmukhisemicondensedextralight) ( ) font(notosansgurmukhisemicondensedlight) ( ) font(notosansgurmukhisemicondensedmedium) ( ) font(notosansgurmukhisemicondensedsemibold) ( ) font(notosansgurmukhisemicondensedthin) ( ) font(notosansgurmukhithin) ( ) metainfo(org.fedoraproject.google-noto-sans-gurmukhi-fonts.metainfo.xml) ( ) google-noto-sans-gurmukhi-fonts ( =  20240401-5.el10) config(google-noto-sans-gurmukhi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gurmukhi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gurmukhi-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gurmukhi-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gurmukhi-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gurmukhi-ui-fonts = "metainfo() ( ) font(notosansgurmukhiui) ( ) font(notosansgurmukhiuiblack) ( ) font(notosansgurmukhiuicondensed) ( ) font(notosansgurmukhiuicondensedblack) ( ) font(notosansgurmukhiuicondensedextrabold) ( ) font(notosansgurmukhiuicondensedextralight) ( ) font(notosansgurmukhiuicondensedlight) ( ) font(notosansgurmukhiuicondensedmedium) ( ) font(notosansgurmukhiuicondensedsemibold) ( ) font(notosansgurmukhiuicondensedthin) ( ) font(notosansgurmukhiuiextrabold) ( ) font(notosansgurmukhiuiextracondensed) ( ) font(notosansgurmukhiuiextracondensedblack) ( ) font(notosansgurmukhiuiextracondensedextrabold) ( ) font(notosansgurmukhiuiextracondensedextralight) ( ) font(notosansgurmukhiuiextracondensedlight) ( ) font(notosansgurmukhiuiextracondensedmedium) ( ) font(notosansgurmukhiuiextracondensedsemibold) ( ) font(notosansgurmukhiuiextracondensedthin) ( ) font(notosansgurmukhiuiextralight) ( ) font(notosansgurmukhiuilight) ( ) font(notosansgurmukhiuimedium) ( ) font(notosansgurmukhiuisemibold) ( ) font(notosansgurmukhiuisemicondensed) ( ) font(notosansgurmukhiuisemicondensedblack) ( ) font(notosansgurmukhiuisemicondensedextrabold) ( ) font(notosansgurmukhiuisemicondensedextralight) ( ) font(notosansgurmukhiuisemicondensedlight) ( ) font(notosansgurmukhiuisemicondensedmedium) ( ) font(notosansgurmukhiuisemicondensedsemibold) ( ) font(notosansgurmukhiuisemicondensedthin) ( ) font(notosansgurmukhiuithin) ( ) metainfo(org.fedoraproject.google-noto-sans-gurmukhi-ui-fonts.metainfo.xml) ( ) google-noto-sans-gurmukhi-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-gurmukhi-ui-fonts) ( =  20240401-5.el10) google-noto-sans-gurmukhi-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gurmukhi-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-gurmukhi-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-gurmukhi-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-gurmukhi-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-gurmukhi-vf-fonts = "metainfo() ( ) font(notosansgurmukhi) ( ) metainfo(org.fedoraproject.google-noto-sans-gurmukhi-vf-fonts.metainfo.xml) ( ) google-noto-sans-gurmukhi-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-gurmukhi-vf-fonts) ( =  20240401-5.el10) google-noto-sans-gurkukhi-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-gurmukhi-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-hanifi-rohingya-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-hanifi-rohingya-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-hanifi-rohingya-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-hanifi-rohingya-fonts = "metainfo() ( ) font(notosanshanifirohingya) ( ) font(notosanshanifirohingyamedium) ( ) font(notosanshanifirohingyasemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-hanifi-rohingya-fonts.metainfo.xml) ( ) google-noto-sans-hanifi-rohingya-fonts ( =  20240401-5.el10) config(google-noto-sans-hanifi-rohingya-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-hanifi-rohingya-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-hanifi-rohingya-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-hanifi-rohingya-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-hanifi-rohingya-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-hanifi-rohingya-vf-fonts = "metainfo() ( ) font(notosanshanifirohingya) ( ) font(notosanshanifirohg) ( ) metainfo(org.fedoraproject.google-noto-sans-hanifi-rohingya-vf-fonts.metainfo.xml) ( ) google-noto-sans-hanifi-rohingya-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-hanifi-rohingya-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-hanifi-rohingya-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-hanunoo-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-hanunoo-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-hanunoo-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-hanunoo-fonts = "metainfo() ( ) font(notosanshanunoo) ( ) metainfo(org.fedoraproject.google-noto-sans-hanunoo-fonts.metainfo.xml) ( ) google-noto-sans-hanunoo-fonts ( =  20240401-5.el10) config(google-noto-sans-hanunoo-fonts) ( =  20240401-5.el10) google-noto-sans-hanunno-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-hanunoo-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-hatran-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-hatran-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-hatran-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-hatran-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-hatran-fonts.metainfo.xml) ( ) google-noto-sans-hatran-fonts ( =  20240401-5.el10) config(google-noto-sans-hatran-fonts) ( =  20240401-5.el10) google-noto-sans-hatran-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-hatran-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-hebrew-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-hebrew-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-hebrew-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-hebrew-fonts = "metainfo() ( ) font(notosanshebrew) ( ) font(notosanshebrewblack) ( ) font(notosanshebrewcondensed) ( ) font(notosanshebrewcondensedblack) ( ) font(notosanshebrewcondensedextrabold) ( ) font(notosanshebrewcondensedextralight) ( ) font(notosanshebrewcondensedlight) ( ) font(notosanshebrewcondensedmedium) ( ) font(notosanshebrewcondensedsemibold) ( ) font(notosanshebrewcondensedthin) ( ) font(notosanshebrewextrabold) ( ) font(notosanshebrewextracondensed) ( ) font(notosanshebrewextracondensedblack) ( ) font(notosanshebrewextracondensedextrabold) ( ) font(notosanshebrewextracondensedextralight) ( ) font(notosanshebrewextracondensedlight) ( ) font(notosanshebrewextracondensedmedium) ( ) font(notosanshebrewextracondensedsemibold) ( ) font(notosanshebrewextracondensedthin) ( ) font(notosanshebrewextralight) ( ) font(notosanshebrewlight) ( ) font(notosanshebrewmedium) ( ) font(notosanshebrewsemibold) ( ) font(notosanshebrewsemicondensed) ( ) font(notosanshebrewsemicondensedblack) ( ) font(notosanshebrewsemicondensedextrabold) ( ) font(notosanshebrewsemicondensedextralight) ( ) font(notosanshebrewsemicondensedlight) ( ) font(notosanshebrewsemicondensedmedium) ( ) font(notosanshebrewsemicondensedsemibold) ( ) font(notosanshebrewsemicondensedthin) ( ) font(notosanshebrewthin) ( ) metainfo(org.fedoraproject.google-noto-sans-hebrew-fonts.metainfo.xml) ( ) google-noto-sans-hebrew-fonts ( =  20240401-5.el10) config(google-noto-sans-hebrew-fonts) ( =  20240401-5.el10) google-noto-sans-hebrew-droid-fonts ( =  20240401-5.el10) google-noto-sans-hebrew-new-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-hebrew-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-hebrew-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-hebrew-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-hebrew-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-hebrew-vf-fonts = "metainfo() ( ) font(notosanshebrew) ( ) metainfo(org.fedoraproject.google-noto-sans-hebrew-vf-fonts.metainfo.xml) ( ) google-noto-sans-hebrew-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-hebrew-vf-fonts) ( =  20240401-5.el10) google-noto-sans-hebrew-droid-vf-fonts ( =  20240401-5.el10) google-noto-sans-hebrew-new-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-hebrew-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-imperial-aramaic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-imperial-aramaic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-imperial-aramaic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-imperial-aramaic-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-imperial-aramaic-fonts.metainfo.xml) ( ) google-noto-sans-imperial-aramaic-fonts ( =  20240401-5.el10) config(google-noto-sans-imperial-aramaic-fonts) ( =  20240401-5.el10) google-noto-sans-imperial-aramaic-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-imperial-aramaic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-indic-siyaq-numbers-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-indic-siyaq-numbers-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-indic-siyaq-numbers-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-indic-siyaq-numbers-fonts = "metainfo() ( ) font(notosansindicsiyaqnumbers) ( ) metainfo(org.fedoraproject.google-noto-sans-indic-siyaq-numbers-fonts.metainfo.xml) ( ) google-noto-sans-indic-siyaq-numbers-fonts ( =  20240401-5.el10) config(google-noto-sans-indic-siyaq-numbers-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-indic-siyaq-numbers-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-inscriptional-pahlavi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-inscriptional-pahlavi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-inscriptional-pahlavi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-inscriptional-pahlavi-fonts = "metainfo() ( ) font(notosansinscriptionalpahlavi) ( ) metainfo(org.fedoraproject.google-noto-sans-inscriptional-pahlavi-fonts.metainfo.xml) ( ) google-noto-sans-inscriptional-pahlavi-fonts ( =  20240401-5.el10) config(google-noto-sans-inscriptional-pahlavi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-inscriptional-pahlavi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-inscriptional-parthian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-inscriptional-parthian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-inscriptional-parthian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-inscriptional-parthian-fonts = "metainfo() ( ) font(notosansinscriptionalparthian) ( ) metainfo(org.fedoraproject.google-noto-sans-inscriptional-parthian-fonts.metainfo.xml) ( ) google-noto-sans-inscriptional-parthian-fonts ( =  20240401-5.el10) config(google-noto-sans-inscriptional-parthian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-inscriptional-parthian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-javanese-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-javanese-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-javanese-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-javanese-fonts = "metainfo() ( ) font(notosansjavanese) ( ) metainfo(org.fedoraproject.google-noto-sans-javanese-fonts.metainfo.xml) ( ) google-noto-sans-javanese-fonts ( =  20240401-5.el10) config(google-noto-sans-javanese-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-javanese-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-javanese-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-javanese-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-javanese-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-javanese-vf-fonts = "metainfo() ( ) font(notosansjavanese) ( ) metainfo(org.fedoraproject.google-noto-sans-javanese-vf-fonts.metainfo.xml) ( ) google-noto-sans-javanese-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-javanese-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-javanese-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kaithi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kaithi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kaithi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kaithi-fonts = "metainfo() ( ) font(notosanskaithi) ( ) metainfo(org.fedoraproject.google-noto-sans-kaithi-fonts.metainfo.xml) ( ) google-noto-sans-kaithi-fonts ( =  20240401-5.el10) config(google-noto-sans-kaithi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kaithi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kannada-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kannada-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kannada-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kannada-fonts = "metainfo() ( ) font(notosanskannada) ( ) font(notosanskannadablack) ( ) font(notosanskannadacondensed) ( ) font(notosanskannadacondensedblack) ( ) font(notosanskannadacondensedextrabold) ( ) font(notosanskannadacondensedextralight) ( ) font(notosanskannadacondensedlight) ( ) font(notosanskannadacondensedmedium) ( ) font(notosanskannadacondensedsemibold) ( ) font(notosanskannadacondensedthin) ( ) font(notosanskannadaextrabold) ( ) font(notosanskannadaextracondensed) ( ) font(notosanskannadaextracondensedblack) ( ) font(notosanskannadaextracondensedextrabold) ( ) font(notosanskannadaextracondensedextralight) ( ) font(notosanskannadaextracondensedlight) ( ) font(notosanskannadaextracondensedmedium) ( ) font(notosanskannadaextracondensedsemibold) ( ) font(notosanskannadaextracondensedthin) ( ) font(notosanskannadaextralight) ( ) font(notosanskannadalight) ( ) font(notosanskannadamedium) ( ) font(notosanskannadasemibold) ( ) font(notosanskannadasemicondensed) ( ) font(notosanskannadasemicondensedblack) ( ) font(notosanskannadasemicondensedextrabold) ( ) font(notosanskannadasemicondensedextralight) ( ) font(notosanskannadasemicondensedlight) ( ) font(notosanskannadasemicondensedmedium) ( ) font(notosanskannadasemicondensedsemibold) ( ) font(notosanskannadasemicondensedthin) ( ) font(notosanskannadathin) ( ) metainfo(org.fedoraproject.google-noto-sans-kannada-fonts.metainfo.xml) ( ) google-noto-sans-kannada-fonts ( =  20240401-5.el10) config(google-noto-sans-kannada-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kannada-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kannada-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kannada-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kannada-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kannada-ui-fonts = "metainfo() ( ) font(notosanskannadaui) ( ) font(notosanskannadauiblack) ( ) font(notosanskannadauicondensed) ( ) font(notosanskannadauicondensedblack) ( ) font(notosanskannadauicondensedextrabold) ( ) font(notosanskannadauicondensedextralight) ( ) font(notosanskannadauicondensedlight) ( ) font(notosanskannadauicondensedmedium) ( ) font(notosanskannadauicondensedsemibold) ( ) font(notosanskannadauicondensedthin) ( ) font(notosanskannadauiextrabold) ( ) font(notosanskannadauiextracondensed) ( ) font(notosanskannadauiextracondensedblack) ( ) font(notosanskannadauiextracondensedextrabold) ( ) font(notosanskannadauiextracondensedextralight) ( ) font(notosanskannadauiextracondensedlight) ( ) font(notosanskannadauiextracondensedmedium) ( ) font(notosanskannadauiextracondensedsemibold) ( ) font(notosanskannadauiextracondensedthin) ( ) font(notosanskannadauiextralight) ( ) font(notosanskannadauilight) ( ) font(notosanskannadauimedium) ( ) font(notosanskannadauisemibold) ( ) font(notosanskannadauisemicondensed) ( ) font(notosanskannadauisemicondensedblack) ( ) font(notosanskannadauisemicondensedextrabold) ( ) font(notosanskannadauisemicondensedextralight) ( ) font(notosanskannadauisemicondensedlight) ( ) font(notosanskannadauisemicondensedmedium) ( ) font(notosanskannadauisemicondensedsemibold) ( ) font(notosanskannadauisemicondensedthin) ( ) font(notosanskannadauithin) ( ) metainfo(org.fedoraproject.google-noto-sans-kannada-ui-fonts.metainfo.xml) ( ) google-noto-sans-kannada-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-kannada-ui-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kannada-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kannada-ui-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kannada-ui-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kannada-ui-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kannada-ui-vf-fonts = "metainfo() ( ) font(notosanskannadaui) ( ) metainfo(org.fedoraproject.google-noto-sans-kannada-ui-vf-fonts.metainfo.xml) ( ) google-noto-sans-kannada-ui-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-kannada-ui-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kannada-ui-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kannada-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kannada-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kannada-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kannada-vf-fonts = "metainfo() ( ) font(notosanskannada) ( ) metainfo(org.fedoraproject.google-noto-sans-kannada-vf-fonts.metainfo.xml) ( ) google-noto-sans-kannada-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-kannada-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kannada-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kawi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kawi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kawi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kawi-fonts = "metainfo() ( ) font(notosanskawi) ( ) metainfo(org.fedoraproject.google-noto-sans-kawi-fonts.metainfo.xml) ( ) google-noto-sans-kawi-fonts ( =  20240401-5.el10) config(google-noto-sans-kawi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kawi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kawi-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kawi-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kawi-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kawi-vf-fonts = "metainfo() ( ) font(notosanskawi) ( ) metainfo(org.fedoraproject.google-noto-sans-kawi-vf-fonts.metainfo.xml) ( ) google-noto-sans-kawi-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-kawi-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kawi-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kayah-li-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kayah-li-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kayah-li-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kayah-li-fonts = "metainfo() ( ) font(notosanskayahli) ( ) font(notosanskayahlimedium) ( ) font(notosanskayahlisemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-kayah-li-fonts.metainfo.xml) ( ) google-noto-sans-kayah-li-fonts ( =  20240401-5.el10) config(google-noto-sans-kayah-li-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kayah-li-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kayah-li-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kayah-li-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kayah-li-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kayah-li-vf-fonts = "metainfo() ( ) font(notosanskayahli) ( ) metainfo(org.fedoraproject.google-noto-sans-kayah-li-vf-fonts.metainfo.xml) ( ) google-noto-sans-kayah-li-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-kayah-li-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kayah-li-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-kharoshthi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-kharoshthi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-kharoshthi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-kharoshthi-fonts = "metainfo() ( ) font(notosanskharoshthi) ( ) metainfo(org.fedoraproject.google-noto-sans-kharoshthi-fonts.metainfo.xml) ( ) google-noto-sans-kharoshthi-fonts ( =  20240401-5.el10) config(google-noto-sans-kharoshthi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-kharoshthi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-khmer-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-khmer-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-khmer-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-khmer-fonts = "metainfo() ( ) font(notosanskhmer) ( ) font(notosanskhmerblack) ( ) font(notosanskhmercondensed) ( ) font(notosanskhmercondensedblack) ( ) font(notosanskhmercondensedextrabold) ( ) font(notosanskhmercondensedextralight) ( ) font(notosanskhmercondensedlight) ( ) font(notosanskhmercondensedmedium) ( ) font(notosanskhmercondensedsemibold) ( ) font(notosanskhmercondensedthin) ( ) font(notosanskhmerextrabold) ( ) font(notosanskhmerextracondensed) ( ) font(notosanskhmerextracondensedblack) ( ) font(notosanskhmerextracondensedextrabold) ( ) font(notosanskhmerextracondensedextralight) ( ) font(notosanskhmerextracondensedlight) ( ) font(notosanskhmerextracondensedmedium) ( ) font(notosanskhmerextracondensedsemibold) ( ) font(notosanskhmerextracondensedthin) ( ) font(notosanskhmerextralight) ( ) font(notosanskhmerlight) ( ) font(notosanskhmermedium) ( ) font(notosanskhmersemibold) ( ) font(notosanskhmersemicondensed) ( ) font(notosanskhmersemicondensedblack) ( ) font(notosanskhmersemicondensedextrabold) ( ) font(notosanskhmersemicondensedextralight) ( ) font(notosanskhmersemicondensedlight) ( ) font(notosanskhmersemicondensedmedium) ( ) font(notosanskhmersemicondensedsemibold) ( ) font(notosanskhmersemicondensedthin) ( ) font(notosanskhmerthin) ( ) metainfo(org.fedoraproject.google-noto-sans-khmer-fonts.metainfo.xml) ( ) google-noto-sans-khmer-fonts ( =  20240401-5.el10) config(google-noto-sans-khmer-fonts) ( =  20240401-5.el10) google-noto-sans-khmer-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-khmer-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-khmer-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-khmer-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-khmer-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-khmer-vf-fonts = "metainfo() ( ) font(notosanskhmer) ( ) metainfo(org.fedoraproject.google-noto-sans-khmer-vf-fonts.metainfo.xml) ( ) google-noto-sans-khmer-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-khmer-vf-fonts) ( =  20240401-5.el10) google-noto-sans-khmer-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-khmer-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-khojki-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-khojki-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-khojki-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-khojki-fonts = "metainfo() ( ) font(notosanskhojki) ( ) metainfo(org.fedoraproject.google-noto-sans-khojki-fonts.metainfo.xml) ( ) google-noto-sans-khojki-fonts ( =  20240401-5.el10) config(google-noto-sans-khojki-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-khojki-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-khudawadi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-khudawadi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-khudawadi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-khudawadi-fonts = "metainfo() ( ) font(notosanskhudawadi) ( ) metainfo(org.fedoraproject.google-noto-sans-khudawadi-fonts.metainfo.xml) ( ) google-noto-sans-khudawadi-fonts ( =  20240401-5.el10) config(google-noto-sans-khudawadi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-khudawadi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lao-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lao-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lao-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lao-fonts = "metainfo() ( ) font(notosanslao) ( ) font(notosanslaoblack) ( ) font(notosanslaocondensed) ( ) font(notosanslaocondensedblack) ( ) font(notosanslaocondensedextrabold) ( ) font(notosanslaocondensedextralight) ( ) font(notosanslaocondensedlight) ( ) font(notosanslaocondensedmedium) ( ) font(notosanslaocondensedsemibold) ( ) font(notosanslaocondensedthin) ( ) font(notosanslaoextrabold) ( ) font(notosanslaoextracondensed) ( ) font(notosanslaoextracondensedblack) ( ) font(notosanslaoextracondensedextrabold) ( ) font(notosanslaoextracondensedextralight) ( ) font(notosanslaoextracondensedlight) ( ) font(notosanslaoextracondensedmedium) ( ) font(notosanslaoextracondensedsemibold) ( ) font(notosanslaoextracondensedthin) ( ) font(notosanslaoextralight) ( ) font(notosanslaolight) ( ) font(notosanslaomedium) ( ) font(notosanslaosemibold) ( ) font(notosanslaosemicondensed) ( ) font(notosanslaosemicondensedblack) ( ) font(notosanslaosemicondensedextrabold) ( ) font(notosanslaosemicondensedextralight) ( ) font(notosanslaosemicondensedlight) ( ) font(notosanslaosemicondensedmedium) ( ) font(notosanslaosemicondensedsemibold) ( ) font(notosanslaosemicondensedthin) ( ) font(notosanslaothin) ( ) metainfo(org.fedoraproject.google-noto-sans-lao-fonts.metainfo.xml) ( ) google-noto-sans-lao-fonts ( =  20240401-5.el10) config(google-noto-sans-lao-fonts) ( =  20240401-5.el10) google-noto-sans-lao-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lao-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lao-looped-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lao-looped-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lao-looped-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lao-looped-fonts = "metainfo() ( ) font(notosanslaolooped) ( ) font(notosanslaoloopedblack) ( ) font(notosanslaoloopedcondensed) ( ) font(notosanslaoloopedcondensedblack) ( ) font(notosanslaoloopedcondensedextrabold) ( ) font(notosanslaoloopedcondensedextralight) ( ) font(notosanslaoloopedcondensedlight) ( ) font(notosanslaoloopedcondensedmedium) ( ) font(notosanslaoloopedcondensedsemibold) ( ) font(notosanslaoloopedcondensedthin) ( ) font(notosanslaoloopedextrabold) ( ) font(notosanslaoloopedextracondensed) ( ) font(notosanslaoloopedextracondensedblack) ( ) font(notosanslaoloopedextracondensedextrabold) ( ) font(notosanslaoloopedextracondensedextralight) ( ) font(notosanslaoloopedextracondensedlight) ( ) font(notosanslaoloopedextracondensedmedium) ( ) font(notosanslaoloopedextracondensedsemibold) ( ) font(notosanslaoloopedextracondensedthin) ( ) font(notosanslaoloopedextralight) ( ) font(notosanslaoloopedlight) ( ) font(notosanslaoloopedmedium) ( ) font(notosanslaoloopedsemibold) ( ) font(notosanslaoloopedsemicondensed) ( ) font(notosanslaoloopedsemicondensedblack) ( ) font(notosanslaoloopedsemicondensedextrabold) ( ) font(notosanslaoloopedsemicondensedextralight) ( ) font(notosanslaoloopedsemicondensedlight) ( ) font(notosanslaoloopedsemicondensedmedium) ( ) font(notosanslaoloopedsemicondensedsemibold) ( ) font(notosanslaoloopedsemicondensedthin) ( ) font(notosanslaoloopedthin) ( ) metainfo(org.fedoraproject.google-noto-sans-lao-looped-fonts.metainfo.xml) ( ) google-noto-sans-lao-looped-fonts ( =  20240401-5.el10) config(google-noto-sans-lao-looped-fonts) ( =  20240401-5.el10) google-noto-looped-lao-fonts ( =  20240401-5.el10) google-noto-looped-lao-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lao-looped-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lao-looped-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lao-looped-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lao-looped-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lao-looped-vf-fonts = "metainfo() ( ) font(notosanslaolooped) ( ) metainfo(org.fedoraproject.google-noto-sans-lao-looped-vf-fonts.metainfo.xml) ( ) google-noto-sans-lao-looped-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-lao-looped-vf-fonts) ( =  20240401-5.el10) google-noto-looped-lao-ui-vf-fonts ( =  20240401-5.el10) google-noto-looped-lao-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lao-looped-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lao-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lao-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lao-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lao-vf-fonts = "metainfo() ( ) font(notosanslao) ( ) metainfo(org.fedoraproject.google-noto-sans-lao-vf-fonts.metainfo.xml) ( ) google-noto-sans-lao-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-lao-vf-fonts) ( =  20240401-5.el10) google-noto-sans-lao-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lao-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lepcha-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lepcha-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lepcha-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lepcha-fonts = "metainfo() ( ) font(notosanslepcha) ( ) metainfo(org.fedoraproject.google-noto-sans-lepcha-fonts.metainfo.xml) ( ) google-noto-sans-lepcha-fonts ( =  20240401-5.el10) config(google-noto-sans-lepcha-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lepcha-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-limbu-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-limbu-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-limbu-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-limbu-fonts = "metainfo() ( ) font(notosanslimbu) ( ) metainfo(org.fedoraproject.google-noto-sans-limbu-fonts.metainfo.xml) ( ) google-noto-sans-limbu-fonts ( =  20240401-5.el10) config(google-noto-sans-limbu-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-limbu-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-linear-a-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-linear-a-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-linear-a-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-linear-a-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-linear-a-fonts.metainfo.xml) ( ) google-noto-sans-linear-a-fonts ( =  20240401-5.el10) config(google-noto-sans-linear-a-fonts) ( =  20240401-5.el10) google-noto-sans-linear-a-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-linear-a-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-linear-b-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-linear-b-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-linear-b-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-linear-b-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-linear-b-fonts.metainfo.xml) ( ) google-noto-sans-linear-b-fonts ( =  20240401-5.el10) config(google-noto-sans-linear-b-fonts) ( =  20240401-5.el10) google-noto-sans-linear-b-vf-fonts ( =  20240401-5.el10) google-noto-sans-linearb-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-linear-b-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lisu-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lisu-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lisu-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lisu-fonts = "metainfo() ( ) font(notosanslisu) ( ) font(notosanslisumedium) ( ) font(notosanslisusemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-lisu-fonts.metainfo.xml) ( ) google-noto-sans-lisu-fonts ( =  20240401-5.el10) config(google-noto-sans-lisu-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lisu-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lisu-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lisu-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lisu-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lisu-vf-fonts = "metainfo() ( ) font(notosanslisu) ( ) metainfo(org.fedoraproject.google-noto-sans-lisu-vf-fonts.metainfo.xml) ( ) google-noto-sans-lisu-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-lisu-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lisu-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lycian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lycian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lycian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lycian-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-lycian-fonts.metainfo.xml) ( ) google-noto-sans-lycian-fonts ( =  20240401-5.el10) config(google-noto-sans-lycian-fonts) ( =  20240401-5.el10) google-noto-sans-lycian-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lycian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-lydian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-lydian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-lydian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-lydian-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-lydian-fonts.metainfo.xml) ( ) google-noto-sans-lydian-fonts ( =  20240401-5.el10) config(google-noto-sans-lydian-fonts) ( =  20240401-5.el10) google-noto-sans-lydian-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-lydian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-mahajani-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-mahajani-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mahajani-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mahajani-fonts = "metainfo() ( ) font(notosansmahajani) ( ) metainfo(org.fedoraproject.google-noto-sans-mahajani-fonts.metainfo.xml) ( ) google-noto-sans-mahajani-fonts ( =  20240401-5.el10) config(google-noto-sans-mahajani-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mahajani-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-malayalam-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-malayalam-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-malayalam-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-malayalam-fonts = "metainfo() ( ) font(notosansmalayalam) ( ) font(notosansmalayalamblack) ( ) font(notosansmalayalamcondensed) ( ) font(notosansmalayalamcondensedblack) ( ) font(notosansmalayalamcondensedextrabold) ( ) font(notosansmalayalamcondensedextralight) ( ) font(notosansmalayalamcondensedlight) ( ) font(notosansmalayalamcondensedmedium) ( ) font(notosansmalayalamcondensedsemibold) ( ) font(notosansmalayalamcondensedthin) ( ) font(notosansmalayalamextrabold) ( ) font(notosansmalayalamextracondensed) ( ) font(notosansmalayalamextracondensedblack) ( ) font(notosansmalayalamextracondensedextrabold) ( ) font(notosansmalayalamextracondensedextralight) ( ) font(notosansmalayalamextracondensedlight) ( ) font(notosansmalayalamextracondensedmedium) ( ) font(notosansmalayalamextracondensedsemibold) ( ) font(notosansmalayalamextracondensedthin) ( ) font(notosansmalayalamextralight) ( ) font(notosansmalayalamlight) ( ) font(notosansmalayalammedium) ( ) font(notosansmalayalamsemibold) ( ) font(notosansmalayalamsemicondensed) ( ) font(notosansmalayalamsemicondensedblack) ( ) font(notosansmalayalamsemicondensedextrabold) ( ) font(notosansmalayalamsemicondensedextralight) ( ) font(notosansmalayalamsemicondensedlight) ( ) font(notosansmalayalamsemicondensedmedium) ( ) font(notosansmalayalamsemicondensedsemibold) ( ) font(notosansmalayalamsemicondensedthin) ( ) font(notosansmalayalamthin) ( ) metainfo(org.fedoraproject.google-noto-sans-malayalam-fonts.metainfo.xml) ( ) google-noto-sans-malayalam-fonts ( =  20240401-5.el10) config(google-noto-sans-malayalam-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-malayalam-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-malayalam-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-malayalam-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-malayalam-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-malayalam-ui-fonts = "metainfo() ( ) font(notosansmalayalamui) ( ) font(notosansmalayalamuiblack) ( ) font(notosansmalayalamuicondensed) ( ) font(notosansmalayalamuicondensedblack) ( ) font(notosansmalayalamuicondensedextrabold) ( ) font(notosansmalayalamuicondensedextralight) ( ) font(notosansmalayalamuicondensedlight) ( ) font(notosansmalayalamuicondensedmedium) ( ) font(notosansmalayalamuicondensedsemibold) ( ) font(notosansmalayalamuicondensedthin) ( ) font(notosansmalayalamuiextrabold) ( ) font(notosansmalayalamuiextracondensed) ( ) font(notosansmalayalamuiextracondensedblack) ( ) font(notosansmalayalamuiextracondensedextrabold) ( ) font(notosansmalayalamuiextracondensedextralight) ( ) font(notosansmalayalamuiextracondensedlight) ( ) font(notosansmalayalamuiextracondensedmedium) ( ) font(notosansmalayalamuiextracondensedsemibold) ( ) font(notosansmalayalamuiextracondensedthin) ( ) font(notosansmalayalamuiextralight) ( ) font(notosansmalayalamuilight) ( ) font(notosansmalayalamuimedium) ( ) font(notosansmalayalamuisemibold) ( ) font(notosansmalayalamuisemicondensed) ( ) font(notosansmalayalamuisemicondensedblack) ( ) font(notosansmalayalamuisemicondensedextrabold) ( ) font(notosansmalayalamuisemicondensedextralight) ( ) font(notosansmalayalamuisemicondensedlight) ( ) font(notosansmalayalamuisemicondensedmedium) ( ) font(notosansmalayalamuisemicondensedsemibold) ( ) font(notosansmalayalamuisemicondensedthin) ( ) font(notosansmalayalamuithin) ( ) metainfo(org.fedoraproject.google-noto-sans-malayalam-ui-fonts.metainfo.xml) ( ) google-noto-sans-malayalam-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-malayalam-ui-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-malayalam-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-malayalam-ui-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-malayalam-ui-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-malayalam-ui-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-malayalam-ui-vf-fonts = "metainfo() ( ) font(notosansmalayalamui) ( ) metainfo(org.fedoraproject.google-noto-sans-malayalam-ui-vf-fonts.metainfo.xml) ( ) google-noto-sans-malayalam-ui-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-malayalam-ui-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-malayalam-ui-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-malayalam-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-malayalam-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-malayalam-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-malayalam-vf-fonts = "metainfo() ( ) font(notosansmalayalam) ( ) metainfo(org.fedoraproject.google-noto-sans-malayalam-vf-fonts.metainfo.xml) ( ) google-noto-sans-malayalam-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-malayalam-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-malayalam-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-mandaic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-mandaic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mandaic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mandaic-fonts = "metainfo() ( ) font(notosansmandaic) ( ) metainfo(org.fedoraproject.google-noto-sans-mandaic-fonts.metainfo.xml) ( ) google-noto-sans-mandaic-fonts ( =  20240401-5.el10) config(google-noto-sans-mandaic-fonts) ( =  20240401-5.el10) google-noto-sans-mandaic-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mandaic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-manichaean-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-manichaean-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-manichaean-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-manichaean-fonts = "metainfo() ( ) font(notosansmanichaean) ( ) metainfo(org.fedoraproject.google-noto-sans-manichaean-fonts.metainfo.xml) ( ) google-noto-sans-manichaean-fonts ( =  20240401-5.el10) config(google-noto-sans-manichaean-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-manichaean-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-marchen-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-marchen-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-marchen-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-marchen-fonts = "metainfo() ( ) font(notosansmarchen) ( ) metainfo(org.fedoraproject.google-noto-sans-marchen-fonts.metainfo.xml) ( ) google-noto-sans-marchen-fonts ( =  20240401-5.el10) config(google-noto-sans-marchen-fonts) ( =  20240401-5.el10) google-noto-sans-marchen-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-marchen-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-masaram-gondi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-masaram-gondi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-masaram-gondi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-masaram-gondi-fonts = "metainfo() ( ) font(notosansmasaramgondi) ( ) metainfo(org.fedoraproject.google-noto-sans-masaram-gondi-fonts.metainfo.xml) ( ) google-noto-sans-masaram-gondi-fonts ( =  20240401-5.el10) config(google-noto-sans-masaram-gondi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-masaram-gondi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-math-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-math-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-math-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-math-fonts = "metainfo() ( ) font(notosansmath) ( ) metainfo(org.fedoraproject.google-noto-sans-math-fonts.metainfo.xml) ( ) google-noto-sans-math-fonts ( =  20240401-5.el10) config(google-noto-sans-math-fonts) ( =  20240401-5.el10) google-noto-sans-math-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-math-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-mayan-numerals-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-mayan-numerals-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mayan-numerals-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mayan-numerals-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-mayan-numerals-fonts.metainfo.xml) ( ) google-noto-sans-mayan-numerals-fonts ( =  20240401-5.el10) config(google-noto-sans-mayan-numerals-fonts) ( =  20240401-5.el10) google-noto-sans-mayan-numerals-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mayan-numerals-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-medefaidrin-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-medefaidrin-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-medefaidrin-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-medefaidrin-fonts = "metainfo() ( ) font(notosansmedefaidrin) ( ) font(notosansmedefaidrinmedium) ( ) font(notosansmedefaidrinsemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-medefaidrin-fonts.metainfo.xml) ( ) google-noto-sans-medefaidrin-fonts ( =  20240401-5.el10) config(google-noto-sans-medefaidrin-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-medefaidrin-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-medefaidrin-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-medefaidrin-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-medefaidrin-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-medefaidrin-vf-fonts = "metainfo() ( ) font(notosansmedefaidrin) ( ) metainfo(org.fedoraproject.google-noto-sans-medefaidrin-vf-fonts.metainfo.xml) ( ) google-noto-sans-medefaidrin-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-medefaidrin-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-medefaidrin-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-meetei-mayek-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-meetei-mayek-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-meetei-mayek-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-meetei-mayek-fonts = "metainfo() ( ) font(notosansmeeteimayek) ( ) font(notosansmeeteimayekblack) ( ) font(notosansmeeteimayekextrabold) ( ) font(notosansmeeteimayekextralight) ( ) font(notosansmeeteimayeklight) ( ) font(notosansmeeteimayekmedium) ( ) font(notosansmeeteimayeksemibold) ( ) font(notosansmeeteimayekthin) ( ) metainfo(org.fedoraproject.google-noto-sans-meetei-mayek-fonts.metainfo.xml) ( ) google-noto-sans-meetei-mayek-fonts ( =  20240401-5.el10) config(google-noto-sans-meetei-mayek-fonts) ( =  20240401-5.el10) google-noto-sans-meeteimayek-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-meetei-mayek-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-meetei-mayek-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-meetei-mayek-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-meetei-mayek-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-meetei-mayek-vf-fonts = "metainfo() ( ) font(notosansmeeteimayek) ( ) metainfo(org.fedoraproject.google-noto-sans-meetei-mayek-vf-fonts.metainfo.xml) ( ) google-noto-sans-meetei-mayek-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-meetei-mayek-vf-fonts) ( =  20240401-5.el10) google-noto-sans-meeteimayek-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-meetei-mayek-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-mende-kikakui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-mende-kikakui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mende-kikakui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mende-kikakui-fonts = "metainfo() ( ) font(notosansmendekikakui) ( ) metainfo(org.fedoraproject.google-noto-sans-mende-kikakui-fonts.metainfo.xml) ( ) google-noto-sans-mende-kikakui-fonts ( =  20240401-5.el10) config(google-noto-sans-mende-kikakui-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mende-kikakui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-meroitic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-meroitic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-meroitic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-meroitic-fonts = "metainfo() ( ) font(notosansmeroitic) ( ) metainfo(org.fedoraproject.google-noto-sans-meroitic-fonts.metainfo.xml) ( ) google-noto-sans-meroitic-fonts ( =  20240401-5.el10) config(google-noto-sans-meroitic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-meroitic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-miao-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-miao-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-miao-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-miao-fonts = "metainfo() ( ) font(notosansmiao) ( ) metainfo(org.fedoraproject.google-noto-sans-miao-fonts.metainfo.xml) ( ) google-noto-sans-miao-fonts ( =  20240401-5.el10) config(google-noto-sans-miao-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-miao-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-modi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-modi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-modi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-modi-fonts = "metainfo() ( ) font(notosansmodi) ( ) metainfo(org.fedoraproject.google-noto-sans-modi-fonts.metainfo.xml) ( ) google-noto-sans-modi-fonts ( =  20240401-5.el10) config(google-noto-sans-modi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-modi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-mongolian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-mongolian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mongolian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mongolian-fonts = "metainfo() ( ) font(notosansmongolian) ( ) metainfo(org.fedoraproject.google-noto-sans-mongolian-fonts.metainfo.xml) ( ) google-noto-sans-mongolian-fonts ( =  20240401-5.el10) config(google-noto-sans-mongolian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mongolian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-mono-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-mono-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mono-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mono-fonts = "metainfo() ( ) font(notosansmono) ( ) font(notosansmonoblack) ( ) font(notosansmonocondensed) ( ) font(notosansmonocondensedblack) ( ) font(notosansmonocondensedextrabold) ( ) font(notosansmonocondensedextralight) ( ) font(notosansmonocondensedlight) ( ) font(notosansmonocondensedmedium) ( ) font(notosansmonocondensedsemibold) ( ) font(notosansmonocondensedthin) ( ) font(notosansmonoextrabold) ( ) font(notosansmonoextracondensed) ( ) font(notosansmonoextracondensedblack) ( ) font(notosansmonoextracondensedextrabold) ( ) font(notosansmonoextracondensedextralight) ( ) font(notosansmonoextracondensedlight) ( ) font(notosansmonoextracondensedmedium) ( ) font(notosansmonoextracondensedsemibold) ( ) font(notosansmonoextracondensedthin) ( ) font(notosansmonoextralight) ( ) font(notosansmonolight) ( ) font(notosansmonomedium) ( ) font(notosansmonosemibold) ( ) font(notosansmonosemicondensed) ( ) font(notosansmonosemicondensedblack) ( ) font(notosansmonosemicondensedextrabold) ( ) font(notosansmonosemicondensedextralight) ( ) font(notosansmonosemicondensedlight) ( ) font(notosansmonosemicondensedmedium) ( ) font(notosansmonosemicondensedsemibold) ( ) font(notosansmonosemicondensedthin) ( ) font(notosansmonothin) ( ) metainfo(org.fedoraproject.google-noto-sans-mono-fonts.metainfo.xml) ( ) google-noto-sans-mono-fonts ( =  20240401-5.el10) config(google-noto-sans-mono-fonts) ( =  20240401-5.el10) google-noto-mono-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mono-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-mro-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-mro-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-mro-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-mro-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-mro-fonts.metainfo.xml) ( ) google-noto-sans-mro-fonts ( =  20240401-5.el10) config(google-noto-sans-mro-fonts) ( =  20240401-5.el10) google-noto-sans-mro-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-mro-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-multani-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-multani-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-multani-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-multani-fonts = "metainfo() ( ) font(notosansmultani) ( ) metainfo(org.fedoraproject.google-noto-sans-multani-fonts.metainfo.xml) ( ) google-noto-sans-multani-fonts ( =  20240401-5.el10) config(google-noto-sans-multani-fonts) ( =  20240401-5.el10) google-noto-sans-multani-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-multani-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-myanmar-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-myanmar-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-myanmar-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-myanmar-fonts = "metainfo() ( ) font(notosansmyanmar) ( ) font(notosansmyanmarblack) ( ) font(notosansmyanmarcondensed) ( ) font(notosansmyanmarcondensedblack) ( ) font(notosansmyanmarcondensedextrabold) ( ) font(notosansmyanmarcondensedextralight) ( ) font(notosansmyanmarcondensedlight) ( ) font(notosansmyanmarcondensedmedium) ( ) font(notosansmyanmarcondensedsemibold) ( ) font(notosansmyanmarcondensedthin) ( ) font(notosansmyanmarextrabold) ( ) font(notosansmyanmarextracondensed) ( ) font(notosansmyanmarextracondensedblack) ( ) font(notosansmyanmarextracondensedextrabold) ( ) font(notosansmyanmarextracondensedextralight) ( ) font(notosansmyanmarextracondensedlight) ( ) font(notosansmyanmarextracondensedmedium) ( ) font(notosansmyanmarextracondensedsemibold) ( ) font(notosansmyanmarextracondensedthin) ( ) font(notosansmyanmarextralight) ( ) font(notosansmyanmarlight) ( ) font(notosansmyanmarmedium) ( ) font(notosansmyanmarsemibold) ( ) font(notosansmyanmarsemicondensed) ( ) font(notosansmyanmarsemicondensedblack) ( ) font(notosansmyanmarsemicondensedextrabold) ( ) font(notosansmyanmarsemicondensedextralight) ( ) font(notosansmyanmarsemicondensedlight) ( ) font(notosansmyanmarsemicondensedmedium) ( ) font(notosansmyanmarsemicondensedsemibold) ( ) font(notosansmyanmarsemicondensedthin) ( ) font(notosansmyanmarthin) ( ) metainfo(org.fedoraproject.google-noto-sans-myanmar-fonts.metainfo.xml) ( ) google-noto-sans-myanmar-fonts ( =  20240401-5.el10) config(google-noto-sans-myanmar-fonts) ( =  20240401-5.el10) google-noto-sans-myanmar-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-myanmar-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-myanmar-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-myanmar-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-myanmar-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-myanmar-vf-fonts = "metainfo() ( ) font(notosansmyanmar) ( ) metainfo(org.fedoraproject.google-noto-sans-myanmar-vf-fonts.metainfo.xml) ( ) google-noto-sans-myanmar-vf-fonts ( =  20240401-5.el10) google-noto-serif-myanmar-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-myanmar-vf-fonts) ( =  20240401-5.el10) google-noto-sans-myanmar-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-myanmar-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nabataean-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nabataean-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nabataean-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nabataean-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-nabataean-fonts.metainfo.xml) ( ) google-noto-sans-nabataean-fonts ( =  20240401-5.el10) config(google-noto-sans-nabataean-fonts) ( =  20240401-5.el10) google-noto-sans-nabataean-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nabataean-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nag-mundari-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nag-mundari-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nag-mundari-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nag-mundari-fonts = "metainfo() ( ) font(notosansnagmundari) ( ) metainfo(org.fedoraproject.google-noto-sans-nag-mundari-fonts.metainfo.xml) ( ) google-noto-sans-nag-mundari-fonts ( =  20240401-5.el10) config(google-noto-sans-nag-mundari-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nag-mundari-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nag-mundari-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nag-mundari-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nag-mundari-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nag-mundari-vf-fonts = "metainfo() ( ) font(notosansnagmundari) ( ) metainfo(org.fedoraproject.google-noto-sans-nag-mundari-vf-fonts.metainfo.xml) ( ) google-noto-sans-nag-mundari-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-nag-mundari-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nag-mundari-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nandinagari-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nandinagari-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nandinagari-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nandinagari-fonts = "metainfo() ( ) font(notosansnandinagari) ( ) metainfo(org.fedoraproject.google-noto-sans-nandinagari-fonts.metainfo.xml) ( ) google-noto-sans-nandinagari-fonts ( =  20240401-5.el10) config(google-noto-sans-nandinagari-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nandinagari-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-new-tai-lue-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-new-tai-lue-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-new-tai-lue-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-new-tai-lue-fonts = "metainfo() ( ) font(notosansnewtailue) ( ) font(notosansnewtailuemedium) ( ) font(notosansnewtailuesemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-new-tai-lue-fonts.metainfo.xml) ( ) google-noto-sans-new-tai-lue-fonts ( =  20240401-5.el10) config(google-noto-sans-new-tai-lue-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-new-tai-lue-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-new-tai-lue-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-new-tai-lue-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-new-tai-lue-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-new-tai-lue-vf-fonts = "metainfo() ( ) font(notosansnewtailue) ( ) metainfo(org.fedoraproject.google-noto-sans-new-tai-lue-vf-fonts.metainfo.xml) ( ) google-noto-sans-new-tai-lue-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-new-tai-lue-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-new-tai-lue-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-newa-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-newa-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-newa-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-newa-fonts = "metainfo() ( ) font(notosansnewa) ( ) metainfo(org.fedoraproject.google-noto-sans-newa-fonts.metainfo.xml) ( ) google-noto-sans-newa-fonts ( =  20240401-5.el10) config(google-noto-sans-newa-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-newa-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nko-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nko-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nko-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nko-fonts = "metainfo() ( ) font(notosansnko) ( ) metainfo(org.fedoraproject.google-noto-sans-nko-fonts.metainfo.xml) ( ) google-noto-sans-nko-fonts ( =  20240401-5.el10) config(google-noto-sans-nko-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nko-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nko-unjoined-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nko-unjoined-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nko-unjoined-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nko-unjoined-fonts = "metainfo() ( ) font(notosansnkounjoined) ( ) metainfo(org.fedoraproject.google-noto-sans-nko-unjoined-fonts.metainfo.xml) ( ) google-noto-sans-nko-unjoined-fonts ( =  20240401-5.el10) config(google-noto-sans-nko-unjoined-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nko-unjoined-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nko-unjoined-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nko-unjoined-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nko-unjoined-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nko-unjoined-vf-fonts = "metainfo() ( ) font(notosansnkounjoined) ( ) metainfo(org.fedoraproject.google-noto-sans-nko-unjoined-vf-fonts.metainfo.xml) ( ) google-noto-sans-nko-unjoined-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-nko-unjoined-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nko-unjoined-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-nushu-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-nushu-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-nushu-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-nushu-fonts = "metainfo() ( ) font(notosansnushu) ( ) metainfo(org.fedoraproject.google-noto-sans-nushu-fonts.metainfo.xml) ( ) google-noto-sans-nushu-fonts ( =  20240401-5.el10) config(google-noto-sans-nushu-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-nushu-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-ogham-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-ogham-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-ogham-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-ogham-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-ogham-fonts.metainfo.xml) ( ) google-noto-sans-ogham-fonts ( =  20240401-5.el10) config(google-noto-sans-ogham-fonts) ( =  20240401-5.el10) google-noto-sans-ogham-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-ogham-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-ol-chiki-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-ol-chiki-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-ol-chiki-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-ol-chiki-fonts = "metainfo() ( ) font(notosansolchiki) ( ) font(notosansolchikimedium) ( ) font(notosansolchikisemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-ol-chiki-fonts.metainfo.xml) ( ) google-noto-sans-ol-chiki-fonts ( =  20240401-5.el10) config(google-noto-sans-ol-chiki-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-ol-chiki-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-ol-chiki-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-ol-chiki-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-ol-chiki-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-ol-chiki-vf-fonts = "metainfo() ( ) font(notosansolchiki) ( ) metainfo(org.fedoraproject.google-noto-sans-ol-chiki-vf-fonts.metainfo.xml) ( ) google-noto-sans-ol-chiki-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-ol-chiki-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-ol-chiki-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-hungarian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-hungarian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-hungarian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-hungarian-fonts = "metainfo() ( ) font(notosansoldhungarian) ( ) metainfo(org.fedoraproject.google-noto-sans-old-hungarian-fonts.metainfo.xml) ( ) google-noto-sans-old-hungarian-fonts ( =  20240401-5.el10) config(google-noto-sans-old-hungarian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-hungarian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-italic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-italic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-italic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-italic-fonts = "metainfo() ( ) font(notosansolditalic) ( ) metainfo(org.fedoraproject.google-noto-sans-old-italic-fonts.metainfo.xml) ( ) google-noto-sans-old-italic-fonts ( =  20240401-5.el10) config(google-noto-sans-old-italic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-italic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-north-arabian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-north-arabian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-north-arabian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-north-arabian-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-old-north-arabian-fonts.metainfo.xml) ( ) google-noto-sans-old-north-arabian-fonts ( =  20240401-5.el10) config(google-noto-sans-old-north-arabian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-north-arabian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-permic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-permic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-permic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-permic-fonts = "metainfo() ( ) font(notosansoldpermic) ( ) metainfo(org.fedoraproject.google-noto-sans-old-permic-fonts.metainfo.xml) ( ) google-noto-sans-old-permic-fonts ( =  20240401-5.el10) config(google-noto-sans-old-permic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-permic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-persian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-persian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-persian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-persian-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-old-persian-fonts.metainfo.xml) ( ) google-noto-sans-old-persian-fonts ( =  20240401-5.el10) config(google-noto-sans-old-persian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-persian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-sogdian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-sogdian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-sogdian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-sogdian-fonts = "metainfo() ( ) font(notosansoldsogdian) ( ) metainfo(org.fedoraproject.google-noto-sans-old-sogdian-fonts.metainfo.xml) ( ) google-noto-sans-old-sogdian-fonts ( =  20240401-5.el10) config(google-noto-sans-old-sogdian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-sogdian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-south-arabian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-south-arabian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-south-arabian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-south-arabian-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-old-south-arabian-fonts.metainfo.xml) ( ) google-noto-sans-old-south-arabian-fonts ( =  20240401-5.el10) config(google-noto-sans-old-south-arabian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-south-arabian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-old-turkic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-old-turkic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-old-turkic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-old-turkic-fonts = "metainfo() ( ) font(notosansoldturkic) ( ) metainfo(org.fedoraproject.google-noto-sans-old-turkic-fonts.metainfo.xml) ( ) google-noto-sans-old-turkic-fonts ( =  20240401-5.el10) config(google-noto-sans-old-turkic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-old-turkic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-oriya-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-oriya-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-oriya-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-oriya-fonts = "metainfo() ( ) font(notosansoriya) ( ) font(notosansoriyablk) ( ) font(notosansoriyacond) ( ) font(notosansoriyacondblk) ( ) font(notosansoriyacondbold) ( ) font(notosansoriyacondthin) ( ) font(notosansoriyaextcond) ( ) font(notosansoriyaextcondblk) ( ) font(notosansoriyaextcondbold) ( ) font(notosansoriyaextcondthin) ( ) font(notosansoriyathin) ( ) metainfo(org.fedoraproject.google-noto-sans-oriya-fonts.metainfo.xml) ( ) google-noto-sans-oriya-fonts ( =  20240401-5.el10) config(google-noto-sans-oriya-fonts) ( =  20240401-5.el10) google-noto-sans-oriya-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-oriya-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-oriya-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-oriya-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-oriya-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-oriya-vf-fonts = "metainfo() ( ) font(notosansoriya) ( ) metainfo(org.fedoraproject.google-noto-sans-oriya-vf-fonts.metainfo.xml) ( ) google-noto-sans-oriya-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-oriya-vf-fonts) ( =  20240401-5.el10) google-noto-sans-oriya-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-oriya-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-osage-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-osage-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-osage-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-osage-fonts = "metainfo() ( ) font(notosansosage) ( ) metainfo(org.fedoraproject.google-noto-sans-osage-fonts.metainfo.xml) ( ) google-noto-sans-osage-fonts ( =  20240401-5.el10) config(google-noto-sans-osage-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-osage-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-osmanya-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-osmanya-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-osmanya-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-osmanya-fonts = "metainfo() ( ) font(notosansosmanya) ( ) metainfo(org.fedoraproject.google-noto-sans-osmanya-fonts.metainfo.xml) ( ) google-noto-sans-osmanya-fonts ( =  20240401-5.el10) config(google-noto-sans-osmanya-fonts) ( =  20240401-5.el10) google-noto-sans-osmanya-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-osmanya-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-pahawh-hmong-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-pahawh-hmong-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-pahawh-hmong-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-pahawh-hmong-fonts = "metainfo() ( ) font(notosanspahawhhmong) ( ) metainfo(org.fedoraproject.google-noto-sans-pahawh-hmong-fonts.metainfo.xml) ( ) google-noto-sans-pahawh-hmong-fonts ( =  20240401-5.el10) config(google-noto-sans-pahawh-hmong-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-pahawh-hmong-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-palmyrene-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-palmyrene-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-palmyrene-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-palmyrene-fonts = "metainfo() ( ) font(notosanspalmyrene) ( ) metainfo(org.fedoraproject.google-noto-sans-palmyrene-fonts.metainfo.xml) ( ) google-noto-sans-palmyrene-fonts ( =  20240401-5.el10) config(google-noto-sans-palmyrene-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-palmyrene-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-pau-cin-hau-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-pau-cin-hau-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-pau-cin-hau-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-pau-cin-hau-fonts = "metainfo() ( ) font(notosanspaucinhau) ( ) metainfo(org.fedoraproject.google-noto-sans-pau-cin-hau-fonts.metainfo.xml) ( ) google-noto-sans-pau-cin-hau-fonts ( =  20240401-5.el10) config(google-noto-sans-pau-cin-hau-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-pau-cin-hau-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-phagspa-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-phagspa-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-phagspa-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-phagspa-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-phagspa-fonts.metainfo.xml) ( ) google-noto-sans-phagspa-fonts ( =  20240401-5.el10) config(google-noto-sans-phagspa-fonts) ( =  20240401-5.el10) google-noto-sans-phags-pa-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-phagspa-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-phoenician-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-phoenician-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-phoenician-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-phoenician-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-phoenician-fonts.metainfo.xml) ( ) google-noto-sans-phoenician-fonts ( =  20240401-5.el10) config(google-noto-sans-phoenician-fonts) ( =  20240401-5.el10) google-noto-sans-phenician-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-phoenician-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-psalter-pahlavi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-psalter-pahlavi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-psalter-pahlavi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-psalter-pahlavi-fonts = "metainfo() ( ) font(notosanspsalterpahlavi) ( ) metainfo(org.fedoraproject.google-noto-sans-psalter-pahlavi-fonts.metainfo.xml) ( ) google-noto-sans-psalter-pahlavi-fonts ( =  20240401-5.el10) config(google-noto-sans-psalter-pahlavi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-psalter-pahlavi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-rejang-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-rejang-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-rejang-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-rejang-fonts = "metainfo() ( ) font(notosansrejang) ( ) metainfo(org.fedoraproject.google-noto-sans-rejang-fonts.metainfo.xml) ( ) google-noto-sans-rejang-fonts ( =  20240401-5.el10) config(google-noto-sans-rejang-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-rejang-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-runic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-runic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-runic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-runic-fonts = "metainfo() ( ) font(notosansrunic) ( ) metainfo(org.fedoraproject.google-noto-sans-runic-fonts.metainfo.xml) ( ) google-noto-sans-runic-fonts ( =  20240401-5.el10) config(google-noto-sans-runic-fonts) ( =  20240401-5.el10) google-noto-sans-runic-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-runic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-samaritan-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-samaritan-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-samaritan-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-samaritan-fonts = "metainfo() ( ) font(notosanssamaritan) ( ) metainfo(org.fedoraproject.google-noto-sans-samaritan-fonts.metainfo.xml) ( ) google-noto-sans-samaritan-fonts ( =  20240401-5.el10) config(google-noto-sans-samaritan-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-samaritan-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-saurashtra-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-saurashtra-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-saurashtra-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-saurashtra-fonts = "metainfo() ( ) font(notosanssaurashtra) ( ) metainfo(org.fedoraproject.google-noto-sans-saurashtra-fonts.metainfo.xml) ( ) google-noto-sans-saurashtra-fonts ( =  20240401-5.el10) config(google-noto-sans-saurashtra-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-saurashtra-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sharada-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sharada-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sharada-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sharada-fonts = "metainfo() ( ) font(notosanssharada) ( ) metainfo(org.fedoraproject.google-noto-sans-sharada-fonts.metainfo.xml) ( ) google-noto-sans-sharada-fonts ( =  20240401-5.el10) config(google-noto-sans-sharada-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sharada-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-shavian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-shavian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-shavian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-shavian-fonts = "metainfo() ( ) font(notosansshavian) ( ) metainfo(org.fedoraproject.google-noto-sans-shavian-fonts.metainfo.xml) ( ) google-noto-sans-shavian-fonts ( =  20240401-5.el10) config(google-noto-sans-shavian-fonts) ( =  20240401-5.el10) google-noto-sans-shavian-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-shavian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-siddham-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-siddham-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-siddham-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-siddham-fonts = "metainfo() ( ) font(notosanssiddham) ( ) metainfo(org.fedoraproject.google-noto-sans-siddham-fonts.metainfo.xml) ( ) google-noto-sans-siddham-fonts ( =  20240401-5.el10) config(google-noto-sans-siddham-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-siddham-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-signwriting-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-signwriting-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-signwriting-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-signwriting-fonts = "metainfo() ( ) font(notosanssignwriting) ( ) metainfo(org.fedoraproject.google-noto-sans-signwriting-fonts.metainfo.xml) ( ) google-noto-sans-signwriting-fonts ( =  20240401-5.el10) config(google-noto-sans-signwriting-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-signwriting-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sinhala-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sinhala-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sinhala-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sinhala-fonts = "metainfo() ( ) font(notosanssinhala) ( ) font(notosanssinhalablack) ( ) font(notosanssinhalacondensed) ( ) font(notosanssinhalacondensedblack) ( ) font(notosanssinhalacondensedextrabold) ( ) font(notosanssinhalacondensedextralight) ( ) font(notosanssinhalacondensedlight) ( ) font(notosanssinhalacondensedmedium) ( ) font(notosanssinhalacondensedsemibold) ( ) font(notosanssinhalacondensedthin) ( ) font(notosanssinhalaextrabold) ( ) font(notosanssinhalaextracondensed) ( ) font(notosanssinhalaextracondensedblack) ( ) font(notosanssinhalaextracondensedextrabold) ( ) font(notosanssinhalaextracondensedextralight) ( ) font(notosanssinhalaextracondensedlight) ( ) font(notosanssinhalaextracondensedmedium) ( ) font(notosanssinhalaextracondensedsemibold) ( ) font(notosanssinhalaextracondensedthin) ( ) font(notosanssinhalaextralight) ( ) font(notosanssinhalalight) ( ) font(notosanssinhalamedium) ( ) font(notosanssinhalasemibold) ( ) font(notosanssinhalasemicondensed) ( ) font(notosanssinhalasemicondensedblack) ( ) font(notosanssinhalasemicondensedextrabold) ( ) font(notosanssinhalasemicondensedextralight) ( ) font(notosanssinhalasemicondensedlight) ( ) font(notosanssinhalasemicondensedmedium) ( ) font(notosanssinhalasemicondensedsemibold) ( ) font(notosanssinhalasemicondensedthin) ( ) font(notosanssinhalathin) ( ) metainfo(org.fedoraproject.google-noto-sans-sinhala-fonts.metainfo.xml) ( ) google-noto-sans-sinhala-fonts ( =  20240401-5.el10) config(google-noto-sans-sinhala-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sinhala-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sinhala-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sinhala-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sinhala-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sinhala-ui-fonts = "metainfo() ( ) font(notosanssinhalaui) ( ) font(notosanssinhalauiblack) ( ) font(notosanssinhalauicondensed) ( ) font(notosanssinhalauicondensedblack) ( ) font(notosanssinhalauicondensedextrabold) ( ) font(notosanssinhalauicondensedextralight) ( ) font(notosanssinhalauicondensedlight) ( ) font(notosanssinhalauicondensedmedium) ( ) font(notosanssinhalauicondensedsemibold) ( ) font(notosanssinhalauicondensedthin) ( ) font(notosanssinhalauiextrabold) ( ) font(notosanssinhalauiextracondensed) ( ) font(notosanssinhalauiextracondensedblack) ( ) font(notosanssinhalauiextracondensedextrabold) ( ) font(notosanssinhalauiextracondensedextralight) ( ) font(notosanssinhalauiextracondensedlight) ( ) font(notosanssinhalauiextracondensedmedium) ( ) font(notosanssinhalauiextracondensedsemibold) ( ) font(notosanssinhalauiextracondensedthin) ( ) font(notosanssinhalauiextralight) ( ) font(notosanssinhalauilight) ( ) font(notosanssinhalauimedium) ( ) font(notosanssinhalauisemibold) ( ) font(notosanssinhalauisemicondensed) ( ) font(notosanssinhalauisemicondensedblack) ( ) font(notosanssinhalauisemicondensedextrabold) ( ) font(notosanssinhalauisemicondensedextralight) ( ) font(notosanssinhalauisemicondensedlight) ( ) font(notosanssinhalauisemicondensedmedium) ( ) font(notosanssinhalauisemicondensedsemibold) ( ) font(notosanssinhalauisemicondensedthin) ( ) font(notosanssinhalauithin) ( ) metainfo(org.fedoraproject.google-noto-sans-sinhala-ui-fonts.metainfo.xml) ( ) google-noto-sans-sinhala-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-sinhala-ui-fonts) ( =  20240401-5.el10) google-noto-sans-sinhala-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sinhala-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sinhala-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sinhala-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sinhala-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sinhala-vf-fonts = "metainfo() ( ) font(notosanssinhala) ( ) metainfo(org.fedoraproject.google-noto-sans-sinhala-vf-fonts.metainfo.xml) ( ) google-noto-sans-sinhala-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-sinhala-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sinhala-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sogdian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sogdian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sogdian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sogdian-fonts = "metainfo() ( ) font(notosanssogdian) ( ) metainfo(org.fedoraproject.google-noto-sans-sogdian-fonts.metainfo.xml) ( ) google-noto-sans-sogdian-fonts ( =  20240401-5.el10) config(google-noto-sans-sogdian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sogdian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sora-sompeng-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sora-sompeng-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sora-sompeng-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sora-sompeng-fonts = "metainfo() ( ) font(notosanssorasompeng) ( ) font(notosanssorasompengmedium) ( ) font(notosanssorasompengsemi) ( ) metainfo(org.fedoraproject.google-noto-sans-sora-sompeng-fonts.metainfo.xml) ( ) google-noto-sans-sora-sompeng-fonts ( =  20240401-5.el10) config(google-noto-sans-sora-sompeng-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sora-sompeng-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sora-sompeng-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sora-sompeng-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sora-sompeng-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sora-sompeng-vf-fonts = "metainfo() ( ) font(notosanssorasompeng) ( ) metainfo(org.fedoraproject.google-noto-sans-sora-sompeng-vf-fonts.metainfo.xml) ( ) google-noto-sans-sora-sompeng-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-sora-sompeng-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sora-sompeng-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-soyombo-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-soyombo-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-soyombo-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-soyombo-fonts = "metainfo() ( ) font(notosanssoyombo) ( ) metainfo(org.fedoraproject.google-noto-sans-soyombo-fonts.metainfo.xml) ( ) google-noto-sans-soyombo-fonts ( =  20240401-5.el10) config(google-noto-sans-soyombo-fonts) ( =  20240401-5.el10) google-noto-sans-soyombo-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-soyombo-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sundanese-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sundanese-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sundanese-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sundanese-fonts = "metainfo() ( ) font(notosanssundanese) ( ) metainfo(org.fedoraproject.google-noto-sans-sundanese-fonts.metainfo.xml) ( ) google-noto-sans-sundanese-fonts ( =  20240401-5.el10) config(google-noto-sans-sundanese-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sundanese-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-sundanese-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-sundanese-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-sundanese-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-sundanese-vf-fonts = "metainfo() ( ) font(notosanssundanese) ( ) metainfo(org.fedoraproject.google-noto-sans-sundanese-vf-fonts.metainfo.xml) ( ) google-noto-sans-sundanese-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-sundanese-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-sundanese-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-syloti-nagri-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-syloti-nagri-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-syloti-nagri-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-syloti-nagri-fonts = "metainfo() ( ) font(notosanssylotinagri) ( ) metainfo(org.fedoraproject.google-noto-sans-syloti-nagri-fonts.metainfo.xml) ( ) google-noto-sans-syloti-nagri-fonts ( =  20240401-5.el10) config(google-noto-sans-syloti-nagri-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-syloti-nagri-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-symbols-2-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-symbols-2-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-symbols-2-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-symbols-2-fonts = "metainfo() ( ) font(notosanssymbols2) ( ) metainfo(org.fedoraproject.google-noto-sans-symbols-2-fonts.metainfo.xml) ( ) google-noto-sans-symbols-2-fonts ( =  20240401-5.el10) config(google-noto-sans-symbols-2-fonts) ( =  20240401-5.el10) google-noto-sans-symbols2-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-symbols-2-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-symbols-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-symbols-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-symbols-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-symbols-fonts = "metainfo() ( ) font(notosanssymbols) ( ) font(notosanssymbolsblack) ( ) font(notosanssymbolsextrabold) ( ) font(notosanssymbolsextralight) ( ) font(notosanssymbolslight) ( ) font(notosanssymbolsmedium) ( ) font(notosanssymbolssemibold) ( ) font(notosanssymbolsthin) ( ) metainfo(org.fedoraproject.google-noto-sans-symbols-fonts.metainfo.xml) ( ) google-noto-sans-symbols-fonts ( =  20240401-5.el10) config(google-noto-sans-symbols-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-symbols-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-symbols-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-symbols-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-symbols-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-symbols-vf-fonts = "metainfo() ( ) font(notosanssymbols) ( ) metainfo(org.fedoraproject.google-noto-sans-symbols-vf-fonts.metainfo.xml) ( ) google-noto-sans-symbols-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-symbols-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-symbols-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-syriac-eastern-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-syriac-eastern-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-syriac-eastern-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-syriac-eastern-fonts = "metainfo() ( ) font(notosanssyriaceastern) ( ) font(notosanssyriaceasternblack) ( ) font(notosanssyriaceasternthin) ( ) metainfo(org.fedoraproject.google-noto-sans-syriac-eastern-fonts.metainfo.xml) ( ) google-noto-sans-syriac-eastern-fonts ( =  20240401-5.el10) config(google-noto-sans-syriac-eastern-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-syriac-eastern-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-syriac-eastern-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-syriac-eastern-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-syriac-eastern-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-syriac-eastern-vf-fonts = "metainfo() ( ) font(notosanssyriaceastern) ( ) metainfo(org.fedoraproject.google-noto-sans-syriac-eastern-vf-fonts.metainfo.xml) ( ) google-noto-sans-syriac-eastern-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-syriac-eastern-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-syriac-eastern-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-syriac-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-syriac-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-syriac-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-syriac-fonts = "metainfo() ( ) font(notosanssyriac) ( ) font(notosanssyriacblack) ( ) font(notosanssyriacthin) ( ) metainfo(org.fedoraproject.google-noto-sans-syriac-fonts.metainfo.xml) ( ) google-noto-sans-syriac-fonts ( =  20240401-5.el10) config(google-noto-sans-syriac-fonts) ( =  20240401-5.el10) google-noto-sans-syriac-estrangela-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-syriac-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-syriac-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-syriac-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-syriac-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-syriac-vf-fonts = "metainfo() ( ) font(notosanssyriac) ( ) metainfo(org.fedoraproject.google-noto-sans-syriac-vf-fonts.metainfo.xml) ( ) google-noto-sans-syriac-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-syriac-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-syriac-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-syriac-western-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-syriac-western-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-syriac-western-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-syriac-western-fonts = "metainfo() ( ) font(notosanssyriacwestern) ( ) font(notosanssyriacwesternblack) ( ) font(notosanssyriacwesternthin) ( ) metainfo(org.fedoraproject.google-noto-sans-syriac-western-fonts.metainfo.xml) ( ) google-noto-sans-syriac-western-fonts ( =  20240401-5.el10) config(google-noto-sans-syriac-western-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-syriac-western-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-syriac-western-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-syriac-western-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-syriac-western-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-syriac-western-vf-fonts = "metainfo() ( ) font(notosanssyriacwestern) ( ) metainfo(org.fedoraproject.google-noto-sans-syriac-western-vf-fonts.metainfo.xml) ( ) google-noto-sans-syriac-western-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-syriac-western-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-syriac-western-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tagalog-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tagalog-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tagalog-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tagalog-fonts = "metainfo() ( ) font(notosanstagalog) ( ) metainfo(org.fedoraproject.google-noto-sans-tagalog-fonts.metainfo.xml) ( ) google-noto-sans-tagalog-fonts ( =  20240401-5.el10) config(google-noto-sans-tagalog-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tagalog-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tagbanwa-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tagbanwa-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tagbanwa-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tagbanwa-fonts = "metainfo() ( ) font(notosanstagbanwa) ( ) metainfo(org.fedoraproject.google-noto-sans-tagbanwa-fonts.metainfo.xml) ( ) google-noto-sans-tagbanwa-fonts ( =  20240401-5.el10) config(google-noto-sans-tagbanwa-fonts) ( =  20240401-5.el10) google-noto-sans-tagbanwa-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tagbanwa-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tai-le-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tai-le-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tai-le-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tai-le-fonts = "metainfo() ( ) font(notosanstaile) ( ) metainfo(org.fedoraproject.google-noto-sans-tai-le-fonts.metainfo.xml) ( ) google-noto-sans-tai-le-fonts ( =  20240401-5.el10) config(google-noto-sans-tai-le-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tai-le-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tai-tham-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tai-tham-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tai-tham-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tai-tham-fonts = "metainfo() ( ) font(notosanstaitham) ( ) font(notosanstaithammedium) ( ) font(notosanstaithamsemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-tai-tham-fonts.metainfo.xml) ( ) google-noto-sans-tai-tham-fonts ( =  20240401-5.el10) config(google-noto-sans-tai-tham-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tai-tham-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tai-tham-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tai-tham-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tai-tham-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tai-tham-vf-fonts = "metainfo() ( ) font(notosanstaitham) ( ) metainfo(org.fedoraproject.google-noto-sans-tai-tham-vf-fonts.metainfo.xml) ( ) google-noto-sans-tai-tham-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-tai-tham-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tai-tham-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tai-viet-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tai-viet-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tai-viet-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tai-viet-fonts = "metainfo() ( ) font(notosanstaiviet) ( ) metainfo(org.fedoraproject.google-noto-sans-tai-viet-fonts.metainfo.xml) ( ) google-noto-sans-tai-viet-fonts ( =  20240401-5.el10) config(google-noto-sans-tai-viet-fonts) ( =  20240401-5.el10) google-noto-sans-tai-viet-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tai-viet-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-takri-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-takri-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-takri-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-takri-fonts = "metainfo() ( ) font(notosanstakri) ( ) metainfo(org.fedoraproject.google-noto-sans-takri-fonts.metainfo.xml) ( ) google-noto-sans-takri-fonts ( =  20240401-5.el10) config(google-noto-sans-takri-fonts) ( =  20240401-5.el10) google-noto-sans-takri-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-takri-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tamil-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tamil-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tamil-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tamil-fonts = "metainfo() ( ) font(notosanstamil) ( ) font(notosanstamilblack) ( ) font(notosanstamilcondensed) ( ) font(notosanstamilcondensedblack) ( ) font(notosanstamilcondensedextrabold) ( ) font(notosanstamilcondensedextralight) ( ) font(notosanstamilcondensedlight) ( ) font(notosanstamilcondensedmedium) ( ) font(notosanstamilcondensedsemibold) ( ) font(notosanstamilcondensedthin) ( ) font(notosanstamilextrabold) ( ) font(notosanstamilextracondensed) ( ) font(notosanstamilextracondensedblack) ( ) font(notosanstamilextracondensedextrabold) ( ) font(notosanstamilextracondensedextralight) ( ) font(notosanstamilextracondensedlight) ( ) font(notosanstamilextracondensedmedium) ( ) font(notosanstamilextracondensedsemibold) ( ) font(notosanstamilextracondensedthin) ( ) font(notosanstamilextralight) ( ) font(notosanstamillight) ( ) font(notosanstamilmedium) ( ) font(notosanstamilsemibold) ( ) font(notosanstamilsemicondensed) ( ) font(notosanstamilsemicondensedblack) ( ) font(notosanstamilsemicondensedextralight) ( ) font(notosanstamilsemicondensedlight) ( ) font(notosanstamilsemicondensedmedium) ( ) font(notosanstamilsemicondensedsemibold) ( ) font(notosanstamilsemicondensedthin) ( ) font(notosanstamilthin) ( ) metainfo(org.fedoraproject.google-noto-sans-tamil-fonts.metainfo.xml) ( ) google-noto-sans-tamil-fonts ( =  20240401-5.el10) config(google-noto-sans-tamil-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tamil-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tamil-supplement-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tamil-supplement-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tamil-supplement-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tamil-supplement-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-tamil-supplement-fonts.metainfo.xml) ( ) google-noto-sans-tamil-supplement-fonts ( =  20240401-5.el10) config(google-noto-sans-tamil-supplement-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tamil-supplement-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tamil-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tamil-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tamil-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tamil-ui-fonts = "metainfo() ( ) font(notosanstamilui) ( ) font(notosanstamiluiblack) ( ) font(notosanstamiluicondensed) ( ) font(notosanstamiluicondensedblack) ( ) font(notosanstamiluicondensedextrabold) ( ) font(notosanstamiluicondensedextralight) ( ) font(notosanstamiluicondensedlight) ( ) font(notosanstamiluicondensedmedium) ( ) font(notosanstamiluicondensedsemibold) ( ) font(notosanstamiluicondensedthin) ( ) font(notosanstamiluiextrabold) ( ) font(notosanstamiluiextracondensed) ( ) font(notosanstamiluiextracondensedblack) ( ) font(notosanstamiluiextracondensedextrabold) ( ) font(notosanstamiluiextracondensedextralight) ( ) font(notosanstamiluiextracondensedlight) ( ) font(notosanstamiluiextracondensedmedium) ( ) font(notosanstamiluiextracondensedsemibold) ( ) font(notosanstamiluiextracondensedthin) ( ) font(notosanstamiluiextralight) ( ) font(notosanstamiluilight) ( ) font(notosanstamiluimedium) ( ) font(notosanstamiluisemibold) ( ) font(notosanstamiluisemicondensed) ( ) font(notosanstamiluisemicondensedblack) ( ) font(notosanstamiluisemicondensedextralight) ( ) font(notosanstamiluisemicondensedlight) ( ) font(notosanstamiluisemicondensedmedium) ( ) font(notosanstamiluisemicondensedsemibold) ( ) font(notosanstamiluisemicondensedthin) ( ) font(notosanstamiluithin) ( ) metainfo(org.fedoraproject.google-noto-sans-tamil-ui-fonts.metainfo.xml) ( ) google-noto-sans-tamil-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-tamil-ui-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tamil-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tamil-ui-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tamil-ui-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tamil-ui-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tamil-ui-vf-fonts = "metainfo() ( ) font(notosanstamilui) ( ) metainfo(org.fedoraproject.google-noto-sans-tamil-ui-vf-fonts.metainfo.xml) ( ) google-noto-sans-tamil-ui-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-tamil-ui-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tamil-ui-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tamil-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tamil-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tamil-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tamil-vf-fonts = "metainfo() ( ) font(notosanstamil) ( ) metainfo(org.fedoraproject.google-noto-sans-tamil-vf-fonts.metainfo.xml) ( ) google-noto-sans-tamil-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-tamil-vf-fonts) ( =  20240401-5.el10) google-noto-sans-tamil-supplement-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tamil-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tangsa-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tangsa-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tangsa-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tangsa-fonts = "metainfo() ( ) font(notosanstangsa) ( ) font(notosanstangsamedium) ( ) font(notosanstangsasemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-tangsa-fonts.metainfo.xml) ( ) google-noto-sans-tangsa-fonts ( =  20240401-5.el10) config(google-noto-sans-tangsa-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tangsa-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tangsa-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tangsa-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tangsa-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tangsa-vf-fonts = "metainfo() ( ) font(notosanstangsa) ( ) metainfo(org.fedoraproject.google-noto-sans-tangsa-vf-fonts.metainfo.xml) ( ) google-noto-sans-tangsa-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-tangsa-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tangsa-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-telugu-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-telugu-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-telugu-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-telugu-fonts = "metainfo() ( ) font(notosanstelugu) ( ) font(notosanstelugublack) ( ) font(notosanstelugucondensed) ( ) font(notosanstelugucondensedblack) ( ) font(notosanstelugucondensedextrabold) ( ) font(notosanstelugucondensedextralight) ( ) font(notosanstelugucondensedlight) ( ) font(notosanstelugucondensedmedium) ( ) font(notosanstelugucondensedsemibold) ( ) font(notosanstelugucondensedthin) ( ) font(notosansteluguextrabold) ( ) font(notosansteluguextracondensed) ( ) font(notosansteluguextracondensedblack) ( ) font(notosansteluguextracondensedextrabold) ( ) font(notosansteluguextracondensedextralight) ( ) font(notosansteluguextracondensedlight) ( ) font(notosansteluguextracondensedmedium) ( ) font(notosansteluguextracondensedsemibold) ( ) font(notosansteluguextracondensedthin) ( ) font(notosansteluguextralight) ( ) font(notosanstelugulight) ( ) font(notosanstelugumedium) ( ) font(notosanstelugusemibold) ( ) font(notosanstelugusemicondensed) ( ) font(notosanstelugusemicondensedblack) ( ) font(notosanstelugusemicondensedextrabold) ( ) font(notosanstelugusemicondensedextralight) ( ) font(notosanstelugusemicondensedlight) ( ) font(notosanstelugusemicondensedmedium) ( ) font(notosanstelugusemicondensedsemibold) ( ) font(notosanstelugusemicondensedthin) ( ) font(notosansteluguthin) ( ) metainfo(org.fedoraproject.google-noto-sans-telugu-fonts.metainfo.xml) ( ) google-noto-sans-telugu-fonts ( =  20240401-5.el10) config(google-noto-sans-telugu-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-telugu-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-telugu-ui-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-telugu-ui-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-telugu-ui-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-telugu-ui-fonts = "metainfo() ( ) font(notosansteluguui) ( ) font(notosansteluguuiblack) ( ) font(notosansteluguuicondensed) ( ) font(notosansteluguuicondensedblack) ( ) font(notosansteluguuicondensedextrabold) ( ) font(notosansteluguuicondensedextralight) ( ) font(notosansteluguuicondensedlight) ( ) font(notosansteluguuicondensedmedium) ( ) font(notosansteluguuicondensedsemibold) ( ) font(notosansteluguuicondensedthin) ( ) font(notosansteluguuiextrabold) ( ) font(notosansteluguuiextracondensed) ( ) font(notosansteluguuiextracondensedblack) ( ) font(notosansteluguuiextracondensedextrabold) ( ) font(notosansteluguuiextracondensedextralight) ( ) font(notosansteluguuiextracondensedlight) ( ) font(notosansteluguuiextracondensedmedium) ( ) font(notosansteluguuiextracondensedsemibold) ( ) font(notosansteluguuiextracondensedthin) ( ) font(notosansteluguuiextralight) ( ) font(notosansteluguuilight) ( ) font(notosansteluguuimedium) ( ) font(notosansteluguuisemibold) ( ) font(notosansteluguuisemicondensed) ( ) font(notosansteluguuisemicondensedblack) ( ) font(notosansteluguuisemicondensedextrabold) ( ) font(notosansteluguuisemicondensedextralight) ( ) font(notosansteluguuisemicondensedlight) ( ) font(notosansteluguuisemicondensedmedium) ( ) font(notosansteluguuisemicondensedsemibold) ( ) font(notosansteluguuisemicondensedthin) ( ) font(notosansteluguuithin) ( ) metainfo(org.fedoraproject.google-noto-sans-telugu-ui-fonts.metainfo.xml) ( ) google-noto-sans-telugu-ui-fonts ( =  20240401-5.el10) config(google-noto-sans-telugu-ui-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-telugu-ui-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-telugu-ui-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-telugu-ui-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-telugu-ui-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-telugu-ui-vf-fonts = "metainfo() ( ) font(notosansteluguui) ( ) metainfo(org.fedoraproject.google-noto-sans-telugu-ui-vf-fonts.metainfo.xml) ( ) google-noto-sans-telugu-ui-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-telugu-ui-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-telugu-ui-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-telugu-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-telugu-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-telugu-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-telugu-vf-fonts = "metainfo() ( ) font(notosanstelugu) ( ) metainfo(org.fedoraproject.google-noto-sans-telugu-vf-fonts.metainfo.xml) ( ) google-noto-sans-telugu-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-telugu-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-telugu-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-thaana-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-thaana-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-thaana-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-thaana-fonts = "metainfo() ( ) font(notosansthaana) ( ) font(notosansthaanablack) ( ) font(notosansthaanaextrabold) ( ) font(notosansthaanaextralight) ( ) font(notosansthaanalight) ( ) font(notosansthaanamedium) ( ) font(notosansthaanasemibold) ( ) font(notosansthaanathin) ( ) metainfo(org.fedoraproject.google-noto-sans-thaana-fonts.metainfo.xml) ( ) google-noto-sans-thaana-fonts ( =  20240401-5.el10) config(google-noto-sans-thaana-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-thaana-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-thaana-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-thaana-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-thaana-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-thaana-vf-fonts = "metainfo() ( ) font(notosansthaana) ( ) metainfo(org.fedoraproject.google-noto-sans-thaana-vf-fonts.metainfo.xml) ( ) google-noto-sans-thaana-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-thaana-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-thaana-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-thai-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-thai-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-thai-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-thai-fonts = "metainfo() ( ) font(notosansthai) ( ) font(notosansthaiblk) ( ) font(notosansthaicond) ( ) font(notosansthaicondblk) ( ) font(notosansthaicondextbd) ( ) font(notosansthaicondextlt) ( ) font(notosansthaicondlight) ( ) font(notosansthaicondmed) ( ) font(notosansthaicondsembd) ( ) font(notosansthaicondthin) ( ) font(notosansthaiextbd) ( ) font(notosansthaiextcond) ( ) font(notosansthaiextcondblk) ( ) font(notosansthaiextcondextbd) ( ) font(notosansthaiextcondextlt) ( ) font(notosansthaiextcondlight) ( ) font(notosansthaiextcondmed) ( ) font(notosansthaiextcondsembd) ( ) font(notosansthaiextcondthin) ( ) font(notosansthaiextlt) ( ) font(notosansthailight) ( ) font(notosansthaimed) ( ) font(notosansthaisembd) ( ) font(notosansthaisemcond) ( ) font(notosansthaisemcondblk) ( ) font(notosansthaisemcondextbd) ( ) font(notosansthaisemcondextlt) ( ) font(notosansthaisemcondlight) ( ) font(notosansthaisemcondmed) ( ) font(notosansthaisemcondsembd) ( ) font(notosansthaisemcondthin) ( ) font(notosansthaithin) ( ) metainfo(org.fedoraproject.google-noto-sans-thai-fonts.metainfo.xml) ( ) google-noto-sans-thai-fonts ( =  20240401-5.el10) config(google-noto-sans-thai-fonts) ( =  20240401-5.el10) google-noto-sans-thai-ui-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-thai-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-thai-looped-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-thai-looped-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-thai-looped-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-thai-looped-fonts = "metainfo() ( ) font(notosansthailooped) ( ) font(notosansthailoopedblack) ( ) font(notosansthailoopedcondensed) ( ) font(notosansthailoopedcondensedblack) ( ) font(notosansthailoopedcondensedextrabold) ( ) font(notosansthailoopedcondensedextralight) ( ) font(notosansthailoopedcondensedlight) ( ) font(notosansthailoopedcondensedmedium) ( ) font(notosansthailoopedcondensedsemibold) ( ) font(notosansthailoopedcondensedthin) ( ) font(notosansthailoopedextrabold) ( ) font(notosansthailoopedextracondensed) ( ) font(notosansthailoopedextracondensedblack) ( ) font(notosansthailoopedextracondensedextrabold) ( ) font(notosansthailoopedextracondensedextralight) ( ) font(notosansthailoopedextracondensedlight) ( ) font(notosansthailoopedextracondensedmedium) ( ) font(notosansthailoopedextracondensedsemibold) ( ) font(notosansthailoopedextracondensedthin) ( ) font(notosansthailoopedextralight) ( ) font(notosansthailoopedlight) ( ) font(notosansthailoopedmedium) ( ) font(notosansthailoopedsemibold) ( ) font(notosansthailoopedsemicondensed) ( ) font(notosansthailoopedsemicondensedblack) ( ) font(notosansthailoopedsemicondensedextrabold) ( ) font(notosansthailoopedsemicondensedextralight) ( ) font(notosansthailoopedsemicondensedlight) ( ) font(notosansthailoopedsemicondensedmedium) ( ) font(notosansthailoopedsemicondensedsemibold) ( ) font(notosansthailoopedsemicondensedthin) ( ) font(notosansthailoopedthin) ( ) metainfo(org.fedoraproject.google-noto-sans-thai-looped-fonts.metainfo.xml) ( ) google-noto-sans-thai-looped-fonts ( =  20240401-5.el10) config(google-noto-sans-thai-looped-fonts) ( =  20240401-5.el10) google-noto-looped-thai-fonts ( =  20240401-5.el10) google-noto-looped-thai-ui-fonts ( =  20240401-5.el10) google-noto-looped-thai-ui-vf-fonts ( =  20240401-5.el10) google-noto-looped-thai-vf-fonts ( =  20240401-5.el10) google-noto-sans-thai-looped-vf-fonts ( =  20240401-5.el10) google-noto-sansthai-looped-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-thai-looped-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-thai-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-thai-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-thai-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-thai-vf-fonts = "metainfo() ( ) font(notosansthai) ( ) metainfo(org.fedoraproject.google-noto-sans-thai-vf-fonts.metainfo.xml) ( ) google-noto-sans-thai-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-thai-vf-fonts) ( =  20240401-5.el10) google-noto-sans-thai-ui-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-thai-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-adrar-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-adrar-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-adrar-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-adrar-fonts = "metainfo() ( ) font(notosanstifinaghadrar) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-adrar-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-adrar-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-adrar-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-adrar-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-agraw-imazighen-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-agraw-imazighen-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-agraw-imazighen-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-agraw-imazighen-fonts = "metainfo() ( ) font(notosanstifinaghagrawimazighen) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-agraw-imazighen-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-agraw-imazighen-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-agraw-imazighen-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-agraw-imazighen-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-ahaggar-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-ahaggar-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-ahaggar-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-ahaggar-fonts = "metainfo() ( ) font(notosanstifinaghahaggar) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-ahaggar-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-ahaggar-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-ahaggar-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-ahaggar-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-air-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-air-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-air-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-air-fonts = "metainfo() ( ) font(notosanstifinaghair) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-air-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-air-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-air-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-air-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-apt-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-apt-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-apt-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-apt-fonts = "metainfo() ( ) font(notosanstifinaghapt) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-apt-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-apt-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-apt-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-apt-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-azawagh-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-azawagh-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-azawagh-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-azawagh-fonts = "metainfo() ( ) font(notosanstifinaghazawagh) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-azawagh-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-azawagh-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-azawagh-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-azawagh-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-fonts = "metainfo() ( ) font(notosanstifinagh) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-ghat-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-ghat-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-ghat-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-ghat-fonts = "metainfo() ( ) font(notosanstifinaghghat) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-ghat-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-ghat-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-ghat-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-ghat-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-hawad-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-hawad-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-hawad-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-hawad-fonts = "metainfo() ( ) font(notosanstifinaghhawad) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-hawad-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-hawad-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-hawad-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-hawad-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-rhissa-ixa-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-rhissa-ixa-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-rhissa-ixa-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-rhissa-ixa-fonts = "metainfo() ( ) font(notosanstifinaghrhissaixa) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-rhissa-ixa-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-rhissa-ixa-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-rhissa-ixa-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-rhissa-ixa-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-sil-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-sil-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-sil-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-sil-fonts = "metainfo() ( ) font(notosanstifinaghsil) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-sil-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-sil-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-sil-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-sil-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tifinagh-tawellemmet-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tifinagh-tawellemmet-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tifinagh-tawellemmet-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tifinagh-tawellemmet-fonts = "metainfo() ( ) font(notosanstifinaghtawellemmet) ( ) metainfo(org.fedoraproject.google-noto-sans-tifinagh-tawellemmet-fonts.metainfo.xml) ( ) google-noto-sans-tifinagh-tawellemmet-fonts ( =  20240401-5.el10) config(google-noto-sans-tifinagh-tawellemmet-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tifinagh-tawellemmet-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-tirhuta-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-tirhuta-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-tirhuta-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-tirhuta-fonts = "metainfo() ( ) font(notosanstirhuta) ( ) metainfo(org.fedoraproject.google-noto-sans-tirhuta-fonts.metainfo.xml) ( ) google-noto-sans-tirhuta-fonts ( =  20240401-5.el10) config(google-noto-sans-tirhuta-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-tirhuta-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-ugaritic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-ugaritic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-ugaritic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-ugaritic-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-ugaritic-fonts.metainfo.xml) ( ) google-noto-sans-ugaritic-fonts ( =  20240401-5.el10) config(google-noto-sans-ugaritic-fonts) ( =  20240401-5.el10) google-noto-sans-ugaritic-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-ugaritic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-vai-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-vai-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-vai-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-vai-fonts = "metainfo() ( ) font(notosansvai) ( ) metainfo(org.fedoraproject.google-noto-sans-vai-fonts.metainfo.xml) ( ) google-noto-sans-vai-fonts ( =  20240401-5.el10) config(google-noto-sans-vai-fonts) ( =  20240401-5.el10) google-noto-sans-vai-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-vai-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-vithkuqi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-vithkuqi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-vithkuqi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-vithkuqi-fonts = "metainfo() ( ) font(notosansvithkuqi) ( ) font(notosansvithkuqimedium) ( ) font(notosansvithkuqisemibold) ( ) metainfo(org.fedoraproject.google-noto-sans-vithkuqi-fonts.metainfo.xml) ( ) google-noto-sans-vithkuqi-fonts ( =  20240401-5.el10) config(google-noto-sans-vithkuqi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-vithkuqi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-vithkuqi-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-vithkuqi-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-vithkuqi-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-vithkuqi-vf-fonts = "metainfo() ( ) font(notosansvithkuqi) ( ) metainfo(org.fedoraproject.google-noto-sans-vithkuqi-vf-fonts.metainfo.xml) ( ) google-noto-sans-vithkuqi-vf-fonts ( =  20240401-5.el10) config(google-noto-sans-vithkuqi-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-vithkuqi-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-wancho-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-wancho-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-wancho-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-wancho-fonts = "metainfo() ( ) font(notosanswancho) ( ) metainfo(org.fedoraproject.google-noto-sans-wancho-fonts.metainfo.xml) ( ) google-noto-sans-wancho-fonts ( =  20240401-5.el10) config(google-noto-sans-wancho-fonts) ( =  20240401-5.el10) google-noto-sans-wancho-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-wancho-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-warang-citi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-warang-citi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-warang-citi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-warang-citi-fonts = "metainfo() ( ) font(notosanswarangciti) ( ) metainfo(org.fedoraproject.google-noto-sans-warang-citi-fonts.metainfo.xml) ( ) google-noto-sans-warang-citi-fonts ( =  20240401-5.el10) config(google-noto-sans-warang-citi-fonts) ( =  20240401-5.el10) google-noto-sans-warang-citi-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-warang-citi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-yi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-yi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-yi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-yi-fonts = "metainfo() ( ) metainfo(org.fedoraproject.google-noto-sans-yi-fonts.metainfo.xml) ( ) google-noto-sans-yi-fonts ( =  20240401-5.el10) config(google-noto-sans-yi-fonts) ( =  20240401-5.el10) google-noto-sans-yi-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-yi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-sans-zanabazar-square-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-sans-zanabazar-square-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-sans-zanabazar-square-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-sans-zanabazar-square-fonts = "metainfo() ( ) font(notosanszanabazarsquare) ( ) metainfo(org.fedoraproject.google-noto-sans-zanabazar-square-fonts.metainfo.xml) ( ) google-noto-sans-zanabazar-square-fonts ( =  20240401-5.el10) config(google-noto-sans-zanabazar-square-fonts) ( =  20240401-5.el10) google-noto-sans-zanabazar-square-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-sans-zanabazar-square-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-ahom-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-ahom-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-ahom-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-ahom-fonts = "metainfo() ( ) font(notoserifahom) ( ) metainfo(org.fedoraproject.google-noto-serif-ahom-fonts.metainfo.xml) ( ) google-noto-serif-ahom-fonts ( =  20240401-5.el10) config(google-noto-serif-ahom-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-ahom-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-armenian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-armenian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-armenian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-armenian-fonts = "metainfo() ( ) font(notoserifarmenian) ( ) font(notoserifarmenianblack) ( ) font(notoserifarmeniancondensed) ( ) font(notoserifarmeniancondensedblack) ( ) font(notoserifarmeniancondensedextrabold) ( ) font(notoserifarmeniancondensedextralight) ( ) font(notoserifarmeniancondensedlight) ( ) font(notoserifarmeniancondensedmedium) ( ) font(notoserifarmeniancondensedsemibold) ( ) font(notoserifarmeniancondensedthin) ( ) font(notoserifarmenianextrabold) ( ) font(notoserifarmenianextracondensed) ( ) font(notoserifarmenianextracondensedblack) ( ) font(notoserifarmenianextracondensedextrabold) ( ) font(notoserifarmenianextracondensedextralight) ( ) font(notoserifarmenianextracondensedlight) ( ) font(notoserifarmenianextracondensedmedium) ( ) font(notoserifarmenianextracondensedsemibold) ( ) font(notoserifarmenianextracondensedthin) ( ) font(notoserifarmenianextralight) ( ) font(notoserifarmenianlight) ( ) font(notoserifarmenianmedium) ( ) font(notoserifarmeniansemibold) ( ) font(notoserifarmeniansemicondensed) ( ) font(notoserifarmeniansemicondensedblack) ( ) font(notoserifarmeniansemicondensedextrabold) ( ) font(notoserifarmeniansemicondensedextralight) ( ) font(notoserifarmeniansemicondensedlight) ( ) font(notoserifarmeniansemicondensedmedium) ( ) font(notoserifarmeniansemicondensedsemibold) ( ) font(notoserifarmeniansemicondensedthin) ( ) font(notoserifarmenianthin) ( ) metainfo(org.fedoraproject.google-noto-serif-armenian-fonts.metainfo.xml) ( ) google-noto-serif-armenian-fonts ( =  20240401-5.el10) config(google-noto-serif-armenian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-armenian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-armenian-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-armenian-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-armenian-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-armenian-vf-fonts = "metainfo() ( ) font(notoserifarmenian) ( ) metainfo(org.fedoraproject.google-noto-serif-armenian-vf-fonts.metainfo.xml) ( ) google-noto-serif-armenian-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-armenian-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-armenian-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-balinese-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-balinese-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-balinese-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-balinese-fonts = "metainfo() ( ) font(notoserifbalinese) ( ) metainfo(org.fedoraproject.google-noto-serif-balinese-fonts.metainfo.xml) ( ) google-noto-sans-balinese-fonts ( =  20240401-5.el10) google-noto-serif-balinese-fonts ( =  20240401-5.el10) config(google-noto-serif-balinese-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-balinese-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-bengali-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-bengali-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-bengali-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-bengali-fonts = "metainfo() ( ) font(notoserifbengali) ( ) font(notoserifbengaliblack) ( ) font(notoserifbengalicondensed) ( ) font(notoserifbengalicondensedblack) ( ) font(notoserifbengalicondensedextrabold) ( ) font(notoserifbengalicondensedextralight) ( ) font(notoserifbengalicondensedlight) ( ) font(notoserifbengalicondensedmedium) ( ) font(notoserifbengalicondensedsemibold) ( ) font(notoserifbengalicondensedthin) ( ) font(notoserifbengaliextrabold) ( ) font(notoserifbengaliextracondensed) ( ) font(notoserifbengaliextracondensedblack) ( ) font(notoserifbengaliextracondensedextrabold) ( ) font(notoserifbengaliextracondensedextralight) ( ) font(notoserifbengaliextracondensedlight) ( ) font(notoserifbengaliextracondensedmedium) ( ) font(notoserifbengaliextracondensedsemibold) ( ) font(notoserifbengaliextracondensedthin) ( ) font(notoserifbengaliextralight) ( ) font(notoserifbengalilight) ( ) font(notoserifbengalimedium) ( ) font(notoserifbengalisemibold) ( ) font(notoserifbengalisemicondensed) ( ) font(notoserifbengalisemicondensedblack) ( ) font(notoserifbengalisemicondensedextrabold) ( ) font(notoserifbengalisemicondensedextralight) ( ) font(notoserifbengalisemicondensedlight) ( ) font(notoserifbengalisemicondensedmedium) ( ) font(notoserifbengalisemicondensedsemibold) ( ) font(notoserifbengalisemicondensedthin) ( ) font(notoserifbengalithin) ( ) metainfo(org.fedoraproject.google-noto-serif-bengali-fonts.metainfo.xml) ( ) google-noto-serif-bengali-fonts ( =  20240401-5.el10) config(google-noto-serif-bengali-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-bengali-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-bengali-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-bengali-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-bengali-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-bengali-vf-fonts = "metainfo() ( ) font(notoserifbengali) ( ) metainfo(org.fedoraproject.google-noto-serif-bengali-vf-fonts.metainfo.xml) ( ) google-noto-serif-bengali-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-bengali-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-bengali-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-devanagari-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-devanagari-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-devanagari-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-devanagari-fonts = "metainfo() ( ) font(notoserifdevanagari) ( ) font(notoserifdevanagariblack) ( ) font(notoserifdevanagaricondensed) ( ) font(notoserifdevanagaricondensedblack) ( ) font(notoserifdevanagaricondensedextrabold) ( ) font(notoserifdevanagaricondensedextralight) ( ) font(notoserifdevanagaricondensedlight) ( ) font(notoserifdevanagaricondensedmedium) ( ) font(notoserifdevanagaricondensedsemibold) ( ) font(notoserifdevanagaricondensedthin) ( ) font(notoserifdevanagariextrabold) ( ) font(notoserifdevanagariextracondensed) ( ) font(notoserifdevanagariextracondensedblack) ( ) font(notoserifdevanagariextracondensedextrabold) ( ) font(notoserifdevanagariextracondensedextralight) ( ) font(notoserifdevanagariextracondensedlight) ( ) font(notoserifdevanagariextracondensedmedium) ( ) font(notoserifdevanagariextracondensedsemibold) ( ) font(notoserifdevanagariextracondensedthin) ( ) font(notoserifdevanagariextralight) ( ) font(notoserifdevanagarilight) ( ) font(notoserifdevanagarimedium) ( ) font(notoserifdevanagarisemibold) ( ) font(notoserifdevanagarisemicondensed) ( ) font(notoserifdevanagarisemicondensedblack) ( ) font(notoserifdevanagarisemicondensedextrabold) ( ) font(notoserifdevanagarisemicondensedextralight) ( ) font(notoserifdevanagarisemicondensedlight) ( ) font(notoserifdevanagarisemicondensedmedium) ( ) font(notoserifdevanagarisemicondensedsemibold) ( ) font(notoserifdevanagarisemicondensedthin) ( ) font(notoserifdevanagarithin) ( ) metainfo(org.fedoraproject.google-noto-serif-devanagari-fonts.metainfo.xml) ( ) google-noto-serif-devanagari-fonts ( =  20240401-5.el10) config(google-noto-serif-devanagari-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-devanagari-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-devanagari-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-devanagari-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-devanagari-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-devanagari-vf-fonts = "metainfo() ( ) font(notoserifdevanagari) ( ) metainfo(org.fedoraproject.google-noto-serif-devanagari-vf-fonts.metainfo.xml) ( ) google-noto-serif-devanagari-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-devanagari-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-devanagari-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-dives-akuru-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-dives-akuru-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-dives-akuru-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-dives-akuru-fonts = "metainfo() ( ) font(notoserifdivesakuru) ( ) metainfo(org.fedoraproject.google-noto-serif-dives-akuru-fonts.metainfo.xml) ( ) google-noto-serif-dives-akuru-fonts ( =  20240401-5.el10) config(google-noto-serif-dives-akuru-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-dives-akuru-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-dogra-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-dogra-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-dogra-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-dogra-fonts = "metainfo() ( ) font(notoserifdogra) ( ) metainfo(org.fedoraproject.google-noto-serif-dogra-fonts.metainfo.xml) ( ) google-noto-serif-dogra-fonts ( =  20240401-5.el10) config(google-noto-serif-dogra-fonts) ( =  20240401-5.el10) google-noto-serif-dogra-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-dogra-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-ethiopic-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-ethiopic-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-ethiopic-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-ethiopic-fonts = "metainfo() ( ) font(notoserifethiopic) ( ) font(notoserifethiopicblack) ( ) font(notoserifethiopiccondensed) ( ) font(notoserifethiopiccondensedblack) ( ) font(notoserifethiopiccondensedextrabold) ( ) font(notoserifethiopiccondensedextralight) ( ) font(notoserifethiopiccondensedlight) ( ) font(notoserifethiopiccondensedmedium) ( ) font(notoserifethiopiccondensedsemibold) ( ) font(notoserifethiopiccondensedthin) ( ) font(notoserifethiopicextrabold) ( ) font(notoserifethiopicextracondensed) ( ) font(notoserifethiopicextracondensedblack) ( ) font(notoserifethiopicextracondensedextrabold) ( ) font(notoserifethiopicextracondensedextralight) ( ) font(notoserifethiopicextracondensedlight) ( ) font(notoserifethiopicextracondensedmedium) ( ) font(notoserifethiopicextracondensedsemibold) ( ) font(notoserifethiopicextracondensedthin) ( ) font(notoserifethiopicextralight) ( ) font(notoserifethiopiclight) ( ) font(notoserifethiopicmedium) ( ) font(notoserifethiopicsemibold) ( ) font(notoserifethiopicsemicondensed) ( ) font(notoserifethiopicsemicondensedblack) ( ) font(notoserifethiopicsemicondensedextrabold) ( ) font(notoserifethiopicsemicondensedextralight) ( ) font(notoserifethiopicsemicondensedlight) ( ) font(notoserifethiopicsemicondensedmedium) ( ) font(notoserifethiopicsemicondensedsemibold) ( ) font(notoserifethiopicsemicondensedthin) ( ) font(notoserifethiopicthin) ( ) metainfo(org.fedoraproject.google-noto-serif-ethiopic-fonts.metainfo.xml) ( ) google-noto-serif-ethiopic-fonts ( =  20240401-5.el10) config(google-noto-serif-ethiopic-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-ethiopic-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-ethiopic-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-ethiopic-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-ethiopic-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-ethiopic-vf-fonts = "metainfo() ( ) font(notoserifethiopic) ( ) metainfo(org.fedoraproject.google-noto-serif-ethiopic-vf-fonts.metainfo.xml) ( ) google-noto-serif-ethiopic-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-ethiopic-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-ethiopic-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-fonts = "metainfo() ( ) font(notoserif) ( ) font(notoserifblack) ( ) font(notoserifbold) ( ) font(notoserifcondensed) ( ) font(notoserifcondensedblack) ( ) font(notoserifcondensedextrabold) ( ) font(notoserifcondensedextralight) ( ) font(notoserifcondensedlight) ( ) font(notoserifcondensedmedium) ( ) font(notoserifcondensedsemibold) ( ) font(notoserifcondensedthin) ( ) font(notoserifextrabold) ( ) font(notoserifextracondensed) ( ) font(notoserifextracondensedblack) ( ) font(notoserifextracondensedextrabold) ( ) font(notoserifextracondensedextralight) ( ) font(notoserifextracondensedlight) ( ) font(notoserifextracondensedmedium) ( ) font(notoserifextracondensedsemibold) ( ) font(notoserifextracondensedthin) ( ) font(notoserifextralight) ( ) font(notoseriflight) ( ) font(notoserifmedium) ( ) font(notoserifsemibold) ( ) font(notoserifsemicondensed) ( ) font(notoserifsemicondensedblack) ( ) font(notoserifsemicondensedextrabold) ( ) font(notoserifsemicondensedextralight) ( ) font(notoserifsemicondensedlight) ( ) font(notoserifsemicondensedmedium) ( ) font(notoserifsemicondensedsemibold) ( ) font(notoserifsemicondensedthin) ( ) font(notoserifthin) ( ) metainfo(org.fedoraproject.google-noto-serif-fonts.metainfo.xml) ( ) google-noto-serif-fonts ( =  20240401-5.el10) config(google-noto-serif-fonts) ( =  20240401-5.el10) google-noto-serif-display-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-georgian-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-georgian-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-georgian-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-georgian-fonts = "metainfo() ( ) font(notoserifgeorgian) ( ) font(notoserifgeorgianbk) ( ) font(notoserifgeorgiancn) ( ) font(notoserifgeorgiancnbk) ( ) font(notoserifgeorgiancnlt) ( ) font(notoserifgeorgiancnmd) ( ) font(notoserifgeorgiancnsmbd) ( ) font(notoserifgeorgiancnth) ( ) font(notoserifgeorgiancnxbd) ( ) font(notoserifgeorgiancnxlt) ( ) font(notoserifgeorgianlt) ( ) font(notoserifgeorgianmd) ( ) font(notoserifgeorgiansmbd) ( ) font(notoserifgeorgiansmcn) ( ) font(notoserifgeorgiansmcnbk) ( ) font(notoserifgeorgiansmcnlt) ( ) font(notoserifgeorgiansmcnmd) ( ) font(notoserifgeorgiansmcnsmbd) ( ) font(notoserifgeorgiansmcnth) ( ) font(notoserifgeorgiansmcnxbd) ( ) font(notoserifgeorgiansmcnxlt) ( ) font(notoserifgeorgianth) ( ) font(notoserifgeorgianxbd) ( ) font(notoserifgeorgianxcn) ( ) font(notoserifgeorgianxcnbk) ( ) font(notoserifgeorgianxcnlt) ( ) font(notoserifgeorgianxcnmd) ( ) font(notoserifgeorgianxcnsmbd) ( ) font(notoserifgeorgianxcnth) ( ) font(notoserifgeorgianxcnxbd) ( ) font(notoserifgeorgianxcnxlt) ( ) font(notoserifgeorgianxlt) ( ) metainfo(org.fedoraproject.google-noto-serif-georgian-fonts.metainfo.xml) ( ) google-noto-serif-georgian-fonts ( =  20240401-5.el10) config(google-noto-serif-georgian-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-georgian-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-georgian-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-georgian-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-georgian-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-georgian-vf-fonts = "metainfo() ( ) font(notoserifgeorgian) ( ) metainfo(org.fedoraproject.google-noto-serif-georgian-vf-fonts.metainfo.xml) ( ) google-noto-serif-georgian-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-georgian-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-georgian-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-grantha-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-grantha-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-grantha-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-grantha-fonts = "metainfo() ( ) font(notoserifgrantha) ( ) metainfo(org.fedoraproject.google-noto-serif-grantha-fonts.metainfo.xml) ( ) google-noto-serif-grantha-fonts ( =  20240401-5.el10) config(google-noto-serif-grantha-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-grantha-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-gujarati-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-gujarati-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-gujarati-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-gujarati-fonts = "metainfo() ( ) font(notoserifgujarati) ( ) font(notoserifgujaratiblack) ( ) font(notoserifgujaratiextrabold) ( ) font(notoserifgujaratiextralight) ( ) font(notoserifgujaratilight) ( ) font(notoserifgujaratimedium) ( ) font(notoserifgujaratisemibold) ( ) font(notoserifgujaratithin) ( ) metainfo(org.fedoraproject.google-noto-serif-gujarati-fonts.metainfo.xml) ( ) google-noto-serif-gujarati-fonts ( =  20240401-5.el10) config(google-noto-serif-gujarati-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-gujarati-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-gujarati-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-gujarati-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-gujarati-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-gujarati-vf-fonts = "metainfo() ( ) font(notoserifgujarati) ( ) metainfo(org.fedoraproject.google-noto-serif-gujarati-vf-fonts.metainfo.xml) ( ) google-noto-serif-gujarati-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-gujarati-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-gujarati-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-gurmukhi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-gurmukhi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-gurmukhi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-gurmukhi-fonts = "metainfo() ( ) font(notoserifgurmukhi) ( ) font(notoserifgurmukhiblack) ( ) font(notoserifgurmukhiextrabold) ( ) font(notoserifgurmukhiextralight) ( ) font(notoserifgurmukhilight) ( ) font(notoserifgurmukhimedium) ( ) font(notoserifgurmukhisemibold) ( ) font(notoserifgurmukhithin) ( ) metainfo(org.fedoraproject.google-noto-serif-gurmukhi-fonts.metainfo.xml) ( ) google-noto-serif-gurmukhi-fonts ( =  20240401-5.el10) config(google-noto-serif-gurmukhi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-gurmukhi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-gurmukhi-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-gurmukhi-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-gurmukhi-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-gurmukhi-vf-fonts = "metainfo() ( ) font(notoserifgurmukhi) ( ) metainfo(org.fedoraproject.google-noto-serif-gurmukhi-vf-fonts.metainfo.xml) ( ) google-noto-serif-gurmukhi-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-gurmukhi-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-gurmukhi-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-hebrew-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-hebrew-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-hebrew-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-hebrew-fonts = "metainfo() ( ) font(notoserifhebrew) ( ) font(notoserifhebrewblack) ( ) font(notoserifhebrewcondensed) ( ) font(notoserifhebrewcondensedblack) ( ) font(notoserifhebrewcondensedextrabold) ( ) font(notoserifhebrewcondensedextralight) ( ) font(notoserifhebrewcondensedlight) ( ) font(notoserifhebrewcondensedmedium) ( ) font(notoserifhebrewcondensedsemibold) ( ) font(notoserifhebrewcondensedthin) ( ) font(notoserifhebrewextrabold) ( ) font(notoserifhebrewextracondensed) ( ) font(notoserifhebrewextracondensedblack) ( ) font(notoserifhebrewextracondensedextrabold) ( ) font(notoserifhebrewextracondensedextralight) ( ) font(notoserifhebrewextracondensedlight) ( ) font(notoserifhebrewextracondensedmedium) ( ) font(notoserifhebrewextracondensedsemibold) ( ) font(notoserifhebrewextracondensedthin) ( ) font(notoserifhebrewextralight) ( ) font(notoserifhebrewlight) ( ) font(notoserifhebrewmedium) ( ) font(notoserifhebrewsemibold) ( ) font(notoserifhebrewsemicondensed) ( ) font(notoserifhebrewsemicondensedblack) ( ) font(notoserifhebrewsemicondensedextrabold) ( ) font(notoserifhebrewsemicondensedextralight) ( ) font(notoserifhebrewsemicondensedlight) ( ) font(notoserifhebrewsemicondensedmedium) ( ) font(notoserifhebrewsemicondensedsemibold) ( ) font(notoserifhebrewsemicondensedthin) ( ) font(notoserifhebrewthin) ( ) metainfo(org.fedoraproject.google-noto-serif-hebrew-fonts.metainfo.xml) ( ) google-noto-serif-hebrew-fonts ( =  20240401-5.el10) config(google-noto-serif-hebrew-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-hebrew-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-hebrew-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-hebrew-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-hebrew-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-hebrew-vf-fonts = "metainfo() ( ) font(notoserifhebrew) ( ) metainfo(org.fedoraproject.google-noto-serif-hebrew-vf-fonts.metainfo.xml) ( ) google-noto-serif-hebrew-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-hebrew-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-hebrew-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-kannada-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-kannada-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-kannada-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-kannada-fonts = "metainfo() ( ) font(notoserifkannada) ( ) font(notoserifkannadablack) ( ) font(notoserifkannadaextrabold) ( ) font(notoserifkannadaextralight) ( ) font(notoserifkannadalight) ( ) font(notoserifkannadamedium) ( ) font(notoserifkannadasemibold) ( ) font(notoserifkannadathin) ( ) metainfo(org.fedoraproject.google-noto-serif-kannada-fonts.metainfo.xml) ( ) google-noto-serif-kannada-fonts ( =  20240401-5.el10) config(google-noto-serif-kannada-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-kannada-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-kannada-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-kannada-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-kannada-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-kannada-vf-fonts = "metainfo() ( ) font(notoserifkannada) ( ) metainfo(org.fedoraproject.google-noto-serif-kannada-vf-fonts.metainfo.xml) ( ) google-noto-serif-kannada-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-kannada-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-kannada-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-khitan-small-script-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-khitan-small-script-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-khitan-small-script-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-khitan-small-script-fonts = "metainfo() ( ) font(notoserifkhitansmallscript) ( ) metainfo(org.fedoraproject.google-noto-serif-khitan-small-script-fonts.metainfo.xml) ( ) google-noto-serif-khitan-small-script-fonts ( =  20240401-5.el10) config(google-noto-serif-khitan-small-script-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-khitan-small-script-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-khmer-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-khmer-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-khmer-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-khmer-fonts = "metainfo() ( ) font(notoserifkhmer) ( ) font(notoserifkhmerblack) ( ) font(notoserifkhmercondensed) ( ) font(notoserifkhmercondensedblack) ( ) font(notoserifkhmercondensedextrabold) ( ) font(notoserifkhmercondensedextralight) ( ) font(notoserifkhmercondensedlight) ( ) font(notoserifkhmercondensedmedium) ( ) font(notoserifkhmercondensedsemibold) ( ) font(notoserifkhmercondensedthin) ( ) font(notoserifkhmerextrabold) ( ) font(notoserifkhmerextracondensed) ( ) font(notoserifkhmerextracondensedblack) ( ) font(notoserifkhmerextracondensedextrabold) ( ) font(notoserifkhmerextracondensedextralight) ( ) font(notoserifkhmerextracondensedlight) ( ) font(notoserifkhmerextracondensedmedium) ( ) font(notoserifkhmerextracondensedsemibold) ( ) font(notoserifkhmerextracondensedthin) ( ) font(notoserifkhmerextralight) ( ) font(notoserifkhmerlight) ( ) font(notoserifkhmermedium) ( ) font(notoserifkhmersemibold) ( ) font(notoserifkhmersemicondensed) ( ) font(notoserifkhmersemicondensedblack) ( ) font(notoserifkhmersemicondensedextrabold) ( ) font(notoserifkhmersemicondensedextralight) ( ) font(notoserifkhmersemicondensedlight) ( ) font(notoserifkhmersemicondensedmedium) ( ) font(notoserifkhmersemicondensedsemibold) ( ) font(notoserifkhmersemicondensedthin) ( ) font(notoserifkhmerthin) ( ) metainfo(org.fedoraproject.google-noto-serif-khmer-fonts.metainfo.xml) ( ) google-noto-serif-khmer-fonts ( =  20240401-5.el10) config(google-noto-serif-khmer-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-khmer-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-khmer-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-khmer-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-khmer-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-khmer-vf-fonts = "metainfo() ( ) font(notoserifkhmer) ( ) metainfo(org.fedoraproject.google-noto-serif-khmer-vf-fonts.metainfo.xml) ( ) google-noto-serif-khmer-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-khmer-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-khmer-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-khojki-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-khojki-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-khojki-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-khojki-fonts = "metainfo() ( ) font(notoserifkhojki) ( ) metainfo(org.fedoraproject.google-noto-serif-khojki-fonts.metainfo.xml) ( ) google-noto-serif-khojki-fonts ( =  20240401-5.el10) config(google-noto-serif-khojki-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-khojki-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-khojki-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-khojki-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-khojki-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-khojki-vf-fonts = "metainfo() ( ) font(notoserifkhojki) ( ) metainfo(org.fedoraproject.google-noto-serif-khojki-vf-fonts.metainfo.xml) ( ) google-noto-serif-khojki-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-khojki-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-khojki-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-lao-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-lao-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-lao-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-lao-fonts = "metainfo() ( ) font(notoseriflao) ( ) font(notoseriflaoblack) ( ) font(notoseriflaocondensed) ( ) font(notoseriflaocondensedblack) ( ) font(notoseriflaocondensedextrabold) ( ) font(notoseriflaocondensedextralight) ( ) font(notoseriflaocondensedlight) ( ) font(notoseriflaocondensedmedium) ( ) font(notoseriflaocondensedsemibold) ( ) font(notoseriflaocondensedthin) ( ) font(notoseriflaoextrabold) ( ) font(notoseriflaoextracondensed) ( ) font(notoseriflaoextracondensedblack) ( ) font(notoseriflaoextracondensedextrabold) ( ) font(notoseriflaoextracondensedextralight) ( ) font(notoseriflaoextracondensedlight) ( ) font(notoseriflaoextracondensedmedium) ( ) font(notoseriflaoextracondensedsemibold) ( ) font(notoseriflaoextracondensedthin) ( ) font(notoseriflaoextralight) ( ) font(notoseriflaolight) ( ) font(notoseriflaomedium) ( ) font(notoseriflaosemibold) ( ) font(notoseriflaosemicondensed) ( ) font(notoseriflaosemicondensedblack) ( ) font(notoseriflaosemicondensedextrabold) ( ) font(notoseriflaosemicondensedextralight) ( ) font(notoseriflaosemicondensedlight) ( ) font(notoseriflaosemicondensedmedium) ( ) font(notoseriflaosemicondensedsemibold) ( ) font(notoseriflaosemicondensedthin) ( ) font(notoseriflaothin) ( ) metainfo(org.fedoraproject.google-noto-serif-lao-fonts.metainfo.xml) ( ) google-noto-serif-lao-fonts ( =  20240401-5.el10) config(google-noto-serif-lao-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-lao-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-lao-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-lao-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-lao-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-lao-vf-fonts = "metainfo() ( ) font(notoseriflao) ( ) metainfo(org.fedoraproject.google-noto-serif-lao-vf-fonts.metainfo.xml) ( ) google-noto-serif-lao-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-lao-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-lao-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-makasar-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-makasar-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-makasar-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-makasar-fonts = "metainfo() ( ) font(notoserifmakasar) ( ) metainfo(org.fedoraproject.google-noto-serif-makasar-fonts.metainfo.xml) ( ) google-noto-serif-makasar-fonts ( =  20240401-5.el10) config(google-noto-serif-makasar-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-makasar-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-malayalam-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-malayalam-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-malayalam-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-malayalam-fonts = "metainfo() ( ) font(notoserifmalayalam) ( ) font(notoserifmalayalamblack) ( ) font(notoserifmalayalamextrabold) ( ) font(notoserifmalayalamextralight) ( ) font(notoserifmalayalamlight) ( ) font(notoserifmalayalammedium) ( ) font(notoserifmalayalamsemibold) ( ) font(notoserifmalayalamthin) ( ) metainfo(org.fedoraproject.google-noto-serif-malayalam-fonts.metainfo.xml) ( ) google-noto-serif-malayalam-fonts ( =  20240401-5.el10) config(google-noto-serif-malayalam-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-malayalam-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-malayalam-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-malayalam-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-malayalam-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-malayalam-vf-fonts = "metainfo() ( ) font(notoserifmalayalam) ( ) metainfo(org.fedoraproject.google-noto-serif-malayalam-vf-fonts.metainfo.xml) ( ) google-noto-serif-malayalam-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-malayalam-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-malayalam-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-myanmar-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-myanmar-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-myanmar-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-myanmar-fonts = "metainfo() ( ) font(notoserifmyanmar) ( ) font(notoserifmyanmarblack) ( ) font(notoserifmyanmarcondensed) ( ) font(notoserifmyanmarcondensedblack) ( ) font(notoserifmyanmarcondensedextrabold) ( ) font(notoserifmyanmarcondensedextralight) ( ) font(notoserifmyanmarcondensedlight) ( ) font(notoserifmyanmarcondensedmedium) ( ) font(notoserifmyanmarcondensedsemibold) ( ) font(notoserifmyanmarcondensedthin) ( ) font(notoserifmyanmarextrabold) ( ) font(notoserifmyanmarextracondensed) ( ) font(notoserifmyanmarextracondensedblack) ( ) font(notoserifmyanmarextracondensedextrabold) ( ) font(notoserifmyanmarextracondensedextralight) ( ) font(notoserifmyanmarextracondensedlight) ( ) font(notoserifmyanmarextracondensedmedium) ( ) font(notoserifmyanmarextracondensedsemibold) ( ) font(notoserifmyanmarextracondensedthin) ( ) font(notoserifmyanmarextralight) ( ) font(notoserifmyanmarlight) ( ) font(notoserifmyanmarmedium) ( ) font(notoserifmyanmarsemibold) ( ) font(notoserifmyanmarsemicondensed) ( ) font(notoserifmyanmarsemicondensedblack) ( ) font(notoserifmyanmarsemicondensedextrabold) ( ) font(notoserifmyanmarsemicondensedextralight) ( ) font(notoserifmyanmarsemicondensedlight) ( ) font(notoserifmyanmarsemicondensedmedium) ( ) font(notoserifmyanmarsemicondensedsemibold) ( ) font(notoserifmyanmarsemicondensedthin) ( ) font(notoserifmyanmarthin) ( ) metainfo(org.fedoraproject.google-noto-serif-myanmar-fonts.metainfo.xml) ( ) google-noto-serif-myanmar-fonts ( =  20240401-5.el10) config(google-noto-serif-myanmar-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-myanmar-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-np-hmong-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-np-hmong-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-np-hmong-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-np-hmong-fonts = "metainfo() ( ) font(notoserifnphmong) ( ) font(notoserifnphmongmedium) ( ) font(notoserifnphmongsemibold) ( ) metainfo(org.fedoraproject.google-noto-serif-np-hmong-fonts.metainfo.xml) ( ) google-noto-serif-np-hmong-fonts ( =  20240401-5.el10) config(google-noto-serif-np-hmong-fonts) ( =  20240401-5.el10) google-noto-serif-nyiakeng-puachue-hmong-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-np-hmong-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-np-hmong-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-np-hmong-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-np-hmong-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-np-hmong-vf-fonts = "metainfo() ( ) font(notoserifnphmong) ( ) metainfo(org.fedoraproject.google-noto-serif-np-hmong-vf-fonts.metainfo.xml) ( ) google-noto-serif-np-hmong-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-np-hmong-vf-fonts) ( =  20240401-5.el10) google-noto-serif-nyiakeng-puachue-hmong-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-np-hmong-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-old-uyghur-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-old-uyghur-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-old-uyghur-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-old-uyghur-fonts = "metainfo() ( ) font(notoserifolduyghur) ( ) metainfo(org.fedoraproject.google-noto-serif-old-uyghur-fonts.metainfo.xml) ( ) google-noto-serif-old-uyghur-fonts ( =  20240401-5.el10) config(google-noto-serif-old-uyghur-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-old-uyghur-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-oriya-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-oriya-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-oriya-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-oriya-fonts = "metainfo() ( ) font(notoseriforiya) ( ) font(notoseriforiyamedium) ( ) font(notoseriforiyasemibold) ( ) metainfo(org.fedoraproject.google-noto-serif-oriya-fonts.metainfo.xml) ( ) google-noto-serif-oriya-fonts ( =  20240401-5.el10) config(google-noto-serif-oriya-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-oriya-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-oriya-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-oriya-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-oriya-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-oriya-vf-fonts = "metainfo() ( ) font(notoseriforiya) ( ) metainfo(org.fedoraproject.google-noto-serif-oriya-vf-fonts.metainfo.xml) ( ) google-noto-serif-oriya-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-oriya-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-oriya-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-ottoman-siyaq-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-ottoman-siyaq-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-ottoman-siyaq-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-ottoman-siyaq-fonts = "metainfo() ( ) font(notoserifottomansiyaq) ( ) metainfo(org.fedoraproject.google-noto-serif-ottoman-siyaq-fonts.metainfo.xml) ( ) google-noto-serif-ottoman-siyaq-fonts ( =  20240401-5.el10) config(google-noto-serif-ottoman-siyaq-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-ottoman-siyaq-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-sinhala-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-sinhala-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-sinhala-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-sinhala-fonts = "metainfo() ( ) font(notoserifsinhala) ( ) font(notoserifsinhalablack) ( ) font(notoserifsinhalacondensed) ( ) font(notoserifsinhalacondensedblack) ( ) font(notoserifsinhalacondensedextrabold) ( ) font(notoserifsinhalacondensedextralight) ( ) font(notoserifsinhalacondensedlight) ( ) font(notoserifsinhalacondensedmedium) ( ) font(notoserifsinhalacondensedsemibold) ( ) font(notoserifsinhalacondensedthin) ( ) font(notoserifsinhalaextrabold) ( ) font(notoserifsinhalaextracondensed) ( ) font(notoserifsinhalaextracondensedblack) ( ) font(notoserifsinhalaextracondensedextrabold) ( ) font(notoserifsinhalaextracondensedextralight) ( ) font(notoserifsinhalaextracondensedlight) ( ) font(notoserifsinhalaextracondensedmedium) ( ) font(notoserifsinhalaextracondensedsemibold) ( ) font(notoserifsinhalaextracondensedthin) ( ) font(notoserifsinhalaextralight) ( ) font(notoserifsinhalalight) ( ) font(notoserifsinhalamedium) ( ) font(notoserifsinhalasemibold) ( ) font(notoserifsinhalasemicondensed) ( ) font(notoserifsinhalasemicondensedblack) ( ) font(notoserifsinhalasemicondensedextrabold) ( ) font(notoserifsinhalasemicondensedextralight) ( ) font(notoserifsinhalasemicondensedlight) ( ) font(notoserifsinhalasemicondensedmedium) ( ) font(notoserifsinhalasemicondensedsemibold) ( ) font(notoserifsinhalasemicondensedthin) ( ) font(notoserifsinhalathin) ( ) metainfo(org.fedoraproject.google-noto-serif-sinhala-fonts.metainfo.xml) ( ) google-noto-serif-sinhala-fonts ( =  20240401-5.el10) config(google-noto-serif-sinhala-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-sinhala-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-sinhala-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-sinhala-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-sinhala-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-sinhala-vf-fonts = "metainfo() ( ) font(notoserifsinhala) ( ) metainfo(org.fedoraproject.google-noto-serif-sinhala-vf-fonts.metainfo.xml) ( ) google-noto-serif-sinhala-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-sinhala-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-sinhala-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-tamil-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-tamil-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-tamil-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-tamil-fonts = "metainfo() ( ) font(notoseriftamil) ( ) font(notoseriftamilblack) ( ) font(notoseriftamilcondensed) ( ) font(notoseriftamilcondensedblack) ( ) font(notoseriftamilcondensedextrabold) ( ) font(notoseriftamilcondensedextralight) ( ) font(notoseriftamilcondensedlight) ( ) font(notoseriftamilcondensedmedium) ( ) font(notoseriftamilcondensedsemibold) ( ) font(notoseriftamilcondensedthin) ( ) font(notoseriftamilextrabold) ( ) font(notoseriftamilextracondensed) ( ) font(notoseriftamilextracondensedblack) ( ) font(notoseriftamilextracondensedextrabold) ( ) font(notoseriftamilextracondensedextralight) ( ) font(notoseriftamilextracondensedlight) ( ) font(notoseriftamilextracondensedmedium) ( ) font(notoseriftamilextracondensedsemibold) ( ) font(notoseriftamilextracondensedthin) ( ) font(notoseriftamilextralight) ( ) font(notoseriftamillight) ( ) font(notoseriftamilmedium) ( ) font(notoseriftamilsemibold) ( ) font(notoseriftamilsemicondensed) ( ) font(notoseriftamilsemicondensedblack) ( ) font(notoseriftamilsemicondensedextrabold) ( ) font(notoseriftamilsemicondensedextralight) ( ) font(notoseriftamilsemicondensedlight) ( ) font(notoseriftamilsemicondensedmedium) ( ) font(notoseriftamilsemicondensedsemibold) ( ) font(notoseriftamilsemicondensedthin) ( ) font(notoseriftamilthin) ( ) metainfo(org.fedoraproject.google-noto-serif-tamil-fonts.metainfo.xml) ( ) google-noto-serif-tamil-fonts ( =  20240401-5.el10) config(google-noto-serif-tamil-fonts) ( =  20240401-5.el10) google-noto-serif-tamil-slanted-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-tamil-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-tamil-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-tamil-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-tamil-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-tamil-vf-fonts = "metainfo() ( ) font(notoseriftamil) ( ) metainfo(org.fedoraproject.google-noto-serif-tamil-vf-fonts.metainfo.xml) ( ) google-noto-serif-tamil-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-tamil-vf-fonts) ( =  20240401-5.el10) google-noto-serif-tamil-slanted-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-tamil-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-tangut-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-tangut-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-tangut-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-tangut-fonts = "metainfo() ( ) font(notoseriftangut) ( ) metainfo(org.fedoraproject.google-noto-serif-tangut-fonts.metainfo.xml) ( ) google-noto-serif-tangut-fonts ( =  20240401-5.el10) config(google-noto-serif-tangut-fonts) ( =  20240401-5.el10) google-noto-serif-tangut-vf-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-tangut-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-telugu-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-telugu-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-telugu-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-telugu-fonts = "metainfo() ( ) font(notoseriftelugu) ( ) font(notoseriftelugublack) ( ) font(notoserifteluguextrabold) ( ) font(notoserifteluguextralight) ( ) font(notoseriftelugulight) ( ) font(notoseriftelugumedium) ( ) font(notoseriftelugusemibold) ( ) font(notoserifteluguthin) ( ) metainfo(org.fedoraproject.google-noto-serif-telugu-fonts.metainfo.xml) ( ) google-noto-serif-telugu-fonts ( =  20240401-5.el10) config(google-noto-serif-telugu-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-telugu-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-telugu-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-telugu-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-telugu-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-telugu-vf-fonts = "metainfo() ( ) font(notoseriftelugu) ( ) metainfo(org.fedoraproject.google-noto-serif-telugu-vf-fonts.metainfo.xml) ( ) google-noto-serif-telugu-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-telugu-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-telugu-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-thai-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-thai-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-thai-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-thai-fonts = "metainfo() ( ) font(notoserifthai) ( ) font(notoserifthaiblack) ( ) font(notoserifthaicondensed) ( ) font(notoserifthaicondensedblack) ( ) font(notoserifthaicondensedextrabold) ( ) font(notoserifthaicondensedextralight) ( ) font(notoserifthaicondensedlight) ( ) font(notoserifthaicondensedmedium) ( ) font(notoserifthaicondensedsemibold) ( ) font(notoserifthaicondensedthin) ( ) font(notoserifthaiextrabold) ( ) font(notoserifthaiextracondensed) ( ) font(notoserifthaiextracondensedblack) ( ) font(notoserifthaiextracondensedextrabold) ( ) font(notoserifthaiextracondensedextralight) ( ) font(notoserifthaiextracondensedlight) ( ) font(notoserifthaiextracondensedmedium) ( ) font(notoserifthaiextracondensedsemibold) ( ) font(notoserifthaiextracondensedthin) ( ) font(notoserifthaiextralight) ( ) font(notoserifthailight) ( ) font(notoserifthaimedium) ( ) font(notoserifthaisemibold) ( ) font(notoserifthaisemicondensed) ( ) font(notoserifthaisemicondensedblack) ( ) font(notoserifthaisemicondensedextrabold) ( ) font(notoserifthaisemicondensedextralight) ( ) font(notoserifthaisemicondensedlight) ( ) font(notoserifthaisemicondensedmedium) ( ) font(notoserifthaisemicondensedsemibold) ( ) font(notoserifthaisemicondensedthin) ( ) font(notoserifthaithin) ( ) metainfo(org.fedoraproject.google-noto-serif-thai-fonts.metainfo.xml) ( ) google-noto-serif-thai-fonts ( =  20240401-5.el10) config(google-noto-serif-thai-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-thai-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-thai-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-thai-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-thai-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-thai-vf-fonts = "metainfo() ( ) font(notoserifthai) ( ) metainfo(org.fedoraproject.google-noto-serif-thai-vf-fonts.metainfo.xml) ( ) google-noto-serif-thai-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-thai-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-thai-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-tibetan-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-tibetan-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-tibetan-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-tibetan-fonts = "metainfo() ( ) font(notoseriftibetan) ( ) font(notoseriftibetanblack) ( ) font(notoseriftibetanextrabold) ( ) font(notoseriftibetanextralight) ( ) font(notoseriftibetanlight) ( ) font(notoseriftibetanmedium) ( ) font(notoseriftibetansemibold) ( ) font(notoseriftibetanthin) ( ) metainfo(org.fedoraproject.google-noto-serif-tibetan-fonts.metainfo.xml) ( ) google-noto-serif-tibetan-fonts ( =  20240401-5.el10) config(google-noto-serif-tibetan-fonts) ( =  20240401-5.el10) google-noto-sans-tibetan-fonts ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-tibetan-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-tibetan-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-tibetan-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-tibetan-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-tibetan-vf-fonts = "metainfo() ( ) font(notoseriftibetan) ( ) metainfo(org.fedoraproject.google-noto-serif-tibetan-vf-fonts.metainfo.xml) ( ) google-noto-serif-tibetan-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-tibetan-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-tibetan-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-toto-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-toto-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-toto-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-toto-fonts = "metainfo() ( ) font(notoseriftoto) ( ) font(notoseriftotomedium) ( ) font(notoseriftotosemibold) ( ) metainfo(org.fedoraproject.google-noto-serif-toto-fonts.metainfo.xml) ( ) google-noto-serif-toto-fonts ( =  20240401-5.el10) config(google-noto-serif-toto-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-toto-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-toto-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-toto-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-toto-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-toto-vf-fonts = "metainfo() ( ) font(notoseriftoto) ( ) metainfo(org.fedoraproject.google-noto-serif-toto-vf-fonts.metainfo.xml) ( ) google-noto-serif-toto-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-toto-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-toto-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-vithkuqi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-vithkuqi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-vithkuqi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-vithkuqi-fonts = "metainfo() ( ) font(notoserifvithkuqi) ( ) font(notoserifvithkuqimedium) ( ) font(notoserifvithkuqisemibold) ( ) metainfo(org.fedoraproject.google-noto-serif-vithkuqi-fonts.metainfo.xml) ( ) google-noto-serif-vithkuqi-fonts ( =  20240401-5.el10) config(google-noto-serif-vithkuqi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-vithkuqi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-vithkuqi-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-vithkuqi-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-vithkuqi-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-vithkuqi-vf-fonts = "metainfo() ( ) font(notoserifvithkuqi) ( ) metainfo(org.fedoraproject.google-noto-serif-vithkuqi-vf-fonts.metainfo.xml) ( ) google-noto-serif-vithkuqi-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-vithkuqi-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-vithkuqi-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-yezidi-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-yezidi-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-yezidi-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-yezidi-fonts = "metainfo() ( ) font(notoserifyezidi) ( ) font(notoserifyezidimedium) ( ) font(notoserifyezidisemibold) ( ) metainfo(org.fedoraproject.google-noto-serif-yezidi-fonts.metainfo.xml) ( ) google-noto-serif-yezidi-fonts ( =  20240401-5.el10) config(google-noto-serif-yezidi-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-yezidi-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-serif-yezidi-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-serif-yezidi-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-yezidi-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-yezidi-vf-fonts = "metainfo() ( ) font(notoserifyezidi) ( ) metainfo(org.fedoraproject.google-noto-serif-yezidi-vf-fonts.metainfo.xml) ( ) google-noto-serif-yezidi-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-yezidi-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-yezidi-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-traditional-nushu-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-traditional-nushu-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-traditional-nushu-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-traditional-nushu-fonts = "metainfo() ( ) font(nototraditionalnushu) ( ) font(nototraditionalnushulight) ( ) metainfo(org.fedoraproject.google-noto-traditional-nushu-fonts.metainfo.xml) ( ) google-noto-traditional-nushu-fonts ( =  20240401-5.el10) config(google-noto-traditional-nushu-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-traditional-nushu-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-traditional-nushu-vf-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/google-noto-traditional-nushu-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-traditional-nushu-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-traditional-nushu-vf-fonts = "metainfo() ( ) font(nototraditionalnushu) ( ) metainfo(org.fedoraproject.google-noto-traditional-nushu-vf-fonts.metainfo.xml) ( ) google-noto-traditional-nushu-vf-fonts ( =  20240401-5.el10) config(google-noto-traditional-nushu-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-traditional-nushu-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"
 
 URI_google-noto-fonts-all-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/google-noto-fonts-all-static-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-fonts-all-static = "google-noto-fangsong-kss-rotated-fonts ( =  20240401-5.el10) google-noto-fangsong-kss-vertical-fonts ( =  20240401-5.el10) google-noto-kufi-arabic-fonts ( =  20240401-5.el10) google-noto-music-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-ui-fonts ( =  20240401-5.el10) google-noto-nastaliq-urdu-fonts ( =  20240401-5.el10) google-noto-rashi-hebrew-fonts ( =  20240401-5.el10) google-noto-sans-adlam-fonts ( =  20240401-5.el10) google-noto-sans-adlam-unjoined-fonts ( =  20240401-5.el10) google-noto-sans-anatolian-hieroglyphs-fonts ( =  20240401-5.el10) google-noto-sans-arabic-fonts ( =  20240401-5.el10) google-noto-sans-armenian-fonts ( =  20240401-5.el10) google-noto-sans-avestan-fonts ( =  20240401-5.el10) google-noto-sans-balinese-fonts ( =  20240401-5.el10) google-noto-sans-bamum-fonts ( =  20240401-5.el10) google-noto-sans-bassa-vah-fonts ( =  20240401-5.el10) google-noto-sans-batak-fonts ( =  20240401-5.el10) google-noto-sans-bengali-fonts ( =  20240401-5.el10) google-noto-sans-bengali-ui-fonts ( =  20240401-5.el10) google-noto-sans-bhaiksuki-fonts ( =  20240401-5.el10) google-noto-sans-brahmi-fonts ( =  20240401-5.el10) google-noto-sans-buginese-fonts ( =  20240401-5.el10) google-noto-sans-buhid-fonts ( =  20240401-5.el10) google-noto-sans-canadian-aboriginal-fonts ( =  20240401-5.el10) google-noto-sans-carian-fonts ( =  20240401-5.el10) google-noto-sans-caucasian-albanian-fonts ( =  20240401-5.el10) google-noto-sans-chakma-fonts ( =  20240401-5.el10) google-noto-sans-cham-fonts ( =  20240401-5.el10) google-noto-sans-cherokee-fonts ( =  20240401-5.el10) google-noto-sans-chorasmian-fonts ( =  20240401-5.el10) google-noto-sans-coptic-fonts ( =  20240401-5.el10) google-noto-sans-cuneiform-fonts ( =  20240401-5.el10) google-noto-sans-cypriot-fonts ( =  20240401-5.el10) google-noto-sans-cypro-minoan-fonts ( =  20240401-5.el10) google-noto-sans-deseret-fonts ( =  20240401-5.el10) google-noto-sans-devanagari-fonts ( =  20240401-5.el10) google-noto-sans-devanagari-ui-fonts ( =  20240401-5.el10) google-noto-sans-duployan-fonts ( =  20240401-5.el10) google-noto-sans-egyptian-hieroglyphs-fonts ( =  20240401-5.el10) google-noto-sans-elbasan-fonts ( =  20240401-5.el10) google-noto-sans-elymaic-fonts ( =  20240401-5.el10) google-noto-sans-ethiopic-fonts ( =  20240401-5.el10) google-noto-sans-fonts ( =  20240401-5.el10) google-noto-sans-georgian-fonts ( =  20240401-5.el10) google-noto-sans-glagolitic-fonts ( =  20240401-5.el10) google-noto-sans-gothic-fonts ( =  20240401-5.el10) google-noto-sans-grantha-fonts ( =  20240401-5.el10) google-noto-sans-gujarati-fonts ( =  20240401-5.el10) google-noto-sans-gujarati-ui-fonts ( =  20240401-5.el10) google-noto-sans-gunjala-gondi-fonts ( =  20240401-5.el10) google-noto-sans-gurmukhi-fonts ( =  20240401-5.el10) google-noto-sans-gurmukhi-ui-fonts ( =  20240401-5.el10) google-noto-sans-hanifi-rohingya-fonts ( =  20240401-5.el10) google-noto-sans-hanunoo-fonts ( =  20240401-5.el10) google-noto-sans-hatran-fonts ( =  20240401-5.el10) google-noto-sans-hebrew-fonts ( =  20240401-5.el10) google-noto-sans-imperial-aramaic-fonts ( =  20240401-5.el10) google-noto-sans-indic-siyaq-numbers-fonts ( =  20240401-5.el10) google-noto-sans-inscriptional-pahlavi-fonts ( =  20240401-5.el10) google-noto-sans-inscriptional-parthian-fonts ( =  20240401-5.el10) google-noto-sans-javanese-fonts ( =  20240401-5.el10) google-noto-sans-kaithi-fonts ( =  20240401-5.el10) google-noto-sans-kannada-fonts ( =  20240401-5.el10) google-noto-sans-kannada-ui-fonts ( =  20240401-5.el10) google-noto-sans-kawi-fonts ( =  20240401-5.el10) google-noto-sans-kayah-li-fonts ( =  20240401-5.el10) google-noto-sans-kharoshthi-fonts ( =  20240401-5.el10) google-noto-sans-khmer-fonts ( =  20240401-5.el10) google-noto-sans-khojki-fonts ( =  20240401-5.el10) google-noto-sans-khudawadi-fonts ( =  20240401-5.el10) google-noto-sans-lao-fonts ( =  20240401-5.el10) google-noto-sans-lao-looped-fonts ( =  20240401-5.el10) google-noto-sans-lepcha-fonts ( =  20240401-5.el10) google-noto-sans-limbu-fonts ( =  20240401-5.el10) google-noto-sans-linear-a-fonts ( =  20240401-5.el10) google-noto-sans-linear-b-fonts ( =  20240401-5.el10) google-noto-sans-lisu-fonts ( =  20240401-5.el10) google-noto-sans-lycian-fonts ( =  20240401-5.el10) google-noto-sans-lydian-fonts ( =  20240401-5.el10) google-noto-sans-mahajani-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-ui-fonts ( =  20240401-5.el10) google-noto-sans-mandaic-fonts ( =  20240401-5.el10) google-noto-sans-manichaean-fonts ( =  20240401-5.el10) google-noto-sans-marchen-fonts ( =  20240401-5.el10) google-noto-sans-masaram-gondi-fonts ( =  20240401-5.el10) google-noto-sans-math-fonts ( =  20240401-5.el10) google-noto-sans-mayan-numerals-fonts ( =  20240401-5.el10) google-noto-sans-medefaidrin-fonts ( =  20240401-5.el10) google-noto-sans-meetei-mayek-fonts ( =  20240401-5.el10) google-noto-sans-mende-kikakui-fonts ( =  20240401-5.el10) google-noto-sans-meroitic-fonts ( =  20240401-5.el10) google-noto-sans-miao-fonts ( =  20240401-5.el10) google-noto-sans-modi-fonts ( =  20240401-5.el10) google-noto-sans-mongolian-fonts ( =  20240401-5.el10) google-noto-sans-mono-fonts ( =  20240401-5.el10) google-noto-sans-mro-fonts ( =  20240401-5.el10) google-noto-sans-multani-fonts ( =  20240401-5.el10) google-noto-sans-myanmar-fonts ( =  20240401-5.el10) google-noto-sans-nabataean-fonts ( =  20240401-5.el10) google-noto-sans-nag-mundari-fonts ( =  20240401-5.el10) google-noto-sans-nandinagari-fonts ( =  20240401-5.el10) google-noto-sans-new-tai-lue-fonts ( =  20240401-5.el10) google-noto-sans-newa-fonts ( =  20240401-5.el10) google-noto-sans-nko-fonts ( =  20240401-5.el10) google-noto-sans-nko-unjoined-fonts ( =  20240401-5.el10) google-noto-sans-nushu-fonts ( =  20240401-5.el10) google-noto-sans-ogham-fonts ( =  20240401-5.el10) google-noto-sans-ol-chiki-fonts ( =  20240401-5.el10) google-noto-sans-old-hungarian-fonts ( =  20240401-5.el10) google-noto-sans-old-italic-fonts ( =  20240401-5.el10) google-noto-sans-old-north-arabian-fonts ( =  20240401-5.el10) google-noto-sans-old-permic-fonts ( =  20240401-5.el10) google-noto-sans-old-persian-fonts ( =  20240401-5.el10) google-noto-sans-old-sogdian-fonts ( =  20240401-5.el10) google-noto-sans-old-south-arabian-fonts ( =  20240401-5.el10) google-noto-sans-old-turkic-fonts ( =  20240401-5.el10) google-noto-sans-oriya-fonts ( =  20240401-5.el10) google-noto-sans-osage-fonts ( =  20240401-5.el10) google-noto-sans-osmanya-fonts ( =  20240401-5.el10) google-noto-sans-pahawh-hmong-fonts ( =  20240401-5.el10) google-noto-sans-palmyrene-fonts ( =  20240401-5.el10) google-noto-sans-pau-cin-hau-fonts ( =  20240401-5.el10) google-noto-sans-phagspa-fonts ( =  20240401-5.el10) google-noto-sans-phoenician-fonts ( =  20240401-5.el10) google-noto-sans-psalter-pahlavi-fonts ( =  20240401-5.el10) google-noto-sans-rejang-fonts ( =  20240401-5.el10) google-noto-sans-runic-fonts ( =  20240401-5.el10) google-noto-sans-samaritan-fonts ( =  20240401-5.el10) google-noto-sans-saurashtra-fonts ( =  20240401-5.el10) google-noto-sans-sharada-fonts ( =  20240401-5.el10) google-noto-sans-shavian-fonts ( =  20240401-5.el10) google-noto-sans-siddham-fonts ( =  20240401-5.el10) google-noto-sans-signwriting-fonts ( =  20240401-5.el10) google-noto-sans-sinhala-fonts ( =  20240401-5.el10) google-noto-sans-sinhala-ui-fonts ( =  20240401-5.el10) google-noto-sans-sogdian-fonts ( =  20240401-5.el10) google-noto-sans-sora-sompeng-fonts ( =  20240401-5.el10) google-noto-sans-soyombo-fonts ( =  20240401-5.el10) google-noto-sans-sundanese-fonts ( =  20240401-5.el10) google-noto-sans-syloti-nagri-fonts ( =  20240401-5.el10) google-noto-sans-symbols-2-fonts ( =  20240401-5.el10) google-noto-sans-symbols-fonts ( =  20240401-5.el10) google-noto-sans-syriac-eastern-fonts ( =  20240401-5.el10) google-noto-sans-syriac-fonts ( =  20240401-5.el10) google-noto-sans-syriac-western-fonts ( =  20240401-5.el10) google-noto-sans-tagalog-fonts ( =  20240401-5.el10) google-noto-sans-tagbanwa-fonts ( =  20240401-5.el10) google-noto-sans-tai-le-fonts ( =  20240401-5.el10) google-noto-sans-tai-tham-fonts ( =  20240401-5.el10) google-noto-sans-tai-viet-fonts ( =  20240401-5.el10) google-noto-sans-takri-fonts ( =  20240401-5.el10) google-noto-sans-tamil-fonts ( =  20240401-5.el10) google-noto-sans-tamil-supplement-fonts ( =  20240401-5.el10) google-noto-sans-tamil-ui-fonts ( =  20240401-5.el10) google-noto-sans-tangsa-fonts ( =  20240401-5.el10) google-noto-sans-telugu-fonts ( =  20240401-5.el10) google-noto-sans-telugu-ui-fonts ( =  20240401-5.el10) google-noto-sans-thaana-fonts ( =  20240401-5.el10) google-noto-sans-thai-fonts ( =  20240401-5.el10) google-noto-sans-thai-looped-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-adrar-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-agraw-imazighen-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-ahaggar-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-air-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-apt-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-azawagh-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-ghat-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-hawad-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-rhissa-ixa-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-sil-fonts ( =  20240401-5.el10) google-noto-sans-tifinagh-tawellemmet-fonts ( =  20240401-5.el10) google-noto-sans-tirhuta-fonts ( =  20240401-5.el10) google-noto-sans-ugaritic-fonts ( =  20240401-5.el10) google-noto-sans-vai-fonts ( =  20240401-5.el10) google-noto-sans-vithkuqi-fonts ( =  20240401-5.el10) google-noto-sans-wancho-fonts ( =  20240401-5.el10) google-noto-sans-warang-citi-fonts ( =  20240401-5.el10) google-noto-sans-yi-fonts ( =  20240401-5.el10) google-noto-sans-zanabazar-square-fonts ( =  20240401-5.el10) google-noto-serif-ahom-fonts ( =  20240401-5.el10) google-noto-serif-armenian-fonts ( =  20240401-5.el10) google-noto-serif-balinese-fonts ( =  20240401-5.el10) google-noto-serif-bengali-fonts ( =  20240401-5.el10) google-noto-serif-devanagari-fonts ( =  20240401-5.el10) google-noto-serif-dives-akuru-fonts ( =  20240401-5.el10) google-noto-serif-dogra-fonts ( =  20240401-5.el10) google-noto-serif-ethiopic-fonts ( =  20240401-5.el10) google-noto-serif-fonts ( =  20240401-5.el10) google-noto-serif-georgian-fonts ( =  20240401-5.el10) google-noto-serif-grantha-fonts ( =  20240401-5.el10) google-noto-serif-gujarati-fonts ( =  20240401-5.el10) google-noto-serif-gurmukhi-fonts ( =  20240401-5.el10) google-noto-serif-hebrew-fonts ( =  20240401-5.el10) google-noto-serif-kannada-fonts ( =  20240401-5.el10) google-noto-serif-khitan-small-script-fonts ( =  20240401-5.el10) google-noto-serif-khmer-fonts ( =  20240401-5.el10) google-noto-serif-khojki-fonts ( =  20240401-5.el10) google-noto-serif-lao-fonts ( =  20240401-5.el10) google-noto-serif-makasar-fonts ( =  20240401-5.el10) google-noto-serif-malayalam-fonts ( =  20240401-5.el10) google-noto-serif-myanmar-fonts ( =  20240401-5.el10) google-noto-serif-np-hmong-fonts ( =  20240401-5.el10) google-noto-serif-old-uyghur-fonts ( =  20240401-5.el10) google-noto-serif-oriya-fonts ( =  20240401-5.el10) google-noto-serif-ottoman-siyaq-fonts ( =  20240401-5.el10) google-noto-serif-sinhala-fonts ( =  20240401-5.el10) google-noto-serif-tamil-fonts ( =  20240401-5.el10) google-noto-serif-tangut-fonts ( =  20240401-5.el10) google-noto-serif-telugu-fonts ( =  20240401-5.el10) google-noto-serif-thai-fonts ( =  20240401-5.el10) google-noto-serif-tibetan-fonts ( =  20240401-5.el10) google-noto-serif-toto-fonts ( =  20240401-5.el10) google-noto-serif-vithkuqi-fonts ( =  20240401-5.el10) google-noto-serif-yezidi-fonts ( =  20240401-5.el10) google-noto-traditional-nushu-fonts ( =  20240401-5.el10)"
-RPROVIDES:google-noto-fonts-all-static = "google-noto-fonts-all-static ( =  20240401-5.el10)"
+RDEPENDS:google-noto-fonts-all-static = "
+ google-noto-sans-khudawadi-fonts
+ google-noto-sans-lao-fonts
+ google-noto-sans-lao-looped-fonts
+ google-noto-sans-lepcha-fonts
+ google-noto-sans-limbu-fonts
+ google-noto-sans-linear-a-fonts
+ google-noto-sans-linear-b-fonts
+ google-noto-sans-lisu-fonts
+ google-noto-sans-lycian-fonts
+ google-noto-sans-lydian-fonts
+ google-noto-sans-mahajani-fonts
+ google-noto-sans-malayalam-fonts
+ google-noto-sans-malayalam-ui-fonts
+ google-noto-sans-mandaic-fonts
+ google-noto-sans-manichaean-fonts
+ google-noto-sans-marchen-fonts
+ google-noto-sans-masaram-gondi-fonts
+ google-noto-sans-math-fonts
+ google-noto-sans-mayan-numerals-fonts
+ google-noto-sans-medefaidrin-fonts
+ google-noto-sans-meetei-mayek-fonts
+ google-noto-sans-mende-kikakui-fonts
+ google-noto-sans-meroitic-fonts
+ google-noto-sans-miao-fonts
+ google-noto-sans-modi-fonts
+ google-noto-sans-mongolian-fonts
+ google-noto-sans-mono-fonts
+ google-noto-sans-mro-fonts
+ google-noto-sans-multani-fonts
+ google-noto-sans-myanmar-fonts
+ google-noto-sans-nabataean-fonts
+ google-noto-sans-nag-mundari-fonts
+ google-noto-sans-nandinagari-fonts
+ google-noto-sans-new-tai-lue-fonts
+ google-noto-sans-newa-fonts
+ google-noto-sans-nko-fonts
+ google-noto-sans-nko-unjoined-fonts
+ google-noto-sans-nushu-fonts
+ google-noto-sans-ogham-fonts
+ google-noto-sans-ol-chiki-fonts
+ google-noto-sans-old-hungarian-fonts
+ google-noto-sans-old-italic-fonts
+ google-noto-sans-old-north-arabian-fonts
+ google-noto-sans-old-permic-fonts
+ google-noto-sans-old-persian-fonts
+ google-noto-sans-old-sogdian-fonts
+ google-noto-sans-old-south-arabian-fonts
+ google-noto-sans-old-turkic-fonts
+ google-noto-sans-oriya-fonts
+ google-noto-sans-osage-fonts
+ google-noto-sans-osmanya-fonts
+ google-noto-sans-pahawh-hmong-fonts
+ google-noto-sans-palmyrene-fonts
+ google-noto-sans-pau-cin-hau-fonts
+ google-noto-sans-phagspa-fonts
+ google-noto-sans-phoenician-fonts
+ google-noto-sans-psalter-pahlavi-fonts
+ google-noto-sans-rejang-fonts
+ google-noto-sans-runic-fonts
+ google-noto-sans-samaritan-fonts
+ google-noto-sans-saurashtra-fonts
+ google-noto-sans-sharada-fonts
+ google-noto-sans-shavian-fonts
+ google-noto-sans-siddham-fonts
+ google-noto-sans-signwriting-fonts
+ google-noto-sans-sinhala-fonts
+ google-noto-sans-sinhala-ui-fonts
+ google-noto-sans-sogdian-fonts
+ google-noto-sans-sora-sompeng-fonts
+ google-noto-sans-soyombo-fonts
+ google-noto-sans-sundanese-fonts
+ google-noto-sans-syloti-nagri-fonts
+ google-noto-sans-symbols-2-fonts
+ google-noto-sans-symbols-fonts
+ google-noto-sans-syriac-eastern-fonts
+ google-noto-sans-syriac-fonts
+ google-noto-sans-syriac-western-fonts
+ google-noto-sans-tagalog-fonts
+ google-noto-sans-tagbanwa-fonts
+ google-noto-sans-tai-le-fonts
+ google-noto-sans-tai-tham-fonts
+ google-noto-sans-tai-viet-fonts
+ google-noto-sans-takri-fonts
+ google-noto-sans-tamil-fonts
+ google-noto-sans-tamil-supplement-fonts
+ google-noto-sans-tamil-ui-fonts
+ google-noto-sans-tangsa-fonts
+ google-noto-sans-telugu-fonts
+ google-noto-sans-telugu-ui-fonts
+ google-noto-sans-thaana-fonts
+ google-noto-sans-thai-fonts
+ google-noto-sans-thai-looped-fonts
+ google-noto-sans-tifinagh-adrar-fonts
+ google-noto-sans-tifinagh-agraw-imazighen-fonts
+ google-noto-sans-tifinagh-ahaggar-fonts
+ google-noto-sans-tifinagh-air-fonts
+ google-noto-sans-tifinagh-apt-fonts
+ google-noto-sans-tifinagh-azawagh-fonts
+ google-noto-sans-tifinagh-fonts
+ google-noto-sans-tifinagh-ghat-fonts
+ google-noto-sans-tifinagh-hawad-fonts
+ google-noto-sans-tifinagh-rhissa-ixa-fonts
+ google-noto-sans-tifinagh-sil-fonts
+ google-noto-sans-tifinagh-tawellemmet-fonts
+ google-noto-sans-tirhuta-fonts
+ google-noto-sans-ugaritic-fonts
+ google-noto-sans-vai-fonts
+ google-noto-sans-vithkuqi-fonts
+ google-noto-sans-wancho-fonts
+ google-noto-sans-warang-citi-fonts
+ google-noto-sans-yi-fonts
+ google-noto-sans-zanabazar-square-fonts
+ google-noto-serif-ahom-fonts
+ google-noto-serif-armenian-fonts
+ google-noto-serif-balinese-fonts
+ google-noto-serif-bengali-fonts
+ google-noto-serif-devanagari-fonts
+ google-noto-serif-dives-akuru-fonts
+ google-noto-serif-dogra-fonts
+ google-noto-serif-ethiopic-fonts
+ google-noto-serif-fonts
+ google-noto-serif-georgian-fonts
+ google-noto-serif-grantha-fonts
+ google-noto-serif-gujarati-fonts
+ google-noto-serif-gurmukhi-fonts
+ google-noto-serif-hebrew-fonts
+ google-noto-serif-kannada-fonts
+ google-noto-serif-khitan-small-script-fonts
+ google-noto-serif-khmer-fonts
+ google-noto-serif-khojki-fonts
+ google-noto-serif-lao-fonts
+ google-noto-serif-makasar-fonts
+ google-noto-serif-malayalam-fonts
+ google-noto-serif-myanmar-fonts
+ google-noto-serif-np-hmong-fonts
+ google-noto-serif-old-uyghur-fonts
+ google-noto-serif-oriya-fonts
+ google-noto-serif-ottoman-siyaq-fonts
+ google-noto-serif-sinhala-fonts
+ google-noto-serif-tamil-fonts
+ google-noto-serif-tangut-fonts
+ google-noto-serif-telugu-fonts
+ google-noto-serif-thai-fonts
+ google-noto-serif-tibetan-fonts
+ google-noto-serif-toto-fonts
+ google-noto-serif-vithkuqi-fonts
+ google-noto-serif-yezidi-fonts
+ google-noto-traditional-nushu-fonts
+ google-noto-fangsong-kss-rotated-fonts
+ google-noto-fangsong-kss-vertical-fonts
+ google-noto-kufi-arabic-fonts
+ google-noto-music-fonts
+ google-noto-naskh-arabic-fonts
+ google-noto-naskh-arabic-ui-fonts
+ google-noto-nastaliq-urdu-fonts
+ google-noto-rashi-hebrew-fonts
+ google-noto-sans-adlam-fonts
+ google-noto-sans-adlam-unjoined-fonts
+ google-noto-sans-anatolian-hieroglyphs-fonts
+ google-noto-sans-arabic-fonts
+ google-noto-sans-armenian-fonts
+ google-noto-sans-avestan-fonts
+ google-noto-sans-balinese-fonts
+ google-noto-sans-bamum-fonts
+ google-noto-sans-bassa-vah-fonts
+ google-noto-sans-batak-fonts
+ google-noto-sans-bengali-fonts
+ google-noto-sans-bengali-ui-fonts
+ google-noto-sans-bhaiksuki-fonts
+ google-noto-sans-brahmi-fonts
+ google-noto-sans-buginese-fonts
+ google-noto-sans-buhid-fonts
+ google-noto-sans-canadian-aboriginal-fonts
+ google-noto-sans-carian-fonts
+ google-noto-sans-caucasian-albanian-fonts
+ google-noto-sans-chakma-fonts
+ google-noto-sans-cham-fonts
+ google-noto-sans-cherokee-fonts
+ google-noto-sans-chorasmian-fonts
+ google-noto-sans-coptic-fonts
+ google-noto-sans-cuneiform-fonts
+ google-noto-sans-cypriot-fonts
+ google-noto-sans-cypro-minoan-fonts
+ google-noto-sans-deseret-fonts
+ google-noto-sans-devanagari-fonts
+ google-noto-sans-devanagari-ui-fonts
+ google-noto-sans-duployan-fonts
+ google-noto-sans-egyptian-hieroglyphs-fonts
+ google-noto-sans-elbasan-fonts
+ google-noto-sans-elymaic-fonts
+ google-noto-sans-ethiopic-fonts
+ google-noto-sans-fonts
+ google-noto-sans-georgian-fonts
+ google-noto-sans-glagolitic-fonts
+ google-noto-sans-gothic-fonts
+ google-noto-sans-grantha-fonts
+ google-noto-sans-gujarati-fonts
+ google-noto-sans-gujarati-ui-fonts
+ google-noto-sans-gunjala-gondi-fonts
+ google-noto-sans-gurmukhi-fonts
+ google-noto-sans-gurmukhi-ui-fonts
+ google-noto-sans-hanifi-rohingya-fonts
+ google-noto-sans-hanunoo-fonts
+ google-noto-sans-hatran-fonts
+ google-noto-sans-hebrew-fonts
+ google-noto-sans-imperial-aramaic-fonts
+ google-noto-sans-indic-siyaq-numbers-fonts
+ google-noto-sans-inscriptional-pahlavi-fonts
+ google-noto-sans-inscriptional-parthian-fonts
+ google-noto-sans-javanese-fonts
+ google-noto-sans-kaithi-fonts
+ google-noto-sans-kannada-fonts
+ google-noto-sans-kannada-ui-fonts
+ google-noto-sans-kawi-fonts
+ google-noto-sans-kayah-li-fonts
+ google-noto-sans-kharoshthi-fonts
+ google-noto-sans-khmer-fonts
+ google-noto-sans-khojki-fonts
+"
 
 URI_google-noto-fonts-all-vf = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/google-noto-fonts-all-vf-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-fonts-all-vf = "google-noto-serif-myanmar-vf-fonts ( =  20240401-5.el10) google-noto-sans-mono-vf-fonts ( =  20240401-5.el10) google-noto-sans-vf-fonts ( =  20240401-5.el10) google-noto-serif-vf-fonts ( =  20240401-5.el10) google-noto-kufi-arabic-vf-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-ui-vf-fonts ( =  20240401-5.el10) google-noto-naskh-arabic-vf-fonts ( =  20240401-5.el10) google-noto-nastaliq-urdu-vf-fonts ( =  20240401-5.el10) google-noto-rashi-hebrew-vf-fonts ( =  20240401-5.el10) google-noto-sans-adlam-unjoined-vf-fonts ( =  20240401-5.el10) google-noto-sans-adlam-vf-fonts ( =  20240401-5.el10) google-noto-sans-arabic-vf-fonts ( =  20240401-5.el10) google-noto-sans-armenian-vf-fonts ( =  20240401-5.el10) google-noto-sans-balinese-vf-fonts ( =  20240401-5.el10) google-noto-sans-bamum-vf-fonts ( =  20240401-5.el10) google-noto-sans-bassa-vah-vf-fonts ( =  20240401-5.el10) google-noto-sans-bengali-vf-fonts ( =  20240401-5.el10) google-noto-sans-canadian-aboriginal-vf-fonts ( =  20240401-5.el10) google-noto-sans-cham-vf-fonts ( =  20240401-5.el10) google-noto-sans-cherokee-vf-fonts ( =  20240401-5.el10) google-noto-sans-devanagari-vf-fonts ( =  20240401-5.el10) google-noto-sans-ethiopic-vf-fonts ( =  20240401-5.el10) google-noto-sans-georgian-vf-fonts ( =  20240401-5.el10) google-noto-sans-gujarati-vf-fonts ( =  20240401-5.el10) google-noto-sans-gunjala-gondi-vf-fonts ( =  20240401-5.el10) google-noto-sans-gurmukhi-vf-fonts ( =  20240401-5.el10) google-noto-sans-hanifi-rohingya-vf-fonts ( =  20240401-5.el10) google-noto-sans-hebrew-vf-fonts ( =  20240401-5.el10) google-noto-sans-javanese-vf-fonts ( =  20240401-5.el10) google-noto-sans-kannada-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-kannada-vf-fonts ( =  20240401-5.el10) google-noto-sans-kawi-vf-fonts ( =  20240401-5.el10) google-noto-sans-kayah-li-vf-fonts ( =  20240401-5.el10) google-noto-sans-khmer-vf-fonts ( =  20240401-5.el10) google-noto-sans-lao-looped-vf-fonts ( =  20240401-5.el10) google-noto-sans-lao-vf-fonts ( =  20240401-5.el10) google-noto-sans-lisu-vf-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-malayalam-vf-fonts ( =  20240401-5.el10) google-noto-sans-medefaidrin-vf-fonts ( =  20240401-5.el10) google-noto-sans-meetei-mayek-vf-fonts ( =  20240401-5.el10) google-noto-sans-myanmar-vf-fonts ( =  20240401-5.el10) google-noto-sans-nag-mundari-vf-fonts ( =  20240401-5.el10) google-noto-sans-new-tai-lue-vf-fonts ( =  20240401-5.el10) google-noto-sans-nko-unjoined-vf-fonts ( =  20240401-5.el10) google-noto-sans-ol-chiki-vf-fonts ( =  20240401-5.el10) google-noto-sans-oriya-vf-fonts ( =  20240401-5.el10) google-noto-sans-sinhala-vf-fonts ( =  20240401-5.el10) google-noto-sans-sora-sompeng-vf-fonts ( =  20240401-5.el10) google-noto-sans-sundanese-vf-fonts ( =  20240401-5.el10) google-noto-sans-symbols-vf-fonts ( =  20240401-5.el10) google-noto-sans-syriac-eastern-vf-fonts ( =  20240401-5.el10) google-noto-sans-syriac-vf-fonts ( =  20240401-5.el10) google-noto-sans-syriac-western-vf-fonts ( =  20240401-5.el10) google-noto-sans-tai-tham-vf-fonts ( =  20240401-5.el10) google-noto-sans-tamil-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-tamil-vf-fonts ( =  20240401-5.el10) google-noto-sans-tangsa-vf-fonts ( =  20240401-5.el10) google-noto-sans-telugu-ui-vf-fonts ( =  20240401-5.el10) google-noto-sans-telugu-vf-fonts ( =  20240401-5.el10) google-noto-sans-thaana-vf-fonts ( =  20240401-5.el10) google-noto-sans-thai-vf-fonts ( =  20240401-5.el10) google-noto-sans-vithkuqi-vf-fonts ( =  20240401-5.el10) google-noto-serif-armenian-vf-fonts ( =  20240401-5.el10) google-noto-serif-bengali-vf-fonts ( =  20240401-5.el10) google-noto-serif-devanagari-vf-fonts ( =  20240401-5.el10) google-noto-serif-ethiopic-vf-fonts ( =  20240401-5.el10) google-noto-serif-georgian-vf-fonts ( =  20240401-5.el10) google-noto-serif-gujarati-vf-fonts ( =  20240401-5.el10) google-noto-serif-gurmukhi-vf-fonts ( =  20240401-5.el10) google-noto-serif-hebrew-vf-fonts ( =  20240401-5.el10) google-noto-serif-kannada-vf-fonts ( =  20240401-5.el10) google-noto-serif-khmer-vf-fonts ( =  20240401-5.el10) google-noto-serif-khojki-vf-fonts ( =  20240401-5.el10) google-noto-serif-lao-vf-fonts ( =  20240401-5.el10) google-noto-serif-malayalam-vf-fonts ( =  20240401-5.el10) google-noto-serif-np-hmong-vf-fonts ( =  20240401-5.el10) google-noto-serif-oriya-vf-fonts ( =  20240401-5.el10) google-noto-serif-sinhala-vf-fonts ( =  20240401-5.el10) google-noto-serif-tamil-vf-fonts ( =  20240401-5.el10) google-noto-serif-telugu-vf-fonts ( =  20240401-5.el10) google-noto-serif-thai-vf-fonts ( =  20240401-5.el10) google-noto-serif-tibetan-vf-fonts ( =  20240401-5.el10) google-noto-serif-toto-vf-fonts ( =  20240401-5.el10) google-noto-serif-vithkuqi-vf-fonts ( =  20240401-5.el10) google-noto-serif-yezidi-vf-fonts ( =  20240401-5.el10) google-noto-traditional-nushu-vf-fonts ( =  20240401-5.el10)"
-RPROVIDES:google-noto-fonts-all-vf = "google-noto-fonts-all-vf ( =  20240401-5.el10)"
+RDEPENDS:google-noto-fonts-all-vf = "
+ google-noto-sans-lao-looped-vf-fonts
+ google-noto-sans-lao-vf-fonts
+ google-noto-sans-lisu-vf-fonts
+ google-noto-sans-malayalam-ui-vf-fonts
+ google-noto-sans-malayalam-vf-fonts
+ google-noto-sans-medefaidrin-vf-fonts
+ google-noto-sans-meetei-mayek-vf-fonts
+ google-noto-sans-myanmar-vf-fonts
+ google-noto-sans-nag-mundari-vf-fonts
+ google-noto-sans-new-tai-lue-vf-fonts
+ google-noto-sans-nko-unjoined-vf-fonts
+ google-noto-sans-ol-chiki-vf-fonts
+ google-noto-sans-oriya-vf-fonts
+ google-noto-sans-mono-vf-fonts
+ google-noto-sans-vf-fonts
+ google-noto-serif-vf-fonts
+ google-noto-sans-sinhala-vf-fonts
+ google-noto-sans-sora-sompeng-vf-fonts
+ google-noto-sans-sundanese-vf-fonts
+ google-noto-sans-symbols-vf-fonts
+ google-noto-sans-syriac-eastern-vf-fonts
+ google-noto-sans-syriac-vf-fonts
+ google-noto-sans-syriac-western-vf-fonts
+ google-noto-sans-tai-tham-vf-fonts
+ google-noto-sans-tamil-ui-vf-fonts
+ google-noto-sans-tamil-vf-fonts
+ google-noto-sans-tangsa-vf-fonts
+ google-noto-sans-telugu-ui-vf-fonts
+ google-noto-sans-telugu-vf-fonts
+ google-noto-sans-thaana-vf-fonts
+ google-noto-sans-thai-vf-fonts
+ google-noto-sans-vithkuqi-vf-fonts
+ google-noto-serif-armenian-vf-fonts
+ google-noto-serif-bengali-vf-fonts
+ google-noto-serif-devanagari-vf-fonts
+ google-noto-serif-ethiopic-vf-fonts
+ google-noto-serif-georgian-vf-fonts
+ google-noto-serif-gujarati-vf-fonts
+ google-noto-serif-gurmukhi-vf-fonts
+ google-noto-serif-hebrew-vf-fonts
+ google-noto-serif-kannada-vf-fonts
+ google-noto-serif-khmer-vf-fonts
+ google-noto-serif-khojki-vf-fonts
+ google-noto-serif-lao-vf-fonts
+ google-noto-serif-malayalam-vf-fonts
+ google-noto-serif-np-hmong-vf-fonts
+ google-noto-serif-oriya-vf-fonts
+ google-noto-serif-sinhala-vf-fonts
+ google-noto-serif-tamil-vf-fonts
+ google-noto-serif-telugu-vf-fonts
+ google-noto-serif-thai-vf-fonts
+ google-noto-serif-tibetan-vf-fonts
+ google-noto-serif-toto-vf-fonts
+ google-noto-serif-vithkuqi-vf-fonts
+ google-noto-serif-yezidi-vf-fonts
+ google-noto-traditional-nushu-vf-fonts
+ google-noto-kufi-arabic-vf-fonts
+ google-noto-naskh-arabic-ui-vf-fonts
+ google-noto-naskh-arabic-vf-fonts
+ google-noto-nastaliq-urdu-vf-fonts
+ google-noto-rashi-hebrew-vf-fonts
+ google-noto-sans-adlam-unjoined-vf-fonts
+ google-noto-sans-adlam-vf-fonts
+ google-noto-sans-arabic-vf-fonts
+ google-noto-sans-armenian-vf-fonts
+ google-noto-sans-balinese-vf-fonts
+ google-noto-sans-bamum-vf-fonts
+ google-noto-sans-bassa-vah-vf-fonts
+ google-noto-sans-bengali-vf-fonts
+ google-noto-sans-canadian-aboriginal-vf-fonts
+ google-noto-sans-cham-vf-fonts
+ google-noto-sans-cherokee-vf-fonts
+ google-noto-sans-devanagari-vf-fonts
+ google-noto-sans-ethiopic-vf-fonts
+ google-noto-sans-georgian-vf-fonts
+ google-noto-sans-gujarati-vf-fonts
+ google-noto-sans-gunjala-gondi-vf-fonts
+ google-noto-sans-gurmukhi-vf-fonts
+ google-noto-sans-hanifi-rohingya-vf-fonts
+ google-noto-sans-hebrew-vf-fonts
+ google-noto-sans-javanese-vf-fonts
+ google-noto-sans-kannada-ui-vf-fonts
+ google-noto-sans-kannada-vf-fonts
+ google-noto-sans-kawi-vf-fonts
+ google-noto-sans-kayah-li-vf-fonts
+ google-noto-sans-khmer-vf-fonts
+"
 
 URI_google-noto-serif-myanmar-vf-fonts = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/google-noto-serif-myanmar-vf-fonts-20240401-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:google-noto-serif-myanmar-vf-fonts = "fontpackages-filesystem ( ) google-noto-fonts-common ( =  20240401-5.el10)"
-RPROVIDES:google-noto-serif-myanmar-vf-fonts = "metainfo() ( ) font(notoserifmyanmar) ( ) metainfo(org.fedoraproject.google-noto-serif-myanmar-vf-fonts.metainfo.xml) ( ) google-noto-serif-myanmar-vf-fonts ( =  20240401-5.el10) config(google-noto-serif-myanmar-vf-fonts) ( =  20240401-5.el10)"
+RDEPENDS:google-noto-serif-myanmar-vf-fonts = "
+ fonts-filesystem
+ google-noto-fonts-common
+"

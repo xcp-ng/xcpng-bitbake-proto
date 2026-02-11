@@ -7,9 +7,18 @@ PACKAGES = "perl-Types-Serialiser perl-Types-Serialiser-tests"
 
 
 URI_perl-Types-Serialiser = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Types-Serialiser-1.01-14.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Types-Serialiser = "perl-libs ( ) perl(Carp) ( ) perl(overload) ( ) perl(Types::Serialiser) ( ) perl(common::sense) ( )"
-RPROVIDES:perl-Types-Serialiser = "perl(Types::Serialiser::BooleanBase) ( ) perl(Types::Serialiser::Error) ( ) perl(Types::Serialiser) ( =  1.01) perl-Types-Serialiser ( =  1.01-14.el10)"
+RDEPENDS:perl-Types-Serialiser = "
+ perl-libs
+ perl-Carp
+ perl-Types-Serialiser
+ perl-common-sense
+ perl-overload
+"
 
 URI_perl-Types-Serialiser-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Types-Serialiser-tests-1.01-14.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-Types-Serialiser-tests = "/usr/bin/perl ( ) /usr/bin/sh ( ) perl-Test-Harness ( ) perl(Types::Serialiser) ( ) perl-Types-Serialiser ( =  1.01-14.el10)"
-RPROVIDES:perl-Types-Serialiser-tests = "perl-Types-Serialiser-tests ( =  1.01-14.el10)"
+RDEPENDS:perl-Types-Serialiser-tests = "
+ perl-Types-Serialiser
+ perl-interpreter
+ perl-Test-Harness
+ bash
+"

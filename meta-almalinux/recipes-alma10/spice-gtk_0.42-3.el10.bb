@@ -7,29 +7,117 @@ PACKAGES = "spice-glib spice-glib-devel spice-gtk spice-gtk-tools spice-gtk3 spi
 
 
 URI_spice-glib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-glib-0.42-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:spice-glib = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libz.so.1()(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libssl.so.3()(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libjpeg.so.62()(64bit) ( ) libjpeg.so.62(LIBJPEG_6.2)(64bit) ( ) libjson-glib-1.0.so.0()(64bit) ( ) libjson-glib-1.0.so.0(libjson-glib-1.0.so.0)(64bit) ( ) libcap-ng.so.0()(64bit) ( ) libpolkit-gobject-1.so.0()(64bit) ( ) libusb-1.0.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libpixman-1.so.0()(64bit) ( ) libacl.so.1()(64bit) ( ) libsasl2.so.3()(64bit) ( ) libacl.so.1(ACL_1.0)(64bit) ( ) liblz4.so.1()(64bit) ( ) libsoup-3.0.so.0()(64bit) ( ) libgstvideo-1.0.so.0()(64bit) ( ) libgstbase-1.0.so.0()(64bit) ( ) libopus.so.0()(64bit) ( ) libgstaudio-1.0.so.0()(64bit) ( ) libgstapp-1.0.so.0()(64bit) ( ) libusbredirparser.so.1()(64bit) ( ) libusbredirparser.so.1(USBREDIRPARSER_0.8.0)(64bit) ( ) libphodav-3.0.so.0()(64bit) ( ) libusbredirhost.so.1()(64bit) ( ) libcacard.so.0()(64bit) ( ) libphodav-3.0.so.0(LIBPHODAV1_0.0)(64bit) ( ) libusbredirhost.so.1(USBREDIRHOST_0.8.0)(64bit) ( )"
-RPROVIDES:spice-glib = "libspice-client-glib-2.0.so.8()(64bit) ( ) libspice-client-glib-2.0.so.8(SPICEGTK_1)(64bit) ( ) spice-glib(x86-64) ( =  0.42-3.el10) spice-glib ( =  0.42-3.el10)"
+RDEPENDS:spice-glib = "
+ libcacard
+ cyrus-sasl-lib
+ libacl
+ usbredir
+ json-glib
+ libcap-ng
+ libphodav
+ libusb1
+ zlib-ng-compat
+ openssl-libs
+ opus
+ pixman
+ libsoup3
+ gstreamer1
+ lz4-libs
+ gstreamer1-plugins-base
+ polkit-libs
+ glib2
+ glibc
+ libjpeg-turbo
+"
 
 URI_spice-glib-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-glib-devel-0.42-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:spice-glib-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) pkgconfig(zlib) ( ) glib2-devel ( ) pkgconfig(libjpeg) ( ) pkgconfig(gio-unix-2.0) ( ) libspice-client-glib-2.0.so.8()(64bit) ( ) pkgconfig(json-glib-1.0) ( ) pkgconfig(liblz4) ( ) pkgconfig(libphodav-3.0) ( ) pkgconfig(libsasl2) ( ) spice-glib(x86-64) ( =  0.42-3.el10) pkgconfig(gio-2.0) ( >=  2.38) pkgconfig(glib-2.0) ( >=  2.38) pkgconfig(gobject-2.0) ( >=  2.52) pkgconfig(gobject-introspection-1.0) ( >=  0.94) pkgconfig(gstreamer-1.0) ( >=  1.10) pkgconfig(gstreamer-app-1.0) ( >=  1.10) pkgconfig(gstreamer-audio-1.0) ( >=  1.10) pkgconfig(gstreamer-base-1.0) ( >=  1.10) pkgconfig(gstreamer-video-1.0) ( >=  1.10) pkgconfig(libcacard) ( >=  2.5.1) pkgconfig(libsoup-3.0) ( >=  3.0) pkgconfig(libusb-1.0) ( >=  1.0.21) pkgconfig(libusbredirhost) ( >=  0.7.1) pkgconfig(libusbredirparser-0.5) ( >=  0.7.1) pkgconfig(openssl) ( >=  1.0.0) pkgconfig(opus) ( >=  0.9.14) pkgconfig(pixman-1) ( >=  0.17.7) pkgconfig(spice-protocol) ( >=  0.14.3)"
-RPROVIDES:spice-glib-devel = "spice-glib-devel(x86-64) ( =  0.42-3.el10) pkgconfig(spice-client-glib-2.0) ( =  0.42) spice-glib-devel ( =  0.42-3.el10)"
+RDEPENDS:spice-glib-devel = "
+ glib2-devel
+ libcacard-devel
+ libusb1-devel
+ lz4-devel
+ cyrus-sasl-devel
+ usbredir-devel
+ libphodav-devel
+ json-glib-devel
+ zlib-ng-compat-devel
+ spice-glib
+ openssl-devel
+ spice-protocol
+ opus-devel
+ pixman-devel
+ libsoup3-devel
+ gstreamer1-devel
+ pkgconf-pkg-config
+ gstreamer1-plugins-base-devel
+ gobject-introspection-devel
+ libjpeg-turbo-devel
+"
 
 URI_spice-gtk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk-0.42-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:spice-gtk = "spice-glib(x86-64) ( =  0.42-3.el10)"
-RPROVIDES:spice-gtk = "spice-gtk ( =  0.42-3.el10) spice-gtk(x86-64) ( =  0.42-3.el10)"
+RDEPENDS:spice-gtk = "
+ spice-glib
+"
 
 URI_spice-gtk-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk-tools-0.42-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:spice-gtk-tools = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libgtk-3.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libwayland-server.so.0()(64bit) ( ) libspice-client-glib-2.0.so.8()(64bit) ( ) libspice-client-glib-2.0.so.8(SPICEGTK_1)(64bit) ( ) libspice-client-gtk-3.0.so.5()(64bit) ( ) libspice-client-gtk-3.0.so.5(SPICEGTK_1)(64bit) ( ) spice-gtk3(x86-64) ( =  0.42-3.el10)"
-RPROVIDES:spice-gtk-tools = "spice-gtk-tools ( =  0.42-3.el10) spice-gtk-tools(x86-64) ( =  0.42-3.el10)"
+RDEPENDS:spice-gtk-tools = "
+ gstreamer1
+ libwayland-server
+ spice-glib
+ spice-gtk3
+ glib2
+ gtk3
+ glibc
+"
 
 URI_spice-gtk3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk3-0.42-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:spice-gtk3 = "rtld(GNU_HASH) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libX11.so.6()(64bit) ( ) libcairo.so.2()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libgtk-3.so.0()(64bit) ( ) libgdk-3.so.0()(64bit) ( ) libwayland-client.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libepoxy.so.0()(64bit) ( ) libgstvideo-1.0.so.0()(64bit) ( ) libwayland-server.so.0()(64bit) ( ) libspice-client-glib-2.0.so.8()(64bit) ( ) libphodav-3.0.so.0()(64bit) ( ) libspice-client-glib-2.0.so.8(SPICEGTK_1)(64bit) ( ) libphodav-3.0.so.0(LIBPHODAV1_0.0)(64bit) ( ) spice-glib(x86-64) ( =  0.42-3.el10)"
-RPROVIDES:spice-gtk3 = "libspice-client-gtk-3.0.so.5()(64bit) ( ) libspice-client-gtk-3.0.so.5(SPICEGTK_1)(64bit) ( ) spice-gtk3(x86-64) ( =  0.42-3.el10) spice-gtk3 ( =  0.42-3.el10)"
+RDEPENDS:spice-gtk3 = "
+ libwayland-client
+ gstreamer1
+ libepoxy
+ libwayland-server
+ spice-glib
+ gstreamer1-plugins-base
+ gdk-pixbuf2
+ libX11
+ libphodav
+ cairo
+ glib2
+ gtk3
+ glibc
+"
 
 URI_spice-gtk3-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk3-devel-0.42-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:spice-gtk3-devel = "/usr/bin/pkg-config ( ) pkgconfig ( ) pkgconfig(zlib) ( ) pkgconfig(x11) ( ) pkgconfig(libjpeg) ( ) pkgconfig(gio-unix-2.0) ( ) libspice-client-gtk-3.0.so.5()(64bit) ( ) gtk3-devel ( ) pkgconfig(epoxy) ( ) pkgconfig(json-glib-1.0) ( ) pkgconfig(liblz4) ( ) pkgconfig(libphodav-3.0) ( ) pkgconfig(libsasl2) ( ) pkgconfig(spice-client-glib-2.0) ( ) spice-gtk3(x86-64) ( =  0.42-3.el10) spice-glib-devel(x86-64) ( =  0.42-3.el10) pkgconfig(gio-2.0) ( >=  2.38) pkgconfig(glib-2.0) ( >=  2.38) pkgconfig(gobject-2.0) ( >=  2.52) pkgconfig(gobject-introspection-1.0) ( >=  0.94) pkgconfig(gstreamer-1.0) ( >=  1.10) pkgconfig(gstreamer-app-1.0) ( >=  1.10) pkgconfig(gstreamer-audio-1.0) ( >=  1.10) pkgconfig(gstreamer-base-1.0) ( >=  1.10) pkgconfig(gstreamer-video-1.0) ( >=  1.10) pkgconfig(libcacard) ( >=  2.5.1) pkgconfig(libsoup-3.0) ( >=  3.0) pkgconfig(libusb-1.0) ( >=  1.0.21) pkgconfig(libusbredirhost) ( >=  0.7.1) pkgconfig(libusbredirparser-0.5) ( >=  0.7.1) pkgconfig(openssl) ( >=  1.0.0) pkgconfig(opus) ( >=  0.9.14) pkgconfig(pixman-1) ( >=  0.17.7) pkgconfig(spice-protocol) ( >=  0.14.3) pkgconfig(gtk+-3.0) ( >=  3.22) pkgconfig(wayland-client) ( >=  1.17.0) pkgconfig(wayland-cursor) ( >=  1.17.0) pkgconfig(wayland-server) ( >=  1.17.0)"
-RPROVIDES:spice-gtk3-devel = "spice-gtk3-devel(x86-64) ( =  0.42-3.el10) pkgconfig(spice-client-gtk-3.0) ( =  0.42) spice-gtk3-devel ( =  0.42-3.el10)"
+RDEPENDS:spice-gtk3-devel = "
+ glib2-devel
+ libcacard-devel
+ libusb1-devel
+ libX11-devel
+ lz4-devel
+ libepoxy-devel
+ cyrus-sasl-devel
+ usbredir-devel
+ libphodav-devel
+ json-glib-devel
+ zlib-ng-compat-devel
+ spice-glib-devel
+ spice-gtk3
+ openssl-devel
+ spice-protocol
+ opus-devel
+ pixman-devel
+ wayland-devel
+ libsoup3-devel
+ gstreamer1-devel
+ pkgconf-pkg-config
+ gstreamer1-plugins-base-devel
+ gobject-introspection-devel
+ gtk3-devel
+ libjpeg-turbo-devel
+"
 
 URI_spice-gtk3-vala = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk3-vala-0.42-3.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:spice-gtk3-vala = "spice-gtk3(x86-64) ( =  0.42-3.el10) spice-gtk3-devel(x86-64) ( =  0.42-3.el10)"
-RPROVIDES:spice-gtk3-vala = "spice-gtk3-vala ( =  0.42-3.el10) spice-gtk3-vala(x86-64) ( =  0.42-3.el10)"
+RDEPENDS:spice-gtk3-vala = "
+ spice-gtk3
+ spice-gtk3-devel
+"

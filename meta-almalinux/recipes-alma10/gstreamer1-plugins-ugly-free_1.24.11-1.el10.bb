@@ -7,5 +7,14 @@ PACKAGES = "gstreamer1-plugins-ugly-free"
 
 
 URI_gstreamer1-plugins-ugly-free = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-ugly-free-1.24.11-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:gstreamer1-plugins-ugly-free = "rtld(GNU_HASH) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libgstvideo-1.0.so.0()(64bit) ( ) libgstpbutils-1.0.so.0()(64bit) ( ) libgstbase-1.0.so.0()(64bit) ( ) libgstaudio-1.0.so.0()(64bit) ( ) libgsttag-1.0.so.0()(64bit) ( ) libgstsdp-1.0.so.0()(64bit) ( ) liborc-0.4.so.0()(64bit) ( ) libgstrtp-1.0.so.0()(64bit) ( ) libdvdread.so.8()(64bit) ( ) libgstrtsp-1.0.so.0()(64bit) ( ) libgstriff-1.0.so.0()(64bit) ( ) liba52.so.0()(64bit) ( ) libcdio.so.19()(64bit) ( ) libcdio.so.19(CDIO_19)(64bit) ( ) libmpeg2.so.0()(64bit) ( )"
-RPROVIDES:gstreamer1-plugins-ugly-free = "metainfo() ( ) gstreamer1(decoder-video/mpeg)(mpegversion=1)(systemstream=false)()(64bit) ( ) gstreamer1(decoder-video/mpeg)(mpegversion=2)(systemstream=false)()(64bit) ( ) gstreamer1(urisource-dvd)()(64bit) ( ) gstreamer1(decoder-application/x-rtp)()(64bit) ( ) gstreamer1(decoder-audio/ac3)()(64bit) ( ) gstreamer1(decoder-audio/x-ac3)()(64bit) ( ) gstreamer1(decoder-audio/x-private1-ac3)()(64bit) ( ) gstreamer1(decoder-application/vnd.rn-realmedia)()(64bit) ( ) gstreamer1(decoder-application/x-pn-realaudio)()(64bit) ( ) gstreamer1(decoder-audio/x-lpcm)()(64bit) ( ) gstreamer1(decoder-audio/x-private-ts-lpcm)()(64bit) ( ) gstreamer1(decoder-audio/x-private1-lpcm)()(64bit) ( ) gstreamer1(decoder-audio/x-private2-lpcm)()(64bit) ( ) gstreamer1(decoder-video/x-ms-asf)()(64bit) ( ) gstreamer1(element-a52dec)()(64bit) ( ) gstreamer1(element-asfdemux)()(64bit) ( ) gstreamer1(element-cdiocddasrc)()(64bit) ( ) gstreamer1(element-dvdlpcmdec)()(64bit) ( ) gstreamer1(element-dvdreadsrc)()(64bit) ( ) gstreamer1(element-dvdsubdec)()(64bit) ( ) gstreamer1(element-dvdsubparse)()(64bit) ( ) gstreamer1(element-mpeg2dec)()(64bit) ( ) gstreamer1(element-rademux)()(64bit) ( ) gstreamer1(element-rmdemux)()(64bit) ( ) gstreamer1(element-rtpasfdepay)()(64bit) ( ) gstreamer1(element-rtspwms)()(64bit) ( ) gstreamer1(urisource-cdda)()(64bit) ( ) libgsta52dec.so()(64bit) ( ) libgstasf.so()(64bit) ( ) libgstcdio.so()(64bit) ( ) libgstdvdlpcmdec.so()(64bit) ( ) libgstdvdread.so()(64bit) ( ) libgstdvdsub.so()(64bit) ( ) libgstmpeg2dec.so()(64bit) ( ) libgstrealmedia.so()(64bit) ( ) metainfo(gstreamer-ugly-free.appdata.xml) ( ) gstreamer1-plugins-ugly-free ( =  1.24.11-1.el10) gstreamer1-plugins-ugly-free(x86-64) ( =  1.24.11-1.el10)"
+RDEPENDS:gstreamer1-plugins-ugly-free = "
+ libdvdread
+ gstreamer1
+ gstreamer1-plugins-base
+ libmpeg2
+ libcdio
+ glib2
+ glibc
+ liba52
+ orc
+"

@@ -7,37 +7,90 @@ PACKAGES = "elfutils elfutils-debuginfod-client elfutils-default-yama-scope elfu
 
 
 URI_elfutils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/elfutils-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) /usr/bin/sh ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libelf.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libelf.so.1(ELFUTILS_1.0)(64bit) ( ) libdw.so.1()(64bit) ( ) libelf.so.1(ELFUTILS_1.5)(64bit) ( ) libarchive.so.13()(64bit) ( ) libelf.so.1(ELFUTILS_1.7)(64bit) ( ) libdw.so.1(ELFUTILS_0.159)(64bit) ( ) libdw.so.1(ELFUTILS_0.177)(64bit) ( ) libelf.so.1(ELFUTILS_1.3)(64bit) ( ) libelf.so.1(ELFUTILS_1.6)(64bit) ( ) libdw.so.1(ELFUTILS_0.122)(64bit) ( ) libelf.so.1(ELFUTILS_1.1.1)(64bit) ( ) libelf.so.1(ELFUTILS_1.4)(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) libdw.so.1(ELFUTILS_0.126)(64bit) ( ) libdw.so.1(ELFUTILS_0.143)(64bit) ( ) libdw.so.1(ELFUTILS_0.158)(64bit) ( ) libasm.so.1()(64bit) ( ) libasm.so.1(ELFUTILS_1.0)(64bit) ( ) libdw.so.1(ELFUTILS_0.127)(64bit) ( ) libdw.so.1(ELFUTILS_0.130)(64bit) ( ) libdw.so.1(ELFUTILS_0.138)(64bit) ( ) libdw.so.1(ELFUTILS_0.148)(64bit) ( ) libdw.so.1(ELFUTILS_0.149)(64bit) ( ) libdw.so.1(ELFUTILS_0.160)(64bit) ( ) libdw.so.1(ELFUTILS_0.161)(64bit) ( ) libdw.so.1(ELFUTILS_0.165)(64bit) ( ) libdw.so.1(ELFUTILS_0.167)(64bit) ( ) libdw.so.1(ELFUTILS_0.171)(64bit) ( ) libdw.so.1(ELFUTILS_0.173)(64bit) ( ) libdw.so.1(ELFUTILS_0.188)(64bit) ( ) libdw.so.1(ELFUTILS_0.191)(64bit) ( ) libdw.so.1(ELFUTILS_0.192)(64bit) ( ) libelf.so.1(ELFUTILS_1.1)(64bit) ( ) libelf.so.1(ELFUTILS_1.2)(64bit) ( ) elfutils-libelf(x86-64) ( =  0.192-6.el10_0) elfutils-debuginfod-client(x86-64) ( =  0.192-6.el10_0) elfutils-libs(x86-64) ( =  0.192-6.el10_0)"
-RPROVIDES:elfutils = "elfutils ( =  0.192-6.el10_0) elfutils(x86-64) ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils = "
+ libarchive
+ elfutils-debuginfod-client
+ libgcc
+ elfutils-libelf
+ elfutils-libs
+ libstdc++
+ bash
+ glibc
+"
 
 URI_elfutils-debuginfod-client = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/elfutils-debuginfod-client-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils-debuginfod-client = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libcurl.so.4()(64bit) ( ) libelf.so.1()(64bit) ( ) libjson-c.so.5()(64bit) ( ) libjson-c.so.5(JSONC_0.14)(64bit) ( ) libelf.so.1(ELFUTILS_1.0)(64bit) ( ) libdw.so.1()(64bit) ( ) libelf.so.1(ELFUTILS_1.5)(64bit) ( ) libdw.so.1(ELFUTILS_0.159)(64bit) ( ) libdw.so.1(ELFUTILS_0.177)(64bit) ( ) elfutils-libelf(x86-64) ( =  0.192-6.el10_0) elfutils-libs(x86-64) ( =  0.192-6.el10_0)"
-RPROVIDES:elfutils-debuginfod-client = "libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.179)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.183)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.188)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.192)(64bit) ( ) elfutils-debuginfod-client(x86-64) ( =  0.192-6.el10_0) config(elfutils-debuginfod-client) ( =  0.192-6.el10_0) elfutils-debuginfod-client ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-debuginfod-client = "
+ openssl-libs
+ json-c
+ elfutils-libelf
+ elfutils-libs
+ libcurl
+ glibc
+"
 
 URI_elfutils-default-yama-scope = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/elfutils-default-yama-scope-0.192-6.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:elfutils-default-yama-scope = "/bin/sh ( )"
-RPROVIDES:elfutils-default-yama-scope = "default-yama-scope ( ) elfutils-default-yama-scope ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-default-yama-scope = "
+ bash
+"
 
 URI_elfutils-libelf = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/elfutils-libelf-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils-libelf = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libz.so.1()(64bit) ( ) libzstd.so.1()(64bit) ( )"
-RPROVIDES:elfutils-libelf = "libelf.so.1()(64bit) ( ) libelf.so.1(ELFUTILS_1.0)(64bit) ( ) libelf.so.1(ELFUTILS_1.5)(64bit) ( ) libelf.so.1(ELFUTILS_1.7)(64bit) ( ) libelf.so.1(ELFUTILS_1.3)(64bit) ( ) libelf.so.1(ELFUTILS_1.6)(64bit) ( ) libelf.so.1(ELFUTILS_1.1.1)(64bit) ( ) libelf.so.1(ELFUTILS_1.4)(64bit) ( ) libelf.so.1(ELFUTILS_1.1)(64bit) ( ) libelf.so.1(ELFUTILS_1.2)(64bit) ( ) elfutils-libelf(x86-64) ( =  0.192-6.el10_0) elfutils-libelf ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-libelf = "
+ glibc
+ zlib-ng-compat
+ libzstd
+"
 
 URI_elfutils-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/elfutils-libs-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libz.so.1()(64bit) ( ) liblzma.so.5()(64bit) ( ) liblzma.so.5(XZ_5.0)(64bit) ( ) libzstd.so.1()(64bit) ( ) libbz2.so.1()(64bit) ( ) libelf.so.1()(64bit) ( ) libelf.so.1(ELFUTILS_1.0)(64bit) ( ) libelf.so.1(ELFUTILS_1.5)(64bit) ( ) libelf.so.1(ELFUTILS_1.7)(64bit) ( ) libz.so.1(ZLIB_1.2.2.3)(64bit) ( ) libelf.so.1(ELFUTILS_1.3)(64bit) ( ) libelf.so.1(ELFUTILS_1.6)(64bit) ( ) libelf.so.1(ELFUTILS_1.1.1)(64bit) ( ) libelf.so.1(ELFUTILS_1.4)(64bit) ( ) default-yama-scope ( ) elfutils-libelf(x86-64) ( =  0.192-6.el10_0)"
-RPROVIDES:elfutils-libs = "libdw.so.1()(64bit) ( ) libdw.so.1(ELFUTILS_0.159)(64bit) ( ) libdw.so.1(ELFUTILS_0.177)(64bit) ( ) libdw.so.1(ELFUTILS_0.122)(64bit) ( ) libdw.so.1(ELFUTILS_0.126)(64bit) ( ) libdw.so.1(ELFUTILS_0.143)(64bit) ( ) libdw.so.1(ELFUTILS_0.158)(64bit) ( ) libasm.so.1()(64bit) ( ) libasm.so.1(ELFUTILS_1.0)(64bit) ( ) libdw.so.1(ELFUTILS_0.127)(64bit) ( ) libdw.so.1(ELFUTILS_0.130)(64bit) ( ) libdw.so.1(ELFUTILS_0.138)(64bit) ( ) libdw.so.1(ELFUTILS_0.148)(64bit) ( ) libdw.so.1(ELFUTILS_0.149)(64bit) ( ) libdw.so.1(ELFUTILS_0.160)(64bit) ( ) libdw.so.1(ELFUTILS_0.161)(64bit) ( ) libdw.so.1(ELFUTILS_0.165)(64bit) ( ) libdw.so.1(ELFUTILS_0.167)(64bit) ( ) libdw.so.1(ELFUTILS_0.171)(64bit) ( ) libdw.so.1(ELFUTILS_0.173)(64bit) ( ) libdw.so.1(ELFUTILS_0.186)(64bit) ( ) libdw.so.1(ELFUTILS_0.188)(64bit) ( ) libdw.so.1(ELFUTILS_0.191)(64bit) ( ) libdw.so.1(ELFUTILS_0.192)(64bit) ( ) libdw.so.1(ELFUTILS_0)(64bit) ( ) libdw.so.1(ELFUTILS_0.136)(64bit) ( ) libdw.so.1(ELFUTILS_0.142)(64bit) ( ) libdw.so.1(ELFUTILS_0.144)(64bit) ( ) libdw.so.1(ELFUTILS_0.146)(64bit) ( ) libdw.so.1(ELFUTILS_0.156)(64bit) ( ) libdw.so.1(ELFUTILS_0.157)(64bit) ( ) libdw.so.1(ELFUTILS_0.170)(64bit) ( ) libdw.so.1(ELFUTILS_0.175)(64bit) ( ) elfutils-libs(x86-64) ( =  0.192-6.el10_0) elfutils-libs ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-libs = "
+ zlib-ng-compat
+ bzip2-libs
+ elfutils-default-yama-scope
+ elfutils-libelf
+ libzstd
+ glibc
+ xz-libs
+"
 
 URI_elfutils-debuginfod = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/elfutils-debuginfod-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils-debuginfod = "/bin/sh ( ) systemd ( ) shadow-utils ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libelf.so.1()(64bit) ( ) libelf.so.1(ELFUTILS_1.0)(64bit) ( ) liblzma.so.5()(64bit) ( ) libelf.so.1(ELFUTILS_1.5)(64bit) ( ) liblzma.so.5(XZ_5.0)(64bit) ( ) libdw.so.1()(64bit) ( ) libdw.so.1(ELFUTILS_0.122)(64bit) ( ) libsqlite3.so.0()(64bit) ( ) libdw.so.1(ELFUTILS_0.127)(64bit) ( ) libarchive.so.13()(64bit) ( ) libjson-c.so.5()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.17)(64bit) ( ) libjson-c.so.5(JSONC_0.14)(64bit) ( ) librpm.so.10()(64bit) ( ) librpmio.so.10()(64bit) ( ) libdebuginfod.so.1()(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.178)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.179)(64bit) ( ) bsdtar ( ) libdebuginfod.so.1(ELFUTILS_0.188)(64bit) ( ) libdw.so.1(ELFUTILS_0.159)(64bit) ( ) libdebuginfod.so.1(ELFUTILS_0.192)(64bit) ( ) libmicrohttpd.so.12()(64bit) ( ) elfutils-debuginfod-client(x86-64) ( =  0.192-6.el10_0) elfutils-libelf(x86-64) ( =  0.192-6.el10_0) elfutils-libs(x86-64) ( =  0.192-6.el10_0)"
-RPROVIDES:elfutils-debuginfod = "group(debuginfod) ( ) user(debuginfod) ( =  dSBkZWJ1Z2luZm9kIC0gImVsZnV0aWxzIGRlYnVnaW5mbyBzZXJ2ZXIiIC92YXIvY2FjaGUvZGVidWdpbmZvZCAt) config(elfutils-debuginfod) ( =  0.192-6.el10_0) elfutils-debuginfod ( =  0.192-6.el10_0) elfutils-debuginfod(x86-64) ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-debuginfod = "
+ shadow-utils
+ systemd
+ libarchive
+ bsdtar
+ elfutils-debuginfod-client
+ libgcc
+ json-c
+ libmicrohttpd
+ elfutils-libelf
+ elfutils-libs
+ sqlite-libs
+ libstdc++
+ bash
+ glibc
+ rpm-libs
+ xz-libs
+"
 
 URI_elfutils-debuginfod-client-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/elfutils-debuginfod-client-devel-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils-debuginfod-client-devel = "/usr/bin/pkg-config ( ) elfutils-debuginfod-client(x86-64) ( =  0.192-6.el10_0)"
-RPROVIDES:elfutils-debuginfod-client-devel = "pkgconfig(libdebuginfod) ( =  0.192) elfutils-debuginfod-client-devel(x86-64) ( =  0.192-6.el10_0) elfutils-debuginfod-client-devel ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-debuginfod-client-devel = "
+ elfutils-debuginfod-client
+ pkgconf-pkg-config
+"
 
 URI_elfutils-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/elfutils-devel-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils-devel = "/usr/bin/pkg-config ( ) libdw.so.1()(64bit) ( ) pkgconfig(zlib) ( ) pkgconfig(libzstd) ( ) pkgconfig(liblzma) ( ) libasm.so.1()(64bit) ( ) pkgconfig(libelf) ( =  0.192) elfutils-libs(x86-64) ( =  0.192-6.el10_0) elfutils-libelf-devel(x86-64) ( =  0.192-6.el10_0)"
-RPROVIDES:elfutils-devel = "pkgconfig(libdw) ( =  0.192) elfutils-devel ( =  0.192-6.el10_0) elfutils-devel(x86-64) ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-devel = "
+ xz-devel
+ zlib-ng-compat-devel
+ libzstd-devel
+ pkgconf-pkg-config
+ elfutils-libs
+ elfutils-libelf-devel
+"
 
 URI_elfutils-libelf-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/elfutils-libelf-devel-0.192-6.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:elfutils-libelf-devel = "/usr/bin/pkg-config ( ) libelf.so.1()(64bit) ( ) pkgconfig(zlib) ( ) pkgconfig(libzstd) ( ) elfutils-libelf(x86-64) ( =  0.192-6.el10_0)"
-RPROVIDES:elfutils-libelf-devel = "pkgconfig(libelf) ( =  0.192) elfutils-libelf-devel(x86-64) ( =  0.192-6.el10_0) elfutils-libelf-devel ( =  0.192-6.el10_0)"
+RDEPENDS:elfutils-libelf-devel = "
+ zlib-ng-compat-devel
+ libzstd-devel
+ pkgconf-pkg-config
+ elfutils-libelf
+"

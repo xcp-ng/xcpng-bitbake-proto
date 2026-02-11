@@ -7,9 +7,36 @@ PACKAGES = "perl-XML-XPath perl-XML-XPath-tests"
 
 
 URI_perl-XML-XPath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-XML-XPath-1.48-8.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-XML-XPath = "perl(strict) ( ) perl-libs ( ) perl(warnings) ( ) perl(Carp) ( ) perl(Exporter) ( ) /usr/bin/perl ( ) perl(POSIX) ( ) perl(overload) ( ) perl(Scalar::Util) ( ) perl(Encode) ( ) perl(Data::Dumper) ( ) perl(IO::File) ( ) perl(parent) ( ) perl(I18N::Langinfo) ( ) perl(XML::XPath) ( ) perl(XML::XPath::XMLParser) ( ) perl(open) ( ) perl(XML::XPath::Boolean) ( ) perl(XML::XPath::Expr) ( ) perl(XML::XPath::Function) ( ) perl(XML::XPath::Literal) ( ) perl(XML::XPath::LocationPath) ( ) perl(XML::XPath::Node) ( ) perl(XML::XPath::Node::Attribute) ( ) perl(XML::XPath::Node::Comment) ( ) perl(XML::XPath::Node::Element) ( ) perl(XML::XPath::Node::Namespace) ( ) perl(XML::XPath::Node::PI) ( ) perl(XML::XPath::Node::Text) ( ) perl(XML::XPath::NodeSet) ( ) perl(XML::XPath::Number) ( ) perl(XML::XPath::Parser) ( ) perl(XML::XPath::Root) ( ) perl(XML::XPath::Step) ( ) perl(XML::XPath::Variable) ( ) perl(XML::Parser) ( >=  2.23)"
-RPROVIDES:perl-XML-XPath = "perl(XML::XPath::Node::CommentImpl) ( ) perl(XML::XPath::Node::ElementImpl) ( ) perl(XML::XPath::Node::NamespaceImpl) ( ) perl(XML::XPath::Node::PIImpl) ( ) perl(XML::XPath::Node::TextImpl) ( ) perl(XML::XPath::NodeImpl) ( ) perl(XML::XPath) ( =  1.48) perl(XML::XPath::Boolean) ( =  1.48) perl(XML::XPath::Builder) ( =  1.48) perl(XML::XPath::Expr) ( =  1.48) perl(XML::XPath::Function) ( =  1.48) perl(XML::XPath::Literal) ( =  1.48) perl(XML::XPath::LocationPath) ( =  1.48) perl(XML::XPath::Node) ( =  1.48) perl(XML::XPath::Node::Attribute) ( =  1.48) perl(XML::XPath::Node::AttributeImpl) ( =  1.48) perl(XML::XPath::Node::Comment) ( =  1.48) perl(XML::XPath::Node::Element) ( =  1.48) perl(XML::XPath::Node::Namespace) ( =  1.48) perl(XML::XPath::Node::PI) ( =  1.48) perl(XML::XPath::Node::Text) ( =  1.48) perl(XML::XPath::NodeSet) ( =  1.48) perl(XML::XPath::Number) ( =  1.48) perl(XML::XPath::Parser) ( =  1.48) perl(XML::XPath::PerlSAX) ( =  1.48) perl(XML::XPath::Root) ( =  1.48) perl(XML::XPath::Step) ( =  1.48) perl(XML::XPath::Variable) ( =  1.48) perl(XML::XPath::XMLParser) ( =  1.48) perl-XML-XPath ( =  1.48-8.el10)"
+RDEPENDS:perl-XML-XPath = "
+ perl-Scalar-List-Utils
+ perl-libs
+ perl-Carp
+ perl-interpreter
+ perl-IO
+ perl-I18N-Langinfo
+ perl-POSIX
+ perl-open
+ perl-Encode
+ perl-overload
+ perl-XML-Parser
+ perl-parent
+ perl-XML-XPath
+ perl-Exporter
+ perl-Data-Dumper
+"
 
 URI_perl-XML-XPath-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-XML-XPath-tests-1.48-8.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-XML-XPath-tests = "perl(strict) ( ) /usr/bin/perl ( ) /usr/bin/sh ( ) perl-Test-Harness ( ) perl(warnings) ( ) perl(Test::More) ( ) perl(Data::Dumper) ( ) perl(utf8) ( ) perl(constant) ( ) perl(Encode) ( ) perl(Test) ( ) perl(open) ( ) perl(I18N::Langinfo) ( ) perl(XML::XPath) ( ) perl(XML::XPath::XMLParser) ( ) perl(XML::XPath::Node::Comment) ( ) perl(XML::XPath::NodeSet) ( ) perl(XML::XPath::Parser) ( ) perl-XML-XPath ( =  1.48-8.el10)"
-RPROVIDES:perl-XML-XPath-tests = "perl-XML-XPath-tests ( =  1.48-8.el10)"
+RDEPENDS:perl-XML-XPath-tests = "
+ perl-constant
+ perl-Test
+ perl-Test-Harness
+ perl-libs
+ perl-Test-Simple
+ perl-I18N-Langinfo
+ perl-open
+ perl-Encode
+ bash
+ perl-XML-XPath
+ perl-interpreter
+ perl-Data-Dumper
+"

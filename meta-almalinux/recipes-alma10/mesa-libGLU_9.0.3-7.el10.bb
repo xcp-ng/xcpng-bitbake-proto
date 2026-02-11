@@ -7,9 +7,16 @@ PACKAGES = "mesa-libGLU mesa-libGLU-devel"
 
 
 URI_mesa-libGLU = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mesa-libGLU-9.0.3-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mesa-libGLU = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libOpenGL.so.0()(64bit) ( )"
-RPROVIDES:mesa-libGLU = "libGLU.so.1()(64bit) ( ) libGLU ( ) mesa-libGLU(x86-64) ( =  9.0.3-7.el10) mesa-libGLU ( =  9.0.3-7.el10)"
+RDEPENDS:mesa-libGLU = "
+ glibc
+ libglvnd-opengl
+ libgcc
+ libstdc++
+"
 
 URI_mesa-libGLU-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mesa-libGLU-devel-9.0.3-7.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:mesa-libGLU-devel = "/usr/bin/pkg-config ( ) libGLU.so.1()(64bit) ( ) pkgconfig(opengl) ( ) mesa-libGLU(x86-64) ( =  9.0.3-7.el10)"
-RPROVIDES:mesa-libGLU-devel = "libGLU-devel ( ) mesa-libGLU-devel ( =  9.0.3-7.el10) mesa-libGLU-devel(x86-64) ( =  9.0.3-7.el10) pkgconfig(glu) ( =  9.0.3)"
+RDEPENDS:mesa-libGLU-devel = "
+ mesa-libGLU
+ pkgconf-pkg-config
+ libglvnd-devel
+"

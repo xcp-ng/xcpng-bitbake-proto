@@ -7,9 +7,60 @@ PACKAGES = "perl-libwww-perl perl-libwww-perl-tests"
 
 
 URI_perl-libwww-perl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-libwww-perl-6.76-3.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-libwww-perl = "perl(strict) ( ) perl-libs ( ) perl(warnings) ( ) perl(Carp) ( ) perl(Exporter) ( ) /usr/bin/perl ( ) perl(File::Spec) ( ) perl(Getopt::Long) ( ) perl(Fcntl) ( ) perl(Scalar::Util) ( ) perl(integer) ( ) perl(parent) ( ) perl(File::Copy) ( ) perl(IO::Socket) ( ) perl(Digest::MD5) ( ) perl(LWP::UserAgent) ( ) perl(IO::Select) ( ) perl(HTML::Entities) ( ) perl(URI::Escape) ( ) perl(Encode::Locale) ( ) perl(HTTP::Headers::Util) ( ) perl(LWP::Simple) ( ) perl(Module::Load) ( ) perl(LWP) ( ) perl(LWP::Protocol) ( ) perl(LWP::Protocol::http) ( ) perl(Net::NNTP) ( ) perl(Data::Dump::Trace) ( ) perl(HTML::HeadParser) ( ) perl(HTTP::Config) ( ) perl(LWP::Authen::Basic) ( ) perl(LWP::MemberMixin) ( ) perl(Try::Tiny) ( ) perl(URI::Heuristic) ( ) perl(HTTP::Date) ( >=  6) perl(URI) ( >=  1.10) perl(LWP::MediaTypes) ( >=  6) perl(MIME::Base64) ( >=  2.1) perl(Authen::NTLM) ( >=  1.02) perl(Data::Dump) ( >=  1.13) perl(Encode) ( >=  2.12) perl(File::Listing) ( >=  6) perl(HTTP::Cookies) ( >=  6) perl(HTTP::Negotiate) ( >=  6) perl(HTTP::Request) ( >=  6.18) perl(HTTP::Request::Common) ( >=  6.18) perl(HTTP::Response) ( >=  6.18) perl(HTTP::Status) ( >=  6.18) perl(Net::FTP) ( >=  2.58) perl(Net::HTTP) ( >=  6.18) perl(WWW::RobotRules) ( >=  6)"
-RPROVIDES:perl-libwww-perl = "perl(LWP) ( =  6.76) perl(LWP::Authen::Basic) ( =  6.76) perl(LWP::Authen::Digest) ( =  6.76) perl(LWP::Authen::Ntlm) ( =  6.76) perl(LWP::ConnCache) ( =  6.76) perl(LWP::Debug) ( =  6.76) perl(LWP::Debug::TraceHTTP) ( =  6.76) perl(LWP::Debug::TraceHTTP::Socket) ( =  6.76) perl(LWP::DebugFile) ( =  6.76) perl(LWP::MemberMixin) ( =  6.76) perl(LWP::Protocol) ( =  6.76) perl(LWP::Protocol::cpan) ( =  6.76) perl(LWP::Protocol::data) ( =  6.76) perl(LWP::Protocol::file) ( =  6.76) perl(LWP::Protocol::ftp) ( =  6.76) perl(LWP::Protocol::gopher) ( =  6.76) perl(LWP::Protocol::http) ( =  6.76) perl(LWP::Protocol::http::Socket) ( =  6.76) perl(LWP::Protocol::http::SocketMethods) ( =  6.76) perl(LWP::Protocol::loopback) ( =  6.76) perl(LWP::Protocol::mailto) ( =  6.76) perl(LWP::Protocol::nntp) ( =  6.76) perl(LWP::Protocol::nogo) ( =  6.76) perl(LWP::RobotUA) ( =  6.76) perl(LWP::Simple) ( =  6.76) perl(LWP::UserAgent) ( =  6.76) perl-libwww-perl ( =  6.76-3.el10)"
+RDEPENDS:perl-libwww-perl = "
+ perl-libnet
+ perl-Scalar-List-Utils
+ perl-libs
+ perl-libwww-perl
+ perl-Getopt-Long
+ perl-parent
+ perl-HTML-Parser
+ perl-HTTP-Cookies
+ perl-HTTP-Date
+ perl-HTTP-Message
+ perl-HTTP-Negotiate
+ perl-File-Listing
+ perl-Carp
+ perl-IO
+ perl-LWP-MediaTypes
+ perl-Data-Dump
+ perl-MIME-Base64
+ perl-Try-Tiny
+ perl-URI
+ perl-Digest-MD5
+ perl-Module-Load
+ perl-WWW-RobotRules
+ perl-Encode
+ perl-Encode-Locale
+ perl-NTLM
+ perl-Exporter
+ perl-Net-HTTP
+ perl-Fcntl
+ perl-File-Copy
+ perl-PathTools
+ perl-interpreter
+"
 
 URI_perl-libwww-perl-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-libwww-perl-tests-6.76-3.el10.noarch.rpm;unpack=0"
-RDEPENDS:perl-libwww-perl-tests = "perl(strict) ( ) /usr/bin/perl ( ) perl-Test-Harness ( ) perl(warnings) ( ) /usr/bin/bash ( ) perl(File::Spec) ( ) perl(Config) ( ) perl(File::Temp) ( ) perl(utf8) ( ) perl(ExtUtils::MakeMaker) ( ) coreutils ( ) perl(FindBin) ( ) perl(parent) ( ) perl(IO::Socket) ( ) perl(IO::Select) ( ) perl(Test::Fatal) ( ) perl(HTTP::CookieJar::LWP) ( ) perl(LWP::UserAgent) ( ) perl(LWP::RobotUA) ( ) perl(LWP::Protocol) ( ) perl(LWP::Protocol::http) ( ) perl(LWP::Simple) ( ) perl(Test::More) ( >=  0.96) perl(URI) ( >=  1.10) perl-libwww-perl ( =  6.76-3.el10) perl(HTTP::Cookies) ( >=  6) perl(HTTP::Request) ( >=  6.18) perl(HTTP::Response) ( >=  6.18) perl(Net::HTTP) ( >=  6.18) perl(HTTP::Daemon) ( >=  6.01)"
-RPROVIDES:perl-libwww-perl-tests = "perl-libwww-perl-tests ( =  6.76-3.el10)"
+RDEPENDS:perl-libwww-perl-tests = "
+ perl-libs
+ perl-libwww-perl
+ perl-FindBin
+ perl-HTTP-CookieJar
+ perl-parent
+ perl-HTTP-Cookies
+ perl-HTTP-Message
+ perl-Test-Fatal
+ perl-Test-Harness
+ perl-Test-Simple
+ perl-IO
+ perl-URI
+ bash
+ perl-Net-HTTP
+ perl-ExtUtils-MakeMaker
+ perl-PathTools
+ coreutils
+ perl-interpreter
+ perl-HTTP-Daemon
+ perl-File-Temp
+"

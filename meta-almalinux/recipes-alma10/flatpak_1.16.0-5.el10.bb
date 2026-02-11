@@ -7,25 +7,113 @@ PACKAGES = "flatpak flatpak-libs flatpak-selinux flatpak-session-helper flatpak-
 
 
 URI_flatpak = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flatpak-1.16.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flatpak = "/bin/sh ( ) shadow-utils ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) /usr/bin/sh ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) /usr/bin/python3 ( ) libgio-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libsystemd.so.0()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libzstd.so.1()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libxml2.so.2(LIBXML2_2.6.0)(64bit) ( ) libcurl.so.4()(64bit) ( ) libjson-glib-1.0.so.0()(64bit) ( ) libjson-glib-1.0.so.0(libjson-glib-1.0.so.0)(64bit) ( ) libpolkit-gobject-1.so.0()(64bit) ( ) libwayland-client.so.0()(64bit) ( ) libarchive.so.13()(64bit) ( ) libseccomp.so.2()(64bit) ( ) libfuse3.so.3()(64bit) ( ) libfuse3.so.3(FUSE_3.0)(64bit) ( ) libXau.so.6()(64bit) ( ) libostree-1.so.1()(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.3)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.4)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.8)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.10)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.5)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.15)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2018.6)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.7)(64bit) ( ) libpolkit-agent-1.so.0()(64bit) ( ) libappstream.so.5()(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.14)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.6)(64bit) ( ) libdconf.so.1()(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.12)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.2)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2018.9)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2019.4)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2020.8)(64bit) ( ) librsvg2(x86-64) ( ) libostree-1.so.1(LIBOSTREE_2016.6)(64bit) ( ) /usr/bin/xdg-dbus-proxy ( ) /usr/bin/fusermount3 ( ) appstream(x86-64) ( >=  1.0.0~) bubblewrap ( >=  0.10.0) flatpak-session-helper(x86-64) ( =  1.16.0-5.el10) ostree-libs(x86-64) ( >=  2020.8) flatpak-selinux ( if  selinux-policy-targeted) glib2(x86-64) ( >=  2.46.0) libcurl(x86-64) ( >=  7.29.0)"
-RPROVIDES:flatpak = "group(flatpak) ( ) flatpak ( =  1.16.0-5.el10) flatpak(x86-64) ( =  1.16.0-5.el10) user(flatpak) ( =  dSBmbGF0cGFrIC0gIkZsYXRwYWsgc3lzdGVtIGhlbHBlciIgLQAA)"
+RDEPENDS:flatpak = "
+ python3
+ ostree-libs
+ xdg-dbus-proxy
+ flatpak-session-helper
+ flatpak-selinux
+ systemd-libs
+ appstream
+ libXau
+ libseccomp
+ libarchive
+ json-glib
+ dconf
+ libcurl
+ shadow-utils
+ libwayland-client
+ librsvg2
+ libgcc
+ libxml2
+ gdk-pixbuf2
+ libzstd
+ bash
+ bubblewrap
+ fuse3
+ fuse3-libs
+ polkit-libs
+ glib2
+ glibc
+"
 
 URI_flatpak-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flatpak-libs-1.16.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flatpak-libs = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libxml2.so.2()(64bit) ( ) libsystemd.so.0()(64bit) ( ) libxml2.so.2(LIBXML2_2.4.30)(64bit) ( ) libzstd.so.1()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libxml2.so.2(LIBXML2_2.6.0)(64bit) ( ) libcurl.so.4()(64bit) ( ) libjson-glib-1.0.so.0()(64bit) ( ) libjson-glib-1.0.so.0(libjson-glib-1.0.so.0)(64bit) ( ) libwayland-client.so.0()(64bit) ( ) libarchive.so.13()(64bit) ( ) libseccomp.so.2()(64bit) ( ) libXau.so.6()(64bit) ( ) libostree-1.so.1()(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.3)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.4)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.8)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.10)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.5)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.15)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2018.6)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.7)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.6)(64bit) ( ) libdconf.so.1()(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.2)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2018.9)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.6)(64bit) ( ) bubblewrap ( >=  0.10.0) ostree-libs(x86-64) ( >=  2020.8)"
-RPROVIDES:flatpak-libs = "libflatpak.so.0()(64bit) ( ) flatpak-libs ( =  1.16.0-5.el10) flatpak-libs(x86-64) ( =  1.16.0-5.el10)"
+RDEPENDS:flatpak-libs = "
+ ostree-libs
+ bubblewrap
+ systemd-libs
+ libarchive
+ libwayland-client
+ libseccomp
+ libgcc
+ libxml2
+ json-glib
+ libzstd
+ libXau
+ glib2
+ dconf
+ libcurl
+ glibc
+"
 
 URI_flatpak-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flatpak-selinux-1.16.0-5.el10.noarch.rpm;unpack=0"
-RDEPENDS:flatpak-selinux = "/bin/sh ( ) policycoreutils ( ) policycoreutils-python-utils ( ) libselinux-utils ( ) selinux-policy-base ( >=  40.13.24) selinux-policy ( >=  40.13.24)"
-RPROVIDES:flatpak-selinux = "flatpak-selinux ( =  1.16.0-5.el10)"
+RDEPENDS:flatpak-selinux = "
+ policycoreutils-python-utils
+ policycoreutils
+ bash
+ selinux-policy
+ libselinux-utils
+"
 
 URI_flatpak-session-helper = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flatpak-session-helper-1.16.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flatpak-session-helper = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) systemd ( )"
-RPROVIDES:flatpak-session-helper = "flatpak-session-helper(x86-64) ( =  1.16.0-5.el10) flatpak-session-helper ( =  1.16.0-5.el10)"
+RDEPENDS:flatpak-session-helper = "
+ glibc
+ libgcc
+ systemd
+ glib2
+"
 
 URI_flatpak-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/flatpak-devel-1.16.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flatpak-devel = "/usr/bin/pkg-config ( ) pkgconfig(gio-2.0) ( ) pkgconfig(gio-unix-2.0) ( ) pkgconfig(json-glib-1.0) ( ) pkgconfig(libsystemd) ( ) pkgconfig(libseccomp) ( ) pkgconfig(wayland-client) ( ) libflatpak.so.0()(64bit) ( ) pkgconfig(xau) ( ) pkgconfig(libarchive) ( >=  2.8.0) pkgconfig(gpgme) ( >=  1.8.0) pkgconfig(libcurl) ( >=  7.29.0) flatpak(x86-64) ( =  1.16.0-5.el10) flatpak-libs(x86-64) ( =  1.16.0-5.el10) pkgconfig(dconf) ( >=  0.26) pkgconfig(glib-2.0) ( >=  2.46) pkgconfig(libxml-2.0) ( >=  2.4) pkgconfig(libzstd) ( >=  0.8.1) pkgconfig(ostree-1) ( >=  2020.8) pkgconfig(polkit-agent-1) ( >=  0.98)"
-RPROVIDES:flatpak-devel = "flatpak-devel ( =  1.16.0-5.el10) flatpak-devel(x86-64) ( =  1.16.0-5.el10) pkgconfig(flatpak) ( =  1.16.0)"
+RDEPENDS:flatpak-devel = "
+ json-glib-devel
+ wayland-devel
+ flatpak-libs
+ glib2-devel
+ libarchive-devel
+ gpgme-devel
+ libxml2-devel
+ ostree-devel
+ systemd-devel
+ libzstd-devel
+ polkit-devel
+ pkgconf-pkg-config
+ libseccomp-devel
+ libXau-devel
+ libcurl-devel
+ dconf-devel
+ flatpak
+"
 
 URI_flatpak-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flatpak-tests-1.16.0-5.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:flatpak-tests = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) /usr/bin/bash ( ) libglib-2.0.so.0()(64bit) ( ) /usr/bin/python3 ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libarchive.so.13()(64bit) ( ) libjson-glib-1.0.so.0()(64bit) ( ) libjson-glib-1.0.so.0(libjson-glib-1.0.so.0)(64bit) ( ) libcurl.so.4()(64bit) ( ) libXau.so.6()(64bit) ( ) libwayland-client.so.0()(64bit) ( ) libseccomp.so.2()(64bit) ( ) libappstream.so.5()(64bit) ( ) libdconf.so.1()(64bit) ( ) libflatpak.so.0()(64bit) ( ) libfuse3.so.3()(64bit) ( ) libfuse3.so.3(FUSE_3.0)(64bit) ( ) libfuse3.so.3(FUSE_3.1)(64bit) ( ) libostree-1.so.1()(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.3)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2016.5)(64bit) ( ) libostree-1.so.1(LIBOSTREE_2017.2)(64bit) ( ) flatpak(x86-64) ( =  1.16.0-5.el10) bubblewrap ( >=  0.10.0) flatpak-session-helper(x86-64) ( =  1.16.0-5.el10) flatpak-libs(x86-64) ( =  1.16.0-5.el10) ostree(x86-64) ( >=  2020.8)"
-RPROVIDES:flatpak-tests = "libpreload.so()(64bit) ( ) flatpak-tests ( =  1.16.0-5.el10) flatpak-tests(x86-64) ( =  1.16.0-5.el10)"
+RDEPENDS:flatpak-tests = "
+ python3
+ flatpak-libs
+ ostree-libs
+ flatpak-session-helper
+ appstream
+ libXau
+ libseccomp
+ libarchive
+ json-glib
+ dconf
+ libcurl
+ libwayland-client
+ libgcc
+ bash
+ bubblewrap
+ fuse3-libs
+ glib2
+ glibc
+ ostree
+ flatpak
+"

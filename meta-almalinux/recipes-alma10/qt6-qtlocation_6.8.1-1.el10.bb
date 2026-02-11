@@ -7,17 +7,45 @@ PACKAGES = "qt6-qtlocation qt6-qtlocation-devel qt6-qtlocation-examples qt6-qtlo
 
 
 URI_qt6-qtlocation = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtlocation-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtlocation = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6QmlModels.so.6()(64bit) ( ) libQt6Positioning.so.6()(64bit) ( ) libQt6QmlModels.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Positioning.so.6(Qt_6)(64bit) ( ) libQt6PositioningQuick.so.6()(64bit) ( ) libQt6QuickShapes.so.6()(64bit) ( ) libQt6Positioning.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6PositioningQuick.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6QuickShapes.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1)"
-RPROVIDES:qt6-qtlocation = "libQt6Location.so.6()(64bit) ( ) libQt6Location.so.6(NonQt)(64bit) ( ) libQt6Location.so.6(Qt_6)(64bit) ( ) libQt6Location.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6qml(QtLocation) ( ) qt6-qtlocation(x86-64) ( =  6.8.1-1.el10) qt6-qtlocation ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtlocation = "
+ qt6-qtdeclarative
+ qt6-qtbase
+ qt6-qtpositioning
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtlocation-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtlocation-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtlocation-devel = "/usr/bin/pkg-config ( ) cmake-filesystem(x86-64) ( ) qt6-qtbase-devel(x86-64) ( ) pkgconfig(Qt6Core) ( ) qt6-qtdeclarative-devel(x86-64) ( ) pkgconfig(Qt6Positioning) ( ) libQt6Location.so.6()(64bit) ( ) pkgconfig(Qt6PositioningQuick) ( ) qt6-qtpositioning-devel(x86-64) ( ) qt6-qtlocation(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtlocation-devel = "cmake(Qt6Location) ( ) cmake(Qt6QGeoServiceProviderFactoryItemsOverlayPlugin) ( ) cmake(Qt6QGeoServiceProviderFactoryOsmPlugin) ( ) cmake(Qt6declarative_location) ( ) cmake(QtLocationTests) ( ) cmake(qt6declarative_location) ( ) cmake(qt6location) ( ) cmake(qt6qgeoserviceproviderfactoryitemsoverlayplugin) ( ) cmake(qt6qgeoserviceproviderfactoryosmplugin) ( ) cmake(qtlocationtests) ( ) pkgconfig(Qt6Location) ( =  6.8.1) qt6-qtlocation-devel ( =  6.8.1-1.el10) qt6-qtlocation-devel(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtlocation-devel = "
+ qt6-qtdeclarative-devel
+ cmake-filesystem
+ qt6-qtlocation
+ pkgconf-pkg-config
+ qt6-qtpositioning-devel
+ qt6-qtbase-devel
+"
 
 URI_qt6-qtlocation-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtlocation-examples-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtlocation-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libQt6Quick.so.6()(64bit) ( ) libQt6Quick.so.6(Qt_6)(64bit) ( ) libQt6Positioning.so.6()(64bit) ( ) libQt6Positioning.so.6(Qt_6)(64bit) ( ) qt6-qtlocation(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtlocation-examples = "qt6-qtlocation-examples ( =  6.8.1-1.el10) qt6-qtlocation-examples(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtlocation-examples = "
+ qt6-qtdeclarative
+ qt6-qtlocation
+ libgcc
+ qt6-qtbase
+ qt6-qtpositioning
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtlocation-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtlocation-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtlocation-tests = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Qml.so.6()(64bit) ( ) libQt6Qml.so.6(Qt_6)(64bit) ( ) libQt6QuickTest.so.6()(64bit) ( ) libQt6QuickTest.so.6(Qt_6)(64bit) ( ) libQt6Positioning.so.6()(64bit) ( ) libQt6Positioning.so.6(Qt_6)(64bit) ( ) libQt6Positioning.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Location.so.6()(64bit) ( ) libQt6Location.so.6(Qt_6)(64bit) ( ) libQt6Location.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtlocation(x86-64) ( =  6.8.1-1.el10)"
-RPROVIDES:qt6-qtlocation-tests = "qt6-qtlocation-tests ( =  6.8.1-1.el10) qt6-qtlocation-tests(x86-64) ( =  6.8.1-1.el10)"
+RDEPENDS:qt6-qtlocation-tests = "
+ qt6-qtdeclarative
+ qt6-qtlocation
+ libgcc
+ qt6-qtbase
+ qt6-qtpositioning
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"

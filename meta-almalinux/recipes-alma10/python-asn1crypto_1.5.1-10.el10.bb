@@ -7,5 +7,6 @@ PACKAGES = "python3-asn1crypto"
 
 
 URI_python3-asn1crypto = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-asn1crypto-1.5.1-10.el10.noarch.rpm;unpack=0"
-RDEPENDS:python3-asn1crypto = "python(abi) ( =  3.12)"
-RPROVIDES:python3-asn1crypto = "python-asn1crypto ( =  1.5.1-10.el10) python3-asn1crypto ( =  1.5.1-10.el10) python3.12-asn1crypto ( =  1.5.1-10.el10) python3.12dist(asn1crypto) ( =  1.5.1) python3dist(asn1crypto) ( =  1.5.1)"
+RDEPENDS:python3-asn1crypto = "
+ python3
+"

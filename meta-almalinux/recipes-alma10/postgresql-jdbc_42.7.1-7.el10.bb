@@ -7,9 +7,12 @@ PACKAGES = "postgresql-jdbc postgresql-jdbc-javadoc"
 
 
 URI_postgresql-jdbc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-jdbc-42.7.1-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:postgresql-jdbc = "javapackages-filesystem ( ) mvn(com.ongres.scram:client) ( )"
-RPROVIDES:postgresql-jdbc = "jpms(org.postgresql.jdbc) ( ) mvn(org.postgresql:postgresql) ( =  42.7.1) mvn(org.postgresql:postgresql:pom:) ( =  42.7.1) mvn(postgresql:postgresql) ( =  42.7.1) mvn(postgresql:postgresql:pom:) ( =  42.7.1) pgjdbc ( =  42.7.1-7.el10) postgresql-jdbc ( =  42.7.1-7.el10)"
+RDEPENDS:postgresql-jdbc = "
+ ongres-scram-client
+ javapackages-filesystem
+"
 
 URI_postgresql-jdbc-javadoc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/postgresql-jdbc-javadoc-42.7.1-7.el10.noarch.rpm;unpack=0"
-RDEPENDS:postgresql-jdbc-javadoc = "javapackages-filesystem ( )"
-RPROVIDES:postgresql-jdbc-javadoc = "postgresql-jdbc-javadoc ( =  42.7.1-7.el10)"
+RDEPENDS:postgresql-jdbc-javadoc = "
+ javapackages-filesystem
+"

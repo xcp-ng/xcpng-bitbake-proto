@@ -7,13 +7,44 @@ PACKAGES = "nautilus nautilus-extensions nautilus-devel"
 
 
 URI_nautilus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nautilus-47.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nautilus = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libX11.so.6()(64bit) ( ) libcairo.so.2()(64bit) ( ) libgmodule-2.0.so.0()(64bit) ( ) libpango-1.0.so.0()(64bit) ( ) libgdk_pixbuf-2.0.so.0()(64bit) ( ) libselinux.so.1()(64bit) ( ) libselinux.so.1(LIBSELINUX_1.0)(64bit) ( ) libgtk-4.so.1()(64bit) ( ) libwayland-client.so.0()(64bit) ( ) libgstreamer-1.0.so.0()(64bit) ( ) libadwaita-1.so.0()(64bit) ( ) libadwaita-1.so.0(LIBADWAITA_1_0)(64bit) ( ) libgraphene-1.0.so.0()(64bit) ( ) libgstpbutils-1.0.so.0()(64bit) ( ) libgnome-desktop-4.so.2()(64bit) ( ) gsettings-desktop-schemas(x86-64) ( ) libtracker-sparql-3.0.so.0()(64bit) ( ) libgnome-autoar-0.so.0()(64bit) ( ) libportal.so.1()(64bit) ( ) tracker-miners ( ) libgexiv2.so.2()(64bit) ( ) libnautilus-extension.so.4()(64bit) ( ) libportal-gtk4.so.1()(64bit) ( ) gvfs(x86-64) ( ) gtk4(x86-64) ( >=  4.15.2) libadwaita(x86-64) ( >=  1.6~beta) nautilus-extensions(x86-64) ( =  47.1-1.el10) glib2(x86-64) ( >=  2.79.0) gnome-autoar(x86-64) ( >=  0.4.4)"
-RPROVIDES:nautilus = "metainfo() ( ) application() ( ) mimehandler(inode/directory) ( ) application(nautilus-autorun-software.desktop) ( ) application(org.gnome.Nautilus.desktop) ( ) bundled(libgd) ( ) libnautilus-image-properties.so()(64bit) ( ) libtotem-properties-page.so()(64bit) ( ) metainfo(org.gnome.Nautilus.metainfo.xml) ( ) mimehandler(application/bzip2) ( ) mimehandler(application/gzip) ( ) mimehandler(application/vnd.rar) ( ) mimehandler(application/x-7z-compressed) ( ) mimehandler(application/x-7z-compressed-tar) ( ) mimehandler(application/x-bzip) ( ) mimehandler(application/x-bzip-compressed-tar) ( ) mimehandler(application/x-bzip2-compressed-tar) ( ) mimehandler(application/x-compress) ( ) mimehandler(application/x-compressed-tar) ( ) mimehandler(application/x-cpio) ( ) mimehandler(application/x-gzip) ( ) mimehandler(application/x-lha) ( ) mimehandler(application/x-lzip) ( ) mimehandler(application/x-lzip-compressed-tar) ( ) mimehandler(application/x-lzma) ( ) mimehandler(application/x-lzma-compressed-tar) ( ) mimehandler(application/x-tar) ( ) mimehandler(application/x-tarz) ( ) mimehandler(application/x-xar) ( ) mimehandler(application/x-xz) ( ) mimehandler(application/x-xz-compressed-tar) ( ) mimehandler(application/x-zstd-compressed-tar) ( ) mimehandler(application/zip) ( ) mimehandler(application/zstd) ( ) mimehandler(x-content/unix-software) ( ) nautilus ( =  47.1-1.el10) nautilus(x86-64) ( =  47.1-1.el10)"
+RDEPENDS:nautilus = "
+ gvfs
+ libtracker-sparql
+ pango
+ libX11
+ libselinux
+ gnome-autoar
+ nautilus-extensions
+ gnome-desktop4
+ cairo
+ libportal
+ libportal-gtk4
+ libadwaita
+ libgexiv2
+ libwayland-client
+ libgcc
+ gdk-pixbuf2
+ graphene
+ tracker-miners
+ gstreamer1
+ gsettings-desktop-schemas
+ gstreamer1-plugins-base
+ glib2
+ glibc
+ gtk4
+"
 
 URI_nautilus-extensions = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nautilus-extensions-47.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nautilus-extensions = "rtld(GNU_HASH) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libc.so.6(GLIBC_2.4)(64bit) ( )"
-RPROVIDES:nautilus-extensions = "libnautilus-extension.so.4()(64bit) ( ) nautilus-extensions(x86-64) ( =  47.1-1.el10) nautilus-extensions ( =  47.1-1.el10)"
+RDEPENDS:nautilus-extensions = "
+ glibc
+ libgcc
+ glib2
+"
 
 URI_nautilus-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nautilus-devel-47.1-1.el10.x86_64_v2.rpm;unpack=0"
-RDEPENDS:nautilus-devel = "/usr/bin/pkg-config ( ) pkgconfig(glib-2.0) ( ) pkgconfig(gio-2.0) ( ) libnautilus-extension.so.4()(64bit) ( ) nautilus(x86-64) ( =  47.1-1.el10) nautilus-extensions(x86-64) ( =  47.1-1.el10)"
-RPROVIDES:nautilus-devel = "nautilus-devel ( =  47.1-1.el10) nautilus-devel(x86-64) ( =  47.1-1.el10) pkgconfig(libnautilus-extension-4) ( =  47.1)"
+RDEPENDS:nautilus-devel = "
+ glib2-devel
+ pkgconf-pkg-config
+ nautilus
+ nautilus-extensions
+"

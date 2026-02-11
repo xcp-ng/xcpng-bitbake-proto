@@ -7,45 +7,158 @@ PACKAGES = "qt6-qtbase qt6-qtbase-common qt6-qtbase-devel qt6-qtbase-gui qt6-qtb
 
 
 URI_qt6-qtbase = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libgobject-2.0.so.0()(64bit) ( ) libgio-2.0.so.0()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libssl.so.3()(64bit) ( ) libssl.so.3(OPENSSL_3.0.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libsystemd.so.0()(64bit) ( ) libzstd.so.1()(64bit) ( ) libsystemd.so.0(LIBSYSTEMD_209)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libdbus-1.so.3()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.7)(64bit) ( ) libdbus-1.so.3(LIBDBUS_1_3)(64bit) ( ) libz.so.1(ZLIB_1.2.0)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) libsqlite3.so.0()(64bit) ( ) libgssapi_krb5.so.2()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit) ( ) libicuuc.so.74()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libbrotlidec.so.1()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libicui18n.so.74()(64bit) ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.28)(64bit) ( ) libpcre2-16.so.0()(64bit) ( ) libgcc_s.so.1(GCC_12.0.0)(64bit) ( ) qt6-filesystem ( ) libproxy.so.1()(64bit) ( ) libproxy.so.1(LIBPROXY_0.4.16)(64bit) ( ) qt6-qtbase-common ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase = "libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) bundled(double-conversion) ( ) libQt6DBus.so.6()(64bit) ( ) libQt6DBus.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) libQt6Concurrent.so.6()(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6.7)(64bit) ( ) libQt6Concurrent.so.6(Qt_6)(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Network.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Test.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) bundled(emoji-segmenter) ( ) bundled(libb2) ( ) libQt6Concurrent.so.6(NonQt)(64bit) ( ) libQt6Concurrent.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Core.so.6(NonQt)(64bit) ( ) libQt6Core.so.6(Qt_6.0)(64bit) ( ) libQt6Core.so.6(Qt_6.1)(64bit) ( ) libQt6Core.so.6(Qt_6.2)(64bit) ( ) libQt6Core.so.6(Qt_6.3)(64bit) ( ) libQt6Core.so.6(Qt_6.4)(64bit) ( ) libQt6Core.so.6(Qt_6.5)(64bit) ( ) libQt6Core.so.6(Qt_6.6)(64bit) ( ) libQt6DBus.so.6(NonQt)(64bit) ( ) libQt6DBus.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Network.so.6(NonQt)(64bit) ( ) libQt6Sql.so.6(NonQt)(64bit) ( ) libQt6Test.so.6(NonQt)(64bit) ( ) libQt6Xml.so.6(NonQt)(64bit) ( ) libQt6Xml.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase = "
+ zlib-ng-compat
+ systemd-libs
+ qt6-filesystem
+ libproxy
+ libgcc
+ openssl-libs
+ libbrotli
+ libzstd
+ sqlite-libs
+ krb5-libs
+ libstdc++
+ pcre2-utf16
+ glib2
+ qt6-qtbase-common
+ glibc
+ libicu
+ dbus-libs
+"
 
 URI_qt6-qtbase-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-common-6.8.1-9.el10_0.noarch.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-common = "qt6-qtbase ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-common = "rpm_macro(_qt6) ( ) rpm_macro(_qt6_epoch) ( ) rpm_macro(_qt6_evr) ( ) rpm_macro(_qt6_version) ( ) qt6-qtbase-common ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-common = "
+ qt6-qtbase
+"
 
 URI_qt6-qtbase-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-devel-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-devel = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) /usr/bin/sh ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) /usr/bin/pkg-config ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) /usr/bin/bash ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.5)(64bit) ( ) libzstd.so.1()(64bit) ( ) cmake-filesystem(x86-64) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.7)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) pkgconfig(Qt6Core) ( ) libQt6Network.so.6()(64bit) ( ) pkgconfig(Qt6Gui) ( ) libQt6DBus.so.6()(64bit) ( ) libQt6DBus.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6OpenGL.so.6()(64bit) ( ) libQt6PrintSupport.so.6()(64bit) ( ) libQt6OpenGLWidgets.so.6()(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.28)(64bit) ( ) pkgconfig(Qt6Widgets) ( ) pkgconfig(Qt6OpenGL) ( ) libQt6Concurrent.so.6()(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libpcre2-16.so.0()(64bit) ( ) pkgconfig(egl) ( ) pkgconfig(xkbcommon) ( ) libQt6XcbQpa.so.6()(64bit) ( ) pkgconfig(gl) ( ) pkgconfig(vulkan) ( ) qt6-qtbase-gui(x86-64) ( ) qt6-rpm-macros ( ) pkgconfig(Qt6Platform) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-mysql(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-odbc(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-postgresql(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-devel = "cmake(Qt6) ( ) cmake(Qt6BuildInternals) ( ) cmake(Qt6Concurrent) ( ) cmake(Qt6Core) ( ) cmake(Qt6CoreTools) ( ) cmake(Qt6DBus) ( ) cmake(Qt6DBusTools) ( ) cmake(Qt6Gui) ( ) cmake(Qt6GuiTools) ( ) cmake(Qt6HostInfo) ( ) cmake(Qt6Network) ( ) cmake(Qt6OpenGL) ( ) cmake(Qt6OpenGLWidgets) ( ) cmake(Qt6PrintSupport) ( ) cmake(Qt6QComposePlatformInputContextPlugin) ( ) cmake(Qt6QCupsPrinterSupportPlugin) ( ) cmake(Qt6QEglFSEmulatorIntegrationPlugin) ( ) cmake(Qt6QEglFSIntegrationPlugin) ( ) cmake(Qt6QEglFSKmsEglDeviceIntegrationPlugin) ( ) cmake(Qt6QEglFSKmsGbmIntegrationPlugin) ( ) cmake(Qt6QEglFSX11IntegrationPlugin) ( ) cmake(Qt6QEvdevKeyboardPlugin) ( ) cmake(Qt6QEvdevMousePlugin) ( ) cmake(Qt6QEvdevTabletPlugin) ( ) cmake(Qt6QEvdevTouchScreenPlugin) ( ) cmake(Qt6QGifPlugin) ( ) cmake(Qt6QGlibNetworkInformationPlugin) ( ) cmake(Qt6QGtk3ThemePlugin) ( ) cmake(Qt6QICOPlugin) ( ) cmake(Qt6QIbusPlatformInputContextPlugin) ( ) cmake(Qt6QJpegPlugin) ( ) cmake(Qt6QLibInputPlugin) ( ) cmake(Qt6QLinuxFbIntegrationPlugin) ( ) cmake(Qt6QMinimalEglIntegrationPlugin) ( ) cmake(Qt6QMinimalIntegrationPlugin) ( ) cmake(Qt6QNetworkManagerNetworkInformationPlugin) ( ) cmake(Qt6QOffscreenIntegrationPlugin) ( ) cmake(Qt6QSQLiteDriverPlugin) ( ) cmake(Qt6QTlsBackendCertOnlyPlugin) ( ) cmake(Qt6QTlsBackendOpenSSLPlugin) ( ) cmake(Qt6QTuioTouchPlugin) ( ) cmake(Qt6QVkKhrDisplayIntegrationPlugin) ( ) cmake(Qt6QVncIntegrationPlugin) ( ) cmake(Qt6QXcbEglIntegrationPlugin) ( ) cmake(Qt6QXcbGlxIntegrationPlugin) ( ) cmake(Qt6QXcbIntegrationPlugin) ( ) cmake(Qt6QXdgDesktopPortalThemePlugin) ( ) cmake(Qt6Sql) ( ) cmake(Qt6Test) ( ) cmake(Qt6Widgets) ( ) cmake(Qt6WidgetsTools) ( ) cmake(Qt6Xml) ( ) cmake(QtBaseTests) ( ) cmake(qt6) ( ) cmake(qt6buildinternals) ( ) cmake(qt6concurrent) ( ) cmake(qt6core) ( ) cmake(qt6coretools) ( ) cmake(qt6dbus) ( ) cmake(qt6dbustools) ( ) cmake(qt6gui) ( ) cmake(qt6guitools) ( ) cmake(qt6hostinfo) ( ) cmake(qt6network) ( ) cmake(qt6opengl) ( ) cmake(qt6openglwidgets) ( ) cmake(qt6printsupport) ( ) cmake(qt6qcomposeplatforminputcontextplugin) ( ) cmake(qt6qcupsprintersupportplugin) ( ) cmake(qt6qeglfsemulatorintegrationplugin) ( ) cmake(qt6qeglfsintegrationplugin) ( ) cmake(qt6qeglfskmsegldeviceintegrationplugin) ( ) cmake(qt6qeglfskmsgbmintegrationplugin) ( ) cmake(qt6qeglfsx11integrationplugin) ( ) cmake(qt6qevdevkeyboardplugin) ( ) cmake(qt6qevdevmouseplugin) ( ) cmake(qt6qevdevtabletplugin) ( ) cmake(qt6qevdevtouchscreenplugin) ( ) cmake(qt6qgifplugin) ( ) cmake(qt6qglibnetworkinformationplugin) ( ) cmake(qt6qgtk3themeplugin) ( ) cmake(qt6qibusplatforminputcontextplugin) ( ) cmake(qt6qicoplugin) ( ) cmake(qt6qjpegplugin) ( ) cmake(qt6qlibinputplugin) ( ) cmake(qt6qlinuxfbintegrationplugin) ( ) cmake(qt6qminimaleglintegrationplugin) ( ) cmake(qt6qminimalintegrationplugin) ( ) cmake(qt6qnetworkmanagernetworkinformationplugin) ( ) cmake(qt6qoffscreenintegrationplugin) ( ) cmake(qt6qsqlitedriverplugin) ( ) cmake(qt6qtlsbackendcertonlyplugin) ( ) cmake(qt6qtlsbackendopensslplugin) ( ) cmake(qt6qtuiotouchplugin) ( ) cmake(qt6qvkkhrdisplayintegrationplugin) ( ) cmake(qt6qvncintegrationplugin) ( ) cmake(qt6qxcbeglintegrationplugin) ( ) cmake(qt6qxcbglxintegrationplugin) ( ) cmake(qt6qxcbintegrationplugin) ( ) cmake(qt6qxdgdesktopportalthemeplugin) ( ) cmake(qt6sql) ( ) cmake(qt6test) ( ) cmake(qt6widgets) ( ) cmake(qt6widgetstools) ( ) cmake(qt6xml) ( ) cmake(qtbasetests) ( ) pkgconfig(Qt6) ( =  6.8.1) pkgconfig(Qt6Concurrent) ( =  6.8.1) pkgconfig(Qt6Core) ( =  6.8.1) pkgconfig(Qt6DBus) ( =  6.8.1) pkgconfig(Qt6Gui) ( =  6.8.1) pkgconfig(Qt6Network) ( =  6.8.1) pkgconfig(Qt6OpenGL) ( =  6.8.1) pkgconfig(Qt6OpenGLWidgets) ( =  6.8.1) pkgconfig(Qt6Platform) ( =  6.8.1) pkgconfig(Qt6PrintSupport) ( =  6.8.1) pkgconfig(Qt6Sql) ( =  6.8.1) pkgconfig(Qt6Test) ( =  6.8.1) pkgconfig(Qt6Widgets) ( =  6.8.1) pkgconfig(Qt6Xml) ( =  6.8.1) qt6-qtbase-devel ( =  6.8.1-9.el10_0) qt6-qtbase-devel(x86-64) ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-devel = "
+ cmake-filesystem
+ libglvnd-devel
+ libgcc
+ qt6-qtbase-odbc
+ pkgconf-pkg-config
+ qt6-qtbase
+ libzstd
+ qt6-qtbase-devel
+ libstdc++
+ bash
+ qt6-qtbase-gui
+ pcre2-utf16
+ qt6-rpm-macros
+ glibc
+ qt6-qtbase-mysql
+ libxkbcommon-devel
+ vulkan-loader-devel
+ qt6-qtbase-postgresql
+"
 
 URI_qt6-qtbase-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-gui-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-gui = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libm.so.6()(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libglib-2.0.so.0()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libz.so.1()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) /usr/bin/bash ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libm.so.6(GLIBC_2.38)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) libX11.so.6()(64bit) ( ) libm.so.6(GLIBC_2.27)(64bit) ( ) libudev.so.1()(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libjpeg.so.62()(64bit) ( ) libjpeg.so.62(LIBJPEG_6.2)(64bit) ( ) libfontconfig.so.1()(64bit) ( ) libfreetype.so.6()(64bit) ( ) libxcb.so.1()(64bit) ( ) libpng16.so.16()(64bit) ( ) libharfbuzz.so.0()(64bit) ( ) libudev.so.1(LIBUDEV_183)(64bit) ( ) libcups.so.2()(64bit) ( ) libdrm.so.2()(64bit) ( ) libpng16.so.16(PNG16_0)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libX11-xcb.so.1()(64bit) ( ) libxcb-shm.so.0()(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libxkbcommon.so.0()(64bit) ( ) libxkbcommon.so.0(V_0.5.0)(64bit) ( ) libgbm.so.1()(64bit) ( ) libICE.so.6()(64bit) ( ) libQt6DBus.so.6()(64bit) ( ) libQt6DBus.so.6(Qt_6)(64bit) ( ) libxcb-randr.so.0()(64bit) ( ) libEGL.so.1()(64bit) ( ) libSM.so.6()(64bit) ( ) libxcb-sync.so.1()(64bit) ( ) libxcb-xfixes.so.0()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.28)(64bit) ( ) libOpenGL.so.0()(64bit) ( ) libinput.so.10()(64bit) ( ) libinput.so.10(LIBINPUT_0.12.0)(64bit) ( ) libxcb-render.so.0()(64bit) ( ) libGLX.so.0()(64bit) ( ) libinput.so.10(LIBINPUT_1.19)(64bit) ( ) libxcb-glx.so.0()(64bit) ( ) libxkbcommon-x11.so.0()(64bit) ( ) libxkbcommon-x11.so.0(V_0.5.0)(64bit) ( ) libmtdev.so.1()(64bit) ( ) libxcb-image.so.0()(64bit) ( ) libxcb-render-util.so.0()(64bit) ( ) libxcb-xkb.so.1()(64bit) ( ) glx-utils ( ) libgcc_s.so.1(GCC_12.0.0)(64bit) ( ) libxcb-cursor.so.0()(64bit) ( ) libxcb-shape.so.0()(64bit) ( ) libxcb-icccm.so.4()(64bit) ( ) libxcb-keysyms.so.1()(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-gui = "libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6OpenGL.so.6()(64bit) ( ) libQt6PrintSupport.so.6()(64bit) ( ) libQt6OpenGL.so.6(Qt_6)(64bit) ( ) libQt6OpenGLWidgets.so.6()(64bit) ( ) libQt6PrintSupport.so.6(Qt_6)(64bit) ( ) libQt6OpenGLWidgets.so.6(Qt_6)(64bit) ( ) libQt6Widgets.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6OpenGL.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6XcbQpa.so.6()(64bit) ( ) libQt6EglFSDeviceIntegration.so.6()(64bit) ( ) libQt6EglFSDeviceIntegration.so.6(NonQt)(64bit) ( ) libQt6EglFSDeviceIntegration.so.6(Qt_6)(64bit) ( ) libQt6EglFSDeviceIntegration.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6EglFsKmsGbmSupport.so.6()(64bit) ( ) libQt6EglFsKmsGbmSupport.so.6(NonQt)(64bit) ( ) libQt6EglFsKmsGbmSupport.so.6(Qt_6)(64bit) ( ) libQt6EglFsKmsGbmSupport.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6EglFsKmsSupport.so.6()(64bit) ( ) libQt6EglFsKmsSupport.so.6(NonQt)(64bit) ( ) libQt6EglFsKmsSupport.so.6(Qt_6)(64bit) ( ) libQt6EglFsKmsSupport.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Gui.so.6(NonQt)(64bit) ( ) libQt6OpenGL.so.6(NonQt)(64bit) ( ) libQt6OpenGLWidgets.so.6(NonQt)(64bit) ( ) libQt6OpenGLWidgets.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6PrintSupport.so.6(NonQt)(64bit) ( ) libQt6PrintSupport.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Widgets.so.6(NonQt)(64bit) ( ) qt6-qtbase-gui ( =  6.8.1-9.el10_0) qt6-qtbase-gui(x86-64) ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-gui = "
+ xcb-util-wm
+ systemd-libs
+ libpng
+ mtdev
+ cups-libs
+ libICE
+ fontconfig
+ libSM
+ libX11
+ libX11-xcb
+ glx-utils
+ libdrm
+ libstdc++
+ zlib-ng-compat
+ libglvnd-egl
+ libglvnd-glx
+ libglvnd-opengl
+ libgcc
+ libxcb
+ bash
+ mesa-libgbm
+ libxkbcommon
+ libxkbcommon-x11
+ freetype
+ xcb-util-image
+ harfbuzz
+ qt6-qtbase
+ libinput
+ glib2
+ glibc
+ xcb-util-cursor
+ libjpeg-turbo
+ xcb-util-keysyms
+ xcb-util-renderutil
+"
 
 URI_qt6-qtbase-mysql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-mysql-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-mysql = "rtld(GNU_HASH) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) cmake-filesystem(x86-64) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libmariadb.so.3()(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libmariadb.so.3(libmysqlclient_18)(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libmariadb.so.3(libmariadb_3)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-mysql = "cmake(Qt6QMYSQLDriverPlugin) ( ) cmake(qt6qmysqldriverplugin) ( ) qt6-qtbase-mysql(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-mysql ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-mysql = "
+ cmake-filesystem
+ qt6-qtbase
+ libstdc++
+ mariadb-connector-c
+ glibc
+"
 
 URI_qt6-qtbase-odbc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-odbc-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-odbc = "rtld(GNU_HASH) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libc.so.6(GLIBC_2.14)(64bit) ( ) cmake-filesystem(x86-64) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libodbc.so.2()(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-odbc = "cmake(Qt6QODBCDriverPlugin) ( ) cmake(qt6qodbcdriverplugin) ( ) qt6-qtbase-odbc(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-odbc ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-odbc = "
+ cmake-filesystem
+ qt6-qtbase
+ libstdc++
+ unixODBC
+ glibc
+"
 
 URI_qt6-qtbase-postgresql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-postgresql-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-postgresql = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) cmake-filesystem(x86-64) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libpq.so.5()(64bit) ( ) libpq.so.5(RHPG_9.6)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-postgresql = "cmake(Qt6QPSQLDriverPlugin) ( ) cmake(qt6qpsqldriverplugin) ( ) qt6-qtbase-postgresql(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-postgresql ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-postgresql = "
+ cmake-filesystem
+ libpq
+ qt6-qtbase
+ libstdc++
+ glibc
+"
 
 URI_qt6-qtbase-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtbase-examples-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-examples = "rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) /usr/bin/python3 ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6OpenGL.so.6()(64bit) ( ) libQt6OpenGL.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Concurrent.so.6()(64bit) ( ) libQt6Concurrent.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6DBus.so.6()(64bit) ( ) libQt6DBus.so.6(Qt_6)(64bit) ( ) libQt6OpenGLWidgets.so.6()(64bit) ( ) libQt6OpenGLWidgets.so.6(Qt_6)(64bit) ( ) libQt6PrintSupport.so.6()(64bit) ( ) libQt6PrintSupport.so.6(Qt_6)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) libgcc_s.so.1(GCC_12.0.0)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-gui(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-examples = "qt6-qtbase-examples ( =  6.8.1-9.el10_0) qt6-qtbase-examples(x86-64) ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-examples = "
+ python3
+ libgcc
+ qt6-qtbase
+ libstdc++
+ qt6-qtbase-gui
+ glibc
+"
 
 URI_qt6-qtbase-private-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtbase-private-devel-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-private-devel = "cmake-filesystem(x86-64) ( ) cups-devel ( ) libQt6EglFSDeviceIntegration.so.6()(64bit) ( ) libQt6EglFsKmsGbmSupport.so.6()(64bit) ( ) libQt6EglFsKmsSupport.so.6()(64bit) ( ) qt6-qtbase-devel(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-private-devel = "cmake(Qt6EglFSDeviceIntegrationPrivate) ( ) cmake(Qt6EglFsKmsGbmSupportPrivate) ( ) cmake(Qt6EglFsKmsSupportPrivate) ( ) cmake(Qt6XcbQpaPrivate) ( ) cmake(qt6eglfsdeviceintegrationprivate) ( ) cmake(qt6eglfskmsgbmsupportprivate) ( ) cmake(qt6eglfskmssupportprivate) ( ) cmake(qt6xcbqpaprivate) ( ) qt6-qtbase-private-devel ( =  6.8.1-9.el10_0) qt6-qtbase-private-devel(x86-64) ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-private-devel = "
+ qt6-qtbase-gui
+ qt6-qtbase-devel
+ cmake-filesystem
+ cups-devel
+"
 
 URI_qt6-qtbase-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtbase-static-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-static = "pkgconfig(glib-2.0) ( ) cmake-filesystem(x86-64) ( ) pkgconfig(zlib) ( ) pkgconfig(fontconfig) ( ) pkgconfig(libinput) ( ) pkgconfig(xkbcommon) ( ) qt6-qtbase-devel(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-static = "cmake(Qt6DeviceDiscoverySupportPrivate) ( ) cmake(Qt6ExampleIconsPrivate) ( ) cmake(Qt6FbSupportPrivate) ( ) cmake(Qt6InputSupportPrivate) ( ) cmake(Qt6KmsSupportPrivate) ( ) cmake(qt6devicediscoverysupportprivate) ( ) cmake(qt6exampleiconsprivate) ( ) cmake(qt6fbsupportprivate) ( ) cmake(qt6inputsupportprivate) ( ) cmake(qt6kmssupportprivate) ( ) qt6-qtbase-static ( =  6.8.1-9.el10_0) qt6-qtbase-static(x86-64) ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-static = "
+ glib2-devel
+ cmake-filesystem
+ zlib-ng-compat-devel
+ fontconfig-devel
+ qt6-qtbase-devel
+ libxkbcommon-devel
+ libinput-devel
+"
 
 URI_qt6-qtbase-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtbase-tests-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
-RDEPENDS:qt6-qtbase-tests = "rtld(GNU_HASH) ( ) perl(strict) ( ) /usr/bin/perl ( ) /usr/bin/sh ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) /usr/bin/bash ( ) libm.so.6()(64bit) ( ) libstdc++.so.6()(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4)(64bit) ( ) libstdc++.so.6(CXXABI_1.3)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.9)(64bit) ( ) libm.so.6(GLIBC_2.2.5)(64bit) ( ) /usr/bin/python3 ( ) libm.so.6(GLIBC_2.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.21)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.29)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.30)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.32)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.20)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.9)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.11)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.15)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.14)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.18)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.26)(64bit) ( ) perl(constant) ( ) libQt6Core.so.6()(64bit) ( ) libQt6Core.so.6(Qt_6)(64bit) ( ) libQt6Core.so.6(Qt_6.8)(64bit) ( ) libQt6Test.so.6()(64bit) ( ) libQt6Test.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.19)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.11)(64bit) ( ) libQt6Gui.so.6()(64bit) ( ) libQt6Gui.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.15)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.8)(64bit) ( ) libgcc_s.so.1(GCC_4.2.0)(64bit) ( ) libm.so.6(GLIBC_2.27)(64bit) ( ) libQt6Widgets.so.6()(64bit) ( ) libQt6Widgets.so.6(Qt_6)(64bit) ( ) libm.so.6(GLIBC_2.35)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.7)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.22)(64bit) ( ) libQt6Gui.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Network.so.6()(64bit) ( ) libQt6Network.so.6(Qt_6)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.13)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.3)(64bit) ( ) libxcb.so.1()(64bit) ( ) libQt6Core.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libstdc++.so.6(CXXABI_1.3.2)(64bit) ( ) libQt6Xml.so.6()(64bit) ( ) libQt6Xml.so.6(Qt_6)(64bit) ( ) libQt6OpenGL.so.6()(64bit) ( ) libQt6OpenGL.so.6(Qt_6)(64bit) ( ) libQt6Sql.so.6()(64bit) ( ) libQt6Sql.so.6(Qt_6)(64bit) ( ) libQt6Test.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libm.so.6(GLIBC_2.23)(64bit) ( ) libstdc++.so.6(GLIBCXX_3.4.28)(64bit) ( ) libQt6Concurrent.so.6()(64bit) ( ) libQt6Concurrent.so.6(Qt_6)(64bit) ( ) libQt6OpenGLWidgets.so.6()(64bit) ( ) libQt6OpenGLWidgets.so.6(Qt_6)(64bit) ( ) libQt6PrintSupport.so.6()(64bit) ( ) libQt6PrintSupport.so.6(Qt_6)(64bit) ( ) libQt6PrintSupport.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libQt6Widgets.so.6(Qt_6.8_PRIVATE_API)(64bit) ( ) libgcc_s.so.1(GCC_12.0.0)(64bit) ( ) qt6-qtbase(x86-64) ( =  6.8.1-9.el10_0) qt6-qtbase-gui(x86-64) ( =  6.8.1-9.el10_0)"
-RPROVIDES:qt6-qtbase-tests = "libalmostplugin.so()(64bit) ( ) libdebugplugin.so()(64bit) ( ) libinvalidplugin.so()(64bit) ( ) libmyarchlib.so.1()(64bit) ( ) libmylib.so.1()(64bit) ( ) libmylib.so.2()(64bit) ( ) libqmetatype_lib1.so.0()(64bit) ( ) libqmetatype_lib2.so.0()(64bit) ( ) libreleaseplugin.so()(64bit) ( ) libtheoldplugin.so()(64bit) ( ) libtheplugin.so()(64bit) ( ) libtheplugin.so.avx2()(64bit) ( ) libtst_qfactoryloader_plugin1.so()(64bit) ( ) libtst_qfactoryloader_plugin2.so()(64bit) ( ) libtst_qpluginloaderlib.so()(64bit) ( ) qt6-qtbase-tests ( =  6.8.1-9.el10_0) qt6-qtbase-tests(x86-64) ( =  6.8.1-9.el10_0)"
+RDEPENDS:qt6-qtbase-tests = "
+ python3
+ perl-constant
+ perl-libs
+ libgcc
+ qt6-qtbase
+ libxcb
+ libstdc++
+ bash
+ qt6-qtbase-gui
+ glibc
+ perl-interpreter
+"

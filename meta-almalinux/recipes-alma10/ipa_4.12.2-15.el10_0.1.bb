@@ -7,77 +7,317 @@ PACKAGES = "ipa-client ipa-client-common ipa-client-encrypted-dns ipa-client-epn
 
 
 URI_ipa-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipa-client = "/bin/sh ( ) policycoreutils ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.34)(64bit) ( ) /usr/bin/python3 ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libresolv.so.2()(64bit) ( ) libcurl.so.4()(64bit) ( ) libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libldap.so.2()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libjansson.so.4()(64bit) ( ) libjansson.so.4(libjansson.so.4)(64bit) ( ) libpopt.so.0()(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libpopt.so.0(LIBPOPT_0)(64bit) ( ) liblber.so.2()(64bit) ( ) liblber.so.2(OPENLDAP_2.200)(64bit) ( ) curl ( ) bind-utils ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libresolv.so.2(GLIBC_2.9)(64bit) ( ) hostname ( ) chrony ( ) cyrus-sasl-gssapi(x86-64) ( ) oddjob-mkhomedir ( ) jansson ( ) autofs ( ) libini_config.so.5()(64bit) ( ) libini_config.so.5(INI_CONFIG_1.1.0)(64bit) ( ) libnfsidmap ( ) libsss_autofs ( ) python3-ldap ( >=  3.1.0-1) ipa-common ( =  4.12.2-15.el10_0.1) certmonger ( >=  0.79.17-1) nss-tools ( >=  3.44.0-4) python3-gssapi ( >=  1.2.0-5) python3-sssdconfig ( >=  2.10.0) ipa-client-common ( =  4.12.2-15.el10_0.1) python3-ipaclient ( =  4.12.2-15.el10_0.1) libsss_sudo ( if  sudo) nfs-utils ( or  nfsv4-client-utils) authselect ( >=  1.2.5) krb5-pkinit-openssl ( >=  1.20.1-1) krb5-workstation ( >=  1.20.1-1) libcurl ( >=  7.21.7-2) sssd-idp ( >=  2.10.0) sssd-ipa ( >=  2.10.0) sssd-krb5 ( >=  2.10.0) sssd-tools ( >=  2.10.0)"
-RPROVIDES:ipa-client = "ipa-client ( =  4.12.2-15.el10_0.1) freeipa-admintools ( =  4.12.2) freeipa-client ( =  4.12.2) config(ipa-client) ( =  4.12.2-15.el10_0.1) ipa-admintools ( =  4.12.2-15.el10_0.1) ipa-client(x86-64) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-client = "
+ python3
+ python3-gssapi
+ python3-ipaclient
+ curl
+ cyrus-sasl-gssapi
+ krb5-libs
+ nss-tools
+ krb5-pkinit
+ krb5-workstation
+ python3-ldap
+ nfs-utils
+ oddjob-mkhomedir
+ jansson
+ libsss_autofs
+ libsss_sudo
+ libcom_err
+ libcurl
+ openldap
+ certmonger
+ openssl-libs
+ authselect
+ autofs
+ ipa-client-common
+ bash
+ ipa-common
+ python3-sssdconfig
+ libini_config
+ sssd-ipa
+ sssd-idp
+ sssd-krb5
+ bind-utils
+ chrony
+ hostname
+ policycoreutils
+ sssd-tools
+ popt
+ libnfsidmap
+ glibc
+"
 
 URI_ipa-client-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-common-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
 RDEPENDS:ipa-client-common = ""
-RPROVIDES:ipa-client-common = "ipa-client-common ( =  4.12.2-15.el10_0.1) freeipa-client-common ( =  4.12.2) config(ipa-client-common) ( =  4.12.2-15.el10_0.1)"
 
 URI_ipa-client-encrypted-dns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-encrypted-dns-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipa-client-encrypted-dns = "unbound ( )"
-RPROVIDES:ipa-client-encrypted-dns = "ipa-client-encrypted-dns ( =  4.12.2-15.el10_0.1) ipa-client-encrypted-dns(x86-64) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-client-encrypted-dns = "
+ unbound
+"
 
 URI_ipa-client-epn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-epn-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipa-client-epn = "/bin/sh ( ) systemd-units ( >=  246.6-3) /usr/bin/python3 ( ) ipa-client ( =  4.12.2-15.el10_0.1)"
-RPROVIDES:ipa-client-epn = "config(ipa-client-epn) ( =  4.12.2-15.el10_0.1) ipa-client-epn ( =  4.12.2-15.el10_0.1) ipa-client-epn(x86-64) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-client-epn = "
+ python3
+ systemd
+ bash
+ ipa-client
+"
 
 URI_ipa-client-samba = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-samba-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipa-client-samba = "/usr/bin/python3 ( ) samba ( ) samba-client ( ) python3-samba ( ) samba-winbind ( ) cifs-utils ( ) sssd-winbind-idmap ( ) samba-common-tools ( ) tdb-tools ( ) ipa-client ( =  4.12.2-15.el10_0.1)"
-RPROVIDES:ipa-client-samba = "ipa-client-samba ( =  4.12.2-15.el10_0.1) ipa-client-samba(x86-64) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-client-samba = "
+ python3
+ samba-client
+ samba
+ python3-samba
+ cifs-utils
+ tdb-tools
+ ipa-client
+ samba-winbind
+ sssd-winbind-idmap
+ samba-common-tools
+"
 
 URI_ipa-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-common-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:ipa-common = "ipa-selinux ( if  selinux-policy-targeted)"
-RPROVIDES:ipa-common = "ipa-common ( =  4.12.2-15.el10_0.1) freeipa-common ( =  4.12.2)"
+RDEPENDS:ipa-common = "
+ ipa-selinux
+"
 
 URI_ipa-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-selinux-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:ipa-selinux = "/bin/sh ( ) selinux-policy-targeted ( ) policycoreutils ( ) policycoreutils-python-utils ( ) libselinux-utils ( ) selinux-policy-base ( >=  40.13.26) selinux-policy ( >=  40.13.26)"
-RPROVIDES:ipa-selinux = "ipa-selinux ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-selinux = "
+ policycoreutils-python-utils
+ policycoreutils
+ bash
+ selinux-policy
+ libselinux-utils
+ selinux-policy-targeted
+"
 
 URI_ipa-selinux-luna = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-selinux-luna-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:ipa-selinux-luna = "/bin/sh ( ) selinux-policy-targeted ( ) policycoreutils ( ) policycoreutils-python-utils ( ) libselinux-utils ( ) selinux-policy-base ( >=  40.13.26) selinux-policy ( >=  40.13.26)"
-RPROVIDES:ipa-selinux-luna = "ipa-selinux-luna ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-selinux-luna = "
+ policycoreutils-python-utils
+ policycoreutils
+ bash
+ selinux-policy
+ libselinux-utils
+ selinux-policy-targeted
+"
 
 URI_ipa-selinux-nfast = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-selinux-nfast-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:ipa-selinux-nfast = "/bin/sh ( ) selinux-policy-targeted ( ) policycoreutils ( ) policycoreutils-python-utils ( ) libselinux-utils ( ) selinux-policy-base ( >=  40.13.26) selinux-policy ( >=  40.13.26)"
-RPROVIDES:ipa-selinux-nfast = "ipa-selinux-nfast ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-selinux-nfast = "
+ policycoreutils-python-utils
+ policycoreutils
+ bash
+ selinux-policy
+ libselinux-utils
+ selinux-policy-targeted
+"
 
 URI_ipa-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipa-server = "/bin/sh ( ) shadow-utils ( ) systemd-units ( >=  246.6-3) certmonger ( >=  0.79.17-1) 389-ds-base ( >=  3.0.4) krb5-server ( >=  1.20.1-1) krb5-server ( >=  1.21) selinux-policy-base ( >=  38.1.1-1) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) libgcc_s.so.1()(64bit) ( ) libgcc_s.so.1(GCC_3.0)(64bit) ( ) libgcc_s.so.1(GCC_3.3.1)(64bit) ( ) /usr/bin/sh ( ) /usr/bin/python3 ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libuuid.so.1()(64bit) ( ) libuuid.so.1(UUID_1.0)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libgssapi_krb5.so.2()(64bit) ( ) libldap.so.2()(64bit) ( ) libgssapi_krb5.so.2(gssapi_krb5_2_MIT)(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) python3 ( ) libjansson.so.4()(64bit) ( ) libjansson.so.4(libjansson.so.4)(64bit) ( ) libpopt.so.0()(64bit) ( ) libtalloc.so.2()(64bit) ( ) libtalloc.so.2(TALLOC_2.0.2)(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libpopt.so.0(LIBPOPT_0)(64bit) ( ) libsamba-util.so.0()(64bit) ( ) libsamba-util.so.0(SAMBA_UTIL_0.0.1)(64bit) ( ) liblber.so.2()(64bit) ( ) liblber.so.2(OPENLDAP_2.200)(64bit) ( ) libtevent.so.0()(64bit) ( ) tar ( ) libsamba-errors.so.1()(64bit) ( ) libsamba-errors.so.1(SAMBA_ERRORS_1.0.0)(64bit) ( ) gzip ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libndr-standard.so.0()(64bit) ( ) libpwquality.so.1()(64bit) ( ) libpwquality.so.1(LIBPWQUALITY_1.0)(64bit) ( ) acl ( ) libndr.so.5()(64bit) ( ) libndr.so.5(NDR_0.0.1)(64bit) ( ) libunistring.so.5()(64bit) ( ) chrony ( ) libkrad.so.0()(64bit) ( ) p11-kit ( ) python3-systemd ( ) cracklib-dicts ( ) oddjob ( ) cyrus-sasl-gssapi(x86-64) ( ) libkrad.so.0(krad_0_MIT)(64bit) ( ) open-sans-fonts ( ) python3-mod_wsgi ( ) /etc/systemd/system ( ) font(fontawesome) ( ) libpwquality ( ) libsss_nss_idmap.so.0()(64bit) ( ) libsss_nss_idmap.so.0(SSS_NSS_IDMAP_0.4.0)(64bit) ( ) libverto.so.1()(64bit) ( ) libndr-krb5pac.so.0()(64bit) ( ) libndr-krb5pac.so.0(NDR_KRB5PAC_0.0.1)(64bit) ( ) libsss_certmap.so.0()(64bit) ( ) libsss_certmap.so.0(SSS_CERTMAP_0.0)(64bit) ( ) libsss_nss_idmap.so.0(SSS_NSS_IDMAP_0.1.0)(64bit) ( ) libsss_nss_idmap.so.0(SSS_NSS_IDMAP_0.6.0)(64bit) ( ) python3-ldap ( >=  3.1.0-1) ipa-common ( =  4.12.2-15.el10_0.1) nss-tools ( >=  3.44.0-4) python3-gssapi ( >=  1.2.0-5) ipa-client ( =  4.12.2-15.el10_0.1) httpd ( >=  2.4.37-21) ipa-server-common ( =  4.12.2-15.el10_0.1) krb5-kdb-version ( =  9.0) pki-acme ( if  (REL)) gssproxy ( >=  0.7.0-2) mod_auth_gssapi ( >=  1.5.0) mod_lookup_identity ( >=  0.9.9) mod_session ( >=  2.4.37-21) mod_ssl ( >=  2.4.37-21) openldap-clients ( >  2.4.35-4) openssl ( >  1.1.1i) pki-ca ( >=  10.10.5) pki-kra ( >=  10.10.5) policycoreutils ( >=  2.1.12-5) selinux-policy ( >=  38.1.1-1) slapi-nis ( >=  0.70.0) softhsm ( >=  2.0.0rc1-1) sssd-dbus ( >=  2.10.0) python3-ipaserver ( =  4.12.2-15.el10_0.1) samba-client-libs ( >=  4.21.3-104.el10_0)"
-RPROVIDES:ipa-server = "libipa_dns.so()(64bit) ( ) libipa_enrollment_extop.so()(64bit) ( ) libipa_extdom_extop.so()(64bit) ( ) libipa_graceperiod.so()(64bit) ( ) libipa_lockout.so()(64bit) ( ) libipa_modrdn.so()(64bit) ( ) libipa_otp_counter.so()(64bit) ( ) libipa_otp_lasttoken.so()(64bit) ( ) libipa_pwd_extop.so()(64bit) ( ) libipa_range_check.so()(64bit) ( ) libipa_repl_version.so()(64bit) ( ) libipa_sidgen.so()(64bit) ( ) libipa_sidgen_task.so()(64bit) ( ) libipa_uuid.so()(64bit) ( ) libipa_winsync.so()(64bit) ( ) libtopology.so()(64bit) ( ) ipa-server ( =  4.12.2-15.el10_0.1) freeipa-server ( =  4.12.2) config(ipa-server) ( =  4.12.2-15.el10_0.1) ipa-server(x86-64) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-server = "
+ python3
+ systemd
+ python3-gssapi
+ libpwquality
+ samba-client-libs
+ tar
+ fontawesome4-fonts
+ cyrus-sasl-gssapi
+ krb5-libs
+ nss-tools
+ python3-ipaserver
+ krb5-server
+ python3-ldap
+ oddjob
+ httpd
+ jansson
+ open-sans-fonts
+ libsss_certmap
+ acl
+ libsss_nss_idmap
+ idm-pki-acme
+ libcom_err
+ idm-pki-ca
+ libtalloc
+ idm-pki-kra
+ slapi-nis
+ libtevent
+ selinux-policy
+ python3-mod_wsgi
+ openldap
+ libunistring
+ openldap-clients
+ softhsm
+ certmonger
+ shadow-utils
+ libuuid
+ libverto
+ openssl
+ libgcc
+ openssl-libs
+ p11-kit
+ ipa-client
+ bash
+ ipa-common
+ python3-systemd
+ sssd-dbus
+ ipa-server-common
+ mod_auth_gssapi
+ gssproxy
+ gzip
+ chrony
+ mod_lookup_identity
+ policycoreutils
+ 389-ds-base
+ popt
+ mod_session
+ glibc
+ mod_ssl
+ cracklib-dicts
+"
 
 URI_ipa-server-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-common-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:ipa-server-common = "/bin/sh ( ) systemd-units ( >=  246.6-3) ipa-client-common ( =  4.12.2-15.el10_0.1) httpd ( >=  2.4.37-21) system-logos-ipa ( >=  80.4)"
-RPROVIDES:ipa-server-common = "ipa-server-common ( =  4.12.2-15.el10_0.1) freeipa-server-common ( =  4.12.2) config(ipa-server-common) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-server-common = "
+ systemd
+ httpd
+ ipa-client-common
+ bash
+ almalinux-logos-ipa
+"
 
 URI_ipa-server-dns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-dns-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:ipa-server-dns = "/bin/sh ( ) systemd ( ) /usr/bin/python3 ( ) bind ( >=  32:9.18.33-2) pkcs11-provider ( >=  0.3) softhsm ( >=  2.6.1) ipa-server ( =  4.12.2-15.el10_0.1) bind-dnssec-utils ( >=  32:9.18.33-2) bind-dyndb-ldap ( >=  11.11-1) bind-utils ( >=  32:9.18.33-2) opendnssec ( >=  2.1.6-5)"
-RPROVIDES:ipa-server-dns = "freeipa-server-dns ( =  4.12.2) config(ipa-server-dns) ( =  4.12.2-15.el10_0.1) ipa-server-dns ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-server-dns = "
+ python3
+ softhsm
+ ipa-server
+ systemd
+ bind-dnssec-utils
+ bind-dyndb-ldap
+ opendnssec
+ pkcs11-provider
+ bind-utils
+ bash
+ bind
+"
 
 URI_ipa-server-encrypted-dns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-encrypted-dns-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipa-server-encrypted-dns = "ipa-client-encrypted-dns ( )"
-RPROVIDES:ipa-server-encrypted-dns = "ipa-server-encrypted-dns ( =  4.12.2-15.el10_0.1) ipa-server-encrypted-dns(x86-64) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-server-encrypted-dns = "
+ ipa-client-encrypted-dns
+"
 
 URI_ipa-server-trust-ad = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-trust-ad-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
-RDEPENDS:ipa-server-trust-ad = "/bin/sh ( ) python3 ( ) /usr/sbin/update-alternatives ( ) rtld(GNU_HASH) ( ) libc.so.6(GLIBC_2.38)(64bit) ( ) /usr/bin/python3 ( ) libcrypto.so.3()(64bit) ( ) libcrypto.so.3(OPENSSL_3.0.0)(64bit) ( ) libkrb5.so.3()(64bit) ( ) libkrb5.so.3(krb5_3_MIT)(64bit) ( ) libcom_err.so.2()(64bit) ( ) libldap.so.2()(64bit) ( ) libldap.so.2(OPENLDAP_2.200)(64bit) ( ) libtalloc.so.2()(64bit) ( ) libtalloc.so.2(TALLOC_2.0.2)(64bit) ( ) libk5crypto.so.3()(64bit) ( ) libsamba-util.so.0()(64bit) ( ) libsamba-util.so.0(SAMBA_UTIL_0.0.1)(64bit) ( ) liblber.so.2()(64bit) ( ) liblber.so.2(OPENLDAP_2.200)(64bit) ( ) libsmbconf.so.0()(64bit) ( ) libsmbconf.so.0(SMBCONF_0.0.1)(64bit) ( ) libtevent.so.0()(64bit) ( ) libk5crypto.so.3(k5crypto_3_MIT)(64bit) ( ) libpwquality.so.1()(64bit) ( ) libpwquality.so.1(LIBPWQUALITY_1.0)(64bit) ( ) libndr.so.5()(64bit) ( ) libndr.so.5(NDR_0.0.1)(64bit) ( ) python3-samba ( ) samba-winbind ( ) libndr-nbt.so.0()(64bit) ( ) libndr-nbt.so.0(NDR_NBT_0.0.1)(64bit) ( ) libsamba-passdb.so.0()(64bit) ( ) libsamba-passdb.so.0(SAMBA_PASSDB_0.2.0)(64bit) ( ) sssd-winbind-idmap ( ) libsmbldap.so.2()(64bit) ( ) libsmbldap.so.2(SMBLDAP_0)(64bit) ( ) libsmbldap.so.2(SMBLDAP_1)(64bit) ( ) libsmbldap.so.2(SMBLDAP_2)(64bit) ( ) libsss_idmap ( ) libsss_idmap.so.0()(64bit) ( ) libsss_idmap.so.0(SSS_IDMAP_0.4)(64bit) ( ) python3-libsss_nss_idmap ( ) python3-sss ( ) ipa-common ( =  4.12.2-15.el10_0.1) ipa-server ( =  4.12.2-15.el10_0.1) samba ( >=  4.21.1)"
-RPROVIDES:ipa-server-trust-ad = "libipa_cldap.so()(64bit) ( ) freeipa-server-trust-ad ( =  4.12.2) ipa-server-trust-ad ( =  4.12.2-15.el10_0.1) ipa-server-trust-ad(x86-64) ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-server-trust-ad = "
+ python3
+ samba
+ libpwquality
+ samba-client-libs
+ krb5-libs
+ libsss_idmap
+ python3-libsss_nss_idmap
+ libcom_err
+ samba-winbind
+ libtalloc
+ libtevent
+ alternatives
+ openldap
+ python3-samba
+ openssl-libs
+ bash
+ python3-sss
+ ipa-common
+ ipa-server
+ sssd-winbind-idmap
+ glibc
+"
 
 URI_python3-ipaclient = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-ipaclient-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:python3-ipaclient = "python3-jinja2 ( ) python3.12dist(six) ( ) python3-augeas ( ) python(abi) ( =  3.12) ipa-common ( =  4.12.2-15.el10_0.1) python3-dns ( >=  1.15) python3.12dist(cryptography) ( >=  1.6) python3.12dist(ipalib) ( =  4.12.2) python3.12dist(ipapython) ( =  4.12.2) ipa-client-common ( =  4.12.2-15.el10_0.1) augeas-libs ( >=  1.12.1-0) python3.12dist(qrcode) ( >=  5) python3-ipalib ( =  4.12.2-15.el10_0.1)"
-RPROVIDES:python3-ipaclient = "python3.12dist(ipaclient) ( =  4.12.2) python3-ipaclient ( =  4.12.2-15.el10_0.1) python3dist(ipaclient) ( =  4.12.2) python-ipaclient ( =  4.12.2-15.el10_0.1) python3.12-ipaclient ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:python3-ipaclient = "
+ python3
+ augeas-libs
+ python3-cryptography
+ python3-ipalib
+ ipa-client-common
+ python3-six
+ python3-jinja2
+ python3-dns
+ python3-qrcode
+ ipa-common
+ python3-augeas
+"
 
 URI_python3-ipalib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-ipalib-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:python3-ipalib = "python3-ldap ( >=  3.1.0-1) python3-requests ( ) python3-six ( ) python3-dbus ( ) python3.12dist(pyasn1) ( ) python3-dateutil ( ) python3.12dist(six) ( ) python3-argcomplete ( ) python3-cffi ( ) python3-setuptools ( ) python3-systemd ( ) python3.12dist(pyasn1-modules) ( ) gnupg2 ( ) python3.12dist(netaddr) ( ) keyutils ( ) python3-pyusb ( ) python3.12dist(cffi) ( ) python3.12dist(urllib3) ( ) python3-libipa_hbac ( ) python3-sss-murmur ( ) python(abi) ( =  3.12) ipa-common ( =  4.12.2-15.el10_0.1) python3-dns ( >=  1.15) python3.12dist(cryptography) ( >=  1.6) python3-gssapi ( >=  1.2.0) python3-pyasn1 ( >=  0.3.2-2) python3-urllib3 ( >=  1.25.8) python3.12dist(dnspython) ( >=  1.15) python3-cryptography ( >=  1.6) python3-ifaddr ( >=  0.1.7) python3-jwcrypto ( >=  0.4.2) python3-netaddr ( >=  0.7.19) python3-pyasn1-modules ( >=  0.3.2-2) python3-qrcode-core ( >=  5.0.0) python3-yubico ( >=  1.3.2-7) python3.12dist(gssapi) ( >=  1.2)"
-RPROVIDES:python3-ipalib = "python3.12dist(ipalib) ( =  4.12.2) python3.12dist(ipapython) ( =  4.12.2) python3.12dist(ipaplatform) ( =  4.12.2) python3-ipalib ( =  4.12.2-15.el10_0.1) python3dist(ipalib) ( =  4.12.2) python3dist(ipaplatform) ( =  4.12.2) python3dist(ipapython) ( =  4.12.2) python-ipalib ( =  4.12.2-15.el10_0.1) python-ipaplatform ( =  4.12.2-15.el10_0.1) python-ipapython ( =  4.12.2-15.el10_0.1) python3-ipaplatform ( =  4.12.2-15.el10_0.1) python3-ipapython ( =  4.12.2-15.el10_0.1) python3.12-ipalib ( =  4.12.2-15.el10_0.1) python3.12-ipaplatform ( =  4.12.2-15.el10_0.1) python3.12-ipapython ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:python3-ipalib = "
+ python3
+ python3-cffi
+ python3-gssapi
+ keyutils
+ python3-cryptography
+ python3-dateutil
+ python3-dbus
+ python3-ifaddr
+ python3-dns
+ python3-jwcrypto
+ python3-yubico
+ python3-ldap
+ python3-libipa_hbac
+ python3-netaddr
+ gnupg2
+ python3-requests
+ python3-setuptools
+ python3-six
+ python3-sss-murmur
+ ipa-common
+ python3-argcomplete
+ python3-systemd
+ python3-urllib3
+ python3-pyasn1
+ python3-pyasn1-modules
+ python3-pyusb
+ python3-qrcode
+"
 
 URI_python3-ipaserver = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-ipaserver-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:python3-ipaserver = "python3-ldap ( >=  3.1.0-1) python3-dbus ( ) python3-lxml ( ) python3.12dist(pyasn1) ( ) python3.12dist(requests) ( ) python3.12dist(six) ( ) python3-augeas ( ) python3-psutil ( ) python3.12dist(dbus-python) ( ) python3.12dist(netaddr) ( ) python3.12dist(psutil) ( ) python3.12dist(lxml) ( ) python3.12dist(python-augeas) ( ) rpm-libs ( ) python(abi) ( =  3.12) ipa-common ( =  4.12.2-15.el10_0.1) python3-dns ( >=  1.15) python3.12dist(cryptography) ( >=  1.6) python3.12dist(ipalib) ( =  4.12.2) python3.12dist(ipapython) ( =  4.12.2) python3-sssdconfig ( >=  2.10.0) python3.12dist(ipaclient) ( =  4.12.2) augeas-libs ( >=  1.12.1-0) python3.12dist(ipaplatform) ( =  4.12.2) python3-gssapi ( >=  1.2.0) python3-pyasn1 ( >=  0.3.2-2) python3-urllib3 ( >=  1.25.8) python3.12dist(dnspython) ( >=  1.15) python3-ipaclient ( =  4.12.2-15.el10_0.1) ipa-server-common ( =  4.12.2-15.el10_0.1) python3-kdcproxy ( >=  0.4-3) python3-pki ( >=  10.10.5) python3.12dist(jwcrypto) ( >=  0.4.2) python3.12dist(python-ldap) ( >=  3)"
-RPROVIDES:python3-ipaserver = "python3-ipaserver ( =  4.12.2-15.el10_0.1) python3.12dist(ipaserver) ( =  4.12.2) python3dist(ipaserver) ( =  4.12.2) python-ipaserver ( =  4.12.2-15.el10_0.1) python3.12-ipaserver ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:python3-ipaserver = "
+ python3
+ python3-gssapi
+ python3-idm-pki
+ python3-cryptography
+ python3-dbus
+ python3-ipaclient
+ python3-ipalib
+ python3-dns
+ python3-jwcrypto
+ python3-kdcproxy
+ python3-ldap
+ python3-lxml
+ python3-netaddr
+ python3-requests
+ augeas-libs
+ python3-six
+ python3-sssdconfig
+ ipa-common
+ python3-augeas
+ python3-urllib3
+ ipa-server-common
+ python3-psutil
+ python3-pyasn1
+ rpm-libs
+"
 
 URI_python3-ipatests = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-ipatests-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:python3-ipatests = "iptables ( ) openssh-clients ( ) tar ( ) xz ( ) python3-sssdconfig ( >=  2.10.0) python3-cryptography ( >=  1.6) python3-ipaclient ( =  4.12.2-15.el10_0.1) python3-ipaserver ( =  4.12.2-15.el10_0.1)"
-RPROVIDES:python3-ipatests = "python-ipatests ( =  4.12.2-15.el10_0.1) python3-ipatests ( =  4.12.2-15.el10_0.1) python3.12-ipatests ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:python3-ipatests = "
+ openssh-clients
+ python3-cryptography
+ tar
+ python3-ipaclient
+ python3-ipaserver
+ iptables-nft
+ python3-sssdconfig
+ xz
+"
 
 URI_ipa-python-compat = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ipa-python-compat-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
-RDEPENDS:ipa-python-compat = "ipa-common ( =  4.12.2-15.el10_0.1) python3-ipalib ( =  4.12.2-15.el10_0.1)"
-RPROVIDES:ipa-python-compat = "freeipa-python ( =  4.12.2) freeipa-python-compat ( =  4.12.2) ipa-python ( =  4.12.2-15.el10_0.1) ipa-python-compat ( =  4.12.2-15.el10_0.1)"
+RDEPENDS:ipa-python-compat = "
+ ipa-common
+ python3-ipalib
+"
