@@ -42,6 +42,8 @@ def write_recipe(pkg: dnf.package.Package) -> None:
     fname = f"{pkg.name}_{f'{pkg.epoch}:' if pkg.epoch else ''}{pkg.version}-{pkg.release}.bb"
     with open(f"meta-almalinux/recipes-alma10/{fname}", "w") as r:
         print(f'''
+inherit dnf-bridge
+
 PN = "{pkg.name}"
 PE = "{pkg.epoch}"
 PV = "{pkg.version}"
