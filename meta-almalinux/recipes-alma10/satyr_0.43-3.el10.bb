@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "python3-satyr satyr satyr-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/satyr-0.43-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-satyr = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-satyr-0.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-satyr}"
 RDEPENDS:python3-satyr = " \
  python3 \
  zlib-ng-compat \
@@ -24,6 +28,7 @@ RDEPENDS:python3-satyr = " \
 "
 
 URI_satyr = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/satyr-0.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_satyr}"
 RDEPENDS:satyr = " \
  zlib-ng-compat \
  libgcc \
@@ -38,6 +43,7 @@ RDEPENDS:satyr = " \
 "
 
 URI_satyr-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/satyr-devel-0.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_satyr-devel}"
 RDEPENDS:satyr-devel = " \
  satyr \
  pkgconf-pkg-config \

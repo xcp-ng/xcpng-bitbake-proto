@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "aspell aspell-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/aspell-0.60.8.1-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_aspell = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/aspell-0.60.8.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_aspell}"
 RDEPENDS:aspell = " \
  glibc \
  libstdc++ \
@@ -17,6 +21,7 @@ RDEPENDS:aspell = " \
 "
 
 URI_aspell-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/aspell-devel-0.60.8.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_aspell-devel}"
 RDEPENDS:aspell-devel = " \
  aspell \
  bash \

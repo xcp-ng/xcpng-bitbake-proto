@@ -8,12 +8,17 @@ PR = "33.el10"
 PACKAGES = "apache-commons-exec apache-commons-exec-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/apache-commons-exec-1.3-33.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_apache-commons-exec = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/apache-commons-exec-1.3-33.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_apache-commons-exec}"
 RDEPENDS:apache-commons-exec = " \
  javapackages-filesystem \
 "
 
 URI_apache-commons-exec-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/apache-commons-exec-javadoc-1.3-33.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_apache-commons-exec-javadoc}"
 RDEPENDS:apache-commons-exec-javadoc = " \
  javapackages-filesystem \
 "

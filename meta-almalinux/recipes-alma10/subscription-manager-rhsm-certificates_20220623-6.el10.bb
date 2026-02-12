@@ -8,5 +8,9 @@ PR = "6.el10"
 PACKAGES = "subscription-manager-rhsm-certificates"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/subscription-manager-rhsm-certificates-20220623-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_subscription-manager-rhsm-certificates = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/subscription-manager-rhsm-certificates-20220623-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_subscription-manager-rhsm-certificates}"
 RDEPENDS:subscription-manager-rhsm-certificates = ""

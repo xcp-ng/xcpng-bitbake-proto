@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "harfbuzz harfbuzz-cairo harfbuzz-devel harfbuzz-icu"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/harfbuzz-8.4.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_harfbuzz = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/harfbuzz-8.4.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_harfbuzz}"
 RDEPENDS:harfbuzz = " \
  glibc \
  freetype \
@@ -17,6 +21,7 @@ RDEPENDS:harfbuzz = " \
 "
 
 URI_harfbuzz-cairo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/harfbuzz-cairo-8.4.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_harfbuzz-cairo}"
 RDEPENDS:harfbuzz-cairo = " \
  glibc \
  harfbuzz \
@@ -24,6 +29,7 @@ RDEPENDS:harfbuzz-cairo = " \
 "
 
 URI_harfbuzz-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/harfbuzz-devel-8.4.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_harfbuzz-devel}"
 RDEPENDS:harfbuzz-devel = " \
  freetype \
  glib2-devel \
@@ -41,6 +47,7 @@ RDEPENDS:harfbuzz-devel = " \
 "
 
 URI_harfbuzz-icu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/harfbuzz-icu-8.4.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_harfbuzz-icu}"
 RDEPENDS:harfbuzz-icu = " \
  glibc \
  libicu \

@@ -8,7 +8,11 @@ PR = "10.el10.alma.1"
 PACKAGES = "virt-viewer"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/virt-viewer-11.0-10.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_virt-viewer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/virt-viewer-11.0-10.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_virt-viewer}"
 RDEPENDS:virt-viewer = " \
  openssh-clients \
  vte291 \

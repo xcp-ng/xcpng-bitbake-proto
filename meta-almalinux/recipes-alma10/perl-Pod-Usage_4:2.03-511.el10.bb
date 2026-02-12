@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Pod-Usage perl-Pod-Usage-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Pod-Usage-2.03-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Pod-Usage = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Pod-Usage-2.03-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Usage}"
 RDEPENDS:perl-Pod-Usage = " \
  perl-libs \
  perl-Carp \
@@ -22,6 +26,7 @@ RDEPENDS:perl-Pod-Usage = " \
 "
 
 URI_perl-Pod-Usage-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Pod-Usage-tests-2.03-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Usage-tests}"
 RDEPENDS:perl-Pod-Usage-tests = " \
  perl-Test-Harness \
  perl-libs \

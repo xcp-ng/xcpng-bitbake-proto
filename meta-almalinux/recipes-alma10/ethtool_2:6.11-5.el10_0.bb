@@ -8,7 +8,11 @@ PR = "5.el10_0"
 PACKAGES = "ethtool"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/ethtool-6.11-5.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ethtool = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/ethtool-6.11-5.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ethtool}"
 RDEPENDS:ethtool = " \
  glibc \
  libmnl \

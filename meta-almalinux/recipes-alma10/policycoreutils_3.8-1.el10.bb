@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "policycoreutils policycoreutils-newrole policycoreutils-restorecond policycoreutils-dbus policycoreutils-devel policycoreutils-gui policycoreutils-python-utils policycoreutils-sandbox python3-policycoreutils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/policycoreutils-3.8-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_policycoreutils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/policycoreutils-3.8-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils}"
 RDEPENDS:policycoreutils = " \
  util-linux \
  audit-libs \
@@ -27,6 +31,7 @@ RDEPENDS:policycoreutils = " \
 "
 
 URI_policycoreutils-newrole = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/policycoreutils-newrole-3.8-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils-newrole}"
 RDEPENDS:policycoreutils-newrole = " \
  audit-libs \
  libcap-ng \
@@ -37,6 +42,7 @@ RDEPENDS:policycoreutils-newrole = " \
 "
 
 URI_policycoreutils-restorecond = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/policycoreutils-restorecond-3.8-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils-restorecond}"
 RDEPENDS:policycoreutils-restorecond = " \
  glibc \
  libselinux \
@@ -45,6 +51,7 @@ RDEPENDS:policycoreutils-restorecond = " \
 "
 
 URI_policycoreutils-dbus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/policycoreutils-dbus-3.8-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils-dbus}"
 RDEPENDS:policycoreutils-dbus = " \
  python3 \
  polkit \
@@ -53,6 +60,7 @@ RDEPENDS:policycoreutils-dbus = " \
 "
 
 URI_policycoreutils-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/policycoreutils-devel-3.8-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils-devel}"
 RDEPENDS:policycoreutils-devel = " \
  python3 \
  selinux-policy-devel \
@@ -64,6 +72,7 @@ RDEPENDS:policycoreutils-devel = " \
 "
 
 URI_policycoreutils-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/policycoreutils-gui-3.8-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils-gui}"
 RDEPENDS:policycoreutils-gui = " \
  python3 \
  python3-policycoreutils \
@@ -75,12 +84,14 @@ RDEPENDS:policycoreutils-gui = " \
 "
 
 URI_policycoreutils-python-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/policycoreutils-python-utils-3.8-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils-python-utils}"
 RDEPENDS:policycoreutils-python-utils = " \
  python3 \
  python3-policycoreutils \
 "
 
 URI_policycoreutils-sandbox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/policycoreutils-sandbox-3.8-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_policycoreutils-sandbox}"
 RDEPENDS:policycoreutils-sandbox = " \
  python3 \
  python3-policycoreutils \
@@ -92,6 +103,7 @@ RDEPENDS:policycoreutils-sandbox = " \
 "
 
 URI_python3-policycoreutils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-policycoreutils-3.8-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-policycoreutils}"
 RDEPENDS:python3-policycoreutils = " \
  python3 \
  checkpolicy \

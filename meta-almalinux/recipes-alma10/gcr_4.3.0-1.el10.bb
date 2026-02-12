@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gcr gcr-devel gcr-libs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gcr-4.3.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gcr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcr-4.3.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcr}"
 RDEPENDS:gcr = " \
  gnupg2 \
  systemd-libs \
@@ -23,6 +27,7 @@ RDEPENDS:gcr = " \
 "
 
 URI_gcr-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcr-devel-4.3.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcr-devel}"
 RDEPENDS:gcr-devel = " \
  p11-kit-devel \
  glib2-devel \
@@ -32,6 +37,7 @@ RDEPENDS:gcr-devel = " \
 "
 
 URI_gcr-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcr-libs-4.3.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcr-libs}"
 RDEPENDS:gcr-libs = " \
  glibc \
  gnutls \

@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "xdg-desktop-portal xdg-desktop-portal-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xdg-desktop-portal-1.20.0-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xdg-desktop-portal = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xdg-desktop-portal-1.20.0-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xdg-desktop-portal}"
 RDEPENDS:xdg-desktop-portal = " \
  systemd-libs \
  gstreamer1 \
@@ -30,6 +34,7 @@ RDEPENDS:xdg-desktop-portal = " \
 "
 
 URI_xdg-desktop-portal-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xdg-desktop-portal-devel-1.20.0-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xdg-desktop-portal-devel}"
 RDEPENDS:xdg-desktop-portal-devel = " \
  xdg-desktop-portal \
  pkgconf-pkg-config \

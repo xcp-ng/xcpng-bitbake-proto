@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "rpmlint"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/rpmlint-2.5.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_rpmlint = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rpmlint-2.5.0-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rpmlint}"
 RDEPENDS:rpmlint = " \
  python3 \
  desktop-file-utils \

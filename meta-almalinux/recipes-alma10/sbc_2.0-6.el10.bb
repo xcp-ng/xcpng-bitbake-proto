@@ -8,18 +8,24 @@ PR = "6.el10"
 PACKAGES = "libsbc sbc sbc-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/sbc-2.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libsbc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libsbc-2.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsbc}"
 RDEPENDS:libsbc = " \
  glibc \
 "
 
 URI_sbc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sbc-2.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sbc}"
 RDEPENDS:sbc = " \
  glibc \
  libsbc \
 "
 
 URI_sbc-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/sbc-devel-2.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sbc-devel}"
 RDEPENDS:sbc-devel = " \
  sbc \
  pkgconf-pkg-config \

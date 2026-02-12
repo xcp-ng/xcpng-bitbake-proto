@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "gstreamer1-plugins-bad-free gstreamer1-plugins-bad-free-libs gstreamer1-plugins-bad-free-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gstreamer1-plugins-bad-free-1.24.11-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gstreamer1-plugins-bad-free = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-bad-free-1.24.11-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-bad-free}"
 RDEPENDS:gstreamer1-plugins-bad-free = " \
  liblc3 \
  lcms2 \
@@ -47,6 +51,7 @@ RDEPENDS:gstreamer1-plugins-bad-free = " \
 "
 
 URI_gstreamer1-plugins-bad-free-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-bad-free-libs-1.24.11-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-bad-free-libs}"
 RDEPENDS:gstreamer1-plugins-bad-free-libs = " \
  libwayland-client \
  gstreamer1 \
@@ -61,6 +66,7 @@ RDEPENDS:gstreamer1-plugins-bad-free-libs = " \
 "
 
 URI_gstreamer1-plugins-bad-free-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gstreamer1-plugins-bad-free-devel-1.24.11-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-bad-free-devel}"
 RDEPENDS:gstreamer1-plugins-bad-free-devel = " \
  wayland-devel \
  glib2-devel \

@@ -8,7 +8,11 @@ PR = "7.el10.alma.1"
 PACKAGES = "libvirt libvirt-client libvirt-client-qemu libvirt-daemon libvirt-daemon-common libvirt-daemon-config-network libvirt-daemon-config-nwfilter libvirt-daemon-driver-interface libvirt-daemon-driver-network libvirt-daemon-driver-nodedev libvirt-daemon-driver-nwfilter libvirt-daemon-driver-qemu libvirt-daemon-driver-secret libvirt-daemon-driver-storage libvirt-daemon-driver-storage-core libvirt-daemon-driver-storage-disk libvirt-daemon-driver-storage-iscsi libvirt-daemon-driver-storage-logical libvirt-daemon-driver-storage-mpath libvirt-daemon-driver-storage-rbd libvirt-daemon-driver-storage-scsi libvirt-daemon-kvm libvirt-daemon-lock libvirt-daemon-log libvirt-daemon-plugin-lockd libvirt-daemon-proxy libvirt-libs libvirt-nss libvirt-ssh-proxy libvirt-daemon-plugin-sanlock libvirt-devel libvirt-docs libvirt-wireshark"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libvirt-10.10.0-7.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libvirt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt}"
 RDEPENDS:libvirt = " \
  libvirt-client-qemu \
  libvirt-daemon \
@@ -26,6 +30,7 @@ RDEPENDS:libvirt = " \
 "
 
 URI_libvirt-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-client-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-client}"
 RDEPENDS:libvirt-client = " \
  gnutls \
  libgcc \
@@ -38,6 +43,7 @@ RDEPENDS:libvirt-client = " \
 "
 
 URI_libvirt-client-qemu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-client-qemu-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-client-qemu}"
 RDEPENDS:libvirt-client-qemu = " \
  python3 \
  python3-cryptography \
@@ -47,6 +53,7 @@ RDEPENDS:libvirt-client-qemu = " \
 "
 
 URI_libvirt-daemon = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon}"
 RDEPENDS:libvirt-daemon = " \
  libvirt-daemon-common \
  libgcc \
@@ -62,6 +69,7 @@ RDEPENDS:libvirt-daemon = " \
 "
 
 URI_libvirt-daemon-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-common-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-common}"
 RDEPENDS:libvirt-daemon-common = " \
  libacl \
  shadow-utils \
@@ -81,18 +89,21 @@ RDEPENDS:libvirt-daemon-common = " \
 "
 
 URI_libvirt-daemon-config-network = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-config-network-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-config-network}"
 RDEPENDS:libvirt-daemon-config-network = " \
  bash \
  libvirt-daemon-driver-network \
 "
 
 URI_libvirt-daemon-config-nwfilter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-config-nwfilter-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-config-nwfilter}"
 RDEPENDS:libvirt-daemon-config-nwfilter = " \
  libvirt-daemon-driver-nwfilter \
  bash \
 "
 
 URI_libvirt-daemon-driver-interface = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-interface-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-interface}"
 RDEPENDS:libvirt-daemon-driver-interface = " \
  libvirt-daemon-common \
  systemd-libs \
@@ -105,6 +116,7 @@ RDEPENDS:libvirt-daemon-driver-interface = " \
 "
 
 URI_libvirt-daemon-driver-network = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-network-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-network}"
 RDEPENDS:libvirt-daemon-driver-network = " \
  libvirt-daemon-common \
  nftables \
@@ -118,6 +130,7 @@ RDEPENDS:libvirt-daemon-driver-network = " \
 "
 
 URI_libvirt-daemon-driver-nodedev = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-nodedev-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-nodedev}"
 RDEPENDS:libvirt-daemon-driver-nodedev = " \
  libpciaccess \
  libvirt-daemon-common \
@@ -134,6 +147,7 @@ RDEPENDS:libvirt-daemon-driver-nodedev = " \
 "
 
 URI_libvirt-daemon-driver-nwfilter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-nwfilter-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-nwfilter}"
 RDEPENDS:libvirt-daemon-driver-nwfilter = " \
  libpcap \
  libvirt-daemon-common \
@@ -147,6 +161,7 @@ RDEPENDS:libvirt-daemon-driver-nwfilter = " \
 "
 
 URI_libvirt-daemon-driver-qemu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-qemu-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-qemu}"
 RDEPENDS:libvirt-daemon-driver-qemu = " \
  systemd-container \
  libnbd \
@@ -172,6 +187,7 @@ RDEPENDS:libvirt-daemon-driver-qemu = " \
 "
 
 URI_libvirt-daemon-driver-secret = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-secret-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-secret}"
 RDEPENDS:libvirt-daemon-driver-secret = " \
  libvirt-daemon-common \
  libgcc \
@@ -183,6 +199,7 @@ RDEPENDS:libvirt-daemon-driver-secret = " \
 "
 
 URI_libvirt-daemon-driver-storage = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage}"
 RDEPENDS:libvirt-daemon-driver-storage = " \
  libvirt-daemon-driver-storage-core \
  libvirt-daemon-driver-storage-disk \
@@ -194,6 +211,7 @@ RDEPENDS:libvirt-daemon-driver-storage = " \
 "
 
 URI_libvirt-daemon-driver-storage-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-core-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage-core}"
 RDEPENDS:libvirt-daemon-driver-storage-core = " \
  libvirt-daemon-common \
  util-linux \
@@ -212,6 +230,7 @@ RDEPENDS:libvirt-daemon-driver-storage-core = " \
 "
 
 URI_libvirt-daemon-driver-storage-disk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-disk-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage-disk}"
 RDEPENDS:libvirt-daemon-driver-storage-disk = " \
  device-mapper \
  libgcc \
@@ -223,6 +242,7 @@ RDEPENDS:libvirt-daemon-driver-storage-disk = " \
 "
 
 URI_libvirt-daemon-driver-storage-iscsi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-iscsi-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage-iscsi}"
 RDEPENDS:libvirt-daemon-driver-storage-iscsi = " \
  libgcc \
  libvirt-daemon-driver-storage-core \
@@ -233,6 +253,7 @@ RDEPENDS:libvirt-daemon-driver-storage-iscsi = " \
 "
 
 URI_libvirt-daemon-driver-storage-logical = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-logical-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage-logical}"
 RDEPENDS:libvirt-daemon-driver-storage-logical = " \
  lvm2 \
  libgcc \
@@ -243,6 +264,7 @@ RDEPENDS:libvirt-daemon-driver-storage-logical = " \
 "
 
 URI_libvirt-daemon-driver-storage-mpath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-mpath-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage-mpath}"
 RDEPENDS:libvirt-daemon-driver-storage-mpath = " \
  device-mapper \
  device-mapper-libs \
@@ -254,6 +276,7 @@ RDEPENDS:libvirt-daemon-driver-storage-mpath = " \
 "
 
 URI_libvirt-daemon-driver-storage-rbd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-rbd-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage-rbd}"
 RDEPENDS:libvirt-daemon-driver-storage-rbd = " \
  librados2 \
  librbd1 \
@@ -265,6 +288,7 @@ RDEPENDS:libvirt-daemon-driver-storage-rbd = " \
 "
 
 URI_libvirt-daemon-driver-storage-scsi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-driver-storage-scsi-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-driver-storage-scsi}"
 RDEPENDS:libvirt-daemon-driver-storage-scsi = " \
  libgcc \
  libvirt-daemon-driver-storage-core \
@@ -274,6 +298,7 @@ RDEPENDS:libvirt-daemon-driver-storage-scsi = " \
 "
 
 URI_libvirt-daemon-kvm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-kvm-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-kvm}"
 RDEPENDS:libvirt-daemon-kvm = " \
  libvirt-daemon-common \
  libvirt-daemon-driver-interface \
@@ -292,6 +317,7 @@ RDEPENDS:libvirt-daemon-kvm = " \
 "
 
 URI_libvirt-daemon-lock = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-lock-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-lock}"
 RDEPENDS:libvirt-daemon-lock = " \
  libgcc \
  bash \
@@ -302,6 +328,7 @@ RDEPENDS:libvirt-daemon-lock = " \
 "
 
 URI_libvirt-daemon-log = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-log-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-log}"
 RDEPENDS:libvirt-daemon-log = " \
  libgcc \
  bash \
@@ -312,6 +339,7 @@ RDEPENDS:libvirt-daemon-log = " \
 "
 
 URI_libvirt-daemon-plugin-lockd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-plugin-lockd-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-plugin-lockd}"
 RDEPENDS:libvirt-daemon-plugin-lockd = " \
  libgcc \
  libvirt-daemon-lock \
@@ -322,6 +350,7 @@ RDEPENDS:libvirt-daemon-plugin-lockd = " \
 "
 
 URI_libvirt-daemon-proxy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-daemon-proxy-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-proxy}"
 RDEPENDS:libvirt-daemon-proxy = " \
  libgcc \
  bash \
@@ -332,6 +361,7 @@ RDEPENDS:libvirt-daemon-proxy = " \
 "
 
 URI_libvirt-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-libs-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-libs}"
 RDEPENDS:libvirt-libs = " \
  libacl \
  gnutls \
@@ -353,6 +383,7 @@ RDEPENDS:libvirt-libs = " \
 "
 
 URI_libvirt-nss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-nss-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-nss}"
 RDEPENDS:libvirt-nss = " \
  glibc \
  json-c \
@@ -360,6 +391,7 @@ RDEPENDS:libvirt-nss = " \
 "
 
 URI_libvirt-ssh-proxy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-ssh-proxy-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-ssh-proxy}"
 RDEPENDS:libvirt-ssh-proxy = " \
  libgcc \
  libxml2 \
@@ -369,6 +401,7 @@ RDEPENDS:libvirt-ssh-proxy = " \
 "
 
 URI_libvirt-daemon-plugin-sanlock = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libvirt-daemon-plugin-sanlock-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-daemon-plugin-sanlock}"
 RDEPENDS:libvirt-daemon-plugin-sanlock = " \
  augeas \
  sanlock-lib \
@@ -381,6 +414,7 @@ RDEPENDS:libvirt-daemon-plugin-sanlock = " \
 "
 
 URI_libvirt-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libvirt-devel-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-devel}"
 RDEPENDS:libvirt-devel = " \
  libvirt-devel \
  libvirt-libs \
@@ -388,9 +422,11 @@ RDEPENDS:libvirt-devel = " \
 "
 
 URI_libvirt-docs = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libvirt-docs-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-docs}"
 RDEPENDS:libvirt-docs = ""
 
 URI_libvirt-wireshark = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvirt-wireshark-10.10.0-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-wireshark}"
 RDEPENDS:libvirt-wireshark = " \
  wireshark \
  wireshark-cli \

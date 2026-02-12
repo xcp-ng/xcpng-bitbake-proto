@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "perl-Data-UUID perl-Data-UUID-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Data-UUID-1.227-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Data-UUID = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Data-UUID-1.227-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-UUID}"
 RDEPENDS:perl-Data-UUID = " \
  perl-libs \
  perl-Carp \
@@ -19,6 +23,7 @@ RDEPENDS:perl-Data-UUID = " \
 "
 
 URI_perl-Data-UUID-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Data-UUID-tests-1.227-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-UUID-tests}"
 RDEPENDS:perl-Data-UUID-tests = " \
  perl-threads \
  perl-Test-Harness \

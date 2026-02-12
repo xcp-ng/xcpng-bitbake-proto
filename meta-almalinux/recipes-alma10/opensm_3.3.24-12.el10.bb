@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "opensm opensm-libs opensm-devel opensm-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/opensm-3.3.24-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_opensm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/opensm-3.3.24-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_opensm}"
 RDEPENDS:opensm = " \
  logrotate \
  systemd \
@@ -19,6 +23,7 @@ RDEPENDS:opensm = " \
 "
 
 URI_opensm-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/opensm-libs-3.3.24-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_opensm-libs}"
 RDEPENDS:opensm-libs = " \
  glibc \
  libibumad \
@@ -26,11 +31,13 @@ RDEPENDS:opensm-libs = " \
 "
 
 URI_opensm-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/opensm-devel-3.3.24-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_opensm-devel}"
 RDEPENDS:opensm-devel = " \
  opensm-libs \
 "
 
 URI_opensm-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/opensm-static-3.3.24-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_opensm-static}"
 RDEPENDS:opensm-static = " \
  opensm-devel \
 "

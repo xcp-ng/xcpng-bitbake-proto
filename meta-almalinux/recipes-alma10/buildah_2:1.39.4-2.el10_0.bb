@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "buildah buildah-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/buildah-1.39.4-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_buildah = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/buildah-1.39.4-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_buildah}"
 RDEPENDS:buildah = " \
  containers-common-extra \
  shadow-utils-subid \
@@ -18,6 +22,7 @@ RDEPENDS:buildah = " \
 "
 
 URI_buildah-tests = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/buildah-tests-1.39.4-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_buildah-tests}"
 RDEPENDS:buildah-tests = " \
  nmap-ncat \
  bzip2 \

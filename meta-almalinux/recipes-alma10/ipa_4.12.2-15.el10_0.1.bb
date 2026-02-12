@@ -8,7 +8,11 @@ PR = "15.el10_0.1"
 PACKAGES = "ipa-client ipa-client-common ipa-client-encrypted-dns ipa-client-epn ipa-client-samba ipa-common ipa-selinux ipa-selinux-luna ipa-selinux-nfast ipa-server ipa-server-common ipa-server-dns ipa-server-encrypted-dns ipa-server-trust-ad python3-ipaclient python3-ipalib python3-ipaserver python3-ipatests ipa-python-compat"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ipa-4.12.2-15.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ipa-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipa-client}"
 RDEPENDS:ipa-client = " \
  python3 \
  python3-gssapi \
@@ -51,14 +55,17 @@ RDEPENDS:ipa-client = " \
 "
 
 URI_ipa-client-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-common-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-client-common}"
 RDEPENDS:ipa-client-common = ""
 
 URI_ipa-client-encrypted-dns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-encrypted-dns-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipa-client-encrypted-dns}"
 RDEPENDS:ipa-client-encrypted-dns = " \
  unbound \
 "
 
 URI_ipa-client-epn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-epn-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipa-client-epn}"
 RDEPENDS:ipa-client-epn = " \
  python3 \
  systemd \
@@ -67,6 +74,7 @@ RDEPENDS:ipa-client-epn = " \
 "
 
 URI_ipa-client-samba = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-client-samba-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipa-client-samba}"
 RDEPENDS:ipa-client-samba = " \
  python3 \
  samba-client \
@@ -81,11 +89,13 @@ RDEPENDS:ipa-client-samba = " \
 "
 
 URI_ipa-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-common-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-common}"
 RDEPENDS:ipa-common = " \
  ipa-selinux \
 "
 
 URI_ipa-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-selinux-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-selinux}"
 RDEPENDS:ipa-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -96,6 +106,7 @@ RDEPENDS:ipa-selinux = " \
 "
 
 URI_ipa-selinux-luna = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-selinux-luna-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-selinux-luna}"
 RDEPENDS:ipa-selinux-luna = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -106,6 +117,7 @@ RDEPENDS:ipa-selinux-luna = " \
 "
 
 URI_ipa-selinux-nfast = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-selinux-nfast-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-selinux-nfast}"
 RDEPENDS:ipa-selinux-nfast = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -116,6 +128,7 @@ RDEPENDS:ipa-selinux-nfast = " \
 "
 
 URI_ipa-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipa-server}"
 RDEPENDS:ipa-server = " \
  python3 \
  systemd \
@@ -179,6 +192,7 @@ RDEPENDS:ipa-server = " \
 "
 
 URI_ipa-server-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-common-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-server-common}"
 RDEPENDS:ipa-server-common = " \
  systemd \
  httpd \
@@ -188,6 +202,7 @@ RDEPENDS:ipa-server-common = " \
 "
 
 URI_ipa-server-dns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-dns-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-server-dns}"
 RDEPENDS:ipa-server-dns = " \
  python3 \
  softhsm \
@@ -203,11 +218,13 @@ RDEPENDS:ipa-server-dns = " \
 "
 
 URI_ipa-server-encrypted-dns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-encrypted-dns-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipa-server-encrypted-dns}"
 RDEPENDS:ipa-server-encrypted-dns = " \
  ipa-client-encrypted-dns \
 "
 
 URI_ipa-server-trust-ad = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-server-trust-ad-4.12.2-15.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipa-server-trust-ad}"
 RDEPENDS:ipa-server-trust-ad = " \
  python3 \
  samba \
@@ -233,6 +250,7 @@ RDEPENDS:ipa-server-trust-ad = " \
 "
 
 URI_python3-ipaclient = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-ipaclient-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-ipaclient}"
 RDEPENDS:python3-ipaclient = " \
  python3 \
  augeas-libs \
@@ -248,6 +266,7 @@ RDEPENDS:python3-ipaclient = " \
 "
 
 URI_python3-ipalib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-ipalib-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-ipalib}"
 RDEPENDS:python3-ipalib = " \
  python3 \
  python3-cffi \
@@ -279,6 +298,7 @@ RDEPENDS:python3-ipalib = " \
 "
 
 URI_python3-ipaserver = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-ipaserver-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-ipaserver}"
 RDEPENDS:python3-ipaserver = " \
  python3 \
  python3-gssapi \
@@ -307,6 +327,7 @@ RDEPENDS:python3-ipaserver = " \
 "
 
 URI_python3-ipatests = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-ipatests-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-ipatests}"
 RDEPENDS:python3-ipatests = " \
  openssh-clients \
  python3-cryptography \
@@ -319,6 +340,7 @@ RDEPENDS:python3-ipatests = " \
 "
 
 URI_ipa-python-compat = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ipa-python-compat-4.12.2-15.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-python-compat}"
 RDEPENDS:ipa-python-compat = " \
  ipa-common \
  python3-ipalib \

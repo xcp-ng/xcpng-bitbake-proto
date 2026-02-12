@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-MIME-Base64 perl-MIME-Base64-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-MIME-Base64-3.16-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-MIME-Base64 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-MIME-Base64-3.16-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-MIME-Base64}"
 RDEPENDS:perl-MIME-Base64 = " \
  glibc \
  perl-Exporter \
@@ -17,6 +21,7 @@ RDEPENDS:perl-MIME-Base64 = " \
 "
 
 URI_perl-MIME-Base64-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-MIME-Base64-tests-3.16-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-MIME-Base64-tests}"
 RDEPENDS:perl-MIME-Base64-tests = " \
  perl-Test \
  perl-Test-Harness \

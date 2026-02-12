@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "ansible-core ansible-test"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ansible-core-2.16.14-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ansible-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ansible-core-2.16.14-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ansible-core}"
 RDEPENDS:ansible-core = " \
  python3 \
  python3-pyyaml \
@@ -20,6 +24,7 @@ RDEPENDS:ansible-core = " \
 "
 
 URI_ansible-test = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ansible-test-2.16.14-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ansible-test}"
 RDEPENDS:ansible-test = " \
  python3 \
  ansible-core \

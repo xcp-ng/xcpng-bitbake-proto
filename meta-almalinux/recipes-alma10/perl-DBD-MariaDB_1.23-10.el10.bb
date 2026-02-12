@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "perl-DBD-MariaDB perl-DBD-MariaDB-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-DBD-MariaDB-1.23-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-DBD-MariaDB = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-DBD-MariaDB-1.23-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-MariaDB}"
 RDEPENDS:perl-DBD-MariaDB = " \
  perl-libs \
  perl-DynaLoader \
@@ -18,6 +22,7 @@ RDEPENDS:perl-DBD-MariaDB = " \
 "
 
 URI_perl-DBD-MariaDB-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-DBD-MariaDB-tests-1.23-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-MariaDB-tests}"
 RDEPENDS:perl-DBD-MariaDB-tests = " \
  perl-libs \
  perl-FindBin \

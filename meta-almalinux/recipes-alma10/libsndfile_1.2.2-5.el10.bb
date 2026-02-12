@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "libsndfile libsndfile-utils libsndfile-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libsndfile-1.2.2-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libsndfile = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libsndfile-1.2.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsndfile}"
 RDEPENDS:libsndfile = " \
  libvorbis \
  libogg \
@@ -21,6 +25,7 @@ RDEPENDS:libsndfile = " \
 "
 
 URI_libsndfile-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libsndfile-utils-1.2.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsndfile-utils}"
 RDEPENDS:libsndfile-utils = " \
  glibc \
  alsa-lib \
@@ -28,6 +33,7 @@ RDEPENDS:libsndfile-utils = " \
 "
 
 URI_libsndfile-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libsndfile-devel-1.2.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsndfile-devel}"
 RDEPENDS:libsndfile-devel = " \
  libogg-devel \
  pkgconf-pkg-config \

@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "usbguard usbguard-dbus usbguard-notifier usbguard-selinux usbguard-tools usbguard-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/usbguard-1.1.3-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_usbguard = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbguard-1.1.3-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbguard}"
 RDEPENDS:usbguard = " \
  libqb \
  protobuf \
@@ -23,6 +27,7 @@ RDEPENDS:usbguard = " \
 "
 
 URI_usbguard-dbus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbguard-dbus-1.1.3-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbguard-dbus}"
 RDEPENDS:usbguard-dbus = " \
  usbguard \
  libgcc \
@@ -36,6 +41,7 @@ RDEPENDS:usbguard-dbus = " \
 "
 
 URI_usbguard-notifier = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbguard-notifier-1.1.3-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbguard-notifier}"
 RDEPENDS:usbguard-notifier = " \
  systemd \
  usbguard \
@@ -49,6 +55,7 @@ RDEPENDS:usbguard-notifier = " \
 "
 
 URI_usbguard-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbguard-selinux-1.1.3-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_usbguard-selinux}"
 RDEPENDS:usbguard-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -59,6 +66,7 @@ RDEPENDS:usbguard-selinux = " \
 "
 
 URI_usbguard-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbguard-tools-1.1.3-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbguard-tools}"
 RDEPENDS:usbguard-tools = " \
  glibc \
  libgcc \
@@ -67,6 +75,7 @@ RDEPENDS:usbguard-tools = " \
 "
 
 URI_usbguard-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/usbguard-devel-1.1.3-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbguard-devel}"
 RDEPENDS:usbguard-devel = " \
  usbguard \
  pkgconf-pkg-config \

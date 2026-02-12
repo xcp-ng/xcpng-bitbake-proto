@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "perl-DBD-MySQL perl-DBD-MySQL-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-DBD-MySQL-5.007-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-DBD-MySQL = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-DBD-MySQL-5.007-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-MySQL}"
 RDEPENDS:perl-DBD-MySQL = " \
  perl-libs \
  perl-Carp \
@@ -20,6 +24,7 @@ RDEPENDS:perl-DBD-MySQL = " \
 "
 
 URI_perl-DBD-MySQL-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-DBD-MySQL-tests-5.007-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-MySQL-tests}"
 RDEPENDS:perl-DBD-MySQL-tests = " \
  perl-libs \
  mysql8.4 \

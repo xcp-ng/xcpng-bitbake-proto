@@ -8,12 +8,17 @@ PR = "53.el10"
 PACKAGES = "apache-commons-jxpath apache-commons-jxpath-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/apache-commons-jxpath-1.3-53.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_apache-commons-jxpath = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/apache-commons-jxpath-1.3-53.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_apache-commons-jxpath}"
 RDEPENDS:apache-commons-jxpath = " \
  javapackages-filesystem \
 "
 
 URI_apache-commons-jxpath-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/apache-commons-jxpath-javadoc-1.3-53.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_apache-commons-jxpath-javadoc}"
 RDEPENDS:apache-commons-jxpath-javadoc = " \
  javapackages-filesystem \
 "

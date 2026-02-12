@@ -8,7 +8,11 @@ PR = "25.el10"
 PACKAGES = "perl-Sub-Uplevel perl-Sub-Uplevel-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Sub-Uplevel-0.2800-25.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Sub-Uplevel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Sub-Uplevel-0.2800-25.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Uplevel}"
 RDEPENDS:perl-Sub-Uplevel = " \
  perl-constant \
  perl-libs \
@@ -16,6 +20,7 @@ RDEPENDS:perl-Sub-Uplevel = " \
 "
 
 URI_perl-Sub-Uplevel-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Sub-Uplevel-tests-0.2800-25.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Uplevel-tests}"
 RDEPENDS:perl-Sub-Uplevel-tests = " \
  perl-Test-Harness \
  perl-libs \

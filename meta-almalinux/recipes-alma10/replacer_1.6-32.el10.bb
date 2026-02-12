@@ -8,7 +8,11 @@ PR = "32.el10"
 PACKAGES = "replacer replacer-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/replacer-1.6-32.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_replacer = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/replacer-1.6-32.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_replacer}"
 RDEPENDS:replacer = " \
  apache-commons-io \
  javapackages-filesystem \
@@ -19,6 +23,7 @@ RDEPENDS:replacer = " \
 "
 
 URI_replacer-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/replacer-javadoc-1.6-32.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_replacer-javadoc}"
 RDEPENDS:replacer-javadoc = " \
  javapackages-filesystem \
 "

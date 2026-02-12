@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "egl-utils glx-utils mesa-demos"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mesa-demos-9.0.0-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_egl-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/egl-utils-9.0.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_egl-utils}"
 RDEPENDS:egl-utils = " \
  glibc \
  libglvnd-gles \
@@ -17,6 +21,7 @@ RDEPENDS:egl-utils = " \
 "
 
 URI_glx-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/glx-utils-9.0.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glx-utils}"
 RDEPENDS:glx-utils = " \
  glibc \
  libglvnd-glx \
@@ -24,6 +29,7 @@ RDEPENDS:glx-utils = " \
 "
 
 URI_mesa-demos = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mesa-demos-9.0.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mesa-demos}"
 RDEPENDS:mesa-demos = " \
  libwayland-client \
  libglvnd-egl \

@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-IPC-Run perl-IPC-Run-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-IPC-Run-20231003.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-IPC-Run = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-IPC-Run-20231003.0-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IPC-Run}"
 RDEPENDS:perl-IPC-Run = " \
  perl-IO-Tty \
  perl-constant \
@@ -29,6 +33,7 @@ RDEPENDS:perl-IPC-Run = " \
 "
 
 URI_perl-IPC-Run-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-IPC-Run-tests-20231003.0-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IPC-Run-tests}"
 RDEPENDS:perl-IPC-Run-tests = " \
  perl-IPC-Run \
  perl-Test-Harness \

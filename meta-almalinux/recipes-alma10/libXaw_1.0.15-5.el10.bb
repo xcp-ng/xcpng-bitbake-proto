@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "libXaw libXaw-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libXaw-1.0.15-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libXaw = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libXaw-1.0.15-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libXaw}"
 RDEPENDS:libXaw = " \
  libXmu \
  libXpm \
@@ -19,6 +23,7 @@ RDEPENDS:libXaw = " \
 "
 
 URI_libXaw-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libXaw-devel-1.0.15-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libXaw-devel}"
 RDEPENDS:libXaw-devel = " \
  libXext-devel \
  libXmu-devel \

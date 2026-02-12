@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "libwsman1 openwsman-python3 openwsman-selinux openwsman-server libwsman-devel openwsman-client openwsman-perl openwsman-winrs rubygem-openwsman rubygem-openwsman-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/openwsman-2.7.2-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libwsman1 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libwsman1-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwsman1}"
 RDEPENDS:libwsman1 = " \
  glibc \
  libxml2 \
@@ -16,6 +20,7 @@ RDEPENDS:libwsman1 = " \
 "
 
 URI_openwsman-python3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openwsman-python3-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openwsman-python3}"
 RDEPENDS:openwsman-python3 = " \
  glibc \
  libwsman1 \
@@ -23,6 +28,7 @@ RDEPENDS:openwsman-python3 = " \
 "
 
 URI_openwsman-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openwsman-selinux-2.7.2-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_openwsman-selinux}"
 RDEPENDS:openwsman-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -33,6 +39,7 @@ RDEPENDS:openwsman-selinux = " \
 "
 
 URI_openwsman-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openwsman-server-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openwsman-server}"
 RDEPENDS:openwsman-server = " \
  libxcrypt \
  openssl-libs \
@@ -46,6 +53,7 @@ RDEPENDS:openwsman-server = " \
 "
 
 URI_libwsman-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libwsman-devel-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwsman-devel}"
 RDEPENDS:libwsman-devel = " \
  libxml2-devel \
  sblim-sfcc-devel \
@@ -58,6 +66,7 @@ RDEPENDS:libwsman-devel = " \
 "
 
 URI_openwsman-client = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openwsman-client-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openwsman-client}"
 RDEPENDS:openwsman-client = " \
  glibc \
  libgcc \
@@ -65,6 +74,7 @@ RDEPENDS:openwsman-client = " \
 "
 
 URI_openwsman-perl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/openwsman-perl-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openwsman-perl}"
 RDEPENDS:openwsman-perl = " \
  perl-libs \
  perl-vars \
@@ -77,12 +87,14 @@ RDEPENDS:openwsman-perl = " \
 "
 
 URI_openwsman-winrs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/openwsman-winrs-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openwsman-winrs}"
 RDEPENDS:openwsman-winrs = " \
  rubygem-openwsman \
  ruby \
 "
 
 URI_rubygem-openwsman = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rubygem-openwsman-2.7.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-openwsman}"
 RDEPENDS:rubygem-openwsman = " \
  glibc \
  rubygems \
@@ -91,6 +103,7 @@ RDEPENDS:rubygem-openwsman = " \
 "
 
 URI_rubygem-openwsman-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rubygem-openwsman-doc-2.7.2-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-openwsman-doc}"
 RDEPENDS:rubygem-openwsman-doc = " \
  rubygem-openwsman \
 "

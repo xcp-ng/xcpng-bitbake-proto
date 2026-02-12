@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "nginx nginx-all-modules nginx-core nginx-filesystem nginx-mod-http-image-filter nginx-mod-http-perl nginx-mod-http-xslt-filter nginx-mod-mail nginx-mod-stream nginx-mod-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/nginx-1.26.3-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_nginx = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx}"
 RDEPENDS:nginx = " \
  systemd \
  almalinux-logos-httpd \
@@ -18,6 +22,7 @@ RDEPENDS:nginx = " \
 "
 
 URI_nginx-all-modules = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-all-modules-1.26.3-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_nginx-all-modules}"
 RDEPENDS:nginx-all-modules = " \
  nginx-mod-stream \
  nginx-mod-http-image-filter \
@@ -27,6 +32,7 @@ RDEPENDS:nginx-all-modules = " \
 "
 
 URI_nginx-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-core-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx-core}"
 RDEPENDS:nginx-core = " \
  zlib-ng-compat \
  libxcrypt \
@@ -37,12 +43,14 @@ RDEPENDS:nginx-core = " \
 "
 
 URI_nginx-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-filesystem-1.26.3-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_nginx-filesystem}"
 RDEPENDS:nginx-filesystem = " \
  shadow-utils \
  bash \
 "
 
 URI_nginx-mod-http-image-filter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-mod-http-image-filter-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx-mod-http-image-filter}"
 RDEPENDS:nginx-mod-http-image-filter = " \
  glibc \
  gd \
@@ -51,6 +59,7 @@ RDEPENDS:nginx-mod-http-image-filter = " \
 "
 
 URI_nginx-mod-http-perl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-mod-http-perl-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx-mod-http-perl}"
 RDEPENDS:nginx-mod-http-perl = " \
  perl-constant \
  nginx \
@@ -61,6 +70,7 @@ RDEPENDS:nginx-mod-http-perl = " \
 "
 
 URI_nginx-mod-http-xslt-filter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-mod-http-xslt-filter-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx-mod-http-xslt-filter}"
 RDEPENDS:nginx-mod-http-xslt-filter = " \
  nginx \
  libxslt \
@@ -70,6 +80,7 @@ RDEPENDS:nginx-mod-http-xslt-filter = " \
 "
 
 URI_nginx-mod-mail = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-mod-mail-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx-mod-mail}"
 RDEPENDS:nginx-mod-mail = " \
  glibc \
  nginx \
@@ -77,6 +88,7 @@ RDEPENDS:nginx-mod-mail = " \
 "
 
 URI_nginx-mod-stream = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nginx-mod-stream-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx-mod-stream}"
 RDEPENDS:nginx-mod-stream = " \
  glibc \
  nginx \
@@ -84,6 +96,7 @@ RDEPENDS:nginx-mod-stream = " \
 "
 
 URI_nginx-mod-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nginx-mod-devel-1.26.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nginx-mod-devel}"
 RDEPENDS:nginx-mod-devel = " \
  perl-constant \
  perl-ExtUtils-Embed \

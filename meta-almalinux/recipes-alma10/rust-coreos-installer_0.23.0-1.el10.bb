@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "coreos-installer coreos-installer-bootinfra coreos-installer-dracut"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/rust-coreos-installer-0.23.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_coreos-installer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/coreos-installer-0.23.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_coreos-installer}"
 RDEPENDS:coreos-installer = " \
  gnupg2 \
  util-linux \
@@ -22,6 +26,7 @@ RDEPENDS:coreos-installer = " \
 "
 
 URI_coreos-installer-bootinfra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/coreos-installer-bootinfra-0.23.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_coreos-installer-bootinfra}"
 RDEPENDS:coreos-installer-bootinfra = " \
  coreos-installer \
  openssl-libs \
@@ -33,6 +38,7 @@ RDEPENDS:coreos-installer-bootinfra = " \
 "
 
 URI_coreos-installer-dracut = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/coreos-installer-dracut-0.23.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_coreos-installer-dracut}"
 RDEPENDS:coreos-installer-dracut = " \
  coreos-installer \
  bash \

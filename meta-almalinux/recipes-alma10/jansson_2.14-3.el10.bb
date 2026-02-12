@@ -8,16 +8,22 @@ PR = "3.el10"
 PACKAGES = "jansson jansson-devel jansson-devel-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/jansson-2.14-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jansson = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/jansson-2.14-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_jansson}"
 RDEPENDS:jansson = " \
  glibc \
 "
 
 URI_jansson-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jansson-devel-2.14-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_jansson-devel}"
 RDEPENDS:jansson-devel = " \
  jansson \
  pkgconf-pkg-config \
 "
 
 URI_jansson-devel-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jansson-devel-doc-2.14-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jansson-devel-doc}"
 RDEPENDS:jansson-devel-doc = ""

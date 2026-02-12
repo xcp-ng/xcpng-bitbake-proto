@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Unicode-Normalize perl-Unicode-Normalize-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Unicode-Normalize-1.32-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Unicode-Normalize = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Unicode-Normalize-1.32-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Unicode-Normalize}"
 RDEPENDS:perl-Unicode-Normalize = " \
  glibc \
  perl-Exporter \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Unicode-Normalize = " \
 "
 
 URI_perl-Unicode-Normalize-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Unicode-Normalize-tests-1.32-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Unicode-Normalize-tests}"
 RDEPENDS:perl-Unicode-Normalize-tests = " \
  perl-Test-Harness \
  perl-libs \

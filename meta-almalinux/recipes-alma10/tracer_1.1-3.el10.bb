@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "python3-tracer tracer-common"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/tracer-1.1-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-tracer = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-tracer-1.1-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-tracer}"
 RDEPENDS:python3-tracer = " \
  python3 \
  python3-psutil \
@@ -20,4 +24,5 @@ RDEPENDS:python3-tracer = " \
 "
 
 URI_tracer-common = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/tracer-common-1.1-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tracer-common}"
 RDEPENDS:tracer-common = ""

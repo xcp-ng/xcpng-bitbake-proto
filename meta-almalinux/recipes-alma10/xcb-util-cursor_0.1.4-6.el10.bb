@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "xcb-util-cursor xcb-util-cursor-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xcb-util-cursor-0.1.4-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xcb-util-cursor = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xcb-util-cursor-0.1.4-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xcb-util-cursor}"
 RDEPENDS:xcb-util-cursor = " \
  glibc \
  libxcb \
@@ -17,6 +21,7 @@ RDEPENDS:xcb-util-cursor = " \
 "
 
 URI_xcb-util-cursor-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xcb-util-cursor-devel-0.1.4-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xcb-util-cursor-devel}"
 RDEPENDS:xcb-util-cursor-devel = " \
  xcb-util-renderutil-devel \
  pkgconf-pkg-config \

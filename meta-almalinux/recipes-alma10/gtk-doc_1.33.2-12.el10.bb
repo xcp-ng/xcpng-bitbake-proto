@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "gtk-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/gtk-doc-1.33.2-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gtk-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtk-doc-1.33.2-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk-doc}"
 RDEPENDS:gtk-doc = " \
  python3 \
  docbook-utils \

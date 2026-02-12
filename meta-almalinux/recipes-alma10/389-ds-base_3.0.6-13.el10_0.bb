@@ -8,7 +8,11 @@ PR = "13.el10_0"
 PACKAGES = "389-ds-base 389-ds-base-libs 389-ds-base-snmp python3-lib389 389-ds-base-bdb 389-ds-base-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/389-ds-base-3.0.6-13.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_389-ds-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/389-ds-base-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_389-ds-base}"
 RDEPENDS:389-ds-base = " \
  python3 \
  systemd \
@@ -54,6 +58,7 @@ RDEPENDS:389-ds-base = " \
 "
 
 URI_389-ds-base-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/389-ds-base-libs-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_389-ds-base-libs}"
 RDEPENDS:389-ds-base-libs = " \
  zlib-ng-compat \
  nss \
@@ -74,6 +79,7 @@ RDEPENDS:389-ds-base-libs = " \
 "
 
 URI_389-ds-base-snmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/389-ds-base-snmp-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_389-ds-base-snmp}"
 RDEPENDS:389-ds-base-snmp = " \
  net-snmp-agent-libs \
  net-snmp-libs \
@@ -85,6 +91,7 @@ RDEPENDS:389-ds-base-snmp = " \
 "
 
 URI_python3-lib389 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-lib389-3.0.6-13.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-lib389}"
 RDEPENDS:python3-lib389 = " \
  python3 \
  python3-ldap \
@@ -104,6 +111,7 @@ RDEPENDS:python3-lib389 = " \
 "
 
 URI_389-ds-base-bdb = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/389-ds-base-bdb-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_389-ds-base-bdb}"
 RDEPENDS:389-ds-base-bdb = " \
  zlib-ng-compat \
  nss \
@@ -126,6 +134,7 @@ RDEPENDS:389-ds-base-bdb = " \
 "
 
 URI_389-ds-base-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/389-ds-base-devel-3.0.6-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_389-ds-base-devel}"
 RDEPENDS:389-ds-base-devel = " \
  nspr-devel \
  systemd-libs \

@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "python3-iniparse"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/python-iniparse-0.5-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-iniparse = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-iniparse-0.5-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-iniparse}"
 RDEPENDS:python3-iniparse = " \
  python3 \
  python3-six \

@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gtk4 gtk4-devel gtk4-devel-docs gtk4-devel-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gtk4-4.16.7-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gtk4 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk4-4.16.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk4}"
 RDEPENDS:gtk4 = " \
  libpng \
  libtracker-sparql \
@@ -50,6 +54,7 @@ RDEPENDS:gtk4 = " \
 "
 
 URI_gtk4-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk4-devel-4.16.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk4-devel}"
 RDEPENDS:gtk4-devel = " \
  glib2-devel \
  libpng \
@@ -93,11 +98,13 @@ RDEPENDS:gtk4-devel = " \
 "
 
 URI_gtk4-devel-docs = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtk4-devel-docs-4.16.7-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gtk4-devel-docs}"
 RDEPENDS:gtk4-devel-docs = " \
  gtk4 \
 "
 
 URI_gtk4-devel-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtk4-devel-tools-4.16.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk4-devel-tools}"
 RDEPENDS:gtk4-devel-tools = " \
  libepoxy \
  harfbuzz \

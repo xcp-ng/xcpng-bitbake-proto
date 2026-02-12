@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "maven-compiler-plugin maven-compiler-plugin-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/maven-compiler-plugin-3.12.1-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_maven-compiler-plugin = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-compiler-plugin-3.12.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-compiler-plugin}"
 RDEPENDS:maven-compiler-plugin = " \
  plexus-utils \
  javapackages-filesystem \
@@ -19,6 +23,7 @@ RDEPENDS:maven-compiler-plugin = " \
 "
 
 URI_maven-compiler-plugin-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-compiler-plugin-javadoc-3.12.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-compiler-plugin-javadoc}"
 RDEPENDS:maven-compiler-plugin-javadoc = " \
  javapackages-filesystem \
 "

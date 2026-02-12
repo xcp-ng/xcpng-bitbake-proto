@@ -8,7 +8,11 @@ PR = "14.el10"
 PACKAGES = "python3-pyxattr"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/pyxattr-0.7.2-14.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-pyxattr = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-pyxattr-0.7.2-14.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-pyxattr}"
 RDEPENDS:python3-pyxattr = " \
  glibc \
  python3 \

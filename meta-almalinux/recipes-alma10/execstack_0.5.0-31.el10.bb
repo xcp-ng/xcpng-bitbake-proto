@@ -8,7 +8,11 @@ PR = "31.el10"
 PACKAGES = "execstack"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/execstack-0.5.0-31.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_execstack = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/execstack-0.5.0-31.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_execstack}"
 RDEPENDS:execstack = " \
  coreutils \
  util-linux \

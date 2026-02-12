@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "git git-all git-core git-core-doc git-credential-libsecret git-daemon git-email git-gui git-instaweb git-subtree git-svn gitk gitweb perl-Git perl-Git-SVN"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/git-2.47.3-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_git = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-2.47.3-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_git}"
 RDEPENDS:git = " \
  perl-TermReadKey \
  perl-libs \
@@ -26,6 +30,7 @@ RDEPENDS:git = " \
 "
 
 URI_git-all = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-all-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_git-all}"
 RDEPENDS:git-all = " \
  perl-TermReadKey \
  git \
@@ -41,6 +46,7 @@ RDEPENDS:git-all = " \
 "
 
 URI_git-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-core-2.47.3-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_git-core}"
 RDEPENDS:git-core = " \
  less \
  zlib-ng-compat \
@@ -54,11 +60,13 @@ RDEPENDS:git-core = " \
 "
 
 URI_git-core-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-core-doc-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_git-core-doc}"
 RDEPENDS:git-core-doc = " \
  git-core \
 "
 
 URI_git-credential-libsecret = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-credential-libsecret-2.47.3-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_git-credential-libsecret}"
 RDEPENDS:git-credential-libsecret = " \
  glibc \
  libsecret \
@@ -67,6 +75,7 @@ RDEPENDS:git-credential-libsecret = " \
 "
 
 URI_git-daemon = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-daemon-2.47.3-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_git-daemon}"
 RDEPENDS:git-daemon = " \
  systemd \
  zlib-ng-compat \
@@ -77,6 +86,7 @@ RDEPENDS:git-daemon = " \
 "
 
 URI_git-email = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-email-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_git-email}"
 RDEPENDS:git-email = " \
  perl-libnet \
  perl-libs \
@@ -101,6 +111,7 @@ RDEPENDS:git-email = " \
 "
 
 URI_git-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-gui-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_git-gui}"
 RDEPENDS:git-gui = " \
  gitk \
  bash \
@@ -108,6 +119,7 @@ RDEPENDS:git-gui = " \
 "
 
 URI_git-instaweb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-instaweb-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_git-instaweb}"
 RDEPENDS:git-instaweb = " \
  git \
  bash \
@@ -116,12 +128,14 @@ RDEPENDS:git-instaweb = " \
 "
 
 URI_git-subtree = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-subtree-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_git-subtree}"
 RDEPENDS:git-subtree = " \
  git-core \
  bash \
 "
 
 URI_git-svn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-svn-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_git-svn}"
 RDEPENDS:git-svn = " \
  perl-TermReadKey \
  git \
@@ -142,6 +156,7 @@ RDEPENDS:git-svn = " \
 "
 
 URI_gitk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gitk-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gitk}"
 RDEPENDS:gitk = " \
  git-gui \
  git \
@@ -150,6 +165,7 @@ RDEPENDS:gitk = " \
 "
 
 URI_gitweb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gitweb-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gitweb}"
 RDEPENDS:gitweb = " \
  perl-constant \
  git \
@@ -166,6 +182,7 @@ RDEPENDS:gitweb = " \
 "
 
 URI_perl-Git = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Git-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Git}"
 RDEPENDS:perl-Git = " \
  perl-constant \
  git \
@@ -176,6 +193,7 @@ RDEPENDS:perl-Git = " \
 "
 
 URI_perl-Git-SVN = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Git-SVN-2.47.3-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Git-SVN}"
 RDEPENDS:perl-Git-SVN = " \
  perl-constant \
  git \

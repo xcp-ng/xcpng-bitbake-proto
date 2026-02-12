@@ -8,7 +8,11 @@ PR = "4.el10_0"
 PACKAGES = "nbdkit nbdkit-bash-completion nbdkit-basic-filters nbdkit-basic-plugins nbdkit-curl-plugin nbdkit-linuxdisk-plugin nbdkit-nbd-plugin nbdkit-python-plugin nbdkit-selinux nbdkit-server nbdkit-ssh-plugin nbdkit-tar-filter nbdkit-tmpdisk-plugin nbdkit-vddk-plugin nbdkit-xz-filter nbdkit-devel nbdkit-example-plugins nbdkit-srpm-macros nbdkit-blkio-plugin nbdkit-bzip2-filter nbdkit-stats-filter"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/nbdkit-1.40.4-4.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_nbdkit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit}"
 RDEPENDS:nbdkit = " \
  nbdkit-basic-plugins \
  nbdkit-selinux \
@@ -17,12 +21,14 @@ RDEPENDS:nbdkit = " \
 "
 
 URI_nbdkit-bash-completion = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-bash-completion-1.40.4-4.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-bash-completion}"
 RDEPENDS:nbdkit-bash-completion = " \
  nbdkit-server \
  bash-completion \
 "
 
 URI_nbdkit-basic-filters = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-basic-filters-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-basic-filters}"
 RDEPENDS:nbdkit-basic-filters = " \
  zlib-ng-compat \
  gnutls \
@@ -32,6 +38,7 @@ RDEPENDS:nbdkit-basic-filters = " \
 "
 
 URI_nbdkit-basic-plugins = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-basic-plugins-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-basic-plugins}"
 RDEPENDS:nbdkit-basic-plugins = " \
  gnutls \
  libgcc \
@@ -41,6 +48,7 @@ RDEPENDS:nbdkit-basic-plugins = " \
 "
 
 URI_nbdkit-curl-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-curl-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-curl-plugin}"
 RDEPENDS:nbdkit-curl-plugin = " \
  glibc \
  libgcc \
@@ -49,6 +57,7 @@ RDEPENDS:nbdkit-curl-plugin = " \
 "
 
 URI_nbdkit-linuxdisk-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-linuxdisk-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-linuxdisk-plugin}"
 RDEPENDS:nbdkit-linuxdisk-plugin = " \
  glibc \
  e2fsprogs \
@@ -57,6 +66,7 @@ RDEPENDS:nbdkit-linuxdisk-plugin = " \
 "
 
 URI_nbdkit-nbd-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-nbd-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-nbd-plugin}"
 RDEPENDS:nbdkit-nbd-plugin = " \
  glibc \
  libgcc \
@@ -65,6 +75,7 @@ RDEPENDS:nbdkit-nbd-plugin = " \
 "
 
 URI_nbdkit-python-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-python-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-python-plugin}"
 RDEPENDS:nbdkit-python-plugin = " \
  glibc \
  libgcc \
@@ -73,6 +84,7 @@ RDEPENDS:nbdkit-python-plugin = " \
 "
 
 URI_nbdkit-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-selinux-1.40.4-4.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-selinux}"
 RDEPENDS:nbdkit-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -83,6 +95,7 @@ RDEPENDS:nbdkit-selinux = " \
 "
 
 URI_nbdkit-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-server-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-server}"
 RDEPENDS:nbdkit-server = " \
  glibc \
  libselinux \
@@ -91,6 +104,7 @@ RDEPENDS:nbdkit-server = " \
 "
 
 URI_nbdkit-ssh-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-ssh-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-ssh-plugin}"
 RDEPENDS:nbdkit-ssh-plugin = " \
  glibc \
  libgcc \
@@ -99,6 +113,7 @@ RDEPENDS:nbdkit-ssh-plugin = " \
 "
 
 URI_nbdkit-tar-filter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-tar-filter-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-tar-filter}"
 RDEPENDS:nbdkit-tar-filter = " \
  glibc \
  libgcc \
@@ -107,6 +122,7 @@ RDEPENDS:nbdkit-tar-filter = " \
 "
 
 URI_nbdkit-tmpdisk-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-tmpdisk-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-tmpdisk-plugin}"
 RDEPENDS:nbdkit-tmpdisk-plugin = " \
  e2fsprogs \
  util-linux \
@@ -116,6 +132,7 @@ RDEPENDS:nbdkit-tmpdisk-plugin = " \
 "
 
 URI_nbdkit-vddk-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-vddk-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-vddk-plugin}"
 RDEPENDS:nbdkit-vddk-plugin = " \
  glibc \
  libxcrypt-compat \
@@ -124,6 +141,7 @@ RDEPENDS:nbdkit-vddk-plugin = " \
 "
 
 URI_nbdkit-xz-filter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdkit-xz-filter-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-xz-filter}"
 RDEPENDS:nbdkit-xz-filter = " \
  glibc \
  libgcc \
@@ -132,23 +150,27 @@ RDEPENDS:nbdkit-xz-filter = " \
 "
 
 URI_nbdkit-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nbdkit-devel-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-devel}"
 RDEPENDS:nbdkit-devel = " \
  nbdkit-server \
  pkgconf-pkg-config \
 "
 
 URI_nbdkit-example-plugins = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nbdkit-example-plugins-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-example-plugins}"
 RDEPENDS:nbdkit-example-plugins = " \
  glibc \
  nbdkit-server \
 "
 
 URI_nbdkit-srpm-macros = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nbdkit-srpm-macros-1.40.4-4.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-srpm-macros}"
 RDEPENDS:nbdkit-srpm-macros = " \
  bash \
 "
 
 URI_nbdkit-blkio-plugin = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/nbdkit-blkio-plugin-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-blkio-plugin}"
 RDEPENDS:nbdkit-blkio-plugin = " \
  glibc \
  libblkio \
@@ -156,6 +178,7 @@ RDEPENDS:nbdkit-blkio-plugin = " \
 "
 
 URI_nbdkit-bzip2-filter = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/nbdkit-bzip2-filter-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-bzip2-filter}"
 RDEPENDS:nbdkit-bzip2-filter = " \
  glibc \
  libgcc \
@@ -164,6 +187,7 @@ RDEPENDS:nbdkit-bzip2-filter = " \
 "
 
 URI_nbdkit-stats-filter = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/nbdkit-stats-filter-1.40.4-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdkit-stats-filter}"
 RDEPENDS:nbdkit-stats-filter = " \
  glibc \
  libgcc \

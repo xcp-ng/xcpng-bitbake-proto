@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "bluez bluez-libs bluez-cups bluez-obexd bluez-libs-devel bluez-hid2hci bluez-mesh"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/bluez-5.77-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_bluez = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/bluez-5.77-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bluez}"
 RDEPENDS:bluez = " \
  systemd \
  systemd-libs \
@@ -21,11 +25,13 @@ RDEPENDS:bluez = " \
 "
 
 URI_bluez-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/bluez-libs-5.77-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bluez-libs}"
 RDEPENDS:bluez-libs = " \
  glibc \
 "
 
 URI_bluez-cups = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bluez-cups-5.77-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bluez-cups}"
 RDEPENDS:bluez-cups = " \
  cups \
  glib2 \
@@ -35,6 +41,7 @@ RDEPENDS:bluez-cups = " \
 "
 
 URI_bluez-obexd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bluez-obexd-5.77-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bluez-obexd}"
 RDEPENDS:bluez-obexd = " \
  libical \
  bash \
@@ -46,6 +53,7 @@ RDEPENDS:bluez-obexd = " \
 "
 
 URI_bluez-libs-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/bluez-libs-devel-5.77-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bluez-libs-devel}"
 RDEPENDS:bluez-libs-devel = " \
  glibc \
  bluez-libs \
@@ -53,6 +61,7 @@ RDEPENDS:bluez-libs-devel = " \
 "
 
 URI_bluez-hid2hci = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/bluez-hid2hci-5.77-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bluez-hid2hci}"
 RDEPENDS:bluez-hid2hci = " \
  glibc \
  bluez \
@@ -61,6 +70,7 @@ RDEPENDS:bluez-hid2hci = " \
 "
 
 URI_bluez-mesh = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/bluez-mesh-5.77-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bluez-mesh}"
 RDEPENDS:bluez-mesh = " \
  libell \
  json-c \

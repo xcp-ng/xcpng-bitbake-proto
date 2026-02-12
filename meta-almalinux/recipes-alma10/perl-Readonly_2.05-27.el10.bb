@@ -8,7 +8,11 @@ PR = "27.el10"
 PACKAGES = "perl-Readonly perl-Readonly-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Readonly-2.05-27.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Readonly = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Readonly-2.05-27.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Readonly}"
 RDEPENDS:perl-Readonly = " \
  perl-libs \
  perl-Carp \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Readonly = " \
 "
 
 URI_perl-Readonly-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Readonly-tests-2.05-27.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Readonly-tests}"
 RDEPENDS:perl-Readonly-tests = " \
  perl-Test-Harness \
  perl-libs \

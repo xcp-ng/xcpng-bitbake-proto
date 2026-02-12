@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "gnupg2 gnupg2-smime"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/gnupg2-2.4.5-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnupg2 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/gnupg2-2.4.5-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnupg2}"
 RDEPENDS:gnupg2 = " \
  zlib-ng-compat \
  libksba \
@@ -27,6 +31,7 @@ RDEPENDS:gnupg2 = " \
 "
 
 URI_gnupg2-smime = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnupg2-smime-2.4.5-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnupg2-smime}"
 RDEPENDS:gnupg2-smime = " \
  gnupg2 \
  libksba \

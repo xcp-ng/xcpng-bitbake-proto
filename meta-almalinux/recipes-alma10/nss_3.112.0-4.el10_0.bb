@@ -8,12 +8,17 @@ PR = "4.el10_0"
 PACKAGES = "nspr nspr-devel nss nss-devel nss-softokn nss-softokn-devel nss-softokn-freebl nss-softokn-freebl-devel nss-sysinit nss-tools nss-util nss-util-devel nss-pkcs11-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/nss-3.112.0-4.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_nspr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nspr-4.36.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nspr}"
 RDEPENDS:nspr = " \
  glibc \
 "
 
 URI_nspr-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nspr-devel-4.36.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nspr-devel}"
 RDEPENDS:nspr-devel = " \
  bash \
  pkgconf-pkg-config \
@@ -21,6 +26,7 @@ RDEPENDS:nspr-devel = " \
 "
 
 URI_nss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss}"
 RDEPENDS:nss = " \
  crypto-policies \
  nss-softokn \
@@ -33,6 +39,7 @@ RDEPENDS:nss = " \
 "
 
 URI_nss-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-devel}"
 RDEPENDS:nss-devel = " \
  nspr-devel \
  nss \
@@ -43,6 +50,7 @@ RDEPENDS:nss-devel = " \
 "
 
 URI_nss-softokn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-softokn}"
 RDEPENDS:nss-softokn = " \
  nss-softokn-freebl \
  sqlite-libs \
@@ -52,6 +60,7 @@ RDEPENDS:nss-softokn = " \
 "
 
 URI_nss-softokn-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-softokn-devel}"
 RDEPENDS:nss-softokn-devel = " \
  nspr-devel \
  nss-softokn \
@@ -62,6 +71,7 @@ RDEPENDS:nss-softokn-devel = " \
 "
 
 URI_nss-softokn-freebl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-freebl-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-softokn-freebl}"
 RDEPENDS:nss-softokn-freebl = " \
  glibc \
  nss-util \
@@ -70,11 +80,13 @@ RDEPENDS:nss-softokn-freebl = " \
 "
 
 URI_nss-softokn-freebl-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-softokn-freebl-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-softokn-freebl-devel}"
 RDEPENDS:nss-softokn-freebl-devel = " \
  nss-softokn-freebl \
 "
 
 URI_nss-sysinit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-sysinit-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-sysinit}"
 RDEPENDS:nss-sysinit = " \
  glibc \
  nss \
@@ -86,6 +98,7 @@ RDEPENDS:nss-sysinit = " \
 "
 
 URI_nss-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-tools-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-tools}"
 RDEPENDS:nss-tools = " \
  zlib-ng-compat \
  nss \
@@ -95,12 +108,14 @@ RDEPENDS:nss-tools = " \
 "
 
 URI_nss-util = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-util-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-util}"
 RDEPENDS:nss-util = " \
  glibc \
  nspr \
 "
 
 URI_nss-util-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss-util-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-util-devel}"
 RDEPENDS:nss-util-devel = " \
  nspr-devel \
  nss-util \
@@ -109,6 +124,7 @@ RDEPENDS:nss-util-devel = " \
 "
 
 URI_nss-pkcs11-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/nss-pkcs11-devel-3.112.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss-pkcs11-devel}"
 RDEPENDS:nss-pkcs11-devel = " \
  nss-softokn-freebl-devel \
  nss-devel \

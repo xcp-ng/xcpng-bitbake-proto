@@ -8,18 +8,24 @@ PR = "2.el10"
 PACKAGES = "libnghttp2 libnghttp2-devel nghttp2"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/nghttp2-1.64.0-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libnghttp2 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libnghttp2-1.64.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnghttp2}"
 RDEPENDS:libnghttp2 = " \
  glibc \
 "
 
 URI_libnghttp2-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libnghttp2-devel-1.64.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnghttp2-devel}"
 RDEPENDS:libnghttp2-devel = " \
  pkgconf-pkg-config \
  libnghttp2 \
 "
 
 URI_nghttp2 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nghttp2-1.64.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nghttp2}"
 RDEPENDS:nghttp2 = " \
  python3 \
  systemd \

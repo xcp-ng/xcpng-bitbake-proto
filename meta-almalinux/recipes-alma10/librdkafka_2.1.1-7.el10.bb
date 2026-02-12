@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "librdkafka librdkafka-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/librdkafka-2.1.1-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_librdkafka = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librdkafka-2.1.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librdkafka}"
 RDEPENDS:librdkafka = " \
  zlib-ng-compat \
  lz4-libs \
@@ -21,6 +25,7 @@ RDEPENDS:librdkafka = " \
 "
 
 URI_librdkafka-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/librdkafka-devel-2.1.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librdkafka-devel}"
 RDEPENDS:librdkafka-devel = " \
  librdkafka \
  zlib-ng-compat-devel \

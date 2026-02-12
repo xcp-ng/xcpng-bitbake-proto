@@ -8,7 +8,11 @@ PR = "15.el10"
 PACKAGES = "liblognorm liblognorm-doc liblognorm-devel liblognorm-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/liblognorm-2.0.6-15.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_liblognorm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/liblognorm-2.0.6-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_liblognorm}"
 RDEPENDS:liblognorm = " \
  glibc \
  libfastjson \
@@ -17,9 +21,11 @@ RDEPENDS:liblognorm = " \
 "
 
 URI_liblognorm-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/liblognorm-doc-2.0.6-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_liblognorm-doc}"
 RDEPENDS:liblognorm-doc = ""
 
 URI_liblognorm-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/liblognorm-devel-2.0.6-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_liblognorm-devel}"
 RDEPENDS:liblognorm-devel = " \
  json-c-devel \
  liblognorm \
@@ -29,6 +35,7 @@ RDEPENDS:liblognorm-devel = " \
 "
 
 URI_liblognorm-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/liblognorm-utils-2.0.6-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_liblognorm-utils}"
 RDEPENDS:liblognorm-utils = " \
  glibc \
  libfastjson \

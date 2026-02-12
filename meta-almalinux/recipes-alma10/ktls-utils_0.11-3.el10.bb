@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "ktls-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/ktls-utils-0.11-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ktls-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/ktls-utils-0.11-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ktls-utils}"
 RDEPENDS:ktls-utils = " \
  gnutls \
  keyutils-libs \

@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "createrepo_c createrepo_c-libs python3-createrepo_c createrepo_c-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/createrepo_c-1.1.2-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_createrepo_c = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/createrepo_c-1.1.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_createrepo_c}"
 RDEPENDS:createrepo_c = " \
  libgcc \
  libmodulemd \
@@ -19,6 +23,7 @@ RDEPENDS:createrepo_c = " \
 "
 
 URI_createrepo_c-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/createrepo_c-libs-1.1.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_createrepo_c-libs}"
 RDEPENDS:createrepo_c-libs = " \
  zlib-ng-compat \
  bzip2-libs \
@@ -36,6 +41,7 @@ RDEPENDS:createrepo_c-libs = " \
 "
 
 URI_python3-createrepo_c = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-createrepo_c-1.1.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-createrepo_c}"
 RDEPENDS:python3-createrepo_c = " \
  python3 \
  createrepo_c-libs \
@@ -45,6 +51,7 @@ RDEPENDS:python3-createrepo_c = " \
 "
 
 URI_createrepo_c-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/createrepo_c-devel-1.1.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_createrepo_c-devel}"
 RDEPENDS:createrepo_c-devel = " \
  libxml2-devel \
  glib2-devel \

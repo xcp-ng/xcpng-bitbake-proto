@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-Moo"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Moo-2.005005-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Moo = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Moo-2.005005-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Moo}"
 RDEPENDS:perl-Moo = " \
  perl-Scalar-List-Utils \
  perl-libs \

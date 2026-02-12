@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "device-mapper-persistent-data"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/device-mapper-persistent-data-1.1.0-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_device-mapper-persistent-data = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/device-mapper-persistent-data-1.1.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_device-mapper-persistent-data}"
 RDEPENDS:device-mapper-persistent-data = " \
  glibc \
  libgcc \

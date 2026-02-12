@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "libgweather libgweather-devel libgweather-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libgweather-4.4.4-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libgweather = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgweather-4.4.4-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgweather}"
 RDEPENDS:libgweather = " \
  libsoup3 \
  libgcc \
@@ -20,6 +24,7 @@ RDEPENDS:libgweather = " \
 "
 
 URI_libgweather-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libgweather-devel-4.4.4-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgweather-devel}"
 RDEPENDS:libgweather-devel = " \
  json-glib-devel \
  libxml2-devel \
@@ -31,4 +36,5 @@ RDEPENDS:libgweather-devel = " \
 "
 
 URI_libgweather-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libgweather-doc-4.4.4-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgweather-doc}"
 RDEPENDS:libgweather-doc = ""

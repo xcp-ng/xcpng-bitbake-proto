@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "flatpak-spawn flatpak-xdg-utils flatpak-xdg-utils-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/flatpak-xdg-utils-1.0.6-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_flatpak-spawn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flatpak-spawn-1.0.6-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flatpak-spawn}"
 RDEPENDS:flatpak-spawn = " \
  glibc \
  libgcc \
@@ -16,6 +20,7 @@ RDEPENDS:flatpak-spawn = " \
 "
 
 URI_flatpak-xdg-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flatpak-xdg-utils-1.0.6-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flatpak-xdg-utils}"
 RDEPENDS:flatpak-xdg-utils = " \
  glibc \
  libgcc \
@@ -24,6 +29,7 @@ RDEPENDS:flatpak-xdg-utils = " \
 "
 
 URI_flatpak-xdg-utils-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flatpak-xdg-utils-tests-1.0.6-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flatpak-xdg-utils-tests}"
 RDEPENDS:flatpak-xdg-utils-tests = " \
  flatpak-spawn \
  flatpak-xdg-utils \

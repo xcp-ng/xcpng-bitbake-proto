@@ -8,13 +8,18 @@ PR = "10.el10"
 PACKAGES = "perl-PerlIO-utf8_strict perl-PerlIO-utf8_strict-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-PerlIO-utf8_strict-0.010-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-PerlIO-utf8_strict = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-PerlIO-utf8_strict-0.010-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PerlIO-utf8_strict}"
 RDEPENDS:perl-PerlIO-utf8_strict = " \
  glibc \
  perl-libs \
 "
 
 URI_perl-PerlIO-utf8_strict-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-PerlIO-utf8_strict-tests-0.010-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PerlIO-utf8_strict-tests}"
 RDEPENDS:perl-PerlIO-utf8_strict-tests = " \
  perl-Test-Harness \
  perl-libs \

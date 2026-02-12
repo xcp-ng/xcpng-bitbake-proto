@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "nautilus nautilus-extensions nautilus-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/nautilus-47.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_nautilus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nautilus-47.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nautilus}"
 RDEPENDS:nautilus = " \
  gvfs \
  libtracker-sparql \
@@ -37,6 +41,7 @@ RDEPENDS:nautilus = " \
 "
 
 URI_nautilus-extensions = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nautilus-extensions-47.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nautilus-extensions}"
 RDEPENDS:nautilus-extensions = " \
  glibc \
  libgcc \
@@ -44,6 +49,7 @@ RDEPENDS:nautilus-extensions = " \
 "
 
 URI_nautilus-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/nautilus-devel-47.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nautilus-devel}"
 RDEPENDS:nautilus-devel = " \
  glib2-devel \
  pkgconf-pkg-config \

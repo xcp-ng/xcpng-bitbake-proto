@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "libgexiv2 libgexiv2-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libgexiv2-0.14.3-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libgexiv2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgexiv2-0.14.3-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgexiv2}"
 RDEPENDS:libgexiv2 = " \
  libgcc \
  exiv2-libs \
@@ -18,6 +22,7 @@ RDEPENDS:libgexiv2 = " \
 "
 
 URI_libgexiv2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libgexiv2-devel-0.14.3-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgexiv2-devel}"
 RDEPENDS:libgexiv2-devel = " \
  libgexiv2 \
  glib2-devel \

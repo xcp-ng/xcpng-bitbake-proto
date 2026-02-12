@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "libvirt-dbus"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/libvirt-dbus-1.4.1-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libvirt-dbus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-dbus-1.4.1-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-dbus}"
 RDEPENDS:libvirt-dbus = " \
  shadow-utils \
  libgcc \

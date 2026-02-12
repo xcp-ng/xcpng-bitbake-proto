@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "loupe"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/loupe-46.2-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_loupe = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/loupe-46.2-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_loupe}"
 RDEPENDS:loupe = " \
  lcms2 \
  libseccomp \

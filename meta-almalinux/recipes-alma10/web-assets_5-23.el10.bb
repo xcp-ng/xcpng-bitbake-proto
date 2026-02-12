@@ -8,17 +8,23 @@ PR = "23.el10"
 PACKAGES = "web-assets-filesystem web-assets-devel web-assets-httpd web-assets-nginx"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/web-assets-5-23.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_web-assets-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/web-assets-filesystem-5-23.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_web-assets-filesystem}"
 RDEPENDS:web-assets-filesystem = " \
  fonts-filesystem \
 "
 
 URI_web-assets-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/web-assets-devel-5-23.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_web-assets-devel}"
 RDEPENDS:web-assets-devel = " \
  web-assets-filesystem \
 "
 
 URI_web-assets-httpd = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/web-assets-httpd-5-23.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_web-assets-httpd}"
 RDEPENDS:web-assets-httpd = " \
  bash \
  web-assets-filesystem \
@@ -26,6 +32,7 @@ RDEPENDS:web-assets-httpd = " \
 "
 
 URI_web-assets-nginx = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/web-assets-nginx-5-23.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_web-assets-nginx}"
 RDEPENDS:web-assets-nginx = " \
  nginx \
  bash \

@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "gfs2-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/gfs2-utils-3.5.1-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gfs2-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gfs2-utils-3.5.1-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gfs2-utils}"
 RDEPENDS:gfs2-utils = " \
  libuuid \
  zlib-ng-compat \

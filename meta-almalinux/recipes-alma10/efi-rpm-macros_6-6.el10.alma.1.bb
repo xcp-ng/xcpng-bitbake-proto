@@ -8,12 +8,17 @@ PR = "6.el10.alma.1"
 PACKAGES = "efi-filesystem efi-srpm-macros"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/efi-rpm-macros-6-6.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_efi-filesystem = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/efi-filesystem-6-6.el10.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_efi-filesystem}"
 RDEPENDS:efi-filesystem = " \
  filesystem \
 "
 
 URI_efi-srpm-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/efi-srpm-macros-6-6.el10.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_efi-srpm-macros}"
 RDEPENDS:efi-srpm-macros = " \
  rpm \
  bash \

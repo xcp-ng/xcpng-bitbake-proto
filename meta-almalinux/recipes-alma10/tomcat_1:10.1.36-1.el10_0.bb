@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "tomcat tomcat-admin-webapps tomcat-docs-webapp tomcat-el-5.0-api tomcat-jsp-3.1-api tomcat-lib tomcat-servlet-6.0-api tomcat-webapps"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/tomcat-10.1.36-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_tomcat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat}"
 RDEPENDS:tomcat = " \
  shadow-utils \
  systemd \
@@ -19,21 +23,25 @@ RDEPENDS:tomcat = " \
 "
 
 URI_tomcat-admin-webapps = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-admin-webapps-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat-admin-webapps}"
 RDEPENDS:tomcat-admin-webapps = " \
  tomcat \
 "
 
 URI_tomcat-docs-webapp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-docs-webapp-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat-docs-webapp}"
 RDEPENDS:tomcat-docs-webapp = " \
  tomcat \
 "
 
 URI_tomcat-el-5.0-api = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-el-5.0-api-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat-el-5.0-api}"
 RDEPENDS:tomcat-el-5.0-api = " \
  javapackages-filesystem \
 "
 
 URI_tomcat-jsp-3.1-api = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-jsp-3.1-api-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat-jsp-3.1-api}"
 RDEPENDS:tomcat-jsp-3.1-api = " \
  tomcat-servlet-6.0-api \
  javapackages-filesystem \
@@ -41,6 +49,7 @@ RDEPENDS:tomcat-jsp-3.1-api = " \
 "
 
 URI_tomcat-lib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-lib-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat-lib}"
 RDEPENDS:tomcat-lib = " \
  javapackages-filesystem \
  tomcat-jsp-3.1-api \
@@ -51,11 +60,13 @@ RDEPENDS:tomcat-lib = " \
 "
 
 URI_tomcat-servlet-6.0-api = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-servlet-6.0-api-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat-servlet-6.0-api}"
 RDEPENDS:tomcat-servlet-6.0-api = " \
  javapackages-filesystem \
 "
 
 URI_tomcat-webapps = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tomcat-webapps-10.1.36-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_tomcat-webapps}"
 RDEPENDS:tomcat-webapps = " \
  tomcat \
 "

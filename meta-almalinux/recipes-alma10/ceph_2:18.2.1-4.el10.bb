@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "librados2 librbd1 librados-devel libradospp-devel librbd-devel ceph ceph-common libcephfs-devel libcephfs2 libcephsqlite libcephsqlite-devel libradosstriper-devel libradosstriper1 python3-ceph-argparse python3-ceph-common python3-cephfs python3-rados python3-rbd rados-objclass-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ceph-18.2.1-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_librados2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librados2-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librados2}"
 RDEPENDS:librados2 = " \
  zlib-ng-compat \
  systemd-libs \
@@ -22,6 +26,7 @@ RDEPENDS:librados2 = " \
 "
 
 URI_librbd1 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librbd1-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librbd1}"
 RDEPENDS:librbd1 = " \
  librados2 \
  cryptsetup-libs \
@@ -32,6 +37,7 @@ RDEPENDS:librbd1 = " \
 "
 
 URI_librados-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/librados-devel-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librados-devel}"
 RDEPENDS:librados-devel = " \
  glibc \
  libgcc \
@@ -40,12 +46,14 @@ RDEPENDS:librados-devel = " \
 "
 
 URI_libradospp-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libradospp-devel-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libradospp-devel}"
 RDEPENDS:libradospp-devel = " \
  librados-devel \
  librados2 \
 "
 
 URI_librbd-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/librbd-devel-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librbd-devel}"
 RDEPENDS:librbd-devel = " \
  librados-devel \
  libradospp-devel \
@@ -53,12 +61,14 @@ RDEPENDS:librbd-devel = " \
 "
 
 URI_ceph = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ceph-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ceph}"
 RDEPENDS:ceph = " \
  systemd \
  binutils \
 "
 
 URI_ceph-common = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ceph-common-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ceph-common}"
 RDEPENDS:ceph-common = " \
  python3 \
  systemd \
@@ -85,12 +95,14 @@ RDEPENDS:ceph-common = " \
 "
 
 URI_libcephfs-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libcephfs-devel-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcephfs-devel}"
 RDEPENDS:libcephfs-devel = " \
  libcephfs2 \
  librados-devel \
 "
 
 URI_libcephfs2 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libcephfs2-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcephfs2}"
 RDEPENDS:libcephfs2 = " \
  glibc \
  libgcc \
@@ -99,6 +111,7 @@ RDEPENDS:libcephfs2 = " \
 "
 
 URI_libcephsqlite = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libcephsqlite-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcephsqlite}"
 RDEPENDS:libcephsqlite = " \
  glibc \
  libgcc \
@@ -107,6 +120,7 @@ RDEPENDS:libcephsqlite = " \
 "
 
 URI_libcephsqlite-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libcephsqlite-devel-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcephsqlite-devel}"
 RDEPENDS:libcephsqlite-devel = " \
  libcephsqlite \
  librados-devel \
@@ -115,6 +129,7 @@ RDEPENDS:libcephsqlite-devel = " \
 "
 
 URI_libradosstriper-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libradosstriper-devel-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libradosstriper-devel}"
 RDEPENDS:libradosstriper-devel = " \
  libradosstriper1 \
  librados-devel \
@@ -122,6 +137,7 @@ RDEPENDS:libradosstriper-devel = " \
 "
 
 URI_libradosstriper1 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libradosstriper1-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libradosstriper1}"
 RDEPENDS:libradosstriper1 = " \
  glibc \
  libgcc \
@@ -130,17 +146,20 @@ RDEPENDS:libradosstriper1 = " \
 "
 
 URI_python3-ceph-argparse = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-ceph-argparse-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-ceph-argparse}"
 RDEPENDS:python3-ceph-argparse = " \
  python3 \
 "
 
 URI_python3-ceph-common = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-ceph-common-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-ceph-common}"
 RDEPENDS:python3-ceph-common = " \
  python3 \
  python3-pyyaml \
 "
 
 URI_python3-cephfs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-cephfs-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-cephfs}"
 RDEPENDS:python3-cephfs = " \
  python3 \
  python3-rados \
@@ -150,6 +169,7 @@ RDEPENDS:python3-cephfs = " \
 "
 
 URI_python3-rados = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-rados-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-rados}"
 RDEPENDS:python3-rados = " \
  glibc \
  librados2 \
@@ -157,6 +177,7 @@ RDEPENDS:python3-rados = " \
 "
 
 URI_python3-rbd = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-rbd-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-rbd}"
 RDEPENDS:python3-rbd = " \
  python3 \
  python3-rados \
@@ -166,6 +187,7 @@ RDEPENDS:python3-rbd = " \
 "
 
 URI_rados-objclass-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rados-objclass-devel-18.2.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rados-objclass-devel}"
 RDEPENDS:rados-objclass-devel = " \
  libradospp-devel \
 "

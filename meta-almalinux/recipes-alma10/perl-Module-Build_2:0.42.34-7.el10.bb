@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-Module-Build perl-Module-Build-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Module-Build-0.42.34-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-Build = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-Build-0.42.34-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Build}"
 RDEPENDS:perl-Module-Build = " \
  perl-libs \
  perl-Software-License \
@@ -39,6 +43,7 @@ RDEPENDS:perl-Module-Build = " \
 "
 
 URI_perl-Module-Build-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Build-tests-0.42.34-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Build-tests}"
 RDEPENDS:perl-Module-Build-tests = " \
  perl-libs \
  perl-CPAN-Meta \

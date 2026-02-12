@@ -8,7 +8,11 @@ PR = "62.el10"
 PACKAGES = "docbook-utils docbook-utils-pdf"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/docbook-utils-0.6.14-62.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_docbook-utils = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/docbook-utils-0.6.14-62.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_docbook-utils}"
 RDEPENDS:docbook-utils = " \
  docbook-style-dsssl \
  perl-libs \
@@ -25,6 +29,7 @@ RDEPENDS:docbook-utils = " \
 "
 
 URI_docbook-utils-pdf = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/docbook-utils-pdf-0.6.14-62.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_docbook-utils-pdf}"
 RDEPENDS:docbook-utils-pdf = " \
  texlive-collection-htmlxml \
  docbook-utils \

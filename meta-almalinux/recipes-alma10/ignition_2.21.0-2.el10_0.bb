@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "ignition ignition-edge ignition-grub ignition-validate"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ignition-2.21.0-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ignition = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ignition-2.21.0-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ignition}"
 RDEPENDS:ignition = " \
  libuuid \
  libgcc \
@@ -23,14 +27,17 @@ RDEPENDS:ignition = " \
 "
 
 URI_ignition-edge = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ignition-edge-2.21.0-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ignition-edge}"
 RDEPENDS:ignition-edge = " \
  bash \
 "
 
 URI_ignition-grub = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ignition-grub-2.21.0-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ignition-grub}"
 RDEPENDS:ignition-grub = ""
 
 URI_ignition-validate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ignition-validate-2.21.0-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ignition-validate}"
 RDEPENDS:ignition-validate = " \
  glibc \
 "

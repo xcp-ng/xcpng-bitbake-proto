@@ -8,7 +8,11 @@ PR = "30.el10"
 PACKAGES = "perl-Date-Calc perl-Date-Calc-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Date-Calc-6.4-30.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Date-Calc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Date-Calc-6.4-30.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Date-Calc}"
 RDEPENDS:perl-Date-Calc = " \
  perl-libs \
  perl-Carp-Clan \
@@ -21,6 +25,7 @@ RDEPENDS:perl-Date-Calc = " \
 "
 
 URI_perl-Date-Calc-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Date-Calc-tests-6.4-30.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Date-Calc-tests}"
 RDEPENDS:perl-Date-Calc-tests = " \
  perl-Test-Harness \
  perl-libs \

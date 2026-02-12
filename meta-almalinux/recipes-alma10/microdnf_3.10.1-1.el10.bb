@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "microdnf"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/microdnf-3.10.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_microdnf = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/microdnf-3.10.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_microdnf}"
 RDEPENDS:microdnf = " \
  libpeas1 \
  libgcc \

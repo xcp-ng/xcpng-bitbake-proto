@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-File-Temp perl-File-Temp-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-File-Temp-0.231.100-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-Temp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-Temp-0.231.100-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Temp}"
 RDEPENDS:perl-File-Temp = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -26,6 +30,7 @@ RDEPENDS:perl-File-Temp = " \
 "
 
 URI_perl-File-Temp-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-Temp-tests-0.231.100-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Temp-tests}"
 RDEPENDS:perl-File-Temp-tests = " \
  perl-Test-Harness \
  perl-libs \

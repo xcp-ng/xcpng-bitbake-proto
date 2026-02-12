@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "perl-Module-CoreList perl-Module-CoreList-tools perl-Module-CoreList-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Module-CoreList-5.20250120-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-CoreList = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-CoreList-5.20250120-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-CoreList}"
 RDEPENDS:perl-Module-CoreList = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Module-CoreList = " \
 "
 
 URI_perl-Module-CoreList-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-CoreList-tools-5.20250120-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-CoreList-tools}"
 RDEPENDS:perl-Module-CoreList-tools = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -28,6 +33,7 @@ RDEPENDS:perl-Module-CoreList-tools = " \
 "
 
 URI_perl-Module-CoreList-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-CoreList-tests-5.20250120-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-CoreList-tests}"
 RDEPENDS:perl-Module-CoreList-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "libxkbcommon libxkbcommon-devel libxkbcommon-x11 libxkbcommon-x11-devel libxkbcommon-utils libxkbcommon-x11-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libxkbcommon-1.7.0-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libxkbcommon = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libxkbcommon-1.7.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxkbcommon}"
 RDEPENDS:libxkbcommon = " \
  glibc \
  xkeyboard-config \
@@ -16,6 +20,7 @@ RDEPENDS:libxkbcommon = " \
 "
 
 URI_libxkbcommon-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libxkbcommon-devel-1.7.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxkbcommon-devel}"
 RDEPENDS:libxkbcommon-devel = " \
  libxml2-devel \
  libxkbcommon \
@@ -23,6 +28,7 @@ RDEPENDS:libxkbcommon-devel = " \
 "
 
 URI_libxkbcommon-x11 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libxkbcommon-x11-1.7.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxkbcommon-x11}"
 RDEPENDS:libxkbcommon-x11 = " \
  glibc \
  libxcb \
@@ -30,6 +36,7 @@ RDEPENDS:libxkbcommon-x11 = " \
 "
 
 URI_libxkbcommon-x11-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libxkbcommon-x11-devel-1.7.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxkbcommon-x11-devel}"
 RDEPENDS:libxkbcommon-x11-devel = " \
  libxkbcommon-devel \
  libxkbcommon-x11 \
@@ -38,6 +45,7 @@ RDEPENDS:libxkbcommon-x11-devel = " \
 "
 
 URI_libxkbcommon-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libxkbcommon-utils-1.7.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxkbcommon-utils}"
 RDEPENDS:libxkbcommon-utils = " \
  glibc \
  libxkbcommon \
@@ -45,6 +53,7 @@ RDEPENDS:libxkbcommon-utils = " \
 "
 
 URI_libxkbcommon-x11-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libxkbcommon-x11-utils-1.7.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxkbcommon-x11-utils}"
 RDEPENDS:libxkbcommon-x11-utils = " \
  libxkbcommon-utils \
  libxcb \

@@ -8,7 +8,11 @@ PR = "30.el10"
 PACKAGES = "perl-IO-Multiplex perl-IO-Multiplex-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-IO-Multiplex-1.16-30.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-IO-Multiplex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-IO-Multiplex-1.16-30.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO-Multiplex}"
 RDEPENDS:perl-IO-Multiplex = " \
  perl-constant \
  perl-libs \
@@ -24,6 +28,7 @@ RDEPENDS:perl-IO-Multiplex = " \
 "
 
 URI_perl-IO-Multiplex-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-IO-Multiplex-tests-1.16-30.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO-Multiplex-tests}"
 RDEPENDS:perl-IO-Multiplex-tests = " \
  perl-Test \
  perl-Test-Harness \

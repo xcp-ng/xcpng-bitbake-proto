@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Module-Load-Conditional perl-Module-Load-Conditional-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Module-Load-Conditional-0.74-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-Load-Conditional = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-Load-Conditional-0.74-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Load-Conditional}"
 RDEPENDS:perl-Module-Load-Conditional = " \
  perl-constant \
  perl-libs \
@@ -26,6 +30,7 @@ RDEPENDS:perl-Module-Load-Conditional = " \
 "
 
 URI_perl-Module-Load-Conditional-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Load-Conditional-tests-0.74-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Load-Conditional-tests}"
 RDEPENDS:perl-Module-Load-Conditional-tests = " \
  perl-constant \
  perl-Test-Harness \

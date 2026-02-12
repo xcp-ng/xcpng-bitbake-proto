@@ -8,7 +8,11 @@ PR = "1.20250812.1.el10_0"
 PACKAGES = "microcode_ctl microcode_ctl"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/microcode_ctl-20250211-1.20250812.1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_microcode_ctl = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/microcode_ctl-20250211-1.20250812.1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_microcode_ctl}"
 RDEPENDS:microcode_ctl = " \
  coreutils \
  systemd \
@@ -17,6 +21,7 @@ RDEPENDS:microcode_ctl = " \
 "
 
 URI_microcode_ctl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/microcode_ctl-20250211-1.20250812.1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_microcode_ctl}"
 RDEPENDS:microcode_ctl = " \
  coreutils \
  systemd \

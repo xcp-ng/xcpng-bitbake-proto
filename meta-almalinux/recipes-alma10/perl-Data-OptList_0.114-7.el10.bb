@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-Data-OptList perl-Data-OptList-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Data-OptList-0.114-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Data-OptList = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Data-OptList-0.114-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-OptList}"
 RDEPENDS:perl-Data-OptList = " \
  perl-Sub-Install \
  perl-Params-Util \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Data-OptList = " \
 "
 
 URI_perl-Data-OptList-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Data-OptList-tests-0.114-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-OptList-tests}"
 RDEPENDS:perl-Data-OptList-tests = " \
  perl-Test-Harness \
  perl-libs \

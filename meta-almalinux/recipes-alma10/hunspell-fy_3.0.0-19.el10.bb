@@ -8,7 +8,11 @@ PR = "19.el10"
 PACKAGES = "hunspell-fy"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/hunspell-fy-3.0.0-19.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_hunspell-fy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hunspell-fy-3.0.0-19.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_hunspell-fy}"
 RDEPENDS:hunspell-fy = " \
  hunspell-filesystem \
 "

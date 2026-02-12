@@ -8,18 +8,24 @@ PR = "5.el10"
 PACKAGES = "attr libattr libattr-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/attr-2.5.2-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_attr = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/attr-2.5.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_attr}"
 RDEPENDS:attr = " \
  glibc \
  libattr \
 "
 
 URI_libattr = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libattr-2.5.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libattr}"
 RDEPENDS:libattr = " \
  glibc \
 "
 
 URI_libattr-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libattr-devel-2.5.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libattr-devel}"
 RDEPENDS:libattr-devel = " \
  glibc-devel \
  pkgconf-pkg-config \

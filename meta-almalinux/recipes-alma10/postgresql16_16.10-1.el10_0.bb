@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "postgresql postgresql-contrib postgresql-docs postgresql-plperl postgresql-plpython3 postgresql-pltcl postgresql-private-devel postgresql-private-libs postgresql-server postgresql-server-devel postgresql-static postgresql-test postgresql-upgrade postgresql-upgrade-devel postgresql-test-rpm-macros"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/postgresql16-16.10-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_postgresql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql}"
 RDEPENDS:postgresql = " \
  zlib-ng-compat \
  lz4-libs \
@@ -20,6 +24,7 @@ RDEPENDS:postgresql = " \
 "
 
 URI_postgresql-contrib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-contrib-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-contrib}"
 RDEPENDS:postgresql-contrib = " \
  zlib-ng-compat \
  perl-libs \
@@ -37,12 +42,14 @@ RDEPENDS:postgresql-contrib = " \
 "
 
 URI_postgresql-docs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-docs-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-docs}"
 RDEPENDS:postgresql-docs = " \
  glibc \
  postgresql \
 "
 
 URI_postgresql-plperl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-plperl-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-plperl}"
 RDEPENDS:postgresql-plperl = " \
  glibc \
  postgresql-server \
@@ -50,6 +57,7 @@ RDEPENDS:postgresql-plperl = " \
 "
 
 URI_postgresql-plpython3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-plpython3-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-plpython3}"
 RDEPENDS:postgresql-plpython3 = " \
  glibc \
  postgresql-server \
@@ -57,6 +65,7 @@ RDEPENDS:postgresql-plpython3 = " \
 "
 
 URI_postgresql-pltcl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-pltcl-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-pltcl}"
 RDEPENDS:postgresql-pltcl = " \
  glibc \
  postgresql-server \
@@ -64,6 +73,7 @@ RDEPENDS:postgresql-pltcl = " \
 "
 
 URI_postgresql-private-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-private-devel-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-private-devel}"
 RDEPENDS:postgresql-private-devel = " \
  openssl-devel \
  pkgconf-pkg-config \
@@ -71,6 +81,7 @@ RDEPENDS:postgresql-private-devel = " \
 "
 
 URI_postgresql-private-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-private-libs-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-private-libs}"
 RDEPENDS:postgresql-private-libs = " \
  glibc \
  krb5-libs \
@@ -79,6 +90,7 @@ RDEPENDS:postgresql-private-libs = " \
 "
 
 URI_postgresql-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-server-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-server}"
 RDEPENDS:postgresql-server = " \
  shadow-utils \
  systemd \
@@ -100,6 +112,7 @@ RDEPENDS:postgresql-server = " \
 "
 
 URI_postgresql-server-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-server-devel-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-server-devel}"
 RDEPENDS:postgresql-server-devel = " \
  libicu-devel \
  postgresql-private-devel \
@@ -110,11 +123,13 @@ RDEPENDS:postgresql-server-devel = " \
 "
 
 URI_postgresql-static = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-static-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-static}"
 RDEPENDS:postgresql-static = " \
  postgresql-server-devel \
 "
 
 URI_postgresql-test = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-test-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-test}"
 RDEPENDS:postgresql-test = " \
  postgresql-contrib \
  postgresql-server \
@@ -124,6 +139,7 @@ RDEPENDS:postgresql-test = " \
 "
 
 URI_postgresql-upgrade = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-upgrade-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-upgrade}"
 RDEPENDS:postgresql-upgrade = " \
  zlib-ng-compat \
  perl-libs \
@@ -143,6 +159,7 @@ RDEPENDS:postgresql-upgrade = " \
 "
 
 URI_postgresql-upgrade-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgresql-upgrade-devel-16.10-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-upgrade-devel}"
 RDEPENDS:postgresql-upgrade-devel = " \
  glibc \
  postgresql-upgrade \
@@ -150,6 +167,7 @@ RDEPENDS:postgresql-upgrade-devel = " \
 "
 
 URI_postgresql-test-rpm-macros = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/postgresql-test-rpm-macros-16.10-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_postgresql-test-rpm-macros}"
 RDEPENDS:postgresql-test-rpm-macros = " \
  postgresql-server \
 "

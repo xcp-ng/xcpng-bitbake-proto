@@ -8,7 +8,11 @@ PR = "12.el10_0"
 PACKAGES = "python3-unbound unbound unbound-anchor unbound-dracut unbound-libs unbound-devel unbound-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/unbound-1.20.0-12.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-unbound = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-unbound-1.20.0-12.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-unbound}"
 RDEPENDS:python3-unbound = " \
  python3 \
  systemd-libs \
@@ -22,6 +26,7 @@ RDEPENDS:python3-unbound = " \
 "
 
 URI_unbound = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/unbound-1.20.0-12.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unbound}"
 RDEPENDS:unbound = " \
  systemd-libs \
  libevent \
@@ -37,6 +42,7 @@ RDEPENDS:unbound = " \
 "
 
 URI_unbound-anchor = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/unbound-anchor-1.20.0-12.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unbound-anchor}"
 RDEPENDS:unbound-anchor = " \
  openssl-libs \
  unbound-libs \
@@ -46,6 +52,7 @@ RDEPENDS:unbound-anchor = " \
 "
 
 URI_unbound-dracut = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/unbound-dracut-1.20.0-12.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unbound-dracut}"
 RDEPENDS:unbound-dracut = " \
  bash \
  dracut \
@@ -53,6 +60,7 @@ RDEPENDS:unbound-dracut = " \
 "
 
 URI_unbound-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/unbound-libs-1.20.0-12.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unbound-libs}"
 RDEPENDS:unbound-libs = " \
  shadow-utils \
  systemd-libs \
@@ -66,6 +74,7 @@ RDEPENDS:unbound-libs = " \
 "
 
 URI_unbound-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/unbound-devel-1.20.0-12.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unbound-devel}"
 RDEPENDS:unbound-devel = " \
  pkgconf-pkg-config \
  unbound-libs \
@@ -75,6 +84,7 @@ RDEPENDS:unbound-devel = " \
 "
 
 URI_unbound-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/unbound-utils-1.20.0-12.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unbound-utils}"
 RDEPENDS:unbound-utils = " \
  libevent \
  openssl-libs \

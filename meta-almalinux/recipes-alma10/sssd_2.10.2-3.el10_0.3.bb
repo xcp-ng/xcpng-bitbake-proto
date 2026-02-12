@@ -8,18 +8,24 @@ PR = "3.el10_0.3"
 PACKAGES = "libipa_hbac libsss_autofs libsss_certmap libsss_idmap libsss_nss_idmap libsss_sudo python3-libipa_hbac python3-libsss_nss_idmap python3-sss python3-sss-murmur python3-sssdconfig sssd sssd-ad sssd-client sssd-common sssd-common-pac sssd-dbus sssd-ipa sssd-kcm sssd-krb5 sssd-krb5-common sssd-ldap sssd-nfs-idmap sssd-passkey sssd-proxy sssd-tools sssd-winbind-idmap sssd-idp libsss_nss_idmap-devel libipa_hbac-devel libsss_certmap-devel libsss_idmap-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/sssd-2.10.2-3.el10_0.3.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libipa_hbac = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libipa_hbac-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libipa_hbac}"
 RDEPENDS:libipa_hbac = " \
  glibc \
  libunistring \
 "
 
 URI_libsss_autofs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libsss_autofs-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_autofs}"
 RDEPENDS:libsss_autofs = " \
  glibc \
 "
 
 URI_libsss_certmap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libsss_certmap-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_certmap}"
 RDEPENDS:libsss_certmap = " \
  glibc \
  openssl-libs \
@@ -27,21 +33,25 @@ RDEPENDS:libsss_certmap = " \
 "
 
 URI_libsss_idmap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libsss_idmap-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_idmap}"
 RDEPENDS:libsss_idmap = " \
  glibc \
 "
 
 URI_libsss_nss_idmap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libsss_nss_idmap-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_nss_idmap}"
 RDEPENDS:libsss_nss_idmap = " \
  glibc \
 "
 
 URI_libsss_sudo = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libsss_sudo-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_sudo}"
 RDEPENDS:libsss_sudo = " \
  glibc \
 "
 
 URI_python3-libipa_hbac = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-libipa_hbac-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-libipa_hbac}"
 RDEPENDS:python3-libipa_hbac = " \
  glibc \
  python3 \
@@ -50,6 +60,7 @@ RDEPENDS:python3-libipa_hbac = " \
 "
 
 URI_python3-libsss_nss_idmap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-libsss_nss_idmap-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-libsss_nss_idmap}"
 RDEPENDS:python3-libsss_nss_idmap = " \
  glibc \
  python3 \
@@ -57,6 +68,7 @@ RDEPENDS:python3-libsss_nss_idmap = " \
 "
 
 URI_python3-sss = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-sss-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-sss}"
 RDEPENDS:python3-sss = " \
  python3 \
  systemd-libs \
@@ -81,17 +93,20 @@ RDEPENDS:python3-sss = " \
 "
 
 URI_python3-sss-murmur = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-sss-murmur-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-sss-murmur}"
 RDEPENDS:python3-sss-murmur = " \
  glibc \
  python3 \
 "
 
 URI_python3-sssdconfig = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-sssdconfig-2.10.2-3.el10_0.3.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-sssdconfig}"
 RDEPENDS:python3-sssdconfig = " \
  python3 \
 "
 
 URI_sssd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd}"
 RDEPENDS:sssd = " \
  sssd-ipa \
  shadow-utils \
@@ -103,6 +118,7 @@ RDEPENDS:sssd = " \
 "
 
 URI_sssd-ad = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-ad-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-ad}"
 RDEPENDS:sssd-ad = " \
  systemd-libs \
  keyutils-libs \
@@ -137,6 +153,7 @@ RDEPENDS:sssd-ad = " \
 "
 
 URI_sssd-client = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-client-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-client}"
 RDEPENDS:sssd-client = " \
  libsss_idmap \
  pam-libs \
@@ -149,6 +166,7 @@ RDEPENDS:sssd-client = " \
 "
 
 URI_sssd-common = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-common-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-common}"
 RDEPENDS:sssd-common = " \
  systemd \
  systemd-libs \
@@ -189,6 +207,7 @@ RDEPENDS:sssd-common = " \
 "
 
 URI_sssd-common-pac = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-common-pac-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-common-pac}"
 RDEPENDS:sssd-common-pac = " \
  systemd-libs \
  libldb \
@@ -204,6 +223,7 @@ RDEPENDS:sssd-common-pac = " \
 "
 
 URI_sssd-dbus = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-dbus-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-dbus}"
 RDEPENDS:sssd-dbus = " \
  systemd \
  systemd-libs \
@@ -221,6 +241,7 @@ RDEPENDS:sssd-dbus = " \
 "
 
 URI_sssd-ipa = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-ipa-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-ipa}"
 RDEPENDS:sssd-ipa = " \
  systemd-libs \
  keyutils-libs \
@@ -255,6 +276,7 @@ RDEPENDS:sssd-ipa = " \
 "
 
 URI_sssd-kcm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-kcm-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-kcm}"
 RDEPENDS:sssd-kcm = " \
  libuuid \
  systemd \
@@ -273,6 +295,7 @@ RDEPENDS:sssd-kcm = " \
 "
 
 URI_sssd-krb5 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-krb5-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-krb5}"
 RDEPENDS:sssd-krb5 = " \
  systemd-libs \
  keyutils-libs \
@@ -300,6 +323,7 @@ RDEPENDS:sssd-krb5 = " \
 "
 
 URI_sssd-krb5-common = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-krb5-common-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-krb5-common}"
 RDEPENDS:sssd-krb5-common = " \
  systemd-libs \
  jansson \
@@ -313,6 +337,7 @@ RDEPENDS:sssd-krb5-common = " \
 "
 
 URI_sssd-ldap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-ldap-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-ldap}"
 RDEPENDS:sssd-ldap = " \
  systemd-libs \
  keyutils-libs \
@@ -343,12 +368,14 @@ RDEPENDS:sssd-ldap = " \
 "
 
 URI_sssd-nfs-idmap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-nfs-idmap-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-nfs-idmap}"
 RDEPENDS:sssd-nfs-idmap = " \
  glibc \
  libnfsidmap \
 "
 
 URI_sssd-passkey = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-passkey-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-passkey}"
 RDEPENDS:sssd-passkey = " \
  jansson \
  libfido2 \
@@ -363,6 +390,7 @@ RDEPENDS:sssd-passkey = " \
 "
 
 URI_sssd-proxy = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-proxy-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-proxy}"
 RDEPENDS:sssd-proxy = " \
  systemd-libs \
  libref_array \
@@ -388,6 +416,7 @@ RDEPENDS:sssd-proxy = " \
 "
 
 URI_sssd-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-tools-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-tools}"
 RDEPENDS:sssd-tools = " \
  python3 \
  sssd-dbus \
@@ -407,6 +436,7 @@ RDEPENDS:sssd-tools = " \
 "
 
 URI_sssd-winbind-idmap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sssd-winbind-idmap-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-winbind-idmap}"
 RDEPENDS:sssd-winbind-idmap = " \
  glibc \
  libsss_nss_idmap \
@@ -415,6 +445,7 @@ RDEPENDS:sssd-winbind-idmap = " \
 "
 
 URI_sssd-idp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sssd-idp-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sssd-idp}"
 RDEPENDS:sssd-idp = " \
  jansson \
  krb5-libs \
@@ -428,24 +459,28 @@ RDEPENDS:sssd-idp = " \
 "
 
 URI_libsss_nss_idmap-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libsss_nss_idmap-devel-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_nss_idmap-devel}"
 RDEPENDS:libsss_nss_idmap-devel = " \
  libsss_nss_idmap \
  pkgconf-pkg-config \
 "
 
 URI_libipa_hbac-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libipa_hbac-devel-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libipa_hbac-devel}"
 RDEPENDS:libipa_hbac-devel = " \
  libipa_hbac \
  pkgconf-pkg-config \
 "
 
 URI_libsss_certmap-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libsss_certmap-devel-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_certmap-devel}"
 RDEPENDS:libsss_certmap-devel = " \
  libsss_certmap \
  pkgconf-pkg-config \
 "
 
 URI_libsss_idmap-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libsss_idmap-devel-2.10.2-3.el10_0.3.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsss_idmap-devel}"
 RDEPENDS:libsss_idmap-devel = " \
  pkgconf-pkg-config \
  libsss_idmap \

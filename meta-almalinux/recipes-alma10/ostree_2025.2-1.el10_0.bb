@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "ostree ostree-grub2 ostree-libs ostree-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ostree-2025.2-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ostree = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ostree-2025.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ostree}"
 RDEPENDS:ostree = " \
  ostree-libs \
  systemd \
@@ -28,6 +32,7 @@ RDEPENDS:ostree = " \
 "
 
 URI_ostree-grub2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ostree-grub2-2025.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ostree-grub2}"
 RDEPENDS:ostree-grub2 = " \
  ostree \
  bash \
@@ -35,6 +40,7 @@ RDEPENDS:ostree-grub2 = " \
 "
 
 URI_ostree-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ostree-libs-2025.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ostree-libs}"
 RDEPENDS:ostree-libs = " \
  zlib-ng-compat \
  systemd-libs \
@@ -53,6 +59,7 @@ RDEPENDS:ostree-libs = " \
 "
 
 URI_ostree-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ostree-devel-2025.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ostree-devel}"
 RDEPENDS:ostree-devel = " \
  ostree-libs \
  gpgme-devel \

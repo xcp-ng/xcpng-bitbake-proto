@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "cups-browsed"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/cups-browsed-2.0.0-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cups-browsed = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cups-browsed-2.0.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups-browsed}"
 RDEPENDS:cups-browsed = " \
  systemd \
  cups-filesystem \

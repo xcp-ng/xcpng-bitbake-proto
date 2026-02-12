@@ -8,7 +8,11 @@ PR = "14.el10"
 PACKAGES = "perl-Devel-CheckLib perl-Devel-CheckLib-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Devel-CheckLib-1.16-14.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Devel-CheckLib = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Devel-CheckLib-1.16-14.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Devel-CheckLib}"
 RDEPENDS:perl-Devel-CheckLib = " \
  perl-libs \
  perl-vars \
@@ -22,6 +26,7 @@ RDEPENDS:perl-Devel-CheckLib = " \
 "
 
 URI_perl-Devel-CheckLib-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Devel-CheckLib-tests-1.16-14.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Devel-CheckLib-tests}"
 RDEPENDS:perl-Devel-CheckLib-tests = " \
  perl-Test-Harness \
  perl-libs \

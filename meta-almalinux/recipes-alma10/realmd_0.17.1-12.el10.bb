@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "realmd realmd-devel-docs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/realmd-0.17.1-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_realmd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/realmd-0.17.1-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_realmd}"
 RDEPENDS:realmd = " \
  systemd-libs \
  authselect \
@@ -22,4 +26,5 @@ RDEPENDS:realmd = " \
 "
 
 URI_realmd-devel-docs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/realmd-devel-docs-0.17.1-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_realmd-devel-docs}"
 RDEPENDS:realmd-devel-docs = ""

@@ -8,7 +8,11 @@ PR = "8.p5.el10_0.2"
 PACKAGES = "sudo sudo-python-plugin sudo-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/sudo-1.9.15-8.p5.el10_0.2.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sudo = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sudo-1.9.15-8.p5.el10_0.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sudo}"
 RDEPENDS:sudo = " \
  zlib-ng-compat \
  audit-libs \
@@ -20,6 +24,7 @@ RDEPENDS:sudo = " \
 "
 
 URI_sudo-python-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sudo-python-plugin-1.9.15-8.p5.el10_0.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sudo-python-plugin}"
 RDEPENDS:sudo-python-plugin = " \
  glibc \
  sudo \
@@ -27,6 +32,7 @@ RDEPENDS:sudo-python-plugin = " \
 "
 
 URI_sudo-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/sudo-devel-1.9.15-8.p5.el10_0.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sudo-devel}"
 RDEPENDS:sudo-devel = " \
  sudo \
 "

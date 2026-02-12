@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "rubygem-rspec rubygem-rspec-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/rubygem-rspec-3.13.0-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_rubygem-rspec = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/rubygem-rspec-3.13.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-rspec}"
 RDEPENDS:rubygem-rspec = " \
  rubygems \
  rubygem-rspec-mocks \
@@ -17,6 +21,7 @@ RDEPENDS:rubygem-rspec = " \
 "
 
 URI_rubygem-rspec-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rubygem-rspec-doc-3.13.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-rspec-doc}"
 RDEPENDS:rubygem-rspec-doc = " \
  rubygem-rspec \
 "

@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "libcacard libcacard-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libcacard-2.8.1-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libcacard = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libcacard-2.8.1-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcacard}"
 RDEPENDS:libcacard = " \
  nss \
  pcsc-lite-libs \
@@ -18,6 +22,7 @@ RDEPENDS:libcacard = " \
 "
 
 URI_libcacard-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libcacard-devel-2.8.1-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcacard-devel}"
 RDEPENDS:libcacard-devel = " \
  glib2-devel \
  libcacard \

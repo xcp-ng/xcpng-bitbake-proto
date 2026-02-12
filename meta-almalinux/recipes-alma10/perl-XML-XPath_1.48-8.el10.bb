@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "perl-XML-XPath perl-XML-XPath-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-XML-XPath-1.48-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-XML-XPath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-XML-XPath-1.48-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-XML-XPath}"
 RDEPENDS:perl-XML-XPath = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -28,6 +32,7 @@ RDEPENDS:perl-XML-XPath = " \
 "
 
 URI_perl-XML-XPath-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-XML-XPath-tests-1.48-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-XML-XPath-tests}"
 RDEPENDS:perl-XML-XPath-tests = " \
  perl-constant \
  perl-Test \

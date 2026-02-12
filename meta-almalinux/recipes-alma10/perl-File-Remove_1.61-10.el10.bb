@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "perl-File-Remove perl-File-Remove-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-File-Remove-1.61-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-Remove = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-File-Remove-1.61-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Remove}"
 RDEPENDS:perl-File-Remove = " \
  perl-constant \
  perl-libs \
@@ -18,6 +22,7 @@ RDEPENDS:perl-File-Remove = " \
 "
 
 URI_perl-File-Remove-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-Remove-tests-1.61-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Remove-tests}"
 RDEPENDS:perl-File-Remove-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "latexmk"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/latexmk-4.83-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_latexmk = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/latexmk-4.83-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_latexmk}"
 RDEPENDS:latexmk = " \
  perl-Scalar-List-Utils \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "13.el10"
 PACKAGES = "perl-Data-Dump perl-Data-Dump-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Data-Dump-1.25-13.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Data-Dump = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Data-Dump-1.25-13.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-Dump}"
 RDEPENDS:perl-Data-Dump = " \
  perl-subs \
  perl-libs \
@@ -22,6 +26,7 @@ RDEPENDS:perl-Data-Dump = " \
 "
 
 URI_perl-Data-Dump-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Data-Dump-tests-1.25-13.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-Dump-tests}"
 RDEPENDS:perl-Data-Dump-tests = " \
  perl-Test \
  perl-Test-Harness \

@@ -8,13 +8,19 @@ PR = "5.el10_0.1"
 PACKAGES = "vim-data vim-filesystem vim-minimal vim-X11 vim-common vim-enhanced xxd"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/vim-9.1.083-5.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_vim-data = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/vim-data-9.1.083-5.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_vim-data}"
 RDEPENDS:vim-data = ""
 
 URI_vim-filesystem = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/vim-filesystem-9.1.083-5.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_vim-filesystem}"
 RDEPENDS:vim-filesystem = ""
 
 URI_vim-minimal = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/vim-minimal-9.1.083-5.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vim-minimal}"
 RDEPENDS:vim-minimal = " \
  libacl \
  vim-data \
@@ -25,6 +31,7 @@ RDEPENDS:vim-minimal = " \
 "
 
 URI_vim-X11 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/vim-X11-9.1.083-5.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vim-X11}"
 RDEPENDS:vim-X11 = " \
  libacl \
  vim-common \
@@ -47,6 +54,7 @@ RDEPENDS:vim-X11 = " \
 "
 
 URI_vim-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/vim-common-9.1.083-5.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vim-common}"
 RDEPENDS:vim-common = " \
  vim-filesystem \
  bash \
@@ -55,6 +63,7 @@ RDEPENDS:vim-common = " \
 "
 
 URI_vim-enhanced = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/vim-enhanced-9.1.083-5.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vim-enhanced}"
 RDEPENDS:vim-enhanced = " \
  libacl \
  vim-common \
@@ -66,6 +75,7 @@ RDEPENDS:vim-enhanced = " \
 "
 
 URI_xxd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xxd-9.1.083-5.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xxd}"
 RDEPENDS:xxd = " \
  glibc \
 "

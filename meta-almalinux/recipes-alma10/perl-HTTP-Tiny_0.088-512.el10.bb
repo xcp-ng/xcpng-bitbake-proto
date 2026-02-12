@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-HTTP-Tiny perl-HTTP-Tiny-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-HTTP-Tiny-0.088-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-HTTP-Tiny = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-HTTP-Tiny-0.088-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Tiny}"
 RDEPENDS:perl-HTTP-Tiny = " \
  perl-libs \
  perl-Carp \
@@ -24,6 +28,7 @@ RDEPENDS:perl-HTTP-Tiny = " \
 "
 
 URI_perl-HTTP-Tiny-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-HTTP-Tiny-tests-0.088-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Tiny-tests}"
 RDEPENDS:perl-HTTP-Tiny-tests = " \
  perl-libs \
  perl-open \

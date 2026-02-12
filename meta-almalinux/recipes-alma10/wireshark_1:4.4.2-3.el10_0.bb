@@ -8,7 +8,11 @@ PR = "3.el10_0"
 PACKAGES = "wireshark wireshark-cli wireshark-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/wireshark-4.4.2-3.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_wireshark = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/wireshark-4.4.2-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_wireshark}"
 RDEPENDS:wireshark = " \
  libpcap \
  qt6-qtmultimedia \
@@ -28,6 +32,7 @@ RDEPENDS:wireshark = " \
 "
 
 URI_wireshark-cli = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/wireshark-cli-4.4.2-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_wireshark-cli}"
 RDEPENDS:wireshark-cli = " \
  libpcap \
  systemd-libs \
@@ -53,6 +58,7 @@ RDEPENDS:wireshark-cli = " \
 "
 
 URI_wireshark-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/wireshark-devel-4.4.2-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_wireshark-devel}"
 RDEPENDS:wireshark-devel = " \
  glib2-devel \
  glibc-devel \

@@ -8,7 +8,11 @@ PR = "4.el10_0.7"
 PACKAGES = "glib2 glib2-devel glib2-tests glib2-doc glib2-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/glib2-2.80.4-4.el10_0.7.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_glib2 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/glib2-2.80.4-4.el10_0.7.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glib2}"
 RDEPENDS:glib2 = " \
  zlib-ng-compat \
  gnutls \
@@ -21,6 +25,7 @@ RDEPENDS:glib2 = " \
 "
 
 URI_glib2-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/glib2-devel-2.80.4-4.el10_0.7.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glib2-devel}"
 RDEPENDS:glib2-devel = " \
  python3 \
  sysprof-capture-devel \
@@ -40,6 +45,7 @@ RDEPENDS:glib2-devel = " \
 "
 
 URI_glib2-tests = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/glib2-tests-2.80.4-4.el10_0.7.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glib2-tests}"
 RDEPENDS:glib2-tests = " \
  python3 \
  libgcc \
@@ -50,11 +56,13 @@ RDEPENDS:glib2-tests = " \
 "
 
 URI_glib2-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/glib2-doc-2.80.4-4.el10_0.7.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glib2-doc}"
 RDEPENDS:glib2-doc = " \
  glib2 \
 "
 
 URI_glib2-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/glib2-static-2.80.4-4.el10_0.7.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glib2-static}"
 RDEPENDS:glib2-static = " \
  glib2-devel \
  sysprof-capture-devel \

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "systemtap systemtap-client systemtap-devel systemtap-exporter systemtap-initscript systemtap-runtime systemtap-runtime-java systemtap-runtime-python3 systemtap-runtime-virtguest systemtap-runtime-virthost systemtap-sdt-devel systemtap-sdt-dtrace systemtap-server systemtap-jupyter systemtap-testsuite"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/systemtap-5.2-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_systemtap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap}"
 RDEPENDS:systemtap = " \
  bash \
  systemtap-client \
@@ -16,6 +20,7 @@ RDEPENDS:systemtap = " \
 "
 
 URI_systemtap-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-client-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-client}"
 RDEPENDS:systemtap-client = " \
  mokutil \
  nss \
@@ -45,6 +50,7 @@ RDEPENDS:systemtap-client = " \
 "
 
 URI_systemtap-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-devel-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-devel}"
 RDEPENDS:systemtap-devel = " \
  python3 \
  nss \
@@ -69,6 +75,7 @@ RDEPENDS:systemtap-devel = " \
 "
 
 URI_systemtap-exporter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-exporter-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-exporter}"
 RDEPENDS:systemtap-exporter = " \
  python3 \
  systemtap-runtime \
@@ -76,6 +83,7 @@ RDEPENDS:systemtap-exporter = " \
 "
 
 URI_systemtap-initscript = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-initscript-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-initscript}"
 RDEPENDS:systemtap-initscript = " \
  systemd \
  bash \
@@ -83,6 +91,7 @@ RDEPENDS:systemtap-initscript = " \
 "
 
 URI_systemtap-runtime = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-runtime-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-runtime}"
 RDEPENDS:systemtap-runtime = " \
  shadow-utils \
  nss \
@@ -101,6 +110,7 @@ RDEPENDS:systemtap-runtime = " \
 "
 
 URI_systemtap-runtime-java = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-runtime-java-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-runtime-java}"
 RDEPENDS:systemtap-runtime-java = " \
  iproute \
  byteman \
@@ -111,6 +121,7 @@ RDEPENDS:systemtap-runtime-java = " \
 "
 
 URI_systemtap-runtime-python3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-runtime-python3-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-runtime-python3}"
 RDEPENDS:systemtap-runtime-python3 = " \
  glibc \
  systemtap-runtime \
@@ -118,6 +129,7 @@ RDEPENDS:systemtap-runtime-python3 = " \
 "
 
 URI_systemtap-runtime-virtguest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-runtime-virtguest-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-runtime-virtguest}"
 RDEPENDS:systemtap-runtime-virtguest = " \
  grep \
  systemtap-runtime \
@@ -127,6 +139,7 @@ RDEPENDS:systemtap-runtime-virtguest = " \
 "
 
 URI_systemtap-runtime-virthost = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-runtime-virthost-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-runtime-virthost}"
 RDEPENDS:systemtap-runtime-virthost = " \
  glibc \
  libvirt-libs \
@@ -134,17 +147,20 @@ RDEPENDS:systemtap-runtime-virthost = " \
 "
 
 URI_systemtap-sdt-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-sdt-devel-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-sdt-devel}"
 RDEPENDS:systemtap-sdt-devel = " \
  python3 \
 "
 
 URI_systemtap-sdt-dtrace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-sdt-dtrace-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-sdt-dtrace}"
 RDEPENDS:systemtap-sdt-dtrace = " \
  python3 \
  python3-pyparsing \
 "
 
 URI_systemtap-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemtap-server-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-server}"
 RDEPENDS:systemtap-server = " \
  zip \
  shadow-utils \
@@ -163,12 +179,14 @@ RDEPENDS:systemtap-server = " \
 "
 
 URI_systemtap-jupyter = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/systemtap-jupyter-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-jupyter}"
 RDEPENDS:systemtap-jupyter = " \
  bash \
  systemtap \
 "
 
 URI_systemtap-testsuite = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/systemtap-testsuite-5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemtap-testsuite}"
 RDEPENDS:systemtap-testsuite = " \
  perf \
  glibc-devel \

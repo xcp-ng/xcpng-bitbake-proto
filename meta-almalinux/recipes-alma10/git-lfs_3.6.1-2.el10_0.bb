@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "git-lfs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/git-lfs-3.6.1-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_git-lfs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-lfs-3.6.1-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_git-lfs}"
 RDEPENDS:git-lfs = " \
  glibc \
  bash \

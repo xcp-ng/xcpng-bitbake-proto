@@ -8,18 +8,24 @@ PR = "3.el10"
 PACKAGES = "qat-zstd-plugin qat-zstd-plugin-devel qat-zstd-plugin-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/qat-zstd-plugin-0.2.0-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_qat-zstd-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qat-zstd-plugin-0.2.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qat-zstd-plugin}"
 RDEPENDS:qat-zstd-plugin = " \
  glibc \
  qatlib \
 "
 
 URI_qat-zstd-plugin-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qat-zstd-plugin-devel-0.2.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qat-zstd-plugin-devel}"
 RDEPENDS:qat-zstd-plugin-devel = " \
  qat-zstd-plugin \
 "
 
 URI_qat-zstd-plugin-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qat-zstd-plugin-static-0.2.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qat-zstd-plugin-static}"
 RDEPENDS:qat-zstd-plugin-static = " \
  qat-zstd-plugin-devel \
 "

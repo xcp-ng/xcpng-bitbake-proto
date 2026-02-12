@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-Sub-Exporter perl-Sub-Exporter-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Sub-Exporter-0.991-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Sub-Exporter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Sub-Exporter-0.991-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Exporter}"
 RDEPENDS:perl-Sub-Exporter = " \
  perl-libs \
  perl-Carp \
@@ -20,6 +24,7 @@ RDEPENDS:perl-Sub-Exporter = " \
 "
 
 URI_perl-Sub-Exporter-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Sub-Exporter-tests-0.991-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Exporter-tests}"
 RDEPENDS:perl-Sub-Exporter-tests = " \
  perl-subs \
  perl-Test-Harness \

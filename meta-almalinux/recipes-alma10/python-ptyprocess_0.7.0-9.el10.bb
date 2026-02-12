@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "python3-ptyprocess"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/python-ptyprocess-0.7.0-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-ptyprocess = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-ptyprocess-0.7.0-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-ptyprocess}"
 RDEPENDS:python3-ptyprocess = " \
  python3 \
 "

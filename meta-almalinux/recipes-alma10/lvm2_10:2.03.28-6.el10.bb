@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "device-mapper device-mapper-event device-mapper-event-libs device-mapper-libs lvm2 lvm2-libs lvm2-dbusd lvm2-lockd device-mapper-devel device-mapper-event-devel lvm2-devel lvm2-testsuite"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/lvm2-2.03.28-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_device-mapper = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/device-mapper-1.02.202-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_device-mapper}"
 RDEPENDS:device-mapper = " \
  device-mapper-libs \
  systemd \
@@ -18,6 +22,7 @@ RDEPENDS:device-mapper = " \
 "
 
 URI_device-mapper-event = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/device-mapper-event-1.02.202-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_device-mapper-event}"
 RDEPENDS:device-mapper-event = " \
  device-mapper \
  device-mapper-event-libs \
@@ -29,12 +34,14 @@ RDEPENDS:device-mapper-event = " \
 "
 
 URI_device-mapper-event-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/device-mapper-event-libs-1.02.202-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_device-mapper-event-libs}"
 RDEPENDS:device-mapper-event-libs = " \
  glibc \
  device-mapper-libs \
 "
 
 URI_device-mapper-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/device-mapper-libs-1.02.202-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_device-mapper-libs}"
 RDEPENDS:device-mapper-libs = " \
  glibc \
  libselinux \
@@ -43,6 +50,7 @@ RDEPENDS:device-mapper-libs = " \
 "
 
 URI_lvm2 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/lvm2-2.03.28-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lvm2}"
 RDEPENDS:lvm2 = " \
  device-mapper-event-libs \
  systemd \
@@ -60,6 +68,7 @@ RDEPENDS:lvm2 = " \
 "
 
 URI_lvm2-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/lvm2-libs-2.03.28-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lvm2-libs}"
 RDEPENDS:lvm2-libs = " \
  device-mapper-event \
  device-mapper-event-libs \
@@ -73,6 +82,7 @@ RDEPENDS:lvm2-libs = " \
 "
 
 URI_lvm2-dbusd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lvm2-dbusd-2.03.28-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_lvm2-dbusd}"
 RDEPENDS:lvm2-dbusd = " \
  python3 \
  python3-pyudev \
@@ -85,6 +95,7 @@ RDEPENDS:lvm2-dbusd = " \
 "
 
 URI_lvm2-lockd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lvm2-lockd-2.03.28-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lvm2-lockd}"
 RDEPENDS:lvm2-lockd = " \
  systemd \
  systemd-libs \
@@ -96,6 +107,7 @@ RDEPENDS:lvm2-lockd = " \
 "
 
 URI_device-mapper-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/device-mapper-devel-1.02.202-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_device-mapper-devel}"
 RDEPENDS:device-mapper-devel = " \
  device-mapper \
  device-mapper-libs \
@@ -105,6 +117,7 @@ RDEPENDS:device-mapper-devel = " \
 "
 
 URI_device-mapper-event-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/device-mapper-event-devel-1.02.202-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_device-mapper-event-devel}"
 RDEPENDS:device-mapper-event-devel = " \
  device-mapper-event \
  device-mapper-event-libs \
@@ -112,6 +125,7 @@ RDEPENDS:device-mapper-event-devel = " \
 "
 
 URI_lvm2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lvm2-devel-2.03.28-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lvm2-devel}"
 RDEPENDS:lvm2-devel = " \
  lvm2 \
  lvm2-libs \
@@ -121,6 +135,7 @@ RDEPENDS:lvm2-devel = " \
 "
 
 URI_lvm2-testsuite = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/lvm2-testsuite-2.03.28-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lvm2-testsuite}"
 RDEPENDS:lvm2-testsuite = " \
  python3 \
  libaio \

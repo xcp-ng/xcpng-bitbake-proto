@@ -8,10 +8,15 @@ PR = "11.el10_0.1"
 PACKAGES = "cups-filesystem cups-libs cups cups-client cups-devel cups-ipptool cups-lpd cups-printerapp"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/cups-2.4.10-11.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cups-filesystem = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cups-filesystem-2.4.10-11.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_cups-filesystem}"
 RDEPENDS:cups-filesystem = ""
 
 URI_cups-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cups-libs-2.4.10-11.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups-libs}"
 RDEPENDS:cups-libs = " \
  zlib-ng-compat \
  gnutls \
@@ -22,6 +27,7 @@ RDEPENDS:cups-libs = " \
 "
 
 URI_cups = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cups-2.4.10-11.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups}"
 RDEPENDS:cups = " \
  python3 \
  systemd \
@@ -49,6 +55,7 @@ RDEPENDS:cups = " \
 "
 
 URI_cups-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cups-client-2.4.10-11.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups-client}"
 RDEPENDS:cups-client = " \
  glibc \
  cups-libs \
@@ -57,6 +64,7 @@ RDEPENDS:cups-client = " \
 "
 
 URI_cups-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cups-devel-2.4.10-11.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups-devel}"
 RDEPENDS:cups-devel = " \
  gnutls-devel \
  zlib-ng-compat-devel \
@@ -68,6 +76,7 @@ RDEPENDS:cups-devel = " \
 "
 
 URI_cups-ipptool = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cups-ipptool-2.4.10-11.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups-ipptool}"
 RDEPENDS:cups-ipptool = " \
  glibc \
  avahi-libs \
@@ -76,6 +85,7 @@ RDEPENDS:cups-ipptool = " \
 "
 
 URI_cups-lpd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cups-lpd-2.4.10-11.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups-lpd}"
 RDEPENDS:cups-lpd = " \
  glibc \
  cups-libs \
@@ -84,6 +94,7 @@ RDEPENDS:cups-lpd = " \
 "
 
 URI_cups-printerapp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cups-printerapp-2.4.10-11.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cups-printerapp}"
 RDEPENDS:cups-printerapp = " \
  cups-libs \
  avahi \

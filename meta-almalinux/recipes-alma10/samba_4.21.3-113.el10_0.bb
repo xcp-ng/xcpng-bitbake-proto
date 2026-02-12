@@ -8,7 +8,11 @@ PR = "113.el10_0"
 PACKAGES = "ldb-tools libldb libnetapi libsmbclient libwbclient python3-ldb python3-samba python3-samba-dc samba samba-client-libs samba-common samba-common-libs samba-common-tools samba-dc-libs samba-dcerpc samba-ldb-ldap-modules samba-libs samba-tools samba-usershares samba-winbind samba-winbind-modules samba-client samba-gpupdate samba-krb5-printing samba-vfs-iouring samba-winbind-clients samba-winbind-krb5-locator samba-winexe libldb-devel libnetapi-devel libsmbclient-devel libwbclient-devel python3-samba-test samba-devel samba-pidl samba-test samba-test-libs ctdb"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/samba-4.21.3-113.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ldb-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/ldb-tools-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ldb-tools}"
 RDEPENDS:ldb-tools = " \
  glibc \
  popt \
@@ -17,6 +21,7 @@ RDEPENDS:ldb-tools = " \
 "
 
 URI_libldb = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libldb-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libldb}"
 RDEPENDS:libldb = " \
  libtevent \
  libtalloc \
@@ -26,6 +31,7 @@ RDEPENDS:libldb = " \
 "
 
 URI_libnetapi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libnetapi-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnetapi}"
 RDEPENDS:libnetapi = " \
  gnutls \
  libwbclient \
@@ -39,6 +45,7 @@ RDEPENDS:libnetapi = " \
 "
 
 URI_libsmbclient = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libsmbclient-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsmbclient}"
 RDEPENDS:libsmbclient = " \
  libwbclient \
  libldb \
@@ -51,6 +58,7 @@ RDEPENDS:libsmbclient = " \
 "
 
 URI_libwbclient = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libwbclient-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwbclient}"
 RDEPENDS:libwbclient = " \
  glibc \
  samba-client-libs \
@@ -58,6 +66,7 @@ RDEPENDS:libwbclient = " \
 "
 
 URI_python3-ldb = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-ldb-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-ldb}"
 RDEPENDS:python3-ldb = " \
  python3 \
  libldb \
@@ -69,6 +78,7 @@ RDEPENDS:python3-ldb = " \
 "
 
 URI_python3-samba = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-samba-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-samba}"
 RDEPENDS:python3-samba = " \
  python3 \
  python3-cryptography \
@@ -95,6 +105,7 @@ RDEPENDS:python3-samba = " \
 "
 
 URI_python3-samba-dc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-samba-dc-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-samba-dc}"
 RDEPENDS:python3-samba-dc = " \
  python3 \
  libwbclient \
@@ -110,6 +121,7 @@ RDEPENDS:python3-samba-dc = " \
 "
 
 URI_samba = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba}"
 RDEPENDS:samba = " \
  samba-client-libs \
  cups-libs \
@@ -134,6 +146,7 @@ RDEPENDS:samba = " \
 "
 
 URI_samba-client-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-client-libs-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-client-libs}"
 RDEPENDS:samba-client-libs = " \
  glibc-gconv-extra \
  systemd-libs \
@@ -164,12 +177,14 @@ RDEPENDS:samba-client-libs = " \
 "
 
 URI_samba-common = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-common-4.21.3-113.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_samba-common}"
 RDEPENDS:samba-common = " \
  systemd \
  bash \
 "
 
 URI_samba-common-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-common-libs-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-common-libs}"
 RDEPENDS:samba-common-libs = " \
  libwbclient \
  libldb \
@@ -183,6 +198,7 @@ RDEPENDS:samba-common-libs = " \
 "
 
 URI_samba-common-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-common-tools-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-common-tools}"
 RDEPENDS:samba-common-tools = " \
  python3 \
  samba-client-libs \
@@ -206,6 +222,7 @@ RDEPENDS:samba-common-tools = " \
 "
 
 URI_samba-dc-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-dc-libs-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-dc-libs}"
 RDEPENDS:samba-dc-libs = " \
  gnutls \
  samba-libs \
@@ -219,6 +236,7 @@ RDEPENDS:samba-dc-libs = " \
 "
 
 URI_samba-dcerpc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-dcerpc-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-dcerpc}"
 RDEPENDS:samba-dcerpc = " \
  gnutls \
  samba-libs \
@@ -238,6 +256,7 @@ RDEPENDS:samba-dcerpc = " \
 "
 
 URI_samba-ldb-ldap-modules = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-ldb-ldap-modules-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-ldb-ldap-modules}"
 RDEPENDS:samba-ldb-ldap-modules = " \
  libldb \
  libwbclient \
@@ -250,6 +269,7 @@ RDEPENDS:samba-ldb-ldap-modules = " \
 "
 
 URI_samba-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-libs-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-libs}"
 RDEPENDS:samba-libs = " \
  libldb \
  libwbclient \
@@ -263,6 +283,7 @@ RDEPENDS:samba-libs = " \
 "
 
 URI_samba-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-tools-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-tools}"
 RDEPENDS:samba-tools = " \
  python3 \
  python3-samba \
@@ -270,6 +291,7 @@ RDEPENDS:samba-tools = " \
 "
 
 URI_samba-usershares = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-usershares-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-usershares}"
 RDEPENDS:samba-usershares = " \
  bash \
  samba \
@@ -277,6 +299,7 @@ RDEPENDS:samba-usershares = " \
 "
 
 URI_samba-winbind = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-winbind-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-winbind}"
 RDEPENDS:samba-winbind = " \
  samba-client-libs \
  samba-common \
@@ -300,6 +323,7 @@ RDEPENDS:samba-winbind = " \
 "
 
 URI_samba-winbind-modules = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/samba-winbind-modules-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-winbind-modules}"
 RDEPENDS:samba-winbind-modules = " \
  samba-libs \
  libwbclient \
@@ -311,6 +335,7 @@ RDEPENDS:samba-winbind-modules = " \
 "
 
 URI_samba-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/samba-client-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-client}"
 RDEPENDS:samba-client = " \
  libsmbclient \
  gnutls \
@@ -333,6 +358,7 @@ RDEPENDS:samba-client = " \
 "
 
 URI_samba-gpupdate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/samba-gpupdate-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-gpupdate}"
 RDEPENDS:samba-gpupdate = " \
  python3 \
  cepces-certmonger \
@@ -343,6 +369,7 @@ RDEPENDS:samba-gpupdate = " \
 "
 
 URI_samba-krb5-printing = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/samba-krb5-printing-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-krb5-printing}"
 RDEPENDS:samba-krb5-printing = " \
  samba-client \
  samba-client-libs \
@@ -353,6 +380,7 @@ RDEPENDS:samba-krb5-printing = " \
 "
 
 URI_samba-vfs-iouring = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/samba-vfs-iouring-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-vfs-iouring}"
 RDEPENDS:samba-vfs-iouring = " \
  samba-libs \
  libldb \
@@ -366,6 +394,7 @@ RDEPENDS:samba-vfs-iouring = " \
 "
 
 URI_samba-winbind-clients = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/samba-winbind-clients-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-winbind-clients}"
 RDEPENDS:samba-winbind-clients = " \
  gnutls \
  samba-libs \
@@ -384,6 +413,7 @@ RDEPENDS:samba-winbind-clients = " \
 "
 
 URI_samba-winbind-krb5-locator = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/samba-winbind-krb5-locator-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-winbind-krb5-locator}"
 RDEPENDS:samba-winbind-krb5-locator = " \
  libldb \
  libwbclient \
@@ -396,6 +426,7 @@ RDEPENDS:samba-winbind-krb5-locator = " \
 "
 
 URI_samba-winexe = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/samba-winexe-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-winexe}"
 RDEPENDS:samba-winexe = " \
  libldb \
  libwbclient \
@@ -408,6 +439,7 @@ RDEPENDS:samba-winexe = " \
 "
 
 URI_libldb-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libldb-devel-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libldb-devel}"
 RDEPENDS:libldb-devel = " \
  libldb \
  pkgconf-pkg-config \
@@ -417,24 +449,28 @@ RDEPENDS:libldb-devel = " \
 "
 
 URI_libnetapi-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libnetapi-devel-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnetapi-devel}"
 RDEPENDS:libnetapi-devel = " \
  libnetapi \
  pkgconf-pkg-config \
 "
 
 URI_libsmbclient-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libsmbclient-devel-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsmbclient-devel}"
 RDEPENDS:libsmbclient-devel = " \
  libsmbclient \
  pkgconf-pkg-config \
 "
 
 URI_libwbclient-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libwbclient-devel-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwbclient-devel}"
 RDEPENDS:libwbclient-devel = " \
  libwbclient \
  pkgconf-pkg-config \
 "
 
 URI_python3-samba-test = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-samba-test-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-samba-test}"
 RDEPENDS:python3-samba-test = " \
  python3 \
  python3-samba \
@@ -443,6 +479,7 @@ RDEPENDS:python3-samba-test = " \
 "
 
 URI_samba-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/samba-devel-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-devel}"
 RDEPENDS:samba-devel = " \
  samba-libs \
  libldb-devel \
@@ -456,6 +493,7 @@ RDEPENDS:samba-devel = " \
 "
 
 URI_samba-pidl = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/samba-pidl-4.21.3-113.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_samba-pidl}"
 RDEPENDS:samba-pidl = " \
  perl-libs \
  perl-vars \
@@ -472,6 +510,7 @@ RDEPENDS:samba-pidl = " \
 "
 
 URI_samba-test = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/samba-test-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-test}"
 RDEPENDS:samba-test = " \
  samba-test-libs \
  samba \
@@ -499,6 +538,7 @@ RDEPENDS:samba-test = " \
 "
 
 URI_samba-test-libs = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/samba-test-libs-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_samba-test-libs}"
 RDEPENDS:samba-test-libs = " \
  samba-libs \
  libldb \
@@ -510,6 +550,7 @@ RDEPENDS:samba-test-libs = " \
 "
 
 URI_ctdb = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ctdb-4.21.3-113.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ctdb}"
 RDEPENDS:ctdb = " \
  systemd \
  iproute \

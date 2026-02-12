@@ -8,7 +8,11 @@ PR = "18.el10"
 PACKAGES = "gutenprint gutenprint-cups gutenprint-doc gutenprint-libs gutenprint-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gutenprint-5.3.4-18.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gutenprint = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gutenprint-5.3.4-18.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gutenprint}"
 RDEPENDS:gutenprint = " \
  glibc \
  cups-client \
@@ -16,6 +20,7 @@ RDEPENDS:gutenprint = " \
 "
 
 URI_gutenprint-cups = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gutenprint-cups-5.3.4-18.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gutenprint-cups}"
 RDEPENDS:gutenprint-cups = " \
  python3 \
  gutenprint \
@@ -30,14 +35,17 @@ RDEPENDS:gutenprint-cups = " \
 "
 
 URI_gutenprint-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gutenprint-doc-5.3.4-18.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gutenprint-doc}"
 RDEPENDS:gutenprint-doc = ""
 
 URI_gutenprint-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gutenprint-libs-5.3.4-18.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gutenprint-libs}"
 RDEPENDS:gutenprint-libs = " \
  glibc \
 "
 
 URI_gutenprint-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gutenprint-devel-5.3.4-18.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gutenprint-devel}"
 RDEPENDS:gutenprint-devel = " \
  gutenprint \
  gutenprint-libs \

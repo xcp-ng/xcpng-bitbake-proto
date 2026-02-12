@@ -8,7 +8,11 @@ PR = "102.el10"
 PACKAGES = "jose libjose libjose-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/jose-14-102.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jose = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jose-14-102.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_jose}"
 RDEPENDS:jose = " \
  glibc \
  libgcc \
@@ -17,6 +21,7 @@ RDEPENDS:jose = " \
 "
 
 URI_libjose = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libjose-14-102.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libjose}"
 RDEPENDS:libjose = " \
  zlib-ng-compat \
  jansson \
@@ -26,6 +31,7 @@ RDEPENDS:libjose = " \
 "
 
 URI_libjose-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libjose-devel-14-102.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libjose-devel}"
 RDEPENDS:libjose-devel = " \
  zlib-ng-compat-devel \
  pkgconf-pkg-config \

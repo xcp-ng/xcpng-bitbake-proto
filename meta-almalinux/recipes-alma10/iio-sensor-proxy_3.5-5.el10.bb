@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "iio-sensor-proxy iio-sensor-proxy-docs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/iio-sensor-proxy-3.5-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_iio-sensor-proxy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/iio-sensor-proxy-3.5-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_iio-sensor-proxy}"
 RDEPENDS:iio-sensor-proxy = " \
  systemd \
  libgcc \
@@ -20,4 +24,5 @@ RDEPENDS:iio-sensor-proxy = " \
 "
 
 URI_iio-sensor-proxy-docs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/iio-sensor-proxy-docs-3.5-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_iio-sensor-proxy-docs}"
 RDEPENDS:iio-sensor-proxy-docs = ""

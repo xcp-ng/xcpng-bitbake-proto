@@ -8,7 +8,11 @@ PR = "1.el10.alma.1"
 PACKAGES = "crash crash-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/crash-8.0.6-1.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_crash = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/crash-8.0.6-1.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_crash}"
 RDEPENDS:crash = " \
  lzo \
  libgcc \
@@ -21,6 +25,7 @@ RDEPENDS:crash = " \
 "
 
 URI_crash-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/crash-devel-8.0.6-1.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_crash-devel}"
 RDEPENDS:crash-devel = " \
  crash \
  zlib-ng-compat-devel \

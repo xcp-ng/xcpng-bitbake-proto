@@ -8,7 +8,11 @@ PR = "1.el10_0.1"
 PACKAGES = "avahi avahi-libs avahi-devel avahi-glib avahi-gobject avahi-tools avahi-compat-howl avahi-compat-howl-devel avahi-compat-libdns_sd avahi-compat-libdns_sd-devel avahi-glib-devel avahi-autoipd avahi-dnsconfd avahi-gobject-devel avahi-ui-devel avahi-ui-gtk3 avahi-ui-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/avahi-0.9~rc2-1.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_avahi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/avahi-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi}"
 RDEPENDS:avahi = " \
  shadow-utils \
  systemd-libs \
@@ -24,6 +28,7 @@ RDEPENDS:avahi = " \
 "
 
 URI_avahi-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/avahi-libs-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-libs}"
 RDEPENDS:avahi-libs = " \
  glibc \
  dbus-libs \
@@ -31,6 +36,7 @@ RDEPENDS:avahi-libs = " \
 "
 
 URI_avahi-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/avahi-devel-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-devel}"
 RDEPENDS:avahi-devel = " \
  pkgconf-pkg-config \
  avahi \
@@ -40,6 +46,7 @@ RDEPENDS:avahi-devel = " \
 "
 
 URI_avahi-glib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/avahi-glib-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-glib}"
 RDEPENDS:avahi-glib = " \
  glibc \
  avahi-libs \
@@ -47,6 +54,7 @@ RDEPENDS:avahi-glib = " \
 "
 
 URI_avahi-gobject = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/avahi-gobject-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-gobject}"
 RDEPENDS:avahi-gobject = " \
  avahi-glib \
  avahi-libs \
@@ -56,6 +64,7 @@ RDEPENDS:avahi-gobject = " \
 "
 
 URI_avahi-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/avahi-tools-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-tools}"
 RDEPENDS:avahi-tools = " \
  glibc \
  avahi-libs \
@@ -64,6 +73,7 @@ RDEPENDS:avahi-tools = " \
 "
 
 URI_avahi-compat-howl = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/avahi-compat-howl-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-compat-howl}"
 RDEPENDS:avahi-compat-howl = " \
  glibc \
  avahi-libs \
@@ -71,6 +81,7 @@ RDEPENDS:avahi-compat-howl = " \
 "
 
 URI_avahi-compat-howl-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/avahi-compat-howl-devel-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-compat-howl-devel}"
 RDEPENDS:avahi-compat-howl-devel = " \
  avahi-compat-howl \
  avahi-devel \
@@ -78,6 +89,7 @@ RDEPENDS:avahi-compat-howl-devel = " \
 "
 
 URI_avahi-compat-libdns_sd = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/avahi-compat-libdns_sd-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-compat-libdns_sd}"
 RDEPENDS:avahi-compat-libdns_sd = " \
  glibc \
  avahi-libs \
@@ -85,6 +97,7 @@ RDEPENDS:avahi-compat-libdns_sd = " \
 "
 
 URI_avahi-compat-libdns_sd-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/avahi-compat-libdns_sd-devel-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-compat-libdns_sd-devel}"
 RDEPENDS:avahi-compat-libdns_sd-devel = " \
  avahi-devel \
  avahi-compat-libdns_sd \
@@ -92,6 +105,7 @@ RDEPENDS:avahi-compat-libdns_sd-devel = " \
 "
 
 URI_avahi-glib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/avahi-glib-devel-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-glib-devel}"
 RDEPENDS:avahi-glib-devel = " \
  avahi-glib \
  glib2-devel \
@@ -100,6 +114,7 @@ RDEPENDS:avahi-glib-devel = " \
 "
 
 URI_avahi-autoipd = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/avahi-autoipd-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-autoipd}"
 RDEPENDS:avahi-autoipd = " \
  shadow-utils \
  avahi-libs \
@@ -109,6 +124,7 @@ RDEPENDS:avahi-autoipd = " \
 "
 
 URI_avahi-dnsconfd = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/avahi-dnsconfd-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-dnsconfd}"
 RDEPENDS:avahi-dnsconfd = " \
  avahi \
  avahi-libs \
@@ -118,6 +134,7 @@ RDEPENDS:avahi-dnsconfd = " \
 "
 
 URI_avahi-gobject-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/avahi-gobject-devel-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-gobject-devel}"
 RDEPENDS:avahi-gobject-devel = " \
  glib2-devel \
  avahi-devel \
@@ -127,6 +144,7 @@ RDEPENDS:avahi-gobject-devel = " \
 "
 
 URI_avahi-ui-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/avahi-ui-devel-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-ui-devel}"
 RDEPENDS:avahi-ui-devel = " \
  avahi-devel \
  pkgconf-pkg-config \
@@ -136,6 +154,7 @@ RDEPENDS:avahi-ui-devel = " \
 "
 
 URI_avahi-ui-gtk3 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/avahi-ui-gtk3-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-ui-gtk3}"
 RDEPENDS:avahi-ui-gtk3 = " \
  atk \
  cairo-gobject \
@@ -153,6 +172,7 @@ RDEPENDS:avahi-ui-gtk3 = " \
 "
 
 URI_avahi-ui-tools = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/avahi-ui-tools-0.9~rc2-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_avahi-ui-tools}"
 RDEPENDS:avahi-ui-tools = " \
  openssh-clients \
  gnome-connections \

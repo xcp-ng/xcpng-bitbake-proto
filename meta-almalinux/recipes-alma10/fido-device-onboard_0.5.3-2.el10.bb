@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "fdo-admin-cli fdo-client fdo-init fdo-manufacturing-server fdo-owner-cli fdo-owner-onboarding-server fdo-rendezvous-server"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/fido-device-onboard-0.5.3-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_fdo-admin-cli = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fdo-admin-cli-0.5.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fdo-admin-cli}"
 RDEPENDS:fdo-admin-cli = " \
  openssl-libs \
  libgcc \
@@ -24,6 +28,7 @@ RDEPENDS:fdo-admin-cli = " \
 "
 
 URI_fdo-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fdo-client-0.5.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fdo-client}"
 RDEPENDS:fdo-client = " \
  cryptsetup \
  cryptsetup-libs \
@@ -38,6 +43,7 @@ RDEPENDS:fdo-client = " \
 "
 
 URI_fdo-init = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fdo-init-0.5.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fdo-init}"
 RDEPENDS:fdo-init = " \
  openssl-libs \
  libgcc \
@@ -48,6 +54,7 @@ RDEPENDS:fdo-init = " \
 "
 
 URI_fdo-manufacturing-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fdo-manufacturing-server-0.5.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fdo-manufacturing-server}"
 RDEPENDS:fdo-manufacturing-server = " \
  libpq \
  openssl-libs \
@@ -59,6 +66,7 @@ RDEPENDS:fdo-manufacturing-server = " \
 "
 
 URI_fdo-owner-cli = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fdo-owner-cli-0.5.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fdo-owner-cli}"
 RDEPENDS:fdo-owner-cli = " \
  libpq \
  openssl-libs \
@@ -69,6 +77,7 @@ RDEPENDS:fdo-owner-cli = " \
 "
 
 URI_fdo-owner-onboarding-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fdo-owner-onboarding-server-0.5.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fdo-owner-onboarding-server}"
 RDEPENDS:fdo-owner-onboarding-server = " \
  libpq \
  openssl-libs \
@@ -80,6 +89,7 @@ RDEPENDS:fdo-owner-onboarding-server = " \
 "
 
 URI_fdo-rendezvous-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fdo-rendezvous-server-0.5.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fdo-rendezvous-server}"
 RDEPENDS:fdo-rendezvous-server = " \
  libpq \
  openssl-libs \

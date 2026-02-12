@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "twolame twolame-libs twolame-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/twolame-0.4.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_twolame = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/twolame-0.4.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_twolame}"
 RDEPENDS:twolame = " \
  glibc \
  twolame-libs \
@@ -16,11 +20,13 @@ RDEPENDS:twolame = " \
 "
 
 URI_twolame-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/twolame-libs-0.4.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_twolame-libs}"
 RDEPENDS:twolame-libs = " \
  glibc \
 "
 
 URI_twolame-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/twolame-devel-0.4.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_twolame-devel}"
 RDEPENDS:twolame-devel = " \
  twolame-libs \
  pkgconf-pkg-config \

@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "jdependency jdependency-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/jdependency-2.8.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jdependency = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jdependency-2.8.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jdependency}"
 RDEPENDS:jdependency = " \
  objectweb-asm \
  apache-commons-io \
@@ -17,6 +21,7 @@ RDEPENDS:jdependency = " \
 "
 
 URI_jdependency-javadoc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jdependency-javadoc-2.8.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jdependency-javadoc}"
 RDEPENDS:jdependency-javadoc = " \
  javapackages-filesystem \
 "

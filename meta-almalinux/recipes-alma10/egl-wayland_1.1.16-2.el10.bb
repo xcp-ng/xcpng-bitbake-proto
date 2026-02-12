@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "egl-wayland egl-wayland-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/egl-wayland-1.1.16-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_egl-wayland = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/egl-wayland-1.1.16-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_egl-wayland}"
 RDEPENDS:egl-wayland = " \
  libglvnd-egl \
  libwayland-client \
@@ -18,6 +22,7 @@ RDEPENDS:egl-wayland = " \
 "
 
 URI_egl-wayland-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/egl-wayland-devel-1.1.16-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_egl-wayland-devel}"
 RDEPENDS:egl-wayland-devel = " \
  egl-wayland \
  eglexternalplatform-devel \

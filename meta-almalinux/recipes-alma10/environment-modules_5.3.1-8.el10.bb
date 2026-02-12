@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "environment-modules"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/environment-modules-5.3.1-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_environment-modules = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/environment-modules-5.3.1-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_environment-modules}"
 RDEPENDS:environment-modules = " \
  less \
  tcl \

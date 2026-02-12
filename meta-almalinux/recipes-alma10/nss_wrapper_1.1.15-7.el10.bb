@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "nss_wrapper nss_wrapper-libs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/nss_wrapper-1.1.15-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_nss_wrapper = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss_wrapper-1.1.15-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss_wrapper}"
 RDEPENDS:nss_wrapper = " \
  cmake-filesystem \
  perl-libs \
@@ -20,6 +24,7 @@ RDEPENDS:nss_wrapper = " \
 "
 
 URI_nss_wrapper-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nss_wrapper-libs-1.1.15-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nss_wrapper-libs}"
 RDEPENDS:nss_wrapper-libs = " \
  glibc \
 "

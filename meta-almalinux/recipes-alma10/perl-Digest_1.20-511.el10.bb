@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Digest perl-Digest-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Digest-1.20-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Digest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Digest-1.20-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest}"
 RDEPENDS:perl-Digest = " \
  perl-libs \
  perl-Carp \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Digest = " \
 "
 
 URI_perl-Digest-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Digest-tests-1.20-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest-tests}"
 RDEPENDS:perl-Digest-tests = " \
  perl-Test-Harness \
  perl-libs \

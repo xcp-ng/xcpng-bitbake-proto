@@ -8,21 +8,28 @@ PR = "3.el10"
 PACKAGES = "xmvn xmvn-core xmvn-javadoc xmvn-minimal xmvn-mojo xmvn-toolchain-openjdk21 xmvn-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/xmvn-4.3.0-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xmvn = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmvn-4.3.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xmvn}"
 RDEPENDS:xmvn = " \
  xmvn-minimal \
  maven \
 "
 
 URI_xmvn-core = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmvn-core-4.3.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xmvn-core}"
 RDEPENDS:xmvn-core = " \
  javapackages-filesystem \
 "
 
 URI_xmvn-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmvn-javadoc-4.3.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xmvn-javadoc}"
 RDEPENDS:xmvn-javadoc = ""
 
 URI_xmvn-minimal = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmvn-minimal-4.3.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xmvn-minimal}"
 RDEPENDS:xmvn-minimal = " \
  apache-commons-cli \
  apache-commons-compress \
@@ -50,6 +57,7 @@ RDEPENDS:xmvn-minimal = " \
 "
 
 URI_xmvn-mojo = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmvn-mojo-4.3.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xmvn-mojo}"
 RDEPENDS:xmvn-mojo = " \
  objectweb-asm \
  maven-resolver \
@@ -58,6 +66,7 @@ RDEPENDS:xmvn-mojo = " \
 "
 
 URI_xmvn-toolchain-openjdk21 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmvn-toolchain-openjdk21-4.3.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xmvn-toolchain-openjdk21}"
 RDEPENDS:xmvn-toolchain-openjdk21 = " \
  java-21-openjdk-devel \
  xmvn-minimal \
@@ -65,6 +74,7 @@ RDEPENDS:xmvn-toolchain-openjdk21 = " \
 "
 
 URI_xmvn-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmvn-tools-4.3.0-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xmvn-tools}"
 RDEPENDS:xmvn-tools = " \
  objectweb-asm \
  apache-commons-compress \

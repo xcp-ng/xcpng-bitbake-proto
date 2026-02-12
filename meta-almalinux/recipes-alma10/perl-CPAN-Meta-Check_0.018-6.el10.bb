@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-CPAN-Meta-Check perl-CPAN-Meta-Check-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-CPAN-Meta-Check-0.018-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-CPAN-Meta-Check = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-CPAN-Meta-Check-0.018-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CPAN-Meta-Check}"
 RDEPENDS:perl-CPAN-Meta-Check = " \
  perl-CPAN-Meta \
  perl-CPAN-Meta-Requirements \
@@ -19,6 +23,7 @@ RDEPENDS:perl-CPAN-Meta-Check = " \
 "
 
 URI_perl-CPAN-Meta-Check-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-CPAN-Meta-Check-tests-0.018-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CPAN-Meta-Check-tests}"
 RDEPENDS:perl-CPAN-Meta-Check-tests = " \
  perl-CPAN-Meta \
  perl-CPAN-Meta-Check \

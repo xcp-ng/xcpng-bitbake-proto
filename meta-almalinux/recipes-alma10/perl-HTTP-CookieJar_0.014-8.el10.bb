@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "perl-HTTP-CookieJar perl-HTTP-CookieJar-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-HTTP-CookieJar-0.014-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-HTTP-CookieJar = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-HTTP-CookieJar-0.014-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-CookieJar}"
 RDEPENDS:perl-HTTP-CookieJar = " \
  perl-libs \
  perl-Carp \
@@ -18,6 +22,7 @@ RDEPENDS:perl-HTTP-CookieJar = " \
 "
 
 URI_perl-HTTP-CookieJar-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-HTTP-CookieJar-tests-0.014-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-CookieJar-tests}"
 RDEPENDS:perl-HTTP-CookieJar-tests = " \
  perl-Test-Requires \
  perl-Test-Harness \

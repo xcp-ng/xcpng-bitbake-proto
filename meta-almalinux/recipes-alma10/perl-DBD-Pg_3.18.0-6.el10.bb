@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-DBD-Pg perl-DBD-Pg-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-DBD-Pg-3.18.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-DBD-Pg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-DBD-Pg-3.18.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-Pg}"
 RDEPENDS:perl-DBD-Pg = " \
  perl-constant \
  perl-libs \
@@ -20,6 +24,7 @@ RDEPENDS:perl-DBD-Pg = " \
 "
 
 URI_perl-DBD-Pg-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-DBD-Pg-tests-3.18.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-Pg-tests}"
 RDEPENDS:perl-DBD-Pg-tests = " \
  perl-libs \
  perl-open \

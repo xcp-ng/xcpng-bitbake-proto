@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "blas lapack blas-devel blas64 blas64_ lapack-devel lapack-static lapack64 lapack64_ blas-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/lapack-3.12.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_blas = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/blas-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_blas}"
 RDEPENDS:blas = " \
  glibc \
  libgcc \
@@ -16,6 +20,7 @@ RDEPENDS:blas = " \
 "
 
 URI_lapack = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lapack-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lapack}"
 RDEPENDS:lapack = " \
  glibc \
  libgcc \
@@ -24,6 +29,7 @@ RDEPENDS:lapack = " \
 "
 
 URI_blas-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/blas-devel-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_blas-devel}"
 RDEPENDS:blas-devel = " \
  blas-devel \
  blas64 \
@@ -35,6 +41,7 @@ RDEPENDS:blas-devel = " \
 "
 
 URI_blas64 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/blas64-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_blas64}"
 RDEPENDS:blas64 = " \
  glibc \
  libgcc \
@@ -42,6 +49,7 @@ RDEPENDS:blas64 = " \
 "
 
 URI_blas64_ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/blas64_-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_blas64_}"
 RDEPENDS:blas64_ = " \
  glibc \
  libgcc \
@@ -49,6 +57,7 @@ RDEPENDS:blas64_ = " \
 "
 
 URI_lapack-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack-devel-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lapack-devel}"
 RDEPENDS:lapack-devel = " \
  blas-devel \
  lapack \
@@ -60,11 +69,13 @@ RDEPENDS:lapack-devel = " \
 "
 
 URI_lapack-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack-static-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lapack-static}"
 RDEPENDS:lapack-static = " \
  lapack-devel \
 "
 
 URI_lapack64 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack64-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lapack64}"
 RDEPENDS:lapack64 = " \
  glibc \
  blas64 \
@@ -73,6 +84,7 @@ RDEPENDS:lapack64 = " \
 "
 
 URI_lapack64_ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/lapack64_-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lapack64_}"
 RDEPENDS:lapack64_ = " \
  glibc \
  blas64_ \
@@ -81,6 +93,7 @@ RDEPENDS:lapack64_ = " \
 "
 
 URI_blas-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/blas-static-3.12.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_blas-static}"
 RDEPENDS:blas-static = " \
  blas-devel \
 "

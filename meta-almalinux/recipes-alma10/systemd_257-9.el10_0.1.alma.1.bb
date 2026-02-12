@@ -8,7 +8,11 @@ PR = "9.el10_0.1.alma.1"
 PACKAGES = "systemd systemd-container systemd-libs systemd-oomd systemd-pam systemd-resolved systemd-rpm-macros systemd-udev systemd-boot-unsigned systemd-devel systemd-journal-remote systemd-ukify"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/systemd-257-9.el10_0.1.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_systemd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd}"
 RDEPENDS:systemd = " \
  systemd-libs \
  systemd-pam \
@@ -37,6 +41,7 @@ RDEPENDS:systemd = " \
 "
 
 URI_systemd-container = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-container-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-container}"
 RDEPENDS:systemd-container = " \
  libacl \
  systemd \
@@ -53,6 +58,7 @@ RDEPENDS:systemd-container = " \
 "
 
 URI_systemd-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-libs-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-libs}"
 RDEPENDS:systemd-libs = " \
  glibc \
  libgcc \
@@ -60,6 +66,7 @@ RDEPENDS:systemd-libs = " \
 "
 
 URI_systemd-oomd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-oomd-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-oomd}"
 RDEPENDS:systemd-oomd = " \
  systemd \
  systemd-udev \
@@ -69,6 +76,7 @@ RDEPENDS:systemd-oomd = " \
 "
 
 URI_systemd-pam = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-pam-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-pam}"
 RDEPENDS:systemd-pam = " \
  systemd \
  libgcc \
@@ -78,6 +86,7 @@ RDEPENDS:systemd-pam = " \
 "
 
 URI_systemd-resolved = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-resolved-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-resolved}"
 RDEPENDS:systemd-resolved = " \
  shadow-utils \
  systemd \
@@ -90,11 +99,13 @@ RDEPENDS:systemd-resolved = " \
 "
 
 URI_systemd-rpm-macros = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-rpm-macros-257-9.el10_0.1.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_systemd-rpm-macros}"
 RDEPENDS:systemd-rpm-macros = " \
  bash \
 "
 
 URI_systemd-udev = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/systemd-udev-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-udev}"
 RDEPENDS:systemd-udev = " \
  systemd \
  grubby \
@@ -112,15 +123,18 @@ RDEPENDS:systemd-udev = " \
 "
 
 URI_systemd-boot-unsigned = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-boot-unsigned-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-boot-unsigned}"
 RDEPENDS:systemd-boot-unsigned = ""
 
 URI_systemd-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-devel-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-devel}"
 RDEPENDS:systemd-devel = " \
  systemd-rpm-macros \
  systemd-libs \
 "
 
 URI_systemd-journal-remote = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-journal-remote-257-9.el10_0.1.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_systemd-journal-remote}"
 RDEPENDS:systemd-journal-remote = " \
  firewalld-filesystem \
  systemd \
@@ -132,6 +146,7 @@ RDEPENDS:systemd-journal-remote = " \
 "
 
 URI_systemd-ukify = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/systemd-ukify-257-9.el10_0.1.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_systemd-ukify}"
 RDEPENDS:systemd-ukify = " \
  python3 \
  systemd \

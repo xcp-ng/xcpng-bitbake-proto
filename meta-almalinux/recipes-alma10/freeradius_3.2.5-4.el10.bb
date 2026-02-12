@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "freeradius freeradius-devel freeradius-doc freeradius-krb5 freeradius-ldap freeradius-utils python3-freeradius freeradius-mysql freeradius-perl freeradius-postgresql freeradius-rest freeradius-sqlite freeradius-unixODBC"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/freeradius-3.2.5-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_freeradius = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeradius-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius}"
 RDEPENDS:freeradius = " \
  glibc-common \
  libpcap \
@@ -29,14 +33,17 @@ RDEPENDS:freeradius = " \
 "
 
 URI_freeradius-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeradius-devel-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-devel}"
 RDEPENDS:freeradius-devel = " \
  freeradius \
 "
 
 URI_freeradius-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeradius-doc-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-doc}"
 RDEPENDS:freeradius-doc = ""
 
 URI_freeradius-krb5 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeradius-krb5-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-krb5}"
 RDEPENDS:freeradius-krb5 = " \
  glibc \
  krb5-libs \
@@ -45,6 +52,7 @@ RDEPENDS:freeradius-krb5 = " \
 "
 
 URI_freeradius-ldap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeradius-ldap-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-ldap}"
 RDEPENDS:freeradius-ldap = " \
  glibc \
  openldap \
@@ -52,6 +60,7 @@ RDEPENDS:freeradius-ldap = " \
 "
 
 URI_freeradius-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeradius-utils-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-utils}"
 RDEPENDS:freeradius-utils = " \
  libpcap \
  freeradius \
@@ -73,6 +82,7 @@ RDEPENDS:freeradius-utils = " \
 "
 
 URI_python3-freeradius = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-freeradius-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-freeradius}"
 RDEPENDS:python3-freeradius = " \
  glibc \
  freeradius \
@@ -81,6 +91,7 @@ RDEPENDS:python3-freeradius = " \
 "
 
 URI_freeradius-mysql = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freeradius-mysql-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-mysql}"
 RDEPENDS:freeradius-mysql = " \
  glibc \
  mariadb-connector-c \
@@ -88,6 +99,7 @@ RDEPENDS:freeradius-mysql = " \
 "
 
 URI_freeradius-perl = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freeradius-perl-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-perl}"
 RDEPENDS:freeradius-perl = " \
  glibc \
  perl-libs \
@@ -95,6 +107,7 @@ RDEPENDS:freeradius-perl = " \
 "
 
 URI_freeradius-postgresql = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freeradius-postgresql-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-postgresql}"
 RDEPENDS:freeradius-postgresql = " \
  glibc \
  freeradius \
@@ -102,6 +115,7 @@ RDEPENDS:freeradius-postgresql = " \
 "
 
 URI_freeradius-rest = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freeradius-rest-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-rest}"
 RDEPENDS:freeradius-rest = " \
  glibc \
  json-c \
@@ -110,6 +124,7 @@ RDEPENDS:freeradius-rest = " \
 "
 
 URI_freeradius-sqlite = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freeradius-sqlite-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-sqlite}"
 RDEPENDS:freeradius-sqlite = " \
  glibc \
  sqlite-libs \
@@ -117,6 +132,7 @@ RDEPENDS:freeradius-sqlite = " \
 "
 
 URI_freeradius-unixODBC = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freeradius-unixODBC-3.2.5-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeradius-unixODBC}"
 RDEPENDS:freeradius-unixODBC = " \
  glibc \
  unixODBC \

@@ -8,7 +8,11 @@ PR = "513.el10"
 PACKAGES = "perl-ExtUtils-Command perl-ExtUtils-MM-Utils perl-ExtUtils-MakeMaker perl-ExtUtils-MakeMaker-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-ExtUtils-Command = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Command-7.70-513.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-Command}"
 RDEPENDS:perl-ExtUtils-Command = " \
  perl-libs \
  perl-Carp \
@@ -19,12 +23,14 @@ RDEPENDS:perl-ExtUtils-Command = " \
 "
 
 URI_perl-ExtUtils-MM-Utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-MM-Utils-7.70-513.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-MM-Utils}"
 RDEPENDS:perl-ExtUtils-MM-Utils = " \
  perl-libs \
  perl-vars \
 "
 
 URI_perl-ExtUtils-MakeMaker = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-MakeMaker-7.70-513.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-MakeMaker}"
 RDEPENDS:perl-ExtUtils-MakeMaker = " \
  perl-libs \
  perl-Getopt-Long \
@@ -54,6 +60,7 @@ RDEPENDS:perl-ExtUtils-MakeMaker = " \
 "
 
 URI_perl-ExtUtils-MakeMaker-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-ExtUtils-MakeMaker-tests-7.70-513.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-MakeMaker-tests}"
 RDEPENDS:perl-ExtUtils-MakeMaker-tests = " \
  perl-libs \
  perl-podlators \

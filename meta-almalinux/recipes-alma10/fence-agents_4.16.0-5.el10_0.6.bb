@@ -8,7 +8,11 @@ PR = "5.el10_0.6"
 PACKAGES = "fence-agents-aliyun fence-agents-all fence-agents-amt-ws fence-agents-apc fence-agents-apc-snmp fence-agents-aws fence-agents-azure-arm fence-agents-bladecenter fence-agents-brocade fence-agents-cisco-mds fence-agents-cisco-ucs fence-agents-common fence-agents-drac5 fence-agents-eaton-snmp fence-agents-emerson fence-agents-eps fence-agents-gce fence-agents-heuristics-ping fence-agents-hpblade fence-agents-ibm-powervs fence-agents-ibm-vpc fence-agents-ibmblade fence-agents-ifmib fence-agents-ilo-moonshot fence-agents-ilo-mp fence-agents-ilo-ssh fence-agents-ilo2 fence-agents-intelmodular fence-agents-ipdu fence-agents-ipmilan fence-agents-kdump fence-agents-kubevirt fence-agents-lpar fence-agents-mpath fence-agents-openstack fence-agents-redfish fence-agents-rhevm fence-agents-rsa fence-agents-rsb fence-agents-sbd fence-agents-scsi fence-agents-virsh fence-agents-vmware-rest fence-agents-vmware-soap fence-agents-wti fence-virt fence-virtd fence-virtd-cpg fence-virtd-libvirt fence-virtd-multicast fence-virtd-serial fence-virtd-tcp ha-cloud-support fence-agents-lpar"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/fence-agents-4.16.0-5.el10_0.6.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_fence-agents-aliyun = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-aliyun-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-aliyun}"
 RDEPENDS:fence-agents-aliyun = " \
  python3 \
  fence-agents-common \
@@ -17,6 +21,7 @@ RDEPENDS:fence-agents-aliyun = " \
 "
 
 URI_fence-agents-all = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-all-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-all}"
 RDEPENDS:fence-agents-all = " \
  fence-agents-ifmib \
  fence-agents-ilo-moonshot \
@@ -55,6 +60,7 @@ RDEPENDS:fence-agents-all = " \
 "
 
 URI_fence-agents-amt-ws = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-amt-ws-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-amt-ws}"
 RDEPENDS:fence-agents-amt-ws = " \
  python3 \
  openwsman-python3 \
@@ -62,6 +68,7 @@ RDEPENDS:fence-agents-amt-ws = " \
 "
 
 URI_fence-agents-apc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-apc-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-apc}"
 RDEPENDS:fence-agents-apc = " \
  python3 \
  fence-agents-common \
@@ -69,6 +76,7 @@ RDEPENDS:fence-agents-apc = " \
 "
 
 URI_fence-agents-apc-snmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-apc-snmp-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-apc-snmp}"
 RDEPENDS:fence-agents-apc-snmp = " \
  python3 \
  net-snmp-utils \
@@ -76,6 +84,7 @@ RDEPENDS:fence-agents-apc-snmp = " \
 "
 
 URI_fence-agents-aws = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-aws-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-aws}"
 RDEPENDS:fence-agents-aws = " \
  python3 \
  fence-agents-common \
@@ -83,6 +92,7 @@ RDEPENDS:fence-agents-aws = " \
 "
 
 URI_fence-agents-azure-arm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-azure-arm-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-azure-arm}"
 RDEPENDS:fence-agents-azure-arm = " \
  python3 \
  fence-agents-common \
@@ -90,6 +100,7 @@ RDEPENDS:fence-agents-azure-arm = " \
 "
 
 URI_fence-agents-bladecenter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-bladecenter-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-bladecenter}"
 RDEPENDS:fence-agents-bladecenter = " \
  python3 \
  fence-agents-common \
@@ -97,6 +108,7 @@ RDEPENDS:fence-agents-bladecenter = " \
 "
 
 URI_fence-agents-brocade = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-brocade-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-brocade}"
 RDEPENDS:fence-agents-brocade = " \
  python3 \
  fence-agents-common \
@@ -104,6 +116,7 @@ RDEPENDS:fence-agents-brocade = " \
 "
 
 URI_fence-agents-cisco-mds = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-cisco-mds-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-cisco-mds}"
 RDEPENDS:fence-agents-cisco-mds = " \
  python3 \
  net-snmp-utils \
@@ -111,12 +124,14 @@ RDEPENDS:fence-agents-cisco-mds = " \
 "
 
 URI_fence-agents-cisco-ucs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-cisco-ucs-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-cisco-ucs}"
 RDEPENDS:fence-agents-cisco-ucs = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-common-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-common}"
 RDEPENDS:fence-agents-common = " \
  python3 \
  openssl-libs \
@@ -128,6 +143,7 @@ RDEPENDS:fence-agents-common = " \
 "
 
 URI_fence-agents-drac5 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-drac5-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-drac5}"
 RDEPENDS:fence-agents-drac5 = " \
  python3 \
  fence-agents-common \
@@ -135,6 +151,7 @@ RDEPENDS:fence-agents-drac5 = " \
 "
 
 URI_fence-agents-eaton-snmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-eaton-snmp-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-eaton-snmp}"
 RDEPENDS:fence-agents-eaton-snmp = " \
  python3 \
  net-snmp-utils \
@@ -142,18 +159,21 @@ RDEPENDS:fence-agents-eaton-snmp = " \
 "
 
 URI_fence-agents-emerson = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-emerson-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-emerson}"
 RDEPENDS:fence-agents-emerson = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-eps = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-eps-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-eps}"
 RDEPENDS:fence-agents-eps = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-gce = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-gce-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-gce}"
 RDEPENDS:fence-agents-gce = " \
  python3 \
  fence-agents-common \
@@ -161,12 +181,14 @@ RDEPENDS:fence-agents-gce = " \
 "
 
 URI_fence-agents-heuristics-ping = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-heuristics-ping-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-heuristics-ping}"
 RDEPENDS:fence-agents-heuristics-ping = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-hpblade = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-hpblade-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-hpblade}"
 RDEPENDS:fence-agents-hpblade = " \
  python3 \
  fence-agents-common \
@@ -174,18 +196,21 @@ RDEPENDS:fence-agents-hpblade = " \
 "
 
 URI_fence-agents-ibm-powervs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ibm-powervs-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ibm-powervs}"
 RDEPENDS:fence-agents-ibm-powervs = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-ibm-vpc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ibm-vpc-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ibm-vpc}"
 RDEPENDS:fence-agents-ibm-vpc = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-ibmblade = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ibmblade-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ibmblade}"
 RDEPENDS:fence-agents-ibmblade = " \
  python3 \
  net-snmp-utils \
@@ -193,6 +218,7 @@ RDEPENDS:fence-agents-ibmblade = " \
 "
 
 URI_fence-agents-ifmib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ifmib-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ifmib}"
 RDEPENDS:fence-agents-ifmib = " \
  python3 \
  net-snmp-utils \
@@ -200,6 +226,7 @@ RDEPENDS:fence-agents-ifmib = " \
 "
 
 URI_fence-agents-ilo-moonshot = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ilo-moonshot-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ilo-moonshot}"
 RDEPENDS:fence-agents-ilo-moonshot = " \
  python3 \
  fence-agents-common \
@@ -207,6 +234,7 @@ RDEPENDS:fence-agents-ilo-moonshot = " \
 "
 
 URI_fence-agents-ilo-mp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ilo-mp-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ilo-mp}"
 RDEPENDS:fence-agents-ilo-mp = " \
  python3 \
  fence-agents-common \
@@ -214,6 +242,7 @@ RDEPENDS:fence-agents-ilo-mp = " \
 "
 
 URI_fence-agents-ilo-ssh = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ilo-ssh-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ilo-ssh}"
 RDEPENDS:fence-agents-ilo-ssh = " \
  python3 \
  fence-agents-common \
@@ -221,6 +250,7 @@ RDEPENDS:fence-agents-ilo-ssh = " \
 "
 
 URI_fence-agents-ilo2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ilo2-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ilo2}"
 RDEPENDS:fence-agents-ilo2 = " \
  python3 \
  fence-agents-common \
@@ -228,6 +258,7 @@ RDEPENDS:fence-agents-ilo2 = " \
 "
 
 URI_fence-agents-intelmodular = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-intelmodular-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-intelmodular}"
 RDEPENDS:fence-agents-intelmodular = " \
  python3 \
  net-snmp-utils \
@@ -235,6 +266,7 @@ RDEPENDS:fence-agents-intelmodular = " \
 "
 
 URI_fence-agents-ipdu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ipdu-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ipdu}"
 RDEPENDS:fence-agents-ipdu = " \
  python3 \
  net-snmp-utils \
@@ -242,6 +274,7 @@ RDEPENDS:fence-agents-ipdu = " \
 "
 
 URI_fence-agents-ipmilan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-ipmilan-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-ipmilan}"
 RDEPENDS:fence-agents-ipmilan = " \
  python3 \
  fence-agents-common \
@@ -249,12 +282,14 @@ RDEPENDS:fence-agents-ipmilan = " \
 "
 
 URI_fence-agents-kdump = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-kdump-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-kdump}"
 RDEPENDS:fence-agents-kdump = " \
  glibc \
  fence-agents-common \
 "
 
 URI_fence-agents-kubevirt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-kubevirt-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-kubevirt}"
 RDEPENDS:fence-agents-kubevirt = " \
  python3 \
  python3-oauthlib \
@@ -270,6 +305,7 @@ RDEPENDS:fence-agents-kubevirt = " \
 "
 
 URI_fence-agents-lpar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-lpar-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-lpar}"
 RDEPENDS:fence-agents-lpar = " \
  python3 \
  fence-agents-common \
@@ -277,6 +313,7 @@ RDEPENDS:fence-agents-lpar = " \
 "
 
 URI_fence-agents-mpath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-mpath-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-mpath}"
 RDEPENDS:fence-agents-mpath = " \
  python3 \
  fence-agents-common \
@@ -284,6 +321,7 @@ RDEPENDS:fence-agents-mpath = " \
 "
 
 URI_fence-agents-openstack = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-openstack-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-openstack}"
 RDEPENDS:fence-agents-openstack = " \
  python3 \
  fence-agents-common \
@@ -291,6 +329,7 @@ RDEPENDS:fence-agents-openstack = " \
 "
 
 URI_fence-agents-redfish = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-redfish-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-redfish}"
 RDEPENDS:fence-agents-redfish = " \
  python3 \
  fence-agents-common \
@@ -298,12 +337,14 @@ RDEPENDS:fence-agents-redfish = " \
 "
 
 URI_fence-agents-rhevm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-rhevm-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-rhevm}"
 RDEPENDS:fence-agents-rhevm = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-rsa = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-rsa-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-rsa}"
 RDEPENDS:fence-agents-rsa = " \
  python3 \
  fence-agents-common \
@@ -311,6 +352,7 @@ RDEPENDS:fence-agents-rsa = " \
 "
 
 URI_fence-agents-rsb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-rsb-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-rsb}"
 RDEPENDS:fence-agents-rsb = " \
  python3 \
  fence-agents-common \
@@ -318,6 +360,7 @@ RDEPENDS:fence-agents-rsb = " \
 "
 
 URI_fence-agents-sbd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-sbd-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-sbd}"
 RDEPENDS:fence-agents-sbd = " \
  python3 \
  fence-agents-common \
@@ -325,6 +368,7 @@ RDEPENDS:fence-agents-sbd = " \
 "
 
 URI_fence-agents-scsi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-scsi-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-scsi}"
 RDEPENDS:fence-agents-scsi = " \
  python3 \
  sg3_utils \
@@ -332,6 +376,7 @@ RDEPENDS:fence-agents-scsi = " \
 "
 
 URI_fence-agents-virsh = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-virsh-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-virsh}"
 RDEPENDS:fence-agents-virsh = " \
  python3 \
  fence-agents-common \
@@ -340,18 +385,21 @@ RDEPENDS:fence-agents-virsh = " \
 "
 
 URI_fence-agents-vmware-rest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-vmware-rest-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-vmware-rest}"
 RDEPENDS:fence-agents-vmware-rest = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-vmware-soap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-vmware-soap-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-vmware-soap}"
 RDEPENDS:fence-agents-vmware-soap = " \
  python3 \
  fence-agents-common \
 "
 
 URI_fence-agents-wti = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-agents-wti-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-wti}"
 RDEPENDS:fence-agents-wti = " \
  python3 \
  fence-agents-common \
@@ -359,6 +407,7 @@ RDEPENDS:fence-agents-wti = " \
 "
 
 URI_fence-virt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-virt-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-virt}"
 RDEPENDS:fence-virt = " \
  glibc \
  systemd \
@@ -366,6 +415,7 @@ RDEPENDS:fence-virt = " \
 "
 
 URI_fence-virtd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-virtd-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-virtd}"
 RDEPENDS:fence-virtd = " \
  libuuid \
  nss \
@@ -375,6 +425,7 @@ RDEPENDS:fence-virtd = " \
 "
 
 URI_fence-virtd-cpg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-virtd-cpg-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-virtd-cpg}"
 RDEPENDS:fence-virtd-cpg = " \
  libqb \
  nss \
@@ -387,6 +438,7 @@ RDEPENDS:fence-virtd-cpg = " \
 "
 
 URI_fence-virtd-libvirt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-virtd-libvirt-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-virtd-libvirt}"
 RDEPENDS:fence-virtd-libvirt = " \
  nss \
  fence-virtd \
@@ -398,6 +450,7 @@ RDEPENDS:fence-virtd-libvirt = " \
 "
 
 URI_fence-virtd-multicast = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-virtd-multicast-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-virtd-multicast}"
 RDEPENDS:fence-virtd-multicast = " \
  nss \
  fence-virtd \
@@ -407,6 +460,7 @@ RDEPENDS:fence-virtd-multicast = " \
 "
 
 URI_fence-virtd-serial = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-virtd-serial-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-virtd-serial}"
 RDEPENDS:fence-virtd-serial = " \
  nss \
  fence-virtd \
@@ -419,6 +473,7 @@ RDEPENDS:fence-virtd-serial = " \
 "
 
 URI_fence-virtd-tcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fence-virtd-tcp-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fence-virtd-tcp}"
 RDEPENDS:fence-virtd-tcp = " \
  nss \
  fence-virtd \
@@ -428,6 +483,7 @@ RDEPENDS:fence-virtd-tcp = " \
 "
 
 URI_ha-cloud-support = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ha-cloud-support-4.16.0-5.el10_0.6.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ha-cloud-support}"
 RDEPENDS:ha-cloud-support = " \
  python3-cffi \
  python3-charset-normalizer \
@@ -454,6 +510,7 @@ RDEPENDS:ha-cloud-support = " \
 "
 
 URI_fence-agents-lpar = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/fence-agents-lpar-4.16.0-5.el10_0.6.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fence-agents-lpar}"
 RDEPENDS:fence-agents-lpar = " \
  python3 \
  fence-agents-common \

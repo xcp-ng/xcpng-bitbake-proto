@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-Class-Method-Modifiers perl-Class-Method-Modifiers-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Class-Method-Modifiers-2.15-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Class-Method-Modifiers = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Class-Method-Modifiers-2.15-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Class-Method-Modifiers}"
 RDEPENDS:perl-Class-Method-Modifiers = " \
  perl-libs \
  perl-Carp \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Class-Method-Modifiers = " \
 "
 
 URI_perl-Class-Method-Modifiers-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Class-Method-Modifiers-tests-2.15-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Class-Method-Modifiers-tests}"
 RDEPENDS:perl-Class-Method-Modifiers-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Encode perl-Encode-devel perl-encoding perl-Encode-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Encode-3.21-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Encode = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Encode-3.21-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Encode}"
 RDEPENDS:perl-Encode = " \
  perl-constant \
  perl-libs \
@@ -28,6 +32,7 @@ RDEPENDS:perl-Encode = " \
 "
 
 URI_perl-Encode-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Encode-devel-3.21-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Encode-devel}"
 RDEPENDS:perl-Encode-devel = " \
  perl-constant \
  perl-libs \
@@ -39,6 +44,7 @@ RDEPENDS:perl-Encode-devel = " \
 "
 
 URI_perl-encoding = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-encoding-3.00-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-encoding}"
 RDEPENDS:perl-encoding = " \
  perl-constant \
  perl-libs \
@@ -48,6 +54,7 @@ RDEPENDS:perl-encoding = " \
 "
 
 URI_perl-Encode-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Encode-tests-3.21-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Encode-tests}"
 RDEPENDS:perl-Encode-tests = " \
  perl-Scalar-List-Utils \
  perl-libs \

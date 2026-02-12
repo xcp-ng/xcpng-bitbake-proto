@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "dmidecode"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/dmidecode-3.6-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_dmidecode = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/dmidecode-3.6-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_dmidecode}"
 RDEPENDS:dmidecode = " \
  glibc \
 "

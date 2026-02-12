@@ -8,13 +8,18 @@ PR = "511.el10"
 PACKAGES = "perl-PerlIO-via-QuotedPrint perl-PerlIO-via-QuotedPrint-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-PerlIO-via-QuotedPrint-0.10-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-PerlIO-via-QuotedPrint = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-PerlIO-via-QuotedPrint-0.10-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-PerlIO-via-QuotedPrint}"
 RDEPENDS:perl-PerlIO-via-QuotedPrint = " \
  perl-libs \
  perl-MIME-Base64 \
 "
 
 URI_perl-PerlIO-via-QuotedPrint-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-PerlIO-via-QuotedPrint-tests-0.10-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-PerlIO-via-QuotedPrint-tests}"
 RDEPENDS:perl-PerlIO-via-QuotedPrint-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "gtk-update-icon-cache gtk3 gtk3-devel gtk3-immodule-xim gtk3-immodules gtk3-devel-docs gtk3-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gtk3-3.24.43-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gtk-update-icon-cache = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk-update-icon-cache-3.24.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk-update-icon-cache}"
 RDEPENDS:gtk-update-icon-cache = " \
  glibc \
  glib2 \
@@ -16,6 +20,7 @@ RDEPENDS:gtk-update-icon-cache = " \
 "
 
 URI_gtk3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk3-3.24.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk3}"
 RDEPENDS:gtk3 = " \
  libtracker-sparql \
  cups-libs \
@@ -53,6 +58,7 @@ RDEPENDS:gtk3 = " \
 "
 
 URI_gtk3-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk3-devel-3.24.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk3-devel}"
 RDEPENDS:gtk3-devel = " \
  glib2-devel \
  pango \
@@ -89,6 +95,7 @@ RDEPENDS:gtk3-devel = " \
 "
 
 URI_gtk3-immodule-xim = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk3-immodule-xim-3.24.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk3-immodule-xim}"
 RDEPENDS:gtk3-immodule-xim = " \
  pango \
  libX11 \
@@ -98,6 +105,7 @@ RDEPENDS:gtk3-immodule-xim = " \
 "
 
 URI_gtk3-immodules = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk3-immodules-3.24.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk3-immodules}"
 RDEPENDS:gtk3-immodules = " \
  glibc \
  gtk3 \
@@ -106,11 +114,13 @@ RDEPENDS:gtk3-immodules = " \
 "
 
 URI_gtk3-devel-docs = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtk3-devel-docs-3.24.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk3-devel-docs}"
 RDEPENDS:gtk3-devel-docs = " \
  gtk3 \
 "
 
 URI_gtk3-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gtk3-tests-3.24.43-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk3-tests}"
 RDEPENDS:gtk3-tests = " \
  atk \
  pango \

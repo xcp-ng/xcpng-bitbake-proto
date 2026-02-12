@@ -8,7 +8,11 @@ PR = "11.el10"
 PACKAGES = "perl-Digest-CRC perl-Digest-CRC-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Digest-CRC-0.24-11.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Digest-CRC = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Digest-CRC-0.24-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest-CRC}"
 RDEPENDS:perl-Digest-CRC = " \
  perl-libs \
  perl-vars \
@@ -19,6 +23,7 @@ RDEPENDS:perl-Digest-CRC = " \
 "
 
 URI_perl-Digest-CRC-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Digest-CRC-tests-0.24-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest-CRC-tests}"
 RDEPENDS:perl-Digest-CRC-tests = " \
  perl-Test-Harness \
  perl-Fcntl \

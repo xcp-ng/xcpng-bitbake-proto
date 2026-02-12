@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "maven-dependency-plugin maven-dependency-plugin-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/maven-dependency-plugin-3.6.1-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_maven-dependency-plugin = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-dependency-plugin-3.6.1-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-dependency-plugin}"
 RDEPENDS:maven-dependency-plugin = " \
  plexus-utils \
  javapackages-filesystem \
@@ -25,6 +29,7 @@ RDEPENDS:maven-dependency-plugin = " \
 "
 
 URI_maven-dependency-plugin-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-dependency-plugin-javadoc-3.6.1-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-dependency-plugin-javadoc}"
 RDEPENDS:maven-dependency-plugin-javadoc = " \
  javapackages-filesystem \
 "

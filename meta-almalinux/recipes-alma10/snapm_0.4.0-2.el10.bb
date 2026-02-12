@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "python3-snapm python3-snapm-doc snapm"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/snapm-0.4.0-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-snapm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-snapm-0.4.0-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-snapm}"
 RDEPENDS:python3-snapm = " \
  python3 \
  python3-wcwidth \
@@ -21,9 +25,11 @@ RDEPENDS:python3-snapm = " \
 "
 
 URI_python3-snapm-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-snapm-doc-0.4.0-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-snapm-doc}"
 RDEPENDS:python3-snapm-doc = ""
 
 URI_snapm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/snapm-0.4.0-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_snapm}"
 RDEPENDS:snapm = " \
  python3 \
  python3-snapm \

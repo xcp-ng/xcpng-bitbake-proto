@@ -8,7 +8,11 @@ PR = "14.el10"
 PACKAGES = "sisu sisu-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/sisu-0.3.5-14.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sisu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sisu-0.3.5-14.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_sisu}"
 RDEPENDS:sisu = " \
  plexus-classworlds \
  plexus-containers-component-annotations \
@@ -18,6 +22,7 @@ RDEPENDS:sisu = " \
 "
 
 URI_sisu-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/sisu-javadoc-0.3.5-14.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_sisu-javadoc}"
 RDEPENDS:sisu-javadoc = " \
  javapackages-filesystem \
 "

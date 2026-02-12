@@ -8,7 +8,11 @@ PR = "44.el10"
 PACKAGES = "perl-Digest-SHA1 perl-Digest-SHA1-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Digest-SHA1-2.13-44.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Digest-SHA1 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Digest-SHA1-2.13-44.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest-SHA1}"
 RDEPENDS:perl-Digest-SHA1 = " \
  perl-libs \
  perl-vars \
@@ -19,6 +23,7 @@ RDEPENDS:perl-Digest-SHA1 = " \
 "
 
 URI_perl-Digest-SHA1-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Digest-SHA1-tests-2.13-44.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest-SHA1-tests}"
 RDEPENDS:perl-Digest-SHA1-tests = " \
  perl-Test \
  perl-Test-Harness \

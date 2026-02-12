@@ -8,7 +8,11 @@ PR = "13.el10"
 PACKAGES = "symlinks"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/symlinks-1.7-13.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_symlinks = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/symlinks-1.7-13.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_symlinks}"
 RDEPENDS:symlinks = " \
  glibc \
 "

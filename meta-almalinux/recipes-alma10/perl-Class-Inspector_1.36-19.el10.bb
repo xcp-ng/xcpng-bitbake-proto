@@ -8,7 +8,11 @@ PR = "19.el10"
 PACKAGES = "perl-Class-Inspector perl-Class-Inspector-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Class-Inspector-1.36-19.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Class-Inspector = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Class-Inspector-1.36-19.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Class-Inspector}"
 RDEPENDS:perl-Class-Inspector = " \
  perl-libs \
  perl-Class-Inspector \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Class-Inspector = " \
 "
 
 URI_perl-Class-Inspector-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Class-Inspector-tests-1.36-19.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Class-Inspector-tests}"
 RDEPENDS:perl-Class-Inspector-tests = " \
  perl-constant \
  perl-Test-Harness \

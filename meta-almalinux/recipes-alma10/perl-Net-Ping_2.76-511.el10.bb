@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Net-Ping perl-Net-Ping-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Net-Ping-2.76-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Net-Ping = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Net-Ping-2.76-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-Ping}"
 RDEPENDS:perl-Net-Ping = " \
  perl-constant \
  perl-libs \
@@ -24,6 +28,7 @@ RDEPENDS:perl-Net-Ping = " \
 "
 
 URI_perl-Net-Ping-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Net-Ping-tests-2.76-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-Ping-tests}"
 RDEPENDS:perl-Net-Ping-tests = " \
  perl-Test-Harness \
  perl-libs \

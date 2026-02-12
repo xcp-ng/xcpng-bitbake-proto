@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "librsvg2 librsvg2-devel librsvg2-tools rsvg-pixbuf-loader"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/librsvg2-2.57.1-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_librsvg2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librsvg2-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librsvg2}"
 RDEPENDS:librsvg2 = " \
  freetype \
  libpng \
@@ -26,6 +30,7 @@ RDEPENDS:librsvg2 = " \
 "
 
 URI_librsvg2-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librsvg2-devel-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librsvg2-devel}"
 RDEPENDS:librsvg2-devel = " \
  glib2-devel \
  librsvg2 \
@@ -35,6 +40,7 @@ RDEPENDS:librsvg2-devel = " \
 "
 
 URI_librsvg2-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/librsvg2-tools-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librsvg2-tools}"
 RDEPENDS:librsvg2-tools = " \
  librsvg2 \
  libgcc \
@@ -49,6 +55,7 @@ RDEPENDS:librsvg2-tools = " \
 "
 
 URI_rsvg-pixbuf-loader = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rsvg-pixbuf-loader-2.57.1-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rsvg-pixbuf-loader}"
 RDEPENDS:rsvg-pixbuf-loader = " \
  freetype \
  libpng \

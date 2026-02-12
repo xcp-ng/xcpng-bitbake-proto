@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "dnsconfd dnsconfd-dracut dnsconfd-micro dnsconfd-selinux dnsconfd-unbound"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/dnsconfd-1.7.2-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_dnsconfd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dnsconfd-1.7.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_dnsconfd}"
 RDEPENDS:dnsconfd = " \
  python3 \
  python3-pyyaml \
@@ -24,6 +28,7 @@ RDEPENDS:dnsconfd = " \
 "
 
 URI_dnsconfd-dracut = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dnsconfd-dracut-1.7.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_dnsconfd-dracut}"
 RDEPENDS:dnsconfd-dracut = " \
  unbound \
  dnsconfd-micro \
@@ -33,6 +38,7 @@ RDEPENDS:dnsconfd-dracut = " \
 "
 
 URI_dnsconfd-micro = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dnsconfd-micro-1.7.2-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_dnsconfd-micro}"
 RDEPENDS:dnsconfd-micro = " \
  systemd-libs \
  dnsconfd \
@@ -44,6 +50,7 @@ RDEPENDS:dnsconfd-micro = " \
 "
 
 URI_dnsconfd-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dnsconfd-selinux-1.7.2-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_dnsconfd-selinux}"
 RDEPENDS:dnsconfd-selinux = " \
  dnsconfd \
  policycoreutils-python-utils \
@@ -55,6 +62,7 @@ RDEPENDS:dnsconfd-selinux = " \
 "
 
 URI_dnsconfd-unbound = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/dnsconfd-unbound-1.7.2-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_dnsconfd-unbound}"
 RDEPENDS:dnsconfd-unbound = " \
  dnsconfd \
  bash \

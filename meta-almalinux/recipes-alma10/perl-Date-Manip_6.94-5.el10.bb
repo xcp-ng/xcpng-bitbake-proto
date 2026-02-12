@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-Date-Manip perl-Date-Manip-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Date-Manip-6.94-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Date-Manip = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Date-Manip-6.94-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Date-Manip}"
 RDEPENDS:perl-Date-Manip = " \
  perl-Date-Manip \
  perl-libs \
@@ -24,6 +28,7 @@ RDEPENDS:perl-Date-Manip = " \
 "
 
 URI_perl-Date-Manip-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Date-Manip-tests-6.94-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Date-Manip-tests}"
 RDEPENDS:perl-Date-Manip-tests = " \
  perl-Date-Manip \
  perl-Test-Harness \

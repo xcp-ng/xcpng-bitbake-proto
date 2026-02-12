@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gnome-bluetooth gnome-bluetooth-libs gnome-bluetooth-libs-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-bluetooth-47.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-bluetooth = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-bluetooth-47.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-bluetooth}"
 RDEPENDS:gnome-bluetooth = " \
  gnome-bluetooth-libs \
  bluez \
@@ -22,6 +26,7 @@ RDEPENDS:gnome-bluetooth = " \
 "
 
 URI_gnome-bluetooth-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-bluetooth-libs-47.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-bluetooth-libs}"
 RDEPENDS:gnome-bluetooth-libs = " \
  systemd-libs \
  gsound \
@@ -35,6 +40,7 @@ RDEPENDS:gnome-bluetooth-libs = " \
 "
 
 URI_gnome-bluetooth-libs-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gnome-bluetooth-libs-devel-47.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-bluetooth-libs-devel}"
 RDEPENDS:gnome-bluetooth-libs-devel = " \
  gnome-bluetooth-libs \
  glib2-devel \

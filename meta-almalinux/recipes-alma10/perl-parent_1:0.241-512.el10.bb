@@ -8,12 +8,17 @@ PR = "512.el10"
 PACKAGES = "perl-parent perl-parent-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-parent-0.241-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-parent = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-parent-0.241-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-parent}"
 RDEPENDS:perl-parent = " \
  perl-libs \
 "
 
 URI_perl-parent-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-parent-tests-0.241-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-parent-tests}"
 RDEPENDS:perl-parent-tests = " \
  perl-Test-Harness \
  perl-libs \

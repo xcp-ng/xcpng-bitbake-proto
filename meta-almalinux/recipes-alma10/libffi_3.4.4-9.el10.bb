@@ -8,12 +8,17 @@ PR = "9.el10"
 PACKAGES = "libffi libffi-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libffi-3.4.4-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libffi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libffi-3.4.4-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libffi}"
 RDEPENDS:libffi = " \
  glibc \
 "
 
 URI_libffi-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libffi-devel-3.4.4-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libffi-devel}"
 RDEPENDS:libffi-devel = " \
  libffi \
  pkgconf-pkg-config \

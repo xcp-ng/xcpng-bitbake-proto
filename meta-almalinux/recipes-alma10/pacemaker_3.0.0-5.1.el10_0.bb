@@ -8,7 +8,11 @@ PR = "5.1.el10_0"
 PACKAGES = "pacemaker-cluster-libs pacemaker-libs pacemaker-schemas"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/pacemaker-3.0.0-5.1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pacemaker-cluster-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pacemaker-cluster-libs-3.0.0-5.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pacemaker-cluster-libs}"
 RDEPENDS:pacemaker-cluster-libs = " \
  libqb \
  libuuid \
@@ -24,6 +28,7 @@ RDEPENDS:pacemaker-cluster-libs = " \
 "
 
 URI_pacemaker-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pacemaker-libs-3.0.0-5.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pacemaker-libs}"
 RDEPENDS:pacemaker-libs = " \
  libqb \
  libuuid \
@@ -40,6 +45,7 @@ RDEPENDS:pacemaker-libs = " \
 "
 
 URI_pacemaker-schemas = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pacemaker-schemas-3.0.0-5.1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_pacemaker-schemas}"
 RDEPENDS:pacemaker-schemas = " \
  pkgconf-pkg-config \
 "

@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-JSON perl-JSON-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-JSON-4.10-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-JSON = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-JSON-4.10-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-JSON}"
 RDEPENDS:perl-JSON = " \
  perl-constant \
  perl-Math-BigInt \
@@ -21,6 +25,7 @@ RDEPENDS:perl-JSON = " \
 "
 
 URI_perl-JSON-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-JSON-tests-4.10-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-JSON-tests}"
 RDEPENDS:perl-JSON-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-ExtUtils-ParseXS perl-ExtUtils-ParseXS-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-ExtUtils-ParseXS = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-ParseXS-3.51-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-ParseXS}"
 RDEPENDS:perl-ExtUtils-ParseXS = " \
  perl-libs \
  perl-ExtUtils-ParseXS \
@@ -21,6 +25,7 @@ RDEPENDS:perl-ExtUtils-ParseXS = " \
 "
 
 URI_perl-ExtUtils-ParseXS-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-ExtUtils-ParseXS-tests-3.51-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-ParseXS-tests}"
 RDEPENDS:perl-ExtUtils-ParseXS-tests = " \
  perl-Test-Harness \
  perl-libs \

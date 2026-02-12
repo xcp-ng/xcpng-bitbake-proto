@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "coreutils coreutils-common coreutils-single"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/coreutils-9.5-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_coreutils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/coreutils-9.5-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_coreutils}"
 RDEPENDS:coreutils = " \
  libacl \
  gmp \
@@ -21,9 +25,11 @@ RDEPENDS:coreutils = " \
 "
 
 URI_coreutils-common = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/coreutils-common-9.5-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_coreutils-common}"
 RDEPENDS:coreutils-common = ""
 
 URI_coreutils-single = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/coreutils-single-9.5-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_coreutils-single}"
 RDEPENDS:coreutils-single = " \
  libacl \
  libattr \

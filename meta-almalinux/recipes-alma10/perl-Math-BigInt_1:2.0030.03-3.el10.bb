@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "perl-Math-BigInt perl-Math-BigInt-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Math-BigInt-2.0030.03-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Math-BigInt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Math-BigInt-2.0030.03-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Math-BigInt}"
 RDEPENDS:perl-Math-BigInt = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -21,6 +25,7 @@ RDEPENDS:perl-Math-BigInt = " \
 "
 
 URI_perl-Math-BigInt-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Math-BigInt-tests-2.0030.03-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Math-BigInt-tests}"
 RDEPENDS:perl-Math-BigInt-tests = " \
  perl-Test-Harness \
  perl-libs \

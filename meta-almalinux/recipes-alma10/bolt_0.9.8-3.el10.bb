@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "bolt"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/bolt-0.9.8-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_bolt = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/bolt-0.9.8-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bolt}"
 RDEPENDS:bolt = " \
  systemd \
  systemd-libs \

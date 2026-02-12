@@ -8,7 +8,11 @@ PR = "36.el10"
 PACKAGES = "byaccj"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/byaccj-1.15-36.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_byaccj = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/byaccj-1.15-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_byaccj}"
 RDEPENDS:byaccj = " \
  glibc \
 "

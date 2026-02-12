@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "virt-v2v virt-v2v-bash-completion virt-v2v-man-pages-ja virt-v2v-man-pages-uk"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/virt-v2v-2.7.1-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_virt-v2v = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/virt-v2v-2.7.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_virt-v2v}"
 RDEPENDS:virt-v2v = " \
  curl \
  libnbd \
@@ -43,17 +47,20 @@ RDEPENDS:virt-v2v = " \
 "
 
 URI_virt-v2v-bash-completion = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/virt-v2v-bash-completion-2.7.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_virt-v2v-bash-completion}"
 RDEPENDS:virt-v2v-bash-completion = " \
  virt-v2v \
  bash-completion \
 "
 
 URI_virt-v2v-man-pages-ja = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/virt-v2v-man-pages-ja-2.7.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_virt-v2v-man-pages-ja}"
 RDEPENDS:virt-v2v-man-pages-ja = " \
  virt-v2v \
 "
 
 URI_virt-v2v-man-pages-uk = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/virt-v2v-man-pages-uk-2.7.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_virt-v2v-man-pages-uk}"
 RDEPENDS:virt-v2v-man-pages-uk = " \
  virt-v2v \
 "

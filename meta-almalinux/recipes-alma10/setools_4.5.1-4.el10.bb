@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "python3-setools setools-console setools setools-console-analyses setools-gui"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/setools-4.5.1-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-setools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-setools-4.5.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-setools}"
 RDEPENDS:python3-setools = " \
  python3 \
  python3-setuptools \
@@ -18,6 +22,7 @@ RDEPENDS:python3-setools = " \
 "
 
 URI_setools-console = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/setools-console-4.5.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_setools-console}"
 RDEPENDS:setools-console = " \
  python3 \
  libselinux \
@@ -25,6 +30,7 @@ RDEPENDS:setools-console = " \
 "
 
 URI_setools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/setools-4.5.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_setools}"
 RDEPENDS:setools = " \
  setools-console-analyses \
  setools-gui \
@@ -32,6 +38,7 @@ RDEPENDS:setools = " \
 "
 
 URI_setools-console-analyses = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/setools-console-analyses-4.5.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_setools-console-analyses}"
 RDEPENDS:setools-console-analyses = " \
  python3 \
  libselinux \
@@ -40,6 +47,7 @@ RDEPENDS:setools-console-analyses = " \
 "
 
 URI_setools-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/setools-gui-4.5.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_setools-gui}"
 RDEPENDS:setools-gui = " \
  python3 \
  python3-pyqt6 \

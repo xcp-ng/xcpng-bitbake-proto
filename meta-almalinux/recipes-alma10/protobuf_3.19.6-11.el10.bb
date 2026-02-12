@@ -8,7 +8,11 @@ PR = "11.el10"
 PACKAGES = "protobuf protobuf-lite python3-protobuf protobuf-compiler protobuf-devel protobuf-lite-devel protobuf-emacs protobuf-vim"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/protobuf-3.19.6-11.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_protobuf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/protobuf-3.19.6-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_protobuf}"
 RDEPENDS:protobuf = " \
  glibc \
  libgcc \
@@ -17,6 +21,7 @@ RDEPENDS:protobuf = " \
 "
 
 URI_protobuf-lite = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/protobuf-lite-3.19.6-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_protobuf-lite}"
 RDEPENDS:protobuf-lite = " \
  glibc \
  libgcc \
@@ -25,6 +30,7 @@ RDEPENDS:protobuf-lite = " \
 "
 
 URI_python3-protobuf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-protobuf-3.19.6-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-protobuf}"
 RDEPENDS:python3-protobuf = " \
  python3 \
  protobuf \
@@ -34,6 +40,7 @@ RDEPENDS:python3-protobuf = " \
 "
 
 URI_protobuf-compiler = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/protobuf-compiler-3.19.6-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_protobuf-compiler}"
 RDEPENDS:protobuf-compiler = " \
  protobuf \
  zlib-ng-compat \
@@ -43,6 +50,7 @@ RDEPENDS:protobuf-compiler = " \
 "
 
 URI_protobuf-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/protobuf-devel-3.19.6-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_protobuf-devel}"
 RDEPENDS:protobuf-devel = " \
  protobuf \
  zlib-ng-compat-devel \
@@ -51,6 +59,7 @@ RDEPENDS:protobuf-devel = " \
 "
 
 URI_protobuf-lite-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/protobuf-lite-devel-3.19.6-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_protobuf-lite-devel}"
 RDEPENDS:protobuf-lite-devel = " \
  protobuf-lite \
  pkgconf-pkg-config \
@@ -58,11 +67,13 @@ RDEPENDS:protobuf-lite-devel = " \
 "
 
 URI_protobuf-emacs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/protobuf-emacs-3.19.6-11.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_protobuf-emacs}"
 RDEPENDS:protobuf-emacs = " \
  emacs-filesystem \
 "
 
 URI_protobuf-vim = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/protobuf-vim-3.19.6-11.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_protobuf-vim}"
 RDEPENDS:protobuf-vim = " \
  vim-filesystem \
 "

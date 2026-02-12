@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "mysql8.4 mysql8.4-common mysql8.4-errmsg mysql8.4-libs mysql8.4-server mysql8.4-devel mysql8.4-test mysql8.4-test-data"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mysql8.4-8.4.6-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mysql8.4 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4}"
 RDEPENDS:mysql8.4 = " \
  zlib-ng-compat \
  openssl-libs \
@@ -24,16 +28,19 @@ RDEPENDS:mysql8.4 = " \
 "
 
 URI_mysql8.4-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-common-8.4.6-2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4-common}"
 RDEPENDS:mysql8.4-common = " \
  mariadb-connector-c-config \
 "
 
 URI_mysql8.4-errmsg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-errmsg-8.4.6-2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4-errmsg}"
 RDEPENDS:mysql8.4-errmsg = " \
  mysql8.4-common \
 "
 
 URI_mysql8.4-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-libs-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4-libs}"
 RDEPENDS:mysql8.4-libs = " \
  zlib-ng-compat \
  openssl-libs \
@@ -45,6 +52,7 @@ RDEPENDS:mysql8.4-libs = " \
 "
 
 URI_mysql8.4-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql8.4-server-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4-server}"
 RDEPENDS:mysql8.4-server = " \
  systemd \
  perl-libs \
@@ -75,6 +83,7 @@ RDEPENDS:mysql8.4-server = " \
 "
 
 URI_mysql8.4-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mysql8.4-devel-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4-devel}"
 RDEPENDS:mysql8.4-devel = " \
  zlib-ng-compat-devel \
  libzstd-devel \
@@ -85,6 +94,7 @@ RDEPENDS:mysql8.4-devel = " \
 "
 
 URI_mysql8.4-test = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mysql8.4-test-8.4.6-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4-test}"
 RDEPENDS:mysql8.4-test = " \
  mysql8.4-test-data \
  perl-libwww-perl \
@@ -123,6 +133,7 @@ RDEPENDS:mysql8.4-test = " \
 "
 
 URI_mysql8.4-test-data = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mysql8.4-test-data-8.4.6-2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mysql8.4-test-data}"
 RDEPENDS:mysql8.4-test-data = " \
  perl-libs \
  perl-FindBin \

@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "libXxf86vm libXxf86vm-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libXxf86vm-1.1.5-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libXxf86vm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libXxf86vm-1.1.5-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libXxf86vm}"
 RDEPENDS:libXxf86vm = " \
  glibc \
  libX11 \
@@ -16,6 +20,7 @@ RDEPENDS:libXxf86vm = " \
 "
 
 URI_libXxf86vm-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libXxf86vm-devel-1.1.5-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libXxf86vm-devel}"
 RDEPENDS:libXxf86vm-devel = " \
  libXext-devel \
  pkgconf-pkg-config \

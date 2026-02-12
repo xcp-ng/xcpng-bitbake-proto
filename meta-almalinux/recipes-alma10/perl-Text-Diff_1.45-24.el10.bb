@@ -8,7 +8,11 @@ PR = "24.el10"
 PACKAGES = "perl-Text-Diff perl-Text-Diff-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Text-Diff-1.45-24.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Text-Diff = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Text-Diff-1.45-24.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Diff}"
 RDEPENDS:perl-Text-Diff = " \
  perl-constant \
  perl-libs \
@@ -19,6 +23,7 @@ RDEPENDS:perl-Text-Diff = " \
 "
 
 URI_perl-Text-Diff-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Text-Diff-tests-1.45-24.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Diff-tests}"
 RDEPENDS:perl-Text-Diff-tests = " \
  perl-Test \
  perl-Test-Harness \

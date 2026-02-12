@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "enchant2 enchant2-voikko enchant2-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/enchant2-2.6.7-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_enchant2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/enchant2-2.6.7-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_enchant2}"
 RDEPENDS:enchant2 = " \
  libgcc \
  hunspell \
@@ -18,6 +22,7 @@ RDEPENDS:enchant2 = " \
 "
 
 URI_enchant2-voikko = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/enchant2-voikko-2.6.7-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_enchant2-voikko}"
 RDEPENDS:enchant2-voikko = " \
  glibc \
  glib2 \
@@ -26,6 +31,7 @@ RDEPENDS:enchant2-voikko = " \
 "
 
 URI_enchant2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/enchant2-devel-2.6.7-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_enchant2-devel}"
 RDEPENDS:enchant2-devel = " \
  glib2-devel \
  pkgconf-pkg-config \

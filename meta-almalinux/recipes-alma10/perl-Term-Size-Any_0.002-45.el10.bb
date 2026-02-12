@@ -8,7 +8,11 @@ PR = "45.el10"
 PACKAGES = "perl-Term-Size-Any perl-Term-Size-Any-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Term-Size-Any-0.002-45.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Term-Size-Any = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Term-Size-Any-0.002-45.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Term-Size-Any}"
 RDEPENDS:perl-Term-Size-Any = " \
  perl-libs \
  perl-vars \
@@ -16,6 +20,7 @@ RDEPENDS:perl-Term-Size-Any = " \
 "
 
 URI_perl-Term-Size-Any-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Term-Size-Any-tests-0.002-45.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Term-Size-Any-tests}"
 RDEPENDS:perl-Term-Size-Any-tests = " \
  perl-Test-Harness \
  perl-Test-Simple \

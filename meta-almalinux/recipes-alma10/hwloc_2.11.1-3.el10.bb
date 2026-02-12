@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "hwloc hwloc-libs hwloc-devel hwloc-gui"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/hwloc-2.11.1-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_hwloc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/hwloc-2.11.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_hwloc}"
 RDEPENDS:hwloc = " \
  systemd \
  hwloc-libs \
@@ -18,6 +22,7 @@ RDEPENDS:hwloc = " \
 "
 
 URI_hwloc-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/hwloc-libs-2.11.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_hwloc-libs}"
 RDEPENDS:hwloc-libs = " \
  libpciaccess \
  systemd-libs \
@@ -27,6 +32,7 @@ RDEPENDS:hwloc-libs = " \
 "
 
 URI_hwloc-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hwloc-devel-2.11.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_hwloc-devel}"
 RDEPENDS:hwloc-devel = " \
  libxml2-devel \
  pkgconf-pkg-config \
@@ -36,6 +42,7 @@ RDEPENDS:hwloc-devel = " \
 "
 
 URI_hwloc-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hwloc-gui-2.11.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_hwloc-gui}"
 RDEPENDS:hwloc-gui = " \
  libX11 \
  hwloc-libs \

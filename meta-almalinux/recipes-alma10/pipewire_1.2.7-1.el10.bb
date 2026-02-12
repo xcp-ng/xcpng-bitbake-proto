@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "pipewire pipewire-alsa pipewire-devel pipewire-gstreamer pipewire-jack-audio-connection-kit pipewire-jack-audio-connection-kit-devel pipewire-jack-audio-connection-kit-libs pipewire-libs pipewire-module-x11 pipewire-plugin-libcamera pipewire-pulseaudio pipewire-utils pipewire-doc pipewire-plugin-vulkan pipewire-v4l2"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/pipewire-1.2.7-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pipewire = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire}"
 RDEPENDS:pipewire = " \
  shadow-utils \
  systemd \
@@ -20,6 +24,7 @@ RDEPENDS:pipewire = " \
 "
 
 URI_pipewire-alsa = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-alsa-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-alsa}"
 RDEPENDS:pipewire-alsa = " \
  glibc \
  pipewire-libs \
@@ -27,6 +32,7 @@ RDEPENDS:pipewire-alsa = " \
 "
 
 URI_pipewire-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-devel-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-devel}"
 RDEPENDS:pipewire-devel = " \
  pipewire-libs \
  pipewire-devel \
@@ -34,6 +40,7 @@ RDEPENDS:pipewire-devel = " \
 "
 
 URI_pipewire-gstreamer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-gstreamer-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-gstreamer}"
 RDEPENDS:pipewire-gstreamer = " \
  gstreamer1 \
  libgcc \
@@ -44,17 +51,20 @@ RDEPENDS:pipewire-gstreamer = " \
 "
 
 URI_pipewire-jack-audio-connection-kit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-jack-audio-connection-kit-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-jack-audio-connection-kit}"
 RDEPENDS:pipewire-jack-audio-connection-kit = " \
  pipewire-jack-audio-connection-kit-libs \
 "
 
 URI_pipewire-jack-audio-connection-kit-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-jack-audio-connection-kit-devel-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-jack-audio-connection-kit-devel}"
 RDEPENDS:pipewire-jack-audio-connection-kit-devel = " \
  pipewire-jack-audio-connection-kit-libs \
  pkgconf-pkg-config \
 "
 
 URI_pipewire-jack-audio-connection-kit-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-jack-audio-connection-kit-libs-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-jack-audio-connection-kit-libs}"
 RDEPENDS:pipewire-jack-audio-connection-kit-libs = " \
  glibc \
  pipewire-libs \
@@ -63,6 +73,7 @@ RDEPENDS:pipewire-jack-audio-connection-kit-libs = " \
 "
 
 URI_pipewire-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-libs-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-libs}"
 RDEPENDS:pipewire-libs = " \
  liblc3 \
  libldac \
@@ -87,6 +98,7 @@ RDEPENDS:pipewire-libs = " \
 "
 
 URI_pipewire-module-x11 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-module-x11-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-module-x11}"
 RDEPENDS:pipewire-module-x11 = " \
  libXfixes \
  libcanberra \
@@ -96,6 +108,7 @@ RDEPENDS:pipewire-module-x11 = " \
 "
 
 URI_pipewire-plugin-libcamera = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-plugin-libcamera-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-plugin-libcamera}"
 RDEPENDS:pipewire-plugin-libcamera = " \
  libcamera \
  libgcc \
@@ -106,6 +119,7 @@ RDEPENDS:pipewire-plugin-libcamera = " \
 "
 
 URI_pipewire-pulseaudio = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-pulseaudio-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-pulseaudio}"
 RDEPENDS:pipewire-pulseaudio = " \
  systemd-libs \
  libgcc \
@@ -118,6 +132,7 @@ RDEPENDS:pipewire-pulseaudio = " \
 "
 
 URI_pipewire-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pipewire-utils-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-utils}"
 RDEPENDS:pipewire-utils = " \
  alsa-lib \
  libgcc \
@@ -131,9 +146,11 @@ RDEPENDS:pipewire-utils = " \
 "
 
 URI_pipewire-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pipewire-doc-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-doc}"
 RDEPENDS:pipewire-doc = ""
 
 URI_pipewire-plugin-vulkan = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pipewire-plugin-vulkan-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-plugin-vulkan}"
 RDEPENDS:pipewire-plugin-vulkan = " \
  glibc \
  pipewire-libs \
@@ -142,6 +159,7 @@ RDEPENDS:pipewire-plugin-vulkan = " \
 "
 
 URI_pipewire-v4l2 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pipewire-v4l2-1.2.7-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pipewire-v4l2}"
 RDEPENDS:pipewire-v4l2 = " \
  glibc \
  pipewire-libs \

@@ -8,7 +8,11 @@ PR = "5.el10_0"
 PACKAGES = "xorg-x11-server-Xwayland xorg-x11-server-Xwayland-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xorg-x11-server-Xwayland-24.1.5-5.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xorg-x11-server-Xwayland = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xorg-x11-server-Xwayland-24.1.5-5.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-Xwayland}"
 RDEPENDS:xorg-x11-server-Xwayland = " \
  libXau \
  xkeyboard-config \
@@ -35,6 +39,7 @@ RDEPENDS:xorg-x11-server-Xwayland = " \
 "
 
 URI_xorg-x11-server-Xwayland-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xorg-x11-server-Xwayland-devel-24.1.5-5.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-Xwayland-devel}"
 RDEPENDS:xorg-x11-server-Xwayland-devel = " \
  xorg-x11-server-Xwayland \
  pkgconf-pkg-config \

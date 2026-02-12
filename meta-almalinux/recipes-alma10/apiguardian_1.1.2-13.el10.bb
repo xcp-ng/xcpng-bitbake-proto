@@ -8,12 +8,17 @@ PR = "13.el10"
 PACKAGES = "apiguardian apiguardian-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/apiguardian-1.1.2-13.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_apiguardian = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/apiguardian-1.1.2-13.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_apiguardian}"
 RDEPENDS:apiguardian = " \
  javapackages-filesystem \
 "
 
 URI_apiguardian-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/apiguardian-javadoc-1.1.2-13.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_apiguardian-javadoc}"
 RDEPENDS:apiguardian-javadoc = " \
  javapackages-filesystem \
 "

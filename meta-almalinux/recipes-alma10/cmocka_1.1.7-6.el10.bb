@@ -8,12 +8,17 @@ PR = "6.el10"
 PACKAGES = "libcmocka libcmocka-devel cmocka-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/cmocka-1.1.7-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libcmocka = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libcmocka-1.1.7-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcmocka}"
 RDEPENDS:libcmocka = " \
  glibc \
 "
 
 URI_libcmocka-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libcmocka-devel-1.1.7-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcmocka-devel}"
 RDEPENDS:libcmocka-devel = " \
  libcmocka \
  cmake-filesystem \
@@ -21,4 +26,5 @@ RDEPENDS:libcmocka-devel = " \
 "
 
 URI_cmocka-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/cmocka-doc-1.1.7-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_cmocka-doc}"
 RDEPENDS:cmocka-doc = ""

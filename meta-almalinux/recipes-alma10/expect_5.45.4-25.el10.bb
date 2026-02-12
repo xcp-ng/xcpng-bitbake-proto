@@ -8,7 +8,11 @@ PR = "25.el10"
 PACKAGES = "expect expect-devel expectk"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/expect-5.45.4-25.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_expect = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/expect-5.45.4-25.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_expect}"
 RDEPENDS:expect = " \
  glibc \
  bash \
@@ -16,11 +20,13 @@ RDEPENDS:expect = " \
 "
 
 URI_expect-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/expect-devel-5.45.4-25.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_expect-devel}"
 RDEPENDS:expect-devel = " \
  expect \
 "
 
 URI_expectk = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/expectk-5.45.4-25.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_expectk}"
 RDEPENDS:expectk = " \
  expect \
  bash \

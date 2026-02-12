@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "wireguard-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/wireguard-tools-1.0.20210914-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_wireguard-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/wireguard-tools-1.0.20210914-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_wireguard-tools}"
 RDEPENDS:wireguard-tools = " \
  glibc \
  systemd \

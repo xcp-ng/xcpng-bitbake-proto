@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "spice-server spice-server-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/spice-0.15.1-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_spice-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-server-0.15.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-server}"
 RDEPENDS:spice-server = " \
  zlib-ng-compat \
  gstreamer1 \
@@ -27,6 +31,7 @@ RDEPENDS:spice-server = " \
 "
 
 URI_spice-server-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/spice-server-devel-0.15.1-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-server-devel}"
 RDEPENDS:spice-server-devel = " \
  glib2-devel \
  libcacard-devel \

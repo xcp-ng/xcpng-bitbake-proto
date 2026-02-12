@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "jackson-jaxrs-json-provider jackson-jaxrs-providers jackson-jaxrs-providers-datatypes jackson-jaxrs-providers-parent"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/jackson-jaxrs-providers-2.14.2-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jackson-jaxrs-json-provider = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jackson-jaxrs-json-provider-2.14.2-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jackson-jaxrs-json-provider}"
 RDEPENDS:jackson-jaxrs-json-provider = " \
  jackson-jaxrs-providers \
  javapackages-filesystem \
@@ -17,6 +21,7 @@ RDEPENDS:jackson-jaxrs-json-provider = " \
 "
 
 URI_jackson-jaxrs-providers = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jackson-jaxrs-providers-2.14.2-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jackson-jaxrs-providers}"
 RDEPENDS:jackson-jaxrs-providers = " \
  jackson-core \
  jackson-databind \
@@ -25,6 +30,7 @@ RDEPENDS:jackson-jaxrs-providers = " \
 "
 
 URI_jackson-jaxrs-providers-datatypes = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jackson-jaxrs-providers-datatypes-2.14.2-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jackson-jaxrs-providers-datatypes}"
 RDEPENDS:jackson-jaxrs-providers-datatypes = " \
  jackson-core \
  jackson-databind \
@@ -33,6 +39,7 @@ RDEPENDS:jackson-jaxrs-providers-datatypes = " \
 "
 
 URI_jackson-jaxrs-providers-parent = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jackson-jaxrs-providers-parent-2.14.2-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jackson-jaxrs-providers-parent}"
 RDEPENDS:jackson-jaxrs-providers-parent = " \
  jackson-bom \
  javapackages-filesystem \

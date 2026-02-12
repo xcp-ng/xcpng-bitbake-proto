@@ -8,7 +8,11 @@ PR = "34.el10"
 PACKAGES = "perl-Package-Generator perl-Package-Generator-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Package-Generator-1.106-34.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Package-Generator = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Package-Generator-1.106-34.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Package-Generator}"
 RDEPENDS:perl-Package-Generator = " \
  perl-Symbol \
  perl-Scalar-List-Utils \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Package-Generator = " \
 "
 
 URI_perl-Package-Generator-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Package-Generator-tests-1.106-34.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Package-Generator-tests}"
 RDEPENDS:perl-Package-Generator-tests = " \
  perl-Test-Harness \
  perl-libs \

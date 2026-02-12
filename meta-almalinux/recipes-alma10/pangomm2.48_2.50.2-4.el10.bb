@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "pangomm2.48 pangomm2.48-devel pangomm2.48-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/pangomm2.48-2.50.2-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pangomm2.48 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pangomm2.48-2.50.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pangomm2.48}"
 RDEPENDS:pangomm2.48 = " \
  libgcc \
  pango \
@@ -21,6 +25,7 @@ RDEPENDS:pangomm2.48 = " \
 "
 
 URI_pangomm2.48-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/pangomm2.48-devel-2.50.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pangomm2.48-devel}"
 RDEPENDS:pangomm2.48-devel = " \
  pkgconf-pkg-config \
  pango-devel \
@@ -30,6 +35,7 @@ RDEPENDS:pangomm2.48-devel = " \
 "
 
 URI_pangomm2.48-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/pangomm2.48-doc-2.50.2-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_pangomm2.48-doc}"
 RDEPENDS:pangomm2.48-doc = " \
  pangomm2.48 \
  glibmm2.68-doc \

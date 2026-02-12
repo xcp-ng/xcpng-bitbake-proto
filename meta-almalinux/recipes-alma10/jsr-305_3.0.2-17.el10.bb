@@ -8,12 +8,17 @@ PR = "17.el10"
 PACKAGES = "jsr-305 jsr-305-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/jsr-305-3.0.2-17.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jsr-305 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jsr-305-3.0.2-17.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jsr-305}"
 RDEPENDS:jsr-305 = " \
  javapackages-filesystem \
 "
 
 URI_jsr-305-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jsr-305-javadoc-3.0.2-17.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jsr-305-javadoc}"
 RDEPENDS:jsr-305-javadoc = " \
  javapackages-filesystem \
 "

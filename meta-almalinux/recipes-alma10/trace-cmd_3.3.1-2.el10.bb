@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "trace-cmd trace-cmd-python3"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/trace-cmd-3.3.1-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_trace-cmd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/trace-cmd-3.3.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_trace-cmd}"
 RDEPENDS:trace-cmd = " \
  audit-libs \
  libzstd \
@@ -19,6 +23,7 @@ RDEPENDS:trace-cmd = " \
 "
 
 URI_trace-cmd-python3 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/trace-cmd-python3-3.3.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_trace-cmd-python3}"
 RDEPENDS:trace-cmd-python3 = " \
  python3 \
  glibc \

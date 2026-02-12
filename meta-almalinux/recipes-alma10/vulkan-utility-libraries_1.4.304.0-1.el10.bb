@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "vulkan-utility-libraries-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/vulkan-utility-libraries-1.4.304.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_vulkan-utility-libraries-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/vulkan-utility-libraries-devel-1.4.304.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vulkan-utility-libraries-devel}"
 RDEPENDS:vulkan-utility-libraries-devel = " \
  vulkan-headers \
  cmake-filesystem \

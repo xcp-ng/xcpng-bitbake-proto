@@ -8,13 +8,18 @@ PR = "1.el10_0.alma.1"
 PACKAGES = "anaconda anaconda-core anaconda-dracut anaconda-gui anaconda-install-env-deps anaconda-install-img-deps anaconda-tui anaconda-widgets anaconda-widgets-devel anaconda-live"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/anaconda-40.22.3.26-1.el10_0.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_anaconda = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda}"
 RDEPENDS:anaconda = " \
  anaconda-gui \
  anaconda-tui \
 "
 
 URI_anaconda-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-core-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-core}"
 RDEPENDS:anaconda-core = " \
  python3 \
  flatpak-libs \
@@ -54,6 +59,7 @@ RDEPENDS:anaconda-core = " \
 "
 
 URI_anaconda-dracut = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-dracut-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-dracut}"
 RDEPENDS:anaconda-dracut = " \
  python3 \
  libarchive \
@@ -71,6 +77,7 @@ RDEPENDS:anaconda-dracut = " \
 "
 
 URI_anaconda-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-gui-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-gui}"
 RDEPENDS:anaconda-gui = " \
  python3 \
  nm-connection-editor \
@@ -86,6 +93,7 @@ RDEPENDS:anaconda-gui = " \
 "
 
 URI_anaconda-install-env-deps = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-install-env-deps-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-install-env-deps}"
 RDEPENDS:anaconda-install-env-deps = " \
  isomd5sum \
  e2fsprogs \
@@ -101,6 +109,7 @@ RDEPENDS:anaconda-install-env-deps = " \
 "
 
 URI_anaconda-install-img-deps = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-install-img-deps-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-install-img-deps}"
 RDEPENDS:anaconda-install-img-deps = " \
  dnsconfd \
  dnsconfd-dracut \
@@ -126,6 +135,7 @@ RDEPENDS:anaconda-install-img-deps = " \
 "
 
 URI_anaconda-tui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-tui-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-tui}"
 RDEPENDS:anaconda-tui = " \
  python3 \
  python3-simpleline \
@@ -133,6 +143,7 @@ RDEPENDS:anaconda-tui = " \
 "
 
 URI_anaconda-widgets = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/anaconda-widgets-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-widgets}"
 RDEPENDS:anaconda-widgets = " \
  python3 \
  atk \
@@ -148,11 +159,13 @@ RDEPENDS:anaconda-widgets = " \
 "
 
 URI_anaconda-widgets-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/anaconda-widgets-devel-40.22.3.26-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-widgets-devel}"
 RDEPENDS:anaconda-widgets-devel = " \
  anaconda-widgets \
 "
 
 URI_anaconda-live = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/anaconda-live-40.22.3.26-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_anaconda-live}"
 RDEPENDS:anaconda-live = " \
  anaconda-gui \
  zenity \

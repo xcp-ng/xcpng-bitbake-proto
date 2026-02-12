@@ -8,7 +8,11 @@ PR = "37.el10"
 PACKAGES = "perl-Module-Package perl-Module-Package-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Module-Package-0.30-37.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-Package = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Package-0.30-37.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Package}"
 RDEPENDS:perl-Module-Package = " \
  perl-Module-Install-ManifestSkip \
  perl-libs \
@@ -26,6 +30,7 @@ RDEPENDS:perl-Module-Package = " \
 "
 
 URI_perl-Module-Package-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Package-tests-0.30-37.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Package-tests}"
 RDEPENDS:perl-Module-Package-tests = " \
  perl-Test-Harness \
  perl-Test-Simple \

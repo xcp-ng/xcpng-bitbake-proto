@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "perl-IO-Socket-INET6"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-IO-Socket-INET6-2.73-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-IO-Socket-INET6 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-IO-Socket-INET6-2.73-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO-Socket-INET6}"
 RDEPENDS:perl-IO-Socket-INET6 = " \
  perl-libs \
  perl-Carp \

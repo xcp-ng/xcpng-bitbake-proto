@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "libdex libdex-devel libdex-devel-docs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libdex-0.8.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libdex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libdex-0.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libdex}"
 RDEPENDS:libdex = " \
  libatomic \
  libgcc \
@@ -18,6 +22,7 @@ RDEPENDS:libdex = " \
 "
 
 URI_libdex-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libdex-devel-0.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libdex-devel}"
 RDEPENDS:libdex-devel = " \
  glib2-devel \
  libdex \
@@ -25,6 +30,7 @@ RDEPENDS:libdex-devel = " \
 "
 
 URI_libdex-devel-docs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libdex-devel-docs-0.8.1-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libdex-devel-docs}"
 RDEPENDS:libdex-devel-docs = " \
  libdex \
 "

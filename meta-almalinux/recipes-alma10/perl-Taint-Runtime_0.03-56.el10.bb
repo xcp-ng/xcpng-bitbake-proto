@@ -8,7 +8,11 @@ PR = "56.el10"
 PACKAGES = "perl-Taint-Runtime perl-Taint-Runtime-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Taint-Runtime-0.03-56.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Taint-Runtime = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Taint-Runtime-0.03-56.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Taint-Runtime}"
 RDEPENDS:perl-Taint-Runtime = " \
  perl-libs \
  perl-Carp \
@@ -21,6 +25,7 @@ RDEPENDS:perl-Taint-Runtime = " \
 "
 
 URI_perl-Taint-Runtime-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Taint-Runtime-tests-0.03-56.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Taint-Runtime-tests}"
 RDEPENDS:perl-Taint-Runtime-tests = " \
  perl-Test-Harness \
  perl-Test-Simple \

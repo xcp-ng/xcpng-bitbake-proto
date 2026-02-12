@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "gtk-vnc2 gvnc gvncpulse gtk-vnc2-devel gvnc-devel gvnc-tools gvncpulse-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gtk-vnc-1.3.1-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gtk-vnc2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtk-vnc2-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk-vnc2}"
 RDEPENDS:gtk-vnc2 = " \
  gdk-pixbuf2 \
  libX11 \
@@ -20,6 +24,7 @@ RDEPENDS:gtk-vnc2 = " \
 "
 
 URI_gvnc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvnc-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvnc}"
 RDEPENDS:gvnc = " \
  zlib-ng-compat \
  gnutls \
@@ -31,6 +36,7 @@ RDEPENDS:gvnc = " \
 "
 
 URI_gvncpulse = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvncpulse-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvncpulse}"
 RDEPENDS:gvncpulse = " \
  glibc \
  pulseaudio-libs \
@@ -39,6 +45,7 @@ RDEPENDS:gvncpulse = " \
 "
 
 URI_gtk-vnc2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtk-vnc2-devel-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtk-vnc2-devel}"
 RDEPENDS:gtk-vnc2-devel = " \
  libgcrypt-devel \
  glib2-devel \
@@ -54,6 +61,7 @@ RDEPENDS:gtk-vnc2-devel = " \
 "
 
 URI_gvnc-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gvnc-devel-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvnc-devel}"
 RDEPENDS:gvnc-devel = " \
  libgcrypt-devel \
  glib2-devel \
@@ -66,6 +74,7 @@ RDEPENDS:gvnc-devel = " \
 "
 
 URI_gvnc-tools = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gvnc-tools-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvnc-tools}"
 RDEPENDS:gvnc-tools = " \
  glibc \
  gvnc \
@@ -74,6 +83,7 @@ RDEPENDS:gvnc-tools = " \
 "
 
 URI_gvncpulse-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gvncpulse-devel-1.3.1-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvncpulse-devel}"
 RDEPENDS:gvncpulse-devel = " \
  libgcrypt-devel \
  glib2-devel \

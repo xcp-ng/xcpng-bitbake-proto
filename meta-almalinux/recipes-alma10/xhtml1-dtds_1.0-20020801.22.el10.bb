@@ -8,7 +8,11 @@ PR = "20020801.22.el10"
 PACKAGES = "xhtml1-dtds"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xhtml1-dtds-1.0-20020801.22.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xhtml1-dtds = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xhtml1-dtds-1.0-20020801.22.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xhtml1-dtds}"
 RDEPENDS:xhtml1-dtds = " \
  sgml-common \
  bash \

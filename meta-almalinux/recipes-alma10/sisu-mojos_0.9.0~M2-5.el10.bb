@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "sisu-mojos sisu-mojos-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/sisu-mojos-0.9.0~M2-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sisu-mojos = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/sisu-mojos-0.9.0~M2-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_sisu-mojos}"
 RDEPENDS:sisu-mojos = " \
  plexus-utils \
  javapackages-filesystem \
@@ -19,6 +23,7 @@ RDEPENDS:sisu-mojos = " \
 "
 
 URI_sisu-mojos-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/sisu-mojos-javadoc-0.9.0~M2-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_sisu-mojos-javadoc}"
 RDEPENDS:sisu-mojos-javadoc = " \
  javapackages-filesystem \
 "

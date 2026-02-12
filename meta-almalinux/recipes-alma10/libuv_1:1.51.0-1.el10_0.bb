@@ -8,12 +8,17 @@ PR = "1.el10_0"
 PACKAGES = "libuv libuv-devel libuv-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libuv-1.51.0-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libuv = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libuv-1.51.0-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libuv}"
 RDEPENDS:libuv = " \
  glibc \
 "
 
 URI_libuv-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libuv-devel-1.51.0-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libuv-devel}"
 RDEPENDS:libuv-devel = " \
  libuv \
  cmake-filesystem \
@@ -22,6 +27,7 @@ RDEPENDS:libuv-devel = " \
 "
 
 URI_libuv-static = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libuv-static-1.51.0-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libuv-static}"
 RDEPENDS:libuv-static = " \
  libuv-devel \
  pkgconf-pkg-config \

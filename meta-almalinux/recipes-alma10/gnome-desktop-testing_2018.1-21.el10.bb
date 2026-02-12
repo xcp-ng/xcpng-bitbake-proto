@@ -8,7 +8,11 @@ PR = "21.el10"
 PACKAGES = "gnome-desktop-testing"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/gnome-desktop-testing-2018.1-21.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-desktop-testing = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gnome-desktop-testing-2018.1-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-desktop-testing}"
 RDEPENDS:gnome-desktop-testing = " \
  glibc \
  libgcc \

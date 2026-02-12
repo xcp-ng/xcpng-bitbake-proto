@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "perl-URI perl-URI-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-URI-5.27-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-URI = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-URI-5.27-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-URI}"
 RDEPENDS:perl-URI = " \
  perl-libnet \
  perl-constant \
@@ -27,6 +31,7 @@ RDEPENDS:perl-URI = " \
 "
 
 URI_perl-URI-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-URI-tests-5.27-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-URI-tests}"
 RDEPENDS:perl-URI-tests = " \
  perl-libnet \
  perl-Test-Harness \

@@ -8,7 +8,11 @@ PR = "10.el10_0"
 PACKAGES = "emacs emacs-common emacs-filesystem emacs-lucid emacs-nw emacs-devel emacs-gtk+x11 emacs-terminal"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/emacs-29.4-10.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_emacs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/emacs-29.4-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_emacs}"
 RDEPENDS:emacs = " \
  systemd-libs \
  libpng \
@@ -46,6 +50,7 @@ RDEPENDS:emacs = " \
 "
 
 URI_emacs-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/emacs-common-29.4-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_emacs-common}"
 RDEPENDS:emacs-common = " \
  emacs-filesystem \
  libtree-sitter \
@@ -57,9 +62,11 @@ RDEPENDS:emacs-common = " \
 "
 
 URI_emacs-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/emacs-filesystem-29.4-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_emacs-filesystem}"
 RDEPENDS:emacs-filesystem = ""
 
 URI_emacs-lucid = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/emacs-lucid-29.4-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_emacs-lucid}"
 RDEPENDS:emacs-lucid = " \
  systemd-libs \
  libpng \
@@ -110,6 +117,7 @@ RDEPENDS:emacs-lucid = " \
 "
 
 URI_emacs-nw = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/emacs-nw-29.4-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_emacs-nw}"
 RDEPENDS:emacs-nw = " \
  alsa-lib \
  libacl \
@@ -131,9 +139,11 @@ RDEPENDS:emacs-nw = " \
 "
 
 URI_emacs-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/emacs-devel-29.4-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_emacs-devel}"
 RDEPENDS:emacs-devel = ""
 
 URI_emacs-gtk+x11 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/emacs-gtk+x11-29.4-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_emacs-gtk+x11}"
 RDEPENDS:emacs-gtk+x11 = " \
  systemd-libs \
  libpng \
@@ -182,6 +192,7 @@ RDEPENDS:emacs-gtk+x11 = " \
 "
 
 URI_emacs-terminal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/emacs-terminal-29.4-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_emacs-terminal}"
 RDEPENDS:emacs-terminal = " \
  emacs \
  bash \

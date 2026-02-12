@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "frr frr-selinux"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/frr-10.1-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_frr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/frr-10.1-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_frr}"
 RDEPENDS:frr = " \
  python3 \
  systemd \
@@ -34,6 +38,7 @@ RDEPENDS:frr = " \
 "
 
 URI_frr-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/frr-selinux-10.1-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_frr-selinux}"
 RDEPENDS:frr-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \

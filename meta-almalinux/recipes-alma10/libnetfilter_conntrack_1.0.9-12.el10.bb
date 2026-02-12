@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "libnetfilter_conntrack libnetfilter_conntrack-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libnetfilter_conntrack-1.0.9-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libnetfilter_conntrack = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libnetfilter_conntrack-1.0.9-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnetfilter_conntrack}"
 RDEPENDS:libnetfilter_conntrack = " \
  glibc \
  libmnl \
@@ -16,6 +20,7 @@ RDEPENDS:libnetfilter_conntrack = " \
 "
 
 URI_libnetfilter_conntrack-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libnetfilter_conntrack-devel-1.0.9-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnetfilter_conntrack-devel}"
 RDEPENDS:libnetfilter_conntrack-devel = " \
  libnfnetlink-devel \
  libnetfilter_conntrack \

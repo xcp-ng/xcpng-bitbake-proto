@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-ExtUtils-Install perl-ExtUtils-Install-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-ExtUtils-Install-2.22-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-ExtUtils-Install = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Install-2.22-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-Install}"
 RDEPENDS:perl-ExtUtils-Install = " \
  perl-ExtUtils-Install \
  perl-libs \
@@ -26,6 +30,7 @@ RDEPENDS:perl-ExtUtils-Install = " \
 "
 
 URI_perl-ExtUtils-Install-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-ExtUtils-Install-tests-2.22-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-Install-tests}"
 RDEPENDS:perl-ExtUtils-Install-tests = " \
  perl-ExtUtils-Install \
  perl-Test-Harness \

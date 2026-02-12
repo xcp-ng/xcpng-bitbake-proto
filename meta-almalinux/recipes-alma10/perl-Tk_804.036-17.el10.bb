@@ -8,7 +8,11 @@ PR = "17.el10"
 PACKAGES = "perl-Tk perl-Tk-devel perl-Tk-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Tk-804.036-17.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Tk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Tk-804.036-17.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Tk}"
 RDEPENDS:perl-Tk = " \
  perl-libs \
  libpng \
@@ -43,6 +47,7 @@ RDEPENDS:perl-Tk = " \
 "
 
 URI_perl-Tk-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Tk-devel-804.036-17.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Tk-devel}"
 RDEPENDS:perl-Tk-devel = " \
  perl-Tk \
  perl-libs \
@@ -57,6 +62,7 @@ RDEPENDS:perl-Tk-devel = " \
 "
 
 URI_perl-Tk-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Tk-tests-804.036-17.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Tk-tests}"
 RDEPENDS:perl-Tk-tests = " \
  perl-libs \
  perl-FindBin \

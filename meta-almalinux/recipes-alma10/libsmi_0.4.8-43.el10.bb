@@ -8,7 +8,11 @@ PR = "43.el10"
 PACKAGES = "libsmi libsmi-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libsmi-0.4.8-43.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libsmi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libsmi-0.4.8-43.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsmi}"
 RDEPENDS:libsmi = " \
  glibc \
  wget \
@@ -17,6 +21,7 @@ RDEPENDS:libsmi = " \
 "
 
 URI_libsmi-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libsmi-devel-0.4.8-43.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libsmi-devel}"
 RDEPENDS:libsmi-devel = " \
  pkgconf-pkg-config \
  libsmi \

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "qatlib qatlib-service qatlib-devel qatlib-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/qatlib-24.09.0-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_qatlib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qatlib-24.09.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qatlib}"
 RDEPENDS:qatlib = " \
  shadow-utils \
  numactl-libs \
@@ -18,6 +22,7 @@ RDEPENDS:qatlib = " \
 "
 
 URI_qatlib-service = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qatlib-service-24.09.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qatlib-service}"
 RDEPENDS:qatlib-service = " \
  qatlib \
  systemd \
@@ -28,6 +33,7 @@ RDEPENDS:qatlib-service = " \
 "
 
 URI_qatlib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qatlib-devel-24.09.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qatlib-devel}"
 RDEPENDS:qatlib-devel = " \
  qatlib-devel \
  openssl-devel \
@@ -36,6 +42,7 @@ RDEPENDS:qatlib-devel = " \
 "
 
 URI_qatlib-tests = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qatlib-tests-24.09.0-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qatlib-tests}"
 RDEPENDS:qatlib-tests = " \
  glibc \
  openssl-libs \

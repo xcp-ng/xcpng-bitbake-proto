@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "perl-version perl-version-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-version-0.99.32-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-version = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-version-0.99.32-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-version}"
 RDEPENDS:perl-version = " \
  perl-constant \
  perl-libs \
@@ -23,6 +27,7 @@ RDEPENDS:perl-version = " \
 "
 
 URI_perl-version-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-version-tests-0.99.32-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-version-tests}"
 RDEPENDS:perl-version-tests = " \
  perl-Test-Harness \
  perl-libs \

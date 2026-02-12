@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "perl-Data-Section perl-Data-Section-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Data-Section-0.200008-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Data-Section = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Data-Section-0.200008-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-Section}"
 RDEPENDS:perl-Data-Section = " \
  perl-Encode \
  perl-MRO-Compat \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Data-Section = " \
 "
 
 URI_perl-Data-Section-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Data-Section-tests-0.200008-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Data-Section-tests}"
 RDEPENDS:perl-Data-Section-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "totem-pl-parser totem-pl-parser-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/totem-pl-parser-3.26.6-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_totem-pl-parser = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/totem-pl-parser-3.26.6-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_totem-pl-parser}"
 RDEPENDS:totem-pl-parser = " \
  libarchive \
  libgcc \
@@ -20,6 +24,7 @@ RDEPENDS:totem-pl-parser = " \
 "
 
 URI_totem-pl-parser-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/totem-pl-parser-devel-3.26.6-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_totem-pl-parser-devel}"
 RDEPENDS:totem-pl-parser-devel = " \
  libxml2-devel \
  libarchive-devel \

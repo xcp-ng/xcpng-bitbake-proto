@@ -8,7 +8,11 @@ PR = "9.el10_0"
 PACKAGES = "sshpass"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/sshpass-1.09-9.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sshpass = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sshpass-1.09-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sshpass}"
 RDEPENDS:sshpass = " \
  glibc \
 "

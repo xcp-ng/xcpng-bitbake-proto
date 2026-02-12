@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "audispd-plugins audispd-plugins-zos audit audit-libs audit-rules audit-libs-devel python3-audit"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/audit-4.0.3-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_audispd-plugins = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/audispd-plugins-4.0.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_audispd-plugins}"
 RDEPENDS:audispd-plugins = " \
  audit \
  audit-libs \
@@ -18,6 +22,7 @@ RDEPENDS:audispd-plugins = " \
 "
 
 URI_audispd-plugins-zos = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/audispd-plugins-zos-4.0.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_audispd-plugins-zos}"
 RDEPENDS:audispd-plugins-zos = " \
  audit \
  audit-libs \
@@ -27,6 +32,7 @@ RDEPENDS:audispd-plugins-zos = " \
 "
 
 URI_audit = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/audit-4.0.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_audit}"
 RDEPENDS:audit = " \
  systemd \
  audit-libs \
@@ -38,12 +44,14 @@ RDEPENDS:audit = " \
 "
 
 URI_audit-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/audit-libs-4.0.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_audit-libs}"
 RDEPENDS:audit-libs = " \
  glibc \
  libcap-ng \
 "
 
 URI_audit-rules = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/audit-rules-4.0.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_audit-rules}"
 RDEPENDS:audit-rules = " \
  glibc \
  audit-libs \
@@ -51,6 +59,7 @@ RDEPENDS:audit-rules = " \
 "
 
 URI_audit-libs-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/audit-libs-devel-4.0.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_audit-libs-devel}"
 RDEPENDS:audit-libs-devel = " \
  audit-libs \
  libcap-ng-devel \
@@ -59,6 +68,7 @@ RDEPENDS:audit-libs-devel = " \
 "
 
 URI_python3-audit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-audit-4.0.3-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-audit}"
 RDEPENDS:python3-audit = " \
  glibc \
  audit-libs \

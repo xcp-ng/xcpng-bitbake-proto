@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "adcli adcli-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/adcli-0.9.2-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_adcli = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/adcli-0.9.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_adcli}"
 RDEPENDS:adcli = " \
  glibc \
  krb5-libs \
@@ -17,4 +21,5 @@ RDEPENDS:adcli = " \
 "
 
 URI_adcli-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/adcli-doc-0.9.2-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_adcli-doc}"
 RDEPENDS:adcli-doc = ""

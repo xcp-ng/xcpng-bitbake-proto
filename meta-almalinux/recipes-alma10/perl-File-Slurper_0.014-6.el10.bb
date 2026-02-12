@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-File-Slurper perl-File-Slurper-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-File-Slurper-0.014-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-Slurper = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-Slurper-0.014-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Slurper}"
 RDEPENDS:perl-File-Slurper = " \
  perl-constant \
  perl-libs \
@@ -18,6 +22,7 @@ RDEPENDS:perl-File-Slurper = " \
 "
 
 URI_perl-File-Slurper-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-Slurper-tests-0.014-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Slurper-tests}"
 RDEPENDS:perl-File-Slurper-tests = " \
  perl-Test-Harness \
  perl-libs \

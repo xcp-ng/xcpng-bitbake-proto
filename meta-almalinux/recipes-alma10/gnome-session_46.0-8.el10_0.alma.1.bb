@@ -8,7 +8,11 @@ PR = "8.el10_0.alma.1"
 PACKAGES = "gnome-session gnome-session-wayland-session"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-session-46.0-8.el10_0.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-session = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-session-46.0-8.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-session}"
 RDEPENDS:gnome-session = " \
  systemd-libs \
  libICE \
@@ -34,6 +38,7 @@ RDEPENDS:gnome-session = " \
 "
 
 URI_gnome-session-wayland-session = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-session-wayland-session-46.0-8.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-session-wayland-session}"
 RDEPENDS:gnome-session-wayland-session = " \
  gnome-session \
  gnome-shell \

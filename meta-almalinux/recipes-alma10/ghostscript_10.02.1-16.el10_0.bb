@@ -8,7 +8,11 @@ PR = "16.el10_0"
 PACKAGES = "ghostscript ghostscript-doc ghostscript-tools-fonts ghostscript-tools-printing libgs ghostscript-tools-dvipdf libgs-devel ghostscript-gtk"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ghostscript-10.02.1-16.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ghostscript = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ghostscript-10.02.1-16.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ghostscript}"
 RDEPENDS:ghostscript = " \
  ghostscript-tools-printing \
  libgs \
@@ -19,23 +23,27 @@ RDEPENDS:ghostscript = " \
 "
 
 URI_ghostscript-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ghostscript-doc-10.02.1-16.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ghostscript-doc}"
 RDEPENDS:ghostscript-doc = " \
  ghostscript \
 "
 
 URI_ghostscript-tools-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ghostscript-tools-fonts-10.02.1-16.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ghostscript-tools-fonts}"
 RDEPENDS:ghostscript-tools-fonts = " \
  bash \
  ghostscript \
 "
 
 URI_ghostscript-tools-printing = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ghostscript-tools-printing-10.02.1-16.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ghostscript-tools-printing}"
 RDEPENDS:ghostscript-tools-printing = " \
  bash \
  ghostscript \
 "
 
 URI_libgs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgs-10.02.1-16.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgs}"
 RDEPENDS:libgs = " \
  urw-base35-fonts \
  zlib-ng-compat \
@@ -58,6 +66,7 @@ RDEPENDS:libgs = " \
 "
 
 URI_ghostscript-tools-dvipdf = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ghostscript-tools-dvipdf-10.02.1-16.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ghostscript-tools-dvipdf}"
 RDEPENDS:ghostscript-tools-dvipdf = " \
  texlive-dvips \
  bash \
@@ -65,11 +74,13 @@ RDEPENDS:ghostscript-tools-dvipdf = " \
 "
 
 URI_libgs-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libgs-devel-10.02.1-16.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgs-devel}"
 RDEPENDS:libgs-devel = " \
  libgs \
 "
 
 URI_ghostscript-gtk = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ghostscript-gtk-10.02.1-16.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ghostscript-gtk}"
 RDEPENDS:ghostscript-gtk = " \
  gdk-pixbuf2 \
  libgs \

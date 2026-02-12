@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-Digest-MD5 perl-Digest-MD5-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Digest-MD5-2.59-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Digest-MD5 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Digest-MD5-2.59-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest-MD5}"
 RDEPENDS:perl-Digest-MD5 = " \
  glibc \
  perl-Exporter \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Digest-MD5 = " \
 "
 
 URI_perl-Digest-MD5-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Digest-MD5-tests-2.59-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Digest-MD5-tests}"
 RDEPENDS:perl-Digest-MD5-tests = " \
  perl-threads \
  perl-Test-Harness \

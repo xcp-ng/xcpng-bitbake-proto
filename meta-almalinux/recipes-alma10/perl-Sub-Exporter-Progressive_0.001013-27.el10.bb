@@ -8,7 +8,11 @@ PR = "27.el10"
 PACKAGES = "perl-Sub-Exporter-Progressive perl-Sub-Exporter-Progressive-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Sub-Exporter-Progressive-0.001013-27.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Sub-Exporter-Progressive = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Sub-Exporter-Progressive-0.001013-27.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Exporter-Progressive}"
 RDEPENDS:perl-Sub-Exporter-Progressive = " \
  perl-Exporter \
  perl-libs \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Sub-Exporter-Progressive = " \
 "
 
 URI_perl-Sub-Exporter-Progressive-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Sub-Exporter-Progressive-tests-0.001013-27.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Exporter-Progressive-tests}"
 RDEPENDS:perl-Sub-Exporter-Progressive-tests = " \
  perl-constant \
  perl-Test-Harness \

@@ -8,7 +8,11 @@ PR = "21.el10"
 PACKAGES = "apr-util apr-util-devel apr-util-ldap apr-util-lmdb apr-util-mysql apr-util-odbc apr-util-openssl apr-util-pgsql apr-util-sqlite"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/apr-util-1.6.3-21.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_apr-util = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util}"
 RDEPENDS:apr-util = " \
  libuuid \
  libxcrypt \
@@ -18,6 +22,7 @@ RDEPENDS:apr-util = " \
 "
 
 URI_apr-util-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-devel-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-devel}"
 RDEPENDS:apr-util-devel = " \
  openldap-devel \
  apr-devel \
@@ -28,6 +33,7 @@ RDEPENDS:apr-util-devel = " \
 "
 
 URI_apr-util-ldap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-ldap-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-ldap}"
 RDEPENDS:apr-util-ldap = " \
  glibc \
  openldap \
@@ -35,6 +41,7 @@ RDEPENDS:apr-util-ldap = " \
 "
 
 URI_apr-util-lmdb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-lmdb-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-lmdb}"
 RDEPENDS:apr-util-lmdb = " \
  glibc \
  lmdb-libs \
@@ -42,6 +49,7 @@ RDEPENDS:apr-util-lmdb = " \
 "
 
 URI_apr-util-mysql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-mysql-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-mysql}"
 RDEPENDS:apr-util-mysql = " \
  glibc \
  mariadb-connector-c \
@@ -49,6 +57,7 @@ RDEPENDS:apr-util-mysql = " \
 "
 
 URI_apr-util-odbc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-odbc-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-odbc}"
 RDEPENDS:apr-util-odbc = " \
  glibc \
  unixODBC \
@@ -56,6 +65,7 @@ RDEPENDS:apr-util-odbc = " \
 "
 
 URI_apr-util-openssl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-openssl-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-openssl}"
 RDEPENDS:apr-util-openssl = " \
  glibc \
  openssl-libs \
@@ -63,6 +73,7 @@ RDEPENDS:apr-util-openssl = " \
 "
 
 URI_apr-util-pgsql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-pgsql-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-pgsql}"
 RDEPENDS:apr-util-pgsql = " \
  glibc \
  apr-util \
@@ -70,6 +81,7 @@ RDEPENDS:apr-util-pgsql = " \
 "
 
 URI_apr-util-sqlite = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/apr-util-sqlite-1.6.3-21.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_apr-util-sqlite}"
 RDEPENDS:apr-util-sqlite = " \
  glibc \
  sqlite-libs \

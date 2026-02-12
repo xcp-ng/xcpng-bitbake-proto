@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "qt6-qtmultimedia qt6-qtmultimedia-devel qt6-qtmultimedia-examples qt6-qtmultimedia-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/qt6-qtmultimedia-6.8.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_qt6-qtmultimedia = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtmultimedia-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtmultimedia}"
 RDEPENDS:qt6-qtmultimedia = " \
  alsa-lib \
  qt6-qtdeclarative \
@@ -26,6 +30,7 @@ RDEPENDS:qt6-qtmultimedia = " \
 "
 
 URI_qt6-qtmultimedia-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtmultimedia-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtmultimedia-devel}"
 RDEPENDS:qt6-qtmultimedia-devel = " \
  qt6-qtdeclarative-devel \
  cmake-filesystem \
@@ -37,6 +42,7 @@ RDEPENDS:qt6-qtmultimedia-devel = " \
 "
 
 URI_qt6-qtmultimedia-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtmultimedia-examples-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtmultimedia-examples}"
 RDEPENDS:qt6-qtmultimedia-examples = " \
  qt6-qtdeclarative \
  qt6-qtmultimedia \
@@ -48,6 +54,7 @@ RDEPENDS:qt6-qtmultimedia-examples = " \
 "
 
 URI_qt6-qtmultimedia-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtmultimedia-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtmultimedia-tests}"
 RDEPENDS:qt6-qtmultimedia-tests = " \
  python3 \
  qt6-qtdeclarative \

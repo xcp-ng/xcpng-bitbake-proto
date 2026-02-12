@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "prrte prrte-libs prrte-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/prrte-3.0.2-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_prrte = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/prrte-3.0.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_prrte}"
 RDEPENDS:prrte = " \
  prrte-libs \
  libevent \
@@ -18,6 +22,7 @@ RDEPENDS:prrte = " \
 "
 
 URI_prrte-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/prrte-libs-3.0.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_prrte-libs}"
 RDEPENDS:prrte-libs = " \
  libevent \
  hwloc-libs \
@@ -27,6 +32,7 @@ RDEPENDS:prrte-libs = " \
 "
 
 URI_prrte-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/prrte-devel-3.0.2-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_prrte-devel}"
 RDEPENDS:prrte-devel = " \
  prrte-libs \
 "

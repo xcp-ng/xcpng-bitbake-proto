@@ -8,7 +8,11 @@ PR = "5.git5de8d26c.el10"
 PACKAGES = "papers papers-libs papers-nautilus papers-previewer papers-thumbnailer papers-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/papers-47.0-5.git5de8d26c.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_papers = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papers-47.0-5.git5de8d26c.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papers}"
 RDEPENDS:papers = " \
  libgcc \
  pango \
@@ -25,6 +29,7 @@ RDEPENDS:papers = " \
 "
 
 URI_papers-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papers-libs-47.0-5.git5de8d26c.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papers-libs}"
 RDEPENDS:papers-libs = " \
  libarchive \
  libspelling \
@@ -44,6 +49,7 @@ RDEPENDS:papers-libs = " \
 "
 
 URI_papers-nautilus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papers-nautilus-47.0-5.git5de8d26c.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papers-nautilus}"
 RDEPENDS:papers-nautilus = " \
  libgcc \
  papers-libs \
@@ -54,6 +60,7 @@ RDEPENDS:papers-nautilus = " \
 "
 
 URI_papers-previewer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papers-previewer-47.0-5.git5de8d26c.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papers-previewer}"
 RDEPENDS:papers-previewer = " \
  libgcc \
  papers-libs \
@@ -64,6 +71,7 @@ RDEPENDS:papers-previewer = " \
 "
 
 URI_papers-thumbnailer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papers-thumbnailer-47.0-5.git5de8d26c.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papers-thumbnailer}"
 RDEPENDS:papers-thumbnailer = " \
  libgcc \
  gdk-pixbuf2 \
@@ -73,6 +81,7 @@ RDEPENDS:papers-thumbnailer = " \
 "
 
 URI_papers-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/papers-devel-47.0-5.git5de8d26c.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papers-devel}"
 RDEPENDS:papers-devel = " \
  glib2-devel \
  pkgconf-pkg-config \

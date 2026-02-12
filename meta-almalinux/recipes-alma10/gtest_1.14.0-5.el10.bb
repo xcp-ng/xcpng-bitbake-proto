@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "gmock gmock-devel gtest gtest-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/gtest-1.14.0-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gmock = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gmock-1.14.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gmock}"
 RDEPENDS:gmock = " \
  glibc \
  libgcc \
@@ -17,6 +21,7 @@ RDEPENDS:gmock = " \
 "
 
 URI_gmock-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gmock-devel-1.14.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gmock-devel}"
 RDEPENDS:gmock-devel = " \
  gmock \
  pkgconf-pkg-config \
@@ -24,6 +29,7 @@ RDEPENDS:gmock-devel = " \
 "
 
 URI_gtest = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gtest-1.14.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtest}"
 RDEPENDS:gtest = " \
  glibc \
  libgcc \
@@ -31,6 +37,7 @@ RDEPENDS:gtest = " \
 "
 
 URI_gtest-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gtest-devel-1.14.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtest-devel}"
 RDEPENDS:gtest-devel = " \
  gmock \
  cmake-filesystem \

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "keylime keylime-base keylime-registrar keylime-selinux keylime-tenant keylime-tools keylime-verifier python3-keylime"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/keylime-7.12.1-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_keylime = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/keylime-7.12.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_keylime}"
 RDEPENDS:keylime = " \
  keylime-agent-rust \
  keylime-base \
@@ -20,6 +24,7 @@ RDEPENDS:keylime = " \
 "
 
 URI_keylime-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/keylime-base-7.12.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_keylime-base}"
 RDEPENDS:keylime-base = " \
  python3 \
  shadow-utils \
@@ -32,6 +37,7 @@ RDEPENDS:keylime-base = " \
 "
 
 URI_keylime-registrar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/keylime-registrar-7.12.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_keylime-registrar}"
 RDEPENDS:keylime-registrar = " \
  python3 \
  python3-keylime \
@@ -40,6 +46,7 @@ RDEPENDS:keylime-registrar = " \
 "
 
 URI_keylime-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/keylime-selinux-7.12.1-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_keylime-selinux}"
 RDEPENDS:keylime-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -50,6 +57,7 @@ RDEPENDS:keylime-selinux = " \
 "
 
 URI_keylime-tenant = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/keylime-tenant-7.12.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_keylime-tenant}"
 RDEPENDS:keylime-tenant = " \
  python3 \
  python3-keylime \
@@ -58,6 +66,7 @@ RDEPENDS:keylime-tenant = " \
 "
 
 URI_keylime-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/keylime-tools-7.12.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_keylime-tools}"
 RDEPENDS:keylime-tools = " \
  python3 \
  python3-keylime \
@@ -65,6 +74,7 @@ RDEPENDS:keylime-tools = " \
 "
 
 URI_keylime-verifier = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/keylime-verifier-7.12.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_keylime-verifier}"
 RDEPENDS:keylime-verifier = " \
  python3 \
  python3-keylime \
@@ -73,6 +83,7 @@ RDEPENDS:keylime-verifier = " \
 "
 
 URI_python3-keylime = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-keylime-7.12.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-keylime}"
 RDEPENDS:python3-keylime = " \
  python3 \
  python3-pyyaml \

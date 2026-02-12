@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "modello modello-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/modello-2.1.2-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_modello = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/modello-2.1.2-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_modello}"
 RDEPENDS:modello = " \
  plexus-containers-component-annotations \
  jsoup \
@@ -23,6 +27,7 @@ RDEPENDS:modello = " \
 "
 
 URI_modello-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/modello-javadoc-2.1.2-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_modello-javadoc}"
 RDEPENDS:modello-javadoc = " \
  javapackages-filesystem \
 "

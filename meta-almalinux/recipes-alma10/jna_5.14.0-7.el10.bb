@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "jna jna-contrib jna-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/jna-5.14.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jna = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jna-5.14.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_jna}"
 RDEPENDS:jna = " \
  glibc \
  libffi \
@@ -16,12 +20,14 @@ RDEPENDS:jna = " \
 "
 
 URI_jna-contrib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jna-contrib-5.14.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jna-contrib}"
 RDEPENDS:jna-contrib = " \
  jna \
  javapackages-filesystem \
 "
 
 URI_jna-javadoc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/jna-javadoc-5.14.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jna-javadoc}"
 RDEPENDS:jna-javadoc = " \
  javapackages-filesystem \
 "

@@ -8,7 +8,11 @@ PR = "0.el10_0.1"
 PACKAGES = "cifs-utils pam_cifscreds cifs-utils-devel cifs-utils-info"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/cifs-utils-7.2-0.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cifs-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cifs-utils-7.2-0.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cifs-utils}"
 RDEPENDS:cifs-utils = " \
  libwbclient \
  keyutils-libs \
@@ -22,6 +26,7 @@ RDEPENDS:cifs-utils = " \
 "
 
 URI_pam_cifscreds = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pam_cifscreds-7.2-0.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pam_cifscreds}"
 RDEPENDS:pam_cifscreds = " \
  glibc \
  keyutils-libs \
@@ -30,9 +35,11 @@ RDEPENDS:pam_cifscreds = " \
 "
 
 URI_cifs-utils-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/cifs-utils-devel-7.2-0.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cifs-utils-devel}"
 RDEPENDS:cifs-utils-devel = ""
 
 URI_cifs-utils-info = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/cifs-utils-info-7.2-0.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cifs-utils-info}"
 RDEPENDS:cifs-utils-info = " \
  python3 \
  cifs-utils \

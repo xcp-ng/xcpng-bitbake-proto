@@ -8,12 +8,17 @@ PR = "46.el10"
 PACKAGES = "libieee1284 libieee1284-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libieee1284-0.2.11-46.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libieee1284 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libieee1284-0.2.11-46.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libieee1284}"
 RDEPENDS:libieee1284 = " \
  glibc \
 "
 
 URI_libieee1284-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libieee1284-devel-0.2.11-46.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libieee1284-devel}"
 RDEPENDS:libieee1284-devel = " \
  libieee1284 \
 "

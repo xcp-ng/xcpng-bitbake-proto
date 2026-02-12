@@ -8,7 +8,11 @@ PR = "36.el10"
 PACKAGES = "perl-Pod-Coverage perl-Pod-Coverage-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Pod-Coverage-0.23-36.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Pod-Coverage = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Pod-Coverage-0.23-36.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Coverage}"
 RDEPENDS:perl-Pod-Coverage = " \
  perl-constant \
  perl-libs \
@@ -22,6 +26,7 @@ RDEPENDS:perl-Pod-Coverage = " \
 "
 
 URI_perl-Pod-Coverage-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Pod-Coverage-tests-0.23-36.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Coverage-tests}"
 RDEPENDS:perl-Pod-Coverage-tests = " \
  perl-Test-Harness \
  perl-libs \

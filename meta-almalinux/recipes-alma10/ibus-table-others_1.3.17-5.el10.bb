@@ -8,42 +8,53 @@ PR = "5.el10"
 PACKAGES = "ibus-table-code ibus-table-cyrillic ibus-table-latin ibus-table-mathwriter ibus-table-mongol ibus-table-others ibus-table-translit ibus-table-tv"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/ibus-table-others-1.3.17-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ibus-table-code = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-code-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-code}"
 RDEPENDS:ibus-table-code = " \
  ibus-table \
 "
 
 URI_ibus-table-cyrillic = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-cyrillic-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-cyrillic}"
 RDEPENDS:ibus-table-cyrillic = " \
  ibus-table \
 "
 
 URI_ibus-table-latin = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-latin-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-latin}"
 RDEPENDS:ibus-table-latin = " \
  ibus-table \
 "
 
 URI_ibus-table-mathwriter = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-mathwriter-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-mathwriter}"
 RDEPENDS:ibus-table-mathwriter = " \
  ibus-table \
 "
 
 URI_ibus-table-mongol = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-mongol-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-mongol}"
 RDEPENDS:ibus-table-mongol = " \
  ibus-table \
 "
 
 URI_ibus-table-others = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-others-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-others}"
 RDEPENDS:ibus-table-others = " \
  ibus-table \
 "
 
 URI_ibus-table-translit = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-translit-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-translit}"
 RDEPENDS:ibus-table-translit = " \
  ibus-table \
 "
 
 URI_ibus-table-tv = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-table-tv-1.3.17-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ibus-table-tv}"
 RDEPENDS:ibus-table-tv = " \
  ibus-table \
 "

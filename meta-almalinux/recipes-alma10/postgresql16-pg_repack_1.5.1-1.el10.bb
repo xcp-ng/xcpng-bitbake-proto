@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "pg_repack"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/postgresql16-pg_repack-1.5.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pg_repack = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pg_repack-1.5.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pg_repack}"
 RDEPENDS:pg_repack = " \
  glibc \
  postgresql-server \

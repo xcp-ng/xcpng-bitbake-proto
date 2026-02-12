@@ -8,13 +8,18 @@ PR = "1.el10"
 PACKAGES = "containers-common containers-common-extra"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/containers-common-0.62.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_containers-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/containers-common-0.62.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_containers-common}"
 RDEPENDS:containers-common = " \
  container-selinux \
  netavark \
 "
 
 URI_containers-common-extra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/containers-common-extra-0.62.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_containers-common-extra}"
 RDEPENDS:containers-common-extra = " \
  containers-common \
  nftables \

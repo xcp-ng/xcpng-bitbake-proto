@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "qt6-qtserialbus qt6-qtserialbus-devel qt6-qtserialbus-examples qt6-qtserialbus-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/qt6-qtserialbus-6.8.1-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_qt6-qtserialbus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtserialbus-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtserialbus}"
 RDEPENDS:qt6-qtserialbus = " \
  glibc \
  libstdc++ \
@@ -17,6 +21,7 @@ RDEPENDS:qt6-qtserialbus = " \
 "
 
 URI_qt6-qtserialbus-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtserialbus-devel-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtserialbus-devel}"
 RDEPENDS:qt6-qtserialbus-devel = " \
  cmake-filesystem \
  pkgconf-pkg-config \
@@ -26,6 +31,7 @@ RDEPENDS:qt6-qtserialbus-devel = " \
 "
 
 URI_qt6-qtserialbus-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtserialbus-examples-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtserialbus-examples}"
 RDEPENDS:qt6-qtserialbus-examples = " \
  libgcc \
  qt6-qtbase \
@@ -37,6 +43,7 @@ RDEPENDS:qt6-qtserialbus-examples = " \
 "
 
 URI_qt6-qtserialbus-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtserialbus-tests-6.8.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtserialbus-tests}"
 RDEPENDS:qt6-qtserialbus-tests = " \
  libgcc \
  qt6-qtbase \

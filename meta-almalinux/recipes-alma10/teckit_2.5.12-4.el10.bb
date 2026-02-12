@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "teckit teckit-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/teckit-2.5.12-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_teckit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/teckit-2.5.12-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_teckit}"
 RDEPENDS:teckit = " \
  zlib-ng-compat \
  libgcc \
@@ -18,6 +22,7 @@ RDEPENDS:teckit = " \
 "
 
 URI_teckit-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/teckit-devel-2.5.12-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_teckit-devel}"
 RDEPENDS:teckit-devel = " \
  teckit \
  pkgconf-pkg-config \

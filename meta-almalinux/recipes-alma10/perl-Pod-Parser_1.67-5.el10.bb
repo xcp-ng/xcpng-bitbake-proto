@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-Pod-Parser"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Pod-Parser-1.67-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Pod-Parser = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Pod-Parser-1.67-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Parser}"
 RDEPENDS:perl-Pod-Parser = " \
  perl-libs \
  perl-Carp \

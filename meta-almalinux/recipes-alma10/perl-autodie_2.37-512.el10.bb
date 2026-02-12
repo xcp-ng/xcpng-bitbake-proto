@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-autodie perl-autodie-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-autodie-2.37-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-autodie = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-autodie-2.37-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-autodie}"
 RDEPENDS:perl-autodie = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -26,6 +30,7 @@ RDEPENDS:perl-autodie = " \
 "
 
 URI_perl-autodie-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-autodie-tests-2.37-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-autodie-tests}"
 RDEPENDS:perl-autodie-tests = " \
  perl-Scalar-List-Utils \
  perl-libs \

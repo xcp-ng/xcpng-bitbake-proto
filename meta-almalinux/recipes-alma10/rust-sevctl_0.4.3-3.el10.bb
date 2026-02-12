@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "sevctl"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/rust-sevctl-0.4.3-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sevctl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sevctl-0.4.3-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sevctl}"
 RDEPENDS:sevctl = " \
  glibc \
  openssl-libs \

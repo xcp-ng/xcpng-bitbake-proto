@@ -8,13 +8,18 @@ PR = "20.el10"
 PACKAGES = "perl-Carp-Clan perl-Carp-Clan-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Carp-Clan-6.08-20.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Carp-Clan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Carp-Clan-6.08-20.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Carp-Clan}"
 RDEPENDS:perl-Carp-Clan = " \
  perl-overload \
  perl-libs \
 "
 
 URI_perl-Carp-Clan-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Carp-Clan-tests-6.08-20.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Carp-Clan-tests}"
 RDEPENDS:perl-Carp-Clan-tests = " \
  perl-Test-Harness \
  perl-libs \

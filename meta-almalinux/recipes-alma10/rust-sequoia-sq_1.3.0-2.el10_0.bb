@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "sequoia-sq"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/rust-sequoia-sq-1.3.0-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sequoia-sq = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sequoia-sq-1.3.0-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sequoia-sq}"
 RDEPENDS:sequoia-sq = " \
  glibc \
  sqlite-libs \

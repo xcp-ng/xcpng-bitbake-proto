@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "copy-jdk-configs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/copy-jdk-configs-4.1-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_copy-jdk-configs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/copy-jdk-configs-4.1-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_copy-jdk-configs}"
 RDEPENDS:copy-jdk-configs = " \
  lua \
  lua-posix \

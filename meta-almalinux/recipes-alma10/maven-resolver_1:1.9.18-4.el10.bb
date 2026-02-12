@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "maven-resolver maven-resolver-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/maven-resolver-1.9.18-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_maven-resolver = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/maven-resolver-1.9.18-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-resolver}"
 RDEPENDS:maven-resolver = " \
  httpcomponents-client \
  apache-commons-codec \
@@ -21,6 +25,7 @@ RDEPENDS:maven-resolver = " \
 "
 
 URI_maven-resolver-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-resolver-javadoc-1.9.18-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-resolver-javadoc}"
 RDEPENDS:maven-resolver-javadoc = " \
  javapackages-filesystem \
 "

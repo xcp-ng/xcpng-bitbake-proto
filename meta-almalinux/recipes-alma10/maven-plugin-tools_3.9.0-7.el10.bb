@@ -8,12 +8,17 @@ PR = "7.el10"
 PACKAGES = "maven-plugin-annotations maven-plugin-plugin maven-plugin-tools maven-plugin-tools-annotations maven-plugin-tools-api maven-plugin-tools-generators maven-plugin-tools-java maven-plugin-tools-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/maven-plugin-tools-3.9.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_maven-plugin-annotations = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-annotations-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-annotations}"
 RDEPENDS:maven-plugin-annotations = " \
  javapackages-filesystem \
 "
 
 URI_maven-plugin-plugin = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-plugin-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-plugin}"
 RDEPENDS:maven-plugin-plugin = " \
  plexus-utils \
  javapackages-filesystem \
@@ -26,12 +31,14 @@ RDEPENDS:maven-plugin-plugin = " \
 "
 
 URI_maven-plugin-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-tools-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-tools}"
 RDEPENDS:maven-plugin-tools = " \
  javapackages-filesystem \
  maven-parent \
 "
 
 URI_maven-plugin-tools-annotations = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-tools-annotations-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-tools-annotations}"
 RDEPENDS:maven-plugin-tools-annotations = " \
  objectweb-asm \
  jsoup \
@@ -47,6 +54,7 @@ RDEPENDS:maven-plugin-tools-annotations = " \
 "
 
 URI_maven-plugin-tools-api = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-tools-api-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-tools-api}"
 RDEPENDS:maven-plugin-tools-api = " \
  httpcomponents-client \
  httpcomponents-core \
@@ -59,6 +67,7 @@ RDEPENDS:maven-plugin-tools-api = " \
 "
 
 URI_maven-plugin-tools-generators = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-tools-generators-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-tools-generators}"
 RDEPENDS:maven-plugin-tools-generators = " \
  objectweb-asm \
  jsoup \
@@ -69,6 +78,7 @@ RDEPENDS:maven-plugin-tools-generators = " \
 "
 
 URI_maven-plugin-tools-java = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-tools-java-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-tools-java}"
 RDEPENDS:maven-plugin-tools-java = " \
  plexus-utils \
  javapackages-filesystem \
@@ -79,6 +89,7 @@ RDEPENDS:maven-plugin-tools-java = " \
 "
 
 URI_maven-plugin-tools-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-plugin-tools-javadoc-3.9.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-plugin-tools-javadoc}"
 RDEPENDS:maven-plugin-tools-javadoc = " \
  javapackages-filesystem \
 "

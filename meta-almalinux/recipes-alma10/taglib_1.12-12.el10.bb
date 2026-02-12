@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "taglib taglib-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/taglib-1.12-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_taglib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/taglib-1.12-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_taglib}"
 RDEPENDS:taglib = " \
  glibc \
  libgcc \
@@ -17,6 +21,7 @@ RDEPENDS:taglib = " \
 "
 
 URI_taglib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/taglib-devel-1.12-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_taglib-devel}"
 RDEPENDS:taglib-devel = " \
  taglib \
  taglib-devel \

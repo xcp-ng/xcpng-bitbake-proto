@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "pcsc-lite pcsc-lite-libs pcsc-lite-devel pcsc-lite-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/pcsc-lite-2.2.3-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pcsc-lite = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/pcsc-lite-2.2.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcsc-lite}"
 RDEPENDS:pcsc-lite = " \
  python3 \
  systemd \
@@ -23,11 +27,13 @@ RDEPENDS:pcsc-lite = " \
 "
 
 URI_pcsc-lite-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/pcsc-lite-libs-2.2.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcsc-lite-libs}"
 RDEPENDS:pcsc-lite-libs = " \
  glibc \
 "
 
 URI_pcsc-lite-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcsc-lite-devel-2.2.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcsc-lite-devel}"
 RDEPENDS:pcsc-lite-devel = " \
  glibc \
  pcsc-lite-libs \
@@ -36,6 +42,7 @@ RDEPENDS:pcsc-lite-devel = " \
 "
 
 URI_pcsc-lite-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pcsc-lite-doc-2.2.3-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_pcsc-lite-doc}"
 RDEPENDS:pcsc-lite-doc = " \
  pcsc-lite-libs \
 "

@@ -8,7 +8,11 @@ PR = "8.el10_0"
 PACKAGES = "NetworkManager NetworkManager-adsl NetworkManager-bluetooth NetworkManager-config-server NetworkManager-libnm NetworkManager-tui NetworkManager-wifi NetworkManager-wwan NetworkManager-cloud-setup NetworkManager-config-connectivity-redhat NetworkManager-ovs NetworkManager-ppp NetworkManager-libnm-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/NetworkManager-1.52.0-8.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_NetworkManager = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager}"
 RDEPENDS:NetworkManager = " \
  systemd \
  systemd-libs \
@@ -29,6 +33,7 @@ RDEPENDS:NetworkManager = " \
 "
 
 URI_NetworkManager-adsl = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-adsl-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-adsl}"
 RDEPENDS:NetworkManager-adsl = " \
  glibc \
  NetworkManager \
@@ -37,6 +42,7 @@ RDEPENDS:NetworkManager-adsl = " \
 "
 
 URI_NetworkManager-bluetooth = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-bluetooth-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-bluetooth}"
 RDEPENDS:NetworkManager-bluetooth = " \
  NetworkManager \
  NetworkManager-wwan \
@@ -48,9 +54,11 @@ RDEPENDS:NetworkManager-bluetooth = " \
 "
 
 URI_NetworkManager-config-server = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-config-server-1.52.0-8.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-config-server}"
 RDEPENDS:NetworkManager-config-server = ""
 
 URI_NetworkManager-libnm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-libnm-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-libnm}"
 RDEPENDS:NetworkManager-libnm = " \
  gnutls \
  systemd-libs \
@@ -60,6 +68,7 @@ RDEPENDS:NetworkManager-libnm = " \
 "
 
 URI_NetworkManager-tui = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-tui-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-tui}"
 RDEPENDS:NetworkManager-tui = " \
  newt \
  NetworkManager \
@@ -70,6 +79,7 @@ RDEPENDS:NetworkManager-tui = " \
 "
 
 URI_NetworkManager-wifi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-wifi-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-wifi}"
 RDEPENDS:NetworkManager-wifi = " \
  NetworkManager \
  libgcc \
@@ -80,6 +90,7 @@ RDEPENDS:NetworkManager-wifi = " \
 "
 
 URI_NetworkManager-wwan = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/NetworkManager-wwan-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-wwan}"
 RDEPENDS:NetworkManager-wwan = " \
  ModemManager \
  ModemManager-glib \
@@ -91,6 +102,7 @@ RDEPENDS:NetworkManager-wwan = " \
 "
 
 URI_NetworkManager-cloud-setup = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/NetworkManager-cloud-setup-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-cloud-setup}"
 RDEPENDS:NetworkManager-cloud-setup = " \
  jansson \
  NetworkManager \
@@ -103,9 +115,11 @@ RDEPENDS:NetworkManager-cloud-setup = " \
 "
 
 URI_NetworkManager-config-connectivity-redhat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/NetworkManager-config-connectivity-redhat-1.52.0-8.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-config-connectivity-redhat}"
 RDEPENDS:NetworkManager-config-connectivity-redhat = ""
 
 URI_NetworkManager-ovs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/NetworkManager-ovs-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-ovs}"
 RDEPENDS:NetworkManager-ovs = " \
  NetworkManager \
  jansson \
@@ -115,6 +129,7 @@ RDEPENDS:NetworkManager-ovs = " \
 "
 
 URI_NetworkManager-ppp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/NetworkManager-ppp-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-ppp}"
 RDEPENDS:NetworkManager-ppp = " \
  NetworkManager \
  libgcc \
@@ -124,6 +139,7 @@ RDEPENDS:NetworkManager-ppp = " \
 "
 
 URI_NetworkManager-libnm-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/NetworkManager-libnm-devel-1.52.0-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-libnm-devel}"
 RDEPENDS:NetworkManager-libnm-devel = " \
  glib2-devel \
  NetworkManager-libnm \

@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "uresourced"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/uresourced-0.5.4-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_uresourced = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/uresourced-0.5.4-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_uresourced}"
 RDEPENDS:uresourced = " \
  systemd-libs \
  libgcc \

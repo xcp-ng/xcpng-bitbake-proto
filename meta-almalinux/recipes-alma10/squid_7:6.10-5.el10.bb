@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "squid"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/squid-6.10-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_squid = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/squid-6.10-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_squid}"
 RDEPENDS:squid = " \
  perl-libnet \
  systemd \

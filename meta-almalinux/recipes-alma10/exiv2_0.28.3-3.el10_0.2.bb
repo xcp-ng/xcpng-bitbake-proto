@@ -8,7 +8,11 @@ PR = "3.el10_0.2"
 PACKAGES = "exiv2 exiv2-libs exiv2-devel exiv2-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/exiv2-0.28.3-3.el10_0.2.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_exiv2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/exiv2-0.28.3-3.el10_0.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_exiv2}"
 RDEPENDS:exiv2 = " \
  glibc \
  libgcc \
@@ -17,6 +21,7 @@ RDEPENDS:exiv2 = " \
 "
 
 URI_exiv2-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/exiv2-libs-0.28.3-3.el10_0.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_exiv2-libs}"
 RDEPENDS:exiv2-libs = " \
  zlib-ng-compat \
  inih-cpp \
@@ -28,6 +33,7 @@ RDEPENDS:exiv2-libs = " \
 "
 
 URI_exiv2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/exiv2-devel-0.28.3-3.el10_0.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_exiv2-devel}"
 RDEPENDS:exiv2-devel = " \
  brotli-devel \
  cmake-filesystem \
@@ -39,4 +45,5 @@ RDEPENDS:exiv2-devel = " \
 "
 
 URI_exiv2-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/exiv2-doc-0.28.3-3.el10_0.2.noarch.rpm;unpack=0"
+SRC_URI += "${URI_exiv2-doc}"
 RDEPENDS:exiv2-doc = ""

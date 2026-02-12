@@ -8,7 +8,11 @@ PR = "4.el10_0"
 PACKAGES = "sos sos-audit"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/sos-4.10.0-4.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sos = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/sos-4.10.0-4.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_sos}"
 RDEPENDS:sos = " \
  python3 \
  python3-pyyaml \
@@ -19,6 +23,7 @@ RDEPENDS:sos = " \
 "
 
 URI_sos-audit = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/sos-audit-4.10.0-4.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_sos-audit}"
 RDEPENDS:sos-audit = " \
  bash \
 "

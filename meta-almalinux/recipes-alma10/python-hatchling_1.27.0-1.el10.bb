@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "python3-hatchling"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/python-hatchling-1.27.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-hatchling = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-hatchling-1.27.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-hatchling}"
 RDEPENDS:python3-hatchling = " \
  python3 \
  python3-trove-classifiers \

@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "maven-remote-resources-plugin maven-remote-resources-plugin-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/maven-remote-resources-plugin-3.1.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_maven-remote-resources-plugin = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-remote-resources-plugin-3.1.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-remote-resources-plugin}"
 RDEPENDS:maven-remote-resources-plugin = " \
  maven-filtering \
  plexus-resources \
@@ -22,6 +26,7 @@ RDEPENDS:maven-remote-resources-plugin = " \
 "
 
 URI_maven-remote-resources-plugin-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-remote-resources-plugin-javadoc-3.1.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-remote-resources-plugin-javadoc}"
 RDEPENDS:maven-remote-resources-plugin-javadoc = " \
  javapackages-filesystem \
 "

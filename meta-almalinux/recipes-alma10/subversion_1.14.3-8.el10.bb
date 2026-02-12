@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "mod_dav_svn python3-subversion subversion subversion-devel subversion-gnome subversion-libs subversion-perl subversion-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/subversion-1.14.3-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mod_dav_svn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mod_dav_svn-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mod_dav_svn}"
 RDEPENDS:mod_dav_svn = " \
  zlib-ng-compat \
  httpd-core \
@@ -25,6 +29,7 @@ RDEPENDS:mod_dav_svn = " \
 "
 
 URI_python3-subversion = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-subversion-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-subversion}"
 RDEPENDS:python3-subversion = " \
  python3 \
  zlib-ng-compat \
@@ -43,6 +48,7 @@ RDEPENDS:python3-subversion = " \
 "
 
 URI_subversion = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/subversion-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subversion}"
 RDEPENDS:subversion = " \
  systemd \
  apr \
@@ -53,6 +59,7 @@ RDEPENDS:subversion = " \
 "
 
 URI_subversion-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/subversion-devel-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subversion-devel}"
 RDEPENDS:subversion-devel = " \
  apr-devel \
  pkgconf-pkg-config \
@@ -64,6 +71,7 @@ RDEPENDS:subversion-devel = " \
 "
 
 URI_subversion-gnome = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/subversion-gnome-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subversion-gnome}"
 RDEPENDS:subversion-gnome = " \
  zlib-ng-compat \
  libxcrypt \
@@ -81,6 +89,7 @@ RDEPENDS:subversion-gnome = " \
 "
 
 URI_subversion-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/subversion-libs-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subversion-libs}"
 RDEPENDS:subversion-libs = " \
  zlib-ng-compat \
  libxcrypt \
@@ -97,6 +106,7 @@ RDEPENDS:subversion-libs = " \
 "
 
 URI_subversion-perl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/subversion-perl-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subversion-perl}"
 RDEPENDS:subversion-perl = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -120,6 +130,7 @@ RDEPENDS:subversion-perl = " \
 "
 
 URI_subversion-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/subversion-tools-1.14.3-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subversion-tools}"
 RDEPENDS:subversion-tools = " \
  glibc \
  apr \

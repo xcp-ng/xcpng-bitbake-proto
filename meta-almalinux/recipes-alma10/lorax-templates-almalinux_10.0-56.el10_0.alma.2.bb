@@ -8,7 +8,11 @@ PR = "56.el10_0.alma.2"
 PACKAGES = "lorax-templates-almalinux"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/lorax-templates-almalinux-10.0-56.el10_0.alma.2.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_lorax-templates-almalinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lorax-templates-almalinux-10.0-56.el10_0.alma.2.noarch.rpm;unpack=0"
+SRC_URI += "${URI_lorax-templates-almalinux}"
 RDEPENDS:lorax-templates-almalinux = " \
  lorax \
 "

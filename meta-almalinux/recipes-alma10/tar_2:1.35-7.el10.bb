@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "tar"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/tar-1.35-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_tar = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/tar-1.35-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tar}"
 RDEPENDS:tar = " \
  glibc \
  libselinux \

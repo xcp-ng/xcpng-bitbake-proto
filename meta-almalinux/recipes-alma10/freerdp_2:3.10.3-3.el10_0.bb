@@ -8,7 +8,11 @@ PR = "3.el10_0"
 PACKAGES = "freerdp freerdp-libs libwinpr freerdp-devel freerdp-server libwinpr-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/freerdp-3.10.3-3.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_freerdp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freerdp-3.10.3-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freerdp}"
 RDEPENDS:freerdp = " \
  libXfixes \
  libXi \
@@ -27,6 +31,7 @@ RDEPENDS:freerdp = " \
 "
 
 URI_freerdp-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freerdp-libs-3.10.3-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freerdp-libs}"
 RDEPENDS:freerdp-libs = " \
  cups-libs \
  libX11 \
@@ -55,6 +60,7 @@ RDEPENDS:freerdp-libs = " \
 "
 
 URI_libwinpr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libwinpr-3.10.3-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwinpr}"
 RDEPENDS:libwinpr = " \
  libpng \
  openssl-libs \
@@ -69,6 +75,7 @@ RDEPENDS:libwinpr = " \
 "
 
 URI_freerdp-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freerdp-devel-3.10.3-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freerdp-devel}"
 RDEPENDS:freerdp-devel = " \
  cmake-filesystem \
  freerdp-libs \
@@ -80,6 +87,7 @@ RDEPENDS:freerdp-devel = " \
 "
 
 URI_freerdp-server = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freerdp-server-3.10.3-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freerdp-server}"
 RDEPENDS:freerdp-server = " \
  glibc \
  freerdp-libs \
@@ -87,6 +95,7 @@ RDEPENDS:freerdp-server = " \
 "
 
 URI_libwinpr-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libwinpr-devel-3.10.3-3.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwinpr-devel}"
 RDEPENDS:libwinpr-devel = " \
  cmake-filesystem \
  pkgconf-pkg-config \

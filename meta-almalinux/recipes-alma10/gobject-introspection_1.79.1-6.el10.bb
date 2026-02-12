@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "gobject-introspection gobject-introspection-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/gobject-introspection-1.79.1-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gobject-introspection = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/gobject-introspection-1.79.1-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gobject-introspection}"
 RDEPENDS:gobject-introspection = " \
  glibc \
  libffi \
@@ -16,6 +20,7 @@ RDEPENDS:gobject-introspection = " \
 "
 
 URI_gobject-introspection-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gobject-introspection-devel-1.79.1-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gobject-introspection-devel}"
 RDEPENDS:gobject-introspection-devel = " \
  python3 \
  libtool \

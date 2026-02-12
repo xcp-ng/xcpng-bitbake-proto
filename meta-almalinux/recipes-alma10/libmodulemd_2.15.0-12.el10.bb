@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "libmodulemd python3-libmodulemd libmodulemd-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libmodulemd-2.15.0-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libmodulemd = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libmodulemd-2.15.0-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libmodulemd}"
 RDEPENDS:libmodulemd = " \
  libgcc \
  libyaml \
@@ -18,6 +22,7 @@ RDEPENDS:libmodulemd = " \
 "
 
 URI_python3-libmodulemd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-libmodulemd-2.15.0-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-libmodulemd}"
 RDEPENDS:python3-libmodulemd = " \
  python3 \
  python3-six \
@@ -26,6 +31,7 @@ RDEPENDS:python3-libmodulemd = " \
 "
 
 URI_libmodulemd-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libmodulemd-devel-2.15.0-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libmodulemd-devel}"
 RDEPENDS:libmodulemd-devel = " \
  glib2-devel \
  libmodulemd \

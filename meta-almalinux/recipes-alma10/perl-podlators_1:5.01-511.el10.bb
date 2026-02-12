@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-podlators perl-podlators-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-podlators-5.01-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-podlators = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-podlators-5.01-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-podlators}"
 RDEPENDS:perl-podlators = " \
  perl-libs \
  perl-Carp \
@@ -27,6 +31,7 @@ RDEPENDS:perl-podlators = " \
 "
 
 URI_perl-podlators-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-podlators-tests-5.01-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-podlators-tests}"
 RDEPENDS:perl-podlators-tests = " \
  perl-Test-Harness \
  perl-libs \

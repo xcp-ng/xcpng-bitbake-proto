@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-Test-Inter perl-Test-Inter-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Test-Inter-1.10-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Test-Inter = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Inter-1.10-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Inter}"
 RDEPENDS:perl-Test-Inter = " \
  perl-libs \
  perl-IO \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Test-Inter = " \
 "
 
 URI_perl-Test-Inter-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Inter-tests-1.10-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Inter-tests}"
 RDEPENDS:perl-Test-Inter-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "bmc-snmp-proxy exchange-bmc-os-info ipmievd ipmitool"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ipmitool-1.8.19-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_bmc-snmp-proxy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bmc-snmp-proxy-1.8.19-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_bmc-snmp-proxy}"
 RDEPENDS:bmc-snmp-proxy = " \
  net-snmp \
  bash \
@@ -16,6 +20,7 @@ RDEPENDS:bmc-snmp-proxy = " \
 "
 
 URI_exchange-bmc-os-info = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/exchange-bmc-os-info-1.8.19-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_exchange-bmc-os-info}"
 RDEPENDS:exchange-bmc-os-info = " \
  systemd \
  bash \
@@ -24,6 +29,7 @@ RDEPENDS:exchange-bmc-os-info = " \
 "
 
 URI_ipmievd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipmievd-1.8.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipmievd}"
 RDEPENDS:ipmievd = " \
  systemd \
  openssl-libs \
@@ -33,6 +39,7 @@ RDEPENDS:ipmievd = " \
 "
 
 URI_ipmitool = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipmitool-1.8.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ipmitool}"
 RDEPENDS:ipmitool = " \
  systemd \
  openssl-libs \

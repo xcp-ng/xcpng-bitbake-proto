@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-XML-Parser perl-XML-Parser-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-XML-Parser-2.47-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-XML-Parser = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-XML-Parser-2.47-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-XML-Parser}"
 RDEPENDS:perl-XML-Parser = " \
  perl-libs \
  perl-Carp \
@@ -22,6 +26,7 @@ RDEPENDS:perl-XML-Parser = " \
 "
 
 URI_perl-XML-Parser-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-XML-Parser-tests-2.47-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-XML-Parser-tests}"
 RDEPENDS:perl-XML-Parser-tests = " \
  perl-Test \
  perl-Test-Harness \

@@ -8,7 +8,11 @@ PR = "22.el10"
 PACKAGES = "perl-XML-Simple perl-XML-Simple-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-XML-Simple-2.25-22.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-XML-Simple = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-XML-Simple-2.25-22.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-XML-Simple}"
 RDEPENDS:perl-XML-Simple = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -25,6 +29,7 @@ RDEPENDS:perl-XML-Simple = " \
 "
 
 URI_perl-XML-Simple-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-XML-Simple-tests-2.25-22.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-XML-Simple-tests}"
 RDEPENDS:perl-XML-Simple-tests = " \
  perl-Test-Harness \
  perl-libs \

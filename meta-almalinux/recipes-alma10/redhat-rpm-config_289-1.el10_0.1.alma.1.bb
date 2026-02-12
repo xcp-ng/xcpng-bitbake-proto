@@ -8,7 +8,11 @@ PR = "1.el10_0.1.alma.1"
 PACKAGES = "redhat-rpm-config"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/redhat-rpm-config-289-1.el10_0.1.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_redhat-rpm-config = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/redhat-rpm-config-289-1.el10_0.1.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_redhat-rpm-config}"
 RDEPENDS:redhat-rpm-config = " \
  package-notes-srpm-macros \
  dwz \

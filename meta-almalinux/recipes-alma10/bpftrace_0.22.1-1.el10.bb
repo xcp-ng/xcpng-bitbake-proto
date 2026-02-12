@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "bpftrace"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/bpftrace-0.22.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_bpftrace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bpftrace-0.22.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bpftrace}"
 RDEPENDS:bpftrace = " \
  zlib-ng-compat \
  libgcc \

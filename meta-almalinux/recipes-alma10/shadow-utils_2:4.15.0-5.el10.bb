@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "shadow-utils shadow-utils-subid shadow-utils-subid-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/shadow-utils-4.15.0-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_shadow-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/shadow-utils-4.15.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_shadow-utils}"
 RDEPENDS:shadow-utils = " \
  setup \
  libacl \
@@ -23,6 +27,7 @@ RDEPENDS:shadow-utils = " \
 "
 
 URI_shadow-utils-subid = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/shadow-utils-subid-4.15.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_shadow-utils-subid}"
 RDEPENDS:shadow-utils-subid = " \
  libacl \
  libxcrypt \
@@ -36,6 +41,7 @@ RDEPENDS:shadow-utils-subid = " \
 "
 
 URI_shadow-utils-subid-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/shadow-utils-subid-devel-4.15.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_shadow-utils-subid-devel}"
 RDEPENDS:shadow-utils-subid-devel = " \
  shadow-utils-subid \
 "

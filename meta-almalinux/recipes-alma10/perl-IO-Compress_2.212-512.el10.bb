@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-IO-Compress perl-IO-Compress-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-IO-Compress-2.212-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-IO-Compress = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-IO-Compress-2.212-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO-Compress}"
 RDEPENDS:perl-IO-Compress = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -31,6 +35,7 @@ RDEPENDS:perl-IO-Compress = " \
 "
 
 URI_perl-IO-Compress-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-IO-Compress-tests-2.212-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO-Compress-tests}"
 RDEPENDS:perl-IO-Compress-tests = " \
  perl-constant \
  perl-Test-Harness \

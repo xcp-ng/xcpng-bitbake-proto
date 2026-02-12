@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-App-cpanminus perl-App-cpanminus-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-App-cpanminus-1.7047-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-App-cpanminus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-App-cpanminus-1.7047-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-App-cpanminus}"
 RDEPENDS:perl-App-cpanminus = " \
  perl-File-pushd \
  perl-Safe \
@@ -47,6 +51,7 @@ RDEPENDS:perl-App-cpanminus = " \
 "
 
 URI_perl-App-cpanminus-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-App-cpanminus-tests-1.7047-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-App-cpanminus-tests}"
 RDEPENDS:perl-App-cpanminus-tests = " \
  perl-Test-Harness \
  perl-libs \

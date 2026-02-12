@@ -8,7 +8,11 @@ PR = "3.el10_0.alma.1"
 PACKAGES = "osbuild-composer osbuild-composer-core osbuild-composer-worker osbuild-composer-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/osbuild-composer-134.1-3.el10_0.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_osbuild-composer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-composer-134.1-3.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-composer}"
 RDEPENDS:osbuild-composer = " \
  osbuild-composer-core \
  systemd \
@@ -17,6 +21,7 @@ RDEPENDS:osbuild-composer = " \
 "
 
 URI_osbuild-composer-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-composer-core-134.1-3.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-composer-core}"
 RDEPENDS:osbuild-composer-core = " \
  glibc \
  libxcrypt \
@@ -25,6 +30,7 @@ RDEPENDS:osbuild-composer-core = " \
 "
 
 URI_osbuild-composer-worker = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-composer-worker-134.1-3.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-composer-worker}"
 RDEPENDS:osbuild-composer-worker = " \
  systemd \
  osbuild \
@@ -42,6 +48,7 @@ RDEPENDS:osbuild-composer-worker = " \
 "
 
 URI_osbuild-composer-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/osbuild-composer-tests-134.1-3.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-composer-tests}"
 RDEPENDS:osbuild-composer-tests = " \
  python3 \
  container-selinux \

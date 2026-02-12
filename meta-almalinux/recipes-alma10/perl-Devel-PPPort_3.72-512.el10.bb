@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-Devel-PPPort perl-Devel-PPPort-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Devel-PPPort-3.72-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Devel-PPPort = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Devel-PPPort-3.72-512.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Devel-PPPort}"
 RDEPENDS:perl-Devel-PPPort = " \
  glibc \
  perl-libs \
@@ -16,6 +20,7 @@ RDEPENDS:perl-Devel-PPPort = " \
 "
 
 URI_perl-Devel-PPPort-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Devel-PPPort-tests-3.72-512.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Devel-PPPort-tests}"
 RDEPENDS:perl-Devel-PPPort-tests = " \
  perl-Devel-PPPort \
  perl-Test-Harness \

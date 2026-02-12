@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "ocaml-ocamlbuild ocaml-ocamlbuild-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/ocaml-ocamlbuild-0.14.3-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ocaml-ocamlbuild = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-ocamlbuild-0.14.3-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-ocamlbuild}"
 RDEPENDS:ocaml-ocamlbuild = " \
  glibc \
  ocaml-runtime \
@@ -17,4 +21,5 @@ RDEPENDS:ocaml-ocamlbuild = " \
 "
 
 URI_ocaml-ocamlbuild-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-ocamlbuild-doc-0.14.3-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-ocamlbuild-doc}"
 RDEPENDS:ocaml-ocamlbuild-doc = ""

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "stratis-cli"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/stratis-cli-3.7.0-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_stratis-cli = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/stratis-cli-3.7.0-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_stratis-cli}"
 RDEPENDS:stratis-cli = " \
  python3 \
  python3-wcwidth \

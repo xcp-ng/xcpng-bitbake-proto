@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-libnet perl-libnet-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-libnet-3.15-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-libnet = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-libnet-3.15-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-libnet}"
 RDEPENDS:perl-libnet = " \
  perl-libnet \
  perl-constant \
@@ -29,6 +33,7 @@ RDEPENDS:perl-libnet = " \
 "
 
 URI_perl-libnet-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-libnet-tests-3.15-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-libnet-tests}"
 RDEPENDS:perl-libnet-tests = " \
  perl-libnet \
  perl-Test-Harness \

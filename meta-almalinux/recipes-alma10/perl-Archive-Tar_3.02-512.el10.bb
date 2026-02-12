@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-Archive-Tar perl-Archive-Tar-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Archive-Tar-3.02-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Archive-Tar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Archive-Tar-3.02-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Archive-Tar}"
 RDEPENDS:perl-Archive-Tar = " \
  perl-libs \
  perl-Getopt-Long \
@@ -33,6 +37,7 @@ RDEPENDS:perl-Archive-Tar = " \
 "
 
 URI_perl-Archive-Tar-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Archive-Tar-tests-3.02-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Archive-Tar-tests}"
 RDEPENDS:perl-Archive-Tar-tests = " \
  perl-Test-Harness \
  perl-libs \

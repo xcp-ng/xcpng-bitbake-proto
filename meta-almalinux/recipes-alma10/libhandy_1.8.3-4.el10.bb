@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "libhandy libhandy-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libhandy-1.8.3-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libhandy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libhandy-1.8.3-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libhandy}"
 RDEPENDS:libhandy = " \
  atk \
  libgcc \
@@ -22,6 +26,7 @@ RDEPENDS:libhandy = " \
 "
 
 URI_libhandy-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libhandy-devel-1.8.3-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libhandy-devel}"
 RDEPENDS:libhandy-devel = " \
  libhandy \
  pkgconf-pkg-config \

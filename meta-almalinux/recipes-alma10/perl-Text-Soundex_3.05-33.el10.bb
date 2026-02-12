@@ -8,7 +8,11 @@ PR = "33.el10"
 PACKAGES = "perl-Text-Soundex perl-Text-Soundex-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Text-Soundex-3.05-33.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Text-Soundex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Text-Soundex-3.05-33.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Soundex}"
 RDEPENDS:perl-Text-Soundex = " \
  perl-libs \
  perl-Carp \
@@ -20,6 +24,7 @@ RDEPENDS:perl-Text-Soundex = " \
 "
 
 URI_perl-Text-Soundex-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Text-Soundex-tests-3.05-33.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Soundex-tests}"
 RDEPENDS:perl-Text-Soundex-tests = " \
  perl-Test-Harness \
  perl-libs \

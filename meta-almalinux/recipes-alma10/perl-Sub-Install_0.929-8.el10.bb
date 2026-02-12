@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "perl-Sub-Install perl-Sub-Install-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Sub-Install-0.929-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Sub-Install = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Sub-Install-0.929-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Install}"
 RDEPENDS:perl-Sub-Install = " \
  perl-B \
  perl-Scalar-List-Utils \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Sub-Install = " \
 "
 
 URI_perl-Sub-Install-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Sub-Install-tests-0.929-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Install-tests}"
 RDEPENDS:perl-Sub-Install-tests = " \
  perl-Test-Harness \
  perl-libs \

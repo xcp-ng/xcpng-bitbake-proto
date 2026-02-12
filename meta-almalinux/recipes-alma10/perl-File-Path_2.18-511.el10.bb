@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-File-Path perl-File-Path-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-File-Path-2.18-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-Path = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-Path-2.18-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Path}"
 RDEPENDS:perl-File-Path = " \
  perl-libs \
  perl-Carp \
@@ -19,6 +23,7 @@ RDEPENDS:perl-File-Path = " \
 "
 
 URI_perl-File-Path-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-Path-tests-2.18-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Path-tests}"
 RDEPENDS:perl-File-Path-tests = " \
  perl-Test-Harness \
  perl-libs \

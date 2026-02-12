@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "perl-Test2-Suite perl-Test2-Suite-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Test2-Suite-0.000163-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Test2-Suite = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Test2-Suite-0.000163-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test2-Suite}"
 RDEPENDS:perl-Test2-Suite = " \
  perl-constant \
  perl-threads \
@@ -30,6 +34,7 @@ RDEPENDS:perl-Test2-Suite = " \
 "
 
 URI_perl-Test2-Suite-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test2-Suite-tests-0.000163-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test2-Suite-tests}"
 RDEPENDS:perl-Test2-Suite-tests = " \
  perl-Test-Harness \
  perl-libs \

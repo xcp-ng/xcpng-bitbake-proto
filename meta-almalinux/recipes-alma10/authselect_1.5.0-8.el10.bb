@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "authselect authselect-libs authselect-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/authselect-1.5.0-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_authselect = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/authselect-1.5.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_authselect}"
 RDEPENDS:authselect = " \
  glibc \
  authselect-libs \
@@ -17,6 +21,7 @@ RDEPENDS:authselect = " \
 "
 
 URI_authselect-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/authselect-libs-1.5.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_authselect-libs}"
 RDEPENDS:authselect-libs = " \
  libselinux \
  bash \
@@ -26,6 +31,7 @@ RDEPENDS:authselect-libs = " \
 "
 
 URI_authselect-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/authselect-devel-1.5.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_authselect-devel}"
 RDEPENDS:authselect-devel = " \
  authselect-libs \
  pkgconf-pkg-config \

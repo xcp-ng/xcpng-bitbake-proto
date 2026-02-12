@@ -8,7 +8,11 @@ PR = "17.el10"
 PACKAGES = "alsa-firmware"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/alsa-firmware-1.2.4-17.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_alsa-firmware = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/alsa-firmware-1.2.4-17.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_alsa-firmware}"
 RDEPENDS:alsa-firmware = " \
  systemd \
  alsa-tools-firmware \

@@ -8,7 +8,11 @@ PR = "1.el10_0.alma.1"
 PACKAGES = "osbuild osbuild-depsolve-dnf osbuild-luks2 osbuild-lvm2 osbuild-ostree osbuild-selinux python3-osbuild osbuild-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/osbuild-141.2-1.el10_0.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_osbuild = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osbuild}"
 RDEPENDS:osbuild = " \
  python3 \
  e2fsprogs \
@@ -29,6 +33,7 @@ RDEPENDS:osbuild = " \
 "
 
 URI_osbuild-depsolve-dnf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-depsolve-dnf-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-depsolve-dnf}"
 RDEPENDS:osbuild-depsolve-dnf = " \
  python3 \
  osbuild \
@@ -36,6 +41,7 @@ RDEPENDS:osbuild-depsolve-dnf = " \
 "
 
 URI_osbuild-luks2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-luks2-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-luks2}"
 RDEPENDS:osbuild-luks2 = " \
  python3 \
  osbuild \
@@ -43,6 +49,7 @@ RDEPENDS:osbuild-luks2 = " \
 "
 
 URI_osbuild-lvm2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-lvm2-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-lvm2}"
 RDEPENDS:osbuild-lvm2 = " \
  python3 \
  osbuild \
@@ -50,6 +57,7 @@ RDEPENDS:osbuild-lvm2 = " \
 "
 
 URI_osbuild-ostree = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-ostree-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-ostree}"
 RDEPENDS:osbuild-ostree = " \
  python3 \
  osbuild \
@@ -58,6 +66,7 @@ RDEPENDS:osbuild-ostree = " \
 "
 
 URI_osbuild-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/osbuild-selinux-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-selinux}"
 RDEPENDS:osbuild-selinux = " \
  osbuild \
  policycoreutils-python-utils \
@@ -69,12 +78,14 @@ RDEPENDS:osbuild-selinux = " \
 "
 
 URI_python3-osbuild = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-osbuild-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-osbuild}"
 RDEPENDS:python3-osbuild = " \
  python3 \
  python3-jsonschema \
 "
 
 URI_osbuild-tools = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/osbuild-tools-141.2-1.el10_0.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osbuild-tools}"
 RDEPENDS:osbuild-tools = " \
  python3 \
  python3-pyyaml \

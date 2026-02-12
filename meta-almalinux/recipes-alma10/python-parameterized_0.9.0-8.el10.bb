@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "python3-parameterized"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/python-parameterized-0.9.0-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-parameterized = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-parameterized-0.9.0-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-parameterized}"
 RDEPENDS:python3-parameterized = " \
  python3 \
 "

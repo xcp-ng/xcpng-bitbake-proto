@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gtksourceview5 gtksourceview5-devel gtksourceview5-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gtksourceview5-5.14.2-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gtksourceview5 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtksourceview5-5.14.2-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtksourceview5}"
 RDEPENDS:gtksourceview5 = " \
  fribidi \
  libxml2 \
@@ -24,6 +28,7 @@ RDEPENDS:gtksourceview5 = " \
 "
 
 URI_gtksourceview5-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtksourceview5-devel-5.14.2-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtksourceview5-devel}"
 RDEPENDS:gtksourceview5-devel = " \
  libxml2-devel \
  sysprof-capture-devel \
@@ -38,6 +43,7 @@ RDEPENDS:gtksourceview5-devel = " \
 "
 
 URI_gtksourceview5-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gtksourceview5-tests-5.14.2-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtksourceview5-tests}"
 RDEPENDS:gtksourceview5-tests = " \
  fribidi \
  libxml2 \

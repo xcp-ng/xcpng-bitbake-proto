@@ -8,7 +8,11 @@ PR = "10.el10_0"
 PACKAGES = "ruby ruby-bundled-gems ruby-default-gems ruby-devel ruby-libs rubygem-bigdecimal rubygem-bundler rubygem-io-console rubygem-irb rubygem-json rubygem-minitest rubygem-power_assert rubygem-psych rubygem-racc rubygem-rake rubygem-rbs rubygem-rdoc rubygem-rexml rubygem-rss rubygem-test-unit rubygem-typeprof rubygems rubygems-devel ruby-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ruby-3.3.8-10.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ruby = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ruby-3.3.8-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ruby}"
 RDEPENDS:ruby = " \
  gmp \
  zlib-ng-compat \
@@ -18,6 +22,7 @@ RDEPENDS:ruby = " \
 "
 
 URI_ruby-bundled-gems = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ruby-bundled-gems-3.3.8-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ruby-bundled-gems}"
 RDEPENDS:ruby-bundled-gems = " \
  ruby \
  ruby-default-gems \
@@ -28,6 +33,7 @@ RDEPENDS:ruby-bundled-gems = " \
 "
 
 URI_ruby-default-gems = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ruby-default-gems-3.3.8-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ruby-default-gems}"
 RDEPENDS:ruby-default-gems = " \
  rubygems \
  ruby-default-gems \
@@ -36,6 +42,7 @@ RDEPENDS:ruby-default-gems = " \
 "
 
 URI_ruby-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ruby-devel-3.3.8-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ruby-devel}"
 RDEPENDS:ruby-devel = " \
  rubygems \
  ruby \
@@ -44,6 +51,7 @@ RDEPENDS:ruby-devel = " \
 "
 
 URI_ruby-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ruby-libs-3.3.8-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ruby-libs}"
 RDEPENDS:ruby-libs = " \
  gmp \
  zlib-ng-compat \
@@ -55,6 +63,7 @@ RDEPENDS:ruby-libs = " \
 "
 
 URI_rubygem-bigdecimal = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-bigdecimal-3.1.5-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-bigdecimal}"
 RDEPENDS:rubygem-bigdecimal = " \
  glibc \
  rubygems \
@@ -62,6 +71,7 @@ RDEPENDS:rubygem-bigdecimal = " \
 "
 
 URI_rubygem-bundler = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-bundler-2.5.22-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-bundler}"
 RDEPENDS:rubygem-bundler = " \
  rubygems \
  rubygem-io-console \
@@ -69,6 +79,7 @@ RDEPENDS:rubygem-bundler = " \
 "
 
 URI_rubygem-io-console = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-io-console-0.7.1-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-io-console}"
 RDEPENDS:rubygem-io-console = " \
  glibc \
  rubygems \
@@ -76,6 +87,7 @@ RDEPENDS:rubygem-io-console = " \
 "
 
 URI_rubygem-irb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-irb-1.13.1-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-irb}"
 RDEPENDS:rubygem-irb = " \
  rubygems \
  ruby-default-gems \
@@ -84,6 +96,7 @@ RDEPENDS:rubygem-irb = " \
 "
 
 URI_rubygem-json = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-json-2.7.2-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-json}"
 RDEPENDS:rubygem-json = " \
  glibc \
  rubygems \
@@ -91,16 +104,19 @@ RDEPENDS:rubygem-json = " \
 "
 
 URI_rubygem-minitest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-minitest-5.20.0-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-minitest}"
 RDEPENDS:rubygem-minitest = " \
  rubygems \
 "
 
 URI_rubygem-power_assert = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-power_assert-2.0.3-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-power_assert}"
 RDEPENDS:rubygem-power_assert = " \
  rubygems \
 "
 
 URI_rubygem-psych = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-psych-5.1.2-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-psych}"
 RDEPENDS:rubygem-psych = " \
  libyaml \
  ruby-default-gems \
@@ -110,6 +126,7 @@ RDEPENDS:rubygem-psych = " \
 "
 
 URI_rubygem-racc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-racc-1.7.3-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-racc}"
 RDEPENDS:rubygem-racc = " \
  glibc \
  ruby-libs \
@@ -118,12 +135,14 @@ RDEPENDS:rubygem-racc = " \
 "
 
 URI_rubygem-rake = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-rake-13.1.0-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-rake}"
 RDEPENDS:rubygem-rake = " \
  rubygems \
  ruby \
 "
 
 URI_rubygem-rbs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-rbs-3.4.0-10.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-rbs}"
 RDEPENDS:rubygem-rbs = " \
  ruby \
  ruby-default-gems \
@@ -133,6 +152,7 @@ RDEPENDS:rubygem-rbs = " \
 "
 
 URI_rubygem-rdoc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-rdoc-6.6.3.1-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-rdoc}"
 RDEPENDS:rubygem-rdoc = " \
  rubygem-psych \
  ruby \
@@ -142,23 +162,27 @@ RDEPENDS:rubygem-rdoc = " \
 "
 
 URI_rubygem-rexml = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-rexml-3.3.9-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-rexml}"
 RDEPENDS:rubygem-rexml = " \
  rubygems \
 "
 
 URI_rubygem-rss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-rss-0.3.1-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-rss}"
 RDEPENDS:rubygem-rss = " \
  rubygems \
  rubygem-rexml \
 "
 
 URI_rubygem-test-unit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-test-unit-3.6.1-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-test-unit}"
 RDEPENDS:rubygem-test-unit = " \
  rubygems \
  rubygem-power_assert \
 "
 
 URI_rubygem-typeprof = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygem-typeprof-0.21.9-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-typeprof}"
 RDEPENDS:rubygem-typeprof = " \
  rubygems \
  rubygem-rbs \
@@ -166,6 +190,7 @@ RDEPENDS:rubygem-typeprof = " \
 "
 
 URI_rubygems = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygems-3.5.22-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygems}"
 RDEPENDS:rubygems = " \
  ruby-libs \
  ruby \
@@ -173,6 +198,7 @@ RDEPENDS:rubygems = " \
 "
 
 URI_rubygems-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rubygems-devel-3.5.22-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygems-devel}"
 RDEPENDS:rubygems-devel = " \
  rubygem-rdoc \
  rubygems \
@@ -181,6 +207,7 @@ RDEPENDS:rubygems-devel = " \
 "
 
 URI_ruby-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ruby-doc-3.3.8-10.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ruby-doc}"
 RDEPENDS:ruby-doc = " \
  rubygem-rdoc \
 "

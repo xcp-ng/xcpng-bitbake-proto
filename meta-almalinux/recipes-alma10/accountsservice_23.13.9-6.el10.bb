@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "accountsservice accountsservice-libs accountsservice-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/accountsservice-23.13.9-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_accountsservice = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/accountsservice-23.13.9-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_accountsservice}"
 RDEPENDS:accountsservice = " \
  systemd \
  shadow-utils \
@@ -21,6 +25,7 @@ RDEPENDS:accountsservice = " \
 "
 
 URI_accountsservice-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/accountsservice-libs-23.13.9-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_accountsservice-libs}"
 RDEPENDS:accountsservice-libs = " \
  systemd-libs \
  accountsservice \
@@ -31,6 +36,7 @@ RDEPENDS:accountsservice-libs = " \
 "
 
 URI_accountsservice-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/accountsservice-devel-23.13.9-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_accountsservice-devel}"
 RDEPENDS:accountsservice-devel = " \
  glib2-devel \
  polkit-devel \

@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "maven-shared-utils maven-shared-utils-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/maven-shared-utils-3.4.2-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_maven-shared-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/maven-shared-utils-3.4.2-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-shared-utils}"
 RDEPENDS:maven-shared-utils = " \
  apache-commons-io \
  javapackages-filesystem \
@@ -16,6 +20,7 @@ RDEPENDS:maven-shared-utils = " \
 "
 
 URI_maven-shared-utils-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-shared-utils-javadoc-3.4.2-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-shared-utils-javadoc}"
 RDEPENDS:maven-shared-utils-javadoc = " \
  javapackages-filesystem \
 "

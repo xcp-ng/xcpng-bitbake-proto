@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gstreamer1-plugins-good gstreamer1-plugins-good-gtk gstreamer1-plugins-good-qt6"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gstreamer1-plugins-good-1.24.11-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gstreamer1-plugins-good = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-good-1.24.11-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-good}"
 RDEPENDS:gstreamer1-plugins-good = " \
  libpng \
  libX11 \
@@ -46,6 +50,7 @@ RDEPENDS:gstreamer1-plugins-good = " \
 "
 
 URI_gstreamer1-plugins-good-gtk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-good-gtk-1.24.11-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-good-gtk}"
 RDEPENDS:gstreamer1-plugins-good-gtk = " \
  gstreamer1 \
  gstreamer1-plugins-base \
@@ -57,6 +62,7 @@ RDEPENDS:gstreamer1-plugins-good-gtk = " \
 "
 
 URI_gstreamer1-plugins-good-qt6 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gstreamer1-plugins-good-qt6-1.24.11-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-good-qt6}"
 RDEPENDS:gstreamer1-plugins-good-qt6 = " \
  qt6-qtdeclarative \
  gstreamer1 \

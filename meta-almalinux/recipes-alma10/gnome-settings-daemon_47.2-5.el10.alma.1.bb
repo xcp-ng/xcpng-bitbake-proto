@@ -8,7 +8,11 @@ PR = "5.el10.alma.1"
 PACKAGES = "gnome-settings-daemon gnome-settings-daemon-server-defaults gnome-settings-daemon-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-settings-daemon = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-settings-daemon-47.2-5.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-settings-daemon}"
 RDEPENDS:gnome-settings-daemon = " \
  ModemManager-glib \
  systemd-libs \
@@ -51,11 +55,13 @@ RDEPENDS:gnome-settings-daemon = " \
 "
 
 URI_gnome-settings-daemon-server-defaults = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-settings-daemon-server-defaults-47.2-5.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-settings-daemon-server-defaults}"
 RDEPENDS:gnome-settings-daemon-server-defaults = " \
  gnome-settings-daemon \
 "
 
 URI_gnome-settings-daemon-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gnome-settings-daemon-devel-47.2-5.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-settings-daemon-devel}"
 RDEPENDS:gnome-settings-daemon-devel = " \
  pkgconf-pkg-config \
  gnome-settings-daemon \

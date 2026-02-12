@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "maven maven-lib maven-openjdk21 maven-javadoc maven-unbound"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/maven-3.9.9-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_maven = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/maven-3.9.9-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven}"
 RDEPENDS:maven = " \
  alternatives \
  bash \
@@ -17,6 +21,7 @@ RDEPENDS:maven = " \
 "
 
 URI_maven-lib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/maven-lib-3.9.9-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-lib}"
 RDEPENDS:maven-lib = " \
  plexus-cipher \
  atinject \
@@ -39,6 +44,7 @@ RDEPENDS:maven-lib = " \
 "
 
 URI_maven-openjdk21 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/maven-openjdk21-3.9.9-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-openjdk21}"
 RDEPENDS:maven-openjdk21 = " \
  maven \
  java-21-openjdk-headless \
@@ -46,11 +52,13 @@ RDEPENDS:maven-openjdk21 = " \
 "
 
 URI_maven-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-javadoc-3.9.9-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-javadoc}"
 RDEPENDS:maven-javadoc = " \
  javapackages-filesystem \
 "
 
 URI_maven-unbound = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-unbound-3.9.9-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-unbound}"
 RDEPENDS:maven-unbound = " \
  maven \
  javapackages-tools \

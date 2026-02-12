@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "doxygen doxygen-latex"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/doxygen-1.13.2-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_doxygen = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/doxygen-1.13.2-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_doxygen}"
 RDEPENDS:doxygen = " \
  libgcc \
  libstdc++ \
@@ -18,6 +22,7 @@ RDEPENDS:doxygen = " \
 "
 
 URI_doxygen-latex = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/doxygen-latex-1.13.2-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_doxygen-latex}"
 RDEPENDS:doxygen-latex = " \
  texlive-etoc \
  texlive-varwidth \

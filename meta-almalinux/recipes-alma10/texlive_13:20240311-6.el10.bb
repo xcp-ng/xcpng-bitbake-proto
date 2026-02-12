@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "texlive texlive-acronym texlive-adjustbox texlive-ae texlive-algorithms texlive-alphalph texlive-amscls texlive-amsfonts texlive-amsmath texlive-anyfontsize texlive-anysize texlive-appendix texlive-arphic texlive-atbegshi texlive-attachfile texlive-attachfile2 texlive-atveryend texlive-auxhook texlive-avantgar texlive-awesomebox texlive-babel texlive-babel-english texlive-babelbib texlive-base texlive-beamer texlive-bera texlive-beton texlive-bibtex texlive-bibtopic texlive-bidi texlive-bigfoot texlive-bigintcalc texlive-bitset texlive-bookman texlive-bookmark texlive-booktabs texlive-breakurl texlive-breqn texlive-capt-of texlive-caption texlive-carlisle texlive-catchfile texlive-changebar texlive-changepage texlive-charter texlive-chngcntr texlive-cite texlive-classpack texlive-cm texlive-cm-lgc texlive-cm-super texlive-cmap texlive-cmextra texlive-cns texlive-collectbox texlive-collection-basic texlive-collection-fontsrecommended texlive-collection-htmlxml texlive-collection-latex texlive-collection-latexrecommended texlive-collection-xetex texlive-colorprofiles texlive-colortbl texlive-context texlive-count1to texlive-courier texlive-crop texlive-csquotes texlive-ctable texlive-ctablestack texlive-currfile texlive-datetime texlive-dehyph texlive-dvipdfmx texlive-dvipng texlive-dvips texlive-dvisvgm texlive-ec texlive-eepic texlive-enctex texlive-enumitem texlive-environ texlive-epsf texlive-epstopdf texlive-epstopdf-pkg texlive-eqparbox texlive-eso-pic texlive-etex texlive-etex-pkg texlive-etexcmds texlive-etoc texlive-etoolbox texlive-euenc texlive-euler texlive-euro texlive-eurosym texlive-everysel texlive-everyshi texlive-extsizes texlive-fancybox texlive-fancyhdr texlive-fancyref texlive-fancyvrb texlive-filecontents texlive-filehook texlive-finstrut texlive-firstaid texlive-fix2col texlive-fixlatvian texlive-float texlive-fmtcount texlive-fncychap texlive-fontawesome texlive-fontbook texlive-fonts-tlwg texlive-fontspec texlive-fontware texlive-fontwrap texlive-footmisc texlive-footnotehyper texlive-fp texlive-fpl texlive-framed texlive-garuda-c90 texlive-geometry texlive-gettitlestring texlive-glyphlist texlive-graphics texlive-graphics-cfg texlive-graphics-def texlive-grfext texlive-grffile texlive-gsftopk texlive-hanging texlive-helvetic texlive-hobsub texlive-hologo texlive-hopatch texlive-hycolor texlive-hypcap texlive-hypdoc texlive-hyperref texlive-hyph-utf8 texlive-hyphen-base texlive-hyphenat texlive-hyphenex texlive-ifmtarg texlive-ifoddpage texlive-ifplatform texlive-iftex texlive-import texlive-index texlive-infwarerr texlive-intcalc texlive-jadetex texlive-jknapltx texlive-kastrup texlive-kerkis texlive-knuth-lib texlive-knuth-local texlive-koma-script texlive-kpathsea texlive-kvdefinekeys texlive-kvoptions texlive-kvsetkeys texlive-l3backend texlive-l3experimental texlive-l3kernel texlive-l3packages texlive-lastpage texlive-latex texlive-latex-fonts texlive-latex2man texlive-latexbug texlive-latexconfig texlive-letltxmacro texlive-lettrine texlive-lib texlive-linegoal texlive-lineno texlive-listings texlive-listofitems texlive-lm texlive-lm-math texlive-ltabptch texlive-ltxcmds texlive-ltxmisc texlive-lua-alt-getopt texlive-lua-uni-algos texlive-luahbtex texlive-lualatex-math texlive-lualibs texlive-luaotfload texlive-luatex texlive-luatex85 texlive-luatexbase texlive-lwarp texlive-makecmds texlive-makeindex texlive-manfnt-font texlive-marginnote texlive-marvosym texlive-mathpazo texlive-mathspec texlive-mathtools texlive-mdwtools texlive-memoir texlive-metafont texlive-metalogo texlive-metapost texlive-mflogo texlive-mflogo-font texlive-mfnfss texlive-mfware texlive-microtype texlive-minitoc texlive-mnsymbol texlive-modes texlive-mparhack texlive-mptopdf texlive-multido texlive-multirow texlive-multitoc texlive-natbib texlive-ncctools texlive-ncntrsbk texlive-needspace texlive-newfloat texlive-newunicodechar texlive-norasi-c90 texlive-notoccite texlive-ntgclass texlive-oberdiek texlive-overpic texlive-palatino texlive-paralist texlive-parallel texlive-parskip texlive-passivetex texlive-pdfcol texlive-pdfcolfoot texlive-pdfcolmk texlive-pdfescape texlive-pdflscape texlive-pdfmanagement-testphase texlive-pdfpages texlive-pdftex texlive-pdftexcmds texlive-pgf texlive-philokalia texlive-placeins texlive-plain texlive-polyglossia texlive-powerdot texlive-preprint texlive-psfrag texlive-pslatex texlive-psnfss texlive-pspicture texlive-pst-3d texlive-pst-arrow texlive-pst-blur texlive-pst-coil texlive-pst-eps texlive-pst-fill texlive-pst-grad texlive-pst-math texlive-pst-node texlive-pst-plot texlive-pst-slpe texlive-pst-text texlive-pst-tools texlive-pst-tree texlive-pstricks texlive-pstricks-add texlive-ptext texlive-pxfonts texlive-qstest texlive-ragged2e texlive-rcs texlive-realscripts texlive-refcount texlive-relsize texlive-rerunfilecheck texlive-rsfs texlive-sansmath texlive-sansmathaccent texlive-sauerj texlive-scheme-basic texlive-section texlive-sectsty texlive-seminar texlive-sepnum texlive-setspace texlive-sfmath texlive-showexpl texlive-soul texlive-stackengine texlive-stmaryrd texlive-stringenc texlive-subfig texlive-subfigure texlive-svn-prov texlive-symbol texlive-t2 texlive-tabu texlive-tabulary texlive-tex texlive-tex-gyre texlive-tex-gyre-math texlive-tex-ini-files texlive-tex4ht texlive-texlive-common-doc texlive-texlive-en texlive-texlive-msg-translations texlive-texlive-scripts texlive-texlive-scripts-extra texlive-texlive.infra texlive-textcase texlive-textpos texlive-threeparttable texlive-thumbpdf texlive-times texlive-tipa texlive-titlesec texlive-titling texlive-tocloft texlive-tools texlive-translator texlive-trimspaces texlive-txfonts texlive-type1cm texlive-typehtml texlive-ucharcat texlive-ucharclasses texlive-ucs texlive-uhc texlive-ulem texlive-underscore texlive-unicode-data texlive-unicode-math texlive-uniquecounter texlive-unisugar texlive-upquote texlive-url texlive-utopia texlive-varwidth texlive-wadalab texlive-was texlive-wasy texlive-wasy-type1 texlive-wasysym texlive-wrapfig texlive-xcolor texlive-xecolor texlive-xecyr texlive-xeindex texlive-xepersian texlive-xesearch texlive-xetex texlive-xetex-itrans texlive-xetex-pstricks texlive-xetexconfig texlive-xetexfontinfo texlive-xfrac texlive-xifthen texlive-xkeyval texlive-xltxtra texlive-xmltex texlive-xpatch texlive-xstring texlive-xtab texlive-xunicode texlive-zapfchan texlive-zapfding texlive-zref texlive-gnu-freefont texlive-lib-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/texlive-20240311-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_texlive = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive}"
 RDEPENDS:texlive = " \
  texlive-scheme-basic \
  texlive-collection-latexrecommended \
@@ -16,6 +20,7 @@ RDEPENDS:texlive = " \
 "
 
 URI_texlive-acronym = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-acronym-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-acronym}"
 RDEPENDS:texlive-acronym = " \
  texlive-relsize \
  texlive-bigfoot \
@@ -25,6 +30,7 @@ RDEPENDS:texlive-acronym = " \
 "
 
 URI_texlive-adjustbox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-adjustbox-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-adjustbox}"
 RDEPENDS:texlive-adjustbox = " \
  texlive-pgf \
  texlive-varwidth \
@@ -38,6 +44,7 @@ RDEPENDS:texlive-adjustbox = " \
 "
 
 URI_texlive-ae = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ae-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ae}"
 RDEPENDS:texlive-ae = " \
  texlive-kpathsea \
  texlive-latex \
@@ -45,6 +52,7 @@ RDEPENDS:texlive-ae = " \
 "
 
 URI_texlive-algorithms = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-algorithms-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-algorithms}"
 RDEPENDS:texlive-algorithms = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -54,11 +62,13 @@ RDEPENDS:texlive-algorithms = " \
 "
 
 URI_texlive-alphalph = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-alphalph-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-alphalph}"
 RDEPENDS:texlive-alphalph = " \
  texlive-kpathsea \
 "
 
 URI_texlive-amscls = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-amscls-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-amscls}"
 RDEPENDS:texlive-amscls = " \
  texlive-url \
  texlive-kpathsea \
@@ -69,12 +79,14 @@ RDEPENDS:texlive-amscls = " \
 "
 
 URI_texlive-amsfonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-amsfonts-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-amsfonts}"
 RDEPENDS:texlive-amsfonts = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-amsmath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-amsmath-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-amsmath}"
 RDEPENDS:texlive-amsmath = " \
  texlive-kpathsea \
  texlive-base \
@@ -82,35 +94,41 @@ RDEPENDS:texlive-amsmath = " \
 "
 
 URI_texlive-anyfontsize = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-anyfontsize-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-anyfontsize}"
 RDEPENDS:texlive-anyfontsize = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-anysize = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-anysize-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-anysize}"
 RDEPENDS:texlive-anysize = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-appendix = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-appendix-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-appendix}"
 RDEPENDS:texlive-appendix = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-arphic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-arphic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-arphic}"
 RDEPENDS:texlive-arphic = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-atbegshi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-atbegshi-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-atbegshi}"
 RDEPENDS:texlive-atbegshi = " \
  texlive-kpathsea \
 "
 
 URI_texlive-attachfile = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-attachfile-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-attachfile}"
 RDEPENDS:texlive-attachfile = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -121,6 +139,7 @@ RDEPENDS:texlive-attachfile = " \
 "
 
 URI_texlive-attachfile2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-attachfile2-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-attachfile2}"
 RDEPENDS:texlive-attachfile2 = " \
  perl-libs \
  texlive-kpathsea \
@@ -132,22 +151,26 @@ RDEPENDS:texlive-attachfile2 = " \
 "
 
 URI_texlive-atveryend = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-atveryend-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-atveryend}"
 RDEPENDS:texlive-atveryend = " \
  texlive-kpathsea \
 "
 
 URI_texlive-auxhook = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-auxhook-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-auxhook}"
 RDEPENDS:texlive-auxhook = " \
  texlive-kpathsea \
 "
 
 URI_texlive-avantgar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-avantgar-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-avantgar}"
 RDEPENDS:texlive-avantgar = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-awesomebox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-awesomebox-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-awesomebox}"
 RDEPENDS:texlive-awesomebox = " \
  texlive-xltxtra \
  texlive-xcolor \
@@ -158,18 +181,21 @@ RDEPENDS:texlive-awesomebox = " \
 "
 
 URI_texlive-babel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-babel-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-babel}"
 RDEPENDS:texlive-babel = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-babel-english = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-babel-english-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-babel-english}"
 RDEPENDS:texlive-babel-english = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-babelbib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-babelbib-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-babelbib}"
 RDEPENDS:texlive-babelbib = " \
  texlive-kpathsea \
  texlive-babel \
@@ -177,12 +203,14 @@ RDEPENDS:texlive-babelbib = " \
 "
 
 URI_texlive-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-base-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-base}"
 RDEPENDS:texlive-base = " \
  coreutils \
  bash \
 "
 
 URI_texlive-beamer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-beamer-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-beamer}"
 RDEPENDS:texlive-beamer = " \
  texlive-etoolbox \
  texlive-xcolor \
@@ -206,6 +234,7 @@ RDEPENDS:texlive-beamer = " \
 "
 
 URI_texlive-bera = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bera-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bera}"
 RDEPENDS:texlive-bera = " \
  texlive-bera \
  texlive-graphics \
@@ -215,12 +244,14 @@ RDEPENDS:texlive-bera = " \
 "
 
 URI_texlive-beton = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-beton-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-beton}"
 RDEPENDS:texlive-beton = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-bibtex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bibtex-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bibtex}"
 RDEPENDS:texlive-bibtex = " \
  glibc \
  texlive-lib \
@@ -229,6 +260,7 @@ RDEPENDS:texlive-bibtex = " \
 "
 
 URI_texlive-bibtopic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bibtopic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bibtopic}"
 RDEPENDS:texlive-bibtopic = " \
  texlive-kpathsea \
  texlive-latex \
@@ -236,6 +268,7 @@ RDEPENDS:texlive-bibtopic = " \
 "
 
 URI_texlive-bidi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bidi-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bidi}"
 RDEPENDS:texlive-bidi = " \
  texlive-url \
  texlive-etoolbox \
@@ -268,6 +301,7 @@ RDEPENDS:texlive-bidi = " \
 "
 
 URI_texlive-bigfoot = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bigfoot-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bigfoot}"
 RDEPENDS:texlive-bigfoot = " \
  texlive-bigfoot \
  texlive-ncctools \
@@ -277,34 +311,40 @@ RDEPENDS:texlive-bigfoot = " \
 "
 
 URI_texlive-bigintcalc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bigintcalc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bigintcalc}"
 RDEPENDS:texlive-bigintcalc = " \
  texlive-kpathsea \
 "
 
 URI_texlive-bitset = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bitset-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bitset}"
 RDEPENDS:texlive-bitset = " \
  texlive-kpathsea \
  texlive-bigintcalc \
 "
 
 URI_texlive-bookman = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bookman-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bookman}"
 RDEPENDS:texlive-bookman = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-bookmark = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-bookmark-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-bookmark}"
 RDEPENDS:texlive-bookmark = " \
  texlive-kpathsea \
 "
 
 URI_texlive-booktabs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-booktabs-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-booktabs}"
 RDEPENDS:texlive-booktabs = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-breakurl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-breakurl-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-breakurl}"
 RDEPENDS:texlive-breakurl = " \
  texlive-kpathsea \
  texlive-iftex \
@@ -313,6 +353,7 @@ RDEPENDS:texlive-breakurl = " \
 "
 
 URI_texlive-breqn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-breqn-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-breqn}"
 RDEPENDS:texlive-breqn = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -322,12 +363,14 @@ RDEPENDS:texlive-breqn = " \
 "
 
 URI_texlive-capt-of = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-capt-of-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-capt-of}"
 RDEPENDS:texlive-capt-of = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-caption = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-caption-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-caption}"
 RDEPENDS:texlive-caption = " \
  texlive-kpathsea \
  texlive-base \
@@ -336,6 +379,7 @@ RDEPENDS:texlive-caption = " \
 "
 
 URI_texlive-carlisle = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-carlisle-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-carlisle}"
 RDEPENDS:texlive-carlisle = " \
  texlive-kpathsea \
  texlive-base \
@@ -344,6 +388,7 @@ RDEPENDS:texlive-carlisle = " \
 "
 
 URI_texlive-catchfile = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-catchfile-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-catchfile}"
 RDEPENDS:texlive-catchfile = " \
  texlive-ltxcmds \
  texlive-etexcmds \
@@ -352,54 +397,63 @@ RDEPENDS:texlive-catchfile = " \
 "
 
 URI_texlive-changebar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-changebar-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-changebar}"
 RDEPENDS:texlive-changebar = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-changepage = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-changepage-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-changepage}"
 RDEPENDS:texlive-changepage = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-charter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-charter-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-charter}"
 RDEPENDS:texlive-charter = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-chngcntr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-chngcntr-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-chngcntr}"
 RDEPENDS:texlive-chngcntr = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-cite = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-cite-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-cite}"
 RDEPENDS:texlive-cite = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-classpack = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-classpack-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-classpack}"
 RDEPENDS:texlive-classpack = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-cm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-cm-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-cm}"
 RDEPENDS:texlive-cm = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-cm-lgc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-cm-lgc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-cm-lgc}"
 RDEPENDS:texlive-cm-lgc = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-cm-super = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-cm-super-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-cm-super}"
 RDEPENDS:texlive-cm-super = " \
  texlive-kpathsea \
  texlive-latex \
@@ -407,30 +461,35 @@ RDEPENDS:texlive-cm-super = " \
 "
 
 URI_texlive-cmap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-cmap-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-cmap}"
 RDEPENDS:texlive-cmap = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-cmextra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-cmextra-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-cmextra}"
 RDEPENDS:texlive-cmextra = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-cns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-cns-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-cns}"
 RDEPENDS:texlive-cns = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-collectbox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-collectbox-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-collectbox}"
 RDEPENDS:texlive-collectbox = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-collection-basic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-collection-basic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-collection-basic}"
 RDEPENDS:texlive-collection-basic = " \
  texlive-modes \
  texlive-pdftex \
@@ -474,6 +533,7 @@ RDEPENDS:texlive-collection-basic = " \
 "
 
 URI_texlive-collection-fontsrecommended = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-collection-fontsrecommended-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-collection-fontsrecommended}"
 RDEPENDS:texlive-collection-fontsrecommended = " \
  texlive-utopia \
  texlive-euro \
@@ -513,6 +573,7 @@ RDEPENDS:texlive-collection-fontsrecommended = " \
 "
 
 URI_texlive-collection-htmlxml = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-collection-htmlxml-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-collection-htmlxml}"
 RDEPENDS:texlive-collection-htmlxml = " \
  texlive-collection-latex \
  texlive-jadetex \
@@ -527,6 +588,7 @@ RDEPENDS:texlive-collection-htmlxml = " \
 "
 
 URI_texlive-collection-latex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-collection-latex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-collection-latex}"
 RDEPENDS:texlive-collection-latex = " \
  texlive-etexcmds \
  texlive-url \
@@ -585,6 +647,7 @@ RDEPENDS:texlive-collection-latex = " \
 "
 
 URI_texlive-collection-latexrecommended = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-collection-latexrecommended-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-collection-latexrecommended}"
 RDEPENDS:texlive-collection-latexrecommended = " \
  texlive-etoolbox \
  texlive-euenc \
@@ -665,6 +728,7 @@ RDEPENDS:texlive-collection-latexrecommended = " \
 "
 
 URI_texlive-collection-xetex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-collection-xetex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-collection-xetex}"
 RDEPENDS:texlive-collection-xetex = " \
  texlive-xecolor \
  texlive-xecyr \
@@ -689,11 +753,13 @@ RDEPENDS:texlive-collection-xetex = " \
 "
 
 URI_texlive-colorprofiles = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-colorprofiles-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-colorprofiles}"
 RDEPENDS:texlive-colorprofiles = " \
  texlive-kpathsea \
 "
 
 URI_texlive-colortbl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-colortbl-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-colortbl}"
 RDEPENDS:texlive-colortbl = " \
  texlive-kpathsea \
  texlive-base \
@@ -702,6 +768,7 @@ RDEPENDS:texlive-colortbl = " \
 "
 
 URI_texlive-context = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-context-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-context}"
 RDEPENDS:texlive-context = " \
  texlive-mptopdf \
  perl-libs \
@@ -727,6 +794,7 @@ RDEPENDS:texlive-context = " \
 "
 
 URI_texlive-count1to = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-count1to-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-count1to}"
 RDEPENDS:texlive-count1to = " \
  texlive-everyshi \
  texlive-kpathsea \
@@ -734,12 +802,14 @@ RDEPENDS:texlive-count1to = " \
 "
 
 URI_texlive-courier = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-courier-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-courier}"
 RDEPENDS:texlive-courier = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-crop = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-crop-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-crop}"
 RDEPENDS:texlive-crop = " \
  texlive-kpathsea \
  texlive-base \
@@ -747,6 +817,7 @@ RDEPENDS:texlive-crop = " \
 "
 
 URI_texlive-csquotes = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-csquotes-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-csquotes}"
 RDEPENDS:texlive-csquotes = " \
  texlive-kpathsea \
  texlive-etoolbox \
@@ -755,6 +826,7 @@ RDEPENDS:texlive-csquotes = " \
 "
 
 URI_texlive-ctable = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ctable-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ctable}"
 RDEPENDS:texlive-ctable = " \
  texlive-etoolbox \
  texlive-graphics \
@@ -767,12 +839,14 @@ RDEPENDS:texlive-ctable = " \
 "
 
 URI_texlive-ctablestack = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ctablestack-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ctablestack}"
 RDEPENDS:texlive-ctablestack = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-currfile = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-currfile-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-currfile}"
 RDEPENDS:texlive-currfile = " \
  texlive-kpathsea \
  texlive-kvoptions \
@@ -781,6 +855,7 @@ RDEPENDS:texlive-currfile = " \
 "
 
 URI_texlive-datetime = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-datetime-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-datetime}"
 RDEPENDS:texlive-datetime = " \
  texlive-kpathsea \
  texlive-latex \
@@ -789,11 +864,13 @@ RDEPENDS:texlive-datetime = " \
 "
 
 URI_texlive-dehyph = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-dehyph-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-dehyph}"
 RDEPENDS:texlive-dehyph = " \
  texlive-kpathsea \
 "
 
 URI_texlive-dvipdfmx = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-dvipdfmx-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-dvipdfmx}"
 RDEPENDS:texlive-dvipdfmx = " \
  texlive-glyphlist \
  texlive-graphics-def \
@@ -804,6 +881,7 @@ RDEPENDS:texlive-dvipdfmx = " \
 "
 
 URI_texlive-dvipng = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-dvipng-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-dvipng}"
 RDEPENDS:texlive-dvipng = " \
  gd \
  freetype \
@@ -815,6 +893,7 @@ RDEPENDS:texlive-dvipng = " \
 "
 
 URI_texlive-dvips = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-dvips-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-dvips}"
 RDEPENDS:texlive-dvips = " \
  texlive-lib \
  texlive-kpathsea \
@@ -825,6 +904,7 @@ RDEPENDS:texlive-dvips = " \
 "
 
 URI_texlive-dvisvgm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-dvisvgm-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-dvisvgm}"
 RDEPENDS:texlive-dvisvgm = " \
  zlib-ng-compat \
  freetype \
@@ -839,30 +919,35 @@ RDEPENDS:texlive-dvisvgm = " \
 "
 
 URI_texlive-ec = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ec-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ec}"
 RDEPENDS:texlive-ec = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-eepic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-eepic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-eepic}"
 RDEPENDS:texlive-eepic = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-enctex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-enctex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-enctex}"
 RDEPENDS:texlive-enctex = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-enumitem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-enumitem-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-enumitem}"
 RDEPENDS:texlive-enumitem = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-environ = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-environ-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-environ}"
 RDEPENDS:texlive-environ = " \
  texlive-kpathsea \
  texlive-trimspaces \
@@ -870,6 +955,7 @@ RDEPENDS:texlive-environ = " \
 "
 
 URI_texlive-epsf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-epsf-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-epsf}"
 RDEPENDS:texlive-epsf = " \
  texlive-kpathsea \
  bash \
@@ -877,6 +963,7 @@ RDEPENDS:texlive-epsf = " \
 "
 
 URI_texlive-epstopdf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-epstopdf-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-epstopdf}"
 RDEPENDS:texlive-epstopdf = " \
  perl-libs \
  texlive-kpathsea \
@@ -887,11 +974,13 @@ RDEPENDS:texlive-epstopdf = " \
 "
 
 URI_texlive-epstopdf-pkg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-epstopdf-pkg-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-epstopdf-pkg}"
 RDEPENDS:texlive-epstopdf-pkg = " \
  texlive-kpathsea \
 "
 
 URI_texlive-eqparbox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-eqparbox-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-eqparbox}"
 RDEPENDS:texlive-eqparbox = " \
  texlive-environ \
  texlive-kpathsea \
@@ -900,6 +989,7 @@ RDEPENDS:texlive-eqparbox = " \
 "
 
 URI_texlive-eso-pic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-eso-pic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-eso-pic}"
 RDEPENDS:texlive-eso-pic = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -909,23 +999,27 @@ RDEPENDS:texlive-eso-pic = " \
 "
 
 URI_texlive-etex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-etex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-etex}"
 RDEPENDS:texlive-etex = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-etex-pkg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-etex-pkg-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-etex-pkg}"
 RDEPENDS:texlive-etex-pkg = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-etexcmds = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-etexcmds-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-etexcmds}"
 RDEPENDS:texlive-etexcmds = " \
  texlive-kpathsea \
 "
 
 URI_texlive-etoc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-etoc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-etoc}"
 RDEPENDS:texlive-etoc = " \
  texlive-kpathsea \
  texlive-base \
@@ -933,6 +1027,7 @@ RDEPENDS:texlive-etoc = " \
 "
 
 URI_texlive-etoolbox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-etoolbox-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-etoolbox}"
 RDEPENDS:texlive-etoolbox = " \
  texlive-kpathsea \
  texlive-base \
@@ -940,18 +1035,21 @@ RDEPENDS:texlive-etoolbox = " \
 "
 
 URI_texlive-euenc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-euenc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-euenc}"
 RDEPENDS:texlive-euenc = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-euler = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-euler-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-euler}"
 RDEPENDS:texlive-euler = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-euro = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-euro-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-euro}"
 RDEPENDS:texlive-euro = " \
  texlive-kpathsea \
  texlive-base \
@@ -959,23 +1057,27 @@ RDEPENDS:texlive-euro = " \
 "
 
 URI_texlive-eurosym = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-eurosym-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-eurosym}"
 RDEPENDS:texlive-eurosym = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-everysel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-everysel-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-everysel}"
 RDEPENDS:texlive-everysel = " \
  texlive-kpathsea \
 "
 
 URI_texlive-everyshi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-everyshi-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-everyshi}"
 RDEPENDS:texlive-everyshi = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-extsizes = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-extsizes-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-extsizes}"
 RDEPENDS:texlive-extsizes = " \
  texlive-kpathsea \
  texlive-latex \
@@ -983,18 +1085,21 @@ RDEPENDS:texlive-extsizes = " \
 "
 
 URI_texlive-fancybox = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fancybox-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fancybox}"
 RDEPENDS:texlive-fancybox = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-fancyhdr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fancyhdr-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fancyhdr}"
 RDEPENDS:texlive-fancyhdr = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-fancyref = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fancyref-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fancyref}"
 RDEPENDS:texlive-fancyref = " \
  texlive-kpathsea \
  texlive-base \
@@ -1002,6 +1107,7 @@ RDEPENDS:texlive-fancyref = " \
 "
 
 URI_texlive-fancyvrb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fancyvrb-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fancyvrb}"
 RDEPENDS:texlive-fancyvrb = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -1011,12 +1117,14 @@ RDEPENDS:texlive-fancyvrb = " \
 "
 
 URI_texlive-filecontents = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-filecontents-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-filecontents}"
 RDEPENDS:texlive-filecontents = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-filehook = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-filehook-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-filehook}"
 RDEPENDS:texlive-filehook = " \
  texlive-pgf \
  texlive-kpathsea \
@@ -1026,24 +1134,28 @@ RDEPENDS:texlive-filehook = " \
 "
 
 URI_texlive-finstrut = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-finstrut-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-finstrut}"
 RDEPENDS:texlive-finstrut = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-firstaid = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-firstaid-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-firstaid}"
 RDEPENDS:texlive-firstaid = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-fix2col = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fix2col-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fix2col}"
 RDEPENDS:texlive-fix2col = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-fixlatvian = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fixlatvian-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fixlatvian}"
 RDEPENDS:texlive-fixlatvian = " \
  texlive-etoolbox \
  texlive-was \
@@ -1058,12 +1170,14 @@ RDEPENDS:texlive-fixlatvian = " \
 "
 
 URI_texlive-float = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-float-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-float}"
 RDEPENDS:texlive-float = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-fmtcount = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fmtcount-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fmtcount}"
 RDEPENDS:texlive-fmtcount = " \
  texlive-etoolbox \
  texlive-graphics \
@@ -1074,6 +1188,7 @@ RDEPENDS:texlive-fmtcount = " \
 "
 
 URI_texlive-fncychap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fncychap-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fncychap}"
 RDEPENDS:texlive-fncychap = " \
  texlive-kpathsea \
  texlive-base \
@@ -1081,6 +1196,7 @@ RDEPENDS:texlive-fncychap = " \
 "
 
 URI_texlive-fontawesome = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fontawesome-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fontawesome}"
 RDEPENDS:texlive-fontawesome = " \
  texlive-kpathsea \
  texlive-texlive-scripts \
@@ -1089,6 +1205,7 @@ RDEPENDS:texlive-fontawesome = " \
 "
 
 URI_texlive-fontbook = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fontbook-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fontbook}"
 RDEPENDS:texlive-fontbook = " \
  texlive-etoolbox \
  texlive-kpathsea \
@@ -1099,12 +1216,14 @@ RDEPENDS:texlive-fontbook = " \
 "
 
 URI_texlive-fonts-tlwg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fonts-tlwg-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fonts-tlwg}"
 RDEPENDS:texlive-fonts-tlwg = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-fontspec = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fontspec-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fontspec}"
 RDEPENDS:texlive-fontspec = " \
  texlive-kastrup \
  texlive-luaotfload \
@@ -1118,6 +1237,7 @@ RDEPENDS:texlive-fontspec = " \
 "
 
 URI_texlive-fontware = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fontware-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fontware}"
 RDEPENDS:texlive-fontware = " \
  glibc \
  texlive-lib \
@@ -1126,24 +1246,28 @@ RDEPENDS:texlive-fontware = " \
 "
 
 URI_texlive-fontwrap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fontwrap-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fontwrap}"
 RDEPENDS:texlive-fontwrap = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-footmisc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-footmisc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-footmisc}"
 RDEPENDS:texlive-footmisc = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-footnotehyper = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-footnotehyper-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-footnotehyper}"
 RDEPENDS:texlive-footnotehyper = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-fp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fp-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fp}"
 RDEPENDS:texlive-fp = " \
  texlive-kpathsea \
  texlive-base \
@@ -1151,18 +1275,21 @@ RDEPENDS:texlive-fp = " \
 "
 
 URI_texlive-fpl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-fpl-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-fpl}"
 RDEPENDS:texlive-fpl = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-framed = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-framed-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-framed}"
 RDEPENDS:texlive-framed = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-garuda-c90 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-garuda-c90-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-garuda-c90}"
 RDEPENDS:texlive-garuda-c90 = " \
  texlive-kpathsea \
  texlive-fonts-tlwg \
@@ -1170,6 +1297,7 @@ RDEPENDS:texlive-garuda-c90 = " \
 "
 
 URI_texlive-geometry = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-geometry-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-geometry}"
 RDEPENDS:texlive-geometry = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -1179,17 +1307,20 @@ RDEPENDS:texlive-geometry = " \
 "
 
 URI_texlive-gettitlestring = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-gettitlestring-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-gettitlestring}"
 RDEPENDS:texlive-gettitlestring = " \
  texlive-kpathsea \
 "
 
 URI_texlive-glyphlist = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-glyphlist-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-glyphlist}"
 RDEPENDS:texlive-glyphlist = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-graphics = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-graphics-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-graphics}"
 RDEPENDS:texlive-graphics = " \
  texlive-kpathsea \
  texlive-base \
@@ -1197,12 +1328,14 @@ RDEPENDS:texlive-graphics = " \
 "
 
 URI_texlive-graphics-cfg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-graphics-cfg-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-graphics-cfg}"
 RDEPENDS:texlive-graphics-cfg = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-graphics-def = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-graphics-def-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-graphics-def}"
 RDEPENDS:texlive-graphics-def = " \
  texlive-kpathsea \
  texlive-epstopdf-pkg \
@@ -1210,16 +1343,19 @@ RDEPENDS:texlive-graphics-def = " \
 "
 
 URI_texlive-grfext = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-grfext-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-grfext}"
 RDEPENDS:texlive-grfext = " \
  texlive-kpathsea \
 "
 
 URI_texlive-grffile = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-grffile-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-grffile}"
 RDEPENDS:texlive-grffile = " \
  texlive-kpathsea \
 "
 
 URI_texlive-gsftopk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-gsftopk-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-gsftopk}"
 RDEPENDS:texlive-gsftopk = " \
  glibc \
  texlive-lib \
@@ -1228,50 +1364,59 @@ RDEPENDS:texlive-gsftopk = " \
 "
 
 URI_texlive-hanging = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hanging-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hanging}"
 RDEPENDS:texlive-hanging = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-helvetic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-helvetic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-helvetic}"
 RDEPENDS:texlive-helvetic = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-hobsub = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hobsub-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hobsub}"
 RDEPENDS:texlive-hobsub = " \
  texlive-kpathsea \
 "
 
 URI_texlive-hologo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hologo-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hologo}"
 RDEPENDS:texlive-hologo = " \
  texlive-kpathsea \
 "
 
 URI_texlive-hopatch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hopatch-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hopatch}"
 RDEPENDS:texlive-hopatch = " \
  texlive-ltxcmds \
  texlive-kpathsea \
 "
 
 URI_texlive-hycolor = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hycolor-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hycolor}"
 RDEPENDS:texlive-hycolor = " \
  texlive-kpathsea \
 "
 
 URI_texlive-hypcap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hypcap-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hypcap}"
 RDEPENDS:texlive-hypcap = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-hypdoc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hypdoc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hypdoc}"
 RDEPENDS:texlive-hypdoc = " \
  texlive-kpathsea \
 "
 
 URI_texlive-hyperref = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hyperref-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hyperref}"
 RDEPENDS:texlive-hyperref = " \
  texlive-url \
  texlive-etexcmds \
@@ -1302,42 +1447,49 @@ RDEPENDS:texlive-hyperref = " \
 "
 
 URI_texlive-hyph-utf8 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hyph-utf8-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hyph-utf8}"
 RDEPENDS:texlive-hyph-utf8 = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-hyphen-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hyphen-base-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hyphen-base}"
 RDEPENDS:texlive-hyphen-base = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-hyphenat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hyphenat-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hyphenat}"
 RDEPENDS:texlive-hyphenat = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-hyphenex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-hyphenex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-hyphenex}"
 RDEPENDS:texlive-hyphenex = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ifmtarg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ifmtarg-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ifmtarg}"
 RDEPENDS:texlive-ifmtarg = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ifoddpage = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ifoddpage-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ifoddpage}"
 RDEPENDS:texlive-ifoddpage = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ifplatform = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ifplatform-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ifplatform}"
 RDEPENDS:texlive-ifplatform = " \
  texlive-kpathsea \
  texlive-catchfile \
@@ -1347,34 +1499,40 @@ RDEPENDS:texlive-ifplatform = " \
 "
 
 URI_texlive-iftex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-iftex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-iftex}"
 RDEPENDS:texlive-iftex = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-import = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-import-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-import}"
 RDEPENDS:texlive-import = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-index = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-index-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-index}"
 RDEPENDS:texlive-index = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-infwarerr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-infwarerr-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-infwarerr}"
 RDEPENDS:texlive-infwarerr = " \
  texlive-kpathsea \
 "
 
 URI_texlive-intcalc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-intcalc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-intcalc}"
 RDEPENDS:texlive-intcalc = " \
  texlive-kpathsea \
 "
 
 URI_texlive-jadetex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-jadetex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-jadetex}"
 RDEPENDS:texlive-jadetex = " \
  texlive-texlive-scripts \
  texlive-kpathsea \
@@ -1387,6 +1545,7 @@ RDEPENDS:texlive-jadetex = " \
 "
 
 URI_texlive-jknapltx = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-jknapltx-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-jknapltx}"
 RDEPENDS:texlive-jknapltx = " \
  texlive-kpathsea \
  texlive-latex \
@@ -1395,12 +1554,14 @@ RDEPENDS:texlive-jknapltx = " \
 "
 
 URI_texlive-kastrup = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-kastrup-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-kastrup}"
 RDEPENDS:texlive-kastrup = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-kerkis = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-kerkis-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-kerkis}"
 RDEPENDS:texlive-kerkis = " \
  texlive-kpathsea \
  texlive-txfonts \
@@ -1408,18 +1569,21 @@ RDEPENDS:texlive-kerkis = " \
 "
 
 URI_texlive-knuth-lib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-knuth-lib-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-knuth-lib}"
 RDEPENDS:texlive-knuth-lib = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-knuth-local = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-knuth-local-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-knuth-local}"
 RDEPENDS:texlive-knuth-local = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-koma-script = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-koma-script-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-koma-script}"
 RDEPENDS:texlive-koma-script = " \
  texlive-mparhack \
  texlive-etoolbox \
@@ -1441,6 +1605,7 @@ RDEPENDS:texlive-koma-script = " \
 "
 
 URI_texlive-kpathsea = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-kpathsea-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-kpathsea}"
 RDEPENDS:texlive-kpathsea = " \
  texlive-texlive-scripts \
  texlive-lib \
@@ -1452,26 +1617,31 @@ RDEPENDS:texlive-kpathsea = " \
 "
 
 URI_texlive-kvdefinekeys = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-kvdefinekeys-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-kvdefinekeys}"
 RDEPENDS:texlive-kvdefinekeys = " \
  texlive-kpathsea \
 "
 
 URI_texlive-kvoptions = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-kvoptions-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-kvoptions}"
 RDEPENDS:texlive-kvoptions = " \
  texlive-kpathsea \
 "
 
 URI_texlive-kvsetkeys = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-kvsetkeys-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-kvsetkeys}"
 RDEPENDS:texlive-kvsetkeys = " \
  texlive-kpathsea \
 "
 
 URI_texlive-l3backend = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-l3backend-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-l3backend}"
 RDEPENDS:texlive-l3backend = " \
  texlive-kpathsea \
 "
 
 URI_texlive-l3experimental = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-l3experimental-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-l3experimental}"
 RDEPENDS:texlive-l3experimental = " \
  texlive-kpathsea \
  texlive-base \
@@ -1480,6 +1650,7 @@ RDEPENDS:texlive-l3experimental = " \
 "
 
 URI_texlive-l3kernel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-l3kernel-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-l3kernel}"
 RDEPENDS:texlive-l3kernel = " \
  texlive-fancyvrb \
  texlive-graphics \
@@ -1503,6 +1674,7 @@ RDEPENDS:texlive-l3kernel = " \
 "
 
 URI_texlive-l3packages = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-l3packages-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-l3packages}"
 RDEPENDS:texlive-l3packages = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -1512,12 +1684,14 @@ RDEPENDS:texlive-l3packages = " \
 "
 
 URI_texlive-lastpage = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lastpage-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lastpage}"
 RDEPENDS:texlive-lastpage = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-latex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-latex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-latex}"
 RDEPENDS:texlive-latex = " \
  texlive-url \
  texlive-cm-super \
@@ -1536,12 +1710,14 @@ RDEPENDS:texlive-latex = " \
 "
 
 URI_texlive-latex-fonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-latex-fonts-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-latex-fonts}"
 RDEPENDS:texlive-latex-fonts = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-latex2man = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-latex2man-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-latex2man}"
 RDEPENDS:texlive-latex2man = " \
  perl-libs \
  texlive-kpathsea \
@@ -1554,22 +1730,26 @@ RDEPENDS:texlive-latex2man = " \
 "
 
 URI_texlive-latexbug = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-latexbug-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-latexbug}"
 RDEPENDS:texlive-latexbug = " \
  texlive-kpathsea \
 "
 
 URI_texlive-latexconfig = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-latexconfig-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-latexconfig}"
 RDEPENDS:texlive-latexconfig = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-letltxmacro = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-letltxmacro-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-letltxmacro}"
 RDEPENDS:texlive-letltxmacro = " \
  texlive-kpathsea \
 "
 
 URI_texlive-lettrine = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lettrine-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lettrine}"
 RDEPENDS:texlive-lettrine = " \
  texlive-kpathsea \
  texlive-base \
@@ -1577,12 +1757,14 @@ RDEPENDS:texlive-lettrine = " \
 "
 
 URI_texlive-lib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lib-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lib}"
 RDEPENDS:texlive-lib = " \
  glibc \
  zlib-ng-compat \
 "
 
 URI_texlive-linegoal = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-linegoal-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-linegoal}"
 RDEPENDS:texlive-linegoal = " \
  texlive-kpathsea \
  texlive-zref \
@@ -1591,6 +1773,7 @@ RDEPENDS:texlive-linegoal = " \
 "
 
 URI_texlive-lineno = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lineno-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lineno}"
 RDEPENDS:texlive-lineno = " \
  texlive-kpathsea \
  texlive-tools \
@@ -1600,6 +1783,7 @@ RDEPENDS:texlive-lineno = " \
 "
 
 URI_texlive-listings = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-listings-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-listings}"
 RDEPENDS:texlive-listings = " \
  texlive-url \
  texlive-graphics \
@@ -1612,24 +1796,28 @@ RDEPENDS:texlive-listings = " \
 "
 
 URI_texlive-listofitems = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-listofitems-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-listofitems}"
 RDEPENDS:texlive-listofitems = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-lm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lm-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lm}"
 RDEPENDS:texlive-lm = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-lm-math = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lm-math-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lm-math}"
 RDEPENDS:texlive-lm-math = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ltabptch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ltabptch-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ltabptch}"
 RDEPENDS:texlive-ltabptch = " \
  texlive-kpathsea \
  texlive-base \
@@ -1637,11 +1825,13 @@ RDEPENDS:texlive-ltabptch = " \
 "
 
 URI_texlive-ltxcmds = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ltxcmds-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ltxcmds}"
 RDEPENDS:texlive-ltxcmds = " \
  texlive-kpathsea \
 "
 
 URI_texlive-ltxmisc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ltxmisc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ltxmisc}"
 RDEPENDS:texlive-ltxmisc = " \
  texlive-beton \
  texlive-euler \
@@ -1656,12 +1846,14 @@ RDEPENDS:texlive-ltxmisc = " \
 "
 
 URI_texlive-lua-alt-getopt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lua-alt-getopt-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lua-alt-getopt}"
 RDEPENDS:texlive-lua-alt-getopt = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-lua-uni-algos = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lua-uni-algos-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lua-uni-algos}"
 RDEPENDS:texlive-lua-uni-algos = " \
  texlive-luatex \
  texlive-unicode-data \
@@ -1669,6 +1861,7 @@ RDEPENDS:texlive-lua-uni-algos = " \
 "
 
 URI_texlive-luahbtex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-luahbtex-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-luahbtex}"
 RDEPENDS:texlive-luahbtex = " \
  zlib-ng-compat \
  texlive-lib \
@@ -1691,6 +1884,7 @@ RDEPENDS:texlive-luahbtex = " \
 "
 
 URI_texlive-lualatex-math = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lualatex-math-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lualatex-math}"
 RDEPENDS:texlive-lualatex-math = " \
  texlive-etoolbox \
  texlive-kpathsea \
@@ -1701,12 +1895,14 @@ RDEPENDS:texlive-lualatex-math = " \
 "
 
 URI_texlive-lualibs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lualibs-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lualibs}"
 RDEPENDS:texlive-lualibs = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-luaotfload = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-luaotfload-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-luaotfload}"
 RDEPENDS:texlive-luaotfload = " \
  texlive-lua-alt-getopt \
  texlive-lua-uni-algos \
@@ -1718,6 +1914,7 @@ RDEPENDS:texlive-luaotfload = " \
 "
 
 URI_texlive-luatex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-luatex-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-luatex}"
 RDEPENDS:texlive-luatex = " \
  zlib-ng-compat \
  texlive-lib \
@@ -1740,12 +1937,14 @@ RDEPENDS:texlive-luatex = " \
 "
 
 URI_texlive-luatex85 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-luatex85-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-luatex85}"
 RDEPENDS:texlive-luatex85 = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-luatexbase = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-luatexbase-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-luatexbase}"
 RDEPENDS:texlive-luatexbase = " \
  texlive-kpathsea \
  texlive-luatexbase \
@@ -1755,6 +1954,7 @@ RDEPENDS:texlive-luatexbase = " \
 "
 
 URI_texlive-lwarp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-lwarp-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lwarp}"
 RDEPENDS:texlive-lwarp = " \
  texlive-kpathsea \
  coreutils \
@@ -1762,12 +1962,14 @@ RDEPENDS:texlive-lwarp = " \
 "
 
 URI_texlive-makecmds = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-makecmds-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-makecmds}"
 RDEPENDS:texlive-makecmds = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-makeindex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-makeindex-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-makeindex}"
 RDEPENDS:texlive-makeindex = " \
  texlive-lib \
  texlive-kpathsea \
@@ -1777,6 +1979,7 @@ RDEPENDS:texlive-makeindex = " \
 "
 
 URI_texlive-manfnt-font = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-manfnt-font-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-manfnt-font}"
 RDEPENDS:texlive-manfnt-font = " \
  texlive-kpathsea \
  texlive-texlive-scripts \
@@ -1784,24 +1987,28 @@ RDEPENDS:texlive-manfnt-font = " \
 "
 
 URI_texlive-marginnote = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-marginnote-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-marginnote}"
 RDEPENDS:texlive-marginnote = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-marvosym = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-marvosym-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-marvosym}"
 RDEPENDS:texlive-marvosym = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-mathpazo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mathpazo-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mathpazo}"
 RDEPENDS:texlive-mathpazo = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-mathspec = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mathspec-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mathspec}"
 RDEPENDS:texlive-mathspec = " \
  texlive-etoolbox \
  texlive-kpathsea \
@@ -1814,6 +2021,7 @@ RDEPENDS:texlive-mathspec = " \
 "
 
 URI_texlive-mathtools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mathtools-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mathtools}"
 RDEPENDS:texlive-mathtools = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -1824,12 +2032,14 @@ RDEPENDS:texlive-mathtools = " \
 "
 
 URI_texlive-mdwtools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mdwtools-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mdwtools}"
 RDEPENDS:texlive-mdwtools = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-memoir = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-memoir-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-memoir}"
 RDEPENDS:texlive-memoir = " \
  texlive-kpathsea \
  texlive-iftex \
@@ -1838,6 +2048,7 @@ RDEPENDS:texlive-memoir = " \
 "
 
 URI_texlive-metafont = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-metafont-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-metafont}"
 RDEPENDS:texlive-metafont = " \
  texlive-lib \
  texlive-texlive-scripts \
@@ -1849,6 +2060,7 @@ RDEPENDS:texlive-metafont = " \
 "
 
 URI_texlive-metalogo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-metalogo-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-metalogo}"
 RDEPENDS:texlive-metalogo = " \
  texlive-graphics \
  texlive-kpathsea \
@@ -1858,6 +2070,7 @@ RDEPENDS:texlive-metalogo = " \
 "
 
 URI_texlive-metapost = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-metapost-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-metapost}"
 RDEPENDS:texlive-metapost = " \
  gmp \
  zlib-ng-compat \
@@ -1873,12 +2086,14 @@ RDEPENDS:texlive-metapost = " \
 "
 
 URI_texlive-mflogo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mflogo-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mflogo}"
 RDEPENDS:texlive-mflogo = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-mflogo-font = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mflogo-font-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mflogo-font}"
 RDEPENDS:texlive-mflogo-font = " \
  texlive-kpathsea \
  texlive-texlive-scripts \
@@ -1886,12 +2101,14 @@ RDEPENDS:texlive-mflogo-font = " \
 "
 
 URI_texlive-mfnfss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mfnfss-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mfnfss}"
 RDEPENDS:texlive-mfnfss = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-mfware = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mfware-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mfware}"
 RDEPENDS:texlive-mfware = " \
  texlive-lib \
  texlive-kpathsea \
@@ -1901,6 +2118,7 @@ RDEPENDS:texlive-mfware = " \
 "
 
 URI_texlive-microtype = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-microtype-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-microtype}"
 RDEPENDS:texlive-microtype = " \
  texlive-kpathsea \
  texlive-base \
@@ -1908,6 +2126,7 @@ RDEPENDS:texlive-microtype = " \
 "
 
 URI_texlive-minitoc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-minitoc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-minitoc}"
 RDEPENDS:texlive-minitoc = " \
  texlive-placeins \
  texlive-kpathsea \
@@ -1918,6 +2137,7 @@ RDEPENDS:texlive-minitoc = " \
 "
 
 URI_texlive-mnsymbol = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mnsymbol-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mnsymbol}"
 RDEPENDS:texlive-mnsymbol = " \
  texlive-kpathsea \
  texlive-amsfonts \
@@ -1927,18 +2147,21 @@ RDEPENDS:texlive-mnsymbol = " \
 "
 
 URI_texlive-modes = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-modes-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-modes}"
 RDEPENDS:texlive-modes = " \
  texlive-kpathsea \
  bash \
 "
 
 URI_texlive-mparhack = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mparhack-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mparhack}"
 RDEPENDS:texlive-mparhack = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-mptopdf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-mptopdf-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-mptopdf}"
 RDEPENDS:texlive-mptopdf = " \
  texlive-texlive-scripts \
  perl-libs \
@@ -1951,18 +2174,21 @@ RDEPENDS:texlive-mptopdf = " \
 "
 
 URI_texlive-multido = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-multido-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-multido}"
 RDEPENDS:texlive-multido = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-multirow = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-multirow-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-multirow}"
 RDEPENDS:texlive-multirow = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-multitoc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-multitoc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-multitoc}"
 RDEPENDS:texlive-multitoc = " \
  texlive-kpathsea \
  texlive-latex \
@@ -1971,12 +2197,14 @@ RDEPENDS:texlive-multitoc = " \
 "
 
 URI_texlive-natbib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-natbib-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-natbib}"
 RDEPENDS:texlive-natbib = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ncctools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ncctools-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ncctools}"
 RDEPENDS:texlive-ncctools = " \
  texlive-bigfoot \
  texlive-graphics \
@@ -1986,29 +2214,34 @@ RDEPENDS:texlive-ncctools = " \
 "
 
 URI_texlive-ncntrsbk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ncntrsbk-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ncntrsbk}"
 RDEPENDS:texlive-ncntrsbk = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-needspace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-needspace-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-needspace}"
 RDEPENDS:texlive-needspace = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-newfloat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-newfloat-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-newfloat}"
 RDEPENDS:texlive-newfloat = " \
  texlive-kpathsea \
 "
 
 URI_texlive-newunicodechar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-newunicodechar-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-newunicodechar}"
 RDEPENDS:texlive-newunicodechar = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-norasi-c90 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-norasi-c90-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-norasi-c90}"
 RDEPENDS:texlive-norasi-c90 = " \
  texlive-kpathsea \
  texlive-fonts-tlwg \
@@ -2016,18 +2249,21 @@ RDEPENDS:texlive-norasi-c90 = " \
 "
 
 URI_texlive-notoccite = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-notoccite-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-notoccite}"
 RDEPENDS:texlive-notoccite = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ntgclass = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ntgclass-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ntgclass}"
 RDEPENDS:texlive-ntgclass = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-oberdiek = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-oberdiek-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-oberdiek}"
 RDEPENDS:texlive-oberdiek = " \
  texlive-etexcmds \
  texlive-parallel \
@@ -2066,6 +2302,7 @@ RDEPENDS:texlive-oberdiek = " \
 "
 
 URI_texlive-overpic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-overpic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-overpic}"
 RDEPENDS:texlive-overpic = " \
  texlive-kpathsea \
  texlive-base \
@@ -2074,30 +2311,35 @@ RDEPENDS:texlive-overpic = " \
 "
 
 URI_texlive-palatino = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-palatino-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-palatino}"
 RDEPENDS:texlive-palatino = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-paralist = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-paralist-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-paralist}"
 RDEPENDS:texlive-paralist = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-parallel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-parallel-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-parallel}"
 RDEPENDS:texlive-parallel = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-parskip = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-parskip-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-parskip}"
 RDEPENDS:texlive-parskip = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-passivetex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-passivetex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-passivetex}"
 RDEPENDS:texlive-passivetex = " \
  texlive-url \
  texlive-graphics \
@@ -2116,37 +2358,44 @@ RDEPENDS:texlive-passivetex = " \
 "
 
 URI_texlive-pdfcol = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdfcol-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdfcol}"
 RDEPENDS:texlive-pdfcol = " \
  texlive-kpathsea \
 "
 
 URI_texlive-pdfcolfoot = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdfcolfoot-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdfcolfoot}"
 RDEPENDS:texlive-pdfcolfoot = " \
  texlive-kpathsea \
 "
 
 URI_texlive-pdfcolmk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdfcolmk-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdfcolmk}"
 RDEPENDS:texlive-pdfcolmk = " \
  texlive-kpathsea \
 "
 
 URI_texlive-pdfescape = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdfescape-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdfescape}"
 RDEPENDS:texlive-pdfescape = " \
  texlive-kpathsea \
 "
 
 URI_texlive-pdflscape = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdflscape-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdflscape}"
 RDEPENDS:texlive-pdflscape = " \
  texlive-kpathsea \
 "
 
 URI_texlive-pdfmanagement-testphase = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdfmanagement-testphase-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdfmanagement-testphase}"
 RDEPENDS:texlive-pdfmanagement-testphase = " \
  texlive-kpathsea \
  texlive-graphics \
 "
 
 URI_texlive-pdfpages = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdfpages-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdfpages}"
 RDEPENDS:texlive-pdfpages = " \
  texlive-graphics \
  texlive-count1to \
@@ -2159,6 +2408,7 @@ RDEPENDS:texlive-pdfpages = " \
 "
 
 URI_texlive-pdftex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdftex-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdftex}"
 RDEPENDS:texlive-pdftex = " \
  perl-libs \
  libpng \
@@ -2182,11 +2432,13 @@ RDEPENDS:texlive-pdftex = " \
 "
 
 URI_texlive-pdftexcmds = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pdftexcmds-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pdftexcmds}"
 RDEPENDS:texlive-pdftexcmds = " \
  texlive-kpathsea \
 "
 
 URI_texlive-pgf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pgf-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pgf}"
 RDEPENDS:texlive-pgf = " \
  texlive-pgf \
  texlive-graphics \
@@ -2197,6 +2449,7 @@ RDEPENDS:texlive-pgf = " \
 "
 
 URI_texlive-philokalia = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-philokalia-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-philokalia}"
 RDEPENDS:texlive-philokalia = " \
  texlive-xltxtra \
  texlive-kpathsea \
@@ -2207,18 +2460,21 @@ RDEPENDS:texlive-philokalia = " \
 "
 
 URI_texlive-placeins = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-placeins-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-placeins}"
 RDEPENDS:texlive-placeins = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-plain = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-plain-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-plain}"
 RDEPENDS:texlive-plain = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-polyglossia = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-polyglossia-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-polyglossia}"
 RDEPENDS:texlive-polyglossia = " \
  texlive-etoolbox \
  texlive-bidi \
@@ -2232,6 +2488,7 @@ RDEPENDS:texlive-polyglossia = " \
 "
 
 URI_texlive-powerdot = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-powerdot-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-powerdot}"
 RDEPENDS:texlive-powerdot = " \
  texlive-geometry \
  texlive-graphics \
@@ -2254,12 +2511,14 @@ RDEPENDS:texlive-powerdot = " \
 "
 
 URI_texlive-preprint = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-preprint-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-preprint}"
 RDEPENDS:texlive-preprint = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-psfrag = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-psfrag-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-psfrag}"
 RDEPENDS:texlive-psfrag = " \
  texlive-kpathsea \
  texlive-base \
@@ -2267,12 +2526,14 @@ RDEPENDS:texlive-psfrag = " \
 "
 
 URI_texlive-pslatex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pslatex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pslatex}"
 RDEPENDS:texlive-pslatex = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-psnfss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-psnfss-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-psnfss}"
 RDEPENDS:texlive-psnfss = " \
  texlive-graphics \
  texlive-zapfding \
@@ -2282,12 +2543,14 @@ RDEPENDS:texlive-psnfss = " \
 "
 
 URI_texlive-pspicture = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pspicture-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pspicture}"
 RDEPENDS:texlive-pspicture = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-pst-3d = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-3d-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-3d}"
 RDEPENDS:texlive-pst-3d = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2295,11 +2558,13 @@ RDEPENDS:texlive-pst-3d = " \
 "
 
 URI_texlive-pst-arrow = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-arrow-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-arrow}"
 RDEPENDS:texlive-pst-arrow = " \
  texlive-kpathsea \
 "
 
 URI_texlive-pst-blur = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-blur-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-blur}"
 RDEPENDS:texlive-pst-blur = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2307,6 +2572,7 @@ RDEPENDS:texlive-pst-blur = " \
 "
 
 URI_texlive-pst-coil = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-coil-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-coil}"
 RDEPENDS:texlive-pst-coil = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2314,6 +2580,7 @@ RDEPENDS:texlive-pst-coil = " \
 "
 
 URI_texlive-pst-eps = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-eps-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-eps}"
 RDEPENDS:texlive-pst-eps = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2321,6 +2588,7 @@ RDEPENDS:texlive-pst-eps = " \
 "
 
 URI_texlive-pst-fill = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-fill-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-fill}"
 RDEPENDS:texlive-pst-fill = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2328,6 +2596,7 @@ RDEPENDS:texlive-pst-fill = " \
 "
 
 URI_texlive-pst-grad = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-grad-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-grad}"
 RDEPENDS:texlive-pst-grad = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2335,12 +2604,14 @@ RDEPENDS:texlive-pst-grad = " \
 "
 
 URI_texlive-pst-math = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-math-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-math}"
 RDEPENDS:texlive-pst-math = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-pst-node = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-node-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-node}"
 RDEPENDS:texlive-pst-node = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2348,6 +2619,7 @@ RDEPENDS:texlive-pst-node = " \
 "
 
 URI_texlive-pst-plot = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-plot-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-plot}"
 RDEPENDS:texlive-pst-plot = " \
  texlive-multido \
  texlive-kpathsea \
@@ -2357,6 +2629,7 @@ RDEPENDS:texlive-pst-plot = " \
 "
 
 URI_texlive-pst-slpe = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-slpe-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-slpe}"
 RDEPENDS:texlive-pst-slpe = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2364,6 +2637,7 @@ RDEPENDS:texlive-pst-slpe = " \
 "
 
 URI_texlive-pst-text = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-text-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-text}"
 RDEPENDS:texlive-pst-text = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2371,6 +2645,7 @@ RDEPENDS:texlive-pst-text = " \
 "
 
 URI_texlive-pst-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-tools-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-tools}"
 RDEPENDS:texlive-pst-tools = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2378,6 +2653,7 @@ RDEPENDS:texlive-pst-tools = " \
 "
 
 URI_texlive-pst-tree = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pst-tree-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pst-tree}"
 RDEPENDS:texlive-pst-tree = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2385,6 +2661,7 @@ RDEPENDS:texlive-pst-tree = " \
 "
 
 URI_texlive-pstricks = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pstricks-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pstricks}"
 RDEPENDS:texlive-pstricks = " \
  texlive-multido \
  texlive-xcolor \
@@ -2429,6 +2706,7 @@ RDEPENDS:texlive-pstricks = " \
 "
 
 URI_texlive-pstricks-add = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pstricks-add-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pstricks-add}"
 RDEPENDS:texlive-pstricks-add = " \
  texlive-multido \
  texlive-kpathsea \
@@ -2441,18 +2719,21 @@ RDEPENDS:texlive-pstricks-add = " \
 "
 
 URI_texlive-ptext = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ptext-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ptext}"
 RDEPENDS:texlive-ptext = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-pxfonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-pxfonts-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-pxfonts}"
 RDEPENDS:texlive-pxfonts = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-qstest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-qstest-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-qstest}"
 RDEPENDS:texlive-qstest = " \
  texlive-kpathsea \
  texlive-base \
@@ -2460,17 +2741,20 @@ RDEPENDS:texlive-qstest = " \
 "
 
 URI_texlive-ragged2e = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ragged2e-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ragged2e}"
 RDEPENDS:texlive-ragged2e = " \
  texlive-kpathsea \
 "
 
 URI_texlive-rcs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-rcs-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-rcs}"
 RDEPENDS:texlive-rcs = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-realscripts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-realscripts-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-realscripts}"
 RDEPENDS:texlive-realscripts = " \
  texlive-kpathsea \
  texlive-fontspec \
@@ -2478,17 +2762,20 @@ RDEPENDS:texlive-realscripts = " \
 "
 
 URI_texlive-refcount = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-refcount-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-refcount}"
 RDEPENDS:texlive-refcount = " \
  texlive-kpathsea \
 "
 
 URI_texlive-relsize = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-relsize-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-relsize}"
 RDEPENDS:texlive-relsize = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-rerunfilecheck = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-rerunfilecheck-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-rerunfilecheck}"
 RDEPENDS:texlive-rerunfilecheck = " \
  texlive-kpathsea \
  texlive-uniquecounter \
@@ -2496,18 +2783,21 @@ RDEPENDS:texlive-rerunfilecheck = " \
 "
 
 URI_texlive-rsfs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-rsfs-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-rsfs}"
 RDEPENDS:texlive-rsfs = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-sansmath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-sansmath-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-sansmath}"
 RDEPENDS:texlive-sansmath = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-sansmathaccent = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-sansmathaccent-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-sansmathaccent}"
 RDEPENDS:texlive-sansmathaccent = " \
  texlive-kpathsea \
  texlive-base \
@@ -2515,6 +2805,7 @@ RDEPENDS:texlive-sansmathaccent = " \
 "
 
 URI_texlive-sauerj = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-sauerj-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-sauerj}"
 RDEPENDS:texlive-sauerj = " \
  texlive-kpathsea \
  texlive-base \
@@ -2522,6 +2813,7 @@ RDEPENDS:texlive-sauerj = " \
 "
 
 URI_texlive-scheme-basic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-scheme-basic-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-scheme-basic}"
 RDEPENDS:texlive-scheme-basic = " \
  coreutils \
  texlive-base \
@@ -2530,18 +2822,21 @@ RDEPENDS:texlive-scheme-basic = " \
 "
 
 URI_texlive-section = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-section-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-section}"
 RDEPENDS:texlive-section = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-sectsty = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-sectsty-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-sectsty}"
 RDEPENDS:texlive-sectsty = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-seminar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-seminar-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-seminar}"
 RDEPENDS:texlive-seminar = " \
  texlive-kpathsea \
  texlive-pstricks \
@@ -2550,24 +2845,28 @@ RDEPENDS:texlive-seminar = " \
 "
 
 URI_texlive-sepnum = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-sepnum-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-sepnum}"
 RDEPENDS:texlive-sepnum = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-setspace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-setspace-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-setspace}"
 RDEPENDS:texlive-setspace = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-sfmath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-sfmath-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-sfmath}"
 RDEPENDS:texlive-sfmath = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-showexpl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-showexpl-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-showexpl}"
 RDEPENDS:texlive-showexpl = " \
  texlive-varwidth \
  texlive-graphics \
@@ -2580,12 +2879,14 @@ RDEPENDS:texlive-showexpl = " \
 "
 
 URI_texlive-soul = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-soul-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-soul}"
 RDEPENDS:texlive-soul = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-stackengine = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-stackengine-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-stackengine}"
 RDEPENDS:texlive-stackengine = " \
  texlive-kpathsea \
  texlive-etoolbox \
@@ -2594,17 +2895,20 @@ RDEPENDS:texlive-stackengine = " \
 "
 
 URI_texlive-stmaryrd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-stmaryrd-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-stmaryrd}"
 RDEPENDS:texlive-stmaryrd = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-stringenc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-stringenc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-stringenc}"
 RDEPENDS:texlive-stringenc = " \
  texlive-kpathsea \
 "
 
 URI_texlive-subfig = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-subfig-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-subfig}"
 RDEPENDS:texlive-subfig = " \
  texlive-kpathsea \
  texlive-base \
@@ -2613,24 +2917,28 @@ RDEPENDS:texlive-subfig = " \
 "
 
 URI_texlive-subfigure = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-subfigure-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-subfigure}"
 RDEPENDS:texlive-subfigure = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-svn-prov = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-svn-prov-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-svn-prov}"
 RDEPENDS:texlive-svn-prov = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-symbol = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-symbol-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-symbol}"
 RDEPENDS:texlive-symbol = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-t2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-t2-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-t2}"
 RDEPENDS:texlive-t2 = " \
  texlive-kpathsea \
  texlive-base \
@@ -2639,6 +2947,7 @@ RDEPENDS:texlive-t2 = " \
 "
 
 URI_texlive-tabu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tabu-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tabu}"
 RDEPENDS:texlive-tabu = " \
  texlive-varwidth \
  texlive-kpathsea \
@@ -2648,6 +2957,7 @@ RDEPENDS:texlive-tabu = " \
 "
 
 URI_texlive-tabulary = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tabulary-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tabulary}"
 RDEPENDS:texlive-tabulary = " \
  texlive-kpathsea \
  texlive-base \
@@ -2655,6 +2965,7 @@ RDEPENDS:texlive-tabulary = " \
 "
 
 URI_texlive-tex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tex-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tex}"
 RDEPENDS:texlive-tex = " \
  texlive-lib \
  texlive-texlive-scripts \
@@ -2669,6 +2980,7 @@ RDEPENDS:texlive-tex = " \
 "
 
 URI_texlive-tex-gyre = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tex-gyre-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tex-gyre}"
 RDEPENDS:texlive-tex-gyre = " \
  texlive-kpathsea \
  texlive-kvoptions \
@@ -2677,18 +2989,21 @@ RDEPENDS:texlive-tex-gyre = " \
 "
 
 URI_texlive-tex-gyre-math = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tex-gyre-math-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tex-gyre-math}"
 RDEPENDS:texlive-tex-gyre-math = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-tex-ini-files = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tex-ini-files-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tex-ini-files}"
 RDEPENDS:texlive-tex-ini-files = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-tex4ht = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tex4ht-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tex4ht}"
 RDEPENDS:texlive-tex4ht = " \
  texlive-lib \
  perl-libs \
@@ -2700,9 +3015,11 @@ RDEPENDS:texlive-tex4ht = " \
 "
 
 URI_texlive-texlive-common-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-texlive-common-doc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-texlive-common-doc}"
 RDEPENDS:texlive-texlive-common-doc = ""
 
 URI_texlive-texlive-en = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-texlive-en-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-texlive-en}"
 RDEPENDS:texlive-texlive-en = " \
  texlive-kpathsea \
  info \
@@ -2711,12 +3028,14 @@ RDEPENDS:texlive-texlive-en = " \
 "
 
 URI_texlive-texlive-msg-translations = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-texlive-msg-translations-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-texlive-msg-translations}"
 RDEPENDS:texlive-texlive-msg-translations = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-texlive-scripts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-texlive-scripts-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-texlive-scripts}"
 RDEPENDS:texlive-texlive-scripts = " \
  perl-libs \
  texlive-texlive.infra \
@@ -2732,6 +3051,7 @@ RDEPENDS:texlive-texlive-scripts = " \
 "
 
 URI_texlive-texlive-scripts-extra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-texlive-scripts-extra-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-texlive-scripts-extra}"
 RDEPENDS:texlive-texlive-scripts-extra = " \
  texlive-texlive.infra \
  texlive-kpathsea \
@@ -2741,6 +3061,7 @@ RDEPENDS:texlive-texlive-scripts-extra = " \
 "
 
 URI_texlive-texlive.infra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-texlive.infra-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-texlive.infra}"
 RDEPENDS:texlive-texlive.infra = " \
  perl-constant \
  perl-libs \
@@ -2763,12 +3084,14 @@ RDEPENDS:texlive-texlive.infra = " \
 "
 
 URI_texlive-textcase = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-textcase-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-textcase}"
 RDEPENDS:texlive-textcase = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-textpos = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-textpos-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-textpos}"
 RDEPENDS:texlive-textpos = " \
  texlive-everyshi \
  texlive-kpathsea \
@@ -2776,12 +3099,14 @@ RDEPENDS:texlive-textpos = " \
 "
 
 URI_texlive-threeparttable = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-threeparttable-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-threeparttable}"
 RDEPENDS:texlive-threeparttable = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-thumbpdf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-thumbpdf-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-thumbpdf}"
 RDEPENDS:texlive-thumbpdf = " \
  perl-libs \
  texlive-kpathsea \
@@ -2793,12 +3118,14 @@ RDEPENDS:texlive-thumbpdf = " \
 "
 
 URI_texlive-times = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-times-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-times}"
 RDEPENDS:texlive-times = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-tipa = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tipa-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tipa}"
 RDEPENDS:texlive-tipa = " \
  texlive-kpathsea \
  texlive-latex \
@@ -2807,12 +3134,14 @@ RDEPENDS:texlive-tipa = " \
 "
 
 URI_texlive-titlesec = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-titlesec-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-titlesec}"
 RDEPENDS:texlive-titlesec = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-titling = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-titling-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-titling}"
 RDEPENDS:texlive-titling = " \
  texlive-kpathsea \
  coreutils \
@@ -2820,12 +3149,14 @@ RDEPENDS:texlive-titling = " \
 "
 
 URI_texlive-tocloft = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tocloft-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tocloft}"
 RDEPENDS:texlive-tocloft = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-tools-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-tools}"
 RDEPENDS:texlive-tools = " \
  texlive-kpathsea \
  texlive-base \
@@ -2833,30 +3164,35 @@ RDEPENDS:texlive-tools = " \
 "
 
 URI_texlive-translator = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-translator-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-translator}"
 RDEPENDS:texlive-translator = " \
  texlive-kpathsea \
  texlive-graphics \
 "
 
 URI_texlive-trimspaces = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-trimspaces-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-trimspaces}"
 RDEPENDS:texlive-trimspaces = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-txfonts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-txfonts-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-txfonts}"
 RDEPENDS:texlive-txfonts = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-type1cm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-type1cm-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-type1cm}"
 RDEPENDS:texlive-type1cm = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-typehtml = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-typehtml-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-typehtml}"
 RDEPENDS:texlive-typehtml = " \
  texlive-kpathsea \
  texlive-latex \
@@ -2864,12 +3200,14 @@ RDEPENDS:texlive-typehtml = " \
 "
 
 URI_texlive-ucharcat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ucharcat-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ucharcat}"
 RDEPENDS:texlive-ucharcat = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ucharclasses = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ucharclasses-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ucharclasses}"
 RDEPENDS:texlive-ucharclasses = " \
  texlive-kpathsea \
  texlive-iftex \
@@ -2877,6 +3215,7 @@ RDEPENDS:texlive-ucharclasses = " \
 "
 
 URI_texlive-ucs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ucs-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ucs}"
 RDEPENDS:texlive-ucs = " \
  perl-libs \
  perl-Carp \
@@ -2893,30 +3232,35 @@ RDEPENDS:texlive-ucs = " \
 "
 
 URI_texlive-uhc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-uhc-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-uhc}"
 RDEPENDS:texlive-uhc = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-ulem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-ulem-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-ulem}"
 RDEPENDS:texlive-ulem = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-underscore = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-underscore-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-underscore}"
 RDEPENDS:texlive-underscore = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-unicode-data = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-unicode-data-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-unicode-data}"
 RDEPENDS:texlive-unicode-data = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-unicode-math = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-unicode-math-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-unicode-math}"
 RDEPENDS:texlive-unicode-math = " \
  texlive-lualatex-math \
  texlive-luaotfload \
@@ -2932,11 +3276,13 @@ RDEPENDS:texlive-unicode-math = " \
 "
 
 URI_texlive-uniquecounter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-uniquecounter-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-uniquecounter}"
 RDEPENDS:texlive-uniquecounter = " \
  texlive-kpathsea \
 "
 
 URI_texlive-unisugar = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-unisugar-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-unisugar}"
 RDEPENDS:texlive-unisugar = " \
  texlive-kpathsea \
  texlive-iftex \
@@ -2944,6 +3290,7 @@ RDEPENDS:texlive-unisugar = " \
 "
 
 URI_texlive-upquote = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-upquote-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-upquote}"
 RDEPENDS:texlive-upquote = " \
  texlive-kpathsea \
  texlive-latex \
@@ -2951,60 +3298,70 @@ RDEPENDS:texlive-upquote = " \
 "
 
 URI_texlive-url = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-url-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-url}"
 RDEPENDS:texlive-url = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-utopia = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-utopia-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-utopia}"
 RDEPENDS:texlive-utopia = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-varwidth = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-varwidth-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-varwidth}"
 RDEPENDS:texlive-varwidth = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-wadalab = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-wadalab-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-wadalab}"
 RDEPENDS:texlive-wadalab = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-was = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-was-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-was}"
 RDEPENDS:texlive-was = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-wasy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-wasy-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-wasy}"
 RDEPENDS:texlive-wasy = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-wasy-type1 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-wasy-type1-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-wasy-type1}"
 RDEPENDS:texlive-wasy-type1 = " \
  texlive-kpathsea \
  texlive-wasy \
 "
 
 URI_texlive-wasysym = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-wasysym-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-wasysym}"
 RDEPENDS:texlive-wasysym = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-wrapfig = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-wrapfig-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-wrapfig}"
 RDEPENDS:texlive-wrapfig = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xcolor = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xcolor-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xcolor}"
 RDEPENDS:texlive-xcolor = " \
  texlive-kpathsea \
  texlive-pdfcolmk \
@@ -3013,6 +3370,7 @@ RDEPENDS:texlive-xcolor = " \
 "
 
 URI_texlive-xecolor = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xecolor-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xecolor}"
 RDEPENDS:texlive-xecolor = " \
  texlive-kpathsea \
  texlive-fontspec \
@@ -3021,6 +3379,7 @@ RDEPENDS:texlive-xecolor = " \
 "
 
 URI_texlive-xecyr = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xecyr-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xecyr}"
 RDEPENDS:texlive-xecyr = " \
  texlive-kpathsea \
  texlive-xltxtra \
@@ -3030,6 +3389,7 @@ RDEPENDS:texlive-xecyr = " \
 "
 
 URI_texlive-xeindex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xeindex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xeindex}"
 RDEPENDS:texlive-xeindex = " \
  texlive-kpathsea \
  texlive-latex \
@@ -3038,6 +3398,7 @@ RDEPENDS:texlive-xeindex = " \
 "
 
 URI_texlive-xepersian = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xepersian-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xepersian}"
 RDEPENDS:texlive-xepersian = " \
  texlive-multido \
  texlive-fancybox \
@@ -3062,12 +3423,14 @@ RDEPENDS:texlive-xepersian = " \
 "
 
 URI_texlive-xesearch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xesearch-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xesearch}"
 RDEPENDS:texlive-xesearch = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xetex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xetex-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xetex}"
 RDEPENDS:texlive-xetex = " \
  libpng \
  fontconfig \
@@ -3102,35 +3465,41 @@ RDEPENDS:texlive-xetex = " \
 "
 
 URI_texlive-xetex-itrans = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xetex-itrans-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xetex-itrans}"
 RDEPENDS:texlive-xetex-itrans = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xetex-pstricks = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xetex-pstricks-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xetex-pstricks}"
 RDEPENDS:texlive-xetex-pstricks = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xetexconfig = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xetexconfig-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xetexconfig}"
 RDEPENDS:texlive-xetexconfig = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xetexfontinfo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xetexfontinfo-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xetexfontinfo}"
 RDEPENDS:texlive-xetexfontinfo = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xfrac = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xfrac-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xfrac}"
 RDEPENDS:texlive-xfrac = " \
  texlive-kpathsea \
 "
 
 URI_texlive-xifthen = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xifthen-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xifthen}"
 RDEPENDS:texlive-xifthen = " \
  texlive-kpathsea \
  texlive-tools \
@@ -3141,6 +3510,7 @@ RDEPENDS:texlive-xifthen = " \
 "
 
 URI_texlive-xkeyval = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xkeyval-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xkeyval}"
 RDEPENDS:texlive-xkeyval = " \
  texlive-kpathsea \
  texlive-base \
@@ -3148,6 +3518,7 @@ RDEPENDS:texlive-xkeyval = " \
 "
 
 URI_texlive-xltxtra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xltxtra-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xltxtra}"
 RDEPENDS:texlive-xltxtra = " \
  texlive-realscripts \
  texlive-kpathsea \
@@ -3158,6 +3529,7 @@ RDEPENDS:texlive-xltxtra = " \
 "
 
 URI_texlive-xmltex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xmltex-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xmltex}"
 RDEPENDS:texlive-xmltex = " \
  texlive-pdftex \
  texlive-kpathsea \
@@ -3179,6 +3551,7 @@ RDEPENDS:texlive-xmltex = " \
 "
 
 URI_texlive-xpatch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xpatch-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xpatch}"
 RDEPENDS:texlive-xpatch = " \
  texlive-etoolbox \
  texlive-kpathsea \
@@ -3188,18 +3561,21 @@ RDEPENDS:texlive-xpatch = " \
 "
 
 URI_texlive-xstring = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xstring-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xstring}"
 RDEPENDS:texlive-xstring = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xtab = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xtab-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xtab}"
 RDEPENDS:texlive-xtab = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-xunicode = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-xunicode-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-xunicode}"
 RDEPENDS:texlive-xunicode = " \
  texlive-kpathsea \
  texlive-tipa \
@@ -3208,23 +3584,27 @@ RDEPENDS:texlive-xunicode = " \
 "
 
 URI_texlive-zapfchan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-zapfchan-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-zapfchan}"
 RDEPENDS:texlive-zapfchan = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-zapfding = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-zapfding-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-zapfding}"
 RDEPENDS:texlive-zapfding = " \
  texlive-kpathsea \
  texlive-base \
 "
 
 URI_texlive-zref = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/texlive-zref-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-zref}"
 RDEPENDS:texlive-zref = " \
  texlive-kpathsea \
 "
 
 URI_texlive-gnu-freefont = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/texlive-gnu-freefont-20240311-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texlive-gnu-freefont}"
 RDEPENDS:texlive-gnu-freefont = " \
  texlive-kpathsea \
  bash \
@@ -3236,6 +3616,7 @@ RDEPENDS:texlive-gnu-freefont = " \
 "
 
 URI_texlive-lib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/texlive-lib-devel-20240311-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_texlive-lib-devel}"
 RDEPENDS:texlive-lib-devel = " \
  texlive-lib \
  zlib-ng-compat-devel \

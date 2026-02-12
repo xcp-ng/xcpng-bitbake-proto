@@ -8,13 +8,18 @@ PR = "1.el10"
 PACKAGES = "idm-pki-acme idm-pki-base idm-pki-ca idm-pki-java idm-pki-kra idm-pki-server idm-pki-tools python3-idm-pki idm-pki"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/dogtag-pki-11.6.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_idm-pki-acme = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-pki-acme-11.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki-acme}"
 RDEPENDS:idm-pki-acme = " \
  bash \
  idm-pki-server \
 "
 
 URI_idm-pki-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-pki-base-11.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki-base}"
 RDEPENDS:idm-pki-base = " \
  nss \
  bash \
@@ -22,6 +27,7 @@ RDEPENDS:idm-pki-base = " \
 "
 
 URI_idm-pki-ca = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-pki-ca-11.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki-ca}"
 RDEPENDS:idm-pki-ca = " \
  systemd \
  bash \
@@ -29,6 +35,7 @@ RDEPENDS:idm-pki-ca = " \
 "
 
 URI_idm-pki-java = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-pki-java-11.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki-java}"
 RDEPENDS:idm-pki-java = " \
  httpcomponents-client \
  apache-commons-codec \
@@ -46,6 +53,7 @@ RDEPENDS:idm-pki-java = " \
 "
 
 URI_idm-pki-kra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-pki-kra-11.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki-kra}"
 RDEPENDS:idm-pki-kra = " \
  systemd \
  bash \
@@ -53,6 +61,7 @@ RDEPENDS:idm-pki-kra = " \
 "
 
 URI_idm-pki-server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-pki-server-11.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki-server}"
 RDEPENDS:idm-pki-server = " \
  python3 \
  systemd \
@@ -77,6 +86,7 @@ RDEPENDS:idm-pki-server = " \
 "
 
 URI_idm-pki-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-pki-tools-11.6.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki-tools}"
 RDEPENDS:idm-pki-tools = " \
  nss \
  openssl \
@@ -94,6 +104,7 @@ RDEPENDS:idm-pki-tools = " \
 "
 
 URI_python3-idm-pki = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-idm-pki-11.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-idm-pki}"
 RDEPENDS:python3-idm-pki = " \
  python3 \
  python3-ldap \
@@ -105,6 +116,7 @@ RDEPENDS:python3-idm-pki = " \
 "
 
 URI_idm-pki = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/idm-pki-11.6.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_idm-pki}"
 RDEPENDS:idm-pki = " \
  python3-idm-pki \
  idm-pki-acme \

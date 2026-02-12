@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-DBD-SQLite perl-DBD-SQLite-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-DBD-SQLite-1.74-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-DBD-SQLite = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-DBD-SQLite-1.74-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-SQLite}"
 RDEPENDS:perl-DBD-SQLite = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -23,6 +27,7 @@ RDEPENDS:perl-DBD-SQLite = " \
 "
 
 URI_perl-DBD-SQLite-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-DBD-SQLite-tests-1.74-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBD-SQLite-tests}"
 RDEPENDS:perl-DBD-SQLite-tests = " \
  perl-libs \
  perl-locale \

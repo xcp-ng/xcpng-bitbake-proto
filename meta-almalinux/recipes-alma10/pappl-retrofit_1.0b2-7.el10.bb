@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "legacy-printer-app pappl-retrofit pappl-retrofit-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/pappl-retrofit-1.0b2-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_legacy-printer-app = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/legacy-printer-app-1.0b2-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_legacy-printer-app}"
 RDEPENDS:legacy-printer-app = " \
  systemd \
  cups-filesystem \
@@ -22,6 +26,7 @@ RDEPENDS:legacy-printer-app = " \
 "
 
 URI_pappl-retrofit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pappl-retrofit-1.0b2-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pappl-retrofit}"
 RDEPENDS:pappl-retrofit = " \
  cups-libs \
  libcupsfilters \
@@ -31,6 +36,7 @@ RDEPENDS:pappl-retrofit = " \
 "
 
 URI_pappl-retrofit-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pappl-retrofit-devel-1.0b2-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pappl-retrofit-devel}"
 RDEPENDS:pappl-retrofit-devel = " \
  pappl-retrofit \
  pkgconf-pkg-config \

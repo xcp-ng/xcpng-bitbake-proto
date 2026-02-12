@@ -8,7 +8,11 @@ PR = "6.el10.alma.1"
 PACKAGES = "gpgme python3-gpg gpgmepp gpgme-devel gpgmepp-devel qgpgme-common-devel qgpgme-qt6 qgpgme-qt6-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/gpgme-1.23.2-6.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gpgme = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/gpgme-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gpgme}"
 RDEPENDS:gpgme = " \
  glibc \
  gnupg2 \
@@ -17,6 +21,7 @@ RDEPENDS:gpgme = " \
 "
 
 URI_python3-gpg = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-gpg-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-gpg}"
 RDEPENDS:python3-gpg = " \
  glibc \
  gpgme \
@@ -24,6 +29,7 @@ RDEPENDS:python3-gpg = " \
 "
 
 URI_gpgmepp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gpgmepp-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gpgmepp}"
 RDEPENDS:gpgmepp = " \
  libassuan \
  gpgme \
@@ -33,6 +39,7 @@ RDEPENDS:gpgmepp = " \
 "
 
 URI_gpgme-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gpgme-devel-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gpgme-devel}"
 RDEPENDS:gpgme-devel = " \
  glib2-devel \
  libassuan \
@@ -46,6 +53,7 @@ RDEPENDS:gpgme-devel = " \
 "
 
 URI_gpgmepp-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gpgmepp-devel-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gpgmepp-devel}"
 RDEPENDS:gpgmepp-devel = " \
  gpgme-devel \
  cmake-filesystem \
@@ -53,11 +61,13 @@ RDEPENDS:gpgmepp-devel = " \
 "
 
 URI_qgpgme-common-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qgpgme-common-devel-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qgpgme-common-devel}"
 RDEPENDS:qgpgme-common-devel = " \
  gpgmepp-devel \
 "
 
 URI_qgpgme-qt6 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qgpgme-qt6-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qgpgme-qt6}"
 RDEPENDS:qgpgme-qt6 = " \
  libassuan \
  gpgme \
@@ -70,6 +80,7 @@ RDEPENDS:qgpgme-qt6 = " \
 "
 
 URI_qgpgme-qt6-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qgpgme-qt6-devel-1.23.2-6.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qgpgme-qt6-devel}"
 RDEPENDS:qgpgme-qt6-devel = " \
  cmake-filesystem \
  qgpgme-common-devel \

@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "swtpm swtpm-libs swtpm-selinux swtpm-tools swtpm-devel swtpm-tools-pkcs11"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/swtpm-0.9.0-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_swtpm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/swtpm-0.9.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_swtpm}"
 RDEPENDS:swtpm = " \
  glibc \
  swtpm-libs \
@@ -17,6 +21,7 @@ RDEPENDS:swtpm = " \
 "
 
 URI_swtpm-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/swtpm-libs-0.9.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_swtpm-libs}"
 RDEPENDS:swtpm-libs = " \
  libtpms \
  openssl-libs \
@@ -26,6 +31,7 @@ RDEPENDS:swtpm-libs = " \
 "
 
 URI_swtpm-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/swtpm-selinux-0.9.0-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_swtpm-selinux}"
 RDEPENDS:swtpm-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \
@@ -36,6 +42,7 @@ RDEPENDS:swtpm-selinux = " \
 "
 
 URI_swtpm-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/swtpm-tools-0.9.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_swtpm-tools}"
 RDEPENDS:swtpm-tools = " \
  gmp \
  gnutls \
@@ -52,11 +59,13 @@ RDEPENDS:swtpm-tools = " \
 "
 
 URI_swtpm-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/swtpm-devel-0.9.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_swtpm-devel}"
 RDEPENDS:swtpm-devel = " \
  swtpm-libs \
 "
 
 URI_swtpm-tools-pkcs11 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/swtpm-tools-pkcs11-0.9.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_swtpm-tools-pkcs11}"
 RDEPENDS:swtpm-tools-pkcs11 = " \
  swtpm-tools \
  gnutls-utils \

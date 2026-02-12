@@ -8,7 +8,11 @@ PR = "2.gitf1dd9eb.el10"
 PACKAGES = "lldpad lldpad-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/lldpad-1.1.1-2.gitf1dd9eb.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_lldpad = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/lldpad-1.1.1-2.gitf1dd9eb.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lldpad}"
 RDEPENDS:lldpad = " \
  systemd \
  libnl3 \
@@ -19,6 +23,7 @@ RDEPENDS:lldpad = " \
 "
 
 URI_lldpad-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/lldpad-devel-1.1.1-2.gitf1dd9eb.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lldpad-devel}"
 RDEPENDS:lldpad-devel = " \
  lldpad \
  pkgconf-pkg-config \

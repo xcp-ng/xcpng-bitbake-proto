@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "glslc libshaderc libshaderc-devel libshaderc-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/shaderc-2024.4-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_glslc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/glslc-2024.4-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glslc}"
 RDEPENDS:glslc = " \
  glibc \
  spirv-tools-libs \
@@ -17,6 +21,7 @@ RDEPENDS:glslc = " \
 "
 
 URI_libshaderc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libshaderc-2024.4-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libshaderc}"
 RDEPENDS:libshaderc = " \
  glibc \
  spirv-tools-libs \
@@ -25,12 +30,14 @@ RDEPENDS:libshaderc = " \
 "
 
 URI_libshaderc-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libshaderc-devel-2024.4-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libshaderc-devel}"
 RDEPENDS:libshaderc-devel = " \
  libshaderc \
  pkgconf-pkg-config \
 "
 
 URI_libshaderc-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libshaderc-static-2024.4-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libshaderc-static}"
 RDEPENDS:libshaderc-static = " \
  pkgconf-pkg-config \
 "

@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-File-MimeInfo perl-File-MimeInfo-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-File-MimeInfo-0.34-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-MimeInfo = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-File-MimeInfo-0.34-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-MimeInfo}"
 RDEPENDS:perl-File-MimeInfo = " \
  perl-File-MimeInfo \
  perl-libs \
@@ -24,6 +28,7 @@ RDEPENDS:perl-File-MimeInfo = " \
 "
 
 URI_perl-File-MimeInfo-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-MimeInfo-tests-0.34-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-MimeInfo-tests}"
 RDEPENDS:perl-File-MimeInfo-tests = " \
  perl-File-MimeInfo \
  perl-Test-Harness \

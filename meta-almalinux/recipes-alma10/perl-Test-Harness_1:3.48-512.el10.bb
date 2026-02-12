@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-Test-Harness perl-Test-Harness-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Test-Harness-3.48-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Test-Harness = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Test-Harness-3.48-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Harness}"
 RDEPENDS:perl-Test-Harness = " \
  perl-Benchmark \
  perl-constant \
@@ -30,6 +34,7 @@ RDEPENDS:perl-Test-Harness = " \
 "
 
 URI_perl-Test-Harness-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Harness-tests-3.48-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Harness-tests}"
 RDEPENDS:perl-Test-Harness-tests = " \
  perl-constant \
  perl-Test-Harness \

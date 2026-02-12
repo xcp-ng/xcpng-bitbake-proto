@@ -8,7 +8,11 @@ PR = "1.el10_0.1"
 PACKAGES = "open-vm-tools open-vm-tools-desktop open-vm-tools-salt-minion open-vm-tools-sdmp open-vm-tools-test open-vm-tools-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/open-vm-tools-12.5.0-1.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_open-vm-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/open-vm-tools-12.5.0-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_open-vm-tools}"
 RDEPENDS:open-vm-tools = " \
  systemd \
  systemd-libs \
@@ -37,6 +41,7 @@ RDEPENDS:open-vm-tools = " \
 "
 
 URI_open-vm-tools-desktop = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/open-vm-tools-desktop-12.5.0-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_open-vm-tools-desktop}"
 RDEPENDS:open-vm-tools-desktop = " \
  systemd-libs \
  pango \
@@ -62,6 +67,7 @@ RDEPENDS:open-vm-tools-desktop = " \
 "
 
 URI_open-vm-tools-salt-minion = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/open-vm-tools-salt-minion-12.5.0-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_open-vm-tools-salt-minion}"
 RDEPENDS:open-vm-tools-salt-minion = " \
  systemd \
  gawk \
@@ -73,6 +79,7 @@ RDEPENDS:open-vm-tools-salt-minion = " \
 "
 
 URI_open-vm-tools-sdmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/open-vm-tools-sdmp-12.5.0-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_open-vm-tools-sdmp}"
 RDEPENDS:open-vm-tools-sdmp = " \
  glibc-common \
  iproute \
@@ -87,6 +94,7 @@ RDEPENDS:open-vm-tools-sdmp = " \
 "
 
 URI_open-vm-tools-test = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/open-vm-tools-test-12.5.0-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_open-vm-tools-test}"
 RDEPENDS:open-vm-tools-test = " \
  glibc \
  glib2 \
@@ -94,6 +102,7 @@ RDEPENDS:open-vm-tools-test = " \
 "
 
 URI_open-vm-tools-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/open-vm-tools-devel-12.5.0-1.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_open-vm-tools-devel}"
 RDEPENDS:open-vm-tools-devel = " \
  pkgconf-pkg-config \
  open-vm-tools \

@@ -8,7 +8,11 @@ PR = "11.el10"
 PACKAGES = "perl-File-BaseDir perl-File-BaseDir-tests perl-File-UserDirs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-File-BaseDir-0.09-11.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-BaseDir = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-File-BaseDir-0.09-11.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-BaseDir}"
 RDEPENDS:perl-File-BaseDir = " \
  perl-File-BaseDir \
  perl-PathTools \
@@ -17,6 +21,7 @@ RDEPENDS:perl-File-BaseDir = " \
 "
 
 URI_perl-File-BaseDir-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-BaseDir-tests-0.09-11.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-BaseDir-tests}"
 RDEPENDS:perl-File-BaseDir-tests = " \
  perl-File-UserDirs \
  perl-Test-Harness \
@@ -35,6 +40,7 @@ RDEPENDS:perl-File-BaseDir-tests = " \
 "
 
 URI_perl-File-UserDirs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-UserDirs-0.09-11.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-UserDirs}"
 RDEPENDS:perl-File-UserDirs = " \
  xdg-user-dirs \
  perl-IPC-System-Simple \

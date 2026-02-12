@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "papi papi-devel papi-libs papi-testsuite"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/papi-7.1.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_papi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papi-7.1.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papi}"
 RDEPENDS:papi = " \
  glibc \
  papi-libs \
@@ -16,6 +20,7 @@ RDEPENDS:papi = " \
 "
 
 URI_papi-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papi-devel-7.1.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papi-devel}"
 RDEPENDS:papi-devel = " \
  papi-libs \
  pkgconf-pkg-config \
@@ -23,12 +28,14 @@ RDEPENDS:papi-devel = " \
 "
 
 URI_papi-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/papi-libs-7.1.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papi-libs}"
 RDEPENDS:papi-libs = " \
  glibc \
  libpfm \
 "
 
 URI_papi-testsuite = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/papi-testsuite-7.1.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_papi-testsuite}"
 RDEPENDS:papi-testsuite = " \
  papi-libs \
  libgcc \

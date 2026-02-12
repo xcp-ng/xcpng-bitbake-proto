@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "fontconfig fontconfig-devel fontconfig-devel-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/fontconfig-2.15.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_fontconfig = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fontconfig-2.15.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fontconfig}"
 RDEPENDS:fontconfig = " \
  fonts-filesystem \
  freetype \
@@ -22,6 +26,7 @@ RDEPENDS:fontconfig = " \
 "
 
 URI_fontconfig-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/fontconfig-devel-2.15.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_fontconfig-devel}"
 RDEPENDS:fontconfig-devel = " \
  libxml2-devel \
  freetype-devel \
@@ -31,6 +36,7 @@ RDEPENDS:fontconfig-devel = " \
 "
 
 URI_fontconfig-devel-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/fontconfig-devel-doc-2.15.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_fontconfig-devel-doc}"
 RDEPENDS:fontconfig-devel-doc = " \
  fontconfig-devel \
 "

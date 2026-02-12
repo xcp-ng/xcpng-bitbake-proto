@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "glibmm2.68 glibmm2.68-devel glibmm2.68-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/glibmm2.68-2.78.1-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_glibmm2.68 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/glibmm2.68-2.78.1-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glibmm2.68}"
 RDEPENDS:glibmm2.68 = " \
  libgcc \
  libstdc++ \
@@ -18,6 +22,7 @@ RDEPENDS:glibmm2.68 = " \
 "
 
 URI_glibmm2.68-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/glibmm2.68-devel-2.78.1-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_glibmm2.68-devel}"
 RDEPENDS:glibmm2.68-devel = " \
  perl-constant \
  glib2-devel \
@@ -33,6 +38,7 @@ RDEPENDS:glibmm2.68-devel = " \
 "
 
 URI_glibmm2.68-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/glibmm2.68-doc-2.78.1-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_glibmm2.68-doc}"
 RDEPENDS:glibmm2.68-doc = " \
  libsigc++30-doc \
  glibmm2.68 \

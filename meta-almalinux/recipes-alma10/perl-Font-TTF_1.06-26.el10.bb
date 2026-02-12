@@ -8,7 +8,11 @@ PR = "26.el10"
 PACKAGES = "perl-Font-TTF perl-Font-TTF-XMLparse perl-Font-TTF-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Font-TTF-1.06-26.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Font-TTF = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Font-TTF-1.06-26.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Font-TTF}"
 RDEPENDS:perl-Font-TTF = " \
  perl-libs \
  perl-Font-TTF \
@@ -21,6 +25,7 @@ RDEPENDS:perl-Font-TTF = " \
 "
 
 URI_perl-Font-TTF-XMLparse = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Font-TTF-XMLparse-1.06-26.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Font-TTF-XMLparse}"
 RDEPENDS:perl-Font-TTF-XMLparse = " \
  perl-Exporter \
  perl-libs \
@@ -29,6 +34,7 @@ RDEPENDS:perl-Font-TTF-XMLparse = " \
 "
 
 URI_perl-Font-TTF-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Font-TTF-tests-1.06-26.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Font-TTF-tests}"
 RDEPENDS:perl-Font-TTF-tests = " \
  perl-Test-Harness \
  perl-libs \

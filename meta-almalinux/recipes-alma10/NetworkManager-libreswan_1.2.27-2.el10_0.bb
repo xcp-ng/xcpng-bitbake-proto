@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "NetworkManager-libreswan NetworkManager-libreswan-gnome"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/NetworkManager-libreswan-1.2.27-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_NetworkManager-libreswan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/NetworkManager-libreswan-1.2.27-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-libreswan}"
 RDEPENDS:NetworkManager-libreswan = " \
  libreswan \
  NetworkManager \
@@ -21,6 +25,7 @@ RDEPENDS:NetworkManager-libreswan = " \
 "
 
 URI_NetworkManager-libreswan-gnome = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/NetworkManager-libreswan-gnome-1.2.27-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_NetworkManager-libreswan-gnome}"
 RDEPENDS:NetworkManager-libreswan-gnome = " \
  NetworkManager-libreswan \
  pango \

@@ -8,7 +8,11 @@ PR = "26.el10"
 PACKAGES = "perl-Net-SMTP-SSL perl-Net-SMTP-SSL-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Net-SMTP-SSL-1.04-26.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Net-SMTP-SSL = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Net-SMTP-SSL-1.04-26.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-SMTP-SSL}"
 RDEPENDS:perl-Net-SMTP-SSL = " \
  perl-libnet \
  perl-libs \
@@ -16,6 +20,7 @@ RDEPENDS:perl-Net-SMTP-SSL = " \
 "
 
 URI_perl-Net-SMTP-SSL-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Net-SMTP-SSL-tests-1.04-26.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-SMTP-SSL-tests}"
 RDEPENDS:perl-Net-SMTP-SSL-tests = " \
  perl-Test-Harness \
  perl-Test-Simple \

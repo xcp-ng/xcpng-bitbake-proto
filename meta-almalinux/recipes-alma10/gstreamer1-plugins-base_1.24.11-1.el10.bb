@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gstreamer1-plugins-base gstreamer1-plugins-base-devel gstreamer1-plugins-base-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gstreamer1-plugins-base-1.24.11-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gstreamer1-plugins-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-base-1.24.11-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-base}"
 RDEPENDS:gstreamer1-plugins-base = " \
  libpng \
  pango \
@@ -43,6 +47,7 @@ RDEPENDS:gstreamer1-plugins-base = " \
 "
 
 URI_gstreamer1-plugins-base-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-base-devel-1.24.11-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-base-devel}"
 RDEPENDS:gstreamer1-plugins-base-devel = " \
  orc-devel \
  wayland-devel \
@@ -60,6 +65,7 @@ RDEPENDS:gstreamer1-plugins-base-devel = " \
 "
 
 URI_gstreamer1-plugins-base-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gstreamer1-plugins-base-tools-1.24.11-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gstreamer1-plugins-base-tools}"
 RDEPENDS:gstreamer1-plugins-base-tools = " \
  glibc \
  gstreamer1-plugins-base \

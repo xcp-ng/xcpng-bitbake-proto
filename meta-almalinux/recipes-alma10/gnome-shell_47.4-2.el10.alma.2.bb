@@ -8,7 +8,11 @@ PR = "2.el10.alma.2"
 PACKAGES = "gnome-shell"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-shell-47.4-2.el10.alma.2.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-shell = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-47.4-2.el10.alma.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell}"
 RDEPENDS:gnome-shell = " \
  python3 \
  gjs \

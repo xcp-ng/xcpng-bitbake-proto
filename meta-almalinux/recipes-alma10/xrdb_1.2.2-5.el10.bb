@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "xrdb"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xrdb-1.2.2-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xrdb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xrdb-1.2.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xrdb}"
 RDEPENDS:xrdb = " \
  glibc \
  libXmu \

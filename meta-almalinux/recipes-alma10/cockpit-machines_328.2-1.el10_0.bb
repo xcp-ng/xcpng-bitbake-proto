@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "cockpit-machines cockpit-machines"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/cockpit-machines-328.2-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cockpit-machines = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cockpit-machines-328.2-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_cockpit-machines}"
 RDEPENDS:cockpit-machines = " \
  libvirt-daemon-config-network \
  libvirt-daemon-driver-network \
@@ -23,6 +27,7 @@ RDEPENDS:cockpit-machines = " \
 "
 
 URI_cockpit-machines = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/cockpit-machines-328.2-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_cockpit-machines}"
 RDEPENDS:cockpit-machines = " \
  libvirt-daemon-config-network \
  libvirt-daemon-driver-network \

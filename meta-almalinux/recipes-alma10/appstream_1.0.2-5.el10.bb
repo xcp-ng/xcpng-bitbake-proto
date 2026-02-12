@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "appstream appstream-compose appstream-compose-devel appstream-devel appstream-qt appstream-qt-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/appstream-1.0.2-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_appstream = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/appstream-1.0.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_appstream}"
 RDEPENDS:appstream = " \
  systemd-libs \
  libgcc \
@@ -24,6 +28,7 @@ RDEPENDS:appstream = " \
 "
 
 URI_appstream-compose = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/appstream-compose-1.0.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_appstream-compose}"
 RDEPENDS:appstream-compose = " \
  freetype \
  librsvg2 \
@@ -39,6 +44,7 @@ RDEPENDS:appstream-compose = " \
 "
 
 URI_appstream-compose-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/appstream-compose-devel-1.0.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_appstream-compose-devel}"
 RDEPENDS:appstream-compose-devel = " \
  glib2-devel \
  appstream-compose \
@@ -48,6 +54,7 @@ RDEPENDS:appstream-compose-devel = " \
 "
 
 URI_appstream-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/appstream-devel-1.0.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_appstream-devel}"
 RDEPENDS:appstream-devel = " \
  appstream \
  glib2-devel \
@@ -55,6 +62,7 @@ RDEPENDS:appstream-devel = " \
 "
 
 URI_appstream-qt = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/appstream-qt-1.0.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_appstream-qt}"
 RDEPENDS:appstream-qt = " \
  appstream \
  libgcc \
@@ -65,6 +73,7 @@ RDEPENDS:appstream-qt = " \
 "
 
 URI_appstream-qt-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/appstream-qt-devel-1.0.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_appstream-qt-devel}"
 RDEPENDS:appstream-qt-devel = " \
  qt6-qtbase-devel \
  cmake-filesystem \

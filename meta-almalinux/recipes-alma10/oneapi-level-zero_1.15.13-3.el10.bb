@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "oneapi-level-zero oneapi-level-zero-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/oneapi-level-zero-1.15.13-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_oneapi-level-zero = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/oneapi-level-zero-1.15.13-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_oneapi-level-zero}"
 RDEPENDS:oneapi-level-zero = " \
  glibc \
  libgcc \
@@ -16,6 +20,7 @@ RDEPENDS:oneapi-level-zero = " \
 "
 
 URI_oneapi-level-zero-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/oneapi-level-zero-devel-1.15.13-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_oneapi-level-zero-devel}"
 RDEPENDS:oneapi-level-zero-devel = " \
  oneapi-level-zero \
  oneapi-level-zero-devel \

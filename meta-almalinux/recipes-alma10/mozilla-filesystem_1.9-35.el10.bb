@@ -8,5 +8,9 @@ PR = "35.el10"
 PACKAGES = "mozilla-filesystem"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mozilla-filesystem-1.9-35.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mozilla-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mozilla-filesystem-1.9-35.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mozilla-filesystem}"
 RDEPENDS:mozilla-filesystem = ""

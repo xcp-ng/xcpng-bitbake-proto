@@ -8,10 +8,15 @@ PR = "12.el10"
 PACKAGES = "python-testpath-doc python3-testpath"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/python-testpath-0.6.0-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python-testpath-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python-testpath-doc-0.6.0-12.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python-testpath-doc}"
 RDEPENDS:python-testpath-doc = ""
 
 URI_python3-testpath = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-testpath-0.6.0-12.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-testpath}"
 RDEPENDS:python3-testpath = " \
  python3 \
 "

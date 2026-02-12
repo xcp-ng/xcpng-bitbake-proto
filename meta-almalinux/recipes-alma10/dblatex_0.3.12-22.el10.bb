@@ -8,7 +8,11 @@ PR = "22.el10"
 PACKAGES = "dblatex"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/dblatex-0.3.12-22.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_dblatex = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/dblatex-0.3.12-22.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_dblatex}"
 RDEPENDS:dblatex = " \
  python3 \
  texlive-multirow \

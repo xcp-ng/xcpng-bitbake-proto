@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "mysql-selinux"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mysql-selinux-1.0.14-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mysql-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mysql-selinux-1.0.14-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mysql-selinux}"
 RDEPENDS:mysql-selinux = " \
  policycoreutils-python-utils \
  policycoreutils \

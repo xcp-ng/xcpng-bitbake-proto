@@ -8,12 +8,17 @@ PR = "4.el10_0.1"
 PACKAGES = "openjpeg2 openjpeg2-devel openjpeg2-tools openjpeg2-devel-docs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/openjpeg2-2.5.2-4.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_openjpeg2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openjpeg2-2.5.2-4.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openjpeg2}"
 RDEPENDS:openjpeg2 = " \
  glibc \
 "
 
 URI_openjpeg2-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openjpeg2-devel-2.5.2-4.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openjpeg2-devel}"
 RDEPENDS:openjpeg2-devel = " \
  openjpeg2 \
  openjpeg2-tools \
@@ -22,6 +27,7 @@ RDEPENDS:openjpeg2-devel = " \
 "
 
 URI_openjpeg2-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openjpeg2-tools-2.5.2-4.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openjpeg2-tools}"
 RDEPENDS:openjpeg2-tools = " \
  lcms2 \
  libpng \
@@ -31,4 +37,5 @@ RDEPENDS:openjpeg2-tools = " \
 "
 
 URI_openjpeg2-devel-docs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/openjpeg2-devel-docs-2.5.2-4.el10_0.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_openjpeg2-devel-docs}"
 RDEPENDS:openjpeg2-devel-docs = ""

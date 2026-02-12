@@ -8,7 +8,11 @@ PR = "6.el10_0"
 PACKAGES = "librepo python3-librepo librepo-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/librepo-1.18.0-6.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_librepo = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/librepo-1.18.0-6.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librepo}"
 RDEPENDS:librepo = " \
  openssl-libs \
  libgcc \
@@ -20,6 +24,7 @@ RDEPENDS:librepo = " \
 "
 
 URI_python3-librepo = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-librepo-1.18.0-6.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-librepo}"
 RDEPENDS:python3-librepo = " \
  python3 \
  libgcc \
@@ -30,6 +35,7 @@ RDEPENDS:python3-librepo = " \
 "
 
 URI_librepo-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/librepo-devel-1.18.0-6.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_librepo-devel}"
 RDEPENDS:librepo-devel = " \
  libxml2-devel \
  glib2-devel \

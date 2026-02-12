@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-HTTP-Message perl-HTTP-Message-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-HTTP-Message-6.45-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-HTTP-Message = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-HTTP-Message-6.45-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Message}"
 RDEPENDS:perl-HTTP-Message = " \
  perl-libs \
  perl-Carp \
@@ -29,6 +33,7 @@ RDEPENDS:perl-HTTP-Message = " \
 "
 
 URI_perl-HTTP-Message-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-HTTP-Message-tests-6.45-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Message-tests}"
 RDEPENDS:perl-HTTP-Message-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,10 +8,15 @@ PR = "9.el10"
 PACKAGES = "adobe-mappings-pdf adobe-mappings-pdf-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/adobe-mappings-pdf-20190401-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_adobe-mappings-pdf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/adobe-mappings-pdf-20190401-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_adobe-mappings-pdf}"
 RDEPENDS:adobe-mappings-pdf = ""
 
 URI_adobe-mappings-pdf-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/adobe-mappings-pdf-devel-20190401-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_adobe-mappings-pdf-devel}"
 RDEPENDS:adobe-mappings-pdf-devel = " \
  adobe-mappings-pdf \
 "

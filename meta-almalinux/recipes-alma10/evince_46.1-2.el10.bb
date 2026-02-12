@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "evince evince-devel evince-dvi evince-libs evince-previewer evince-thumbnailer"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/evince-46.1-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_evince = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/evince-46.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_evince}"
 RDEPENDS:evince = " \
  libhandy \
  atk \
@@ -28,6 +32,7 @@ RDEPENDS:evince = " \
 "
 
 URI_evince-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/evince-devel-46.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_evince-devel}"
 RDEPENDS:evince-devel = " \
  glib2-devel \
  evince-libs \
@@ -36,6 +41,7 @@ RDEPENDS:evince-devel = " \
 "
 
 URI_evince-dvi = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/evince-dvi-46.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_evince-dvi}"
 RDEPENDS:evince-dvi = " \
  texlive-lib \
  libspectre \
@@ -48,6 +54,7 @@ RDEPENDS:evince-dvi = " \
 "
 
 URI_evince-libs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/evince-libs-46.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_evince-libs}"
 RDEPENDS:evince-libs = " \
  libgxps \
  atk \
@@ -69,6 +76,7 @@ RDEPENDS:evince-libs = " \
 "
 
 URI_evince-previewer = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/evince-previewer-46.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_evince-previewer}"
 RDEPENDS:evince-previewer = " \
  libhandy \
  atk \
@@ -79,6 +87,7 @@ RDEPENDS:evince-previewer = " \
 "
 
 URI_evince-thumbnailer = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/evince-thumbnailer-46.1-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_evince-thumbnailer}"
 RDEPENDS:evince-thumbnailer = " \
  gdk-pixbuf2 \
  glib2 \

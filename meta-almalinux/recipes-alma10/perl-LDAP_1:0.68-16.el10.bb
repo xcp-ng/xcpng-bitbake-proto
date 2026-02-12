@@ -8,7 +8,11 @@ PR = "16.el10"
 PACKAGES = "perl-LDAP perl-LDAP-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-LDAP-0.68-16.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-LDAP = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-LDAP-0.68-16.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-LDAP}"
 RDEPENDS:perl-LDAP = " \
  perl-libs \
  perl-libwww-perl \
@@ -33,6 +37,7 @@ RDEPENDS:perl-LDAP = " \
 "
 
 URI_perl-LDAP-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-LDAP-tests-0.68-16.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-LDAP-tests}"
 RDEPENDS:perl-LDAP-tests = " \
  perl-Test-Harness \
  perl-Test-Simple \

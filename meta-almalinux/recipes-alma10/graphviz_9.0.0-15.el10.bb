@@ -8,7 +8,11 @@ PR = "15.el10"
 PACKAGES = "graphviz graphviz-doc graphviz-gd graphviz-python3 graphviz-ruby graphviz-devel graphviz-go graphviz-graphs graphviz-java graphviz-lua graphviz-perl graphviz-tcl"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/graphviz-9.0.0-15.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_graphviz = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz}"
 RDEPENDS:graphviz = " \
  libtool-ltdl \
  pango \
@@ -35,9 +39,11 @@ RDEPENDS:graphviz = " \
 "
 
 URI_graphviz-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-doc-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-doc}"
 RDEPENDS:graphviz-doc = ""
 
 URI_graphviz-gd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-gd-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-gd}"
 RDEPENDS:graphviz-gd = " \
  gd \
  zlib-ng-compat \
@@ -52,6 +58,7 @@ RDEPENDS:graphviz-gd = " \
 "
 
 URI_graphviz-python3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-python3-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-python3}"
 RDEPENDS:graphviz-python3 = " \
  python3 \
  zlib-ng-compat \
@@ -64,6 +71,7 @@ RDEPENDS:graphviz-python3 = " \
 "
 
 URI_graphviz-ruby = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/graphviz-ruby-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-ruby}"
 RDEPENDS:graphviz-ruby = " \
  zlib-ng-compat \
  libtool-ltdl \
@@ -77,6 +85,7 @@ RDEPENDS:graphviz-ruby = " \
 "
 
 URI_graphviz-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/graphviz-devel-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-devel}"
 RDEPENDS:graphviz-devel = " \
  graphviz \
  graphviz-gd \
@@ -84,6 +93,7 @@ RDEPENDS:graphviz-devel = " \
 "
 
 URI_graphviz-go = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-go-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-go}"
 RDEPENDS:graphviz-go = " \
  zlib-ng-compat \
  libtool-ltdl \
@@ -96,9 +106,11 @@ RDEPENDS:graphviz-go = " \
 "
 
 URI_graphviz-graphs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-graphs-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-graphs}"
 RDEPENDS:graphviz-graphs = ""
 
 URI_graphviz-java = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-java-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-java}"
 RDEPENDS:graphviz-java = " \
  zlib-ng-compat \
  libtool-ltdl \
@@ -110,6 +122,7 @@ RDEPENDS:graphviz-java = " \
 "
 
 URI_graphviz-lua = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-lua-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-lua}"
 RDEPENDS:graphviz-lua = " \
  zlib-ng-compat \
  libtool-ltdl \
@@ -123,6 +136,7 @@ RDEPENDS:graphviz-lua = " \
 "
 
 URI_graphviz-perl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-perl-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-perl}"
 RDEPENDS:graphviz-perl = " \
  zlib-ng-compat \
  perl-libs \
@@ -139,6 +153,7 @@ RDEPENDS:graphviz-perl = " \
 "
 
 URI_graphviz-tcl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/graphviz-tcl-9.0.0-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_graphviz-tcl}"
 RDEPENDS:graphviz-tcl = " \
  gd \
  zlib-ng-compat \

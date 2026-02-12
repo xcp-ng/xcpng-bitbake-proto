@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "perl-Module-ScanDeps perl-Module-ScanDeps-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Module-ScanDeps-1.37-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-ScanDeps = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Module-ScanDeps-1.37-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-ScanDeps}"
 RDEPENDS:perl-Module-ScanDeps = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -37,6 +41,7 @@ RDEPENDS:perl-Module-ScanDeps = " \
 "
 
 URI_perl-Module-ScanDeps-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-ScanDeps-tests-1.37-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-ScanDeps-tests}"
 RDEPENDS:perl-Module-ScanDeps-tests = " \
  perl-libnet \
  perl-IPC-Run3 \

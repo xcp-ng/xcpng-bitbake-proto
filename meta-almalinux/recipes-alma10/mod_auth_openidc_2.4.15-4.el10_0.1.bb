@@ -8,7 +8,11 @@ PR = "4.el10_0.1"
 PACKAGES = "mod_auth_openidc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mod_auth_openidc-2.4.15-4.el10_0.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mod_auth_openidc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mod_auth_openidc-2.4.15-4.el10_0.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mod_auth_openidc}"
 RDEPENDS:mod_auth_openidc = " \
  zlib-ng-compat \
  httpd-core \

@@ -8,12 +8,17 @@ PR = "9.el10"
 PACKAGES = "httpcomponents-core httpcomponents-core-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/httpcomponents-core-4.4.16-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_httpcomponents-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/httpcomponents-core-4.4.16-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_httpcomponents-core}"
 RDEPENDS:httpcomponents-core = " \
  javapackages-filesystem \
 "
 
 URI_httpcomponents-core-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/httpcomponents-core-javadoc-4.4.16-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_httpcomponents-core-javadoc}"
 RDEPENDS:httpcomponents-core-javadoc = " \
  javapackages-filesystem \
 "

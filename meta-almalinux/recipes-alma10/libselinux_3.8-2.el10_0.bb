@@ -8,7 +8,11 @@ PR = "2.el10_0"
 PACKAGES = "libselinux libselinux-utils libselinux-devel libselinux-ruby python3-libselinux libselinux-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libselinux-3.8-2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libselinux = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libselinux-3.8-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libselinux}"
 RDEPENDS:libselinux = " \
  glibc \
  pcre2 \
@@ -16,6 +20,7 @@ RDEPENDS:libselinux = " \
 "
 
 URI_libselinux-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libselinux-utils-3.8-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libselinux-utils}"
 RDEPENDS:libselinux-utils = " \
  glibc \
  libselinux \
@@ -24,6 +29,7 @@ RDEPENDS:libselinux-utils = " \
 "
 
 URI_libselinux-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libselinux-devel-3.8-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libselinux-devel}"
 RDEPENDS:libselinux-devel = " \
  libselinux \
  libsepol-devel \
@@ -32,6 +38,7 @@ RDEPENDS:libselinux-devel = " \
 "
 
 URI_libselinux-ruby = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libselinux-ruby-3.8-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libselinux-ruby}"
 RDEPENDS:libselinux-ruby = " \
  glibc \
  libselinux \
@@ -39,6 +46,7 @@ RDEPENDS:libselinux-ruby = " \
 "
 
 URI_python3-libselinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-libselinux-3.8-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-libselinux}"
 RDEPENDS:python3-libselinux = " \
  glibc \
  libselinux \
@@ -46,6 +54,7 @@ RDEPENDS:python3-libselinux = " \
 "
 
 URI_libselinux-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libselinux-static-3.8-2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libselinux-static}"
 RDEPENDS:libselinux-static = " \
  libselinux-devel \
 "

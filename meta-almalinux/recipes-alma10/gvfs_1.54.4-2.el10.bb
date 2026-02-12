@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "gvfs gvfs-client gvfs-fuse gvfs-goa gvfs-gphoto2 gvfs-mtp gvfs-smb"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gvfs-1.54.4-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gvfs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvfs-1.54.4-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvfs}"
 RDEPENDS:gvfs = " \
  systemd-libs \
  gvfs-client \
@@ -32,6 +36,7 @@ RDEPENDS:gvfs = " \
 "
 
 URI_gvfs-client = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvfs-client-1.54.4-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvfs-client}"
 RDEPENDS:gvfs-client = " \
  glibc \
  libgcc \
@@ -39,6 +44,7 @@ RDEPENDS:gvfs-client = " \
 "
 
 URI_gvfs-fuse = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvfs-fuse-1.54.4-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvfs-fuse}"
 RDEPENDS:gvfs-fuse = " \
  gvfs \
  gvfs-client \
@@ -49,6 +55,7 @@ RDEPENDS:gvfs-fuse = " \
 "
 
 URI_gvfs-goa = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvfs-goa-1.54.4-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvfs-goa}"
 RDEPENDS:gvfs-goa = " \
  gvfs \
  gvfs-client \
@@ -59,6 +66,7 @@ RDEPENDS:gvfs-goa = " \
 "
 
 URI_gvfs-gphoto2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvfs-gphoto2-1.54.4-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvfs-gphoto2}"
 RDEPENDS:gvfs-gphoto2 = " \
  gvfs \
  gvfs-client \
@@ -70,6 +78,7 @@ RDEPENDS:gvfs-gphoto2 = " \
 "
 
 URI_gvfs-mtp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvfs-mtp-1.54.4-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvfs-mtp}"
 RDEPENDS:gvfs-mtp = " \
  gvfs \
  gvfs-client \
@@ -82,6 +91,7 @@ RDEPENDS:gvfs-mtp = " \
 "
 
 URI_gvfs-smb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gvfs-smb-1.54.4-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gvfs-smb}"
 RDEPENDS:gvfs-smb = " \
  libsmbclient \
  gvfs \

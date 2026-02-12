@@ -8,7 +8,11 @@ PR = "48.el10"
 PACKAGES = "opensp opensp-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/opensp-1.5.2-48.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_opensp = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/opensp-1.5.2-48.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_opensp}"
 RDEPENDS:opensp = " \
  glibc \
  sgml-common \
@@ -17,6 +21,7 @@ RDEPENDS:opensp = " \
 "
 
 URI_opensp-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/opensp-devel-1.5.2-48.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_opensp-devel}"
 RDEPENDS:opensp-devel = " \
  opensp \
 "

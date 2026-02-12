@@ -8,7 +8,11 @@ PR = "1.el10.5"
 PACKAGES = "sbd sbd-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/sbd-1.5.2-1.el10.5.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sbd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sbd-1.5.2-1.el10.5.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sbd}"
 RDEPENDS:sbd = " \
  libqb \
  libuuid \
@@ -24,6 +28,7 @@ RDEPENDS:sbd = " \
 "
 
 URI_sbd-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/sbd-tests-1.5.2-1.el10.5.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sbd-tests}"
 RDEPENDS:sbd-tests = " \
  libqb \
  libuuid \

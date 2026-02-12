@@ -8,13 +8,18 @@ PR = "1.el10"
 PACKAGES = "alsa-ucm-utils alsa-utils alsa-topology-utils alsa-utils-alsabat"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/alsa-utils-1.2.13-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_alsa-ucm-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/alsa-ucm-utils-1.2.13-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_alsa-ucm-utils}"
 RDEPENDS:alsa-ucm-utils = " \
  glibc \
  alsa-lib \
 "
 
 URI_alsa-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/alsa-utils-1.2.13-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_alsa-utils}"
 RDEPENDS:alsa-utils = " \
  alsa-lib \
  systemd \
@@ -26,6 +31,7 @@ RDEPENDS:alsa-utils = " \
 "
 
 URI_alsa-topology-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/alsa-topology-utils-1.2.13-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_alsa-topology-utils}"
 RDEPENDS:alsa-topology-utils = " \
  glibc \
  alsa-lib \
@@ -33,6 +39,7 @@ RDEPENDS:alsa-topology-utils = " \
 "
 
 URI_alsa-utils-alsabat = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/alsa-utils-alsabat-1.2.13-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_alsa-utils-alsabat}"
 RDEPENDS:alsa-utils-alsabat = " \
  fftw-libs-single \
  alsa-lib \

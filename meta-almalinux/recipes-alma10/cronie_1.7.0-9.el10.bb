@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "cronie cronie-anacron cronie-noanacron"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/cronie-1.7.0-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cronie = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cronie-1.7.0-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cronie}"
 RDEPENDS:cronie = " \
  glibc \
  cronie-noanacron \
@@ -22,6 +26,7 @@ RDEPENDS:cronie = " \
 "
 
 URI_cronie-anacron = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cronie-anacron-1.7.0-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cronie-anacron}"
 RDEPENDS:cronie-anacron = " \
  crontabs \
  bash \
@@ -31,6 +36,7 @@ RDEPENDS:cronie-anacron = " \
 "
 
 URI_cronie-noanacron = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cronie-noanacron-1.7.0-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cronie-noanacron}"
 RDEPENDS:cronie-noanacron = " \
  crontabs \
  cronie \

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "yara yara-devel yara-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/yara-4.5.2-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_yara = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/yara-4.5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_yara}"
 RDEPENDS:yara = " \
  jansson \
  openssl-libs \
@@ -18,6 +22,7 @@ RDEPENDS:yara = " \
 "
 
 URI_yara-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/yara-devel-4.5.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_yara-devel}"
 RDEPENDS:yara-devel = " \
  yara \
  pkgconf-pkg-config \
@@ -27,4 +32,5 @@ RDEPENDS:yara-devel = " \
 "
 
 URI_yara-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/yara-doc-4.5.2-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_yara-doc}"
 RDEPENDS:yara-doc = ""

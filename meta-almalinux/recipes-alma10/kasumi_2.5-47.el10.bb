@@ -8,10 +8,15 @@ PR = "47.el10"
 PACKAGES = "kasumi-common kasumi-unicode"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/kasumi-2.5-47.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_kasumi-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kasumi-common-2.5-47.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_kasumi-common}"
 RDEPENDS:kasumi-common = ""
 
 URI_kasumi-unicode = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kasumi-unicode-2.5-47.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kasumi-unicode}"
 RDEPENDS:kasumi-unicode = " \
  kasumi-common \
  libgcc \

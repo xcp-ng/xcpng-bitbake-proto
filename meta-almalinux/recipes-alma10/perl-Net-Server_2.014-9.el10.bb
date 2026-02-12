@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "perl-Net-Server perl-Net-Server-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Net-Server-2.014-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Net-Server = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Net-Server-2.014-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-Server}"
 RDEPENDS:perl-Net-Server = " \
  perl-Net-Server \
  perl-Scalar-List-Utils \
@@ -31,6 +35,7 @@ RDEPENDS:perl-Net-Server = " \
 "
 
 URI_perl-Net-Server-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Net-Server-tests-2.014-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-Server-tests}"
 RDEPENDS:perl-Net-Server-tests = " \
  perl-Net-Server \
  perl-constant \

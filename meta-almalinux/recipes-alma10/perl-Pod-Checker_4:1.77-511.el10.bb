@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Pod-Checker perl-Pod-Checker-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Pod-Checker-1.77-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Pod-Checker = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Pod-Checker-1.77-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Checker}"
 RDEPENDS:perl-Pod-Checker = " \
  perl-libs \
  perl-Carp \
@@ -22,6 +26,7 @@ RDEPENDS:perl-Pod-Checker = " \
 "
 
 URI_perl-Pod-Checker-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Pod-Checker-tests-1.77-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Checker-tests}"
 RDEPENDS:perl-Pod-Checker-tests = " \
  perl-Test-Harness \
  perl-libs \

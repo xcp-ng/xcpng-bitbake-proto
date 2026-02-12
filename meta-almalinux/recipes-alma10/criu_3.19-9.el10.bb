@@ -8,13 +8,18 @@ PR = "9.el10"
 PACKAGES = "crit criu criu-libs python3-criu criu-devel criu-ns"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/criu-3.19-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_crit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/crit-3.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_crit}"
 RDEPENDS:crit = " \
  python3 \
  python3-criu \
 "
 
 URI_criu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/criu-3.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_criu}"
 RDEPENDS:criu = " \
  libuuid \
  nftables \
@@ -29,6 +34,7 @@ RDEPENDS:criu = " \
 "
 
 URI_criu-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/criu-libs-3.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_criu-libs}"
 RDEPENDS:criu-libs = " \
  glibc \
  protobuf-c \
@@ -36,12 +42,14 @@ RDEPENDS:criu-libs = " \
 "
 
 URI_python3-criu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-criu-3.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-criu}"
 RDEPENDS:python3-criu = " \
  python3 \
  python3-protobuf \
 "
 
 URI_criu-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/criu-devel-3.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_criu-devel}"
 RDEPENDS:criu-devel = " \
  criu \
  criu-libs \
@@ -50,6 +58,7 @@ RDEPENDS:criu-devel = " \
 "
 
 URI_criu-ns = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/criu-ns-3.19-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_criu-ns}"
 RDEPENDS:criu-ns = " \
  python3 \
  criu \

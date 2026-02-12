@@ -8,7 +8,11 @@ PR = "44.el10"
 PACKAGES = "zip"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/zip-3.0-44.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_zip = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/zip-3.0-44.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_zip}"
 RDEPENDS:zip = " \
  glibc \
  unzip \

@@ -8,7 +8,11 @@ PR = "8.el10_0"
 PACKAGES = "mutter mutter-common mutter-devel mutter-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mutter-47.5-8.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mutter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mutter-47.5-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mutter}"
 RDEPENDS:mutter = " \
  lcms2 \
  systemd-libs \
@@ -67,9 +71,11 @@ RDEPENDS:mutter = " \
 "
 
 URI_mutter-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mutter-common-47.5-8.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mutter-common}"
 RDEPENDS:mutter-common = ""
 
 URI_mutter-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mutter-devel-47.5-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mutter-devel}"
 RDEPENDS:mutter-devel = " \
  glib2-devel \
  mutter \
@@ -99,6 +105,7 @@ RDEPENDS:mutter-devel = " \
 "
 
 URI_mutter-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/mutter-tests-47.5-8.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mutter-tests}"
 RDEPENDS:mutter-tests = " \
  python3 \
  mutter \

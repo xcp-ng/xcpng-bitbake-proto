@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "libnbd libnbd-bash-completion nbdfuse python3-libnbd libnbd-devel ocaml-libnbd ocaml-libnbd-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libnbd-1.20.3-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libnbd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libnbd-1.20.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnbd}"
 RDEPENDS:libnbd = " \
  glibc \
  gnutls \
@@ -16,12 +20,14 @@ RDEPENDS:libnbd = " \
 "
 
 URI_libnbd-bash-completion = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libnbd-bash-completion-1.20.3-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libnbd-bash-completion}"
 RDEPENDS:libnbd-bash-completion = " \
  bash-completion \
  libnbd \
 "
 
 URI_nbdfuse = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nbdfuse-1.20.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nbdfuse}"
 RDEPENDS:nbdfuse = " \
  glibc \
  fuse3-libs \
@@ -29,6 +35,7 @@ RDEPENDS:nbdfuse = " \
 "
 
 URI_python3-libnbd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-libnbd-1.20.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-libnbd}"
 RDEPENDS:python3-libnbd = " \
  python3 \
  gnutls \
@@ -39,12 +46,14 @@ RDEPENDS:python3-libnbd = " \
 "
 
 URI_libnbd-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libnbd-devel-1.20.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnbd-devel}"
 RDEPENDS:libnbd-devel = " \
  pkgconf-pkg-config \
  libnbd \
 "
 
 URI_ocaml-libnbd = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-libnbd-1.20.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-libnbd}"
 RDEPENDS:ocaml-libnbd = " \
  glibc \
  ocaml-runtime \
@@ -52,6 +61,7 @@ RDEPENDS:ocaml-libnbd = " \
 "
 
 URI_ocaml-libnbd-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-libnbd-devel-1.20.3-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-libnbd-devel}"
 RDEPENDS:ocaml-libnbd-devel = " \
  ocaml-libnbd \
  ocaml-runtime \

@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "poppler poppler-cpp poppler-glib poppler-qt6 poppler-utils poppler-cpp-devel poppler-devel poppler-glib-devel poppler-glib-doc poppler-qt6-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/poppler-24.02.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_poppler = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/poppler-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler}"
 RDEPENDS:poppler = " \
  zlib-ng-compat \
  nss \
@@ -29,6 +33,7 @@ RDEPENDS:poppler = " \
 "
 
 URI_poppler-cpp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/poppler-cpp-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-cpp}"
 RDEPENDS:poppler-cpp = " \
  glibc \
  libgcc \
@@ -37,6 +42,7 @@ RDEPENDS:poppler-cpp = " \
 "
 
 URI_poppler-glib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/poppler-glib-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-glib}"
 RDEPENDS:poppler-glib = " \
  freetype \
  libgcc \
@@ -48,6 +54,7 @@ RDEPENDS:poppler-glib = " \
 "
 
 URI_poppler-qt6 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/poppler-qt6-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-qt6}"
 RDEPENDS:poppler-qt6 = " \
  freetype \
  lcms2 \
@@ -60,6 +67,7 @@ RDEPENDS:poppler-qt6 = " \
 "
 
 URI_poppler-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/poppler-utils-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-utils}"
 RDEPENDS:poppler-utils = " \
  freetype \
  lcms2 \
@@ -71,6 +79,7 @@ RDEPENDS:poppler-utils = " \
 "
 
 URI_poppler-cpp-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/poppler-cpp-devel-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-cpp-devel}"
 RDEPENDS:poppler-cpp-devel = " \
  poppler-devel \
  pkgconf-pkg-config \
@@ -78,12 +87,14 @@ RDEPENDS:poppler-cpp-devel = " \
 "
 
 URI_poppler-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/poppler-devel-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-devel}"
 RDEPENDS:poppler-devel = " \
  pkgconf-pkg-config \
  poppler \
 "
 
 URI_poppler-glib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/poppler-glib-devel-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-glib-devel}"
 RDEPENDS:poppler-glib-devel = " \
  glib2-devel \
  pkgconf-pkg-config \
@@ -93,9 +104,11 @@ RDEPENDS:poppler-glib-devel = " \
 "
 
 URI_poppler-glib-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/poppler-glib-doc-24.02.0-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_poppler-glib-doc}"
 RDEPENDS:poppler-glib-doc = ""
 
 URI_poppler-qt6-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/poppler-qt6-devel-24.02.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_poppler-qt6-devel}"
 RDEPENDS:poppler-qt6-devel = " \
  poppler-qt6 \
  poppler-devel \

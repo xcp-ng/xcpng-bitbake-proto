@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "at-spi2-atk at-spi2-atk-devel at-spi2-core at-spi2-core-devel atk atk-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/at-spi2-core-2.52.0-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_at-spi2-atk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/at-spi2-atk-2.52.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_at-spi2-atk}"
 RDEPENDS:at-spi2-atk = " \
  atk \
  glib2 \
@@ -18,6 +22,7 @@ RDEPENDS:at-spi2-atk = " \
 "
 
 URI_at-spi2-atk-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/at-spi2-atk-devel-2.52.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_at-spi2-atk-devel}"
 RDEPENDS:at-spi2-atk-devel = " \
  at-spi2-core-devel \
  atk-devel \
@@ -28,6 +33,7 @@ RDEPENDS:at-spi2-atk-devel = " \
 "
 
 URI_at-spi2-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/at-spi2-core-2.52.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_at-spi2-core}"
 RDEPENDS:at-spi2-core = " \
  systemd-libs \
  libXi \
@@ -42,6 +48,7 @@ RDEPENDS:at-spi2-core = " \
 "
 
 URI_at-spi2-core-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/at-spi2-core-devel-2.52.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_at-spi2-core-devel}"
 RDEPENDS:at-spi2-core-devel = " \
  glib2-devel \
  libXi-devel \
@@ -53,6 +60,7 @@ RDEPENDS:at-spi2-core-devel = " \
 "
 
 URI_atk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/atk-2.52.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_atk}"
 RDEPENDS:atk = " \
  glibc \
  glib2 \
@@ -60,6 +68,7 @@ RDEPENDS:atk = " \
 "
 
 URI_atk-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/atk-devel-2.52.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_atk-devel}"
 RDEPENDS:atk-devel = " \
  atk \
  glib2-devel \

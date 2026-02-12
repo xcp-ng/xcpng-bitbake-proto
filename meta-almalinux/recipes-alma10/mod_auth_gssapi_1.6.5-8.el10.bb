@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "mod_auth_gssapi"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mod_auth_gssapi-1.6.5-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mod_auth_gssapi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mod_auth_gssapi-1.6.5-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mod_auth_gssapi}"
 RDEPENDS:mod_auth_gssapi = " \
  httpd-core \
  openssl-libs \

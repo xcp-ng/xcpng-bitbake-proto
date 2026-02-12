@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Pod-Simple perl-Pod-Simple-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Pod-Simple-3.45-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Pod-Simple = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Pod-Simple-3.45-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Simple}"
 RDEPENDS:perl-Pod-Simple = " \
  perl-libs \
  perl-Carp \
@@ -25,6 +29,7 @@ RDEPENDS:perl-Pod-Simple = " \
 "
 
 URI_perl-Pod-Simple-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Pod-Simple-tests-3.45-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Simple-tests}"
 RDEPENDS:perl-Pod-Simple-tests = " \
  perl-Test-Harness \
  perl-libs \

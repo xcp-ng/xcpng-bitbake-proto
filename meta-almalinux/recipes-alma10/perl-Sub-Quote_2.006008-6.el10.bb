@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-Sub-Quote perl-Sub-Quote-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Sub-Quote-2.006008-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Sub-Quote = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Sub-Quote-2.006008-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Quote}"
 RDEPENDS:perl-Sub-Quote = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -19,6 +23,7 @@ RDEPENDS:perl-Sub-Quote = " \
 "
 
 URI_perl-Sub-Quote-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Sub-Quote-tests-2.006008-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sub-Quote-tests}"
 RDEPENDS:perl-Sub-Quote-tests = " \
  perl-constant \
  perl-threads \

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "libreport libreport-anaconda libreport-centos libreport-cli libreport-devel libreport-filesystem libreport-gtk libreport-gtk-devel libreport-newt libreport-plugin-bugzilla libreport-plugin-kerneloops libreport-plugin-logger libreport-plugin-mailx libreport-plugin-mantisbt libreport-plugin-reportuploader libreport-plugin-systemd-journal libreport-plugin-ureport libreport-web libreport-web-devel python3-libreport"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/libreport-2.17.14-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libreport = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport}"
 RDEPENDS:libreport = " \
  systemd-libs \
  libarchive \
@@ -22,12 +26,14 @@ RDEPENDS:libreport = " \
 "
 
 URI_libreport-anaconda = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-anaconda-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-anaconda}"
 RDEPENDS:libreport-anaconda = " \
  libreport \
  libreport-plugin-reportuploader \
 "
 
 URI_libreport-centos = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-centos-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-centos}"
 RDEPENDS:libreport-centos = " \
  libreport \
  libreport-web \
@@ -35,6 +41,7 @@ RDEPENDS:libreport-centos = " \
 "
 
 URI_libreport-cli = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-cli-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-cli}"
 RDEPENDS:libreport-cli = " \
  glibc \
  libreport \
@@ -43,6 +50,7 @@ RDEPENDS:libreport-cli = " \
 "
 
 URI_libreport-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-devel-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-devel}"
 RDEPENDS:libreport-devel = " \
  libreport \
  glib2-devel \
@@ -50,9 +58,11 @@ RDEPENDS:libreport-devel = " \
 "
 
 URI_libreport-filesystem = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-filesystem-2.17.14-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libreport-filesystem}"
 RDEPENDS:libreport-filesystem = ""
 
 URI_libreport-gtk = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-gtk-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-gtk}"
 RDEPENDS:libreport-gtk = " \
  atk \
  systemd-libs \
@@ -74,6 +84,7 @@ RDEPENDS:libreport-gtk = " \
 "
 
 URI_libreport-gtk-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-gtk-devel-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-gtk-devel}"
 RDEPENDS:libreport-gtk-devel = " \
  libreport-devel \
  pkgconf-pkg-config \
@@ -81,6 +92,7 @@ RDEPENDS:libreport-gtk-devel = " \
 "
 
 URI_libreport-newt = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-newt-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-newt}"
 RDEPENDS:libreport-newt = " \
  newt \
  libgcc \
@@ -90,6 +102,7 @@ RDEPENDS:libreport-newt = " \
 "
 
 URI_libreport-plugin-bugzilla = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-bugzilla-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-bugzilla}"
 RDEPENDS:libreport-plugin-bugzilla = " \
  python3 \
  xmlrpc-c \
@@ -103,6 +116,7 @@ RDEPENDS:libreport-plugin-bugzilla = " \
 "
 
 URI_libreport-plugin-kerneloops = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-kerneloops-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-kerneloops}"
 RDEPENDS:libreport-plugin-kerneloops = " \
  libreport-web \
  libgcc \
@@ -114,6 +128,7 @@ RDEPENDS:libreport-plugin-kerneloops = " \
 "
 
 URI_libreport-plugin-logger = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-logger-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-logger}"
 RDEPENDS:libreport-plugin-logger = " \
  glibc \
  libreport \
@@ -122,6 +137,7 @@ RDEPENDS:libreport-plugin-logger = " \
 "
 
 URI_libreport-plugin-mailx = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-mailx-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-mailx}"
 RDEPENDS:libreport-plugin-mailx = " \
  libgcc \
  glib2 \
@@ -131,6 +147,7 @@ RDEPENDS:libreport-plugin-mailx = " \
 "
 
 URI_libreport-plugin-mantisbt = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-mantisbt-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-mantisbt}"
 RDEPENDS:libreport-plugin-mantisbt = " \
  libreport-web \
  libgcc \
@@ -141,6 +158,7 @@ RDEPENDS:libreport-plugin-mantisbt = " \
 "
 
 URI_libreport-plugin-reportuploader = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-reportuploader-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-reportuploader}"
 RDEPENDS:libreport-plugin-reportuploader = " \
  libreport-web \
  libgcc \
@@ -150,6 +168,7 @@ RDEPENDS:libreport-plugin-reportuploader = " \
 "
 
 URI_libreport-plugin-systemd-journal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-systemd-journal-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-systemd-journal}"
 RDEPENDS:libreport-plugin-systemd-journal = " \
  systemd-libs \
  libgcc \
@@ -159,6 +178,7 @@ RDEPENDS:libreport-plugin-systemd-journal = " \
 "
 
 URI_libreport-plugin-ureport = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-plugin-ureport-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-plugin-ureport}"
 RDEPENDS:libreport-plugin-ureport = " \
  libreport-web \
  libgcc \
@@ -168,6 +188,7 @@ RDEPENDS:libreport-plugin-ureport = " \
 "
 
 URI_libreport-web = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-web-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-web}"
 RDEPENDS:libreport-web = " \
  xmlrpc-c \
  systemd-libs \
@@ -185,6 +206,7 @@ RDEPENDS:libreport-web = " \
 "
 
 URI_libreport-web-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libreport-web-devel-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libreport-web-devel}"
 RDEPENDS:libreport-web-devel = " \
  libxml2-devel \
  glib2-devel \
@@ -198,6 +220,7 @@ RDEPENDS:libreport-web-devel = " \
 "
 
 URI_python3-libreport = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-libreport-2.17.14-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-libreport}"
 RDEPENDS:python3-libreport = " \
  python3-urllib3 \
  python3 \

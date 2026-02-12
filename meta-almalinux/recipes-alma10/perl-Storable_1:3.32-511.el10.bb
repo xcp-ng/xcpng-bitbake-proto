@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Storable perl-Storable-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Storable-3.32-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Storable = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Storable-3.32-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Storable}"
 RDEPENDS:perl-Storable = " \
  perl-libs \
  perl-Carp \
@@ -19,6 +23,7 @@ RDEPENDS:perl-Storable = " \
 "
 
 URI_perl-Storable-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Storable-tests-3.32-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Storable-tests}"
 RDEPENDS:perl-Storable-tests = " \
  perl-Safe \
  perl-libs \

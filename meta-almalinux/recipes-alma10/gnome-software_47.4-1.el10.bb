@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gnome-software gnome-software-fedora-langpacks gnome-software-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-software-47.4-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-software = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-software-47.4-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-software}"
 RDEPENDS:gnome-software = " \
  ostree-libs \
  flatpak-libs \
@@ -36,6 +40,7 @@ RDEPENDS:gnome-software = " \
 "
 
 URI_gnome-software-fedora-langpacks = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-software-fedora-langpacks-47.4-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-software-fedora-langpacks}"
 RDEPENDS:gnome-software-fedora-langpacks = " \
  glibc \
  libgcc \
@@ -44,6 +49,7 @@ RDEPENDS:gnome-software-fedora-langpacks = " \
 "
 
 URI_gnome-software-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gnome-software-devel-47.4-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-software-devel}"
 RDEPENDS:gnome-software-devel = " \
  json-glib-devel \
  sysprof-capture-devel \

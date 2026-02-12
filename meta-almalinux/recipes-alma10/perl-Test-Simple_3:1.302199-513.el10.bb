@@ -8,7 +8,11 @@ PR = "513.el10"
 PACKAGES = "perl-Test-Simple perl-Test-Simple-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Test-Simple-1.302199-513.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Test-Simple = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Test-Simple-1.302199-513.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Simple}"
 RDEPENDS:perl-Test-Simple = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -32,6 +36,7 @@ RDEPENDS:perl-Test-Simple = " \
 "
 
 URI_perl-Test-Simple-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Simple-tests-1.302199-513.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Simple-tests}"
 RDEPENDS:perl-Test-Simple-tests = " \
  perl-Scalar-List-Utils \
  perl-libs \

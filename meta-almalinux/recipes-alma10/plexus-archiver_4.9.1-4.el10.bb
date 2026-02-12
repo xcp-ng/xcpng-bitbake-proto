@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "plexus-archiver plexus-archiver-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/plexus-archiver-4.9.1-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_plexus-archiver = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/plexus-archiver-4.9.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_plexus-archiver}"
 RDEPENDS:plexus-archiver = " \
  atinject \
  xz-java \
@@ -21,6 +25,7 @@ RDEPENDS:plexus-archiver = " \
 "
 
 URI_plexus-archiver-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/plexus-archiver-javadoc-4.9.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_plexus-archiver-javadoc}"
 RDEPENDS:plexus-archiver-javadoc = " \
  javapackages-filesystem \
 "

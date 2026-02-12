@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-Module-Install perl-Module-Install-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Module-Install-1.21-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-Install = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Module-Install-1.21-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Install}"
 RDEPENDS:perl-Module-Install = " \
  perl-libs \
  perl-FileHandle \
@@ -37,6 +41,7 @@ RDEPENDS:perl-Module-Install = " \
 "
 
 URI_perl-Module-Install-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Install-tests-1.21-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Install-tests}"
 RDEPENDS:perl-Module-Install-tests = " \
  perl-CPAN-Meta \
  perl-Test-Harness \

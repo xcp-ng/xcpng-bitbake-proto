@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "pango pango-devel pango-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/pango-1.54.0-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pango = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pango-1.54.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pango}"
 RDEPENDS:pango = " \
  freetype \
  libXft \
@@ -24,6 +28,7 @@ RDEPENDS:pango = " \
 "
 
 URI_pango-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pango-devel-1.54.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pango-devel}"
 RDEPENDS:pango-devel = " \
  glib2-devel \
  libXft-devel \
@@ -40,6 +45,7 @@ RDEPENDS:pango-devel = " \
 "
 
 URI_pango-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/pango-doc-1.54.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pango-doc}"
 RDEPENDS:pango-doc = " \
  pango \
 "

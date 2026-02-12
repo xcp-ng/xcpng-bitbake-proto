@@ -8,13 +8,18 @@ PR = "6.el10"
 PACKAGES = "jaxb-api jaxb-api-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/jaxb-api-4.0.1-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jaxb-api = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/jaxb-api-4.0.1-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jaxb-api}"
 RDEPENDS:jaxb-api = " \
  jakarta-activation \
  javapackages-filesystem \
 "
 
 URI_jaxb-api-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jaxb-api-javadoc-4.0.1-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jaxb-api-javadoc}"
 RDEPENDS:jaxb-api-javadoc = " \
  javapackages-filesystem \
 "

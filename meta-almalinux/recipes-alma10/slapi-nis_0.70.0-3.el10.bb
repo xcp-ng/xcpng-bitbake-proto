@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "slapi-nis"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/slapi-nis-0.70.0-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_slapi-nis = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/slapi-nis-0.70.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_slapi-nis}"
 RDEPENDS:slapi-nis = " \
  nss \
  pam-libs \

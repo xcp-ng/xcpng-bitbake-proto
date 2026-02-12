@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "ibus-hangul ibus-hangul-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ibus-hangul-1.5.5-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ibus-hangul = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ibus-hangul-1.5.5-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ibus-hangul}"
 RDEPENDS:ibus-hangul = " \
  python3 \
  python3-gobject \
@@ -21,6 +25,7 @@ RDEPENDS:ibus-hangul = " \
 "
 
 URI_ibus-hangul-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ibus-hangul-tests-1.5.5-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ibus-hangul-tests}"
 RDEPENDS:ibus-hangul-tests = " \
  libhangul \
  glib2 \

@@ -8,7 +8,11 @@ PR = "9.Final.el10"
 PACKAGES = "postgres-decoderbufs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/postgresql16-decoderbufs-1.9.7-9.Final.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_postgres-decoderbufs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/postgres-decoderbufs-1.9.7-9.Final.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_postgres-decoderbufs}"
 RDEPENDS:postgres-decoderbufs = " \
  glibc \
  postgresql-server \

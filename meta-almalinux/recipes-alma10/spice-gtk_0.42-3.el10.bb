@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "spice-glib spice-glib-devel spice-gtk spice-gtk-tools spice-gtk3 spice-gtk3-devel spice-gtk3-vala"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/spice-gtk-0.42-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_spice-glib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-glib-0.42-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-glib}"
 RDEPENDS:spice-glib = " \
  libcacard \
  cyrus-sasl-lib \
@@ -33,6 +37,7 @@ RDEPENDS:spice-glib = " \
 "
 
 URI_spice-glib-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-glib-devel-0.42-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-glib-devel}"
 RDEPENDS:spice-glib-devel = " \
  glib2-devel \
  libcacard-devel \
@@ -57,11 +62,13 @@ RDEPENDS:spice-glib-devel = " \
 "
 
 URI_spice-gtk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk-0.42-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-gtk}"
 RDEPENDS:spice-gtk = " \
  spice-glib \
 "
 
 URI_spice-gtk-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk-tools-0.42-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-gtk-tools}"
 RDEPENDS:spice-gtk-tools = " \
  gstreamer1 \
  libwayland-server \
@@ -73,6 +80,7 @@ RDEPENDS:spice-gtk-tools = " \
 "
 
 URI_spice-gtk3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk3-0.42-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-gtk3}"
 RDEPENDS:spice-gtk3 = " \
  libwayland-client \
  gstreamer1 \
@@ -90,6 +98,7 @@ RDEPENDS:spice-gtk3 = " \
 "
 
 URI_spice-gtk3-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk3-devel-0.42-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-gtk3-devel}"
 RDEPENDS:spice-gtk3-devel = " \
  glib2-devel \
  libcacard-devel \
@@ -119,6 +128,7 @@ RDEPENDS:spice-gtk3-devel = " \
 "
 
 URI_spice-gtk3-vala = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/spice-gtk3-vala-0.42-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_spice-gtk3-vala}"
 RDEPENDS:spice-gtk3-vala = " \
  spice-gtk3 \
  spice-gtk3-devel \

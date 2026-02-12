@@ -8,7 +8,11 @@ PR = "45.el10"
 PACKAGES = "perl-Encode-EUCJPASCII perl-Encode-EUCJPASCII-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Encode-EUCJPASCII-0.03-45.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Encode-EUCJPASCII = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Encode-EUCJPASCII-0.03-45.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Encode-EUCJPASCII}"
 RDEPENDS:perl-Encode-EUCJPASCII = " \
  perl-libs \
  perl-libs \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Encode-EUCJPASCII = " \
 "
 
 URI_perl-Encode-EUCJPASCII-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Encode-EUCJPASCII-tests-0.03-45.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Encode-EUCJPASCII-tests}"
 RDEPENDS:perl-Encode-EUCJPASCII-tests = " \
  perl-Test-Harness \
  perl-libs \

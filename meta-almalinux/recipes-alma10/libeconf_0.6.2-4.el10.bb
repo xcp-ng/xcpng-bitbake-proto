@@ -8,12 +8,17 @@ PR = "4.el10"
 PACKAGES = "libeconf libeconf-devel libeconf-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libeconf-0.6.2-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libeconf = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libeconf-0.6.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libeconf}"
 RDEPENDS:libeconf = " \
  glibc \
 "
 
 URI_libeconf-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libeconf-devel-0.6.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libeconf-devel}"
 RDEPENDS:libeconf-devel = " \
  cmake-filesystem \
  pkgconf-pkg-config \
@@ -21,6 +26,7 @@ RDEPENDS:libeconf-devel = " \
 "
 
 URI_libeconf-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libeconf-utils-0.6.2-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libeconf-utils}"
 RDEPENDS:libeconf-utils = " \
  glibc \
  libgcc \

@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "mingw32-gettext mingw32-gettext-static mingw64-gettext mingw64-gettext-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/mingw-gettext-0.22.5-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mingw32-gettext = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-gettext-0.22.5-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mingw32-gettext}"
 RDEPENDS:mingw32-gettext = " \
  mingw32-libstdc++ \
  mingw32-termcap \
@@ -20,11 +24,13 @@ RDEPENDS:mingw32-gettext = " \
 "
 
 URI_mingw32-gettext-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw32-gettext-static-0.22.5-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mingw32-gettext-static}"
 RDEPENDS:mingw32-gettext-static = " \
  mingw32-gettext \
 "
 
 URI_mingw64-gettext = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-gettext-0.22.5-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mingw64-gettext}"
 RDEPENDS:mingw64-gettext = " \
  mingw64-crt \
  mingw64-filesystem \
@@ -35,6 +41,7 @@ RDEPENDS:mingw64-gettext = " \
 "
 
 URI_mingw64-gettext-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/mingw64-gettext-static-0.22.5-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_mingw64-gettext-static}"
 RDEPENDS:mingw64-gettext-static = " \
  mingw64-gettext \
 "

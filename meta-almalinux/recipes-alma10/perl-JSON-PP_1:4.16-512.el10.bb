@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-JSON-PP perl-JSON-PP-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-JSON-PP-4.16-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-JSON-PP = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-JSON-PP-4.16-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-JSON-PP}"
 RDEPENDS:perl-JSON-PP = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -25,6 +29,7 @@ RDEPENDS:perl-JSON-PP = " \
 "
 
 URI_perl-JSON-PP-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-JSON-PP-tests-4.16-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-JSON-PP-tests}"
 RDEPENDS:perl-JSON-PP-tests = " \
  perl-Test-Harness \
  perl-libs \

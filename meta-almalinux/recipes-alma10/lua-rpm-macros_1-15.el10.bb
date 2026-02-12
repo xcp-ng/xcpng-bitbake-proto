@@ -8,12 +8,17 @@ PR = "15.el10"
 PACKAGES = "lua-rpm-macros lua-srpm-macros"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/lua-rpm-macros-1-15.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_lua-rpm-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lua-rpm-macros-1-15.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_lua-rpm-macros}"
 RDEPENDS:lua-rpm-macros = " \
  lua-srpm-macros \
 "
 
 URI_lua-srpm-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lua-srpm-macros-1-15.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_lua-srpm-macros}"
 RDEPENDS:lua-srpm-macros = " \
  rpm \
 "

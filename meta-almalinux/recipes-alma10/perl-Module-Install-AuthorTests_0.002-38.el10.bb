@@ -8,7 +8,11 @@ PR = "38.el10"
 PACKAGES = "perl-Module-Install-AuthorTests perl-Module-Install-AuthorTests-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Module-Install-AuthorTests-0.002-38.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-Install-AuthorTests = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Module-Install-AuthorTests-0.002-38.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Install-AuthorTests}"
 RDEPENDS:perl-Module-Install-AuthorTests = " \
  perl-Module-Install \
  perl-vars \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Module-Install-AuthorTests = " \
 "
 
 URI_perl-Module-Install-AuthorTests-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Install-AuthorTests-tests-0.002-38.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Install-AuthorTests-tests}"
 RDEPENDS:perl-Module-Install-AuthorTests-tests = " \
  perl-Test-Harness \
  perl-libs \

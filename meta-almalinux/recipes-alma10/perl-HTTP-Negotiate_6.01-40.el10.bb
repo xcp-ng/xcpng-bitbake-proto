@@ -8,7 +8,11 @@ PR = "40.el10"
 PACKAGES = "perl-HTTP-Negotiate perl-HTTP-Negotiate-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-HTTP-Negotiate-6.01-40.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-HTTP-Negotiate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-HTTP-Negotiate-6.01-40.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Negotiate}"
 RDEPENDS:perl-HTTP-Negotiate = " \
  perl-HTTP-Message \
  perl-Exporter \
@@ -16,6 +20,7 @@ RDEPENDS:perl-HTTP-Negotiate = " \
 "
 
 URI_perl-HTTP-Negotiate-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-HTTP-Negotiate-tests-6.01-40.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Negotiate-tests}"
 RDEPENDS:perl-HTTP-Negotiate-tests = " \
  perl-Test \
  perl-Test-Harness \

@@ -8,7 +8,11 @@ PR = "18.el10"
 PACKAGES = "perl-Error perl-Error-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Error-0.17029-18.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Error = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Error-0.17029-18.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Error}"
 RDEPENDS:perl-Error = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -20,6 +24,7 @@ RDEPENDS:perl-Error = " \
 "
 
 URI_perl-Error-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Error-tests-0.17029-18.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Error-tests}"
 RDEPENDS:perl-Error-tests = " \
  perl-Test-Harness \
  perl-libs \

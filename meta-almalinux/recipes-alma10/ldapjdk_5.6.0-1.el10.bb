@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "idm-ldapjdk idm-ldapjdk-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ldapjdk-5.6.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_idm-ldapjdk = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/idm-ldapjdk-5.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-ldapjdk}"
 RDEPENDS:idm-ldapjdk = " \
  javapackages-filesystem \
  idm-jss \
@@ -18,6 +22,7 @@ RDEPENDS:idm-ldapjdk = " \
 "
 
 URI_idm-ldapjdk-javadoc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/idm-ldapjdk-javadoc-5.6.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_idm-ldapjdk-javadoc}"
 RDEPENDS:idm-ldapjdk-javadoc = " \
  javapackages-filesystem \
 "

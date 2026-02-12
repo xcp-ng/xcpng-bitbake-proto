@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "perl-Text-Template perl-Text-Template-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Text-Template-1.61-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Text-Template = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Text-Template-1.61-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Template}"
 RDEPENDS:perl-Text-Template = " \
  perl-libs \
  perl-Carp \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Text-Template = " \
 "
 
 URI_perl-Text-Template-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Text-Template-tests-1.61-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Template-tests}"
 RDEPENDS:perl-Text-Template-tests = " \
  perl-Test-Harness \
  perl-libs \

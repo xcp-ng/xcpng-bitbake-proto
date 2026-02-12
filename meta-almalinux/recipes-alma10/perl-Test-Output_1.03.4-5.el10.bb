@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-Test-Output perl-Test-Output-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Test-Output-1.03.4-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Test-Output = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Output-1.03.4-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Output}"
 RDEPENDS:perl-Test-Output = " \
  perl-Exporter \
  perl-libs \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Test-Output = " \
 "
 
 URI_perl-Test-Output-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Output-tests-1.03.4-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Output-tests}"
 RDEPENDS:perl-Test-Output-tests = " \
  perl-Test-Harness \
  perl-libs \

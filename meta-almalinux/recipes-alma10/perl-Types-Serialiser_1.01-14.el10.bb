@@ -8,7 +8,11 @@ PR = "14.el10"
 PACKAGES = "perl-Types-Serialiser perl-Types-Serialiser-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Types-Serialiser-1.01-14.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Types-Serialiser = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Types-Serialiser-1.01-14.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Types-Serialiser}"
 RDEPENDS:perl-Types-Serialiser = " \
  perl-libs \
  perl-Carp \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Types-Serialiser = " \
 "
 
 URI_perl-Types-Serialiser-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Types-Serialiser-tests-1.01-14.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Types-Serialiser-tests}"
 RDEPENDS:perl-Types-Serialiser-tests = " \
  perl-Types-Serialiser \
  perl-interpreter \

@@ -8,7 +8,11 @@ PR = "1.el10_0.alma.1"
 PACKAGES = "openscap openscap-engine-sce openscap-scanner openscap-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/openscap-1.4.2-1.el10_0.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_openscap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openscap-1.4.2-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openscap}"
 RDEPENDS:openscap = " \
  nss \
  procps-ng \
@@ -36,12 +40,14 @@ RDEPENDS:openscap = " \
 "
 
 URI_openscap-engine-sce = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openscap-engine-sce-1.4.2-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openscap-engine-sce}"
 RDEPENDS:openscap-engine-sce = " \
  glibc \
  openscap \
 "
 
 URI_openscap-scanner = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openscap-scanner-1.4.2-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openscap-scanner}"
 RDEPENDS:openscap-scanner = " \
  glibc \
  openscap \
@@ -50,6 +56,7 @@ RDEPENDS:openscap-scanner = " \
 "
 
 URI_openscap-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openscap-utils-1.4.2-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openscap-utils}"
 RDEPENDS:openscap-utils = " \
  python3 \
  openscap \

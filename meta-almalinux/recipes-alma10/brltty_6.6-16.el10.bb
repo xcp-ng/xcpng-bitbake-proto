@@ -8,7 +8,11 @@ PR = "16.el10"
 PACKAGES = "brlapi brltty brltty-at-spi2 brltty-docs brltty-dracut brltty-espeak-ng brltty-xw python3-brlapi brlapi-devel ocaml-brlapi brlapi-java brltty-minimal tcl-brlapi"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/brltty-6.6-16.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_brlapi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brlapi-0.8.5-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brlapi}"
 RDEPENDS:brlapi = " \
  glibc-common \
  libXfixes \
@@ -24,6 +28,7 @@ RDEPENDS:brlapi = " \
 "
 
 URI_brltty = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brltty-6.6-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brltty}"
 RDEPENDS:brltty = " \
  python3 \
  alsa-lib \
@@ -42,6 +47,7 @@ RDEPENDS:brltty = " \
 "
 
 URI_brltty-at-spi2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brltty-at-spi2-6.6-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brltty-at-spi2}"
 RDEPENDS:brltty-at-spi2 = " \
  libXfixes \
  libX11 \
@@ -52,11 +58,13 @@ RDEPENDS:brltty-at-spi2 = " \
 "
 
 URI_brltty-docs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brltty-docs-6.6-16.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_brltty-docs}"
 RDEPENDS:brltty-docs = " \
  brltty \
 "
 
 URI_brltty-dracut = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brltty-dracut-6.6-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brltty-dracut}"
 RDEPENDS:brltty-dracut = " \
  brltty \
  bash \
@@ -64,6 +72,7 @@ RDEPENDS:brltty-dracut = " \
 "
 
 URI_brltty-espeak-ng = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brltty-espeak-ng-6.6-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brltty-espeak-ng}"
 RDEPENDS:brltty-espeak-ng = " \
  glibc \
  espeak-ng \
@@ -71,6 +80,7 @@ RDEPENDS:brltty-espeak-ng = " \
 "
 
 URI_brltty-xw = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brltty-xw-6.6-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brltty-xw}"
 RDEPENDS:brltty-xw = " \
  libX11 \
  xorg-x11-fonts-misc \
@@ -81,6 +91,7 @@ RDEPENDS:brltty-xw = " \
 "
 
 URI_python3-brlapi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-brlapi-0.8.5-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-brlapi}"
 RDEPENDS:python3-brlapi = " \
  glibc \
  brlapi \
@@ -88,12 +99,14 @@ RDEPENDS:python3-brlapi = " \
 "
 
 URI_brlapi-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/brlapi-devel-0.8.5-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brlapi-devel}"
 RDEPENDS:brlapi-devel = " \
  brlapi \
  pkgconf-pkg-config \
 "
 
 URI_ocaml-brlapi = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-brlapi-0.8.5-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-brlapi}"
 RDEPENDS:ocaml-brlapi = " \
  glibc \
  ocaml-runtime \
@@ -102,12 +115,14 @@ RDEPENDS:ocaml-brlapi = " \
 "
 
 URI_brlapi-java = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/brlapi-java-0.8.5-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brlapi-java}"
 RDEPENDS:brlapi-java = " \
  glibc \
  brlapi \
 "
 
 URI_brltty-minimal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/brltty-minimal-6.6-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brltty-minimal}"
 RDEPENDS:brltty-minimal = " \
  python3 \
  pcre2-utf32 \
@@ -117,6 +132,7 @@ RDEPENDS:brltty-minimal = " \
 "
 
 URI_tcl-brlapi = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/tcl-brlapi-0.8.5-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tcl-brlapi}"
 RDEPENDS:tcl-brlapi = " \
  glibc \
  brlapi \

@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "libldb libldb-devel python-ldb-devel-common python3-ldb python3-ldb-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/libldb-2.9.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libldb = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libldb-2.9.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libldb}"
 RDEPENDS:libldb = " \
  lmdb-libs \
  libtevent \
@@ -19,6 +23,7 @@ RDEPENDS:libldb = " \
 "
 
 URI_libldb-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libldb-devel-2.9.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libldb-devel}"
 RDEPENDS:libldb-devel = " \
  libldb \
  libldb \
@@ -29,9 +34,11 @@ RDEPENDS:libldb-devel = " \
 "
 
 URI_python-ldb-devel-common = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python-ldb-devel-common-2.9.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python-ldb-devel-common}"
 RDEPENDS:python-ldb-devel-common = ""
 
 URI_python3-ldb = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-ldb-2.9.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-ldb}"
 RDEPENDS:python3-ldb = " \
  python3 \
  libldb \
@@ -45,6 +52,7 @@ RDEPENDS:python3-ldb = " \
 "
 
 URI_python3-ldb-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-ldb-devel-2.9.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-ldb-devel}"
 RDEPENDS:python3-ldb-devel = " \
  libldb-devel \
  python3-ldb \

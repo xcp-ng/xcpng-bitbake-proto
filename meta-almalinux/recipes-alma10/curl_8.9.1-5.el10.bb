@@ -8,13 +8,18 @@ PR = "5.el10"
 PACKAGES = "curl libcurl libcurl-minimal libcurl-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/curl-8.9.1-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_curl = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/curl-8.9.1-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_curl}"
 RDEPENDS:curl = " \
  glibc \
  libcurl \
 "
 
 URI_libcurl = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libcurl-8.9.1-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcurl}"
 RDEPENDS:libcurl = " \
  zlib-ng-compat \
  libssh \
@@ -29,6 +34,7 @@ RDEPENDS:libcurl = " \
 "
 
 URI_libcurl-minimal = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libcurl-minimal-8.9.1-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcurl-minimal}"
 RDEPENDS:libcurl-minimal = " \
  zlib-ng-compat \
  openssl-libs \
@@ -39,6 +45,7 @@ RDEPENDS:libcurl-minimal = " \
 "
 
 URI_libcurl-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libcurl-devel-8.9.1-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libcurl-devel}"
 RDEPENDS:libcurl-devel = " \
  brotli-devel \
  zlib-ng-compat-devel \

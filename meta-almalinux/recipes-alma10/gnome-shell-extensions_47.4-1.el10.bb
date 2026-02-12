@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gnome-classic-session gnome-shell-extension-apps-menu gnome-shell-extension-auto-move-windows gnome-shell-extension-classification-banner gnome-shell-extension-common gnome-shell-extension-custom-menu gnome-shell-extension-desktop-icons gnome-shell-extension-drive-menu gnome-shell-extension-gesture-inhibitor gnome-shell-extension-heads-up-display gnome-shell-extension-launch-new-instance gnome-shell-extension-light-style gnome-shell-extension-native-window-placement gnome-shell-extension-places-menu gnome-shell-extension-screenshot-window-sizer gnome-shell-extension-status-icons gnome-shell-extension-system-monitor gnome-shell-extension-user-theme gnome-shell-extension-window-list gnome-shell-extension-windowsNavigator gnome-shell-extension-workspace-indicator"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-shell-extensions-47.4-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-classic-session = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-classic-session-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-classic-session}"
 RDEPENDS:gnome-classic-session = " \
  gnome-shell-extension-apps-menu \
  gnome-shell-extension-launch-new-instance \
@@ -18,102 +22,122 @@ RDEPENDS:gnome-classic-session = " \
 "
 
 URI_gnome-shell-extension-apps-menu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-apps-menu-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-apps-menu}"
 RDEPENDS:gnome-shell-extension-apps-menu = " \
  gnome-shell-extension-common \
  gnome-menus \
 "
 
 URI_gnome-shell-extension-auto-move-windows = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-auto-move-windows-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-auto-move-windows}"
 RDEPENDS:gnome-shell-extension-auto-move-windows = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-classification-banner = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-classification-banner-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-classification-banner}"
 RDEPENDS:gnome-shell-extension-classification-banner = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-common-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-common}"
 RDEPENDS:gnome-shell-extension-common = " \
  gnome-shell \
 "
 
 URI_gnome-shell-extension-custom-menu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-custom-menu-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-custom-menu}"
 RDEPENDS:gnome-shell-extension-custom-menu = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-desktop-icons = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-desktop-icons-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-desktop-icons}"
 RDEPENDS:gnome-shell-extension-desktop-icons = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-drive-menu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-drive-menu-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-drive-menu}"
 RDEPENDS:gnome-shell-extension-drive-menu = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-gesture-inhibitor = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-gesture-inhibitor-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-gesture-inhibitor}"
 RDEPENDS:gnome-shell-extension-gesture-inhibitor = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-heads-up-display = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-heads-up-display-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-heads-up-display}"
 RDEPENDS:gnome-shell-extension-heads-up-display = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-launch-new-instance = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-launch-new-instance-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-launch-new-instance}"
 RDEPENDS:gnome-shell-extension-launch-new-instance = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-light-style = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-light-style-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-light-style}"
 RDEPENDS:gnome-shell-extension-light-style = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-native-window-placement = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-native-window-placement-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-native-window-placement}"
 RDEPENDS:gnome-shell-extension-native-window-placement = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-places-menu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-places-menu-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-places-menu}"
 RDEPENDS:gnome-shell-extension-places-menu = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-screenshot-window-sizer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-screenshot-window-sizer-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-screenshot-window-sizer}"
 RDEPENDS:gnome-shell-extension-screenshot-window-sizer = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-status-icons = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-status-icons-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-status-icons}"
 RDEPENDS:gnome-shell-extension-status-icons = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-system-monitor = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-system-monitor-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-system-monitor}"
 RDEPENDS:gnome-shell-extension-system-monitor = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-user-theme = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-user-theme-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-user-theme}"
 RDEPENDS:gnome-shell-extension-user-theme = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-window-list = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-window-list-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-window-list}"
 RDEPENDS:gnome-shell-extension-window-list = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-windowsNavigator = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-windowsNavigator-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-windowsNavigator}"
 RDEPENDS:gnome-shell-extension-windowsNavigator = " \
  gnome-shell-extension-common \
 "
 
 URI_gnome-shell-extension-workspace-indicator = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-shell-extension-workspace-indicator-47.4-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-shell-extension-workspace-indicator}"
 RDEPENDS:gnome-shell-extension-workspace-indicator = " \
  gnome-shell-extension-common \
 "

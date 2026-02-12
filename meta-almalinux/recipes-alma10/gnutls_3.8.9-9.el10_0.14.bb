@@ -8,7 +8,11 @@ PR = "9.el10_0.14"
 PACKAGES = "gnutls gnutls-c++ gnutls-dane gnutls-devel gnutls-fips gnutls-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/gnutls-3.8.9-9.el10_0.14.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnutls = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/gnutls-3.8.9-9.el10_0.14.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnutls}"
 RDEPENDS:gnutls = " \
  crypto-policies \
  p11-kit \
@@ -20,6 +24,7 @@ RDEPENDS:gnutls = " \
 "
 
 URI_gnutls-c++ = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnutls-c++-3.8.9-9.el10_0.14.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnutls-c++}"
 RDEPENDS:gnutls-c++ = " \
  gnutls \
  libgcc \
@@ -32,6 +37,7 @@ RDEPENDS:gnutls-c++ = " \
 "
 
 URI_gnutls-dane = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnutls-dane-3.8.9-9.el10_0.14.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnutls-dane}"
 RDEPENDS:gnutls-dane = " \
  gnutls \
  p11-kit \
@@ -43,6 +49,7 @@ RDEPENDS:gnutls-dane = " \
 "
 
 URI_gnutls-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnutls-devel-3.8.9-9.el10_0.14.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnutls-devel}"
 RDEPENDS:gnutls-devel = " \
  p11-kit-devel \
  gnutls-c++ \
@@ -55,11 +62,13 @@ RDEPENDS:gnutls-devel = " \
 "
 
 URI_gnutls-fips = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnutls-fips-3.8.9-9.el10_0.14.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnutls-fips}"
 RDEPENDS:gnutls-fips = " \
  gnutls \
 "
 
 URI_gnutls-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnutls-utils-3.8.9-9.el10_0.14.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnutls-utils}"
 RDEPENDS:gnutls-utils = " \
  glibc \
  gnutls \

@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-IPC-Cmd perl-IPC-Cmd-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-IPC-Cmd-1.04-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-IPC-Cmd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-IPC-Cmd-1.04-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IPC-Cmd}"
 RDEPENDS:perl-IPC-Cmd = " \
  perl-constant \
  perl-ExtUtils-MM-Utils \
@@ -31,6 +35,7 @@ RDEPENDS:perl-IPC-Cmd = " \
 "
 
 URI_perl-IPC-Cmd-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-IPC-Cmd-tests-1.04-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IPC-Cmd-tests}"
 RDEPENDS:perl-IPC-Cmd-tests = " \
  perl-Test-Harness \
  perl-libs \

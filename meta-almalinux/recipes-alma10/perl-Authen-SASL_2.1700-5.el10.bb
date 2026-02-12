@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-Authen-SASL perl-Authen-SASL-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Authen-SASL-2.1700-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Authen-SASL = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Authen-SASL-2.1700-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Authen-SASL}"
 RDEPENDS:perl-Authen-SASL = " \
  perl-libs \
  perl-Carp \
@@ -20,6 +24,7 @@ RDEPENDS:perl-Authen-SASL = " \
 "
 
 URI_perl-Authen-SASL-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Authen-SASL-tests-2.1700-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Authen-SASL-tests}"
 RDEPENDS:perl-Authen-SASL-tests = " \
  perl-Test-Harness \
  perl-libs \

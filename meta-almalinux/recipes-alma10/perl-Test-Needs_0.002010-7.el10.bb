@@ -8,12 +8,17 @@ PR = "7.el10"
 PACKAGES = "perl-Test-Needs perl-Test-Needs-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Test-Needs-0.002010-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Test-Needs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Needs-0.002010-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Needs}"
 RDEPENDS:perl-Test-Needs = " \
  perl-libs \
 "
 
 URI_perl-Test-Needs-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Needs-tests-0.002010-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Needs-tests}"
 RDEPENDS:perl-Test-Needs-tests = " \
  perl-Test-Harness \
  perl-libs \

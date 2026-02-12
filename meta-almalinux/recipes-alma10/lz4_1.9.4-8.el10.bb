@@ -8,21 +8,28 @@ PR = "8.el10"
 PACKAGES = "lz4 lz4-libs lz4-devel lz4-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/lz4-1.9.4-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_lz4 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/lz4-1.9.4-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lz4}"
 RDEPENDS:lz4 = " \
  glibc \
 "
 
 URI_lz4-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/lz4-libs-1.9.4-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lz4-libs}"
 RDEPENDS:lz4-libs = " \
  glibc \
 "
 
 URI_lz4-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lz4-devel-1.9.4-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lz4-devel}"
 RDEPENDS:lz4-devel = " \
  lz4-libs \
  pkgconf-pkg-config \
 "
 
 URI_lz4-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/lz4-static-1.9.4-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lz4-static}"
 RDEPENDS:lz4-static = ""

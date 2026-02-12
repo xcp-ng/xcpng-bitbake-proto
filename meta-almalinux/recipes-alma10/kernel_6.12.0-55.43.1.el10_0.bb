@@ -8,7 +8,11 @@ PR = "55.43.1.el10_0"
 PACKAGES = "kernel kernel-abi-stablelists kernel-core kernel-debug kernel-debug-core kernel-debug-modules kernel-debug-modules-core kernel-debug-modules-extra kernel-debug-uki-virt kernel-modules kernel-modules-core kernel-modules-extra kernel-tools kernel-tools-libs kernel-uki-virt kernel-uki-virt-addons kernel-debug-devel kernel-debug-devel-matched kernel-devel kernel-devel-matched kernel-doc kernel-headers perf python3-perf rtla rv kernel-cross-headers kernel-tools-libs-devel libperf kernel-debug-modules-internal kernel-debug-modules-partner kernel-debug-uki-virt-addons kernel-ipaclones-internal kernel-modules-internal kernel-modules-partner kernel-rt-debug-devel-matched kernel-rt-debug-modules-internal kernel-rt-debug-modules-partner kernel-rt-devel-matched kernel-rt-modules-internal kernel-rt-modules-partner kernel-selftests-internal libperf-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/kernel-6.12.0-55.43.1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_kernel = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel}"
 RDEPENDS:kernel = " \
  kernel-modules-core \
  kernel-core \
@@ -16,9 +20,11 @@ RDEPENDS:kernel = " \
 "
 
 URI_kernel-abi-stablelists = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-abi-stablelists-6.12.0-55.43.1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_kernel-abi-stablelists}"
 RDEPENDS:kernel-abi-stablelists = ""
 
 URI_kernel-core = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-core-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-core}"
 RDEPENDS:kernel-core = " \
  systemd \
  systemd-udev \
@@ -30,6 +36,7 @@ RDEPENDS:kernel-core = " \
 "
 
 URI_kernel-debug = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-debug-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug}"
 RDEPENDS:kernel-debug = " \
  kernel-debug-modules-core \
  kernel-debug-modules \
@@ -37,6 +44,7 @@ RDEPENDS:kernel-debug = " \
 "
 
 URI_kernel-debug-core = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-debug-core-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-core}"
 RDEPENDS:kernel-debug-core = " \
  systemd \
  kernel-debug-modules-core \
@@ -48,6 +56,7 @@ RDEPENDS:kernel-debug-core = " \
 "
 
 URI_kernel-debug-modules = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-debug-modules-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-modules}"
 RDEPENDS:kernel-debug-modules = " \
  kernel-debug-modules-core \
  bash \
@@ -55,12 +64,14 @@ RDEPENDS:kernel-debug-modules = " \
 "
 
 URI_kernel-debug-modules-core = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-debug-modules-core-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-modules-core}"
 RDEPENDS:kernel-debug-modules-core = " \
  bash \
  kernel-debug-core \
 "
 
 URI_kernel-debug-modules-extra = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-debug-modules-extra-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-modules-extra}"
 RDEPENDS:kernel-debug-modules-extra = " \
  kernel-debug-modules-core \
  kernel-debug-modules \
@@ -69,6 +80,7 @@ RDEPENDS:kernel-debug-modules-extra = " \
 "
 
 URI_kernel-debug-uki-virt = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-debug-uki-virt-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-uki-virt}"
 RDEPENDS:kernel-debug-uki-virt = " \
  systemd \
  kernel-debug-modules-core \
@@ -78,6 +90,7 @@ RDEPENDS:kernel-debug-uki-virt = " \
 "
 
 URI_kernel-modules = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-modules-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-modules}"
 RDEPENDS:kernel-modules = " \
  kernel-modules-core \
  bash \
@@ -85,12 +98,14 @@ RDEPENDS:kernel-modules = " \
 "
 
 URI_kernel-modules-core = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-modules-core-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-modules-core}"
 RDEPENDS:kernel-modules-core = " \
  bash \
  kernel-core \
 "
 
 URI_kernel-modules-extra = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-modules-extra-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-modules-extra}"
 RDEPENDS:kernel-modules-extra = " \
  kernel-modules-core \
  bash \
@@ -99,6 +114,7 @@ RDEPENDS:kernel-modules-extra = " \
 "
 
 URI_kernel-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-tools-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-tools}"
 RDEPENDS:kernel-tools = " \
  python3 \
  python3-pyyaml \
@@ -112,12 +128,14 @@ RDEPENDS:kernel-tools = " \
 "
 
 URI_kernel-tools-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-tools-libs-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-tools-libs}"
 RDEPENDS:kernel-tools-libs = " \
  glibc \
  bash \
 "
 
 URI_kernel-uki-virt = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-uki-virt-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-uki-virt}"
 RDEPENDS:kernel-uki-virt = " \
  systemd \
  systemd-udev \
@@ -127,12 +145,14 @@ RDEPENDS:kernel-uki-virt = " \
 "
 
 URI_kernel-uki-virt-addons = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/kernel-uki-virt-addons-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-uki-virt-addons}"
 RDEPENDS:kernel-uki-virt-addons = " \
  kernel-uki-virt \
  systemd \
 "
 
 URI_kernel-debug-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kernel-debug-devel-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-devel}"
 RDEPENDS:kernel-debug-devel = " \
  flex \
  make \
@@ -146,12 +166,14 @@ RDEPENDS:kernel-debug-devel = " \
 "
 
 URI_kernel-debug-devel-matched = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kernel-debug-devel-matched-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-devel-matched}"
 RDEPENDS:kernel-debug-devel-matched = " \
  kernel-debug-devel \
  kernel-debug-core \
 "
 
 URI_kernel-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kernel-devel-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-devel}"
 RDEPENDS:kernel-devel = " \
  flex \
  make \
@@ -165,18 +187,22 @@ RDEPENDS:kernel-devel = " \
 "
 
 URI_kernel-devel-matched = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kernel-devel-matched-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-devel-matched}"
 RDEPENDS:kernel-devel-matched = " \
  kernel-core \
  kernel-devel \
 "
 
 URI_kernel-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kernel-doc-6.12.0-55.43.1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_kernel-doc}"
 RDEPENDS:kernel-doc = ""
 
 URI_kernel-headers = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/kernel-headers-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-headers}"
 RDEPENDS:kernel-headers = ""
 
 URI_perf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perf-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perf}"
 RDEPENDS:perf = " \
  perl-libs \
  perf \
@@ -204,6 +230,7 @@ RDEPENDS:perf = " \
 "
 
 URI_python3-perf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-perf-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-perf}"
 RDEPENDS:python3-perf = " \
  python3 \
  zlib-ng-compat \
@@ -225,6 +252,7 @@ RDEPENDS:python3-perf = " \
 "
 
 URI_rtla = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rtla-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rtla}"
 RDEPENDS:rtla = " \
  glibc \
  libtraceevent \
@@ -233,6 +261,7 @@ RDEPENDS:rtla = " \
 "
 
 URI_rv = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rv-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rv}"
 RDEPENDS:rv = " \
  glibc \
  libtraceevent \
@@ -240,20 +269,24 @@ RDEPENDS:rv = " \
 "
 
 URI_kernel-cross-headers = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/kernel-cross-headers-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-cross-headers}"
 RDEPENDS:kernel-cross-headers = ""
 
 URI_kernel-tools-libs-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/kernel-tools-libs-devel-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-tools-libs-devel}"
 RDEPENDS:kernel-tools-libs-devel = " \
  kernel-tools-libs \
  kernel-tools \
 "
 
 URI_libperf = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libperf-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libperf}"
 RDEPENDS:libperf = " \
  glibc \
 "
 
 URI_kernel-debug-modules-internal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-debug-modules-internal-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-modules-internal}"
 RDEPENDS:kernel-debug-modules-internal = " \
  kernel-debug-modules-core \
  kernel-debug-modules \
@@ -262,6 +295,7 @@ RDEPENDS:kernel-debug-modules-internal = " \
 "
 
 URI_kernel-debug-modules-partner = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-debug-modules-partner-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-modules-partner}"
 RDEPENDS:kernel-debug-modules-partner = " \
  kernel-debug-modules-core \
  kernel-debug-modules \
@@ -270,15 +304,18 @@ RDEPENDS:kernel-debug-modules-partner = " \
 "
 
 URI_kernel-debug-uki-virt-addons = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-debug-uki-virt-addons-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-debug-uki-virt-addons}"
 RDEPENDS:kernel-debug-uki-virt-addons = " \
  kernel-debug-uki-virt \
  systemd \
 "
 
 URI_kernel-ipaclones-internal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-ipaclones-internal-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-ipaclones-internal}"
 RDEPENDS:kernel-ipaclones-internal = ""
 
 URI_kernel-modules-internal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-modules-internal-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-modules-internal}"
 RDEPENDS:kernel-modules-internal = " \
  kernel-modules-core \
  bash \
@@ -287,6 +324,7 @@ RDEPENDS:kernel-modules-internal = " \
 "
 
 URI_kernel-modules-partner = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-modules-partner-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-modules-partner}"
 RDEPENDS:kernel-modules-partner = " \
  kernel-modules-core \
  bash \
@@ -295,32 +333,39 @@ RDEPENDS:kernel-modules-partner = " \
 "
 
 URI_kernel-rt-debug-devel-matched = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-rt-debug-devel-matched-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-rt-debug-devel-matched}"
 RDEPENDS:kernel-rt-debug-devel-matched = ""
 
 URI_kernel-rt-debug-modules-internal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-rt-debug-modules-internal-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-rt-debug-modules-internal}"
 RDEPENDS:kernel-rt-debug-modules-internal = " \
  bash \
 "
 
 URI_kernel-rt-debug-modules-partner = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-rt-debug-modules-partner-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-rt-debug-modules-partner}"
 RDEPENDS:kernel-rt-debug-modules-partner = " \
  bash \
 "
 
 URI_kernel-rt-devel-matched = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-rt-devel-matched-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-rt-devel-matched}"
 RDEPENDS:kernel-rt-devel-matched = ""
 
 URI_kernel-rt-modules-internal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-rt-modules-internal-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-rt-modules-internal}"
 RDEPENDS:kernel-rt-modules-internal = " \
  bash \
 "
 
 URI_kernel-rt-modules-partner = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-rt-modules-partner-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-rt-modules-partner}"
 RDEPENDS:kernel-rt-modules-partner = " \
  bash \
 "
 
 URI_kernel-selftests-internal = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/kernel-selftests-internal-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_kernel-selftests-internal}"
 RDEPENDS:kernel-selftests-internal = " \
  python3 \
  perl-libs \
@@ -348,6 +393,7 @@ RDEPENDS:kernel-selftests-internal = " \
 "
 
 URI_libperf-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libperf-devel-6.12.0-55.43.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libperf-devel}"
 RDEPENDS:libperf-devel = " \
  pkgconf-pkg-config \
  libperf \

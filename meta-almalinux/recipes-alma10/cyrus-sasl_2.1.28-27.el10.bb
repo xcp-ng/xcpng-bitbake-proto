@@ -8,7 +8,11 @@ PR = "27.el10"
 PACKAGES = "cyrus-sasl cyrus-sasl-gssapi cyrus-sasl-lib cyrus-sasl-plain cyrus-sasl-scram cyrus-sasl-devel cyrus-sasl-gs2 cyrus-sasl-ldap cyrus-sasl-md5 cyrus-sasl-sql"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/cyrus-sasl-2.1.28-27.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cyrus-sasl = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cyrus-sasl-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl}"
 RDEPENDS:cyrus-sasl = " \
  shadow-utils \
  util-linux \
@@ -24,6 +28,7 @@ RDEPENDS:cyrus-sasl = " \
 "
 
 URI_cyrus-sasl-gssapi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cyrus-sasl-gssapi-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-gssapi}"
 RDEPENDS:cyrus-sasl-gssapi = " \
  libxcrypt \
  krb5-libs \
@@ -33,6 +38,7 @@ RDEPENDS:cyrus-sasl-gssapi = " \
 "
 
 URI_cyrus-sasl-lib = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cyrus-sasl-lib-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-lib}"
 RDEPENDS:cyrus-sasl-lib = " \
  glibc \
  libxcrypt \
@@ -40,6 +46,7 @@ RDEPENDS:cyrus-sasl-lib = " \
 "
 
 URI_cyrus-sasl-plain = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cyrus-sasl-plain-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-plain}"
 RDEPENDS:cyrus-sasl-plain = " \
  glibc \
  libxcrypt \
@@ -47,6 +54,7 @@ RDEPENDS:cyrus-sasl-plain = " \
 "
 
 URI_cyrus-sasl-scram = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cyrus-sasl-scram-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-scram}"
 RDEPENDS:cyrus-sasl-scram = " \
  glibc \
  libxcrypt \
@@ -55,6 +63,7 @@ RDEPENDS:cyrus-sasl-scram = " \
 "
 
 URI_cyrus-sasl-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cyrus-sasl-devel-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-devel}"
 RDEPENDS:cyrus-sasl-devel = " \
  pkgconf-pkg-config \
  cyrus-sasl \
@@ -64,6 +73,7 @@ RDEPENDS:cyrus-sasl-devel = " \
 "
 
 URI_cyrus-sasl-gs2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cyrus-sasl-gs2-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-gs2}"
 RDEPENDS:cyrus-sasl-gs2 = " \
  libxcrypt \
  cyrus-sasl-lib \
@@ -73,6 +83,7 @@ RDEPENDS:cyrus-sasl-gs2 = " \
 "
 
 URI_cyrus-sasl-ldap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cyrus-sasl-ldap-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-ldap}"
 RDEPENDS:cyrus-sasl-ldap = " \
  glibc \
  libxcrypt \
@@ -81,6 +92,7 @@ RDEPENDS:cyrus-sasl-ldap = " \
 "
 
 URI_cyrus-sasl-md5 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cyrus-sasl-md5-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-md5}"
 RDEPENDS:cyrus-sasl-md5 = " \
  glibc \
  libxcrypt \
@@ -89,6 +101,7 @@ RDEPENDS:cyrus-sasl-md5 = " \
 "
 
 URI_cyrus-sasl-sql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cyrus-sasl-sql-2.1.28-27.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cyrus-sasl-sql}"
 RDEPENDS:cyrus-sasl-sql = " \
  libpq \
  libxcrypt \

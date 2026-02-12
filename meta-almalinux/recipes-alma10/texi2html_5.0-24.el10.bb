@@ -8,7 +8,11 @@ PR = "24.el10"
 PACKAGES = "texi2html"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/texi2html-5.0-24.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_texi2html = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/texi2html-5.0-24.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_texi2html}"
 RDEPENDS:texi2html = " \
  perl-libs \
  perl-vars \

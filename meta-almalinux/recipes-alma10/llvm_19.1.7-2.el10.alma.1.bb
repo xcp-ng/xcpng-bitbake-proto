@@ -8,7 +8,11 @@ PR = "2.el10.alma.1"
 PACKAGES = "clang clang-analyzer clang-devel clang-libs clang-resource-filesystem clang-tools-extra compiler-rt git-clang-format libomp libomp-devel lld lld-devel lld-libs lldb lldb-devel llvm llvm-devel llvm-doc llvm-googletest llvm-libs llvm-static llvm-test llvm-toolset python3-lldb clang-tools-extra-devel llvm-cmake-utils python3-clang python3-lit"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/llvm-19.1.7-2.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_clang = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/clang-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_clang}"
 RDEPENDS:clang = " \
  libgcc \
  clang-libs \
@@ -20,6 +24,7 @@ RDEPENDS:clang = " \
 "
 
 URI_clang-analyzer = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/clang-analyzer-19.1.7-2.el10.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_clang-analyzer}"
 RDEPENDS:clang-analyzer = " \
  python3 \
  perl-libs \
@@ -40,6 +45,7 @@ RDEPENDS:clang-analyzer = " \
 "
 
 URI_clang-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/clang-devel-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_clang-devel}"
 RDEPENDS:clang-devel = " \
  cmake-filesystem \
  clang \
@@ -51,6 +57,7 @@ RDEPENDS:clang-devel = " \
 "
 
 URI_clang-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/clang-libs-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_clang-libs}"
 RDEPENDS:clang-libs = " \
  libgcc \
  clang-resource-filesystem \
@@ -60,9 +67,11 @@ RDEPENDS:clang-libs = " \
 "
 
 URI_clang-resource-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/clang-resource-filesystem-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_clang-resource-filesystem}"
 RDEPENDS:clang-resource-filesystem = ""
 
 URI_clang-tools-extra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/clang-tools-extra-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_clang-tools-extra}"
 RDEPENDS:clang-tools-extra = " \
  python3 \
  emacs-filesystem \
@@ -75,6 +84,7 @@ RDEPENDS:clang-tools-extra = " \
 "
 
 URI_compiler-rt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/compiler-rt-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_compiler-rt}"
 RDEPENDS:compiler-rt = " \
  python3 \
  libgcc \
@@ -84,6 +94,7 @@ RDEPENDS:compiler-rt = " \
 "
 
 URI_git-clang-format = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/git-clang-format-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_git-clang-format}"
 RDEPENDS:git-clang-format = " \
  python3 \
  git \
@@ -91,6 +102,7 @@ RDEPENDS:git-clang-format = " \
 "
 
 URI_libomp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libomp-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libomp}"
 RDEPENDS:libomp = " \
  libffi \
  libgcc \
@@ -101,12 +113,14 @@ RDEPENDS:libomp = " \
 "
 
 URI_libomp-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libomp-devel-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libomp-devel}"
 RDEPENDS:libomp-devel = " \
  libomp \
  clang-resource-filesystem \
 "
 
 URI_lld = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lld-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lld}"
 RDEPENDS:lld = " \
  libgcc \
  lld-libs \
@@ -118,6 +132,7 @@ RDEPENDS:lld = " \
 "
 
 URI_lld-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lld-devel-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lld-devel}"
 RDEPENDS:lld-devel = " \
  lld \
  lld-libs \
@@ -125,6 +140,7 @@ RDEPENDS:lld-devel = " \
 "
 
 URI_lld-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lld-libs-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lld-libs}"
 RDEPENDS:lld-libs = " \
  zlib-ng-compat \
  libgcc \
@@ -135,6 +151,7 @@ RDEPENDS:lld-libs = " \
 "
 
 URI_lldb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lldb-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lldb}"
 RDEPENDS:lldb = " \
  zlib-ng-compat \
  libgcc \
@@ -151,11 +168,13 @@ RDEPENDS:lldb = " \
 "
 
 URI_lldb-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/lldb-devel-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_lldb-devel}"
 RDEPENDS:lldb-devel = " \
  lldb \
 "
 
 URI_llvm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm}"
 RDEPENDS:llvm = " \
  python3 \
  zlib-ng-compat \
@@ -167,6 +186,7 @@ RDEPENDS:llvm = " \
 "
 
 URI_llvm-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-devel-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm-devel}"
 RDEPENDS:llvm-devel = " \
  cmake-filesystem \
  libedit-devel \
@@ -184,14 +204,17 @@ RDEPENDS:llvm-devel = " \
 "
 
 URI_llvm-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-doc-19.1.7-2.el10.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_llvm-doc}"
 RDEPENDS:llvm-doc = " \
  llvm \
 "
 
 URI_llvm-googletest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-googletest-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm-googletest}"
 RDEPENDS:llvm-googletest = ""
 
 URI_llvm-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-libs-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm-libs}"
 RDEPENDS:llvm-libs = " \
  zlib-ng-compat \
  libffi \
@@ -204,9 +227,11 @@ RDEPENDS:llvm-libs = " \
 "
 
 URI_llvm-static = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-static-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm-static}"
 RDEPENDS:llvm-static = ""
 
 URI_llvm-test = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-test-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm-test}"
 RDEPENDS:llvm-test = " \
  libgcc \
  llvm-libs \
@@ -216,6 +241,7 @@ RDEPENDS:llvm-test = " \
 "
 
 URI_llvm-toolset = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/llvm-toolset-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm-toolset}"
 RDEPENDS:llvm-toolset = " \
  llvm \
  clang \
@@ -223,26 +249,31 @@ RDEPENDS:llvm-toolset = " \
 "
 
 URI_python3-lldb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-lldb-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-lldb}"
 RDEPENDS:python3-lldb = " \
  python3 \
  lldb \
 "
 
 URI_clang-tools-extra-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/clang-tools-extra-devel-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_clang-tools-extra-devel}"
 RDEPENDS:clang-tools-extra-devel = " \
  clang-tools-extra \
 "
 
 URI_llvm-cmake-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/llvm-cmake-utils-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_llvm-cmake-utils}"
 RDEPENDS:llvm-cmake-utils = ""
 
 URI_python3-clang = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-clang-19.1.7-2.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-clang}"
 RDEPENDS:python3-clang = " \
  python3 \
  clang-devel \
 "
 
 URI_python3-lit = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/python3-lit-19.1.7-2.el10.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-lit}"
 RDEPENDS:python3-lit = " \
  python3 \
  python3-setuptools \

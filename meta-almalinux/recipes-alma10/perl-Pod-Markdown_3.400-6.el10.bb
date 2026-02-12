@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-Pod-Markdown perl-Pod-Markdown-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Pod-Markdown-3.400-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Pod-Markdown = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Pod-Markdown-3.400-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Markdown}"
 RDEPENDS:perl-Pod-Markdown = " \
  perl-libs \
  perl-URI \
@@ -22,6 +26,7 @@ RDEPENDS:perl-Pod-Markdown = " \
 "
 
 URI_perl-Pod-Markdown-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Pod-Markdown-tests-3.400-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Markdown-tests}"
 RDEPENDS:perl-Pod-Markdown-tests = " \
  perl-Test-Harness \
  perl-libs \

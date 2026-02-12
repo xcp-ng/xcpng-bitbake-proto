@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "groff-base groff groff-doc groff-perl groff-x11"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/groff-1.23.0-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_groff-base = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/groff-base-1.23.0-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_groff-base}"
 RDEPENDS:groff-base = " \
  libgcc \
  libstdc++ \
@@ -18,6 +22,7 @@ RDEPENDS:groff-base = " \
 "
 
 URI_groff = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/groff-1.23.0-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_groff}"
 RDEPENDS:groff = " \
  coreutils \
  libgcc \
@@ -29,11 +34,13 @@ RDEPENDS:groff = " \
 "
 
 URI_groff-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/groff-doc-1.23.0-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_groff-doc}"
 RDEPENDS:groff-doc = " \
  groff \
 "
 
 URI_groff-perl = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/groff-perl-1.23.0-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_groff-perl}"
 RDEPENDS:groff-perl = " \
  perl-constant \
  perl-libs \
@@ -54,6 +61,7 @@ RDEPENDS:groff-perl = " \
 "
 
 URI_groff-x11 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/groff-x11-1.23.0-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_groff-x11}"
 RDEPENDS:groff-x11 = " \
  libXmu \
  groff-base \

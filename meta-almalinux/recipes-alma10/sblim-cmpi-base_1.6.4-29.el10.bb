@@ -8,7 +8,11 @@ PR = "29.el10"
 PACKAGES = "sblim-cmpi-base sblim-cmpi-base-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/sblim-cmpi-base-1.6.4-29.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_sblim-cmpi-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/sblim-cmpi-base-1.6.4-29.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sblim-cmpi-base}"
 RDEPENDS:sblim-cmpi-base = " \
  glibc \
  sblim-sfcb \
@@ -17,6 +21,7 @@ RDEPENDS:sblim-cmpi-base = " \
 "
 
 URI_sblim-cmpi-base-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/sblim-cmpi-base-devel-1.6.4-29.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_sblim-cmpi-base-devel}"
 RDEPENDS:sblim-cmpi-base-devel = " \
  sblim-cmpi-base \
 "

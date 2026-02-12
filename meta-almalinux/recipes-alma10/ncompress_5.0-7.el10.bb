@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "ncompress"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/ncompress-5.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ncompress = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/ncompress-5.0-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ncompress}"
 RDEPENDS:ncompress = " \
  glibc \
 "

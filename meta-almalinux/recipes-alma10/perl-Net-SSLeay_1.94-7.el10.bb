@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-Net-SSLeay perl-Net-SSLeay-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Net-SSLeay-1.94-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Net-SSLeay = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Net-SSLeay-1.94-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-SSLeay}"
 RDEPENDS:perl-Net-SSLeay = " \
  perl-libs \
  perl-Carp \
@@ -24,6 +28,7 @@ RDEPENDS:perl-Net-SSLeay = " \
 "
 
 URI_perl-Net-SSLeay-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Net-SSLeay-tests-1.94-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net-SSLeay-tests}"
 RDEPENDS:perl-Net-SSLeay-tests = " \
  perl-Scalar-List-Utils \
  perl-libs \

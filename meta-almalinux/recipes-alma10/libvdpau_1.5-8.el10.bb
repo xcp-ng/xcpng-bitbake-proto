@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "libvdpau libvdpau-trace libvdpau-devel libvdpau-docs"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libvdpau-1.5-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libvdpau = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvdpau-1.5-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvdpau}"
 RDEPENDS:libvdpau = " \
  glibc \
  libX11 \
@@ -16,12 +20,14 @@ RDEPENDS:libvdpau = " \
 "
 
 URI_libvdpau-trace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvdpau-trace-1.5-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvdpau-trace}"
 RDEPENDS:libvdpau-trace = " \
  glibc \
  libvdpau \
 "
 
 URI_libvdpau-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libvdpau-devel-1.5-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvdpau-devel}"
 RDEPENDS:libvdpau-devel = " \
  libX11-devel \
  libvdpau \
@@ -30,4 +36,5 @@ RDEPENDS:libvdpau-devel = " \
 "
 
 URI_libvdpau-docs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvdpau-docs-1.5-8.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libvdpau-docs}"
 RDEPENDS:libvdpau-docs = ""

@@ -8,7 +8,11 @@ PR = "36.el10"
 PACKAGES = "xorg-x11-server-Xdmx xorg-x11-server-Xephyr xorg-x11-server-Xnest xorg-x11-server-Xorg xorg-x11-server-Xvfb xorg-x11-server-common xorg-x11-server-devel xorg-x11-server-source"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/xorg-x11-server-1.20.14-36.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xorg-x11-server-Xdmx = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-Xdmx-1.20.14-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-Xdmx}"
 RDEPENDS:xorg-x11-server-Xdmx = " \
  systemd-libs \
  libX11 \
@@ -32,6 +36,7 @@ RDEPENDS:xorg-x11-server-Xdmx = " \
 "
 
 URI_xorg-x11-server-Xephyr = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-Xephyr-1.20.14-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-Xephyr}"
 RDEPENDS:xorg-x11-server-Xephyr = " \
  xcb-util-wm \
  systemd-libs \
@@ -57,6 +62,7 @@ RDEPENDS:xorg-x11-server-Xephyr = " \
 "
 
 URI_xorg-x11-server-Xnest = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-Xnest-1.20.14-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-Xnest}"
 RDEPENDS:xorg-x11-server-Xnest = " \
  libXfont2 \
  systemd-libs \
@@ -73,6 +79,7 @@ RDEPENDS:xorg-x11-server-Xnest = " \
 "
 
 URI_xorg-x11-server-Xorg = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-Xorg-1.20.14-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-Xorg}"
 RDEPENDS:xorg-x11-server-Xorg = " \
  libpciaccess \
  systemd \
@@ -98,6 +105,7 @@ RDEPENDS:xorg-x11-server-Xorg = " \
 "
 
 URI_xorg-x11-server-Xvfb = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-Xvfb-1.20.14-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-Xvfb}"
 RDEPENDS:xorg-x11-server-Xvfb = " \
  libXfont2 \
  systemd-libs \
@@ -116,6 +124,7 @@ RDEPENDS:xorg-x11-server-Xvfb = " \
 "
 
 URI_xorg-x11-server-common = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-common-1.20.14-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-common}"
 RDEPENDS:xorg-x11-server-common = " \
  xkbcomp \
  xkeyboard-config \
@@ -123,6 +132,7 @@ RDEPENDS:xorg-x11-server-common = " \
 "
 
 URI_xorg-x11-server-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-devel-1.20.14-36.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-devel}"
 RDEPENDS:xorg-x11-server-devel = " \
  xorg-x11-util-macros \
  libpciaccess-devel \
@@ -134,4 +144,5 @@ RDEPENDS:xorg-x11-server-devel = " \
 "
 
 URI_xorg-x11-server-source = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-server-source-1.20.14-36.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-server-source}"
 RDEPENDS:xorg-x11-server-source = ""

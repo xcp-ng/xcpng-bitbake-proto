@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "python-sphinx_rtd_theme-doc python3-sphinx_rtd_theme"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/python-sphinx_rtd_theme-2.0.0-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python-sphinx_rtd_theme-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python-sphinx_rtd_theme-doc-2.0.0-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python-sphinx_rtd_theme-doc}"
 RDEPENDS:python-sphinx_rtd_theme-doc = " \
  lato-fonts \
  fontawesome4-fonts \
@@ -16,6 +20,7 @@ RDEPENDS:python-sphinx_rtd_theme-doc = " \
 "
 
 URI_python3-sphinx_rtd_theme = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-sphinx_rtd_theme-2.0.0-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-sphinx_rtd_theme}"
 RDEPENDS:python3-sphinx_rtd_theme = " \
  python3 \
  python3-sphinx \

@@ -8,7 +8,11 @@ PR = "16.el10"
 PACKAGES = "perl-TimeDate perl-TimeDate-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-TimeDate-2.33-16.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-TimeDate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-TimeDate-2.33-16.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-TimeDate}"
 RDEPENDS:perl-TimeDate = " \
  perl-TimeDate \
  perl-libs \
@@ -20,6 +24,7 @@ RDEPENDS:perl-TimeDate = " \
 "
 
 URI_perl-TimeDate-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-TimeDate-tests-2.33-16.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-TimeDate-tests}"
 RDEPENDS:perl-TimeDate-tests = " \
  perl-TimeDate \
  perl-Test-Harness \

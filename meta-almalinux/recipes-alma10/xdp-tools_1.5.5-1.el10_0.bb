@@ -8,13 +8,18 @@ PR = "1.el10_0"
 PACKAGES = "libxdp xdp-tools libxdp-devel libxdp-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xdp-tools-1.5.5-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libxdp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libxdp-1.5.5-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxdp}"
 RDEPENDS:libxdp = " \
  glibc \
  libbpf \
 "
 
 URI_xdp-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xdp-tools-1.5.5-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xdp-tools}"
 RDEPENDS:xdp-tools = " \
  libpcap \
  libbpf \
@@ -24,6 +29,7 @@ RDEPENDS:xdp-tools = " \
 "
 
 URI_libxdp-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libxdp-devel-1.5.5-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxdp-devel}"
 RDEPENDS:libxdp-devel = " \
  libbpf-devel \
  libxdp \
@@ -32,6 +38,7 @@ RDEPENDS:libxdp-devel = " \
 "
 
 URI_libxdp-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libxdp-static-1.5.5-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libxdp-static}"
 RDEPENDS:libxdp-static = " \
  libxdp-devel \
 "

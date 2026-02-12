@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "perl-YAML perl-YAML-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-YAML-1.31-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-YAML = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-YAML-1.31-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-YAML}"
 RDEPENDS:perl-YAML = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -20,6 +24,7 @@ RDEPENDS:perl-YAML = " \
 "
 
 URI_perl-YAML-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-YAML-tests-1.31-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-YAML-tests}"
 RDEPENDS:perl-YAML-tests = " \
  perl-constant \
  perl-Test-Harness \

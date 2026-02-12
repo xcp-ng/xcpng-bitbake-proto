@@ -8,7 +8,11 @@ PR = "12.el10.alma.1"
 PACKAGES = "python3-rpm rpm rpm-build-libs rpm-libs rpm-plugin-audit rpm-plugin-selinux rpm-sign rpm-sign-libs rpm-apidocs rpm-build rpm-cron rpm-devel rpm-plugin-fapolicyd rpm-plugin-ima rpm-plugin-syslog rpm-plugin-systemd-inhibit rpm-plugin-dbus-announce rpm-plugin-prioreset"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/rpm-4.19.1.1-12.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-rpm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-rpm-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-rpm}"
 RDEPENDS:python3-rpm = " \
  python3 \
  rpm-sign-libs \
@@ -18,6 +22,7 @@ RDEPENDS:python3-rpm = " \
 "
 
 URI_rpm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpm-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm}"
 RDEPENDS:rpm = " \
  glibc \
  libarchive \
@@ -31,6 +36,7 @@ RDEPENDS:rpm = " \
 "
 
 URI_rpm-build-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpm-build-libs-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-build-libs}"
 RDEPENDS:rpm-build-libs = " \
  lua-libs \
  libgcc \
@@ -45,6 +51,7 @@ RDEPENDS:rpm-build-libs = " \
 "
 
 URI_rpm-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpm-libs-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-libs}"
 RDEPENDS:rpm-libs = " \
  rpm-sequoia \
  libacl \
@@ -61,6 +68,7 @@ RDEPENDS:rpm-libs = " \
 "
 
 URI_rpm-plugin-audit = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpm-plugin-audit-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-audit}"
 RDEPENDS:rpm-plugin-audit = " \
  glibc \
  audit-libs \
@@ -68,6 +76,7 @@ RDEPENDS:rpm-plugin-audit = " \
 "
 
 URI_rpm-plugin-selinux = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpm-plugin-selinux-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-selinux}"
 RDEPENDS:rpm-plugin-selinux = " \
  glibc \
  libselinux \
@@ -76,6 +85,7 @@ RDEPENDS:rpm-plugin-selinux = " \
 "
 
 URI_rpm-sign = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpm-sign-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-sign}"
 RDEPENDS:rpm-sign = " \
  glibc \
  rpm-libs \
@@ -84,6 +94,7 @@ RDEPENDS:rpm-sign = " \
 "
 
 URI_rpm-sign-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/rpm-sign-libs-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-sign-libs}"
 RDEPENDS:rpm-sign-libs = " \
  glibc \
  rpm-libs \
@@ -92,9 +103,11 @@ RDEPENDS:rpm-sign-libs = " \
 "
 
 URI_rpm-apidocs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-apidocs-4.19.1.1-12.el10.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rpm-apidocs}"
 RDEPENDS:rpm-apidocs = ""
 
 URI_rpm-build = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-build-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-build}"
 RDEPENDS:rpm-build = " \
  tar \
  patch \
@@ -127,6 +140,7 @@ RDEPENDS:rpm-build = " \
 "
 
 URI_rpm-cron = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-cron-4.19.1.1-12.el10.alma.1.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rpm-cron}"
 RDEPENDS:rpm-cron = " \
  logrotate \
  crontabs \
@@ -135,6 +149,7 @@ RDEPENDS:rpm-cron = " \
 "
 
 URI_rpm-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-devel-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-devel}"
 RDEPENDS:rpm-devel = " \
  rpm-sign-libs \
  cmake-filesystem \
@@ -148,24 +163,28 @@ RDEPENDS:rpm-devel = " \
 "
 
 URI_rpm-plugin-fapolicyd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-plugin-fapolicyd-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-fapolicyd}"
 RDEPENDS:rpm-plugin-fapolicyd = " \
  glibc \
  rpm-libs \
 "
 
 URI_rpm-plugin-ima = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-plugin-ima-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-ima}"
 RDEPENDS:rpm-plugin-ima = " \
  glibc \
  rpm-libs \
 "
 
 URI_rpm-plugin-syslog = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-plugin-syslog-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-syslog}"
 RDEPENDS:rpm-plugin-syslog = " \
  glibc \
  rpm-libs \
 "
 
 URI_rpm-plugin-systemd-inhibit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-plugin-systemd-inhibit-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-systemd-inhibit}"
 RDEPENDS:rpm-plugin-systemd-inhibit = " \
  glibc \
  rpm-libs \
@@ -173,6 +192,7 @@ RDEPENDS:rpm-plugin-systemd-inhibit = " \
 "
 
 URI_rpm-plugin-dbus-announce = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rpm-plugin-dbus-announce-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-dbus-announce}"
 RDEPENDS:rpm-plugin-dbus-announce = " \
  glibc \
  rpm-libs \
@@ -180,6 +200,7 @@ RDEPENDS:rpm-plugin-dbus-announce = " \
 "
 
 URI_rpm-plugin-prioreset = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rpm-plugin-prioreset-4.19.1.1-12.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-plugin-prioreset}"
 RDEPENDS:rpm-plugin-prioreset = " \
  glibc \
  rpm-libs \

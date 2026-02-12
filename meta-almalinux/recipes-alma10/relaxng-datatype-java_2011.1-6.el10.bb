@@ -8,12 +8,17 @@ PR = "6.el10"
 PACKAGES = "relaxng-datatype-java relaxng-datatype-java-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/relaxng-datatype-java-2011.1-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_relaxng-datatype-java = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/relaxng-datatype-java-2011.1-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_relaxng-datatype-java}"
 RDEPENDS:relaxng-datatype-java = " \
  javapackages-filesystem \
 "
 
 URI_relaxng-datatype-java-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/relaxng-datatype-java-javadoc-2011.1-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_relaxng-datatype-java-javadoc}"
 RDEPENDS:relaxng-datatype-java-javadoc = " \
  javapackages-filesystem \
 "

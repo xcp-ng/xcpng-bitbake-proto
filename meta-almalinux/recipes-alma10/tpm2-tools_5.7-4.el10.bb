@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "tpm2-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/tpm2-tools-5.7-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_tpm2-tools = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/tpm2-tools-5.7-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tpm2-tools}"
 RDEPENDS:tpm2-tools = " \
  libcurl \
  openssl-libs \

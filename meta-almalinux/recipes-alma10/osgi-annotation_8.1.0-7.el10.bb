@@ -8,12 +8,17 @@ PR = "7.el10"
 PACKAGES = "osgi-annotation osgi-annotation-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/osgi-annotation-8.1.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_osgi-annotation = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/osgi-annotation-8.1.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osgi-annotation}"
 RDEPENDS:osgi-annotation = " \
  javapackages-filesystem \
 "
 
 URI_osgi-annotation-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/osgi-annotation-javadoc-8.1.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_osgi-annotation-javadoc}"
 RDEPENDS:osgi-annotation-javadoc = " \
  javapackages-filesystem \
 "

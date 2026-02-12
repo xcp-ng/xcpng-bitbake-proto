@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gnome-online-accounts gnome-online-accounts-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-online-accounts-3.52.3.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-online-accounts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-online-accounts-3.52.3.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-online-accounts}"
 RDEPENDS:gnome-online-accounts = " \
  libsoup3 \
  gvfs-goa \
@@ -27,6 +31,7 @@ RDEPENDS:gnome-online-accounts = " \
 "
 
 URI_gnome-online-accounts-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gnome-online-accounts-devel-3.52.3.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-online-accounts-devel}"
 RDEPENDS:gnome-online-accounts-devel = " \
  glib2-devel \
  pkgconf-pkg-config \

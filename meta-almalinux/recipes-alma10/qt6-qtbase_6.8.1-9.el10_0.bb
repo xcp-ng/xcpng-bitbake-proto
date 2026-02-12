@@ -8,7 +8,11 @@ PR = "9.el10_0"
 PACKAGES = "qt6-qtbase qt6-qtbase-common qt6-qtbase-devel qt6-qtbase-gui qt6-qtbase-mysql qt6-qtbase-odbc qt6-qtbase-postgresql qt6-qtbase-examples qt6-qtbase-private-devel qt6-qtbase-static qt6-qtbase-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/qt6-qtbase-6.8.1-9.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_qt6-qtbase = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase}"
 RDEPENDS:qt6-qtbase = " \
  zlib-ng-compat \
  systemd-libs \
@@ -30,11 +34,13 @@ RDEPENDS:qt6-qtbase = " \
 "
 
 URI_qt6-qtbase-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-common-6.8.1-9.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-common}"
 RDEPENDS:qt6-qtbase-common = " \
  qt6-qtbase \
 "
 
 URI_qt6-qtbase-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-devel-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-devel}"
 RDEPENDS:qt6-qtbase-devel = " \
  cmake-filesystem \
  libglvnd-devel \
@@ -57,6 +63,7 @@ RDEPENDS:qt6-qtbase-devel = " \
 "
 
 URI_qt6-qtbase-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-gui-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-gui}"
 RDEPENDS:qt6-qtbase-gui = " \
  xcb-util-wm \
  systemd-libs \
@@ -95,6 +102,7 @@ RDEPENDS:qt6-qtbase-gui = " \
 "
 
 URI_qt6-qtbase-mysql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-mysql-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-mysql}"
 RDEPENDS:qt6-qtbase-mysql = " \
  cmake-filesystem \
  qt6-qtbase \
@@ -104,6 +112,7 @@ RDEPENDS:qt6-qtbase-mysql = " \
 "
 
 URI_qt6-qtbase-odbc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-odbc-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-odbc}"
 RDEPENDS:qt6-qtbase-odbc = " \
  cmake-filesystem \
  qt6-qtbase \
@@ -113,6 +122,7 @@ RDEPENDS:qt6-qtbase-odbc = " \
 "
 
 URI_qt6-qtbase-postgresql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtbase-postgresql-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-postgresql}"
 RDEPENDS:qt6-qtbase-postgresql = " \
  cmake-filesystem \
  libpq \
@@ -122,6 +132,7 @@ RDEPENDS:qt6-qtbase-postgresql = " \
 "
 
 URI_qt6-qtbase-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtbase-examples-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-examples}"
 RDEPENDS:qt6-qtbase-examples = " \
  python3 \
  libgcc \
@@ -132,6 +143,7 @@ RDEPENDS:qt6-qtbase-examples = " \
 "
 
 URI_qt6-qtbase-private-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtbase-private-devel-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-private-devel}"
 RDEPENDS:qt6-qtbase-private-devel = " \
  qt6-qtbase-gui \
  qt6-qtbase-devel \
@@ -140,6 +152,7 @@ RDEPENDS:qt6-qtbase-private-devel = " \
 "
 
 URI_qt6-qtbase-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtbase-static-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-static}"
 RDEPENDS:qt6-qtbase-static = " \
  glib2-devel \
  cmake-filesystem \
@@ -151,6 +164,7 @@ RDEPENDS:qt6-qtbase-static = " \
 "
 
 URI_qt6-qtbase-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtbase-tests-6.8.1-9.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtbase-tests}"
 RDEPENDS:qt6-qtbase-tests = " \
  python3 \
  perl-constant \

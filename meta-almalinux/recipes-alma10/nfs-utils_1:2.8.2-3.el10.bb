@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "libnfsidmap nfs-utils nfs-utils-coreos nfsv4-client-utils libnfsidmap-devel nfs-stats-utils"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/nfs-utils-2.8.2-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libnfsidmap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libnfsidmap-2.8.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnfsidmap}"
 RDEPENDS:libnfsidmap = " \
  glibc \
  krb5-libs \
@@ -16,6 +20,7 @@ RDEPENDS:libnfsidmap = " \
 "
 
 URI_nfs-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/nfs-utils-2.8.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nfs-utils}"
 RDEPENDS:nfs-utils = " \
  python3 \
  systemd \
@@ -51,6 +56,7 @@ RDEPENDS:nfs-utils = " \
 "
 
 URI_nfs-utils-coreos = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nfs-utils-coreos-2.8.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nfs-utils-coreos}"
 RDEPENDS:nfs-utils-coreos = " \
  systemd \
  libevent \
@@ -68,6 +74,7 @@ RDEPENDS:nfs-utils-coreos = " \
 "
 
 URI_nfsv4-client-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/nfsv4-client-utils-2.8.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nfsv4-client-utils}"
 RDEPENDS:nfsv4-client-utils = " \
  libevent \
  keyutils-libs \
@@ -82,12 +89,14 @@ RDEPENDS:nfsv4-client-utils = " \
 "
 
 URI_libnfsidmap-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libnfsidmap-devel-2.8.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libnfsidmap-devel}"
 RDEPENDS:libnfsidmap-devel = " \
  libnfsidmap \
  pkgconf-pkg-config \
 "
 
 URI_nfs-stats-utils = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/nfs-stats-utils-2.8.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_nfs-stats-utils}"
 RDEPENDS:nfs-stats-utils = " \
  python3 \
 "

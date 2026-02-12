@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Text-Balanced perl-Text-Balanced-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Text-Balanced-2.06-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Text-Balanced = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Text-Balanced-2.06-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Balanced}"
 RDEPENDS:perl-Text-Balanced = " \
  perl-libs \
  perl-Carp \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Text-Balanced = " \
 "
 
 URI_perl-Text-Balanced-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Text-Balanced-tests-2.06-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Balanced-tests}"
 RDEPENDS:perl-Text-Balanced-tests = " \
  perl-Test-Harness \
  perl-libs \

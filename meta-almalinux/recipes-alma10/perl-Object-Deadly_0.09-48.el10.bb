@@ -8,7 +8,11 @@ PR = "48.el10"
 PACKAGES = "perl-Object-Deadly perl-Object-Deadly-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/perl-Object-Deadly-0.09-48.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Object-Deadly = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Object-Deadly-0.09-48.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Object-Deadly}"
 RDEPENDS:perl-Object-Deadly = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -23,6 +27,7 @@ RDEPENDS:perl-Object-Deadly = " \
 "
 
 URI_perl-Object-Deadly-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Object-Deadly-tests-0.09-48.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Object-Deadly-tests}"
 RDEPENDS:perl-Object-Deadly-tests = " \
  perl-Test-Harness \
  perl-Test-Simple \

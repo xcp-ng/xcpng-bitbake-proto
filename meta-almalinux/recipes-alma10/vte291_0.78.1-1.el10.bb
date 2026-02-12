@@ -8,12 +8,17 @@ PR = "1.el10"
 PACKAGES = "vte-profile vte291 vte291-gtk4 vte291-devel vte291-gtk4-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/vte291-0.78.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_vte-profile = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/vte-profile-0.78.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vte-profile}"
 RDEPENDS:vte-profile = " \
  glibc \
 "
 
 URI_vte291 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/vte291-0.78.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vte291}"
 RDEPENDS:vte291 = " \
  atk \
  systemd-libs \
@@ -34,6 +39,7 @@ RDEPENDS:vte291 = " \
 "
 
 URI_vte291-gtk4 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/vte291-gtk4-0.78.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vte291-gtk4}"
 RDEPENDS:vte291-gtk4 = " \
  systemd-libs \
  gnutls \
@@ -54,6 +60,7 @@ RDEPENDS:vte291-gtk4 = " \
 "
 
 URI_vte291-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/vte291-devel-0.78.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vte291-devel}"
 RDEPENDS:vte291-devel = " \
  glib2-devel \
  cairo-gobject \
@@ -73,6 +80,7 @@ RDEPENDS:vte291-devel = " \
 "
 
 URI_vte291-gtk4-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/vte291-gtk4-devel-0.78.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_vte291-gtk4-devel}"
 RDEPENDS:vte291-gtk4-devel = " \
  glib2-devel \
  libgcc \

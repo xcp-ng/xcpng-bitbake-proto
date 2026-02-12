@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "virt-install virt-manager-common virt-manager"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/virt-manager-5.0.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_virt-install = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/virt-install-5.0.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_virt-install}"
 RDEPENDS:virt-install = " \
  python3 \
  virt-manager-common \
@@ -16,6 +20,7 @@ RDEPENDS:virt-install = " \
 "
 
 URI_virt-manager-common = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/virt-manager-common-5.0.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_virt-manager-common}"
 RDEPENDS:virt-manager-common = " \
  python3-requests \
  libosinfo \
@@ -27,6 +32,7 @@ RDEPENDS:virt-manager-common = " \
 "
 
 URI_virt-manager = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/virt-manager-5.0.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_virt-manager}"
 RDEPENDS:virt-manager = " \
  python3 \
  python3-gobject \

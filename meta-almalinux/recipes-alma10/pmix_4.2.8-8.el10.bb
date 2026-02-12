@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "pmix pmix-devel pmix-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/pmix-4.2.8-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pmix = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pmix-4.2.8-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pmix}"
 RDEPENDS:pmix = " \
  zlib-ng-compat \
  libevent \
@@ -18,6 +22,7 @@ RDEPENDS:pmix = " \
 "
 
 URI_pmix-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pmix-devel-4.2.8-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pmix-devel}"
 RDEPENDS:pmix-devel = " \
  pmix-tools \
  pkgconf-pkg-config \
@@ -25,6 +30,7 @@ RDEPENDS:pmix-devel = " \
 "
 
 URI_pmix-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pmix-tools-4.2.8-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pmix-tools}"
 RDEPENDS:pmix-tools = " \
  glibc \
  pmix \

@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "perl-LWP-Protocol-https perl-LWP-Protocol-https-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-LWP-Protocol-https-6.13-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-LWP-Protocol-https = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-LWP-Protocol-https-6.13-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-LWP-Protocol-https}"
 RDEPENDS:perl-LWP-Protocol-https = " \
  perl-libs \
  perl-libwww-perl \
@@ -19,6 +23,7 @@ RDEPENDS:perl-LWP-Protocol-https = " \
 "
 
 URI_perl-LWP-Protocol-https-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-LWP-Protocol-https-tests-6.13-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-LWP-Protocol-https-tests}"
 RDEPENDS:perl-LWP-Protocol-https-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "selinux-policy selinux-policy-doc selinux-policy-mls selinux-policy-sandbox selinux-policy-targeted selinux-policy-devel selinux-policy-minimum"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/selinux-policy-40.13.26-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_selinux-policy = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/selinux-policy-40.13.26-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_selinux-policy}"
 RDEPENDS:selinux-policy = " \
  gawk \
  policycoreutils \
@@ -19,11 +23,13 @@ RDEPENDS:selinux-policy = " \
 "
 
 URI_selinux-policy-doc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/selinux-policy-doc-40.13.26-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_selinux-policy-doc}"
 RDEPENDS:selinux-policy-doc = " \
  selinux-policy \
 "
 
 URI_selinux-policy-mls = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/selinux-policy-mls-40.13.26-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_selinux-policy-mls}"
 RDEPENDS:selinux-policy-mls = " \
  policycoreutils \
  policycoreutils-newrole \
@@ -34,6 +40,7 @@ RDEPENDS:selinux-policy-mls = " \
 "
 
 URI_selinux-policy-sandbox = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/selinux-policy-sandbox-40.13.26-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_selinux-policy-sandbox}"
 RDEPENDS:selinux-policy-sandbox = " \
  selinux-policy \
  bash \
@@ -41,6 +48,7 @@ RDEPENDS:selinux-policy-sandbox = " \
 "
 
 URI_selinux-policy-targeted = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/selinux-policy-targeted-40.13.26-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_selinux-policy-targeted}"
 RDEPENDS:selinux-policy-targeted = " \
  coreutils \
  bash \
@@ -49,6 +57,7 @@ RDEPENDS:selinux-policy-targeted = " \
 "
 
 URI_selinux-policy-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/selinux-policy-devel-40.13.26-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_selinux-policy-devel}"
 RDEPENDS:selinux-policy-devel = " \
  m4 \
  checkpolicy \
@@ -59,6 +68,7 @@ RDEPENDS:selinux-policy-devel = " \
 "
 
 URI_selinux-policy-minimum = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/selinux-policy-minimum-40.13.26-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_selinux-policy-minimum}"
 RDEPENDS:selinux-policy-minimum = " \
  coreutils \
  policycoreutils-python-utils \

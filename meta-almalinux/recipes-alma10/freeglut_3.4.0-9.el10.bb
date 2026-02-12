@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "freeglut freeglut-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/freeglut-3.4.0-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_freeglut = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeglut-3.4.0-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeglut}"
 RDEPENDS:freeglut = " \
  glibc \
  libglvnd-glx \
@@ -17,6 +21,7 @@ RDEPENDS:freeglut = " \
 "
 
 URI_freeglut-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeglut-devel-3.4.0-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeglut-devel}"
 RDEPENDS:freeglut-devel = " \
  cmake-filesystem \
  pkgconf-pkg-config \

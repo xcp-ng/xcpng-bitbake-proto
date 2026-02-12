@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-CPAN-Meta perl-CPAN-Meta-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-CPAN-Meta-2.150010-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-CPAN-Meta = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-CPAN-Meta-2.150010-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CPAN-Meta}"
 RDEPENDS:perl-CPAN-Meta = " \
  perl-CPAN-Meta \
  perl-CPAN-Meta-Requirements \
@@ -23,6 +27,7 @@ RDEPENDS:perl-CPAN-Meta = " \
 "
 
 URI_perl-CPAN-Meta-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-CPAN-Meta-tests-2.150010-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CPAN-Meta-tests}"
 RDEPENDS:perl-CPAN-Meta-tests = " \
  perl-CPAN-Meta \
  perl-Test-Harness \

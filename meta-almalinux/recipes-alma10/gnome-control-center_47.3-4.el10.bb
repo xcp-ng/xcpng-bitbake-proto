@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "gnome-control-center gnome-control-center-filesystem"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-control-center-47.3-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-control-center = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-control-center-47.3-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-control-center}"
 RDEPENDS:gnome-control-center = " \
  ModemManager-glib \
  libpwquality \
@@ -67,4 +71,5 @@ RDEPENDS:gnome-control-center = " \
 "
 
 URI_gnome-control-center-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-control-center-filesystem-47.3-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gnome-control-center-filesystem}"
 RDEPENDS:gnome-control-center-filesystem = ""

@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "libstoragemgmt libstoragemgmt-arcconf-plugin libstoragemgmt-hpsa-plugin libstoragemgmt-local-plugin libstoragemgmt-megaraid-plugin libstoragemgmt-nfs-plugin libstoragemgmt-targetd-plugin libstoragemgmt-udev python3-libstoragemgmt libstoragemgmt-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libstoragemgmt-1.10.1-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libstoragemgmt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-1.10.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt}"
 RDEPENDS:libstoragemgmt = " \
  python3 \
  sg3_utils-libs \
@@ -26,6 +30,7 @@ RDEPENDS:libstoragemgmt = " \
 "
 
 URI_libstoragemgmt-arcconf-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-arcconf-plugin-1.10.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-arcconf-plugin}"
 RDEPENDS:libstoragemgmt-arcconf-plugin = " \
  python3-libstoragemgmt \
  bash \
@@ -33,6 +38,7 @@ RDEPENDS:libstoragemgmt-arcconf-plugin = " \
 "
 
 URI_libstoragemgmt-hpsa-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-hpsa-plugin-1.10.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-hpsa-plugin}"
 RDEPENDS:libstoragemgmt-hpsa-plugin = " \
  python3-libstoragemgmt \
  bash \
@@ -40,6 +46,7 @@ RDEPENDS:libstoragemgmt-hpsa-plugin = " \
 "
 
 URI_libstoragemgmt-local-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-local-plugin-1.10.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-local-plugin}"
 RDEPENDS:libstoragemgmt-local-plugin = " \
  python3 \
  python3-libstoragemgmt \
@@ -49,6 +56,7 @@ RDEPENDS:libstoragemgmt-local-plugin = " \
 "
 
 URI_libstoragemgmt-megaraid-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-megaraid-plugin-1.10.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-megaraid-plugin}"
 RDEPENDS:libstoragemgmt-megaraid-plugin = " \
  python3-libstoragemgmt \
  bash \
@@ -56,6 +64,7 @@ RDEPENDS:libstoragemgmt-megaraid-plugin = " \
 "
 
 URI_libstoragemgmt-nfs-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-nfs-plugin-1.10.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-nfs-plugin}"
 RDEPENDS:libstoragemgmt-nfs-plugin = " \
  python3 \
  nfs-utils \
@@ -70,6 +79,7 @@ RDEPENDS:libstoragemgmt-nfs-plugin = " \
 "
 
 URI_libstoragemgmt-targetd-plugin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-targetd-plugin-1.10.1-4.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-targetd-plugin}"
 RDEPENDS:libstoragemgmt-targetd-plugin = " \
  python3-libstoragemgmt \
  bash \
@@ -77,11 +87,13 @@ RDEPENDS:libstoragemgmt-targetd-plugin = " \
 "
 
 URI_libstoragemgmt-udev = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstoragemgmt-udev-1.10.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-udev}"
 RDEPENDS:libstoragemgmt-udev = " \
  glibc \
 "
 
 URI_python3-libstoragemgmt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-libstoragemgmt-1.10.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-libstoragemgmt}"
 RDEPENDS:python3-libstoragemgmt = " \
  python3 \
  sg3_utils-libs \
@@ -94,6 +106,7 @@ RDEPENDS:python3-libstoragemgmt = " \
 "
 
 URI_libstoragemgmt-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libstoragemgmt-devel-1.10.1-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstoragemgmt-devel}"
 RDEPENDS:libstoragemgmt-devel = " \
  libstoragemgmt \
  pkgconf-pkg-config \

@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "gtkmm4.0 gtkmm4.0-devel gtkmm4.0-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gtkmm4.0-4.13.2-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gtkmm4.0 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gtkmm4.0-4.13.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtkmm4.0}"
 RDEPENDS:gtkmm4.0 = " \
  libgcc \
  gdk-pixbuf2 \
@@ -25,6 +29,7 @@ RDEPENDS:gtkmm4.0 = " \
 "
 
 URI_gtkmm4.0-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtkmm4.0-devel-4.13.2-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gtkmm4.0-devel}"
 RDEPENDS:gtkmm4.0-devel = " \
  pangomm2.48-devel \
  pkgconf-pkg-config \
@@ -36,6 +41,7 @@ RDEPENDS:gtkmm4.0-devel = " \
 "
 
 URI_gtkmm4.0-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gtkmm4.0-doc-4.13.2-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_gtkmm4.0-doc}"
 RDEPENDS:gtkmm4.0-doc = " \
  glibmm2.68-doc \
  gtkmm4.0 \

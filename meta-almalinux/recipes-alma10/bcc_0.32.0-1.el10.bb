@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "bcc bcc-tools libbpf-tools python3-bcc bcc-devel bcc-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/bcc-0.32.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_bcc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bcc-0.32.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bcc}"
 RDEPENDS:bcc = " \
  elfutils-debuginfod-client \
  libgcc \
@@ -23,6 +27,7 @@ RDEPENDS:bcc = " \
 "
 
 URI_bcc-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/bcc-tools-0.32.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bcc-tools}"
 RDEPENDS:bcc-tools = " \
  python3 \
  python3-bcc \
@@ -34,6 +39,7 @@ RDEPENDS:bcc-tools = " \
 "
 
 URI_libbpf-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libbpf-tools-0.32.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libbpf-tools}"
 RDEPENDS:libbpf-tools = " \
  glibc \
  zlib-ng-compat \
@@ -41,16 +47,19 @@ RDEPENDS:libbpf-tools = " \
 "
 
 URI_python3-bcc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-bcc-0.32.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-bcc}"
 RDEPENDS:python3-bcc = " \
  python3 \
  bcc \
 "
 
 URI_bcc-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/bcc-devel-0.32.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_bcc-devel}"
 RDEPENDS:bcc-devel = " \
  pkgconf-pkg-config \
  bcc \
 "
 
 URI_bcc-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/bcc-doc-0.32.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_bcc-doc}"
 RDEPENDS:bcc-doc = ""

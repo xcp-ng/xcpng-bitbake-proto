@@ -8,10 +8,15 @@ PR = "1.el10"
 PACKAGES = "python-pyqt6-rpm-macros python3-pyqt6 python3-pyqt6-base python3-pyqt6-devel python-pyqt6-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/python-pyqt6-6.8.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python-pyqt6-rpm-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python-pyqt6-rpm-macros-6.8.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python-pyqt6-rpm-macros}"
 RDEPENDS:python-pyqt6-rpm-macros = ""
 
 URI_python3-pyqt6 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pyqt6-6.8.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-pyqt6}"
 RDEPENDS:python3-pyqt6 = " \
  python3 \
  qt6-qtdeclarative \
@@ -36,6 +41,7 @@ RDEPENDS:python3-pyqt6 = " \
 "
 
 URI_python3-pyqt6-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pyqt6-base-6.8.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-pyqt6-base}"
 RDEPENDS:python3-pyqt6-base = " \
  python3 \
  qt6-qtdeclarative \
@@ -53,10 +59,12 @@ RDEPENDS:python3-pyqt6-base = " \
 "
 
 URI_python3-pyqt6-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pyqt6-devel-6.8.0-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-pyqt6-devel}"
 RDEPENDS:python3-pyqt6-devel = " \
  qt6-qtbase-devel \
  python3-pyqt6 \
 "
 
 URI_python-pyqt6-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python-pyqt6-doc-6.8.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python-pyqt6-doc}"
 RDEPENDS:python-pyqt6-doc = ""

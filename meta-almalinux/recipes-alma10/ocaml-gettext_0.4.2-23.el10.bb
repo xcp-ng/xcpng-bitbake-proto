@@ -8,7 +8,11 @@ PR = "23.el10"
 PACKAGES = "ocaml-gettext ocaml-gettext-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/ocaml-gettext-0.4.2-23.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ocaml-gettext = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-gettext-0.4.2-23.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-gettext}"
 RDEPENDS:ocaml-gettext = " \
  glibc \
  ocaml-runtime \
@@ -16,6 +20,7 @@ RDEPENDS:ocaml-gettext = " \
 "
 
 URI_ocaml-gettext-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-gettext-devel-0.4.2-23.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-gettext-devel}"
 RDEPENDS:ocaml-gettext-devel = " \
  ocaml-runtime \
  ocaml \

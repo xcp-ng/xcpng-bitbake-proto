@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "cxl-libs daxctl-libs ndctl ndctl-libs cxl-cli daxctl daxctl-devel ndctl-devel cxl-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/ndctl-80-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cxl-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/cxl-libs-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cxl-libs}"
 RDEPENDS:cxl-libs = " \
  libuuid \
  systemd-libs \
@@ -18,6 +22,7 @@ RDEPENDS:cxl-libs = " \
 "
 
 URI_daxctl-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/daxctl-libs-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_daxctl-libs}"
 RDEPENDS:daxctl-libs = " \
  glibc \
  libuuid \
@@ -25,6 +30,7 @@ RDEPENDS:daxctl-libs = " \
 "
 
 URI_ndctl = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/ndctl-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ndctl}"
 RDEPENDS:ndctl = " \
  libuuid \
  keyutils-libs \
@@ -38,6 +44,7 @@ RDEPENDS:ndctl = " \
 "
 
 URI_ndctl-libs = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/ndctl-libs-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ndctl-libs}"
 RDEPENDS:ndctl-libs = " \
  libuuid \
  systemd-libs \
@@ -47,6 +54,7 @@ RDEPENDS:ndctl-libs = " \
 "
 
 URI_cxl-cli = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cxl-cli-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cxl-cli}"
 RDEPENDS:cxl-cli = " \
  libuuid \
  json-c \
@@ -58,6 +66,7 @@ RDEPENDS:cxl-cli = " \
 "
 
 URI_daxctl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/daxctl-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_daxctl}"
 RDEPENDS:daxctl = " \
  libuuid \
  json-c \
@@ -68,18 +77,21 @@ RDEPENDS:daxctl = " \
 "
 
 URI_daxctl-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/daxctl-devel-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_daxctl-devel}"
 RDEPENDS:daxctl-devel = " \
  daxctl-libs \
  pkgconf-pkg-config \
 "
 
 URI_ndctl-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ndctl-devel-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ndctl-devel}"
 RDEPENDS:ndctl-devel = " \
  pkgconf-pkg-config \
  ndctl-libs \
 "
 
 URI_cxl-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/cxl-devel-80-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cxl-devel}"
 RDEPENDS:cxl-devel = " \
  pkgconf-pkg-config \
  cxl-libs \

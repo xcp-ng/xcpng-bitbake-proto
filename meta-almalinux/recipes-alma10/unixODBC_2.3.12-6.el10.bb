@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "unixODBC unixODBC-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/unixODBC-2.3.12-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_unixODBC = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/unixODBC-2.3.12-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unixODBC}"
 RDEPENDS:unixODBC = " \
  glibc \
  readline \
@@ -16,6 +20,7 @@ RDEPENDS:unixODBC = " \
 "
 
 URI_unixODBC-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/unixODBC-devel-2.3.12-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_unixODBC-devel}"
 RDEPENDS:unixODBC-devel = " \
  unixODBC-devel \
  unixODBC \

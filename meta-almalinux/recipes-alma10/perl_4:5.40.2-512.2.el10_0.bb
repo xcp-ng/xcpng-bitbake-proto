@@ -8,13 +8,18 @@ PR = "512.2.el10_0"
 PACKAGES = "perl-AutoLoader perl-Class-Struct perl-File-Basename perl-File-stat perl-FileHandle perl-Getopt-Std perl-IPC-Open3 perl-SelectSaver perl-Symbol perl-base perl-if perl-locale perl-overload perl-overloading perl-vars perl perl-Attribute-Handlers perl-AutoLoader perl-AutoSplit perl-B perl-Benchmark perl-Class-Struct perl-Config-Extensions perl-DBM_Filter perl-Devel-Peek perl-Devel-SelfStubber perl-DirHandle perl-Dumpvalue perl-DynaLoader perl-English perl-Errno perl-ExtUtils-Constant perl-ExtUtils-Embed perl-ExtUtils-Miniperl perl-Fcntl perl-File-Basename perl-File-Compare perl-File-Copy perl-File-DosGlob perl-File-Find perl-File-stat perl-FileCache perl-FileHandle perl-FindBin perl-GDBM_File perl-Getopt-Std perl-Hash-Util perl-Hash-Util-FieldHash perl-I18N-Collate perl-I18N-LangTags perl-I18N-Langinfo perl-IO perl-IPC-Open3 perl-Locale-Maketext-Simple perl-Math-Complex perl-Memoize perl-Module-Loaded perl-NDBM_File perl-NEXT perl-Net perl-ODBM_File perl-Opcode perl-POSIX perl-Pod-Functions perl-Pod-Html perl-Safe perl-Search-Dict perl-SelectSaver perl-SelfLoader perl-Symbol perl-Sys-Hostname perl-Term-Complete perl-Term-ReadLine perl-Test perl-Text-Abbrev perl-Thread perl-Thread-Semaphore perl-Tie perl-Tie-File perl-Tie-Memoize perl-Time perl-Time-Piece perl-Unicode-UCD perl-User-pwent perl-autouse perl-base perl-blib perl-debugger perl-deprecate perl-devel perl-diagnostics perl-doc perl-encoding-warnings perl-fields perl-filetest perl-if perl-interpreter perl-less perl-lib perl-libnetcfg perl-libs perl-locale perl-macros perl-meta-notation perl-mro perl-open perl-overload perl-overloading perl-ph perl-sigtrap perl-sort perl-subs perl-utils perl-vars perl-vmsish perl-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-5.40.2-512.2.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-AutoLoader = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-AutoLoader-5.74-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-AutoLoader}"
 RDEPENDS:perl-AutoLoader = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-Class-Struct = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-Class-Struct-0.68-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Class-Struct}"
 RDEPENDS:perl-Class-Struct = " \
  perl-Exporter \
  perl-libs \
@@ -22,6 +27,7 @@ RDEPENDS:perl-Class-Struct = " \
 "
 
 URI_perl-File-Basename = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-File-Basename-2.86-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Basename}"
 RDEPENDS:perl-File-Basename = " \
  perl-Exporter \
  perl-libs \
@@ -29,6 +35,7 @@ RDEPENDS:perl-File-Basename = " \
 "
 
 URI_perl-File-stat = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-File-stat-1.14-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-stat}"
 RDEPENDS:perl-File-stat = " \
  perl-constant \
  perl-libs \
@@ -41,6 +48,7 @@ RDEPENDS:perl-File-stat = " \
 "
 
 URI_perl-FileHandle = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-FileHandle-2.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-FileHandle}"
 RDEPENDS:perl-FileHandle = " \
  perl-Exporter \
  perl-libs \
@@ -48,12 +56,14 @@ RDEPENDS:perl-FileHandle = " \
 "
 
 URI_perl-Getopt-Std = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-Getopt-Std-1.14-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Getopt-Std}"
 RDEPENDS:perl-Getopt-Std = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-IPC-Open3 = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-IPC-Open3-1.22-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IPC-Open3}"
 RDEPENDS:perl-IPC-Open3 = " \
  perl-constant \
  perl-libs \
@@ -67,6 +77,7 @@ RDEPENDS:perl-IPC-Open3 = " \
 "
 
 URI_perl-SelectSaver = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-SelectSaver-1.02-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-SelectSaver}"
 RDEPENDS:perl-SelectSaver = " \
  perl-Symbol \
  perl-libs \
@@ -74,23 +85,27 @@ RDEPENDS:perl-SelectSaver = " \
 "
 
 URI_perl-Symbol = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-Symbol-1.09-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Symbol}"
 RDEPENDS:perl-Symbol = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-base = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-base-2.27-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-base}"
 RDEPENDS:perl-base = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-if = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-if-0.61.000-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-if}"
 RDEPENDS:perl-if = " \
  perl-libs \
 "
 
 URI_perl-locale = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-locale-1.12-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-locale}"
 RDEPENDS:perl-locale = " \
  perl-libs \
  perl-Carp \
@@ -98,6 +113,7 @@ RDEPENDS:perl-locale = " \
 "
 
 URI_perl-overload = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-overload-1.37-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-overload}"
 RDEPENDS:perl-overload = " \
  perl-overloading \
  perl-Scalar-List-Utils \
@@ -106,18 +122,21 @@ RDEPENDS:perl-overload = " \
 "
 
 URI_perl-overloading = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-overloading-0.02-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-overloading}"
 RDEPENDS:perl-overloading = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-vars = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/perl-vars-1.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-vars}"
 RDEPENDS:perl-vars = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-5.40.2-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl}"
 RDEPENDS:perl = " \
  perl-Safe \
  perl-Scalar-List-Utils \
@@ -309,18 +328,21 @@ RDEPENDS:perl = " \
 "
 
 URI_perl-Attribute-Handlers = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Attribute-Handlers-1.03-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Attribute-Handlers}"
 RDEPENDS:perl-Attribute-Handlers = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-AutoLoader = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-AutoLoader-5.74-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-AutoLoader}"
 RDEPENDS:perl-AutoLoader = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-AutoSplit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-AutoSplit-5.74-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-AutoSplit}"
 RDEPENDS:perl-AutoSplit = " \
  perl-libs \
  perl-Carp \
@@ -331,6 +353,7 @@ RDEPENDS:perl-AutoSplit = " \
 "
 
 URI_perl-B = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-B-1.89-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-B}"
 RDEPENDS:perl-B = " \
  perl-libs \
  perl-Carp \
@@ -343,6 +366,7 @@ RDEPENDS:perl-B = " \
 "
 
 URI_perl-Benchmark = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Benchmark-1.25-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Benchmark}"
 RDEPENDS:perl-Benchmark = " \
  perl-Exporter \
  perl-libs \
@@ -350,6 +374,7 @@ RDEPENDS:perl-Benchmark = " \
 "
 
 URI_perl-Class-Struct = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Class-Struct-0.68-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Class-Struct}"
 RDEPENDS:perl-Class-Struct = " \
  perl-Exporter \
  perl-libs \
@@ -357,12 +382,14 @@ RDEPENDS:perl-Class-Struct = " \
 "
 
 URI_perl-Config-Extensions = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Config-Extensions-0.03-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Config-Extensions}"
 RDEPENDS:perl-Config-Extensions = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-DBM_Filter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-DBM_Filter-0.06-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-DBM_Filter}"
 RDEPENDS:perl-DBM_Filter = " \
  perl-IO-Compress \
  perl-Encode \
@@ -371,6 +398,7 @@ RDEPENDS:perl-DBM_Filter = " \
 "
 
 URI_perl-Devel-Peek = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Devel-Peek-1.34-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Devel-Peek}"
 RDEPENDS:perl-Devel-Peek = " \
  glibc \
  perl-Exporter \
@@ -378,6 +406,7 @@ RDEPENDS:perl-Devel-Peek = " \
 "
 
 URI_perl-Devel-SelfStubber = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Devel-SelfStubber-1.06-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Devel-SelfStubber}"
 RDEPENDS:perl-Devel-SelfStubber = " \
  perl-SelfLoader \
  perl-PathTools \
@@ -385,6 +414,7 @@ RDEPENDS:perl-Devel-SelfStubber = " \
 "
 
 URI_perl-DirHandle = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-DirHandle-1.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-DirHandle}"
 RDEPENDS:perl-DirHandle = " \
  perl-Symbol \
  perl-libs \
@@ -392,11 +422,13 @@ RDEPENDS:perl-DirHandle = " \
 "
 
 URI_perl-Dumpvalue = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Dumpvalue-2.27-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Dumpvalue}"
 RDEPENDS:perl-Dumpvalue = " \
  perl-libs \
 "
 
 URI_perl-DynaLoader = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-DynaLoader-1.56-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-DynaLoader}"
 RDEPENDS:perl-DynaLoader = " \
  perl-vars \
  perl-libs \
@@ -404,6 +436,7 @@ RDEPENDS:perl-DynaLoader = " \
 "
 
 URI_perl-English = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-English-1.11-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-English}"
 RDEPENDS:perl-English = " \
  perl-Exporter \
  perl-libs \
@@ -411,6 +444,7 @@ RDEPENDS:perl-English = " \
 "
 
 URI_perl-Errno = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Errno-1.38-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Errno}"
 RDEPENDS:perl-Errno = " \
  perl-Exporter \
  perl-libs \
@@ -418,6 +452,7 @@ RDEPENDS:perl-Errno = " \
 "
 
 URI_perl-ExtUtils-Constant = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Constant-0.25-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-Constant}"
 RDEPENDS:perl-ExtUtils-Constant = " \
  perl-constant \
  perl-libs \
@@ -430,6 +465,7 @@ RDEPENDS:perl-ExtUtils-Constant = " \
 "
 
 URI_perl-ExtUtils-Embed = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Embed-1.35-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-Embed}"
 RDEPENDS:perl-ExtUtils-Embed = " \
  perl-Exporter \
  perl-PathTools \
@@ -438,6 +474,7 @@ RDEPENDS:perl-ExtUtils-Embed = " \
 "
 
 URI_perl-ExtUtils-Miniperl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ExtUtils-Miniperl-1.14-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-ExtUtils-Miniperl}"
 RDEPENDS:perl-ExtUtils-Miniperl = " \
  perl-ExtUtils-Embed \
  perl-Exporter \
@@ -446,6 +483,7 @@ RDEPENDS:perl-ExtUtils-Miniperl = " \
 "
 
 URI_perl-Fcntl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Fcntl-1.18-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Fcntl}"
 RDEPENDS:perl-Fcntl = " \
  glibc \
  perl-Exporter \
@@ -453,6 +491,7 @@ RDEPENDS:perl-Fcntl = " \
 "
 
 URI_perl-File-Basename = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-Basename-2.86-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Basename}"
 RDEPENDS:perl-File-Basename = " \
  perl-Exporter \
  perl-libs \
@@ -460,6 +499,7 @@ RDEPENDS:perl-File-Basename = " \
 "
 
 URI_perl-File-Compare = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-Compare-1.100.800-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Compare}"
 RDEPENDS:perl-File-Compare = " \
  perl-Exporter \
  perl-libs \
@@ -467,6 +507,7 @@ RDEPENDS:perl-File-Compare = " \
 "
 
 URI_perl-File-Copy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-Copy-2.41-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Copy}"
 RDEPENDS:perl-File-Copy = " \
  perl-libs \
  perl-Carp \
@@ -477,6 +518,7 @@ RDEPENDS:perl-File-Copy = " \
 "
 
 URI_perl-File-DosGlob = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-DosGlob-1.12-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-DosGlob}"
 RDEPENDS:perl-File-DosGlob = " \
  glibc \
  perl-Text-ParseWords \
@@ -484,6 +526,7 @@ RDEPENDS:perl-File-DosGlob = " \
 "
 
 URI_perl-File-Find = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-Find-1.44-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Find}"
 RDEPENDS:perl-File-Find = " \
  perl-Exporter \
  perl-PathTools \
@@ -492,6 +535,7 @@ RDEPENDS:perl-File-Find = " \
 "
 
 URI_perl-File-stat = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-stat-1.14-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-stat}"
 RDEPENDS:perl-File-stat = " \
  perl-constant \
  perl-libs \
@@ -504,6 +548,7 @@ RDEPENDS:perl-File-stat = " \
 "
 
 URI_perl-FileCache = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-FileCache-1.10-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-FileCache}"
 RDEPENDS:perl-FileCache = " \
  perl-Exporter \
  perl-libs \
@@ -512,6 +557,7 @@ RDEPENDS:perl-FileCache = " \
 "
 
 URI_perl-FileHandle = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-FileHandle-2.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-FileHandle}"
 RDEPENDS:perl-FileHandle = " \
  perl-Exporter \
  perl-libs \
@@ -519,6 +565,7 @@ RDEPENDS:perl-FileHandle = " \
 "
 
 URI_perl-FindBin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-FindBin-1.54-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-FindBin}"
 RDEPENDS:perl-FindBin = " \
  perl-libs \
  perl-Carp \
@@ -528,6 +575,7 @@ RDEPENDS:perl-FindBin = " \
 "
 
 URI_perl-GDBM_File = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-GDBM_File-1.24-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-GDBM_File}"
 RDEPENDS:perl-GDBM_File = " \
  perl-libs \
  perl-Carp \
@@ -537,12 +585,14 @@ RDEPENDS:perl-GDBM_File = " \
 "
 
 URI_perl-Getopt-Std = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Getopt-Std-1.14-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Getopt-Std}"
 RDEPENDS:perl-Getopt-Std = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-Hash-Util = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Hash-Util-0.32-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Hash-Util}"
 RDEPENDS:perl-Hash-Util = " \
  perl-libs \
  perl-Carp \
@@ -552,6 +602,7 @@ RDEPENDS:perl-Hash-Util = " \
 "
 
 URI_perl-Hash-Util-FieldHash = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Hash-Util-FieldHash-1.27-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Hash-Util-FieldHash}"
 RDEPENDS:perl-Hash-Util-FieldHash = " \
  glibc \
  perl-Exporter \
@@ -559,6 +610,7 @@ RDEPENDS:perl-Hash-Util-FieldHash = " \
 "
 
 URI_perl-I18N-Collate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-I18N-Collate-1.02-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-I18N-Collate}"
 RDEPENDS:perl-I18N-Collate = " \
  perl-Exporter \
  perl-overload \
@@ -567,6 +619,7 @@ RDEPENDS:perl-I18N-Collate = " \
 "
 
 URI_perl-I18N-LangTags = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-I18N-LangTags-0.45-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-I18N-LangTags}"
 RDEPENDS:perl-I18N-LangTags = " \
  perl-Exporter \
  perl-I18N-LangTags \
@@ -574,6 +627,7 @@ RDEPENDS:perl-I18N-LangTags = " \
 "
 
 URI_perl-I18N-Langinfo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-I18N-Langinfo-0.24-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-I18N-Langinfo}"
 RDEPENDS:perl-I18N-Langinfo = " \
  glibc \
  perl-Exporter \
@@ -582,6 +636,7 @@ RDEPENDS:perl-I18N-Langinfo = " \
 "
 
 URI_perl-IO = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-IO-1.55-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO}"
 RDEPENDS:perl-IO = " \
  perl-File-stat \
  perl-libs \
@@ -598,6 +653,7 @@ RDEPENDS:perl-IO = " \
 "
 
 URI_perl-IPC-Open3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-IPC-Open3-1.22-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IPC-Open3}"
 RDEPENDS:perl-IPC-Open3 = " \
  perl-constant \
  perl-libs \
@@ -611,6 +667,7 @@ RDEPENDS:perl-IPC-Open3 = " \
 "
 
 URI_perl-Locale-Maketext-Simple = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Locale-Maketext-Simple-0.21-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Locale-Maketext-Simple}"
 RDEPENDS:perl-Locale-Maketext-Simple = " \
  perl-Locale-Maketext \
  perl-libs \
@@ -618,6 +675,7 @@ RDEPENDS:perl-Locale-Maketext-Simple = " \
 "
 
 URI_perl-Math-Complex = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Math-Complex-1.62-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Math-Complex}"
 RDEPENDS:perl-Math-Complex = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -627,6 +685,7 @@ RDEPENDS:perl-Math-Complex = " \
 "
 
 URI_perl-Memoize = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Memoize-1.16-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Memoize}"
 RDEPENDS:perl-Memoize = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -637,6 +696,7 @@ RDEPENDS:perl-Memoize = " \
 "
 
 URI_perl-Module-Loaded = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-Loaded-0.08-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Loaded}"
 RDEPENDS:perl-Module-Loaded = " \
  perl-libs \
  perl-Carp \
@@ -646,6 +706,7 @@ RDEPENDS:perl-Module-Loaded = " \
 "
 
 URI_perl-NDBM_File = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-NDBM_File-1.17-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-NDBM_File}"
 RDEPENDS:perl-NDBM_File = " \
  glibc \
  perl-libs \
@@ -653,6 +714,7 @@ RDEPENDS:perl-NDBM_File = " \
 "
 
 URI_perl-NEXT = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-NEXT-0.69-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-NEXT}"
 RDEPENDS:perl-NEXT = " \
  perl-overload \
  perl-libs \
@@ -660,6 +722,7 @@ RDEPENDS:perl-NEXT = " \
 "
 
 URI_perl-Net = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Net-1.04-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Net}"
 RDEPENDS:perl-Net = " \
  perl-Class-Struct \
  perl-Exporter \
@@ -668,6 +731,7 @@ RDEPENDS:perl-Net = " \
 "
 
 URI_perl-ODBM_File = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ODBM_File-1.18-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-ODBM_File}"
 RDEPENDS:perl-ODBM_File = " \
  glibc \
  perl-libs \
@@ -675,6 +739,7 @@ RDEPENDS:perl-ODBM_File = " \
 "
 
 URI_perl-Opcode = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Opcode-1.65-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Opcode}"
 RDEPENDS:perl-Opcode = " \
  perl-subs \
  perl-libs \
@@ -685,6 +750,7 @@ RDEPENDS:perl-Opcode = " \
 "
 
 URI_perl-POSIX = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-POSIX-2.20-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-POSIX}"
 RDEPENDS:perl-POSIX = " \
  perl-libs \
  perl-Carp \
@@ -695,12 +761,14 @@ RDEPENDS:perl-POSIX = " \
 "
 
 URI_perl-Pod-Functions = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Pod-Functions-1.14-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Functions}"
 RDEPENDS:perl-Pod-Functions = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-Pod-Html = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Pod-Html-1.35-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Pod-Html}"
 RDEPENDS:perl-Pod-Html = " \
  perl-libs \
  perl-interpreter \
@@ -716,6 +784,7 @@ RDEPENDS:perl-Pod-Html = " \
 "
 
 URI_perl-Safe = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Safe-2.46-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Safe}"
 RDEPENDS:perl-Safe = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -725,12 +794,14 @@ RDEPENDS:perl-Safe = " \
 "
 
 URI_perl-Search-Dict = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Search-Dict-1.07-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Search-Dict}"
 RDEPENDS:perl-Search-Dict = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-SelectSaver = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-SelectSaver-1.02-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-SelectSaver}"
 RDEPENDS:perl-SelectSaver = " \
  perl-Symbol \
  perl-libs \
@@ -738,6 +809,7 @@ RDEPENDS:perl-SelectSaver = " \
 "
 
 URI_perl-SelfLoader = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-SelfLoader-1.27-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-SelfLoader}"
 RDEPENDS:perl-SelfLoader = " \
  perl-Exporter \
  perl-libs \
@@ -746,12 +818,14 @@ RDEPENDS:perl-SelfLoader = " \
 "
 
 URI_perl-Symbol = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Symbol-1.09-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Symbol}"
 RDEPENDS:perl-Symbol = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-Sys-Hostname = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Sys-Hostname-1.25-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Sys-Hostname}"
 RDEPENDS:perl-Sys-Hostname = " \
  glibc \
  perl-Exporter \
@@ -760,18 +834,21 @@ RDEPENDS:perl-Sys-Hostname = " \
 "
 
 URI_perl-Term-Complete = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Term-Complete-1.403-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Term-Complete}"
 RDEPENDS:perl-Term-Complete = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-Term-ReadLine = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Term-ReadLine-1.17-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Term-ReadLine}"
 RDEPENDS:perl-Term-ReadLine = " \
  perl-Term-Cap \
  perl-libs \
 "
 
 URI_perl-Test = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Test-1.31-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test}"
 RDEPENDS:perl-Test = " \
  perl-File-Temp \
  perl-Exporter \
@@ -780,12 +857,14 @@ RDEPENDS:perl-Test = " \
 "
 
 URI_perl-Text-Abbrev = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Text-Abbrev-1.02-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Text-Abbrev}"
 RDEPENDS:perl-Text-Abbrev = " \
  perl-Exporter \
  perl-libs \
 "
 
 URI_perl-Thread = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Thread-3.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Thread}"
 RDEPENDS:perl-Thread = " \
  perl-threads-shared \
  perl-threads \
@@ -794,6 +873,7 @@ RDEPENDS:perl-Thread = " \
 "
 
 URI_perl-Thread-Semaphore = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Thread-Semaphore-2.13-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Thread-Semaphore}"
 RDEPENDS:perl-Thread-Semaphore = " \
  perl-threads-shared \
  perl-Scalar-List-Utils \
@@ -802,6 +882,7 @@ RDEPENDS:perl-Thread-Semaphore = " \
 "
 
 URI_perl-Tie = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Tie-4.6-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Tie}"
 RDEPENDS:perl-Tie = " \
  perl-Tie \
  perl-libs \
@@ -809,6 +890,7 @@ RDEPENDS:perl-Tie = " \
 "
 
 URI_perl-Tie-File = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Tie-File-1.09-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Tie-File}"
 RDEPENDS:perl-Tie-File = " \
  perl-constant \
  perl-libs \
@@ -818,12 +900,14 @@ RDEPENDS:perl-Tie-File = " \
 "
 
 URI_perl-Tie-Memoize = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Tie-Memoize-1.1-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Tie-Memoize}"
 RDEPENDS:perl-Tie-Memoize = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-Time = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Time-1.04-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Time}"
 RDEPENDS:perl-Time = " \
  perl-libs \
  perl-Class-Struct \
@@ -833,6 +917,7 @@ RDEPENDS:perl-Time = " \
 "
 
 URI_perl-Time-Piece = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Time-Piece-1.3401-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Time-Piece}"
 RDEPENDS:perl-Time-Piece = " \
  perl-constant \
  perl-Time-Piece \
@@ -846,6 +931,7 @@ RDEPENDS:perl-Time-Piece = " \
 "
 
 URI_perl-Unicode-UCD = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Unicode-UCD-0.78-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Unicode-UCD}"
 RDEPENDS:perl-Unicode-UCD = " \
  perl-libs \
  perl-Carp \
@@ -857,6 +943,7 @@ RDEPENDS:perl-Unicode-UCD = " \
 "
 
 URI_perl-User-pwent = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-User-pwent-1.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-User-pwent}"
 RDEPENDS:perl-User-pwent = " \
  perl-Class-Struct \
  perl-Exporter \
@@ -865,24 +952,28 @@ RDEPENDS:perl-User-pwent = " \
 "
 
 URI_perl-autouse = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-autouse-1.11-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-autouse}"
 RDEPENDS:perl-autouse = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-base = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-base-2.27-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-base}"
 RDEPENDS:perl-base = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-blib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-blib-1.07-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-blib}"
 RDEPENDS:perl-blib = " \
  perl-PathTools \
  perl-libs \
 "
 
 URI_perl-debugger = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-debugger-1.60-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-debugger}"
 RDEPENDS:perl-debugger = " \
  perl-threads \
  perl-threads-shared \
@@ -896,12 +987,14 @@ RDEPENDS:perl-debugger = " \
 "
 
 URI_perl-deprecate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-deprecate-0.04-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-deprecate}"
 RDEPENDS:perl-deprecate = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-devel-5.40.2-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-devel}"
 RDEPENDS:perl-devel = " \
  perl-Devel-PPPort \
  perl-ExtUtils-Install \
@@ -922,6 +1015,7 @@ RDEPENDS:perl-devel = " \
 "
 
 URI_perl-diagnostics = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-diagnostics-1.40-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-diagnostics}"
 RDEPENDS:perl-diagnostics = " \
  perl-libs \
  perl-Carp \
@@ -931,17 +1025,20 @@ RDEPENDS:perl-diagnostics = " \
 "
 
 URI_perl-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-doc-5.40.2-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-doc}"
 RDEPENDS:perl-doc = " \
  perl-libs \
 "
 
 URI_perl-encoding-warnings = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-encoding-warnings-0.14-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-encoding-warnings}"
 RDEPENDS:perl-encoding-warnings = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-fields = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-fields-2.27-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-fields}"
 RDEPENDS:perl-fields = " \
  perl-Hash-Util \
  perl-libs \
@@ -950,33 +1047,39 @@ RDEPENDS:perl-fields = " \
 "
 
 URI_perl-filetest = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-filetest-1.03-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-filetest}"
 RDEPENDS:perl-filetest = " \
  perl-libs \
 "
 
 URI_perl-if = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-if-0.61.000-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-if}"
 RDEPENDS:perl-if = " \
  perl-libs \
 "
 
 URI_perl-interpreter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-interpreter-5.40.2-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-interpreter}"
 RDEPENDS:perl-interpreter = " \
  glibc \
  perl-libs \
 "
 
 URI_perl-less = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-less-0.03-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-less}"
 RDEPENDS:perl-less = " \
  perl-libs \
 "
 
 URI_perl-lib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-lib-0.65-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-lib}"
 RDEPENDS:perl-lib = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-libnetcfg = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-libnetcfg-5.40.2-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-libnetcfg}"
 RDEPENDS:perl-libnetcfg = " \
  perl-libs \
  perl-ExtUtils-MakeMaker \
@@ -988,6 +1091,7 @@ RDEPENDS:perl-libnetcfg = " \
 "
 
 URI_perl-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-libs-5.40.2-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-libs}"
 RDEPENDS:perl-libs = " \
  perl-libs \
  perl-Carp \
@@ -1000,6 +1104,7 @@ RDEPENDS:perl-libs = " \
 "
 
 URI_perl-locale = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-locale-1.12-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-locale}"
 RDEPENDS:perl-locale = " \
  perl-libs \
  perl-Carp \
@@ -1007,22 +1112,26 @@ RDEPENDS:perl-locale = " \
 "
 
 URI_perl-macros = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-macros-5.40.2-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-macros}"
 RDEPENDS:perl-macros = " \
  perl-interpreter \
 "
 
 URI_perl-meta-notation = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-meta-notation-5.40.2-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-meta-notation}"
 RDEPENDS:perl-meta-notation = " \
  perl-libs \
 "
 
 URI_perl-mro = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-mro-1.29-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-mro}"
 RDEPENDS:perl-mro = " \
  glibc \
  perl-libs \
 "
 
 URI_perl-open = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-open-1.13-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-open}"
 RDEPENDS:perl-open = " \
  perl-encoding \
  perl-Encode \
@@ -1031,6 +1140,7 @@ RDEPENDS:perl-open = " \
 "
 
 URI_perl-overload = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-overload-1.37-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-overload}"
 RDEPENDS:perl-overload = " \
  perl-overloading \
  perl-Scalar-List-Utils \
@@ -1039,17 +1149,20 @@ RDEPENDS:perl-overload = " \
 "
 
 URI_perl-overloading = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-overloading-0.02-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-overloading}"
 RDEPENDS:perl-overloading = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-ph = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-ph-5.40.2-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-ph}"
 RDEPENDS:perl-ph = " \
  perl-libs \
 "
 
 URI_perl-sigtrap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-sigtrap-1.10-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-sigtrap}"
 RDEPENDS:perl-sigtrap = " \
  perl-meta-notation \
  perl-Symbol \
@@ -1058,17 +1171,20 @@ RDEPENDS:perl-sigtrap = " \
 "
 
 URI_perl-sort = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-sort-2.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-sort}"
 RDEPENDS:perl-sort = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-subs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-subs-1.04-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-subs}"
 RDEPENDS:perl-subs = " \
  perl-libs \
 "
 
 URI_perl-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-utils-5.40.2-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-utils}"
 RDEPENDS:perl-utils = " \
  perl-libs \
  perl-vars \
@@ -1080,17 +1196,20 @@ RDEPENDS:perl-utils = " \
 "
 
 URI_perl-vars = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-vars-1.05-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-vars}"
 RDEPENDS:perl-vars = " \
  perl-libs \
  perl-Carp \
 "
 
 URI_perl-vmsish = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-vmsish-1.04-512.2.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-vmsish}"
 RDEPENDS:perl-vmsish = " \
  perl-libs \
 "
 
 URI_perl-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-tests-5.40.2-512.2.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-tests}"
 RDEPENDS:perl-tests = " \
  perl \
 "

@@ -8,12 +8,17 @@ PR = "8.el10"
 PACKAGES = "libwebp libwebp-devel libwebp-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libwebp-1.3.2-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libwebp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libwebp-1.3.2-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwebp}"
 RDEPENDS:libwebp = " \
  glibc \
 "
 
 URI_libwebp-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libwebp-devel-1.3.2-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwebp-devel}"
 RDEPENDS:libwebp-devel = " \
  libwebp \
  cmake-filesystem \
@@ -22,6 +27,7 @@ RDEPENDS:libwebp-devel = " \
 "
 
 URI_libwebp-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libwebp-tools-1.3.2-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libwebp-tools}"
 RDEPENDS:libwebp-tools = " \
  giflib \
  libpng \

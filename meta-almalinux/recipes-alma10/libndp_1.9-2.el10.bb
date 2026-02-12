@@ -8,12 +8,17 @@ PR = "2.el10"
 PACKAGES = "libndp libndp-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libndp-1.9-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libndp = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libndp-1.9-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libndp}"
 RDEPENDS:libndp = " \
  glibc \
 "
 
 URI_libndp-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libndp-devel-1.9-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libndp-devel}"
 RDEPENDS:libndp-devel = " \
  pkgconf-pkg-config \
  libndp \

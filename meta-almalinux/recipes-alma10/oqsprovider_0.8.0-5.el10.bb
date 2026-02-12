@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "oqsprovider"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/oqsprovider-0.8.0-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_oqsprovider = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/oqsprovider-0.8.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_oqsprovider}"
 RDEPENDS:oqsprovider = " \
  glibc \
  openssl \

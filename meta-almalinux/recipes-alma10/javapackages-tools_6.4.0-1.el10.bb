@@ -8,10 +8,15 @@ PR = "1.el10"
 PACKAGES = "javapackages-filesystem javapackages-tools javapackages-common javapackages-compat javapackages-generators javapackages-local-openjdk21 maven-local-openjdk21 python3-javapackages"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/javapackages-tools-6.4.0-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_javapackages-filesystem = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/javapackages-filesystem-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_javapackages-filesystem}"
 RDEPENDS:javapackages-filesystem = ""
 
 URI_javapackages-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/javapackages-tools-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_javapackages-tools}"
 RDEPENDS:javapackages-tools = " \
  coreutils \
  bash \
@@ -20,16 +25,19 @@ RDEPENDS:javapackages-tools = " \
 "
 
 URI_javapackages-common = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/javapackages-common-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_javapackages-common}"
 RDEPENDS:javapackages-common = " \
  javapackages-generators \
 "
 
 URI_javapackages-compat = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/javapackages-compat-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_javapackages-compat}"
 RDEPENDS:javapackages-compat = " \
  javapackages-local-openjdk21 \
 "
 
 URI_javapackages-generators = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/javapackages-generators-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_javapackages-generators}"
 RDEPENDS:javapackages-generators = " \
  python3 \
  python3-javapackages \
@@ -37,6 +45,7 @@ RDEPENDS:javapackages-generators = " \
 "
 
 URI_javapackages-local-openjdk21 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/javapackages-local-openjdk21-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_javapackages-local-openjdk21}"
 RDEPENDS:javapackages-local-openjdk21 = " \
  javapackages-common \
  java-21-openjdk-devel \
@@ -46,6 +55,7 @@ RDEPENDS:javapackages-local-openjdk21 = " \
 "
 
 URI_maven-local-openjdk21 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/maven-local-openjdk21-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_maven-local-openjdk21}"
 RDEPENDS:maven-local-openjdk21 = " \
  maven-surefire-plugin \
  maven-jar-plugin \
@@ -60,6 +70,7 @@ RDEPENDS:maven-local-openjdk21 = " \
 "
 
 URI_python3-javapackages = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-javapackages-6.4.0-1.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-javapackages}"
 RDEPENDS:python3-javapackages = " \
  python3 \
  python3-lxml \

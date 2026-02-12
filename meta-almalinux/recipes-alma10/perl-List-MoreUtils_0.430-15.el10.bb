@@ -8,7 +8,11 @@ PR = "15.el10"
 PACKAGES = "perl-List-MoreUtils perl-List-MoreUtils-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-List-MoreUtils-0.430-15.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-List-MoreUtils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-List-MoreUtils-0.430-15.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-List-MoreUtils}"
 RDEPENDS:perl-List-MoreUtils = " \
  perl-libs \
  perl-Carp \
@@ -20,6 +24,7 @@ RDEPENDS:perl-List-MoreUtils = " \
 "
 
 URI_perl-List-MoreUtils-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-List-MoreUtils-tests-0.430-15.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-List-MoreUtils-tests}"
 RDEPENDS:perl-List-MoreUtils-tests = " \
  perl-List-MoreUtils \
  perl-Test-Harness \

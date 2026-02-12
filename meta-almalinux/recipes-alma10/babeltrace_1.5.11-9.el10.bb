@@ -8,7 +8,11 @@ PR = "9.el10"
 PACKAGES = "libbabeltrace libbabeltrace-devel python3-babeltrace babeltrace"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/babeltrace-1.5.11-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libbabeltrace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libbabeltrace-1.5.11-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libbabeltrace}"
 RDEPENDS:libbabeltrace = " \
  libuuid \
  elfutils-libelf \
@@ -19,6 +23,7 @@ RDEPENDS:libbabeltrace = " \
 "
 
 URI_libbabeltrace-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libbabeltrace-devel-1.5.11-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libbabeltrace-devel}"
 RDEPENDS:libbabeltrace-devel = " \
  glib2-devel \
  libbabeltrace \
@@ -29,6 +34,7 @@ RDEPENDS:libbabeltrace-devel = " \
 "
 
 URI_python3-babeltrace = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-babeltrace-1.5.11-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-babeltrace}"
 RDEPENDS:python3-babeltrace = " \
  glibc \
  python3 \
@@ -36,6 +42,7 @@ RDEPENDS:python3-babeltrace = " \
 "
 
 URI_babeltrace = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/babeltrace-1.5.11-9.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_babeltrace}"
 RDEPENDS:babeltrace = " \
  libuuid \
  libbabeltrace \

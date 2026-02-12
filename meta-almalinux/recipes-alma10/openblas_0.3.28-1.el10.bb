@@ -8,10 +8,15 @@ PR = "1.el10"
 PACKAGES = "openblas openblas-openmp openblas-openmp64 openblas-serial openblas-devel openblas-openmp64_ openblas-serial64 openblas-serial64_ openblas-static openblas-threads openblas-threads64 openblas-threads64_"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/openblas-0.3.28-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_openblas = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openblas-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas}"
 RDEPENDS:openblas = ""
 
 URI_openblas-openmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openblas-openmp-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-openmp}"
 RDEPENDS:openblas-openmp = " \
  libgcc \
  libgfortran \
@@ -21,6 +26,7 @@ RDEPENDS:openblas-openmp = " \
 "
 
 URI_openblas-openmp64 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openblas-openmp64-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-openmp64}"
 RDEPENDS:openblas-openmp64 = " \
  libgcc \
  libgfortran \
@@ -30,6 +36,7 @@ RDEPENDS:openblas-openmp64 = " \
 "
 
 URI_openblas-serial = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openblas-serial-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-serial}"
 RDEPENDS:openblas-serial = " \
  glibc \
  openblas \
@@ -37,6 +44,7 @@ RDEPENDS:openblas-serial = " \
 "
 
 URI_openblas-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-devel-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-devel}"
 RDEPENDS:openblas-devel = " \
  openblas-openmp64_ \
  openblas-serial64 \
@@ -52,6 +60,7 @@ RDEPENDS:openblas-devel = " \
 "
 
 URI_openblas-openmp64_ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-openmp64_-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-openmp64_}"
 RDEPENDS:openblas-openmp64_ = " \
  libgcc \
  libgfortran \
@@ -61,6 +70,7 @@ RDEPENDS:openblas-openmp64_ = " \
 "
 
 URI_openblas-serial64 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-serial64-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-serial64}"
 RDEPENDS:openblas-serial64 = " \
  glibc \
  openblas \
@@ -68,6 +78,7 @@ RDEPENDS:openblas-serial64 = " \
 "
 
 URI_openblas-serial64_ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-serial64_-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-serial64_}"
 RDEPENDS:openblas-serial64_ = " \
  glibc \
  openblas \
@@ -75,11 +86,13 @@ RDEPENDS:openblas-serial64_ = " \
 "
 
 URI_openblas-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-static-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-static}"
 RDEPENDS:openblas-static = " \
  openblas-devel \
 "
 
 URI_openblas-threads = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-threads-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-threads}"
 RDEPENDS:openblas-threads = " \
  glibc \
  openblas \
@@ -87,6 +100,7 @@ RDEPENDS:openblas-threads = " \
 "
 
 URI_openblas-threads64 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-threads64-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-threads64}"
 RDEPENDS:openblas-threads64 = " \
  glibc \
  openblas \
@@ -94,6 +108,7 @@ RDEPENDS:openblas-threads64 = " \
 "
 
 URI_openblas-threads64_ = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/openblas-threads64_-0.3.28-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openblas-threads64_}"
 RDEPENDS:openblas-threads64_ = " \
  glibc \
  openblas \

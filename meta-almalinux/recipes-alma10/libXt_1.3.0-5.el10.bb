@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "libXt libXt-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libXt-1.3.0-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libXt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libXt-1.3.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libXt}"
 RDEPENDS:libXt = " \
  glibc \
  libICE \
@@ -17,6 +21,7 @@ RDEPENDS:libXt = " \
 "
 
 URI_libXt-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libXt-devel-1.3.0-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libXt-devel}"
 RDEPENDS:libXt-devel = " \
  pkgconf-pkg-config \
  libICE-devel \

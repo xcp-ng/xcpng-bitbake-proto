@@ -8,7 +8,11 @@ PR = "15.el10"
 PACKAGES = "ocaml-findlib ocaml-findlib-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/ocaml-findlib-1.9.6-15.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ocaml-findlib = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-findlib-1.9.6-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-findlib}"
 RDEPENDS:ocaml-findlib = " \
  glibc \
  ocaml \
@@ -17,6 +21,7 @@ RDEPENDS:ocaml-findlib = " \
 "
 
 URI_ocaml-findlib-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/ocaml-findlib-devel-1.9.6-15.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_ocaml-findlib-devel}"
 RDEPENDS:ocaml-findlib-devel = " \
  ocaml-runtime \
  ocaml \

@@ -8,13 +8,18 @@ PR = "9.el10"
 PACKAGES = "jaxb-stax-ex jaxb-stax-ex-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/jaxb-stax-ex-2.1.0-9.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_jaxb-stax-ex = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jaxb-stax-ex-2.1.0-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jaxb-stax-ex}"
 RDEPENDS:jaxb-stax-ex = " \
  jakarta-activation \
  javapackages-filesystem \
 "
 
 URI_jaxb-stax-ex-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/jaxb-stax-ex-javadoc-2.1.0-9.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_jaxb-stax-ex-javadoc}"
 RDEPENDS:jaxb-stax-ex-javadoc = " \
  javapackages-filesystem \
 "

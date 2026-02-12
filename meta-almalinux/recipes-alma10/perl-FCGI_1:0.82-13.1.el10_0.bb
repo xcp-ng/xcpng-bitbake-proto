@@ -8,7 +8,11 @@ PR = "13.1.el10_0"
 PACKAGES = "perl-FCGI perl-FCGI-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-FCGI-0.82-13.1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-FCGI = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-FCGI-0.82-13.1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-FCGI}"
 RDEPENDS:perl-FCGI = " \
  glibc \
  perl-libs \
@@ -16,6 +20,7 @@ RDEPENDS:perl-FCGI = " \
 "
 
 URI_perl-FCGI-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-FCGI-tests-0.82-13.1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-FCGI-tests}"
 RDEPENDS:perl-FCGI-tests = " \
  perl-Test \
  perl-Test-Harness \

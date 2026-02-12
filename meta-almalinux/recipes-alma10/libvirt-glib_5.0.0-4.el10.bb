@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "libvirt-glib libvirt-gconfig libvirt-gconfig-devel libvirt-glib-devel libvirt-gobject libvirt-gobject-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libvirt-glib-5.0.0-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libvirt-glib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libvirt-glib-5.0.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-glib}"
 RDEPENDS:libvirt-glib = " \
  glibc \
  libvirt-libs \
@@ -16,6 +20,7 @@ RDEPENDS:libvirt-glib = " \
 "
 
 URI_libvirt-gconfig = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvirt-gconfig-5.0.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-gconfig}"
 RDEPENDS:libvirt-gconfig = " \
  glibc \
  libxml2 \
@@ -23,6 +28,7 @@ RDEPENDS:libvirt-gconfig = " \
 "
 
 URI_libvirt-gconfig-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvirt-gconfig-devel-5.0.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-gconfig-devel}"
 RDEPENDS:libvirt-gconfig-devel = " \
  libxml2-devel \
  libvirt-gconfig \
@@ -31,6 +37,7 @@ RDEPENDS:libvirt-gconfig-devel = " \
 "
 
 URI_libvirt-glib-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvirt-glib-devel-5.0.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-glib-devel}"
 RDEPENDS:libvirt-glib-devel = " \
  libvirt-glib \
  glib2-devel \
@@ -38,6 +45,7 @@ RDEPENDS:libvirt-glib-devel = " \
 "
 
 URI_libvirt-gobject = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvirt-gobject-5.0.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-gobject}"
 RDEPENDS:libvirt-gobject = " \
  libvirt-gconfig \
  glib2 \
@@ -47,6 +55,7 @@ RDEPENDS:libvirt-gobject = " \
 "
 
 URI_libvirt-gobject-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libvirt-gobject-devel-5.0.0-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libvirt-gobject-devel}"
 RDEPENDS:libvirt-gobject-devel = " \
  glib2-devel \
  pkgconf-pkg-config \

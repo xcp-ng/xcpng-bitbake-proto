@@ -8,7 +8,11 @@ PR = "7.el10_0"
 PACKAGES = "openssh openssh-clients openssh-keycat openssh-server openssh-askpass openssh-keysign openssh-sk-dummy"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/openssh-9.9p1-7.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_openssh = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/openssh-9.9p1-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openssh}"
 RDEPENDS:openssh = " \
  util-linux \
  audit-libs \
@@ -18,6 +22,7 @@ RDEPENDS:openssh = " \
 "
 
 URI_openssh-clients = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/openssh-clients-9.9p1-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openssh-clients}"
 RDEPENDS:openssh-clients = " \
  zlib-ng-compat \
  openssh \
@@ -32,6 +37,7 @@ RDEPENDS:openssh-clients = " \
 "
 
 URI_openssh-keycat = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/openssh-keycat-9.9p1-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openssh-keycat}"
 RDEPENDS:openssh-keycat = " \
  glibc \
  pam-libs \
@@ -39,6 +45,7 @@ RDEPENDS:openssh-keycat = " \
 "
 
 URI_openssh-server = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/openssh-server-9.9p1-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openssh-server}"
 RDEPENDS:openssh-server = " \
  shadow-utils \
  systemd \
@@ -58,6 +65,7 @@ RDEPENDS:openssh-server = " \
 "
 
 URI_openssh-askpass = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openssh-askpass-9.9p1-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openssh-askpass}"
 RDEPENDS:openssh-askpass = " \
  glibc \
  openssh \
@@ -66,6 +74,7 @@ RDEPENDS:openssh-askpass = " \
 "
 
 URI_openssh-keysign = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/openssh-keysign-9.9p1-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openssh-keysign}"
 RDEPENDS:openssh-keysign = " \
  glibc \
  openssl-libs \
@@ -74,6 +83,7 @@ RDEPENDS:openssh-keysign = " \
 "
 
 URI_openssh-sk-dummy = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/openssh-sk-dummy-9.9p1-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_openssh-sk-dummy}"
 RDEPENDS:openssh-sk-dummy = " \
  glibc \
  openssl-libs \

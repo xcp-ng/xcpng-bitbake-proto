@@ -8,7 +8,11 @@ PR = "3.el10_0.2"
 PACKAGES = "cloud-init"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/cloud-init-24.4-3.el10_0.2.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cloud-init = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cloud-init-24.4-3.el10_0.2.noarch.rpm;unpack=0"
+SRC_URI += "${URI_cloud-init}"
 RDEPENDS:cloud-init = " \
  python3 \
  systemd \

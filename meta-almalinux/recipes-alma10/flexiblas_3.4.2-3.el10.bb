@@ -8,12 +8,17 @@ PR = "3.el10"
 PACKAGES = "flexiblas flexiblas-devel flexiblas-netlib flexiblas-netlib64 flexiblas-openblas-openmp flexiblas-openblas-openmp64 flexiblas-openblas-serial flexiblas-hook-profile flexiblas-hook-profile64 flexiblas-openblas-serial64 flexiblas-openblas-threads flexiblas-openblas-threads64"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/flexiblas-3.4.2-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_flexiblas = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flexiblas-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas}"
 RDEPENDS:flexiblas = " \
  flexiblas-netlib \
 "
 
 URI_flexiblas-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flexiblas-devel-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-devel}"
 RDEPENDS:flexiblas-devel = " \
  flexiblas \
  flexiblas-netlib \
@@ -23,6 +28,7 @@ RDEPENDS:flexiblas-devel = " \
 "
 
 URI_flexiblas-netlib = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flexiblas-netlib-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-netlib}"
 RDEPENDS:flexiblas-netlib = " \
  flexiblas \
  flexiblas-openblas-openmp \
@@ -33,6 +39,7 @@ RDEPENDS:flexiblas-netlib = " \
 "
 
 URI_flexiblas-netlib64 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flexiblas-netlib64-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-netlib64}"
 RDEPENDS:flexiblas-netlib64 = " \
  flexiblas \
  libgcc \
@@ -43,6 +50,7 @@ RDEPENDS:flexiblas-netlib64 = " \
 "
 
 URI_flexiblas-openblas-openmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flexiblas-openblas-openmp-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-openblas-openmp}"
 RDEPENDS:flexiblas-openblas-openmp = " \
  glibc \
  openblas-openmp \
@@ -51,6 +59,7 @@ RDEPENDS:flexiblas-openblas-openmp = " \
 "
 
 URI_flexiblas-openblas-openmp64 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flexiblas-openblas-openmp64-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-openblas-openmp64}"
 RDEPENDS:flexiblas-openblas-openmp64 = " \
  glibc \
  flexiblas-netlib64 \
@@ -59,6 +68,7 @@ RDEPENDS:flexiblas-openblas-openmp64 = " \
 "
 
 URI_flexiblas-openblas-serial = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/flexiblas-openblas-serial-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-openblas-serial}"
 RDEPENDS:flexiblas-openblas-serial = " \
  glibc \
  flexiblas-netlib \
@@ -67,6 +77,7 @@ RDEPENDS:flexiblas-openblas-serial = " \
 "
 
 URI_flexiblas-hook-profile = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flexiblas-hook-profile-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-hook-profile}"
 RDEPENDS:flexiblas-hook-profile = " \
  flexiblas \
  flexiblas-netlib \
@@ -76,6 +87,7 @@ RDEPENDS:flexiblas-hook-profile = " \
 "
 
 URI_flexiblas-hook-profile64 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flexiblas-hook-profile64-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-hook-profile64}"
 RDEPENDS:flexiblas-hook-profile64 = " \
  flexiblas \
  flexiblas-netlib64 \
@@ -85,6 +97,7 @@ RDEPENDS:flexiblas-hook-profile64 = " \
 "
 
 URI_flexiblas-openblas-serial64 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flexiblas-openblas-serial64-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-openblas-serial64}"
 RDEPENDS:flexiblas-openblas-serial64 = " \
  glibc \
  flexiblas-netlib64 \
@@ -93,6 +106,7 @@ RDEPENDS:flexiblas-openblas-serial64 = " \
 "
 
 URI_flexiblas-openblas-threads = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flexiblas-openblas-threads-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-openblas-threads}"
 RDEPENDS:flexiblas-openblas-threads = " \
  glibc \
  openblas-threads \
@@ -101,6 +115,7 @@ RDEPENDS:flexiblas-openblas-threads = " \
 "
 
 URI_flexiblas-openblas-threads64 = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/flexiblas-openblas-threads64-3.4.2-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_flexiblas-openblas-threads64}"
 RDEPENDS:flexiblas-openblas-threads64 = " \
  glibc \
  flexiblas-netlib64 \

@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-Locale-Maketext perl-Locale-Maketext-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Locale-Maketext-1.33-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Locale-Maketext = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Locale-Maketext-1.33-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Locale-Maketext}"
 RDEPENDS:perl-Locale-Maketext = " \
  perl-Locale-Maketext \
  perl-I18N-LangTags \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Locale-Maketext = " \
 "
 
 URI_perl-Locale-Maketext-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Locale-Maketext-tests-1.33-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Locale-Maketext-tests}"
 RDEPENDS:perl-Locale-Maketext-tests = " \
  perl-Test-Harness \
  perl-libs \

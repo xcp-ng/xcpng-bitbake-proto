@@ -8,7 +8,11 @@ PR = "1.el10_0.alma.1"
 PACKAGES = "libdnf-plugin-subscription-manager python3-cloud-what python3-subscription-manager-rhsm subscription-manager subscription-manager-plugin-ostree"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/subscription-manager-1.30.6.1-1.el10_0.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libdnf-plugin-subscription-manager = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libdnf-plugin-subscription-manager-1.30.6.1-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libdnf-plugin-subscription-manager}"
 RDEPENDS:libdnf-plugin-subscription-manager = " \
  zlib-ng-compat \
  openssl-libs \
@@ -20,6 +24,7 @@ RDEPENDS:libdnf-plugin-subscription-manager = " \
 "
 
 URI_python3-cloud-what = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-cloud-what-1.30.6.1-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-cloud-what}"
 RDEPENDS:python3-cloud-what = " \
  python3 \
  dmidecode \
@@ -27,6 +32,7 @@ RDEPENDS:python3-cloud-what = " \
 "
 
 URI_python3-subscription-manager-rhsm = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-subscription-manager-rhsm-1.30.6.1-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-subscription-manager-rhsm}"
 RDEPENDS:python3-subscription-manager-rhsm = " \
  python3 \
  python3-iniparse \
@@ -39,6 +45,7 @@ RDEPENDS:python3-subscription-manager-rhsm = " \
 "
 
 URI_subscription-manager = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/subscription-manager-1.30.6.1-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subscription-manager}"
 RDEPENDS:subscription-manager = " \
  python3 \
  systemd \
@@ -64,6 +71,7 @@ RDEPENDS:subscription-manager = " \
 "
 
 URI_subscription-manager-plugin-ostree = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/subscription-manager-plugin-ostree-1.30.6.1-1.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_subscription-manager-plugin-ostree}"
 RDEPENDS:subscription-manager-plugin-ostree = " \
  python3 \
  python3-iniparse \

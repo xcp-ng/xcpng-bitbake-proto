@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "rpm-ostree rpm-ostree-libs rpm-ostree-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/rpm-ostree-2025.5-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_rpm-ostree = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-ostree-2025.5-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-ostree}"
 RDEPENDS:rpm-ostree = " \
  ostree-libs \
  systemd-libs \
@@ -39,6 +43,7 @@ RDEPENDS:rpm-ostree = " \
 "
 
 URI_rpm-ostree-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/rpm-ostree-libs-2025.5-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-ostree-libs}"
 RDEPENDS:rpm-ostree-libs = " \
  ostree-libs \
  libgcc \
@@ -50,6 +55,7 @@ RDEPENDS:rpm-ostree-libs = " \
 "
 
 URI_rpm-ostree-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rpm-ostree-devel-2025.5-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_rpm-ostree-devel}"
 RDEPENDS:rpm-ostree-devel = " \
  ostree-devel \
  pkgconf-pkg-config \

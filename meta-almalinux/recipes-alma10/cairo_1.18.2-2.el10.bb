@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "cairo cairo-devel cairo-gobject cairo-gobject-devel cairo-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/cairo-1.18.2-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_cairo = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cairo-1.18.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cairo}"
 RDEPENDS:cairo = " \
  zlib-ng-compat \
  freetype \
@@ -23,6 +27,7 @@ RDEPENDS:cairo = " \
 "
 
 URI_cairo-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cairo-devel-1.18.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cairo-devel}"
 RDEPENDS:cairo-devel = " \
  libXext-devel \
  zlib-ng-compat-devel \
@@ -39,6 +44,7 @@ RDEPENDS:cairo-devel = " \
 "
 
 URI_cairo-gobject = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cairo-gobject-1.18.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cairo-gobject}"
 RDEPENDS:cairo-gobject = " \
  glibc \
  cairo \
@@ -46,6 +52,7 @@ RDEPENDS:cairo-gobject = " \
 "
 
 URI_cairo-gobject-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cairo-gobject-devel-1.18.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cairo-gobject-devel}"
 RDEPENDS:cairo-gobject-devel = " \
  libXext-devel \
  glib2-devel \
@@ -63,6 +70,7 @@ RDEPENDS:cairo-gobject-devel = " \
 "
 
 URI_cairo-tools = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/cairo-tools-1.18.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cairo-tools}"
 RDEPENDS:cairo-tools = " \
  glibc \
  zlib-ng-compat \

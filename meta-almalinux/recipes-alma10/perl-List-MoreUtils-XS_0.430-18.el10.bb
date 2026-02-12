@@ -8,7 +8,11 @@ PR = "18.el10"
 PACKAGES = "perl-List-MoreUtils-XS perl-List-MoreUtils-XS-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-List-MoreUtils-XS-0.430-18.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-List-MoreUtils-XS = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-List-MoreUtils-XS-0.430-18.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-List-MoreUtils-XS}"
 RDEPENDS:perl-List-MoreUtils-XS = " \
  glibc \
  perl-libs \
@@ -17,6 +21,7 @@ RDEPENDS:perl-List-MoreUtils-XS = " \
 "
 
 URI_perl-List-MoreUtils-XS-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-List-MoreUtils-XS-tests-0.430-18.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-List-MoreUtils-XS-tests}"
 RDEPENDS:perl-List-MoreUtils-XS-tests = " \
  perl-Test-Harness \
  perl-libs \

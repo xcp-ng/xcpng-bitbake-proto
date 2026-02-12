@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "python3-jsonschema"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/python-jsonschema-4.19.1-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-jsonschema = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-jsonschema-4.19.1-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-jsonschema}"
 RDEPENDS:python3-jsonschema = " \
  python3 \
  python3-referencing \

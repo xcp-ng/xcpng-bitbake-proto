@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "libpwquality python3-pwquality libpwquality-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libpwquality-1.4.5-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libpwquality = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libpwquality-1.4.5-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libpwquality}"
 RDEPENDS:libpwquality = " \
  glibc \
  pam-libs \
@@ -17,6 +21,7 @@ RDEPENDS:libpwquality = " \
 "
 
 URI_python3-pwquality = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pwquality-1.4.5-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-pwquality}"
 RDEPENDS:python3-pwquality = " \
  glibc \
  libpwquality \
@@ -24,6 +29,7 @@ RDEPENDS:python3-pwquality = " \
 "
 
 URI_libpwquality-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libpwquality-devel-1.4.5-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libpwquality-devel}"
 RDEPENDS:libpwquality-devel = " \
  libpwquality \
  pkgconf-pkg-config \

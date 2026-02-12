@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "libqmi libqmi-utils libqmi-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libqmi-1.34.0-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libqmi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libqmi-1.34.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libqmi}"
 RDEPENDS:libqmi = " \
  libmbim \
  libgcc \
@@ -18,6 +22,7 @@ RDEPENDS:libqmi = " \
 "
 
 URI_libqmi-utils = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libqmi-utils-1.34.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libqmi-utils}"
 RDEPENDS:libqmi-utils = " \
  libmbim \
  libqmi \
@@ -30,6 +35,7 @@ RDEPENDS:libqmi-utils = " \
 "
 
 URI_libqmi-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libqmi-devel-1.34.0-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libqmi-devel}"
 RDEPENDS:libqmi-devel = " \
  glib2-devel \
  libmbim-devel \

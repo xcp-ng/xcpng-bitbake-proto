@@ -8,7 +8,11 @@ PR = "34.el10"
 PACKAGES = "hunspell-si"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/hunspell-si-0.2.1-34.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_hunspell-si = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/hunspell-si-0.2.1-34.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_hunspell-si}"
 RDEPENDS:hunspell-si = " \
  hunspell \
 "

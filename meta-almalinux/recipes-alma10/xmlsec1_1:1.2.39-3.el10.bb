@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "xmlsec1 xmlsec1-nss xmlsec1-openssl xmlsec1-devel xmlsec1-openssl-devel xmlsec1-nss-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xmlsec1-1.2.39-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xmlsec1 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xmlsec1-1.2.39-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xmlsec1}"
 RDEPENDS:xmlsec1 = " \
  glibc \
  libxslt \
@@ -17,6 +21,7 @@ RDEPENDS:xmlsec1 = " \
 "
 
 URI_xmlsec1-nss = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xmlsec1-nss-1.2.39-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xmlsec1-nss}"
 RDEPENDS:xmlsec1-nss = " \
  nss \
  libxslt \
@@ -29,6 +34,7 @@ RDEPENDS:xmlsec1-nss = " \
 "
 
 URI_xmlsec1-openssl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xmlsec1-openssl-1.2.39-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xmlsec1-openssl}"
 RDEPENDS:xmlsec1-openssl = " \
  libxslt \
  libtool-ltdl \
@@ -39,6 +45,7 @@ RDEPENDS:xmlsec1-openssl = " \
 "
 
 URI_xmlsec1-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmlsec1-devel-1.2.39-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xmlsec1-devel}"
 RDEPENDS:xmlsec1-devel = " \
  libxml2-devel \
  libxslt-devel \
@@ -49,6 +56,7 @@ RDEPENDS:xmlsec1-devel = " \
 "
 
 URI_xmlsec1-openssl-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/xmlsec1-openssl-devel-1.2.39-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xmlsec1-openssl-devel}"
 RDEPENDS:xmlsec1-openssl-devel = " \
  libxml2-devel \
  libxslt-devel \
@@ -58,6 +66,7 @@ RDEPENDS:xmlsec1-openssl-devel = " \
 "
 
 URI_xmlsec1-nss-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xmlsec1-nss-devel-1.2.39-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xmlsec1-nss-devel}"
 RDEPENDS:xmlsec1-nss-devel = " \
  libxml2-devel \
  nspr-devel \

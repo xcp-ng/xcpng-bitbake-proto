@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-PathTools perl-PathTools-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-PathTools-3.91-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-PathTools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-PathTools-3.91-512.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PathTools}"
 RDEPENDS:perl-PathTools = " \
  perl-constant \
  perl-Scalar-List-Utils \
@@ -21,6 +25,7 @@ RDEPENDS:perl-PathTools = " \
 "
 
 URI_perl-PathTools-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-PathTools-tests-3.91-512.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PathTools-tests}"
 RDEPENDS:perl-PathTools-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-File-Fetch perl-File-Fetch-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-File-Fetch-1.04-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-Fetch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-Fetch-1.04-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Fetch}"
 RDEPENDS:perl-File-Fetch = " \
  perl-constant \
  perl-libs \
@@ -27,6 +31,7 @@ RDEPENDS:perl-File-Fetch = " \
 "
 
 URI_perl-File-Fetch-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-Fetch-tests-1.04-511.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-Fetch-tests}"
 RDEPENDS:perl-File-Fetch-tests = " \
  perl-Test-Harness \
  perl-libs \

@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "qt6-qtwayland qt6-qtwayland-devel qt6-qtwayland-examples qt6-qtwayland-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/qt6-qtwayland-6.8.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_qt6-qtwayland = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtwayland-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtwayland}"
 RDEPENDS:qt6-qtwayland = " \
  qt6-qtdeclarative \
  qt6-qtsvg \
@@ -26,6 +30,7 @@ RDEPENDS:qt6-qtwayland = " \
 "
 
 URI_qt6-qtwayland-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/qt6-qtwayland-devel-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtwayland-devel}"
 RDEPENDS:qt6-qtwayland-devel = " \
  qt6-qtdeclarative-devel \
  cmake-filesystem \
@@ -38,6 +43,7 @@ RDEPENDS:qt6-qtwayland-devel = " \
 "
 
 URI_qt6-qtwayland-examples = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/qt6-qtwayland-examples-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtwayland-examples}"
 RDEPENDS:qt6-qtwayland-examples = " \
  qt6-qtdeclarative \
  libwayland-client \
@@ -51,6 +57,7 @@ RDEPENDS:qt6-qtwayland-examples = " \
 "
 
 URI_qt6-qtwayland-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/qt6-qtwayland-tests-6.8.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_qt6-qtwayland-tests}"
 RDEPENDS:qt6-qtwayland-tests = " \
  libwayland-client \
  libwayland-cursor \

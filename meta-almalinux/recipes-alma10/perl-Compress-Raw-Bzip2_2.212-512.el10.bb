@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-Compress-Raw-Bzip2 perl-Compress-Raw-Bzip2-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Compress-Raw-Bzip2-2.212-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Compress-Raw-Bzip2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Compress-Raw-Bzip2-2.212-512.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Compress-Raw-Bzip2}"
 RDEPENDS:perl-Compress-Raw-Bzip2 = " \
  perl-constant \
  perl-libs \
@@ -19,6 +23,7 @@ RDEPENDS:perl-Compress-Raw-Bzip2 = " \
 "
 
 URI_perl-Compress-Raw-Bzip2-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Compress-Raw-Bzip2-tests-2.212-512.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Compress-Raw-Bzip2-tests}"
 RDEPENDS:perl-Compress-Raw-Bzip2-tests = " \
  perl-Test-Harness \
  perl-libs \

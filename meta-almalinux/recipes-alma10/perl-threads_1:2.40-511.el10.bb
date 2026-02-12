@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-threads perl-threads-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-threads-2.40-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-threads = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-threads-2.40-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-threads}"
 RDEPENDS:perl-threads = " \
  glibc \
  perl-overload \
@@ -17,6 +21,7 @@ RDEPENDS:perl-threads = " \
 "
 
 URI_perl-threads-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-threads-tests-2.40-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-threads-tests}"
 RDEPENDS:perl-threads-tests = " \
  perl-threads \
  perl-threads-shared \

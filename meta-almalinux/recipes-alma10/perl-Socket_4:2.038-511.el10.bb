@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Socket perl-Socket-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Socket-2.038-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Socket = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Socket-2.038-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Socket}"
 RDEPENDS:perl-Socket = " \
  glibc \
  perl-Exporter \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Socket = " \
 "
 
 URI_perl-Socket-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Socket-tests-2.038-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Socket-tests}"
 RDEPENDS:perl-Socket-tests = " \
  perl-Test-Harness \
  perl-libs \

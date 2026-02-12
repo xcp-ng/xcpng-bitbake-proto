@@ -8,7 +8,11 @@ PR = "31.el10"
 PACKAGES = "perl-Encode-Locale perl-Encode-Locale-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Encode-Locale-1.05-31.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Encode-Locale = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Encode-Locale-1.05-31.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Encode-Locale}"
 RDEPENDS:perl-Encode-Locale = " \
  perl-libs \
  perl-I18N-Langinfo \
@@ -18,6 +22,7 @@ RDEPENDS:perl-Encode-Locale = " \
 "
 
 URI_perl-Encode-Locale-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Encode-Locale-tests-1.05-31.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Encode-Locale-tests}"
 RDEPENDS:perl-Encode-Locale-tests = " \
  perl-Test-Harness \
  perl-libs \

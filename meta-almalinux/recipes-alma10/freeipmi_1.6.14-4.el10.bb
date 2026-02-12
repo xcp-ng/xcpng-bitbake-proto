@@ -8,7 +8,11 @@ PR = "4.el10"
 PACKAGES = "freeipmi freeipmi-bmc-watchdog freeipmi-ipmidetectd freeipmi-ipmiseld freeipmi-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/freeipmi-1.6.14-4.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_freeipmi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeipmi-1.6.14-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeipmi}"
 RDEPENDS:freeipmi = " \
  glibc \
  systemd \
@@ -17,6 +21,7 @@ RDEPENDS:freeipmi = " \
 "
 
 URI_freeipmi-bmc-watchdog = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeipmi-bmc-watchdog-1.6.14-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeipmi-bmc-watchdog}"
 RDEPENDS:freeipmi-bmc-watchdog = " \
  glibc \
  freeipmi \
@@ -24,6 +29,7 @@ RDEPENDS:freeipmi-bmc-watchdog = " \
 "
 
 URI_freeipmi-ipmidetectd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeipmi-ipmidetectd-1.6.14-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeipmi-ipmidetectd}"
 RDEPENDS:freeipmi-ipmidetectd = " \
  glibc \
  freeipmi \
@@ -31,6 +37,7 @@ RDEPENDS:freeipmi-ipmidetectd = " \
 "
 
 URI_freeipmi-ipmiseld = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/freeipmi-ipmiseld-1.6.14-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeipmi-ipmiseld}"
 RDEPENDS:freeipmi-ipmiseld = " \
  glibc \
  freeipmi \
@@ -38,6 +45,7 @@ RDEPENDS:freeipmi-ipmiseld = " \
 "
 
 URI_freeipmi-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/freeipmi-devel-1.6.14-4.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_freeipmi-devel}"
 RDEPENDS:freeipmi-devel = " \
  freeipmi \
  pkgconf-pkg-config \

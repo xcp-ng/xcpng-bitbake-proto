@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "python3-dbus dbus-python-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/dbus-python-1.3.2-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python3-dbus = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/python3-dbus-1.3.2-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-dbus}"
 RDEPENDS:python3-dbus = " \
  glibc \
  dbus-libs \
@@ -17,6 +21,7 @@ RDEPENDS:python3-dbus = " \
 "
 
 URI_dbus-python-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/dbus-python-devel-1.3.2-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_dbus-python-devel}"
 RDEPENDS:dbus-python-devel = " \
  dbus-devel \
  pkgconf-pkg-config \

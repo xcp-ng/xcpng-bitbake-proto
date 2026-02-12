@@ -8,7 +8,11 @@ PR = "1.el10_0.2"
 PACKAGES = "mod_proxy_cluster"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mod_proxy_cluster-1.3.22-1.el10_0.2.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mod_proxy_cluster = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mod_proxy_cluster-1.3.22-1.el10_0.2.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mod_proxy_cluster}"
 RDEPENDS:mod_proxy_cluster = " \
  python3-policycoreutils \
  httpd \

@@ -8,7 +8,11 @@ PR = "13.el10_0"
 PACKAGES = "podman podman-docker podman-remote podman-tests podman-machine podmansh"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/podman-5.4.0-13.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_podman = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/podman-5.4.0-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_podman}"
 RDEPENDS:podman = " \
  containers-common-extra \
  shadow-utils-subid \
@@ -21,12 +25,14 @@ RDEPENDS:podman = " \
 "
 
 URI_podman-docker = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/podman-docker-5.4.0-13.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_podman-docker}"
 RDEPENDS:podman-docker = " \
  bash \
  podman \
 "
 
 URI_podman-remote = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/podman-remote-5.4.0-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_podman-remote}"
 RDEPENDS:podman-remote = " \
  glibc \
  gpgme \
@@ -35,6 +41,7 @@ RDEPENDS:podman-remote = " \
 "
 
 URI_podman-tests = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/podman-tests-5.4.0-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_podman-tests}"
 RDEPENDS:podman-tests = " \
  gnupg2 \
  shadow-utils-subid \
@@ -55,6 +62,7 @@ RDEPENDS:podman-tests = " \
 "
 
 URI_podman-machine = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/podman-machine-5.4.0-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_podman-machine}"
 RDEPENDS:podman-machine = " \
  qemu-img \
  gvisor-tap-vsock \
@@ -64,6 +72,7 @@ RDEPENDS:podman-machine = " \
 "
 
 URI_podmansh = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/podmansh-5.4.0-13.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_podmansh}"
 RDEPENDS:podmansh = " \
  podman \
 "

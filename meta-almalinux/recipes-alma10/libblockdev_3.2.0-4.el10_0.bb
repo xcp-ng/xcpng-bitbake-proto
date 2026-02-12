@@ -8,7 +8,11 @@ PR = "4.el10_0"
 PACKAGES = "libblockdev libblockdev-crypto libblockdev-dm libblockdev-fs libblockdev-loop libblockdev-lvm libblockdev-lvm-dbus libblockdev-mdraid libblockdev-mpath libblockdev-nvdimm libblockdev-nvme libblockdev-part libblockdev-plugins-all libblockdev-smart libblockdev-smartmontools libblockdev-swap libblockdev-tools libblockdev-utils python3-blockdev libblockdev-crypto-devel libblockdev-devel libblockdev-dm-devel libblockdev-fs-devel libblockdev-loop-devel libblockdev-lvm-dbus-devel libblockdev-lvm-devel libblockdev-mdraid-devel libblockdev-mpath-devel libblockdev-nvdimm-devel libblockdev-nvme-devel libblockdev-part-devel libblockdev-smart-devel libblockdev-smartmontools-devel libblockdev-swap-devel libblockdev-utils-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/libblockdev-3.2.0-4.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libblockdev = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev}"
 RDEPENDS:libblockdev = " \
  systemd-libs \
  kmod-libs \
@@ -18,6 +22,7 @@ RDEPENDS:libblockdev = " \
 "
 
 URI_libblockdev-crypto = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-crypto-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-crypto}"
 RDEPENDS:libblockdev-crypto = " \
  nss \
  systemd-libs \
@@ -35,6 +40,7 @@ RDEPENDS:libblockdev-crypto = " \
 "
 
 URI_libblockdev-dm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-dm-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-dm}"
 RDEPENDS:libblockdev-dm = " \
  device-mapper \
  device-mapper-libs \
@@ -46,6 +52,7 @@ RDEPENDS:libblockdev-dm = " \
 "
 
 URI_libblockdev-fs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-fs-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-fs}"
 RDEPENDS:libblockdev-fs = " \
  libuuid \
  e2fsprogs-libs \
@@ -60,6 +67,7 @@ RDEPENDS:libblockdev-fs = " \
 "
 
 URI_libblockdev-loop = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-loop-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-loop}"
 RDEPENDS:libblockdev-loop = " \
  systemd-libs \
  libgcc \
@@ -70,6 +78,7 @@ RDEPENDS:libblockdev-loop = " \
 "
 
 URI_libblockdev-lvm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-lvm-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-lvm}"
 RDEPENDS:libblockdev-lvm = " \
  device-mapper-libs \
  systemd-libs \
@@ -83,6 +92,7 @@ RDEPENDS:libblockdev-lvm = " \
 "
 
 URI_libblockdev-lvm-dbus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-lvm-dbus-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-lvm-dbus}"
 RDEPENDS:libblockdev-lvm-dbus = " \
  device-mapper-libs \
  systemd-libs \
@@ -96,6 +106,7 @@ RDEPENDS:libblockdev-lvm-dbus = " \
 "
 
 URI_libblockdev-mdraid = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-mdraid-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-mdraid}"
 RDEPENDS:libblockdev-mdraid = " \
  libbytesize \
  systemd-libs \
@@ -108,6 +119,7 @@ RDEPENDS:libblockdev-mdraid = " \
 "
 
 URI_libblockdev-mpath = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-mpath-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-mpath}"
 RDEPENDS:libblockdev-mpath = " \
  device-mapper-libs \
  systemd-libs \
@@ -118,6 +130,7 @@ RDEPENDS:libblockdev-mpath = " \
 "
 
 URI_libblockdev-nvdimm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-nvdimm-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-nvdimm}"
 RDEPENDS:libblockdev-nvdimm = " \
  libuuid \
  systemd-libs \
@@ -130,6 +143,7 @@ RDEPENDS:libblockdev-nvdimm = " \
 "
 
 URI_libblockdev-nvme = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-nvme-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-nvme}"
 RDEPENDS:libblockdev-nvme = " \
  systemd-libs \
  kmod-libs \
@@ -140,6 +154,7 @@ RDEPENDS:libblockdev-nvme = " \
 "
 
 URI_libblockdev-part = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-part-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-part}"
 RDEPENDS:libblockdev-part = " \
  systemd-libs \
  libfdisk \
@@ -151,6 +166,7 @@ RDEPENDS:libblockdev-part = " \
 "
 
 URI_libblockdev-plugins-all = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-plugins-all-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-plugins-all}"
 RDEPENDS:libblockdev-plugins-all = " \
  libblockdev-mdraid \
  libblockdev-mpath \
@@ -169,6 +185,7 @@ RDEPENDS:libblockdev-plugins-all = " \
 "
 
 URI_libblockdev-smart = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-smart-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-smart}"
 RDEPENDS:libblockdev-smart = " \
  systemd-libs \
  libatasmart \
@@ -179,6 +196,7 @@ RDEPENDS:libblockdev-smart = " \
 "
 
 URI_libblockdev-smartmontools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-smartmontools-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-smartmontools}"
 RDEPENDS:libblockdev-smartmontools = " \
  systemd-libs \
  smartmontools \
@@ -190,6 +208,7 @@ RDEPENDS:libblockdev-smartmontools = " \
 "
 
 URI_libblockdev-swap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-swap-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-swap}"
 RDEPENDS:libblockdev-swap = " \
  libuuid \
  systemd-libs \
@@ -203,6 +222,7 @@ RDEPENDS:libblockdev-swap = " \
 "
 
 URI_libblockdev-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-tools-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-tools}"
 RDEPENDS:libblockdev-tools = " \
  libbytesize \
  libblockdev \
@@ -213,6 +233,7 @@ RDEPENDS:libblockdev-tools = " \
 "
 
 URI_libblockdev-utils = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libblockdev-utils-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-utils}"
 RDEPENDS:libblockdev-utils = " \
  glibc \
  kmod-libs \
@@ -221,6 +242,7 @@ RDEPENDS:libblockdev-utils = " \
 "
 
 URI_python3-blockdev = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-blockdev-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-blockdev}"
 RDEPENDS:python3-blockdev = " \
  python3 \
  python3-bytesize \
@@ -229,6 +251,7 @@ RDEPENDS:python3-blockdev = " \
 "
 
 URI_libblockdev-crypto-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-crypto-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-crypto-devel}"
 RDEPENDS:libblockdev-crypto-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -236,6 +259,7 @@ RDEPENDS:libblockdev-crypto-devel = " \
 "
 
 URI_libblockdev-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-devel}"
 RDEPENDS:libblockdev-devel = " \
  libblockdev-utils-devel \
  glib2-devel \
@@ -244,6 +268,7 @@ RDEPENDS:libblockdev-devel = " \
 "
 
 URI_libblockdev-dm-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-dm-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-dm-devel}"
 RDEPENDS:libblockdev-dm-devel = " \
  glib2-devel \
  systemd-devel \
@@ -253,6 +278,7 @@ RDEPENDS:libblockdev-dm-devel = " \
 "
 
 URI_libblockdev-fs-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-fs-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-fs-devel}"
 RDEPENDS:libblockdev-fs-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -260,6 +286,7 @@ RDEPENDS:libblockdev-fs-devel = " \
 "
 
 URI_libblockdev-loop-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-loop-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-loop-devel}"
 RDEPENDS:libblockdev-loop-devel = " \
  libblockdev-loop \
  glib2-devel \
@@ -267,6 +294,7 @@ RDEPENDS:libblockdev-loop-devel = " \
 "
 
 URI_libblockdev-lvm-dbus-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-lvm-dbus-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-lvm-dbus-devel}"
 RDEPENDS:libblockdev-lvm-dbus-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -274,6 +302,7 @@ RDEPENDS:libblockdev-lvm-dbus-devel = " \
 "
 
 URI_libblockdev-lvm-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-lvm-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-lvm-devel}"
 RDEPENDS:libblockdev-lvm-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -281,6 +310,7 @@ RDEPENDS:libblockdev-lvm-devel = " \
 "
 
 URI_libblockdev-mdraid-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-mdraid-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-mdraid-devel}"
 RDEPENDS:libblockdev-mdraid-devel = " \
  libblockdev-mdraid \
  glib2-devel \
@@ -288,6 +318,7 @@ RDEPENDS:libblockdev-mdraid-devel = " \
 "
 
 URI_libblockdev-mpath-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-mpath-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-mpath-devel}"
 RDEPENDS:libblockdev-mpath-devel = " \
  libblockdev-utils-devel \
  glib2-devel \
@@ -295,6 +326,7 @@ RDEPENDS:libblockdev-mpath-devel = " \
 "
 
 URI_libblockdev-nvdimm-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-nvdimm-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-nvdimm-devel}"
 RDEPENDS:libblockdev-nvdimm-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -302,6 +334,7 @@ RDEPENDS:libblockdev-nvdimm-devel = " \
 "
 
 URI_libblockdev-nvme-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-nvme-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-nvme-devel}"
 RDEPENDS:libblockdev-nvme-devel = " \
  libblockdev-nvme \
  glib2-devel \
@@ -309,6 +342,7 @@ RDEPENDS:libblockdev-nvme-devel = " \
 "
 
 URI_libblockdev-part-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-part-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-part-devel}"
 RDEPENDS:libblockdev-part-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -316,6 +350,7 @@ RDEPENDS:libblockdev-part-devel = " \
 "
 
 URI_libblockdev-smart-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-smart-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-smart-devel}"
 RDEPENDS:libblockdev-smart-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -323,6 +358,7 @@ RDEPENDS:libblockdev-smart-devel = " \
 "
 
 URI_libblockdev-smartmontools-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-smartmontools-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-smartmontools-devel}"
 RDEPENDS:libblockdev-smartmontools-devel = " \
  glib2-devel \
  libblockdev-utils-devel \
@@ -330,6 +366,7 @@ RDEPENDS:libblockdev-smartmontools-devel = " \
 "
 
 URI_libblockdev-swap-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-swap-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-swap-devel}"
 RDEPENDS:libblockdev-swap-devel = " \
  libblockdev-swap \
  glib2-devel \
@@ -337,6 +374,7 @@ RDEPENDS:libblockdev-swap-devel = " \
 "
 
 URI_libblockdev-utils-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libblockdev-utils-devel-3.2.0-4.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libblockdev-utils-devel}"
 RDEPENDS:libblockdev-utils-devel = " \
  glib2-devel \
  pkgconf-pkg-config \

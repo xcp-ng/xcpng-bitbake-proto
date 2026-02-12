@@ -8,7 +8,11 @@ PR = "1.el10"
 PACKAGES = "gnome-connections"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-connections-47.2.1-1.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-connections = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-connections-47.2.1-1.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-connections}"
 RDEPENDS:gnome-connections = " \
  libhandy \
  fuse3-libs \

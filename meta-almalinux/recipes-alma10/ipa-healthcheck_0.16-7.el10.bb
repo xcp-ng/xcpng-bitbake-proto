@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "ipa-healthcheck ipa-healthcheck-core"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ipa-healthcheck-0.16-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ipa-healthcheck = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-healthcheck-0.16-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-healthcheck}"
 RDEPENDS:ipa-healthcheck = " \
  python3 \
  logrotate \
@@ -23,6 +27,7 @@ RDEPENDS:ipa-healthcheck = " \
 "
 
 URI_ipa-healthcheck-core = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipa-healthcheck-core-0.16-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipa-healthcheck-core}"
 RDEPENDS:ipa-healthcheck-core = " \
  python3 \
 "

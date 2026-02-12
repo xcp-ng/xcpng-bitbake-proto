@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "xorg-x11-xauth"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/xorg-x11-xauth-1.1.2-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xorg-x11-xauth = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/xorg-x11-xauth-1.1.2-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-xauth}"
 RDEPENDS:xorg-x11-xauth = " \
  libXmu \
  libX11 \

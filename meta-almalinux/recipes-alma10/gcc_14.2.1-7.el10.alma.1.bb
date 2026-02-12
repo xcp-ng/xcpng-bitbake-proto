@@ -8,38 +8,48 @@ PR = "7.el10.alma.1"
 PACKAGES = "libatomic libgcc libgfortran libgomp libquadmath libstdc++ cpp gcc gcc-c++ gcc-gfortran gcc-offload-amdgcn gcc-offload-nvptx gcc-plugin-annobin libasan libgccjit libgccjit-devel libgomp-offload-amdgcn libgomp-offload-nvptx libhwasan libitm libitm-devel liblsan libquadmath-devel libstdc++-devel libstdc++-docs libtsan libubsan gcc-plugin-devel libgfortran-static libquadmath-static libstdc++-static gcc-gdb-plugin libasan-static libatomic-static libhwasan-static libitm-static liblsan-static libtsan-static libubsan-static"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/gcc-14.2.1-7.el10.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libatomic = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libatomic-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libatomic}"
 RDEPENDS:libatomic = " \
  glibc \
 "
 
 URI_libgcc = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libgcc-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgcc}"
 RDEPENDS:libgcc = ""
 
 URI_libgfortran = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libgfortran-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgfortran}"
 RDEPENDS:libgfortran = " \
  glibc \
  libgcc \
 "
 
 URI_libgomp = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libgomp-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgomp}"
 RDEPENDS:libgomp = " \
  glibc \
 "
 
 URI_libquadmath = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libquadmath-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libquadmath}"
 RDEPENDS:libquadmath = " \
  glibc \
  libgcc \
 "
 
 URI_libstdc++ = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libstdc++-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstdc++}"
 RDEPENDS:libstdc++ = " \
  glibc \
  libgcc \
 "
 
 URI_cpp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/cpp-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_cpp}"
 RDEPENDS:cpp = " \
  gmp \
  zlib-ng-compat \
@@ -51,6 +61,7 @@ RDEPENDS:cpp = " \
 "
 
 URI_gcc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcc-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc}"
 RDEPENDS:gcc = " \
  gmp \
  zlib-ng-compat \
@@ -68,6 +79,7 @@ RDEPENDS:gcc = " \
 "
 
 URI_gcc-c++ = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcc-c++-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc-c++}"
 RDEPENDS:gcc-c++ = " \
  gmp \
  zlib-ng-compat \
@@ -81,6 +93,7 @@ RDEPENDS:gcc-c++ = " \
 "
 
 URI_gcc-gfortran = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcc-gfortran-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc-gfortran}"
 RDEPENDS:gcc-gfortran = " \
  libquadmath-devel \
  gmp \
@@ -95,6 +108,7 @@ RDEPENDS:gcc-gfortran = " \
 "
 
 URI_gcc-offload-amdgcn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcc-offload-amdgcn-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc-offload-amdgcn}"
 RDEPENDS:gcc-offload-amdgcn = " \
  gmp \
  zlib-ng-compat \
@@ -111,6 +125,7 @@ RDEPENDS:gcc-offload-amdgcn = " \
 "
 
 URI_gcc-offload-nvptx = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcc-offload-nvptx-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc-offload-nvptx}"
 RDEPENDS:gcc-offload-nvptx = " \
  gmp \
  zlib-ng-compat \
@@ -125,6 +140,7 @@ RDEPENDS:gcc-offload-nvptx = " \
 "
 
 URI_gcc-plugin-annobin = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gcc-plugin-annobin-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc-plugin-annobin}"
 RDEPENDS:gcc-plugin-annobin = " \
  glibc \
  libgcc \
@@ -133,6 +149,7 @@ RDEPENDS:gcc-plugin-annobin = " \
 "
 
 URI_libasan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libasan-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libasan}"
 RDEPENDS:libasan = " \
  glibc \
  libgcc \
@@ -140,6 +157,7 @@ RDEPENDS:libasan = " \
 "
 
 URI_libgccjit = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgccjit-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgccjit}"
 RDEPENDS:libgccjit = " \
  gmp \
  zlib-ng-compat \
@@ -151,17 +169,20 @@ RDEPENDS:libgccjit = " \
 "
 
 URI_libgccjit-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgccjit-devel-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgccjit-devel}"
 RDEPENDS:libgccjit-devel = " \
  libgccjit \
 "
 
 URI_libgomp-offload-amdgcn = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgomp-offload-amdgcn-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgomp-offload-amdgcn}"
 RDEPENDS:libgomp-offload-amdgcn = " \
  glibc \
  libgomp \
 "
 
 URI_libgomp-offload-nvptx = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgomp-offload-nvptx-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgomp-offload-nvptx}"
 RDEPENDS:libgomp-offload-nvptx = " \
  glibc \
  libgcc \
@@ -169,6 +190,7 @@ RDEPENDS:libgomp-offload-nvptx = " \
 "
 
 URI_libhwasan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libhwasan-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libhwasan}"
 RDEPENDS:libhwasan = " \
  glibc \
  libgcc \
@@ -176,17 +198,20 @@ RDEPENDS:libhwasan = " \
 "
 
 URI_libitm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libitm-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libitm}"
 RDEPENDS:libitm = " \
  glibc \
 "
 
 URI_libitm-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libitm-devel-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libitm-devel}"
 RDEPENDS:libitm-devel = " \
  libitm \
  gcc \
 "
 
 URI_liblsan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/liblsan-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_liblsan}"
 RDEPENDS:liblsan = " \
  glibc \
  libgcc \
@@ -194,20 +219,24 @@ RDEPENDS:liblsan = " \
 "
 
 URI_libquadmath-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libquadmath-devel-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libquadmath-devel}"
 RDEPENDS:libquadmath-devel = " \
  libquadmath \
  gcc \
 "
 
 URI_libstdc++-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstdc++-devel-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstdc++-devel}"
 RDEPENDS:libstdc++-devel = " \
  libstdc++ \
 "
 
 URI_libstdc++-docs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libstdc++-docs-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstdc++-docs}"
 RDEPENDS:libstdc++-docs = ""
 
 URI_libtsan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libtsan-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libtsan}"
 RDEPENDS:libtsan = " \
  glibc \
  libgcc \
@@ -215,6 +244,7 @@ RDEPENDS:libtsan = " \
 "
 
 URI_libubsan = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libubsan-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libubsan}"
 RDEPENDS:libubsan = " \
  glibc \
  libgcc \
@@ -222,6 +252,7 @@ RDEPENDS:libubsan = " \
 "
 
 URI_gcc-plugin-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gcc-plugin-devel-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc-plugin-devel}"
 RDEPENDS:gcc-plugin-devel = " \
  libmpc-devel \
  gcc \
@@ -231,6 +262,7 @@ RDEPENDS:gcc-plugin-devel = " \
 "
 
 URI_libgfortran-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libgfortran-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgfortran-static}"
 RDEPENDS:libgfortran-static = " \
  libquadmath-static \
  libgfortran \
@@ -238,16 +270,19 @@ RDEPENDS:libgfortran-static = " \
 "
 
 URI_libquadmath-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libquadmath-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libquadmath-static}"
 RDEPENDS:libquadmath-static = " \
  libquadmath-devel \
 "
 
 URI_libstdc++-static = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libstdc++-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libstdc++-static}"
 RDEPENDS:libstdc++-static = " \
  libstdc++-devel \
 "
 
 URI_gcc-gdb-plugin = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gcc-gdb-plugin-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gcc-gdb-plugin}"
 RDEPENDS:gcc-gdb-plugin = " \
  glibc \
  libgcc \
@@ -256,36 +291,43 @@ RDEPENDS:gcc-gdb-plugin = " \
 "
 
 URI_libasan-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libasan-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libasan-static}"
 RDEPENDS:libasan-static = " \
  libasan \
 "
 
 URI_libatomic-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libatomic-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libatomic-static}"
 RDEPENDS:libatomic-static = " \
  libatomic \
 "
 
 URI_libhwasan-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libhwasan-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libhwasan-static}"
 RDEPENDS:libhwasan-static = " \
  libhwasan \
 "
 
 URI_libitm-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libitm-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libitm-static}"
 RDEPENDS:libitm-static = " \
  libitm-devel \
 "
 
 URI_liblsan-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/liblsan-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_liblsan-static}"
 RDEPENDS:liblsan-static = " \
  liblsan \
 "
 
 URI_libtsan-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libtsan-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libtsan-static}"
 RDEPENDS:libtsan-static = " \
  libtsan \
 "
 
 URI_libubsan-static = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libubsan-static-14.2.1-7.el10.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libubsan-static}"
 RDEPENDS:libubsan-static = " \
  libubsan \
 "

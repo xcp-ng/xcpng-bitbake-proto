@@ -8,7 +8,11 @@ PR = "512.el10"
 PACKAGES = "perl-Module-Metadata perl-Module-Metadata-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Module-Metadata-1.000038-512.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Module-Metadata = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Module-Metadata-1.000038-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Metadata}"
 RDEPENDS:perl-Module-Metadata = " \
  perl-libs \
  perl-Carp \
@@ -20,6 +24,7 @@ RDEPENDS:perl-Module-Metadata = " \
 "
 
 URI_perl-Module-Metadata-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Module-Metadata-tests-1.000038-512.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Module-Metadata-tests}"
 RDEPENDS:perl-Module-Metadata-tests = " \
  perl-Test-Harness \
  perl-libs \

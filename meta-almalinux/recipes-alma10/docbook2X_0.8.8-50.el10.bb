@@ -8,7 +8,11 @@ PR = "50.el10"
 PACKAGES = "docbook2X"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/docbook2X-0.8.8-50.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_docbook2X = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/docbook2X-0.8.8-50.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_docbook2X}"
 RDEPENDS:docbook2X = " \
  perl-libs \
  libxslt \

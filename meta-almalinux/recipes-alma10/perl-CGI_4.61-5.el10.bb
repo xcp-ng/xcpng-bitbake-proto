@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-CGI perl-CGI-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-CGI-4.61-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-CGI = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-CGI-4.61-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CGI}"
 RDEPENDS:perl-CGI = " \
  perl-libs \
  perl-Carp \
@@ -23,6 +27,7 @@ RDEPENDS:perl-CGI = " \
 "
 
 URI_perl-CGI-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-CGI-tests-4.61-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CGI-tests}"
 RDEPENDS:perl-CGI-tests = " \
  perl-Test-Warn \
  perl-Test-Harness \

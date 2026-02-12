@@ -8,12 +8,17 @@ PR = "2.el10"
 PACKAGES = "libgpg-error libgpg-error-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libgpg-error-1.50-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libgpg-error = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libgpg-error-1.50-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgpg-error}"
 RDEPENDS:libgpg-error = " \
  glibc \
 "
 
 URI_libgpg-error-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/libgpg-error-devel-1.50-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libgpg-error-devel}"
 RDEPENDS:libgpg-error-devel = " \
  glibc \
  bash \

@@ -8,13 +8,18 @@ PR = "6.el10"
 PACKAGES = "intel-cmt-cat intel-cmt-cat-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/intel-cmt-cat-23.11-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_intel-cmt-cat = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/intel-cmt-cat-23.11-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_intel-cmt-cat}"
 RDEPENDS:intel-cmt-cat = " \
  glibc \
  bash \
 "
 
 URI_intel-cmt-cat-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/intel-cmt-cat-devel-23.11-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_intel-cmt-cat-devel}"
 RDEPENDS:intel-cmt-cat-devel = " \
  intel-cmt-cat \
 "

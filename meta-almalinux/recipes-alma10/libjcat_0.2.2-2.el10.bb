@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "libjcat libjcat-devel libjcat-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libjcat-0.2.2-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libjcat = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libjcat-0.2.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libjcat}"
 RDEPENDS:libjcat = " \
  gnutls \
  libgcc \
@@ -20,6 +24,7 @@ RDEPENDS:libjcat = " \
 "
 
 URI_libjcat-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libjcat-devel-0.2.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libjcat-devel}"
 RDEPENDS:libjcat-devel = " \
  json-glib-devel \
  glib2-devel \
@@ -29,6 +34,7 @@ RDEPENDS:libjcat-devel = " \
 "
 
 URI_libjcat-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libjcat-tests-0.2.2-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libjcat-tests}"
 RDEPENDS:libjcat-tests = " \
  gnutls \
  libgcc \

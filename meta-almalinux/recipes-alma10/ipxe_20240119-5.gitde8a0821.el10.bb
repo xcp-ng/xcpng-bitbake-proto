@@ -8,11 +8,17 @@ PR = "5.gitde8a0821.el10"
 PACKAGES = "ipxe-bootimgs-aarch64 ipxe-bootimgs-x86 ipxe-roms-qemu"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/ipxe-20240119-5.gitde8a0821.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_ipxe-bootimgs-aarch64 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipxe-bootimgs-aarch64-20240119-5.gitde8a0821.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipxe-bootimgs-aarch64}"
 RDEPENDS:ipxe-bootimgs-aarch64 = ""
 
 URI_ipxe-bootimgs-x86 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipxe-bootimgs-x86-20240119-5.gitde8a0821.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipxe-bootimgs-x86}"
 RDEPENDS:ipxe-bootimgs-x86 = ""
 
 URI_ipxe-roms-qemu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/ipxe-roms-qemu-20240119-5.gitde8a0821.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_ipxe-roms-qemu}"
 RDEPENDS:ipxe-roms-qemu = ""

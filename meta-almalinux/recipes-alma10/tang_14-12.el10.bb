@@ -8,7 +8,11 @@ PR = "12.el10"
 PACKAGES = "tang"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/tang-14-12.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_tang = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tang-14-12.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tang}"
 RDEPENDS:tang = " \
  shadow-utils \
  jansson \

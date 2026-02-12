@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "pcp pcp-conf pcp-devel pcp-doc pcp-export-pcp2elasticsearch pcp-export-pcp2graphite pcp-export-pcp2influxdb pcp-export-pcp2json pcp-export-pcp2openmetrics pcp-export-pcp2spark pcp-export-pcp2xml pcp-export-pcp2zabbix pcp-export-zabbix-agent pcp-geolocate pcp-gui pcp-import-collectl2pcp pcp-import-ganglia2pcp pcp-import-iostat2pcp pcp-import-mrtg2pcp pcp-import-sar2pcp pcp-libs pcp-libs-devel pcp-pmda-activemq pcp-pmda-amdgpu pcp-pmda-apache pcp-pmda-bash pcp-pmda-bcc pcp-pmda-bind2 pcp-pmda-bonding pcp-pmda-bpf pcp-pmda-bpftrace pcp-pmda-cifs pcp-pmda-cisco pcp-pmda-dbping pcp-pmda-denki pcp-pmda-dm pcp-pmda-docker pcp-pmda-ds389 pcp-pmda-ds389log pcp-pmda-elasticsearch pcp-pmda-farm pcp-pmda-gluster pcp-pmda-gpfs pcp-pmda-gpsd pcp-pmda-hacluster pcp-pmda-haproxy pcp-pmda-infiniband pcp-pmda-json pcp-pmda-libvirt pcp-pmda-lio pcp-pmda-lmsensors pcp-pmda-logger pcp-pmda-lustre pcp-pmda-lustrecomm pcp-pmda-mailq pcp-pmda-memcache pcp-pmda-mic pcp-pmda-mongodb pcp-pmda-mounts pcp-pmda-mssql pcp-pmda-mysql pcp-pmda-named pcp-pmda-netcheck pcp-pmda-netfilter pcp-pmda-news pcp-pmda-nfsclient pcp-pmda-nginx pcp-pmda-nvidia-gpu pcp-pmda-openmetrics pcp-pmda-openvswitch pcp-pmda-oracle pcp-pmda-pdns pcp-pmda-perfevent pcp-pmda-podman pcp-pmda-postfix pcp-pmda-postgresql pcp-pmda-rabbitmq pcp-pmda-redis pcp-pmda-resctrl pcp-pmda-roomtemp pcp-pmda-rsyslog pcp-pmda-samba pcp-pmda-sendmail pcp-pmda-shping pcp-pmda-slurm pcp-pmda-smart pcp-pmda-snmp pcp-pmda-sockets pcp-pmda-statsd pcp-pmda-summary pcp-pmda-systemd pcp-pmda-trace pcp-pmda-unbound pcp-pmda-uwsgi pcp-pmda-weblog pcp-pmda-zimbra pcp-pmda-zswap pcp-selinux pcp-system-tools pcp-zeroconf perl-PCP-LogImport perl-PCP-LogSummary perl-PCP-MMV perl-PCP-PMDA python3-pcp pcp-testsuite"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/pcp-6.3.7-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_pcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp}"
 RDEPENDS:pcp = " \
  libuv \
  diffutils \
@@ -32,9 +36,11 @@ RDEPENDS:pcp = " \
 "
 
 URI_pcp-conf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-conf-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-conf}"
 RDEPENDS:pcp-conf = ""
 
 URI_pcp-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-devel-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-devel}"
 RDEPENDS:pcp-devel = " \
  perl-libs \
  perl-vars \
@@ -48,9 +54,11 @@ RDEPENDS:pcp-devel = " \
 "
 
 URI_pcp-doc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-doc-6.3.7-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_pcp-doc}"
 RDEPENDS:pcp-doc = ""
 
 URI_pcp-export-pcp2elasticsearch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2elasticsearch-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2elasticsearch}"
 RDEPENDS:pcp-export-pcp2elasticsearch = " \
  pcp \
  python3-requests \
@@ -59,6 +67,7 @@ RDEPENDS:pcp-export-pcp2elasticsearch = " \
 "
 
 URI_pcp-export-pcp2graphite = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2graphite-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2graphite}"
 RDEPENDS:pcp-export-pcp2graphite = " \
  pcp \
  pcp-libs \
@@ -66,6 +75,7 @@ RDEPENDS:pcp-export-pcp2graphite = " \
 "
 
 URI_pcp-export-pcp2influxdb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2influxdb-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2influxdb}"
 RDEPENDS:pcp-export-pcp2influxdb = " \
  pcp \
  python3-requests \
@@ -74,6 +84,7 @@ RDEPENDS:pcp-export-pcp2influxdb = " \
 "
 
 URI_pcp-export-pcp2json = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2json-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2json}"
 RDEPENDS:pcp-export-pcp2json = " \
  pcp \
  pcp-libs \
@@ -81,6 +92,7 @@ RDEPENDS:pcp-export-pcp2json = " \
 "
 
 URI_pcp-export-pcp2openmetrics = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2openmetrics-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2openmetrics}"
 RDEPENDS:pcp-export-pcp2openmetrics = " \
  pcp \
  pcp-libs \
@@ -88,6 +100,7 @@ RDEPENDS:pcp-export-pcp2openmetrics = " \
 "
 
 URI_pcp-export-pcp2spark = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2spark-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2spark}"
 RDEPENDS:pcp-export-pcp2spark = " \
  pcp \
  pcp-libs \
@@ -95,6 +108,7 @@ RDEPENDS:pcp-export-pcp2spark = " \
 "
 
 URI_pcp-export-pcp2xml = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2xml-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2xml}"
 RDEPENDS:pcp-export-pcp2xml = " \
  pcp \
  pcp-libs \
@@ -102,6 +116,7 @@ RDEPENDS:pcp-export-pcp2xml = " \
 "
 
 URI_pcp-export-pcp2zabbix = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-pcp2zabbix-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-pcp2zabbix}"
 RDEPENDS:pcp-export-pcp2zabbix = " \
  pcp \
  pcp-libs \
@@ -109,12 +124,14 @@ RDEPENDS:pcp-export-pcp2zabbix = " \
 "
 
 URI_pcp-export-zabbix-agent = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-export-zabbix-agent-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-export-zabbix-agent}"
 RDEPENDS:pcp-export-zabbix-agent = " \
  glibc \
  pcp-libs \
 "
 
 URI_pcp-geolocate = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-geolocate-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-geolocate}"
 RDEPENDS:pcp-geolocate = " \
  pcp \
  pcp-libs \
@@ -122,6 +139,7 @@ RDEPENDS:pcp-geolocate = " \
 "
 
 URI_pcp-gui = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-gui-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-gui}"
 RDEPENDS:pcp-gui = " \
  qt6-qtsvg \
  pcp \
@@ -136,12 +154,14 @@ RDEPENDS:pcp-gui = " \
 "
 
 URI_pcp-import-collectl2pcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-import-collectl2pcp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-import-collectl2pcp}"
 RDEPENDS:pcp-import-collectl2pcp = " \
  glibc \
  pcp-libs \
 "
 
 URI_pcp-import-ganglia2pcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-import-ganglia2pcp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-import-ganglia2pcp}"
 RDEPENDS:pcp-import-ganglia2pcp = " \
  perl-TimeDate \
  perl-libs \
@@ -156,6 +176,7 @@ RDEPENDS:pcp-import-ganglia2pcp = " \
 "
 
 URI_pcp-import-iostat2pcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-import-iostat2pcp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-import-iostat2pcp}"
 RDEPENDS:pcp-import-iostat2pcp = " \
  perl-TimeDate \
  perl-libs \
@@ -166,6 +187,7 @@ RDEPENDS:pcp-import-iostat2pcp = " \
 "
 
 URI_pcp-import-mrtg2pcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-import-mrtg2pcp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-import-mrtg2pcp}"
 RDEPENDS:pcp-import-mrtg2pcp = " \
  perl-interpreter \
  perl-libs \
@@ -174,6 +196,7 @@ RDEPENDS:pcp-import-mrtg2pcp = " \
 "
 
 URI_pcp-import-sar2pcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-import-sar2pcp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-import-sar2pcp}"
 RDEPENDS:pcp-import-sar2pcp = " \
  perl-TimeDate \
  perl-libs \
@@ -184,6 +207,7 @@ RDEPENDS:pcp-import-sar2pcp = " \
 "
 
 URI_pcp-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-libs-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-libs}"
 RDEPENDS:pcp-libs = " \
  systemd-libs \
  openssl-libs \
@@ -196,12 +220,14 @@ RDEPENDS:pcp-libs = " \
 "
 
 URI_pcp-libs-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-libs-devel-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-libs-devel}"
 RDEPENDS:pcp-libs-devel = " \
  pcp-libs \
  pcp \
 "
 
 URI_pcp-pmda-activemq = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-activemq-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-activemq}"
 RDEPENDS:pcp-pmda-activemq = " \
  perl-libs \
  perl-libwww-perl \
@@ -215,6 +241,7 @@ RDEPENDS:pcp-pmda-activemq = " \
 "
 
 URI_pcp-pmda-amdgpu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-amdgpu-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-amdgpu}"
 RDEPENDS:pcp-pmda-amdgpu = " \
  pcp \
  pcp-libs \
@@ -224,6 +251,7 @@ RDEPENDS:pcp-pmda-amdgpu = " \
 "
 
 URI_pcp-pmda-apache = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-apache-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-apache}"
 RDEPENDS:pcp-pmda-apache = " \
  glibc \
  pcp-libs \
@@ -232,6 +260,7 @@ RDEPENDS:pcp-pmda-apache = " \
 "
 
 URI_pcp-pmda-bash = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-bash-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-bash}"
 RDEPENDS:pcp-pmda-bash = " \
  glibc \
  pcp-libs \
@@ -240,6 +269,7 @@ RDEPENDS:pcp-pmda-bash = " \
 "
 
 URI_pcp-pmda-bcc = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-bcc-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-bcc}"
 RDEPENDS:pcp-pmda-bcc = " \
  python3-bcc \
  python3-pcp \
@@ -249,6 +279,7 @@ RDEPENDS:pcp-pmda-bcc = " \
 "
 
 URI_pcp-pmda-bind2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-bind2-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-bind2}"
 RDEPENDS:pcp-pmda-bind2 = " \
  perl-libwww-perl \
  pcp \
@@ -262,6 +293,7 @@ RDEPENDS:pcp-pmda-bind2 = " \
 "
 
 URI_pcp-pmda-bonding = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-bonding-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-bonding}"
 RDEPENDS:pcp-pmda-bonding = " \
  pcp-libs \
  pcp \
@@ -270,6 +302,7 @@ RDEPENDS:pcp-pmda-bonding = " \
 "
 
 URI_pcp-pmda-bpf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-bpf-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-bpf}"
 RDEPENDS:pcp-pmda-bpf = " \
  zlib-ng-compat \
  pcp \
@@ -281,6 +314,7 @@ RDEPENDS:pcp-pmda-bpf = " \
 "
 
 URI_pcp-pmda-bpftrace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-bpftrace-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-bpftrace}"
 RDEPENDS:pcp-pmda-bpftrace = " \
  python3 \
  python3-pcp \
@@ -291,6 +325,7 @@ RDEPENDS:pcp-pmda-bpftrace = " \
 "
 
 URI_pcp-pmda-cifs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-cifs-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-cifs}"
 RDEPENDS:pcp-pmda-cifs = " \
  glibc \
  pcp-libs \
@@ -299,6 +334,7 @@ RDEPENDS:pcp-pmda-cifs = " \
 "
 
 URI_pcp-pmda-cisco = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-cisco-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-cisco}"
 RDEPENDS:pcp-pmda-cisco = " \
  glibc \
  pcp-libs \
@@ -307,6 +343,7 @@ RDEPENDS:pcp-pmda-cisco = " \
 "
 
 URI_pcp-pmda-dbping = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-dbping-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-dbping}"
 RDEPENDS:pcp-pmda-dbping = " \
  pcp \
  perl-PCP-PMDA \
@@ -316,6 +353,7 @@ RDEPENDS:pcp-pmda-dbping = " \
 "
 
 URI_pcp-pmda-denki = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-denki-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-denki}"
 RDEPENDS:pcp-pmda-denki = " \
  glibc \
  pcp-libs \
@@ -324,6 +362,7 @@ RDEPENDS:pcp-pmda-denki = " \
 "
 
 URI_pcp-pmda-dm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-dm-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-dm}"
 RDEPENDS:pcp-pmda-dm = " \
  device-mapper-libs \
  pcp \
@@ -333,6 +372,7 @@ RDEPENDS:pcp-pmda-dm = " \
 "
 
 URI_pcp-pmda-docker = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-docker-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-docker}"
 RDEPENDS:pcp-pmda-docker = " \
  glibc \
  pcp-libs \
@@ -341,6 +381,7 @@ RDEPENDS:pcp-pmda-docker = " \
 "
 
 URI_pcp-pmda-ds389 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-ds389-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-ds389}"
 RDEPENDS:pcp-pmda-ds389 = " \
  pcp-libs \
  pcp \
@@ -349,6 +390,7 @@ RDEPENDS:pcp-pmda-ds389 = " \
 "
 
 URI_pcp-pmda-ds389log = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-ds389log-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-ds389log}"
 RDEPENDS:pcp-pmda-ds389log = " \
  perl-Date-Manip \
  pcp \
@@ -358,6 +400,7 @@ RDEPENDS:pcp-pmda-ds389log = " \
 "
 
 URI_pcp-pmda-elasticsearch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-elasticsearch-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-elasticsearch}"
 RDEPENDS:pcp-pmda-elasticsearch = " \
  pcp \
  bash \
@@ -366,6 +409,7 @@ RDEPENDS:pcp-pmda-elasticsearch = " \
 "
 
 URI_pcp-pmda-farm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-farm-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-farm}"
 RDEPENDS:pcp-pmda-farm = " \
  smartmontools \
  pcp \
@@ -375,6 +419,7 @@ RDEPENDS:pcp-pmda-farm = " \
 "
 
 URI_pcp-pmda-gluster = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-gluster-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-gluster}"
 RDEPENDS:pcp-pmda-gluster = " \
  pcp \
  bash \
@@ -383,6 +428,7 @@ RDEPENDS:pcp-pmda-gluster = " \
 "
 
 URI_pcp-pmda-gpfs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-gpfs-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-gpfs}"
 RDEPENDS:pcp-pmda-gpfs = " \
  pcp-libs \
  pcp \
@@ -391,6 +437,7 @@ RDEPENDS:pcp-pmda-gpfs = " \
 "
 
 URI_pcp-pmda-gpsd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-gpsd-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-gpsd}"
 RDEPENDS:pcp-pmda-gpsd = " \
  pcp \
  perl-PCP-PMDA \
@@ -401,6 +448,7 @@ RDEPENDS:pcp-pmda-gpsd = " \
 "
 
 URI_pcp-pmda-hacluster = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-hacluster-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-hacluster}"
 RDEPENDS:pcp-pmda-hacluster = " \
  glibc \
  pcp-libs \
@@ -409,6 +457,7 @@ RDEPENDS:pcp-pmda-hacluster = " \
 "
 
 URI_pcp-pmda-haproxy = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-haproxy-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-haproxy}"
 RDEPENDS:pcp-pmda-haproxy = " \
  pcp \
  bash \
@@ -417,6 +466,7 @@ RDEPENDS:pcp-pmda-haproxy = " \
 "
 
 URI_pcp-pmda-infiniband = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-infiniband-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-infiniband}"
 RDEPENDS:pcp-pmda-infiniband = " \
  infiniband-diags \
  pcp \
@@ -427,6 +477,7 @@ RDEPENDS:pcp-pmda-infiniband = " \
 "
 
 URI_pcp-pmda-json = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-json-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-json}"
 RDEPENDS:pcp-pmda-json = " \
  python3-pcp \
  pcp \
@@ -437,6 +488,7 @@ RDEPENDS:pcp-pmda-json = " \
 "
 
 URI_pcp-pmda-libvirt = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-libvirt-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-libvirt}"
 RDEPENDS:pcp-pmda-libvirt = " \
  python3-pcp \
  pcp \
@@ -447,6 +499,7 @@ RDEPENDS:pcp-pmda-libvirt = " \
 "
 
 URI_pcp-pmda-lio = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-lio-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-lio}"
 RDEPENDS:pcp-pmda-lio = " \
  python3-pcp \
  pcp \
@@ -456,6 +509,7 @@ RDEPENDS:pcp-pmda-lio = " \
 "
 
 URI_pcp-pmda-lmsensors = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-lmsensors-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-lmsensors}"
 RDEPENDS:pcp-pmda-lmsensors = " \
  lm_sensors \
  python3-pcp \
@@ -465,6 +519,7 @@ RDEPENDS:pcp-pmda-lmsensors = " \
 "
 
 URI_pcp-pmda-logger = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-logger-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-logger}"
 RDEPENDS:pcp-pmda-logger = " \
  glibc \
  pcp-libs \
@@ -473,6 +528,7 @@ RDEPENDS:pcp-pmda-logger = " \
 "
 
 URI_pcp-pmda-lustre = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-lustre-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-lustre}"
 RDEPENDS:pcp-pmda-lustre = " \
  pcp-libs \
  pcp \
@@ -481,6 +537,7 @@ RDEPENDS:pcp-pmda-lustre = " \
 "
 
 URI_pcp-pmda-lustrecomm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-lustrecomm-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-lustrecomm}"
 RDEPENDS:pcp-pmda-lustrecomm = " \
  glibc \
  pcp-libs \
@@ -489,6 +546,7 @@ RDEPENDS:pcp-pmda-lustrecomm = " \
 "
 
 URI_pcp-pmda-mailq = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-mailq-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-mailq}"
 RDEPENDS:pcp-pmda-mailq = " \
  glibc \
  pcp-libs \
@@ -497,6 +555,7 @@ RDEPENDS:pcp-pmda-mailq = " \
 "
 
 URI_pcp-pmda-memcache = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-memcache-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-memcache}"
 RDEPENDS:pcp-pmda-memcache = " \
  pcp-libs \
  pcp \
@@ -505,6 +564,7 @@ RDEPENDS:pcp-pmda-memcache = " \
 "
 
 URI_pcp-pmda-mic = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-mic-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-mic}"
 RDEPENDS:pcp-pmda-mic = " \
  pcp \
  bash \
@@ -513,6 +573,7 @@ RDEPENDS:pcp-pmda-mic = " \
 "
 
 URI_pcp-pmda-mongodb = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-mongodb-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-mongodb}"
 RDEPENDS:pcp-pmda-mongodb = " \
  pcp \
  bash \
@@ -521,6 +582,7 @@ RDEPENDS:pcp-pmda-mongodb = " \
 "
 
 URI_pcp-pmda-mounts = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-mounts-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-mounts}"
 RDEPENDS:pcp-pmda-mounts = " \
  glibc \
  pcp-libs \
@@ -529,6 +591,7 @@ RDEPENDS:pcp-pmda-mounts = " \
 "
 
 URI_pcp-pmda-mssql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-mssql-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-mssql}"
 RDEPENDS:pcp-pmda-mssql = " \
  python3-pcp \
  pcp \
@@ -538,6 +601,7 @@ RDEPENDS:pcp-pmda-mssql = " \
 "
 
 URI_pcp-pmda-mysql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-mysql-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-mysql}"
 RDEPENDS:pcp-pmda-mysql = " \
  pcp \
  perl-PCP-PMDA \
@@ -548,6 +612,7 @@ RDEPENDS:pcp-pmda-mysql = " \
 "
 
 URI_pcp-pmda-named = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-named-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-named}"
 RDEPENDS:pcp-pmda-named = " \
  pcp-libs \
  pcp \
@@ -556,6 +621,7 @@ RDEPENDS:pcp-pmda-named = " \
 "
 
 URI_pcp-pmda-netcheck = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-netcheck-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-netcheck}"
 RDEPENDS:pcp-pmda-netcheck = " \
  pcp \
  bash \
@@ -564,6 +630,7 @@ RDEPENDS:pcp-pmda-netcheck = " \
 "
 
 URI_pcp-pmda-netfilter = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-netfilter-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-netfilter}"
 RDEPENDS:pcp-pmda-netfilter = " \
  pcp-libs \
  pcp \
@@ -572,6 +639,7 @@ RDEPENDS:pcp-pmda-netfilter = " \
 "
 
 URI_pcp-pmda-news = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-news-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-news}"
 RDEPENDS:pcp-pmda-news = " \
  pcp-libs \
  pcp \
@@ -580,6 +648,7 @@ RDEPENDS:pcp-pmda-news = " \
 "
 
 URI_pcp-pmda-nfsclient = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-nfsclient-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-nfsclient}"
 RDEPENDS:pcp-pmda-nfsclient = " \
  pcp \
  bash \
@@ -588,6 +657,7 @@ RDEPENDS:pcp-pmda-nfsclient = " \
 "
 
 URI_pcp-pmda-nginx = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-nginx-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-nginx}"
 RDEPENDS:pcp-pmda-nginx = " \
  perl-libwww-perl \
  pcp \
@@ -597,6 +667,7 @@ RDEPENDS:pcp-pmda-nginx = " \
 "
 
 URI_pcp-pmda-nvidia-gpu = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-nvidia-gpu-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-nvidia-gpu}"
 RDEPENDS:pcp-pmda-nvidia-gpu = " \
  glibc \
  pcp-libs \
@@ -605,6 +676,7 @@ RDEPENDS:pcp-pmda-nvidia-gpu = " \
 "
 
 URI_pcp-pmda-openmetrics = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-openmetrics-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-openmetrics}"
 RDEPENDS:pcp-pmda-openmetrics = " \
  python3-requests \
  python3-pcp \
@@ -614,6 +686,7 @@ RDEPENDS:pcp-pmda-openmetrics = " \
 "
 
 URI_pcp-pmda-openvswitch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-openvswitch-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-openvswitch}"
 RDEPENDS:pcp-pmda-openvswitch = " \
  pcp \
  bash \
@@ -622,6 +695,7 @@ RDEPENDS:pcp-pmda-openvswitch = " \
 "
 
 URI_pcp-pmda-oracle = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-oracle-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-oracle}"
 RDEPENDS:pcp-pmda-oracle = " \
  perl-libs \
  pcp \
@@ -633,6 +707,7 @@ RDEPENDS:pcp-pmda-oracle = " \
 "
 
 URI_pcp-pmda-pdns = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-pdns-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-pdns}"
 RDEPENDS:pcp-pmda-pdns = " \
  pcp \
  perl-PCP-PMDA \
@@ -642,6 +717,7 @@ RDEPENDS:pcp-pmda-pdns = " \
 "
 
 URI_pcp-pmda-perfevent = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-perfevent-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-perfevent}"
 RDEPENDS:pcp-pmda-perfevent = " \
  perl-libs \
  pcp \
@@ -653,6 +729,7 @@ RDEPENDS:pcp-pmda-perfevent = " \
 "
 
 URI_pcp-pmda-podman = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-podman-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-podman}"
 RDEPENDS:pcp-pmda-podman = " \
  glibc \
  pcp-libs \
@@ -661,6 +738,7 @@ RDEPENDS:pcp-pmda-podman = " \
 "
 
 URI_pcp-pmda-postfix = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-postfix-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-postfix}"
 RDEPENDS:pcp-pmda-postfix = " \
  pcp \
  perl-PCP-PMDA \
@@ -671,6 +749,7 @@ RDEPENDS:pcp-pmda-postfix = " \
 "
 
 URI_pcp-pmda-postgresql = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-postgresql-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-postgresql}"
 RDEPENDS:pcp-pmda-postgresql = " \
  python3-psycopg2 \
  python3-pcp \
@@ -680,6 +759,7 @@ RDEPENDS:pcp-pmda-postgresql = " \
 "
 
 URI_pcp-pmda-rabbitmq = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-rabbitmq-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-rabbitmq}"
 RDEPENDS:pcp-pmda-rabbitmq = " \
  pcp \
  bash \
@@ -688,6 +768,7 @@ RDEPENDS:pcp-pmda-rabbitmq = " \
 "
 
 URI_pcp-pmda-redis = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-redis-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-redis}"
 RDEPENDS:pcp-pmda-redis = " \
  pcp \
  perl-PCP-PMDA \
@@ -699,6 +780,7 @@ RDEPENDS:pcp-pmda-redis = " \
 "
 
 URI_pcp-pmda-resctrl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-resctrl-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-resctrl}"
 RDEPENDS:pcp-pmda-resctrl = " \
  glibc \
  pcp-libs \
@@ -707,6 +789,7 @@ RDEPENDS:pcp-pmda-resctrl = " \
 "
 
 URI_pcp-pmda-roomtemp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-roomtemp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-roomtemp}"
 RDEPENDS:pcp-pmda-roomtemp = " \
  glibc \
  pcp-libs \
@@ -715,6 +798,7 @@ RDEPENDS:pcp-pmda-roomtemp = " \
 "
 
 URI_pcp-pmda-rsyslog = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-rsyslog-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-rsyslog}"
 RDEPENDS:pcp-pmda-rsyslog = " \
  pcp-libs \
  pcp \
@@ -723,6 +807,7 @@ RDEPENDS:pcp-pmda-rsyslog = " \
 "
 
 URI_pcp-pmda-samba = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-samba-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-samba}"
 RDEPENDS:pcp-pmda-samba = " \
  pcp-libs \
  pcp \
@@ -731,6 +816,7 @@ RDEPENDS:pcp-pmda-samba = " \
 "
 
 URI_pcp-pmda-sendmail = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-sendmail-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-sendmail}"
 RDEPENDS:pcp-pmda-sendmail = " \
  glibc \
  pcp-libs \
@@ -739,6 +825,7 @@ RDEPENDS:pcp-pmda-sendmail = " \
 "
 
 URI_pcp-pmda-shping = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-shping-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-shping}"
 RDEPENDS:pcp-pmda-shping = " \
  glibc \
  pcp-libs \
@@ -747,6 +834,7 @@ RDEPENDS:pcp-pmda-shping = " \
 "
 
 URI_pcp-pmda-slurm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-slurm-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-slurm}"
 RDEPENDS:pcp-pmda-slurm = " \
  pcp-libs \
  pcp \
@@ -755,6 +843,7 @@ RDEPENDS:pcp-pmda-slurm = " \
 "
 
 URI_pcp-pmda-smart = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-smart-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-smart}"
 RDEPENDS:pcp-pmda-smart = " \
  smartmontools \
  pcp \
@@ -764,6 +853,7 @@ RDEPENDS:pcp-pmda-smart = " \
 "
 
 URI_pcp-pmda-snmp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-snmp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-snmp}"
 RDEPENDS:pcp-pmda-snmp = " \
  pcp-libs \
  pcp \
@@ -772,6 +862,7 @@ RDEPENDS:pcp-pmda-snmp = " \
 "
 
 URI_pcp-pmda-sockets = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-sockets-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-sockets}"
 RDEPENDS:pcp-pmda-sockets = " \
  iproute \
  pcp \
@@ -781,6 +872,7 @@ RDEPENDS:pcp-pmda-sockets = " \
 "
 
 URI_pcp-pmda-statsd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-statsd-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-statsd}"
 RDEPENDS:pcp-pmda-statsd = " \
  chan \
  pcp \
@@ -791,6 +883,7 @@ RDEPENDS:pcp-pmda-statsd = " \
 "
 
 URI_pcp-pmda-summary = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-summary-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-summary}"
 RDEPENDS:pcp-pmda-summary = " \
  glibc \
  pcp-libs \
@@ -799,6 +892,7 @@ RDEPENDS:pcp-pmda-summary = " \
 "
 
 URI_pcp-pmda-systemd = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-systemd-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-systemd}"
 RDEPENDS:pcp-pmda-systemd = " \
  systemd-libs \
  pcp \
@@ -808,6 +902,7 @@ RDEPENDS:pcp-pmda-systemd = " \
 "
 
 URI_pcp-pmda-trace = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-trace-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-trace}"
 RDEPENDS:pcp-pmda-trace = " \
  glibc \
  pcp-libs \
@@ -816,6 +911,7 @@ RDEPENDS:pcp-pmda-trace = " \
 "
 
 URI_pcp-pmda-unbound = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-unbound-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-unbound}"
 RDEPENDS:pcp-pmda-unbound = " \
  pcp \
  bash \
@@ -824,6 +920,7 @@ RDEPENDS:pcp-pmda-unbound = " \
 "
 
 URI_pcp-pmda-uwsgi = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-uwsgi-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-uwsgi}"
 RDEPENDS:pcp-pmda-uwsgi = " \
  pcp \
  bash \
@@ -832,6 +929,7 @@ RDEPENDS:pcp-pmda-uwsgi = " \
 "
 
 URI_pcp-pmda-weblog = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-weblog-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-weblog}"
 RDEPENDS:pcp-pmda-weblog = " \
  glibc \
  pcp-libs \
@@ -840,6 +938,7 @@ RDEPENDS:pcp-pmda-weblog = " \
 "
 
 URI_pcp-pmda-zimbra = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-zimbra-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-zimbra}"
 RDEPENDS:pcp-pmda-zimbra = " \
  pcp \
  perl-PCP-PMDA \
@@ -849,6 +948,7 @@ RDEPENDS:pcp-pmda-zimbra = " \
 "
 
 URI_pcp-pmda-zswap = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-pmda-zswap-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-pmda-zswap}"
 RDEPENDS:pcp-pmda-zswap = " \
  pcp \
  bash \
@@ -857,6 +957,7 @@ RDEPENDS:pcp-pmda-zswap = " \
 "
 
 URI_pcp-selinux = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-selinux-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-selinux}"
 RDEPENDS:pcp-selinux = " \
  bash \
  selinux-policy-targeted \
@@ -864,6 +965,7 @@ RDEPENDS:pcp-selinux = " \
 "
 
 URI_pcp-system-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-system-tools-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-system-tools}"
 RDEPENDS:pcp-system-tools = " \
  python3-pcp \
  pcp \
@@ -874,6 +976,7 @@ RDEPENDS:pcp-system-tools = " \
 "
 
 URI_pcp-zeroconf = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/pcp-zeroconf-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-zeroconf}"
 RDEPENDS:pcp-zeroconf = " \
  pcp \
  pcp-pmda-nfsclient \
@@ -886,6 +989,7 @@ RDEPENDS:pcp-zeroconf = " \
 "
 
 URI_perl-PCP-LogImport = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-PCP-LogImport-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PCP-LogImport}"
 RDEPENDS:perl-PCP-LogImport = " \
  perl-libs \
  perl-interpreter \
@@ -896,6 +1000,7 @@ RDEPENDS:perl-PCP-LogImport = " \
 "
 
 URI_perl-PCP-LogSummary = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-PCP-LogSummary-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PCP-LogSummary}"
 RDEPENDS:perl-PCP-LogSummary = " \
  perl-libs \
  perl-vars \
@@ -906,6 +1011,7 @@ RDEPENDS:perl-PCP-LogSummary = " \
 "
 
 URI_perl-PCP-MMV = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-PCP-MMV-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PCP-MMV}"
 RDEPENDS:perl-PCP-MMV = " \
  perl-libs \
  perl-vars \
@@ -919,6 +1025,7 @@ RDEPENDS:perl-PCP-MMV = " \
 "
 
 URI_perl-PCP-PMDA = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-PCP-PMDA-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-PCP-PMDA}"
 RDEPENDS:perl-PCP-PMDA = " \
  perl-libs \
  perl-vars \
@@ -930,6 +1037,7 @@ RDEPENDS:perl-PCP-PMDA = " \
 "
 
 URI_python3-pcp = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/python3-pcp-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_python3-pcp}"
 RDEPENDS:python3-pcp = " \
  glibc \
  pcp-libs \
@@ -938,6 +1046,7 @@ RDEPENDS:python3-pcp = " \
 "
 
 URI_pcp-testsuite = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/pcp-testsuite-6.3.7-1.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_pcp-testsuite}"
 RDEPENDS:pcp-testsuite = " \
  pcp \
  pcp-devel \

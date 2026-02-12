@@ -8,10 +8,15 @@ PR = "10.el10"
 PACKAGES = "python-sphinx-doc python3-sphinx python3-sphinx-latex"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/python-sphinx-7.2.6-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_python-sphinx-doc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python-sphinx-doc-7.2.6-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python-sphinx-doc}"
 RDEPENDS:python-sphinx-doc = ""
 
 URI_python3-sphinx = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-sphinx-7.2.6-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-sphinx}"
 RDEPENDS:python3-sphinx = " \
  python3 \
  python3-sphinx-theme-alabaster \
@@ -25,6 +30,7 @@ RDEPENDS:python3-sphinx = " \
 "
 
 URI_python3-sphinx-latex = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/python3-sphinx-latex-7.2.6-10.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_python3-sphinx-latex}"
 RDEPENDS:python3-sphinx-latex = " \
  texlive-wrapfig \
  texlive-needspace \

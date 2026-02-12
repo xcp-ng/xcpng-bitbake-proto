@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "xorg-x11-drv-libinput xorg-x11-drv-libinput-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/xorg-x11-drv-libinput-1.4.0-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_xorg-x11-drv-libinput = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-drv-libinput-1.4.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-drv-libinput}"
 RDEPENDS:xorg-x11-drv-libinput = " \
  glibc \
  libinput \
@@ -17,6 +21,7 @@ RDEPENDS:xorg-x11-drv-libinput = " \
 "
 
 URI_xorg-x11-drv-libinput-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/xorg-x11-drv-libinput-devel-1.4.0-3.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_xorg-x11-drv-libinput-devel}"
 RDEPENDS:xorg-x11-drv-libinput-devel = " \
  pkgconf-pkg-config \
 "

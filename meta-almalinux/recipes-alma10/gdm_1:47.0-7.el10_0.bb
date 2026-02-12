@@ -8,7 +8,11 @@ PR = "7.el10_0"
 PACKAGES = "gdm gdm-devel gdm-pam-extensions-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gdm-47.0-7.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gdm = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gdm-47.0-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gdm}"
 RDEPENDS:gdm = " \
  python3 \
  systemd \
@@ -42,6 +46,7 @@ RDEPENDS:gdm = " \
 "
 
 URI_gdm-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gdm-devel-47.0-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gdm-devel}"
 RDEPENDS:gdm-devel = " \
  glib2-devel \
  systemd-devel \
@@ -52,6 +57,7 @@ RDEPENDS:gdm-devel = " \
 "
 
 URI_gdm-pam-extensions-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gdm-pam-extensions-devel-47.0-7.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gdm-pam-extensions-devel}"
 RDEPENDS:gdm-pam-extensions-devel = " \
  pam-devel \
  pkgconf-pkg-config \

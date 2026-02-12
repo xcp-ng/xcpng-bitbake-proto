@@ -8,7 +8,11 @@ PR = "2.el10_0.alma.1"
 PACKAGES = "thunderbird"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/thunderbird-140.4.0-2.el10_0.alma.1.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_thunderbird = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/thunderbird-140.4.0-2.el10_0.alma.1.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_thunderbird}"
 RDEPENDS:thunderbird = " \
  nss \
  pango \

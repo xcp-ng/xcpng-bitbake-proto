@@ -8,7 +8,11 @@ PR = "76.el10"
 PACKAGES = "tog-pegasus tog-pegasus-libs tog-pegasus-devel tog-pegasus-test"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/tog-pegasus-2.14.1-76.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_tog-pegasus = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tog-pegasus-2.14.1-76.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tog-pegasus}"
 RDEPENDS:tog-pegasus = " \
  net-snmp-libs \
  ca-certificates \
@@ -23,6 +27,7 @@ RDEPENDS:tog-pegasus = " \
 "
 
 URI_tog-pegasus-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/tog-pegasus-libs-2.14.1-76.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tog-pegasus-libs}"
 RDEPENDS:tog-pegasus-libs = " \
  shadow-utils \
  net-snmp-libs \
@@ -37,12 +42,14 @@ RDEPENDS:tog-pegasus-libs = " \
 "
 
 URI_tog-pegasus-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/tog-pegasus-devel-2.14.1-76.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tog-pegasus-devel}"
 RDEPENDS:tog-pegasus-devel = " \
  tog-pegasus \
  bash \
 "
 
 URI_tog-pegasus-test = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/tog-pegasus-test-2.14.1-76.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tog-pegasus-test}"
 RDEPENDS:tog-pegasus-test = " \
  net-snmp-libs \
  libxcrypt \

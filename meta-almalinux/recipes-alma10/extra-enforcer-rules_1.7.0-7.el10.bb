@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "extra-enforcer-rules extra-enforcer-rules-javadoc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/extra-enforcer-rules-1.7.0-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_extra-enforcer-rules = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/extra-enforcer-rules-1.7.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_extra-enforcer-rules}"
 RDEPENDS:extra-enforcer-rules = " \
  apache-commons-codec \
  javapackages-filesystem \
@@ -17,6 +21,7 @@ RDEPENDS:extra-enforcer-rules = " \
 "
 
 URI_extra-enforcer-rules-javadoc = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/extra-enforcer-rules-javadoc-1.7.0-7.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_extra-enforcer-rules-javadoc}"
 RDEPENDS:extra-enforcer-rules-javadoc = " \
  javapackages-filesystem \
 "

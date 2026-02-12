@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "tpm2-tss tpm2-tss-fapi tpm2-tss-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/tpm2-tss-4.1.3-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_tpm2-tss = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/tpm2-tss-4.1.3-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tpm2-tss}"
 RDEPENDS:tpm2-tss = " \
  libuuid \
  shadow-utils \
@@ -19,6 +23,7 @@ RDEPENDS:tpm2-tss = " \
 "
 
 URI_tpm2-tss-fapi = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/tpm2-tss-fapi-4.1.3-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tpm2-tss-fapi}"
 RDEPENDS:tpm2-tss-fapi = " \
  libuuid \
  openssl-libs \
@@ -29,6 +34,7 @@ RDEPENDS:tpm2-tss-fapi = " \
 "
 
 URI_tpm2-tss-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/tpm2-tss-devel-4.1.3-5.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_tpm2-tss-devel}"
 RDEPENDS:tpm2-tss-devel = " \
  pkgconf-pkg-config \
  libuuid-devel \

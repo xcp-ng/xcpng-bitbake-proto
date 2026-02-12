@@ -8,7 +8,11 @@ PR = "21.el10"
 PACKAGES = "perl-Parse-Yapp perl-Parse-Yapp-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Parse-Yapp-1.21-21.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Parse-Yapp = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Parse-Yapp-1.21-21.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Parse-Yapp}"
 RDEPENDS:perl-Parse-Yapp = " \
  perl-libs \
  perl-Carp \
@@ -20,6 +24,7 @@ RDEPENDS:perl-Parse-Yapp = " \
 "
 
 URI_perl-Parse-Yapp-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Parse-Yapp-tests-1.21-21.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Parse-Yapp-tests}"
 RDEPENDS:perl-Parse-Yapp-tests = " \
  perl-interpreter \
  perl-Test-Harness \

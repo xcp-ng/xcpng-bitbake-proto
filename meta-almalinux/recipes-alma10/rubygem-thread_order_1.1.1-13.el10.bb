@@ -8,12 +8,17 @@ PR = "13.el10"
 PACKAGES = "rubygem-thread_order rubygem-thread_order-doc"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/rubygem-thread_order-1.1.1-13.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_rubygem-thread_order = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/rubygem-thread_order-1.1.1-13.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-thread_order}"
 RDEPENDS:rubygem-thread_order = " \
  rubygems \
 "
 
 URI_rubygem-thread_order-doc = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/rubygem-thread_order-doc-1.1.1-13.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_rubygem-thread_order-doc}"
 RDEPENDS:rubygem-thread_order-doc = " \
  rubygem-thread_order \
 "

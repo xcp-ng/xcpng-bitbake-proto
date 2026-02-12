@@ -8,7 +8,11 @@ PR = "3.el10"
 PACKAGES = "perl-libwww-perl perl-libwww-perl-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-libwww-perl-6.76-3.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-libwww-perl = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-libwww-perl-6.76-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-libwww-perl}"
 RDEPENDS:perl-libwww-perl = " \
  perl-libnet \
  perl-Scalar-List-Utils \
@@ -44,6 +48,7 @@ RDEPENDS:perl-libwww-perl = " \
 "
 
 URI_perl-libwww-perl-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-libwww-perl-tests-6.76-3.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-libwww-perl-tests}"
 RDEPENDS:perl-libwww-perl-tests = " \
  perl-libs \
  perl-libwww-perl \

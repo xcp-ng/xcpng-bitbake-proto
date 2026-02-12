@@ -8,7 +8,11 @@ PR = "10.el10"
 PACKAGES = "gssproxy"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/gssproxy-0.9.2-10.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gssproxy = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/gssproxy-0.9.2-10.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gssproxy}"
 RDEPENDS:gssproxy = " \
  systemd \
  libverto \

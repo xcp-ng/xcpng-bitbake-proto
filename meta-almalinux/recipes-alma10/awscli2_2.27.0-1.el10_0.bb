@@ -8,7 +8,11 @@ PR = "1.el10_0"
 PACKAGES = "awscli2"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/awscli2-2.27.0-1.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_awscli2 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/awscli2-2.27.0-1.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_awscli2}"
 RDEPENDS:awscli2 = " \
  python3 \
  python3-ruamel-yaml \

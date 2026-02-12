@@ -8,13 +8,18 @@ PR = "6.el10"
 PACKAGES = "usbredir usbredir-devel usbredir-tools"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/usbredir-0.13.0-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_usbredir = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbredir-0.13.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbredir}"
 RDEPENDS:usbredir = " \
  glibc \
  libusb1 \
 "
 
 URI_usbredir-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbredir-devel-0.13.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbredir-devel}"
 RDEPENDS:usbredir-devel = " \
  libusb1-devel \
  usbredir \
@@ -23,6 +28,7 @@ RDEPENDS:usbredir-devel = " \
 "
 
 URI_usbredir-tools = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/usbredir-tools-0.13.0-6.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_usbredir-tools}"
 RDEPENDS:usbredir-tools = " \
  glibc \
  usbredir \

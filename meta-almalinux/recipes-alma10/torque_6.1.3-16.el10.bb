@@ -8,7 +8,11 @@ PR = "16.el10"
 PACKAGES = "torque-libs torque torque-client torque-devel torque-docs torque-drmaa torque-drmaa-devel torque-gui torque-mom torque-pam torque-scheduler torque-server"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/torque-6.1.3-16.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_torque-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/torque-libs-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-libs}"
 RDEPENDS:torque-libs = " \
  jsoncpp \
  zlib-ng-compat \
@@ -22,6 +26,7 @@ RDEPENDS:torque-libs = " \
 "
 
 URI_torque = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque}"
 RDEPENDS:torque = " \
  setup \
  systemd \
@@ -35,6 +40,7 @@ RDEPENDS:torque = " \
 "
 
 URI_torque-client = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-client-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-client}"
 RDEPENDS:torque-client = " \
  zlib-ng-compat \
  libgcc \
@@ -48,17 +54,20 @@ RDEPENDS:torque-client = " \
 "
 
 URI_torque-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-devel-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-devel}"
 RDEPENDS:torque-devel = " \
  bash \
  torque-libs \
 "
 
 URI_torque-docs = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-docs-6.1.3-16.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_torque-docs}"
 RDEPENDS:torque-docs = " \
  torque \
 "
 
 URI_torque-drmaa = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-drmaa-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-drmaa}"
 RDEPENDS:torque-drmaa = " \
  jsoncpp \
  zlib-ng-compat \
@@ -72,12 +81,14 @@ RDEPENDS:torque-drmaa = " \
 "
 
 URI_torque-drmaa-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-drmaa-devel-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-drmaa-devel}"
 RDEPENDS:torque-drmaa-devel = " \
  torque-devel \
  torque-drmaa \
 "
 
 URI_torque-gui = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-gui-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-gui}"
 RDEPENDS:torque-gui = " \
  torque-client \
  libgcc \
@@ -89,6 +100,7 @@ RDEPENDS:torque-gui = " \
 "
 
 URI_torque-mom = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-mom-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-mom}"
 RDEPENDS:torque-mom = " \
  jsoncpp \
  systemd \
@@ -104,6 +116,7 @@ RDEPENDS:torque-mom = " \
 "
 
 URI_torque-pam = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-pam-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-pam}"
 RDEPENDS:torque-pam = " \
  jsoncpp \
  zlib-ng-compat \
@@ -117,6 +130,7 @@ RDEPENDS:torque-pam = " \
 "
 
 URI_torque-scheduler = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-scheduler-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-scheduler}"
 RDEPENDS:torque-scheduler = " \
  glibc \
  systemd \
@@ -125,6 +139,7 @@ RDEPENDS:torque-scheduler = " \
 "
 
 URI_torque-server = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/torque-server-6.1.3-16.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_torque-server}"
 RDEPENDS:torque-server = " \
  jsoncpp \
  systemd \

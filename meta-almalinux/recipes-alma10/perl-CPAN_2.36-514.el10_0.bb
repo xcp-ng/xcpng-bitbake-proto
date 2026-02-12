@@ -8,7 +8,11 @@ PR = "514.el10_0"
 PACKAGES = "perl-CPAN perl-CPAN-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-CPAN-2.36-514.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-CPAN = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-CPAN-2.36-514.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CPAN}"
 RDEPENDS:perl-CPAN = " \
  perl-libnet \
  perl-Safe \
@@ -69,6 +73,7 @@ RDEPENDS:perl-CPAN = " \
 "
 
 URI_perl-CPAN-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-CPAN-tests-2.36-514.el10_0.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-CPAN-tests}"
 RDEPENDS:perl-CPAN-tests = " \
  perl-Test-Harness \
  perl-libs \

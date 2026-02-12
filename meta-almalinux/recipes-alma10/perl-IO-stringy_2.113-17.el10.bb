@@ -8,7 +8,11 @@ PR = "17.el10"
 PACKAGES = "perl-IO-stringy perl-IO-stringy-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-IO-stringy-2.113-17.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-IO-stringy = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-IO-stringy-2.113-17.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO-stringy}"
 RDEPENDS:perl-IO-stringy = " \
  perl-IO-stringy \
  perl-libs \
@@ -23,6 +27,7 @@ RDEPENDS:perl-IO-stringy = " \
 "
 
 URI_perl-IO-stringy-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-IO-stringy-tests-2.113-17.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-IO-stringy-tests}"
 RDEPENDS:perl-IO-stringy-tests = " \
  perl-IO-stringy \
  perl-Test-Harness \

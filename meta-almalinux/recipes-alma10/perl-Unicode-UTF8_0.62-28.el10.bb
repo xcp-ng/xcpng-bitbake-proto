@@ -8,7 +8,11 @@ PR = "28.el10"
 PACKAGES = "perl-Unicode-UTF8 perl-Unicode-UTF8-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Unicode-UTF8-0.62-28.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Unicode-UTF8 = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Unicode-UTF8-0.62-28.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Unicode-UTF8}"
 RDEPENDS:perl-Unicode-UTF8 = " \
  glibc \
  perl-Exporter \
@@ -16,6 +20,7 @@ RDEPENDS:perl-Unicode-UTF8 = " \
 "
 
 URI_perl-Unicode-UTF8-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Unicode-UTF8-tests-0.62-28.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Unicode-UTF8-tests}"
 RDEPENDS:perl-Unicode-UTF8-tests = " \
  perl-Test-Harness \
  perl-libs \

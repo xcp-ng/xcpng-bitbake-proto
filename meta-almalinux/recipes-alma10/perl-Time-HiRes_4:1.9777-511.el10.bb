@@ -8,7 +8,11 @@ PR = "511.el10"
 PACKAGES = "perl-Time-HiRes perl-Time-HiRes-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Time-HiRes-1.9777-511.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Time-HiRes = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Time-HiRes-1.9777-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Time-HiRes}"
 RDEPENDS:perl-Time-HiRes = " \
  glibc \
  perl-Exporter \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Time-HiRes = " \
 "
 
 URI_perl-Time-HiRes-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Time-HiRes-tests-1.9777-511.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Time-HiRes-tests}"
 RDEPENDS:perl-Time-HiRes-tests = " \
  perl-Test-Harness \
  perl-libs \

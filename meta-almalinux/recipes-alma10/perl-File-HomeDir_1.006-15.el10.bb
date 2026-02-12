@@ -8,7 +8,11 @@ PR = "15.el10"
 PACKAGES = "perl-File-HomeDir perl-File-HomeDir-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-File-HomeDir-1.006-15.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-File-HomeDir = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-File-HomeDir-1.006-15.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-HomeDir}"
 RDEPENDS:perl-File-HomeDir = " \
  perl-libs \
  perl-Carp \
@@ -23,6 +27,7 @@ RDEPENDS:perl-File-HomeDir = " \
 "
 
 URI_perl-File-HomeDir-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-File-HomeDir-tests-1.006-15.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-File-HomeDir-tests}"
 RDEPENDS:perl-File-HomeDir-tests = " \
  perl-Test-Harness \
  perl-libs \

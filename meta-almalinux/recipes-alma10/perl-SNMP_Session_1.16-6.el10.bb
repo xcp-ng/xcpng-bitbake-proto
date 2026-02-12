@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-SNMP_Session"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-SNMP_Session-1.16-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-SNMP_Session = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-SNMP_Session-1.16-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-SNMP_Session}"
 RDEPENDS:perl-SNMP_Session = " \
  perl-SNMP_Session \
  perl-libs \

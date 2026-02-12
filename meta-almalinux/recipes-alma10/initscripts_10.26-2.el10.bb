@@ -8,7 +8,11 @@ PR = "2.el10"
 PACKAGES = "initscripts initscripts-rename-device initscripts-service netconsole-service readonly-root"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/initscripts-10.26-2.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_initscripts = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/initscripts-10.26-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_initscripts}"
 RDEPENDS:initscripts = " \
  setup \
  initscripts-service \
@@ -29,6 +33,7 @@ RDEPENDS:initscripts = " \
 "
 
 URI_initscripts-rename-device = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/initscripts-rename-device-10.26-2.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_initscripts-rename-device}"
 RDEPENDS:initscripts-rename-device = " \
  gawk \
  bash \
@@ -39,6 +44,7 @@ RDEPENDS:initscripts-rename-device = " \
 "
 
 URI_initscripts-service = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/initscripts-service-10.26-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_initscripts-service}"
 RDEPENDS:initscripts-service = " \
  systemd \
  gawk \
@@ -48,6 +54,7 @@ RDEPENDS:initscripts-service = " \
 "
 
 URI_netconsole-service = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/netconsole-service-10.26-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_netconsole-service}"
 RDEPENDS:netconsole-service = " \
  glibc-common \
  util-linux \
@@ -63,6 +70,7 @@ RDEPENDS:netconsole-service = " \
 "
 
 URI_readonly-root = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/readonly-root-10.26-2.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_readonly-root}"
 RDEPENDS:readonly-root = " \
  ipcalc \
  util-linux \

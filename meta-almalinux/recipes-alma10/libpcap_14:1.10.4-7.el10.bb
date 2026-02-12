@@ -8,13 +8,18 @@ PR = "7.el10"
 PACKAGES = "libpcap libpcap-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libpcap-1.10.4-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libpcap = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libpcap-1.10.4-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libpcap}"
 RDEPENDS:libpcap = " \
  glibc \
  libibverbs \
 "
 
 URI_libpcap-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/libpcap-devel-1.10.4-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libpcap-devel}"
 RDEPENDS:libpcap-devel = " \
  libpcap \
  bash \

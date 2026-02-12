@@ -8,7 +8,11 @@ PR = "19.el10"
 PACKAGES = "perl-Params-Util perl-Params-Util-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Params-Util-1.102-19.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Params-Util = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Params-Util-1.102-19.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Params-Util}"
 RDEPENDS:perl-Params-Util = " \
  perl-Scalar-List-Utils \
  perl-libs \
@@ -20,6 +24,7 @@ RDEPENDS:perl-Params-Util = " \
 "
 
 URI_perl-Params-Util-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Params-Util-tests-1.102-19.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_perl-Params-Util-tests}"
 RDEPENDS:perl-Params-Util-tests = " \
  perl-Test-Harness \
  perl-libs \

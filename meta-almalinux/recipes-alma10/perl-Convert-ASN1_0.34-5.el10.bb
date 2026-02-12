@@ -8,7 +8,11 @@ PR = "5.el10"
 PACKAGES = "perl-Convert-ASN1 perl-Convert-ASN1-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-Convert-ASN1-0.34-5.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Convert-ASN1 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-Convert-ASN1-0.34-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Convert-ASN1}"
 RDEPENDS:perl-Convert-ASN1 = " \
  perl-constant \
  perl-libs \
@@ -23,6 +27,7 @@ RDEPENDS:perl-Convert-ASN1 = " \
 "
 
 URI_perl-Convert-ASN1-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Convert-ASN1-tests-0.34-5.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Convert-ASN1-tests}"
 RDEPENDS:perl-Convert-ASN1-tests = " \
  perl-Test-Harness \
  perl-Test-Simple \

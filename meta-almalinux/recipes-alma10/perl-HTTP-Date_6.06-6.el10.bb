@@ -8,7 +8,11 @@ PR = "6.el10"
 PACKAGES = "perl-HTTP-Date perl-HTTP-Date-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/perl-HTTP-Date-6.06-6.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-HTTP-Date = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/perl-HTTP-Date-6.06-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Date}"
 RDEPENDS:perl-HTTP-Date = " \
  perl-Exporter \
  perl-libs \
@@ -17,6 +21,7 @@ RDEPENDS:perl-HTTP-Date = " \
 "
 
 URI_perl-HTTP-Date-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-HTTP-Date-tests-6.06-6.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-HTTP-Date-tests}"
 RDEPENDS:perl-HTTP-Date-tests = " \
  perl-Test-Harness \
  perl-libs \

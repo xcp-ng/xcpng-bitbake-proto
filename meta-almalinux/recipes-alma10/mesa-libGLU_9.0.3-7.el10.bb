@@ -8,7 +8,11 @@ PR = "7.el10"
 PACKAGES = "mesa-libGLU mesa-libGLU-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/mesa-libGLU-9.0.3-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_mesa-libGLU = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mesa-libGLU-9.0.3-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mesa-libGLU}"
 RDEPENDS:mesa-libGLU = " \
  glibc \
  libglvnd-opengl \
@@ -17,6 +21,7 @@ RDEPENDS:mesa-libGLU = " \
 "
 
 URI_mesa-libGLU-devel = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/mesa-libGLU-devel-9.0.3-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_mesa-libGLU-devel}"
 RDEPENDS:mesa-libGLU-devel = " \
  mesa-libGLU \
  pkgconf-pkg-config \

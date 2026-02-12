@@ -8,7 +8,11 @@ PR = "18.el10_0"
 PACKAGES = "gnome-desktop3 gnome-desktop4 gnome-desktop3-devel gnome-desktop4-devel gnome-desktop3-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/gnome-desktop3-44.0-18.el10_0.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_gnome-desktop3 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-desktop3-44.0-18.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-desktop3}"
 RDEPENDS:gnome-desktop3 = " \
  bubblewrap \
  systemd-libs \
@@ -25,6 +29,7 @@ RDEPENDS:gnome-desktop3 = " \
 "
 
 URI_gnome-desktop4 = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/gnome-desktop4-44.0-18.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-desktop4}"
 RDEPENDS:gnome-desktop4 = " \
  systemd-libs \
  gnome-desktop3 \
@@ -39,6 +44,7 @@ RDEPENDS:gnome-desktop4 = " \
 "
 
 URI_gnome-desktop3-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gnome-desktop3-devel-44.0-18.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-desktop3-devel}"
 RDEPENDS:gnome-desktop3-devel = " \
  glib2-devel \
  gsettings-desktop-schemas-devel \
@@ -54,6 +60,7 @@ RDEPENDS:gnome-desktop3-devel = " \
 "
 
 URI_gnome-desktop4-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/gnome-desktop4-devel-44.0-18.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-desktop4-devel}"
 RDEPENDS:gnome-desktop4-devel = " \
  glib2-devel \
  gsettings-desktop-schemas-devel \
@@ -70,6 +77,7 @@ RDEPENDS:gnome-desktop4-devel = " \
 "
 
 URI_gnome-desktop3-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/gnome-desktop3-tests-44.0-18.el10_0.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_gnome-desktop3-tests}"
 RDEPENDS:gnome-desktop3-tests = " \
  gnome-desktop3 \
  cairo \

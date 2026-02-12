@@ -8,7 +8,11 @@ PR = "8.el10"
 PACKAGES = "soundtouch soundtouch-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/AppStream/Source/Packages/soundtouch-2.3.1-8.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_soundtouch = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/soundtouch-2.3.1-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_soundtouch}"
 RDEPENDS:soundtouch = " \
  glibc \
  libgcc \
@@ -16,6 +20,7 @@ RDEPENDS:soundtouch = " \
 "
 
 URI_soundtouch-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/soundtouch-devel-2.3.1-8.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_soundtouch-devel}"
 RDEPENDS:soundtouch-devel = " \
  soundtouch \
  cmake-filesystem \

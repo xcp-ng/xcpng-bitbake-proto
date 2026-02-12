@@ -8,12 +8,17 @@ PR = "7.el10"
 PACKAGES = "libpipeline libpipeline-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/BaseOS/Source/Packages/libpipeline-1.5.7-7.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_libpipeline = "https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/libpipeline-1.5.7-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libpipeline}"
 RDEPENDS:libpipeline = " \
  glibc \
 "
 
 URI_libpipeline-devel = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/libpipeline-devel-1.5.7-7.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_libpipeline-devel}"
 RDEPENDS:libpipeline-devel = " \
  libpipeline \
  pkgconf-pkg-config \

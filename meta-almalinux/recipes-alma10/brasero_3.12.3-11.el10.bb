@@ -8,7 +8,11 @@ PR = "11.el10"
 PACKAGES = "brasero brasero-libs brasero-devel"
 
 
+URI_src = "https://vault.almalinux.org/10.0/devel/Source/Packages/brasero-3.12.3-11.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_brasero = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brasero-3.12.3-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brasero}"
 RDEPENDS:brasero = " \
  libburn \
  gstreamer1 \
@@ -26,6 +30,7 @@ RDEPENDS:brasero = " \
 "
 
 URI_brasero-libs = "https://vault.almalinux.org/10.0/AppStream/x86_64_v2/os/Packages/brasero-libs-3.12.3-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brasero-libs}"
 RDEPENDS:brasero-libs = " \
  gstreamer1 \
  gstreamer1-plugins-base \
@@ -40,6 +45,7 @@ RDEPENDS:brasero-libs = " \
 "
 
 URI_brasero-devel = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/brasero-devel-3.12.3-11.el10.x86_64_v2.rpm;unpack=0"
+SRC_URI += "${URI_brasero-devel}"
 RDEPENDS:brasero-devel = " \
  brasero-libs \
  glib2-devel \

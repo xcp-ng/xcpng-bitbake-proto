@@ -8,7 +8,11 @@ PR = "23.el10"
 PACKAGES = "perl-Test-Pod perl-Test-Pod-tests"
 
 
+URI_src = "https://vault.almalinux.org/10.0/CRB/Source/Packages/perl-Test-Pod-1.52-23.el10.src.rpm;unpack=0"
+SRC_URI += "${URI_src}"
+
 URI_perl-Test-Pod = "https://vault.almalinux.org/10.0/CRB/x86_64_v2/os/Packages/perl-Test-Pod-1.52-23.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Pod}"
 RDEPENDS:perl-Test-Pod = " \
  perl-File-Find \
  perl-libs \
@@ -17,6 +21,7 @@ RDEPENDS:perl-Test-Pod = " \
 "
 
 URI_perl-Test-Pod-tests = "https://vault.almalinux.org/10.0/devel/x86_64_v2/os/Packages/perl-Test-Pod-tests-1.52-23.el10.noarch.rpm;unpack=0"
+SRC_URI += "${URI_perl-Test-Pod-tests}"
 RDEPENDS:perl-Test-Pod-tests = " \
  perl-Test-Harness \
  perl-libs \
