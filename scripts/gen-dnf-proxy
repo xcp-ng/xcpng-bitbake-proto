@@ -51,9 +51,16 @@ PR = "{pkg.release}"
 PACKAGES = "{' '.join(p.name for p in rpms)}"
 ''', file=r)
 
+        print(f'\nURI_src = "{pkg.remote_location(schemes=["https", "http", "file"])};unpack=0"',
+              file=r)
+        print(f'SRC_URI += "${{URI_src}}"', file=r)
+
         for p in rpms:
             print(f'\nURI_{p.name} = "{p.remote_location(schemes=["https", "http", "file"])};unpack=0"',
                   file=r)
+            # FIXME: checksum
+            print(f'SRC_URI += "${{URI_{p.name}}}"', file=r)
+
             rel: hawkey.Reldep
             requires: set[dnf.package.Package] = set()
             for rel in p.requires:
