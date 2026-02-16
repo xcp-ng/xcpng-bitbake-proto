@@ -9,7 +9,7 @@ from collections import defaultdict
 
 import dnf
 
-logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.WARNING)
+logging.basicConfig(format='[%(levelname)s] %(message)s', level=logging.DEBUG)
 
 # https://github.com/rpm-software-management/libdnf/issues/1757
 # Workaround cannot work, as not all files are exposed as Provides, it
@@ -51,11 +51,13 @@ PR = "{pkg.release}"
 PACKAGES = "{' '.join(p.name for p in rpms)}"
 ''', file=r)
 
+        logging.debug("%s: %s", pkgname, rpms)
         print(f'\nURI_src = "{pkg.remote_location(schemes=["https", "http", "file"])};unpack=0"',
               file=r)
         print(f'SRC_URI += "${{URI_src}}"', file=r)
 
         for p in rpms:
+            logging.debug(" *  %s", p)
             print(f'\nURI_{p.name} = "{p.remote_location(schemes=["https", "http", "file"])};unpack=0"',
                   file=r)
             # FIXME: checksum
@@ -68,6 +70,8 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
                     providers = provides_map.get(rel.name, [])
                 else:
                     providers = list(dbs['bin'].sack.query().filter(provides=rel).filter(latest=1))
+
+                logging.debug("'%s' : %s", rel, providers)
 
                 # FIXME should really generate virtual alternatives instead
                 if not(providers):
@@ -167,6 +171,7 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
             # for those packages, that would not match the reldep
             rdeps = f" \\\n {' \\\n '.join(p.name for p in requires)} \\\n" if requires else ""
             print(f'RDEPENDS:{p.name} = "{rdeps}"', file=r)
+            print(f'RDEPENDS += "${{RDEPENDS:{p.name}}}"', file=r)
 
 cachedirs = {}
 
