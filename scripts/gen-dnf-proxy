@@ -56,6 +56,9 @@ PACKAGES = "{' '.join(p.name for p in rpms)}"
               file=r)
         print(f'SRC_URI += "${{URI_src}}"', file=r)
 
+        #print(f'PROVIDES += "${{PACKAGES}}"', file=r)
+        #print(f'PROVIDES:remove = "{pkg.name}"', file=r)
+
         for p in rpms:
             logging.debug(" *  %s", p)
             print(f'\nURI_{p.name} = "{p.remote_location(schemes=["https", "http", "file"])};unpack=0"',
