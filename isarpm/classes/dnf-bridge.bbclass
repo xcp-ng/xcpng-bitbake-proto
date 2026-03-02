@@ -1,5 +1,3 @@
-inherit rpm-rdepends
-
 RECIPE_DEPLOY_DIR = "${DEPLOY_DIR_ISARPM}/${PN}"
 
 RDEPENDS ?= ""
@@ -18,16 +16,17 @@ addtask do_package after do_unpack
 do_deploy() {
     rm -rf "${RECIPE_DEPLOY_DIR}"
     mkdir -p "${RECIPE_DEPLOY_DIR}"
-    cp -la "${WORKDIR}/SRPMS" "${WORKDIR}/RPMS" "${RDEPS_MANAGED}" "${RECIPE_DEPLOY_DIR}/"
+    cp -la "${WORKDIR}/SRPMS" "${WORKDIR}/RPMS" ${RDEPS_MANAGED} "${RECIPE_DEPLOY_DIR}/"
     if [ -n "${EXTRA_UPSTREAM_RDEPENDS}" ]; then
         cp -la "${RDEPENDS_EXTRA}" "${RECIPE_DEPLOY_DIR}/"
     fi
     find "${RECIPE_DEPLOY_DIR}/" -name repodata | xargs rm -r
 }
-addtask do_deploy after do_collect_managed_rdeps
+addtask do_deploy after do_package
 
-# Make do_deploy depend on all DEPENDS' do_deploy
-python() {
-    taskrdeps = ' '.join(f"{dep}:do_deploy" for dep in d.getVar("RDEPENDS").split())
-    d.setVarFlag("do_deploy", "depends", taskrdeps)
-}
+# Make do_deploy depend on all RDEPENDS' do_deploy
+do_deploy[rdeptask] = "do_package"
+#python() {
+#    taskrdeps = ' '.join(f"{dep}:do_deploy" for dep in d.getVar("RDEPENDS").split())
+#    d.setVarFlag("do_deploy", "depends", taskrdeps)
+#}

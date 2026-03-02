@@ -1,5 +1,4 @@
 inherit rpm-depends
-inherit rpm-rdepends
 
 XCPNGDEV_BUILD_OPTS ?= ""
 
@@ -71,37 +70,37 @@ addtask do_package_setscene
 
 
 
-## FIXME: hack to rely on RPMs from Fedora etc until they reach EPEL10
-# URLs of RPMs not yet in our official upstream
-EXTRA_UPSTREAM_RDEPENDS = ""
-
-RDEPENDS_EXTRA_REPONAME = "rdeps-extra"
-RDEPENDS_EXTRA = "${WORKDIR}/${RDEPENDS_EXTRA_REPONAME}"
-
-do_fetch_extra_upstream_rdepends() {
-    mkdir -p "${RDEPENDS_EXTRA}"
-    for url in ${EXTRA_UPSTREAM_RDEPENDS}; do
-        rpm=$(basename "$url")
-        if [ ! -e "${UPSTREAM_RPM_CACHEDIR}/$rpm" ]; then
-            mkdir -p "${UPSTREAM_RPM_CACHEDIR}"
-            curl --silent --show-error --fail --location \
-                 --output-dir "${UPSTREAM_RPM_CACHEDIR}" --remote-name "$url"
-        fi
-        cp -l "${UPSTREAM_RPM_CACHEDIR}/$rpm" "${RDEPENDS_EXTRA}/"
-    done
-}
-do_fetch_extra_upstream_rdepends[network] = "1"
-
-# only create this task if needed
-python() {
-    if d.getVar("EXTRA_UPSTREAM_RDEPENDS"):
-        bb.build.addtask("do_fetch_extra_upstream_rdepends", "do_collect_managed_rdeps", "do_package", d)
-        RDEPENDS_EXTRA = d.getVar("RDEPENDS_EXTRA")
-        RDEPENDS_EXTRA_REPONAME = d.getVar("RDEPENDS_EXTRA_REPONAME")
-        d.setVar("EXTRA_RUN_FLAGS", f"--local-repo='{RDEPENDS_EXTRA}' --enablerepo='{RDEPENDS_EXTRA_REPONAME}'")
-    else:
-        d.setVar("EXTRA_RUN_FLAGS", "")
-}
+# ## FIXME: hack to rely on RPMs from Fedora etc until they reach EPEL10
+# # URLs of RPMs not yet in our official upstream
+# EXTRA_UPSTREAM_RDEPENDS = ""
+# 
+# RDEPENDS_EXTRA_REPONAME = "rdeps-extra"
+# RDEPENDS_EXTRA = "${WORKDIR}/${RDEPENDS_EXTRA_REPONAME}"
+# 
+# do_fetch_extra_upstream_rdepends() {
+#     mkdir -p "${RDEPENDS_EXTRA}"
+#     for url in ${EXTRA_UPSTREAM_RDEPENDS}; do
+#         rpm=$(basename "$url")
+#         if [ ! -e "${UPSTREAM_RPM_CACHEDIR}/$rpm" ]; then
+#             mkdir -p "${UPSTREAM_RPM_CACHEDIR}"
+#             curl --silent --show-error --fail --location \
+#                  --output-dir "${UPSTREAM_RPM_CACHEDIR}" --remote-name "$url"
+#         fi
+#         cp -l "${UPSTREAM_RPM_CACHEDIR}/$rpm" "${RDEPENDS_EXTRA}/"
+#     done
+# }
+# do_fetch_extra_upstream_rdepends[network] = "1"
+# 
+# # only create this task if needed
+# python() {
+#     if d.getVar("EXTRA_UPSTREAM_RDEPENDS"):
+#         bb.build.addtask("do_fetch_extra_upstream_rdepends", "do_collect_managed_rdeps", "do_package", d)
+#         RDEPENDS_EXTRA = d.getVar("RDEPENDS_EXTRA")
+#         RDEPENDS_EXTRA_REPONAME = d.getVar("RDEPENDS_EXTRA_REPONAME")
+#         d.setVar("EXTRA_RUN_FLAGS", f"--local-repo='{RDEPENDS_EXTRA}' --enablerepo='{RDEPENDS_EXTRA_REPONAME}'")
+#     else:
+#         d.setVar("EXTRA_RUN_FLAGS", "")
+# }
 
 
 # FIXME: should be removed by do_clean?
@@ -113,7 +112,7 @@ do_deploy() {
         cp -la "${RDEPENDS_EXTRA}" "${RECIPE_DEPLOY_DIR}/"
     fi
 }
-addtask do_deploy after do_collect_managed_rdeps
+addtask do_deploy after do_package
 
 
 do_test() {

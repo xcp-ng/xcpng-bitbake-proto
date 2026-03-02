@@ -23,7 +23,7 @@ addtask do_collect_managed_rdeps after do_package
 # Bitbake does not manage the binary packages so will not make use of
 # RDEPENDS by itself, we have to add the dependencies ourselves.
 # Would otherwise likely be:
-do_collect_managed_rdeps[rdeptask] = "do_deploy"
+do_collect_managed_rdeps[rdeptask] = "do_package"
 python() {
     taskrdeps = ' '.join(f"{dep}:do_deploy" for dep in d.getVar("RDEPENDS").split())
     d.setVarFlag("do_collect_managed_rdeps", "depends", taskrdeps)
