@@ -1,3 +1,3 @@
 inherit xcp-ng-rpm
 
-SRCREV = "21cc8665e7bef7811d6620669dbc8ad8e10b7325"
+SRCREV = "bc9a5c76b9dc08f35995aad55d8c235463a0cb3e"

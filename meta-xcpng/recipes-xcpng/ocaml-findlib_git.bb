@@ -1,6 +1,6 @@
 inherit xcp-ng-rpm
 
-SRCREV = "605e19569125d28dc935f50530f01de77336176c"
+SRCREV = "5bbcde9f16cf8e9e50043e95fc39fa63986bc15d"
 
 DEPENDS += "ocaml"
 
