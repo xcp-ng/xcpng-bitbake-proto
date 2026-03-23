@@ -4,9 +4,9 @@ SRCREV = "a7476efcb22d0df97f3ec9c5342c0e0fd4f62285"
 SRCREV:aarch64 = "7c96929f152d85fda69088c8c876ad75d6a6cc39"
 
 DEPENDS += "ocaml ocaml-findlib libempserver"
+DEPENDS:append:x86-64-v2 = " dev86"
 
 EXTRA_UPSTREAM_DEPENDS = " \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/x86_64/os/Packages/d/dev86-0.16.21-27.fc41.x86_64.rpm \
 http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/x86_64/os/Packages/f/figlet-2.2.5-29.20151018gita565ae1.fc41.x86_64.rpm \
 "
 
