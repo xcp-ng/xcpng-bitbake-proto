@@ -69,8 +69,8 @@ EXTRA_UPSTREAM_RDEPENDS:append:x86-64-v2 = " \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/r/redhat-lsb-core-5.0-0.11.20231006git8d00acdc.fc41.x86_64.rpm \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/r/redhat-lsb-5.0-0.11.20231006git8d00acdc.fc41.x86_64.rpm \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/o/openvswitch-3.4.0-2.fc41.x86_64.rpm \
-  https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/l/libcgroup-tools-3.0-6.fc41.x86_64.rpm \
-  https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/l/libcgroup-3.0-6.fc41.x86_64.rpm \
+  ${ALMA_EPEL_MIRROR}/10.2/x86_64_v2/Packages/libcgroup-tools-3.0-10.el10_2.alma_altarch.x86_64_v2.rpm \
+  ${ALMA_EPEL_MIRROR}/10.2/x86_64_v2/Packages/libcgroup-3.0-10.el10_2.alma_altarch.x86_64_v2.rpm \
   \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/i/iptables-legacy-1.8.10-15.fc41.x86_64.rpm \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/i/iptables-legacy-libs-1.8.10-15.fc41.x86_64.rpm \
@@ -79,9 +79,8 @@ EXTRA_UPSTREAM_RDEPENDS:append:x86-64-v2 = " \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/i/iptables-utils-1.8.10-15.fc41.x86_64.rpm \
 "
 
-# in EPEL 10.1
 EXTRA_UPSTREAM_RDEPENDS:append:x86-64-v2 = " \
-https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/j/jemalloc-5.3.0-7.fc41.x86_64.rpm \
+${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/jemalloc-5.3.0-10.el10_1.alma_altarch.x86_64_v2.rpm \
 "
 
 EXTRA_UPSTREAM_RDEPENDS:append:aarch64 = " \
@@ -93,8 +92,8 @@ EXTRA_UPSTREAM_RDEPENDS:append:aarch64 = " \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/aarch64/os/Packages/r/redhat-lsb-5.0-0.11.20231006git8d00acdc.fc41.aarch64.rpm \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/aarch64/os/Packages/s/spax-1.6-15.fc41.aarch64.rpm \
   https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/aarch64/os/Packages/o/openvswitch-3.4.0-2.fc41.aarch64.rpm \
-  https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/aarch64/os/Packages/l/libcgroup-tools-3.0-6.fc41.aarch64.rpm \
-  https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/aarch64/os/Packages/l/libcgroup-3.0-6.fc41.aarch64.rpm \
+  ${EPEL_MIRROR}/10.2/Everything/aarch64/Packages/l/libcgroup-tools-3.0-10.el10_2.aarch64.rpm \
+  ${EPEL_MIRROR}/10.2/Everything/aarch64/Packages/l/libcgroup-3.0-10.el10_2.aarch64.rpm \
 \
   http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/aarch64/os/Packages/i/iptables-legacy-1.8.10-15.fc41.aarch64.rpm \
   http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/aarch64/os/Packages/i/iptables-legacy-libs-1.8.10-15.fc41.aarch64.rpm \

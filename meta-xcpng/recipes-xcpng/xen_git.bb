@@ -7,11 +7,11 @@ DEPENDS += "ocaml ocaml-findlib libempserver"
 DEPENDS:append:x86-64-v2 = " dev86"
 
 EXTRA_UPSTREAM_DEPENDS = " \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/x86_64/os/Packages/f/figlet-2.2.5-29.20151018gita565ae1.fc41.x86_64.rpm \
+${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/figlet-2.2.5-38.el10_1.alma_altarch.x86_64_v2.rpm \
 "
 
 EXTRA_UPSTREAM_DEPENDS:aarch64 = " \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/aarch64/os/Packages/f/figlet-2.2.5-29.20151018gita565ae1.fc41.aarch64.rpm \
+${EPEL_MIRROR}/10.1/Everything/x86_64/Packages/f/figlet-2.2.5-38.el10_1.aarch64.rpm \
 "
 
 RDEPENDS = " \
@@ -27,9 +27,9 @@ edk2 ipxe \
 "
 
 EXTRA_UPSTREAM_RDEPENDS = " \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/x86_64/os/Packages/f/figlet-2.2.5-29.20151018gita565ae1.fc41.x86_64.rpm \
+${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/figlet-2.2.5-38.el10_1.alma_altarch.x86_64_v2.rpm \
 "
 
 EXTRA_UPSTREAM_RDEPENDS:aarch64 = " \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/aarch64/os/Packages/f/figlet-2.2.5-29.20151018gita565ae1.fc41.aarch64.rpm \
+${EPEL_MIRROR}/10.1/Everything/x86_64/Packages/f/figlet-2.2.5-38.el10_1.aarch64.rpm \
 "

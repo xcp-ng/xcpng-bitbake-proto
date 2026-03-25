@@ -6,7 +6,6 @@ DEPENDS += "xen kernel"
 
 RDEPENDS = "xen"
 
-# in EPEL 10.1
 EXTRA_UPSTREAM_DEPENDS = " \
-https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/l/lcov-2.0-4.fc41.noarch.rpm \
+${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/lcov-2.0-5.el10_1.alma_altarch.noarch.rpm \
 "

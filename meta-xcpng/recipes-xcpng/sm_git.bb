@@ -14,11 +14,11 @@ https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/40/Everythi
 RDEPENDS = "python-bitarray"
 
 EXTRA_UPSTREAM_RDEPENDS = " \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/x86_64/os/Packages/l/libcgroup-tools-3.0-6.fc41.x86_64.rpm \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/x86_64/os/Packages/l/libcgroup-3.0-6.fc41.x86_64.rpm \
+${ALMA_EPEL_MIRROR}/10.2/x86_64_v2/Packages/libcgroup-tools-3.0-10.el10_2.alma_altarch.x86_64_v2.rpm \
+${ALMA_EPEL_MIRROR}/10.2/x86_64_v2/Packages/libcgroup-3.0-10.el10_2.alma_altarch.x86_64_v2.rpm \
 "
 
 EXTRA_UPSTREAM_RDEPENDS:aarch64 = " \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/aarch64/os/Packages/l/libcgroup-tools-3.0-6.fc41.aarch64.rpm \
-http://www.rpmfind.net/linux/fedora/linux/releases/41/Everything/aarch64/os/Packages/l/libcgroup-3.0-6.fc41.aarch64.rpm \
+${EPEL_MIRROR}/10.2/Everything/aarch64/Packages/l/libcgroup-tools-3.0-10.el10_2.aarch64.rpm \
+${EPEL_MIRROR}/10.2/Everything/aarch64/Packages/l/libcgroup-3.0-10.el10_2.aarch64.rpm \
 "

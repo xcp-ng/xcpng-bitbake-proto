@@ -9,8 +9,7 @@ RDEPENDS = " \
   xcp-clipboardd \
 "
 
-# in EPEL 10.1
 EXTRA_UPSTREAM_DEPENDS = " \
-https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/j/jemalloc-devel-5.3.0-7.fc41.x86_64.rpm \
-https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/j/jemalloc-5.3.0-7.fc41.x86_64.rpm \
+${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/jemalloc-devel-5.3.0-10.el10_1.alma_altarch.x86_64_v2.rpm \
+${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/jemalloc-5.3.0-10.el10_1.alma_altarch.x86_64_v2.rpm \
 "
