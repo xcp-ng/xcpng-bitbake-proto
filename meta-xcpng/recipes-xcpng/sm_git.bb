@@ -5,10 +5,10 @@ SRCREV = "a31be1ef5cb1305a871bd225cdcb5c448a9fe40a"
 DEPENDS = "python-bitarray"
 
 EXTRA_UPSTREAM_DEPENDS = " \
-https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/40/Everything/x86_64/os/Packages/p/python3-mock-4.0.3-12.fc40.noarch.rpm \
+${FEDORA_ARCHIVE_MIRROR}/releases/40/Everything/x86_64/os/Packages/p/python3-mock-4.0.3-12.fc40.noarch.rpm \
 "
 EXTRA_UPSTREAM_DEPENDS:aarch64 = " \
-https://archives.fedoraproject.org/pub/archive/fedora/linux/releases/40/Everything/aarch64/os/Packages/p/python3-mock-4.0.3-12.fc40.noarch.rpm \
+${FEDORA_ARCHIVE_MIRROR}/releases/40/Everything/aarch64/os/Packages/p/python3-mock-4.0.3-12.fc40.noarch.rpm \
 "
 
 RDEPENDS = "python-bitarray"

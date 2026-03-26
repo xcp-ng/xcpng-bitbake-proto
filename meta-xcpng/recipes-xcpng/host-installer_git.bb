@@ -19,5 +19,5 @@ https://updates.xcp-ng.org/8/8.3/updates/x86_64/Packages/grub-efi-2.06-4.0.2.1.x
 
 # in EPEL 10.2
 EXTRA_UPSTREAM_RDEPENDS:x86-64-v2 += " \
-https://download.fedoraproject.org/pub/fedora/linux/releases/41/Everything/x86_64/os/Packages/n/ndisc6-1.0.8-2.fc41.x86_64.rpm \
+${FEDORA_MIRROR}/releases/41/Everything/x86_64/os/Packages/n/ndisc6-1.0.8-2.fc41.x86_64.rpm \
 "
