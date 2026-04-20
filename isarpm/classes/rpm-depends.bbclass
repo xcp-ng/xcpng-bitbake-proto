@@ -38,6 +38,7 @@ BUILDDEPS_EXTRA_REPONAME = "bdeps-extra"
 BUILDDEPS_EXTRA = "${WORKDIR}/${BUILDDEPS_EXTRA_REPONAME}"
 
 do_fetch_extra_upstream_builddeps() {
+    rm -rf "${BUILDDEPS_EXTRA}"
     mkdir -p "${BUILDDEPS_EXTRA}"
     for url in ${EXTRA_UPSTREAM_DEPENDS}; do
         rpm=$(basename "$url")
