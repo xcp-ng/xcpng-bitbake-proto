@@ -66,7 +66,7 @@ EXTRA_UPSTREAM_RDEPENDS = " \
 EXTRA_UPSTREAM_RDEPENDS:append:x86-64-v2 = " \
   ${FEDORA_MIRROR}/releases/41/Everything/x86_64/os/Packages/d/dhcp-client-4.4.3-14.P1.fc41.x86_64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/x86_64/os/Packages/d/dhcp-common-4.4.3-14.P1.fc41.noarch.rpm \
-  ${FEDORA_MIRROR}/releases/41/Everything/x86_64/os/Packages/n/nbd-3.25-5.fc41.x86_64.rpm \
+  ${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/nbd-3.27.0-1.el10_1.alma_altarch.x86_64_v2.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/x86_64/os/Packages/s/ssmtp-2.64-37.fc41.x86_64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/x86_64/os/Packages/r/redhat-lsb-core-5.0-0.11.20231006git8d00acdc.fc41.x86_64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/x86_64/os/Packages/r/redhat-lsb-5.0-0.11.20231006git8d00acdc.fc41.x86_64.rpm \
@@ -88,7 +88,7 @@ ${ALMA_EPEL_MIRROR}/10.1/x86_64_v2/Packages/jemalloc-5.3.0-10.el10_1.alma_altarc
 EXTRA_UPSTREAM_RDEPENDS:append:aarch64 = " \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/d/dhcp-client-4.4.3-14.P1.fc41.aarch64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/d/dhcp-common-4.4.3-14.P1.fc41.noarch.rpm \
-  ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/n/nbd-3.25-5.fc41.aarch64.rpm \
+  ${EPEL_MIRROR}/10.1/x86_64_v2/Packages/nbd-3.27.0-1.el10_1.alma_altarch.aarch64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/s/ssmtp-2.64-37.fc41.aarch64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/r/redhat-lsb-core-5.0-0.11.20231006git8d00acdc.fc41.aarch64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/r/redhat-lsb-5.0-0.11.20231006git8d00acdc.fc41.aarch64.rpm \
@@ -96,6 +96,7 @@ EXTRA_UPSTREAM_RDEPENDS:append:aarch64 = " \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/o/openvswitch-3.4.0-2.fc41.aarch64.rpm \
   ${EPEL_MIRROR}/10.2/Everything/aarch64/Packages/l/libcgroup-tools-3.0-10.el10_2.aarch64.rpm \
   ${EPEL_MIRROR}/10.2/Everything/aarch64/Packages/l/libcgroup-3.0-10.el10_2.aarch64.rpm \
+\
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/i/iptables-legacy-1.8.10-15.fc41.aarch64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/i/iptables-legacy-libs-1.8.10-15.fc41.aarch64.rpm \
   ${FEDORA_MIRROR}/releases/41/Everything/aarch64/os/Packages/i/iptables-libs-1.8.10-15.fc41.aarch64.rpm \
