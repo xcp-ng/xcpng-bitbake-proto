@@ -1,6 +1,7 @@
 inherit xcp-ng-rpm
 
-SRCREV = "5f6bc47819d4b38badb9f7e4a69d4857a7becf80"
+# needs ydi/9-wip for this proto
+SRCREV = "acbca7876802766184546d8bf6cd2b456bfb8aaa"
 SRCREV:aarch64 = "7c96929f152d85fda69088c8c876ad75d6a6cc39"
 
 DEPENDS += "ocaml ocaml-findlib libempserver"

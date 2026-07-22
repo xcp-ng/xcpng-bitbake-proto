@@ -1,6 +1,6 @@
 inherit xcp-ng-rpm
 
-SRCREV = "a977f8c35f481675daf9da1a6a0f070ec1c68362"
+SRCREV = "cec888b07289808237667b793a0302d26aaa8323"
 
 DEPENDS = "python-bitarray"
 
