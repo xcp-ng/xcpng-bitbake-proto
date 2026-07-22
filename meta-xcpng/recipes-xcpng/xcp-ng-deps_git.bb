@@ -6,7 +6,6 @@ RDEPENDS = " \
 xcp-ng-release \
 xcp-ng-config \
 kernel \
-grub2 \
 blktap \
 guest-templates-json \
 varstored \
