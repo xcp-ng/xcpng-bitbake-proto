@@ -35,7 +35,7 @@ RDEPENDS += " \
 # xenopsd-xc
 RDEPENDS += " \
   xcp-ng-generic-lib \
-  xcp-emu-manager \
+  emu-manager \
   qemu \
   xcp-clipboardd \
 "
