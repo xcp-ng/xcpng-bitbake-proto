@@ -12,6 +12,7 @@ https://epel.repo.almalinux.org/10/x86_64_v2/Packages/genisoimage-1.1.11-58.el10
 https://epel.repo.almalinux.org/10/x86_64_v2/Packages/libfaketime-0.9.12-4.el10_1.alma_altarch.x86_64_v2.rpm \
 https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/syslinux-6.04-0.30.el10.alma.1.x86_64_v2.rpm \
   https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/syslinux-nonlinux-6.04-0.30.el10.alma.1.noarch.rpm \
+  https://vault.almalinux.org/10.0/BaseOS/x86_64_v2/os/Packages/mtools-4.0.43-7.el10.x86_64_v2.rpm \
 "
 
 S = "${UNPACKDIR}/git"
