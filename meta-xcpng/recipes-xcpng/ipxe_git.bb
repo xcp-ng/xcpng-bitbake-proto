@@ -1,5 +1,5 @@
 inherit xcp-ng-rpm
 
-SRCREV = "582e789f3ed76fcffb5f0c5ce09816f234fcde9a"
+SRCREV = "8cfc723f680f74deaa5a9ff412146c1df9974878"
 
 # FIXME: needs COMPATIBLE_MACHINE restriction
