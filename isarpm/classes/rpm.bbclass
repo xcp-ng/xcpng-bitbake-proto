@@ -32,6 +32,7 @@ python get_prauto() {
         bb.fatal("Can NOT get PRAUTO from remote PR service")
     d.setVar('PRAUTO', str(auto_pr))
 }
+get_prauto[vardepsexclude] += "BB_TASKDEPDATA"
 do_package[prefuncs] += "get_prauto"
 
 # produces ${WORKDIR}/SRPMS and ${WORKDIR}/RPMS
