@@ -25,10 +25,8 @@ RDEPENDS += " \
   xcp-ng-release \
   dmv-utils \
   oxenstored \
+  xcp-featured \
 "
-# FIXME cannot include without creating a loop.  But cannot do_deploy xapi-core without it.
-#  xcp-featured \
-#
 # obsolete?
 #  kpatch \
 #

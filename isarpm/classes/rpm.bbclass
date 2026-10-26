@@ -125,7 +125,7 @@ do_fetch_extra_upstream_rdepends[network] = "1"
 # only create this task if needed
 python() {
     if d.getVar("EXTRA_UPSTREAM_RDEPENDS"):
-        bb.build.addtask("do_fetch_extra_upstream_rdepends", "do_collect_managed_rdeps", "do_package", d)
+        bb.build.addtask("do_fetch_extra_upstream_rdepends", "do_collect_managed_rdeps do_deploy_rpms", "do_package", d)
         RDEPENDS_EXTRA = d.getVar("RDEPENDS_EXTRA")
         RDEPENDS_EXTRA_REPONAME = d.getVar("RDEPENDS_EXTRA_REPONAME")
         d.setVar("EXTRA_RUN_FLAGS", f"--local-repo='{RDEPENDS_EXTRA}' --enablerepo='{RDEPENDS_EXTRA_REPONAME}'")
@@ -185,16 +185,27 @@ do_fetch_upstream_rdeps[depends] = "build-env:do_deploy build-env:${@'do_create_
 addtask do_fetch_upstream_rdeps after do_collect_managed_rdeps
 
 
+# Publish what does not depend on other recipes: the RPMs and the
+# rdeps-extra we pull by URL, without waiting for the resolution of
+# RDEPENDS.  Only for DEPENDS_RPMS_ONLY consumers; others use the full
+# do_deploy.
 # FIXME: should be removed by do_clean?
-do_deploy() {
-    rm -rf "${RECIPE_DEPLOY_DIR}"
+do_deploy_rpms() {
     mkdir -p "${RECIPE_DEPLOY_DIR}"
-    cp -la "${WORKDIR}/SRPMS" "${WORKDIR}/RPMS" "${RDEPS_MANAGED}" "${RDEPS_UPSTREAM}" "${RECIPE_DEPLOY_DIR}/"
+    rm -rf "${RECIPE_DEPLOY_DIR}/SRPMS" "${RECIPE_DEPLOY_DIR}/RPMS" "${RECIPE_DEPLOY_DIR}/rdeps-extra"
+    cp -la "${WORKDIR}/SRPMS" "${WORKDIR}/RPMS" "${RECIPE_DEPLOY_DIR}/"
     if [ -n "${EXTRA_UPSTREAM_RDEPENDS}" ]; then
         cp -la "${RDEPENDS_EXTRA}" "${RECIPE_DEPLOY_DIR}/"
     fi
 }
-addtask do_deploy after do_fetch_upstream_rdeps
+addtask do_deploy_rpms after do_package
+
+# Complete the deploy dir with the runtime closure.
+do_deploy() {
+    rm -rf "${RECIPE_DEPLOY_DIR}/rdeps-managed" "${RECIPE_DEPLOY_DIR}/rdeps-upstream"
+    cp -la "${RDEPS_MANAGED}" "${RDEPS_UPSTREAM}" "${RECIPE_DEPLOY_DIR}/"
+}
+addtask do_deploy after do_fetch_upstream_rdeps do_deploy_rpms
 
 
 do_test() {

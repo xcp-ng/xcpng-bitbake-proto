@@ -12,12 +12,24 @@ XCPNGDEV = "${DEPLOY_DIR}/build-env/bin/xcp-ng-dev"
 BUILDDEPS_MANAGED_REPONAME = "bdeps-managed"
 BUILDDEPS_MANAGED = "${WORKDIR}/${BUILDDEPS_MANAGED_REPONAME}"
 
+# Subset of DEPENDS for which we only need the RPMs built by the recipe
+# (plus its rdeps-extra), not its full runtime closure.  This lets us build against a recipe before its
+# runtime deps are resolved, which breaks build/runtime loops (e.g.
+# xcp-featured builds against xapi-*-devel, while xapi-core Requires
+# xcp-featured).  Runtime deps of the RPMs used that are built by other
+# recipes must then come from other DEPENDS.
+DEPENDS_RPMS_ONLY ?= ""
+
 do_collect_managed_builddeps() {
     rm -rf "${BUILDDEPS_MANAGED}"
     mkdir -p "${BUILDDEPS_MANAGED}"
     for dep in ${DEPENDS}; do
         mkdir -p ${BUILDDEPS_MANAGED}/${dep}
-        for rpmdir in RPMS rdeps-extra rdeps-managed rdeps-upstream; do
+        rpmdirs="RPMS rdeps-extra rdeps-managed rdeps-upstream"
+        case " ${DEPENDS_RPMS_ONLY} " in
+            *" $dep "*) rpmdirs="RPMS rdeps-extra" ;;
+        esac
+        for rpmdir in $rpmdirs; do
             if [ -d "${DEPLOY_DIR_ISARPM}/$dep/$rpmdir" ]; then
                 cp -la "${DEPLOY_DIR_ISARPM}/$dep/$rpmdir" "${BUILDDEPS_MANAGED}/${dep}/"
             fi
@@ -26,8 +38,20 @@ do_collect_managed_builddeps() {
     #createrepo_c --compatibility "${BUILDDEPS_MANAGED}"
 }
 addtask do_collect_managed_builddeps after do_unpack
-do_collect_managed_builddeps[deptask] = "do_deploy"
 do_collect_managed_builddeps[vardepsexclude] += "PACKAGE_EXTRA_ARCHS BB_TASKDEPDATA"
+
+# Would otherwise be do_collect_managed_builddeps[deptask] = "do_deploy",
+# but DEPENDS_RPMS_ONLY entries must only wait for do_deploy_rpms.
+python() {
+    deps = d.getVar("DEPENDS").split()
+    rpms_only = d.getVar("DEPENDS_RPMS_ONLY").split()
+    unknown = set(rpms_only) - set(deps)
+    if unknown:
+        bb.fatal(f"DEPENDS_RPMS_ONLY entries not in DEPENDS: {' '.join(sorted(unknown))}")
+    taskdeps = ' '.join(f"{dep}:{'do_deploy_rpms' if dep in rpms_only else 'do_deploy'}"
+                        for dep in deps)
+    d.setVarFlag("do_collect_managed_builddeps", "depends", taskdeps)
+}
 
 
 ## FIXME: hack to rely on RPMs from Fedora etc until they reach EPEL10
