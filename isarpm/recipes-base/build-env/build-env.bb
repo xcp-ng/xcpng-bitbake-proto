@@ -7,7 +7,7 @@
 # for xcp-ng-build-env on another side.
 
 SRC_URI = "git://github.com/xcp-ng/xcp-ng-build-env;protocol=https;nobranch=1"
-SRCREV = "29c9ddf7836a8fede23621fca90370c76e32b38d"
+SRCREV = "cb65cd414f914ddbe5a9696505328ca1d7d29aa0"
 
 # FIXME: this ought to be "${WORKDIR}/git", what's wrong with unpack?
 S = "${UNPACKDIR}/git"
