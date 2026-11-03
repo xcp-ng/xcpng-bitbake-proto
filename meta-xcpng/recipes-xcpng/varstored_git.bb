@@ -1,7 +1,7 @@
 inherit xcp-ng-rpm
 
-SRCREV = "8bb5549c7125ea0497e47c52cca0a3cf03c6922a"
+SRCREV = "298d65894ec7d1a84827e100bb463b4d80ef8e5b"
 
-DEPENDS += "xen"
+DEPENDS += "xen xcp-efivar-utils"
 
-RDEPENDS = "xapi"
+RDEPENDS = "xapi xcp-efivar-utils"
