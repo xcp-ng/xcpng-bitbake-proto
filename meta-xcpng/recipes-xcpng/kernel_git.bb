@@ -1,6 +1,6 @@
 inherit xcp-ng-rpm
 
-SRCREV = "ac08ef27d5b02b9a7b3beedb091edb6406dc0280"
+SRCREV = "baaf2596891daadc16c782843f421550fed2165d"
 # FIXME why does kabichk with "required file not found"?
 XCPNGDEV_BUILD_OPTS = " \
   --rpmbuild-opts='--without kabichk' \
